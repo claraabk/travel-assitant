@@ -57,7 +57,26 @@ playwright install chromium
 
 `python3 scripts/latam_scraper.py` já imprime o JSON pronto no schema
 da seção 1 (via `main()`) — não precisa adaptar nada nele, só apontar
-o `SCRAPER_CMD` abaixo para o caminho do seu clone:
+o `SCRAPER_CMD` abaixo para o caminho do seu clone.
+
+**Sobre headless:** por padrão o script roda com `headless=False`
+(navegador visível) — de propósito. Em modo `headless=True` o Chromium
+tem um fingerprint que a Akamai do site da LATAM costuma detectar,
+servindo uma página de desafio em vez do conteúdo real (o sintoma é
+exatamente o timeout esperando `input[name="radio-values"]`). Se
+precisar forçar headless mesmo assim, defina
+`LATAM_SCRAPER_HEADLESS=true`, mas não é o recomendado.
+
+- **Rodando na sua máquina com tela** (o caso mais comum pra testar):
+  não precisa fazer nada, já funciona com o navegador abrindo.
+- **Rodando via cron/servidor sem tela** (sem X11): `headless=False`
+  não tem onde abrir janela. Use um display virtual:
+  ```bash
+  sudo apt install xvfb   # uma vez
+  xvfb-run -a python3 scripts/latam_scraper.py
+  ```
+  Ajuste `SCRAPER_CMD` na seção 2 para `xvfb-run -a python3 $REPO_DIR/scripts/latam_scraper.py`
+  nesse caso.
 
 ```bash
 #!/usr/bin/env bash

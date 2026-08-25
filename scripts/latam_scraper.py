@@ -25,6 +25,7 @@ ESTRUTURA REAL DA PÁGINA (confirmada por inspeção do HTML renderizado):
 
 import asyncio
 import json
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -217,9 +218,18 @@ def main() -> None:
     código != 0 em caso de erro -- sem imprimir nada em stdout nesse caso,
     para o wrapper (run-latam-scraper.sh) nunca sobrescrever o arquivo
     anterior com dado inválido.
+
+    IMPORTANTE: headless=True costuma ser detectado pelo Akamai do site
+    da LATAM (fingerprint de Chromium headless), que responde com uma
+    página de desafio -- daí o timeout esperando 'input[name="radio-values"]'.
+    Por isso o padrão aqui é headless=False (navegador visível), igual ao
+    teste manual que já funcionava. Em servidor sem display, rode via
+    `xvfb-run -a python3 latam_scraper.py` em vez de forçar headless=True
+    -- ver docs/scraper-local-setup.md.
     """
+    headless = os.environ.get("LATAM_SCRAPER_HEADLESS", "false").strip().lower() == "true"
     try:
-        tiers = asyncio.run(fetch_all_miles_tiers(headless=True))
+        tiers = asyncio.run(fetch_all_miles_tiers(headless=headless))
         if not tiers:
             raise RuntimeError("Nenhum tier de milhas foi encontrado na página.")
         state = _build_state_json(tiers)
