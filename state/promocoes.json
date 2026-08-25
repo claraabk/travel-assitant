@@ -39,21 +39,29 @@
     {
       "id": "latam-pass-desconto-compra-milhas-por-perfil",
       "tipo": "desconto_compra_direta",
-      "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente — até 60-66% para portadores do cartão LATAM Pass Itaú, até 55% para 'clientes inscritos no programa e/ou assinantes do Clube LATAM Pass'. Limite típico de 200.000-350.000 milhas por campanha, parcelável em até 10x sem juros (Elo/Mastercard/Visa).",
-      "desconto_pct_itau": 60,
-      "desconto_pct_geral": 55,
+      "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Edição mais recente encontrada (indicada pela Clara, vigente no navegador dela em 26/08/2026): 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app — sem exigir Clube nem cartão Itaú. Milheiro a partir de ~R$24,50 numa edição citada. Limite típico de 350.000 milhas, parcelável em até 10x sem juros (Elo/Mastercard/Visa). Milhas creditadas em até 48h (geralmente imediato).",
+      "desconto_pct_itau": 65,
+      "desconto_pct_geral": 62,
+      "milheiro_referencia_brl": 24.50,
       "e_permanente": false,
       "recorrente": true,
-      "valido_ate": null,
-      "elegibilidade_clara": "INCERTA — precisa checar. O perfil (state/perfil.json) marcava Clara como não elegível a desconto por não ter Clube nem cartão Itaú, baseado na suposição de que só esses dois perfis têm desconto. Mas a frase 'clientes inscritos no programa e/ou assinantes do Clube' pode significar que qualquer cadastrado no LATAM Pass (Clara já é) qualifica para o tier de 55%, não só assinantes do Clube. Não dá para confirmar isso só com os resumos de busca — precisa abrir o app/site LATAM Pass logada para ver a oferta que aparece para o perfil dela.",
+      "valido_ate": "não confirmado — Clara encontrou a oferta ativa no navegador em 26/08/2026, mas a data exata de término não veio no resumo de busca",
+      "elegibilidade_clara": "PROVAVELMENTE ELEGÍVEL para o tier de 62% — o texto da promoção diz explicitamente que o desconto vale para TODOS os clientes LATAM Pass que comprarem pelo app, não só Clube/Itaú (esse último tier dá 65%, 3 p.p. a mais). Isso contradiz a suposição original do perfil ('não elegível aos descontos de 30-35%') — atualizar state/perfil.json.elegivel_desconto_30_35pct para refletir que HÁ um tier geral aplicável.",
+      "impacto_estimado": {
+        "combinacao_referencia": "CUZ-CUZ, R$3.895 em dinheiro",
+        "faixa_milhas_estimada": "30.000-70.000 (longo curso, tabela pública)",
+        "custo_em_milhas_compradas_com_desconto": "R$735 (30k) a R$1.715 (70k), usando milheiro de referência R$24,50 — MUITO abaixo do preço em dinheiro",
+        "ressalva": "cálculo usa preço de milheiro de UMA edição específica da promoção, não confirmado como o preço vigente agora, e a faixa de milhas é estimativa pública, não disponibilidade real de resgate. Antes de comprar: confirmar no app (1) o desconto e preço exatos oferecidos para a conta da Clara, (2) a disponibilidade real de resgate para as datas do CUZ-CUZ."
+      },
       "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-3/ (indicada pela Clara, encontrada ativa no navegador dela)",
         "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/",
         "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
         "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
       ],
-      "confianca": "múltiplas fontes do mesmo blog ao longo do ano, mas todas de terceiros — nenhuma confirma a regra de elegibilidade com certeza absoluta",
-      "ja_notificada": false,
-      "acao_sugerida": "Não assumir automaticamente que Clara está fora — próxima vez que ela acessar o app/site LATAM Pass logada, checar se aparece oferta de desconto na compra de milhas para o perfil dela (mesmo sem Clube/Itaú). Enquanto isso, tratar como 'pode ser aplicável, não confirmado' em vez de 'não aplicável'."
+      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
+      "ja_notificada": true,
+      "acao_sugerida": "OPORTUNIDADE GRANDE se confirmada: comprar milhas com desconto pode ficar muito mais barato que pagar em dinheiro pela combinação CUZ-CUZ. Antes de comprar: (1) logar no app/site LATAM Pass e confirmar desconto/preço exatos oferecidos para a conta da Clara, (2) confirmar disponibilidade real de resgate (não estimativa) para as datas 07-19/jun/2027, (3) só então decidir. NUNCA comprar sem a Clara confirmar com 'Vai'/'Compra' explícito."
     },
     {
       "id": "nomad-8000-milhas-1a-operacao-cambio",
