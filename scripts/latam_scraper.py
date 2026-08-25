@@ -24,8 +24,11 @@ ESTRUTURA REAL DA PÁGINA (confirmada por inspeção do HTML renderizado):
 """
 
 import asyncio
+import json
 import re
+import sys
 from dataclasses import dataclass
+from datetime import datetime
 
 from playwright.async_api import async_playwright
 
@@ -176,8 +179,55 @@ async def fetch_miles_price(miles_amount: int, headless: bool = True) -> MilesTi
     return closest
 
 
+def _build_state_json(tiers: list[MilesTierQuote]) -> dict:
+    """
+    Monta o dicionário exatamente no schema de state/latam_miles_price.json
+    documentado em docs/scraper-local-setup.md.
+    """
+    tiers_out = [
+        {
+            "milhas": t.miles,
+            "preco_brl": t.price_brl,
+            "cpm_brl": t.price_per_thousand_brl,
+        }
+        for t in tiers
+    ]
+
+    priced = [t for t in tiers_out if t["cpm_brl"] is not None]
+    melhor_tier = min(priced, key=lambda t: t["cpm_brl"]) if priced else None
+
+    return {
+        "atualizado_em": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "fonte": "scraper local (cron)",
+        "url_origem": LATAM_MILES_URL,
+        # Sem um preço de referência "cheio" confiável para comparar, não dá
+        # para calcular a % de desconto aqui -- deixar para o agente cruzar
+        # com o que ele achar via busca web/página de ofertas.
+        "desconto_pct_aplicado": None,
+        "tiers": tiers_out,
+        "melhor_tier": melhor_tier,
+        "erro": None,
+    }
+
+
+def main() -> None:
+    """
+    Ponto de entrada para o cron (docs/scraper-local-setup.md): roda o
+    scraper, imprime o JSON no schema esperado em stdout, e sai com
+    código != 0 em caso de erro -- sem imprimir nada em stdout nesse caso,
+    para o wrapper (run-latam-scraper.sh) nunca sobrescrever o arquivo
+    anterior com dado inválido.
+    """
+    try:
+        tiers = asyncio.run(fetch_all_miles_tiers(headless=True))
+        if not tiers:
+            raise RuntimeError("Nenhum tier de milhas foi encontrado na página.")
+        state = _build_state_json(tiers)
+        print(json.dumps(state, ensure_ascii=False, indent=2))
+    except Exception as exc:  # noqa: BLE001 -- reportar qualquer falha ao cron
+        print(f"latam_scraper falhou: {exc}", file=sys.stderr)
+        sys.exit(1)
+
+
 if __name__ == "__main__":
-    # Teste manual local: python -m latam_miles_mcp.scraper
-    all_tiers = asyncio.run(fetch_all_miles_tiers(headless=False))
-    for tier in all_tiers:
-        print(tier)
+    main()

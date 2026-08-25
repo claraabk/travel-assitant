@@ -45,7 +45,19 @@ e tenta o conector MCP de novo.
 
 ## 2. Script wrapper
 
-Adapte ao scraper que você já tem (ajuste o caminho na linha `SCRAPER_CMD`):
+O scraper já está em `scripts/latam_scraper.py` (usa Playwright para
+renderizar a SPA de compra de milhas). Antes de usar o wrapper, instale
+as dependências uma vez:
+
+```bash
+cd ~/travel-assitant/scripts
+pip install -e .
+playwright install chromium
+```
+
+`python3 scripts/latam_scraper.py` já imprime o JSON pronto no schema
+da seção 1 (via `main()`) — não precisa adaptar nada nele, só apontar
+o `SCRAPER_CMD` abaixo para o caminho do seu clone:
 
 ```bash
 #!/usr/bin/env bash
@@ -54,7 +66,7 @@ set -euo pipefail
 REPO_DIR="$HOME/travel-assitant"   # ajuste para o caminho real do clone local
 OUT_FILE="$REPO_DIR/state/latam_miles_price.json"
 LOCK_FILE="/tmp/latam-miles-scraper.lock"
-SCRAPER_CMD="python3 $HOME/scripts/latam_miles_scraper.py"  # <- seu scraper
+SCRAPER_CMD="python3 $REPO_DIR/scripts/latam_scraper.py"  # já está no repo, em scripts/
 
 exec 9>"$LOCK_FILE"
 flock -n 9 || { echo "já rodando, saindo"; exit 0; }
