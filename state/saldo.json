@@ -1,0 +1,9 @@
+{
+  "ultravioleta_pontos": 7667,
+  "latam_pass_milhas": 0,
+  "confirmado_por_clara_em": "2026-08-25",
+  "historico_confirmacoes": [
+    { "data": "2026-08-25", "ultravioleta_pontos": 7667, "latam_pass_milhas": 0, "fonte": "informado pela Clara na configuração inicial" }
+  ],
+  "pendente_confirmacao": null
+}

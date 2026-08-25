@@ -1,0 +1,58 @@
+{
+  "ultima_checagem": "2026-08-25T00:00:00Z",
+  "ativas": [
+    {
+      "id": "modo-latam-pass-nubank",
+      "tipo": "conversao_automatica_permanente",
+      "descricao": "Modo LATAM Pass do Nubank Ultravioleta: converte pontos em milhas LATAM Pass automaticamente a cada 7 dias, com 10% de bônus sobre o total convertido no período. Não ativado no perfil da Clara.",
+      "bonus_pct": 10,
+      "e_permanente": true,
+      "valido_ate": null,
+      "fontes": [
+        "https://international.nubank.com.br/pt-br/consumidores/nubank-ultravioleta-lanca-modo-latam-pass/",
+        "https://nubank.com.br/ultravioleta/cartao-black/modo-latam-pass"
+      ],
+      "confianca": "alta (2+ fontes, inclusive site oficial)",
+      "ja_notificada": false,
+      "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027."
+    },
+    {
+      "id": "livelo-azul-120pct-ago2026",
+      "tipo": "bonus_transferencia_temporario",
+      "descricao": "Livelo → Azul Fidelidade, até 120% de bônus na transferência.",
+      "bonus_pct": 120,
+      "e_permanente": false,
+      "valido_ate": "2026-08-21",
+      "programa_destino": "Azul Fidelidade (NÃO é LATAM Pass — irrelevante para esta viagem)",
+      "fontes": ["https://pontospravoar.com/17-anos-azul-fidelidade-transfira-pontos-livelo-receba-ate-120-porcento-bonus/"],
+      "confianca": "média",
+      "ja_notificada": false,
+      "acao_sugerida": "Ignorar — restrição fixa da viagem é LATAM Pass, não Azul. Já expirada em 21/08/2026."
+    },
+    {
+      "id": "livelo-connectmiles-40pct-ago2026",
+      "tipo": "bonus_transferencia_temporario",
+      "descricao": "Livelo → ConnectMiles (Copa Airlines), até 40% de bônus.",
+      "bonus_pct": 40,
+      "e_permanente": false,
+      "valido_ate": "2026-08-14",
+      "programa_destino": "ConnectMiles (NÃO é LATAM Pass — irrelevante para esta viagem)",
+      "fontes": ["citado em busca web de 25/08/2026"],
+      "confianca": "média",
+      "ja_notificada": false,
+      "acao_sugerida": "Ignorar — programa errado para esta viagem. Já expirada."
+    },
+    {
+      "id": "festival-pontos-livelo-ago2026",
+      "tipo": "evento_calendario",
+      "descricao": "Festival de Pontos Livelo, 25–26 de agosto de 2026 — evento anual, mas a busca não retornou o detalhe específico de bônus por parceiro/programa para esta edição.",
+      "bonus_pct": null,
+      "e_permanente": false,
+      "valido_ate": "2026-08-26",
+      "fontes": ["https://www.livelo.com.br/como-juntar-pontos-rapido-calendario-de-bonus-livelo"],
+      "confianca": "baixa — falta confirmação de 2ª fonte com o bônus específico para LATAM Pass",
+      "ja_notificada": false,
+      "acao_sugerida": "Checar diretamente no app/site Livelo hoje (26/08 ainda dentro do evento) se há bônus específico para transferência à LATAM Pass antes de reportar como oportunidade."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "rota": "REC-LIM",
+  "janela_busca": "2027-06-01 a 2027-06-30",
+  "checagens": [
+    {
+      "data_checagem": "2026-08-25T00:00:00Z",
+      "melhor_preco_brl": 4080,
+      "moeda": "BRL",
+      "ida": "2027-06-20",
+      "volta": "2027-07-02",
+      "fonte": "fli.search_dates + fli.search_flights",
+      "detalhe_voo": {
+        "ida": [
+          { "voo": "LA3375", "origem": "REC", "destino": "GRU", "partida": "2027-06-20T02:45:00", "chegada": "2027-06-20T06:00:00", "aeronave": "Airbus A321" },
+          { "voo": "LA2429", "origem": "GRU", "destino": "LIM", "partida": "2027-06-20T08:15:00", "chegada": "2027-06-20T11:25:00", "aeronave": "Airbus A320" }
+        ],
+        "volta": [
+          { "voo": "LA2402", "origem": "LIM", "destino": "BSB", "partida": "2027-07-02T00:30:00", "chegada": "2027-07-02T06:55:00", "aeronave": "Airbus A320" },
+          { "voo": "LA3730", "origem": "BSB", "destino": "FOR", "partida": "2027-07-02T10:20:00", "chegada": "2027-07-02T13:00:00", "aeronave": "Airbus A320" },
+          { "voo": "LA3491", "origem": "FOR", "destino": "REC", "partida": "2027-07-02T14:10:00", "chegada": "2027-07-02T15:25:00", "aeronave": "Airbus A320" }
+        ],
+        "paradas_ida": 1,
+        "paradas_volta": 2,
+        "todas_operadas_por": "LATAM (LA)",
+        "booking_url": "https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-20%20through%202027-07-02&curr=BRL"
+      },
+      "media_movel_30_checagens": null,
+      "variacao_pct_vs_media": null
+    }
+  ]
+}

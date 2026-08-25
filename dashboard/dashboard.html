@@ -1,0 +1,342 @@
+<title>Painel Recife-Peru</title>
+<style>
+  :root {
+    --ink: #1b2430;
+    --ink-secondary: #4b5866;
+    --ink-muted: #78838f;
+    --surface: #edeee8;
+    --panel: #ffffff;
+    --panel-border: #dcddd4;
+    --accent: #1f5b5b;
+    --accent-soft: #dde8e6;
+    --good: #2e7d46;
+    --good-soft: #e3f2e6;
+    --warn: #b8790c;
+    --warn-soft: #fbf0dd;
+    --critical: #b0413e;
+    --critical-soft: #f9e4e2;
+    --tabular: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --ink: #e8ecf1;
+      --ink-secondary: #b6c0cb;
+      --ink-muted: #7e8a96;
+      --surface: #12161c;
+      --panel: #1b222b;
+      --panel-border: #2c3540;
+      --accent: #6fb3ac;
+      --accent-soft: #1c3634;
+      --good: #6cc98a;
+      --good-soft: #16301f;
+      --warn: #e0ab52;
+      --warn-soft: #3a2c11;
+      --critical: #e08682;
+      --critical-soft: #3a1c1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e8ecf1;
+    --ink-secondary: #b6c0cb;
+    --ink-muted: #7e8a96;
+    --surface: #12161c;
+    --panel: #1b222b;
+    --panel-border: #2c3540;
+    --accent: #6fb3ac;
+    --accent-soft: #1c3634;
+    --good: #6cc98a;
+    --good-soft: #16301f;
+    --warn: #e0ab52;
+    --warn-soft: #3a2c11;
+    --critical: #e08682;
+    --critical-soft: #3a1c1b;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1, h2, h3 {
+    font-family: "Newsreader", Georgia, serif;
+    text-wrap: balance;
+    margin: 0;
+  }
+  .tabular { font-family: var(--tabular); font-variant-numeric: tabular-nums; }
+
+  /* header / balances */
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 18px;
+  }
+  .header h1 { font-size: 1.7rem; font-weight: 600; }
+  .header .subtitle { color: var(--ink-secondary); font-size: 0.92rem; margin-top: 4px; }
+  .balances {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .balance-chip {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 160px;
+  }
+  .balance-chip .label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+  }
+  .balance-chip .value {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .balance-chip .as-of {
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    margin-top: 2px;
+  }
+  .balance-chip.latam .value { color: var(--accent); }
+
+  /* recommendation banner */
+  .recommendation {
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid var(--panel-border);
+  }
+  .recommendation.wait { background: var(--warn-soft); border-color: var(--warn); }
+  .recommendation.act { background: var(--good-soft); border-color: var(--good); }
+  .rec-pill {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .recommendation.wait .rec-pill { background: var(--warn); color: #1b1206; }
+  .recommendation.act .rec-pill { background: var(--good); color: #06210d; }
+  .recommendation p { margin: 0; font-size: 1rem; }
+
+  /* card grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card.span2 { grid-column: span 2; }
+  @media (max-width: 720px) { .card.span2 { grid-column: span 1; } }
+  .card h3 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+  }
+  .card .big-number {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .card .note { font-size: 0.85rem; color: var(--ink-secondary); }
+
+  .status-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    width: fit-content;
+  }
+  .status-tag.good { background: var(--good-soft); color: var(--good); }
+  .status-tag.warn { background: var(--warn-soft); color: var(--warn); }
+  .status-tag.muted { background: var(--accent-soft); color: var(--accent); }
+
+  /* flight detail */
+  .leg-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+  .leg-table th {
+    text-align: left;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-muted);
+    font-weight: 600;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .leg-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .table-scroll { overflow-x: auto; }
+  .link-out {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  .link-out:hover { text-decoration: underline; }
+
+  /* opportunities list */
+  .opp {
+    border-left: 3px solid var(--panel-border);
+    padding: 8px 0 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .opp.confirmed { border-left-color: var(--good); }
+  .opp.low-confidence { border-left-color: var(--warn); }
+  .opp.ignored { border-left-color: var(--ink-muted); opacity: 0.7; }
+  .opp .opp-title { font-weight: 600; font-size: 0.92rem; }
+  .opp .opp-meta { font-size: 0.78rem; color: var(--ink-muted); }
+
+  footer {
+    color: var(--ink-muted);
+    font-size: 0.78rem;
+    text-align: center;
+    padding-top: 12px;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<div class="wrap">
+
+  <div class="header">
+    <div>
+      <h1>Recife ⇄ Peru</h1>
+      <div class="subtitle">Painel LATAM · voo restrito a LATAM / resgate só via LATAM Pass · junho de 2027</div>
+    </div>
+    <div class="balances">
+      <div class="balance-chip latam">
+        <div class="label">LATAM Pass</div>
+        <div class="value tabular">0 milhas</div>
+        <div class="as-of">confirmado em 25/08/2026</div>
+      </div>
+      <div class="balance-chip">
+        <div class="label">Nubank Ultravioleta</div>
+        <div class="value tabular">7.667 pts</div>
+        <div class="as-of">confirmado em 25/08/2026</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recommendation wait">
+    <span class="rec-pill">Esperar</span>
+    <p>Preço LATAM ainda sem histórico para comparar (primeira checagem hoje). Nenhuma promoção de transferência ou desconto ativo com destino LATAM Pass foi confirmada com 2 fontes. Continue esperando — o próximo ciclo já compara contra hoje.</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card span2">
+      <h3>Preço LATAM hoje</h3>
+      <div class="big-number tabular">R$ 4.080</div>
+      <div class="note">REC ⇄ LIM · ida 20/jun/2027 · volta 02/jul/2027 (12 dias) · menor preço encontrado ao varrer todo o mês de junho/2027</div>
+      <div class="status-tag muted">Sem histórico ainda — vs. média chega na 2ª checagem</div>
+    </div>
+
+    <div class="card">
+      <h3>Dinheiro vs. LATAM Pass</h3>
+      <div class="note">
+        <strong class="tabular">R$ 4.080</strong> em dinheiro.<br>
+        Faixa estimada de resgate (longo curso, tabela pública): <strong class="tabular">30.000–70.000</strong> milhas.<br>
+        CPM estimado: <strong class="tabular">R$ 5,8 a R$ 13,6</strong> por 1.000 milhas.
+      </div>
+      <span class="status-tag warn">Estimativa — sem login real na LATAM</span>
+    </div>
+
+    <div class="card">
+      <h3>Vale comprar milhas LATAM Pass?</h3>
+      <div class="note">Consulta ao preço oficial de compra direta falhou hoje (timeout na página da LATAM). Sem esse dado não há recomendação de compra — o monitor leve tenta de novo em até 6h.</div>
+      <span class="status-tag warn">Indisponível hoje</span>
+    </div>
+
+    <div class="card span2">
+      <h3>Itinerário detalhado — melhor opção do dia</h3>
+      <div class="table-scroll">
+        <table class="leg-table">
+          <thead>
+            <tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ida</td><td class="tabular">LA3375</td><td class="tabular">REC → GRU</td><td class="tabular">20/06 02:45</td><td class="tabular">20/06 06:00</td><td>A321</td></tr>
+            <tr><td>Ida</td><td class="tabular">LA2429</td><td class="tabular">GRU → LIM</td><td class="tabular">20/06 08:15</td><td class="tabular">20/06 11:25</td><td>A320</td></tr>
+            <tr><td>Volta</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">02/07 00:30</td><td class="tabular">02/07 06:55</td><td>A320</td></tr>
+            <tr><td>Volta</td><td class="tabular">LA3730</td><td class="tabular">BSB → FOR</td><td class="tabular">02/07 10:20</td><td class="tabular">02/07 13:00</td><td>A320</td></tr>
+            <tr><td>Volta</td><td class="tabular">LA3491</td><td class="tabular">FOR → REC</td><td class="tabular">02/07 14:10</td><td class="tabular">02/07 15:25</td><td>A320</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">1 escala na ida (GRU) · 2 escalas na volta (BSB, FOR) · todos os trechos operados por LATAM (LA) · classe e reembolsabilidade da tarifa: a confirmar na próxima checagem.</div>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-20%20through%202027-07-02&curr=BRL" target="_blank" rel="noopener">Ver oferta →</a>
+    </div>
+
+    <div class="card span2">
+      <h3>Oportunidades de acúmulo e transferência</h3>
+
+      <div class="opp low-confidence">
+        <div class="opp-title">Modo LATAM Pass (Nubank Ultravioleta) — não ativado</div>
+        <div class="opp-meta">Conversão automática a cada 7 dias + 10% de bônus permanente. Confiança alta (site oficial). Avaliação de ativação: pendente (análise única, não diária).</div>
+      </div>
+
+      <div class="opp ignored">
+        <div class="opp-title">Livelo → Azul Fidelidade, até 120% de bônus</div>
+        <div class="opp-meta">Expirou em 21/08/2026. Destino não é LATAM Pass — irrelevante para esta viagem mesmo se reativada.</div>
+      </div>
+
+      <div class="opp ignored">
+        <div class="opp-title">Livelo → ConnectMiles, até 40% de bônus</div>
+        <div class="opp-meta">Expirou em 14/08/2026. Destino não é LATAM Pass — irrelevante para esta viagem.</div>
+      </div>
+
+      <div class="opp low-confidence">
+        <div class="opp-title">Festival de Pontos Livelo (25–26/08/2026)</div>
+        <div class="opp-meta">Confiança baixa — só 1 fonte, sem confirmar se há bônus específico para LATAM Pass. Checar app/site Livelo diretamente hoje.</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>Gerado a partir de state/*.json · última checagem completa: 25/08/2026 · dados de voo via fli/Google Flights · próximo ciclo completo: amanhã</footer>
+
+</div>

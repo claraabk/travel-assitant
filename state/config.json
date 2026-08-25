@@ -1,0 +1,17 @@
+{
+  "thresholds": {
+    "queda_preco_pct_alerta_urgente": 15,
+    "bonus_transferencia_pct_oportunidade": 60
+  },
+  "cadencia": {
+    "monitor_leve_horas": 6,
+    "dashboard_completo": "diario"
+  },
+  "canal_alerta_urgente": "push_notification",
+  "email_diario": false,
+  "latam_miles_price_tool_status": {
+    "ultimo_sucesso": null,
+    "ultima_tentativa": "2026-08-25T00:00:00Z",
+    "ultimo_erro": "timeout aguardando seletor da página oficial LATAM Pass"
+  }
+}
