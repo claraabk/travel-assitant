@@ -11,10 +11,11 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-26T00:00:00Z",
-    "tentativas_consecutivas_falhas": 3,
-    "ultimo_erro": "timeout aguardando seletor da página oficial LATAM Pass (MCP roda em GCP, bloqueado pelo Akamai; scraper local da Clara funciona)",
-    "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível."
+    "ultima_tentativa": "2026-08-25T18:54:17Z",
+    "tentativas_consecutivas_falhas": 4,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
+    "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json não existe neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "roteiro": {
     "fixo": false,
@@ -27,7 +28,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-08-26T00:00:00Z",
+    "ultima_tentativa": "2026-08-25T18:54:17Z",
     "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [

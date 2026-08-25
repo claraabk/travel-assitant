@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-26T00:00:00Z",
+  "ultima_checagem": "2026-08-25T18:54:17Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -34,6 +34,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -61,6 +62,7 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
+      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de desconto na compra direta ativa/recorrente (edições de 60-66% no histórico do blog); já notificada anteriormente (ja_notificada=true), sem novo alerta.",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
