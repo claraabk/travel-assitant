@@ -81,6 +81,17 @@ esperar o dashboard diário.
    outros programas — não se aplicam a esta viagem). 1 fonte já basta
    para marcar como ativa. Atualizar `state/promocoes.json`, marcando
    `ja_notificada` para evitar alertar a mesma oportunidade duas vezes.
+5b. **Checar sempre** `https://passageirodeprimeira.com/categorias/promocoes/`
+   (ver `state/config.json.fontes_monitoradas_promocoes`, item com
+   `sempre_checar=true`) — todo ciclo, não só quando outras buscas
+   falharem. Acesso direto via `WebFetch` dá `EGRESS_BLOCKED`; em vez
+   disso, usar `WebSearch` com `allowed_domains: ["passageirodeprimeira.com"]`
+   e uma query genérica de promoções (ex.: "promoções milhas LATAM Pass
+   Livelo Esfera" + mês/ano atual) — isso funciona e traz título+resumo
+   das promoções mais recentes do site. Tratar como fonte única válida
+   (não precisa de 2ª fonte, mas é blog de terceiros — sinalizar como
+   tal). Extrair só o que for relevante para LATAM Pass (ignorar
+   Smiles/Azul/outros).
 6. **Gatilho de alerta urgente** (via `PushNotification`, nunca e-mail
    diário — não há relatório diário por e-mail neste fluxo):
    - Queda de preço ≥ `thresholds.queda_preco_pct_alerta_urgente` (15%)

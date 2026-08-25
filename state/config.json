@@ -29,5 +29,19 @@
     "url": "https://latampass.latam.com/pt_br/ofertas",
     "ultima_tentativa": "2026-08-26T00:00:00Z",
     "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
-  }
+  },
+  "fontes_monitoradas_promocoes": [
+    {
+      "url": "https://latampass.latam.com/pt_br/ofertas",
+      "prioridade": 1,
+      "metodo": "WebFetch direto (hoje falha com EGRESS_BLOCKED — tentar mesmo assim a cada ciclo, pode ser liberado)"
+    },
+    {
+      "url": "https://passageirodeprimeira.com/categorias/promocoes/",
+      "prioridade": 2,
+      "metodo": "WebFetch direto também falha (EGRESS_BLOCKED). Usar WebSearch com allowed_domains=[\"passageirodeprimeira.com\"] a cada ciclo — funciona e traz título+resumo das promoções mais recentes do site.",
+      "adicionado_em": "2026-08-26",
+      "sempre_checar": true
+    }
+  ]
 }

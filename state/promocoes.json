@@ -2,6 +2,24 @@
   "ultima_checagem": "2026-08-26T00:00:00Z",
   "ativas": [
     {
+      "id": "esfera-latam-pass-25a30pct-1000milhas",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece 25–30% de bônus na transferência de pontos Esfera→LATAM Pass, mais 1.000 milhas bônus na primeira transferência. Milhas extras creditadas em até 30 dias, limite de 300.000 milhas extras por CPF. Validade de 36 meses (ou sem expiração se sócio Categoria Elite).",
+      "bonus_pct_min": 25,
+      "bonus_pct_max": 30,
+      "bonus_fixo_milhas_primeira_vez": 1000,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "múltiplos artigos do mesmo blog ao longo de 2026 com % variando entre 25 e 30 — parece campanha recorrente/rotativa, não uma edição única. Checar % vigente antes de agir.",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-30-de-bonus-na-transferencia-de-pontos-da-esfera-3/",
+        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+      ],
+      "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
+      "ja_notificada": false,
+      "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
+    },
+    {
       "id": "nubank-latam-pass-30pct-1500milhas",
       "tipo": "bonus_transferencia_direcionado",
       "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
