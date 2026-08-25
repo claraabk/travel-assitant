@@ -134,8 +134,10 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    30.000–70.000 econômica, deixando claro que é estimativa até haver
    fonte de resgate real), CPM e qual opção vence.
 4. Se `Latam_PASS.list_latam_miles_purchase_prices` ou
-   `state/latam_miles_price.json` (scraper local) tiver dado certo nas
-   últimas 24h, **e/ou** se a busca na web (passo 4 do monitor leve)
+   `state/latam_miles_price.json` (scraper local — schema e cron em
+   `docs/scraper-local-setup.md`, válido só com `atualizado_em` das
+   últimas 24h) tiver dado certo, **e/ou** se a busca na web (passo 4
+   do monitor leve)
    tiver achado uma promoção de desconto confirmada: comparar o melhor
    CPM disponível (oficial ou promocional) vs. custo de resgate
    estimado e recomendar comprar só se o total (milhas + taxas) ficar
