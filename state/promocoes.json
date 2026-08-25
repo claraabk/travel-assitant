@@ -61,7 +61,14 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
-      "acao_sugerida": "OPORTUNIDADE GRANDE se confirmada: comprar milhas com desconto pode ficar muito mais barato que pagar em dinheiro pela combinação CUZ-CUZ. Antes de comprar: (1) logar no app/site LATAM Pass e confirmar desconto/preço exatos oferecidos para a conta da Clara, (2) confirmar disponibilidade real de resgate (não estimativa) para as datas 07-19/jun/2027, (3) só então decidir. NUNCA comprar sem a Clara confirmar com 'Vai'/'Compra' explícito."
+      "compra_confirmada": {
+        "data": "2026-08-26",
+        "milhas": 5000,
+        "preco_pago_brl": 133,
+        "cpm_real_brl": 26.60,
+        "nota": "Clara confirmou a compra diretamente. CPM real (R$26,60/milheiro) ficou um pouco acima da referência estimada (R$24,50) — provavelmente porque o tier de 5.000 milhas tem desconto/CPM levemente pior que tiers maiores (ver docs/scraper-local-setup.md, schema de tiers). Ainda assim, MUITO abaixo do custo de resgate em dinheiro."
+      },
+      "acao_sugerida": "Já parcialmente aproveitada: Clara comprou 5.000 milhas por R$133 em 26/08/2026 (ver state/saldo.json). Saldo LATAM Pass agora é 5.000 milhas, longe ainda da faixa de resgate estimada (30.000-70.000) para a combinação CUZ-CUZ — avaliar se compensa comprar mais milhas nos tiers maiores (melhor CPM) ou complementar via transferência Nubank (promoção acima, id nubank-latam-pass-30pct-1500milhas)."
     },
     {
       "id": "nomad-8000-milhas-1a-operacao-cambio",
