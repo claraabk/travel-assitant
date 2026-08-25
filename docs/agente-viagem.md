@@ -85,13 +85,24 @@ esperar o dashboard diário.
    (ver `state/config.json.fontes_monitoradas_promocoes`, item com
    `sempre_checar=true`) — todo ciclo, não só quando outras buscas
    falharem. Acesso direto via `WebFetch` dá `EGRESS_BLOCKED`; em vez
-   disso, usar `WebSearch` com `allowed_domains: ["passageirodeprimeira.com"]`
-   e uma query genérica de promoções (ex.: "promoções milhas LATAM Pass
-   Livelo Esfera" + mês/ano atual) — isso funciona e traz título+resumo
-   das promoções mais recentes do site. Tratar como fonte única válida
-   (não precisa de 2ª fonte, mas é blog de terceiros — sinalizar como
-   tal). Extrair só o que for relevante para LATAM Pass (ignorar
-   Smiles/Azul/outros).
+   disso, usar `WebSearch` com `allowed_domains: ["passageirodeprimeira.com"]`.
+   Rodar **as duas** buscas todo ciclo (ver
+   `queries_obrigatorias_por_ciclo` em `state/config.json`), não só
+   transferência:
+   - bônus de **transferência** (ex.: "bônus transferência LATAM Pass
+     Livelo Esfera Nubank")
+   - desconto na **compra direta** de milhas (ex.: "LATAM Pass compra
+     de milhas desconto")
+   Tratar como fonte única válida (não precisa de 2ª fonte, mas é blog
+   de terceiros — sinalizar como tal). Extrair só o que for relevante
+   para LATAM Pass (ignorar Smiles/Azul/outros). Para promoções de
+   compra por perfil de cliente (ex.: desconto maior para
+   Clube/Itaú, menor para "inscritos no programa"), **não presumir
+   automaticamente que a Clara está fora** só porque não tem Clube nem
+   cartão Itaú — a redação dessas promoções às vezes inclui qualquer
+   cadastrado no LATAM Pass num tier mais baixo. Registrar como
+   "elegibilidade incerta, checar no app/site logada" em vez de
+   descartar.
 6. **Gatilho de alerta urgente** (via `PushNotification`, nunca e-mail
    diário — não há relatório diário por e-mail neste fluxo):
    - Queda de preço ≥ `thresholds.queda_preco_pct_alerta_urgente` (15%)

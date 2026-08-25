@@ -41,7 +41,12 @@
       "prioridade": 2,
       "metodo": "WebFetch direto também falha (EGRESS_BLOCKED). Usar WebSearch com allowed_domains=[\"passageirodeprimeira.com\"] a cada ciclo — funciona e traz título+resumo das promoções mais recentes do site.",
       "adicionado_em": "2026-08-26",
-      "sempre_checar": true
+      "sempre_checar": true,
+      "queries_obrigatorias_por_ciclo": [
+        "bônus transferência LATAM Pass Livelo Esfera Nubank (tipo: bônus de transferência)",
+        "LATAM Pass compra de milhas desconto (tipo: desconto na compra direta — não só transferência)"
+      ],
+      "nota": "cobrir os dois tipos de promoção sempre, não só transferência — descontos de compra direta têm sua própria dinâmica (faixas por perfil de cliente, ver state/promocoes.json)"
     }
   ]
 }
