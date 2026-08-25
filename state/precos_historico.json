@@ -7,9 +7,10 @@
     { "id": "CUZ-LIM", "entrada": "CUZ", "saida": "LIM", "descricao": "Open-jaw: entra por Cusco, sai por Lima (requer trecho doméstico LIM-CUZ ou CUZ-LIM à parte)" }
   ],
   "melhor_combinacao_geral": {
-    "id": "LIM-LIM",
-    "preco_total_brl": 4080,
-    "data_checagem": "2026-08-25T00:00:00Z"
+    "id": "CUZ-CUZ",
+    "preco_total_brl": 3895,
+    "data_checagem": "2026-08-26T00:00:00Z",
+    "nota": "Venceu por R$185 vs. LIM-LIM (R$4.080), mas em janela de datas diferente (07-19/jun vs. 20/jun-02/jul) — cada combinação foi otimizada para sua própria janela mais barata dentro de junho/2027, não são as mesmas datas fixas."
   },
   "checagens": {
     "LIM-LIM": [
@@ -36,11 +37,75 @@
           "booking_url": "https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-20%20through%202027-07-02&curr=BRL"
         },
         "media_movel_30_checagens": null,
+        "variacao_pct_vs_media": null,
+        "nota": "não rechecado no ciclo de 26/08 — ciclo atual priorizou preencher as 3 combinações que faltavam"
+      }
+    ],
+    "CUZ-CUZ": [
+      {
+        "data_checagem": "2026-08-26T00:00:00Z",
+        "preco_total_brl": 3895,
+        "moeda": "BRL",
+        "ida": "2027-06-07",
+        "volta": "2027-06-19",
+        "fonte": "fli.search_dates (varredura do mês inteiro) + fli.search_flights (detalhe confirmado)",
+        "detalhe_voo": {
+          "ida": [
+            { "voo": "LA4519", "origem": "REC", "destino": "GRU", "partida": "2027-06-07T18:20:00", "chegada": "2027-06-07T21:40:00", "aeronave": "Airbus A320" },
+            { "voo": "LA8152", "origem": "GRU", "destino": "SCL", "partida": "2027-06-07T23:30:00", "chegada": "2027-06-08T02:50:00", "aeronave": "Airbus A320" },
+            { "voo": "LA2367", "origem": "SCL", "destino": "CUZ", "partida": "2027-06-08T06:10:00", "chegada": "2027-06-08T08:40:00", "aeronave": "Airbus A320" }
+          ],
+          "volta": [
+            { "voo": "LA2366", "origem": "CUZ", "destino": "SCL", "partida": "2027-06-19T09:40:00", "chegada": "2027-06-19T14:00:00", "aeronave": "Airbus A320" },
+            { "voo": "LA714", "origem": "SCL", "destino": "GRU", "partida": "2027-06-19T15:55:00", "chegada": "2027-06-19T20:45:00", "aeronave": "Boeing 787" },
+            { "voo": "LA3382", "origem": "GRU", "destino": "REC", "partida": "2027-06-19T23:30:00", "chegada": "2027-06-20T02:30:00", "aeronave": "Airbus A321" }
+          ],
+          "paradas_ida": 2,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhqEARIKMjAyNy0wNi0wNyIgCgNSRUMSCjIwMjctMDYtMDcaA0dSVSoCTEEyBDQ1MTkiIAoDR1JVEgoyMDI3LTA2LTA3GgNTQ0wqAkxBMgQ4MTUyIiAKA1NDTBIKMjAyNy0wNi0wOBoDQ1VaKgJMQTIEMjM2N2oHCAESA1JFQ3IHCAESA0NVWhqDARIKMjAyNy0wNi0xOSIgCgNDVVoSCjIwMjctMDYtMTkaA1NDTCoCTEEyBDIzNjYiHwoDU0NMEgoyMDI3LTA2LTE5GgNHUlUqAkxBMgM3MTQiIAoDR1JVEgoyMDI3LTA2LTE5GgNSRUMqAkxBMgQzMzgyagcIARIDQ1VacgcIARIDUkVDQAFIAXABggELCP___________wGYAQE&curr=BRL"
+        },
+        "media_movel_30_checagens": null,
         "variacao_pct_vs_media": null
       }
     ],
-    "CUZ-CUZ": [],
-    "LIM-CUZ": [],
-    "CUZ-LIM": []
+    "LIM-CUZ": [
+      {
+        "data_checagem": "2026-08-26T00:00:00Z",
+        "preco_total_brl": 4395,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-20",
+        "volta": "2027-07-02",
+        "composicao": {
+          "rec_para_lim": { "preco_brl": 1958, "data": "2027-06-20" },
+          "domestico_lim_para_cuz": { "preco_brl": 345, "nota": "preço de referência de voo doméstico LATAM Perú, não a data exata do roteiro — precisa reotimizar" },
+          "cuz_para_rec": { "preco_brl": 2092, "data": "2027-07-02" }
+        },
+        "fonte": "fli.search_flights (3 buscas one-way somadas manualmente)",
+        "nota": "usa as mesmas datas-âncora do LIM-LIM só para efeito de comparação — não é a janela ótima própria desta combinação. Ainda perde para CUZ-CUZ e para LIM-LIM.",
+        "media_movel_30_checagens": null,
+        "variacao_pct_vs_media": null
+      }
+    ],
+    "CUZ-LIM": [
+      {
+        "data_checagem": "2026-08-26T00:00:00Z",
+        "preco_total_brl": 4418,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-20",
+        "volta": "2027-07-02",
+        "composicao": {
+          "rec_para_cuz": { "preco_brl": 2023, "data": "2027-06-20" },
+          "domestico_cuz_para_lim": { "preco_brl": 292, "nota": "preço de referência, mesma ressalva do LIM-CUZ" },
+          "lim_para_rec": { "preco_brl": 2103, "data": "2027-07-02" }
+        },
+        "fonte": "fli.search_flights (3 buscas one-way somadas manualmente)",
+        "nota": "mesma ressalva do LIM-CUZ — datas-âncora, não janela ótima própria. É a mais cara das 4 combinações até agora.",
+        "media_movel_30_checagens": null,
+        "variacao_pct_vs_media": null
+      }
+    ]
   }
 }

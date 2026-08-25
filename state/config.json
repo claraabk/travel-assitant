@@ -11,9 +11,10 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-25T00:00:00Z",
+    "ultima_tentativa": "2026-08-26T00:00:00Z",
+    "tentativas_consecutivas_falhas": 3,
     "ultimo_erro": "timeout aguardando seletor da página oficial LATAM Pass (MCP roda em GCP, bloqueado pelo Akamai; scraper local da Clara funciona)",
-    "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir"
+    "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Ainda não criado."
   },
   "roteiro": {
     "fixo": false,

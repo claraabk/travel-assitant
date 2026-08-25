@@ -1,6 +1,48 @@
 {
-  "ultima_checagem": "2026-08-25T00:00:00Z",
+  "ultima_checagem": "2026-08-26T00:00:00Z",
   "ativas": [
+    {
+      "id": "nubank-latam-pass-30pct-1500milhas",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
+      "bonus_pct": 30,
+      "bonus_fixo_milhas_primeira_vez": 1500,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "página oficial não trouxe data de término explícita nesta busca — checar latampass.latam.com/pt_br/promocao/nubank-milhas-extras antes de agir, pode ser campanha corrente e não eterna",
+      "fontes": [
+        "https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras",
+        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-do-nubank/"
+      ],
+      "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
+      "ja_notificada": false,
+      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
+    },
+    {
+      "id": "latam-pass-60pct-desconto-compra-milhas",
+      "tipo": "desconto_compra_direta",
+      "descricao": "\"Últimas horas! LATAM Pass oferece até 60% de desconto na compra de milhas\" — manchete sugere que pode já ter expirado antes desta checagem.",
+      "bonus_pct": null,
+      "desconto_pct": 60,
+      "e_permanente": false,
+      "valido_ate": "desconhecido — só 1 fonte, sem data",
+      "fontes": ["https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/"],
+      "confianca": "baixa — 1 fonte só, sem confirmação de vigência",
+      "ja_notificada": false,
+      "acao_sugerida": "Não reportar como ativa até 2ª fonte confirmar vigência. Checar latampass.latam.com/pt_br/ofertas diretamente no próximo ciclo."
+    },
+    {
+      "id": "nomad-8000-milhas-1a-operacao-cambio",
+      "tipo": "acumulo_parceria",
+      "descricao": "8.000 milhas LATAM Pass na 1ª operação de câmbio pela Nomad, promoção válida até 31/08/2026.",
+      "bonus_pct": null,
+      "e_permanente": false,
+      "valido_ate": "2026-08-31",
+      "fontes": ["citado em busca web agregada de 26/08/2026 — sem link direto isolado para 2ª fonte"],
+      "confianca": "baixa — precisa de 2ª fonte antes de considerar confirmada",
+      "ja_notificada": false,
+      "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Confirmar em 2ª fonte antes de recomendar; prazo termina em poucos dias (31/08)."
+    },
     {
       "id": "modo-latam-pass-nubank",
       "tipo": "conversao_automatica_permanente",
