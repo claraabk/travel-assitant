@@ -20,5 +20,14 @@
     "fixo": false,
     "combinacoes_permitidas": ["LIM-LIM", "CUZ-CUZ", "LIM-CUZ", "CUZ-LIM"],
     "nota": "open-jaw (entrar por um destino e sair pelo outro) é permitido e deve ser comparado contra ida-e-volta simples; ver state/precos_historico.json"
+  },
+  "promocoes_config": {
+    "exigir_2_fontes": false,
+    "nota": "1 fonte confiável já basta para marcar uma promoção como ativa. Preferir sempre https://latampass.latam.com/pt_br/ofertas como fonte primária quando acessível."
+  },
+  "latampass_ofertas_page_status": {
+    "url": "https://latampass.latam.com/pt_br/ofertas",
+    "ultima_tentativa": "2026-08-26T00:00:00Z",
+    "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   }
 }

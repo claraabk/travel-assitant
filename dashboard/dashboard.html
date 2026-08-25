@@ -297,7 +297,7 @@
 
     <div class="card">
       <h3>Vale comprar milhas LATAM Pass?</h3>
-      <div class="note">Ferramenta oficial de preço falhou de novo hoje — 3ª tentativa consecutiva (bloqueio Akamai, conector roda em GCP). Sem <code>state/latam_miles_price.json</code> (scraper local) ainda. Achamos uma manchete de "60% de desconto" na compra direta, mas com só 1 fonte e sem data — não confirmada, não entra na recomendação.</div>
+      <div class="note">Ferramenta oficial de preço falhou de novo hoje — 3ª tentativa consecutiva (bloqueio Akamai, conector roda em GCP). Tentativa de acessar <code>latampass.latam.com/pt_br/ofertas</code> direto também falhou (proxy de rede desta sessão bloqueia o domínio inteiro — <code>EGRESS_BLOCKED</code>, bloqueio diferente do Akamai). Sem <code>state/latam_miles_price.json</code> (scraper local) ainda. Achamos uma manchete de "60% de desconto" na compra direta (1 fonte já basta pela política atual), mas a própria manchete ("Últimas horas!") sugere que pode ter expirado — sem data confirmada, não entra na recomendação de compra.</div>
       <span class="status-tag warn">Indisponível hoje</span>
     </div>
 
@@ -327,7 +327,7 @@
 
       <div class="opp confirmed">
         <div class="opp-title">Nubank → LATAM Pass: 30% de bônus + 1.500 milhas na 1ª transferência</div>
-        <div class="opp-meta">Confirmada em 2 fontes, incluindo página oficial LATAM Pass. Soma com o 10% permanente do Modo LATAM Pass (~40% total). Abaixo do threshold de alerta urgente (60%), por isso não disparou push notification — mas vale considerar junto da avaliação de ativação do Modo LATAM Pass. Validade exata não confirmada — checar página oficial antes de agir.</div>
+        <div class="opp-meta">Fonte oficial LATAM Pass (1 fonte já basta). Soma com o 10% permanente do Modo LATAM Pass (~40% total). Abaixo do threshold de alerta urgente (60%), por isso não disparou push notification — mas vale considerar junto da avaliação de ativação do Modo LATAM Pass. Validade exata não confirmada — checar página oficial antes de agir.</div>
       </div>
 
       <div class="opp low-confidence">
@@ -335,14 +335,14 @@
         <div class="opp-meta">Conversão automática a cada 7 dias + 10% de bônus permanente. Confiança alta (site oficial). Avaliação de ativação: pendente (análise única, não diária) — agora com motivo adicional (promoção acima).</div>
       </div>
 
-      <div class="opp low-confidence">
+      <div class="opp confirmed">
         <div class="opp-title">Nomad: 8.000 milhas na 1ª operação de câmbio (até 31/08/2026)</div>
-        <div class="opp-meta">Só 1 fonte agregada, sem link direto — não confirmada. Exige abrir conta Nomad (baixo esforço, sem gasto recorrente). Prazo curto mas não ≤48h — não disparou alerta urgente.</div>
+        <div class="opp-meta">1 fonte, valor e prazo específicos o suficiente para tratar como ativa. Exige abrir conta Nomad (baixo esforço, sem gasto recorrente). Prazo termina em poucos dias — vale considerar, mesmo não sendo urgente (>48h).</div>
       </div>
 
       <div class="opp low-confidence">
         <div class="opp-title">"60% de desconto" na compra direta de milhas LATAM Pass</div>
-        <div class="opp-meta">Manchete "Últimas horas!" sugere que pode já ter expirado — só 1 fonte, sem data. Não confirmada, não entra na recomendação.</div>
+        <div class="opp-meta">1 fonte, aceita pela política atual, mas a própria manchete ("Últimas horas!") sugere que pode já ter expirado. Sem <code>latampass.latam.com/pt_br/ofertas</code> acessível para confirmar vigência diretamente (EGRESS_BLOCKED nesta sessão) — checar manualmente antes de agir.</div>
       </div>
 
       <div class="opp ignored">

@@ -25,11 +25,11 @@
       "bonus_pct": null,
       "desconto_pct": 60,
       "e_permanente": false,
-      "valido_ate": "desconhecido — só 1 fonte, sem data",
+      "valido_ate": "desconhecido — manchete \"Últimas horas!\" sugere prazo já vencido",
       "fontes": ["https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/"],
-      "confianca": "baixa — 1 fonte só, sem confirmação de vigência",
+      "confianca": "1 fonte (blog de milhas, não site oficial) — tratada como ativa pela política de fonte única, mas a própria manchete indica prazo apertado/vencido",
       "ja_notificada": false,
-      "acao_sugerida": "Não reportar como ativa até 2ª fonte confirmar vigência. Checar latampass.latam.com/pt_br/ofertas diretamente no próximo ciclo."
+      "acao_sugerida": "Reportar como possível oportunidade, mas com ressalva de que pode já ter expirado. Tentar `https://latampass.latam.com/pt_br/ofertas` diretamente no próximo ciclo para confirmar vigência (hoje bloqueado por EGRESS_BLOCKED nesta sessão)."
     },
     {
       "id": "nomad-8000-milhas-1a-operacao-cambio",
@@ -38,10 +38,10 @@
       "bonus_pct": null,
       "e_permanente": false,
       "valido_ate": "2026-08-31",
-      "fontes": ["citado em busca web agregada de 26/08/2026 — sem link direto isolado para 2ª fonte"],
-      "confianca": "baixa — precisa de 2ª fonte antes de considerar confirmada",
+      "fontes": ["busca web agregada de 26/08/2026 — sem link direto isolado, mas conteúdo específico o suficiente (valor exato, prazo exato, parceiro nomeado) para tratar como fonte única aceitável"],
+      "confianca": "1 fonte — aceita pela política de fonte única",
       "ja_notificada": false,
-      "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Confirmar em 2ª fonte antes de recomendar; prazo termina em poucos dias (31/08)."
+      "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Prazo termina em poucos dias (31/08) — vale mencionar no dashboard."
     },
     {
       "id": "modo-latam-pass-nubank",

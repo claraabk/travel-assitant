@@ -59,19 +59,28 @@ esperar o dashboard diário.
    insistir, ler `state/latam_miles_price.json` (escrito por scraper
    local da Clara) se existir e estiver atualizado nas últimas 24h;
    caso contrário seguir sem inventar preço.
-4. **Não depender só da ferramenta de compra direta.** Buscar também na
-   web por promoções de desconto na compra direta de milhas LATAM Pass
-   (ex.: "LATAM Pass compra de milhas desconto promoção" + mês/ano
-   atual) — descontos por perfil Clube/Itaú não se aplicam à Clara
-   (ver `state/perfil.json.elegivel_desconto_30_35pct=false`), mas
-   promoções gerais (sem perfil específico) contam. Exigir 2 fontes
-   concordantes antes de marcar como ativa.
-5. Buscar na web (com pelo menos 2 fontes concordantes antes de marcar
-   como confirmada) bônus de transferência Ultravioleta→LATAM Pass e
-   promoções Livelo/Esfera relevantes para LATAM Pass especificamente
-   (ignorar bônus para outros programas — não se aplicam a esta
-   viagem). Atualizar `state/promocoes.json`, marcando `ja_notificada`
-   para evitar alertar a mesma oportunidade duas vezes.
+4. **Não depender só da ferramenta de compra direta.** Antes de buscar
+   na web, tentar entrar direto em
+   `https://latampass.latam.com/pt_br/ofertas` e iterar pelas
+   promoções listadas lá (fonte primária, prioridade sobre blog de
+   milhas). Se o acesso falhar — hoje falha por dois motivos
+   independentes: o proxy de rede desta sessão bloqueia o domínio
+   (`EGRESS_BLOCKED`) e, mesmo quando acessível, o conector
+   `Latam_PASS` (hospedado em GCP) esbarra no Akamai — cair para busca
+   na web (ex.: "LATAM Pass compra de milhas desconto promoção" +
+   mês/ano atual). Descontos por perfil Clube/Itaú não se aplicam à
+   Clara (ver `state/perfil.json.elegivel_desconto_30_35pct=false`),
+   mas promoções gerais (sem perfil específico) contam. **1 fonte
+   confiável já é suficiente para marcar como ativa** — não é preciso
+   esperar uma 2ª fonte confirmar. Preferir sempre a página oficial da
+   LATAM Pass quando acessível; se a fonte for um blog de terceiros,
+   registrar isso e sinalizar confiança mais baixa, mas ainda reportar.
+5. Buscar (página oficial quando acessível, senão web) bônus de
+   transferência Ultravioleta→LATAM Pass e promoções Livelo/Esfera
+   relevantes para LATAM Pass especificamente (ignorar bônus para
+   outros programas — não se aplicam a esta viagem). 1 fonte já basta
+   para marcar como ativa. Atualizar `state/promocoes.json`, marcando
+   `ja_notificada` para evitar alertar a mesma oportunidade duas vezes.
 6. **Gatilho de alerta urgente** (via `PushNotification`, nunca e-mail
    diário — não há relatório diário por e-mail neste fluxo):
    - Queda de preço ≥ `thresholds.queda_preco_pct_alerta_urgente` (15%)
@@ -135,7 +144,17 @@ site da LATAM diretamente por HTTP a partir do agente para contornar
 isso.
 
 Promoções de desconto na compra de milhas e bônus de transferência
-(Ultravioleta→LATAM Pass, Livelo/Esfera) vêm de busca na web em blogs
-de milhas — exigir 2 fontes concordantes antes de marcar como "ativa";
-caso contrário, marcar como "não confirmada" e sugerir checagem manual
-no app/site oficial.
+(Ultravioleta→LATAM Pass, Livelo/Esfera): tentar primeiro
+`https://latampass.latam.com/pt_br/ofertas` diretamente; se
+inacessível, usar busca web em blogs de milhas. **1 fonte já é
+suficiente** para marcar como "ativa" — não exigir uma 2ª fonte
+concordante. Registrar sempre a fonte e, quando for página oficial vs.
+blog de terceiros, sinalizar isso no campo `confianca` (não como
+bloqueio, só como contexto).
+
+Acesso direto a `latampass.latam.com` a partir desta sessão está
+bloqueado pelo proxy de rede do ambiente (`EGRESS_BLOCKED`) — separado
+do bloqueio Akamai que afeta o conector `Latam_PASS` hospedado em GCP.
+São duas barreiras diferentes; nenhuma das duas o agente resolve
+sozinho. Se em algum ciclo futuro o acesso direto à página de ofertas
+estiver liberado, usar como fonte primária a partir dali.
