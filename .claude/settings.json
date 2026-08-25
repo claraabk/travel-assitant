@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__fli__search_dates",
+      "mcp__fli__search_flights",
+      "mcp__fli__find_airports",
+      "mcp__fli__get_booking_options",
+      "mcp__fli__*",
+      "mcp__Latam_PASS__list_latam_miles_purchase_prices",
+      "mcp__Latam_PASS__get_latam_miles_purchase_price",
+      "mcp__Latam_PASS__*"
+    ]
+  }
+}
