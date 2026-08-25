@@ -12,6 +12,12 @@
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
     "ultima_tentativa": "2026-08-25T00:00:00Z",
-    "ultimo_erro": "timeout aguardando seletor da página oficial LATAM Pass"
+    "ultimo_erro": "timeout aguardando seletor da página oficial LATAM Pass (MCP roda em GCP, bloqueado pelo Akamai; scraper local da Clara funciona)",
+    "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir"
+  },
+  "roteiro": {
+    "fixo": false,
+    "combinacoes_permitidas": ["LIM-LIM", "CUZ-CUZ", "LIM-CUZ", "CUZ-LIM"],
+    "nota": "open-jaw (entrar por um destino e sair pelo outro) é permitido e deve ser comparado contra ida-e-volta simples; ver state/precos_historico.json"
   }
 }

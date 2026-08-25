@@ -268,16 +268,27 @@
   <div class="grid">
 
     <div class="card span2">
-      <h3>Preço LATAM hoje</h3>
+      <h3>Preço LATAM hoje — melhor combinação de roteiro</h3>
       <div class="big-number tabular">R$ 4.080</div>
-      <div class="note">REC ⇄ LIM · ida 20/jun/2027 · volta 02/jul/2027 (12 dias) · menor preço encontrado ao varrer todo o mês de junho/2027</div>
+      <div class="note">Vencedora hoje: <strong>ida e volta só por Lima (LIM-LIM)</strong> · ida 20/jun/2027 · volta 02/jul/2027 (12 dias). Roteiro não é fixo — comparamos 4 combinações a cada ciclo:</div>
+      <div class="table-scroll">
+        <table class="leg-table">
+          <thead><tr><th>Combinação</th><th>Preço</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Ida e volta por Lima (LIM-LIM)</td><td class="tabular">R$ 4.080</td><td><span class="status-tag good">Vencedora hoje</span></td></tr>
+            <tr><td>Ida e volta por Cusco (CUZ-CUZ)</td><td class="tabular">—</td><td><span class="status-tag muted">A checar no próximo ciclo</span></td></tr>
+            <tr><td>Open-jaw: entra Lima, sai Cusco (LIM-CUZ)</td><td class="tabular">—</td><td><span class="status-tag muted">A checar no próximo ciclo</span></td></tr>
+            <tr><td>Open-jaw: entra Cusco, sai Lima (CUZ-LIM)</td><td class="tabular">—</td><td><span class="status-tag muted">A checar no próximo ciclo</span></td></tr>
+          </tbody>
+        </table>
+      </div>
       <div class="status-tag muted">Sem histórico ainda — vs. média chega na 2ª checagem</div>
     </div>
 
     <div class="card">
       <h3>Dinheiro vs. LATAM Pass</h3>
       <div class="note">
-        <strong class="tabular">R$ 4.080</strong> em dinheiro.<br>
+        <strong class="tabular">R$ 4.080</strong> em dinheiro (combinação vencedora).<br>
         Faixa estimada de resgate (longo curso, tabela pública): <strong class="tabular">30.000–70.000</strong> milhas.<br>
         CPM estimado: <strong class="tabular">R$ 5,8 a R$ 13,6</strong> por 1.000 milhas.
       </div>
@@ -286,7 +297,7 @@
 
     <div class="card">
       <h3>Vale comprar milhas LATAM Pass?</h3>
-      <div class="note">Consulta ao preço oficial de compra direta falhou hoje (timeout na página da LATAM). Sem esse dado não há recomendação de compra — o monitor leve tenta de novo em até 6h.</div>
+      <div class="note">Ferramenta oficial de preço falhou hoje (bloqueio Akamai — o conector roda em GCP). Sem <code>state/latam_miles_price.json</code> (scraper local) atualizado ainda e sem promoção de desconto confirmada por 2 fontes na busca web de hoje. Sem recomendação de compra até uma dessas fontes trazer um número real.</div>
       <span class="status-tag warn">Indisponível hoje</span>
     </div>
 
