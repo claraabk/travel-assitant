@@ -30,11 +30,11 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 4249,
+    "preco_total_brl": 4250,
     "dias_lima": 2,
     "dias_cusco": 6,
-    "data_checagem": "2026-08-26T18:55:55Z",
-    "nota": "Primeira checagem das variantes de 2 dias em Lima -- LIM-CUZ x2d (R$4.249) é a mais barata das 4 variantes, R$101 (~2,4%) abaixo da 2ª colocada (CUZ-LIM x2d e x3d, empatadas em R$4.350). Substitui CUZ-LIM x3d (R$4.354) como melhor_combinacao_geral. Queda pequena, não atinge o gatilho de alerta urgente (15%) -- e é 1ª checagem da variante, não uma queda vs. média móvel própria."
+    "data_checagem": "2026-08-26T19:31:00Z",
+    "nota": "Ciclo 19h31: LIM-CUZ x2d (R$4250) segue a mais barata das 4 variantes, R$101 (~2.38%) abaixo da 2ª colocada (CUZ-LIM x2d, R$4351). Sem mudança de vencedora vs. ciclo anterior (18h55). Variação de preço mínima (+1 BRL em algumas pernas), não atinge o gatilho de alerta urgente (15%)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -618,6 +618,58 @@
         "media_movel_30_checagens": 4355,
         "variacao_pct_vs_media": -0.09,
         "nota": "Refresh da variante 3 dias em Lima (mesmas datas-âncora do checkpoint de 27/08). Preço estável vs. checagem anterior (-0,09%), sem gatilho de alerta."
+      },
+      {
+        "data_checagem": "2026-08-26T19:31:00Z",
+        "preco_total_brl": 4250,
+        "moeda": "BRL",
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "data": "2027-06-12"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 1947,
+            "data": "2027-06-18"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4249.0,
+        "variacao_pct_vs_media": 0.02,
+        "nota": "Ciclo monitor leve 26/08 (19h31). Preço estável vs. checagem anterior (+1 BRL na volta CUZ->REC), sem gatilho de alerta."
+      },
+      {
+        "data_checagem": "2026-08-26T19:31:00Z",
+        "preco_total_brl": 4352,
+        "moeda": "BRL",
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "data": "2027-06-13"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 2049,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4353.0,
+        "variacao_pct_vs_media": -0.02,
+        "nota": "Ciclo monitor leve 26/08 (19h31). Preço estável vs. checagem anterior (+1 BRL na volta CUZ->REC), sem gatilho de alerta."
       }
     ],
     "CUZ-LIM": [
@@ -803,6 +855,58 @@
         "media_movel_30_checagens": 4354,
         "variacao_pct_vs_media": -0.09,
         "nota": "Refresh da variante 3 dias em Lima (mesmas datas-âncora do checkpoint de 27/08). Preço estável vs. checagem anterior (-0,09%), sem gatilho de alerta. Perdeu o posto de melhor_combinacao_geral para LIM-CUZ x2d nesta checagem."
+      },
+      {
+        "data_checagem": "2026-08-26T19:31:00Z",
+        "preco_total_brl": 4351,
+        "moeda": "BRL",
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 2022,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 310,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2019,
+            "data": "2027-06-18"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4350.0,
+        "variacao_pct_vs_media": 0.02,
+        "nota": "Ciclo monitor leve 26/08 (19h31). Preço estável vs. checagem anterior (+1 BRL na volta LIM->REC), sem gatilho de alerta."
+      },
+      {
+        "data_checagem": "2026-08-26T19:31:00Z",
+        "preco_total_brl": 4351,
+        "moeda": "BRL",
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 2022,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 310,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2019,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4352.0,
+        "variacao_pct_vs_media": -0.02,
+        "nota": "Ciclo monitor leve 26/08 (19h31). Preço estável vs. checagem anterior (+1 BRL na volta LIM->REC), sem gatilho de alerta."
       }
     ]
   }

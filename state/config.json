@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-26T18:55:55Z",
-    "tentativas_consecutivas_falhas": 6,
+    "ultima_tentativa": "2026-08-26T19:31:00Z",
+    "tentativas_consecutivas_falhas": 7,
     "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-26T18:55:55Z",
-    "resultado": "fli.search_dates e fli.search_flights funcionaram normalmente neste ciclo (9 buscas one-way em BRL, todas com sucesso) — conector operacional de novo, sem precisar de fallback Kiwi. Usado para completar as 4 variantes (LIM-CUZ x2d/x3d, CUZ-LIM x2d/x3d) na janela jun/2027, airlines=[LA].",
-    "nota": "indisponibilidade do ciclo de 26/08 13h (0 resultados até em rota doméstica trivial) não se repetiu neste ciclo — parece ter sido intermitência pontual do conector, não um problema persistente."
+    "ultima_tentativa": "2026-08-26T19:31:00Z",
+    "resultado": "fli.search_flights funcionou normalmente neste ciclo (9 buscas one-way em BRL, todas com sucesso, LA confirmado em todas as pernas) — usado para atualizar as 4 variantes (LIM-CUZ x2d/x3d, CUZ-LIM x2d/x3d) na janela jun/2027, airlines=[LA].",
+    "nota": "Preços praticamente estáveis vs. ciclo anterior (18h55, ~31min antes) — variação de +1 BRL em algumas pernas de volta, sem gatilho de alerta."
   },
   "roteiro": {
     "fixo": false,
