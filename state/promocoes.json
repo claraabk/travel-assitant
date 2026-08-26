@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-25T18:54:17Z",
+  "ultima_checagem": "2026-08-26T15:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -17,6 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-08-26T15:00:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 25-30% Esfera→LATAM Pass ativa/recorrente; nenhuma edição com % ≥60% encontrada.",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -34,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %.",
+      "ultima_reconfirmacao": "2026-08-26T15:00:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -46,7 +47,7 @@
       "milheiro_referencia_brl": 24.50,
       "e_permanente": false,
       "recorrente": true,
-      "valido_ate": "não confirmado — Clara encontrou a oferta ativa no navegador em 26/08/2026, mas a data exata de término não veio no resumo de busca",
+      "valido_ate": "2026-08-28 (sexta-feira) — confirmado via WebSearch (passageirodeprimeira.com) no ciclo de 26/08/2026",
       "elegibilidade_clara": "PROVAVELMENTE ELEGÍVEL para o tier de 62% — o texto da promoção diz explicitamente que o desconto vale para TODOS os clientes LATAM Pass que comprarem pelo app, não só Clube/Itaú (esse último tier dá 65%, 3 p.p. a mais). Isso contradiz a suposição original do perfil ('não elegível aos descontos de 30-35%') — atualizar state/perfil.json.elegivel_desconto_30_35pct para refletir que HÁ um tier geral aplicável.",
       "impacto_estimado": {
         "combinacao_referencia": "CUZ-CUZ, R$3.895 em dinheiro",
@@ -62,7 +63,7 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de desconto na compra direta ativa/recorrente (edições de 60-66% no histórico do blog); já notificada anteriormente (ja_notificada=true), sem novo alerta.",
+      "ultima_reconfirmacao": "2026-08-26T15:00:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual confirma a mesma campanha ainda ativa: até 65% para cartão LATAM Pass Itaú (milheiro R$24,50), válida até sexta-feira 28/08/2026, limite 350.000 milhas. Mesma promoção já notificada (ja_notificada=true), sem novo alerta — a oferta não é nova, só segue rodando.",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
