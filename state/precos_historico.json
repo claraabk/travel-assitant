@@ -29,12 +29,12 @@
     }
   ],
   "melhor_combinacao_geral": {
-    "id": "CUZ-LIM",
-    "preco_total_brl": 4354,
+    "id": "LIM-CUZ",
+    "preco_total_brl": 4249,
+    "dias_lima": 2,
     "dias_cusco": 6,
-    "dias_lima": 3,
-    "data_checagem": "2026-08-27T00:00:00Z",
-    "nota": "Primeira checagem no modelo novo (visita Lima E Cusco). CUZ-LIM (R$4.354) e LIM-CUZ (R$4.355) praticamente empatados -- diferença de R$1. Variantes de 2 dias em Lima ainda não testadas (próximo ciclo completa). LIM-LIM/CUZ-CUZ descontinuadas, não comparam mais."
+    "data_checagem": "2026-08-26T18:55:55Z",
+    "nota": "Primeira checagem das variantes de 2 dias em Lima -- LIM-CUZ x2d (R$4.249) é a mais barata das 4 variantes, R$101 (~2,4%) abaixo da 2ª colocada (CUZ-LIM x2d e x3d, empatadas em R$4.350). Substitui CUZ-LIM x3d (R$4.354) como melhor_combinacao_geral. Queda pequena, não atinge o gatilho de alerta urgente (15%) -- e é 1ª checagem da variante, não uma queda vs. média móvel própria."
   },
   "checagens": {
     "LIM-LIM": [
@@ -566,6 +566,58 @@
         "fonte": "fli.search_flights (3 one-way somados) -- primeira checagem no modelo novo (visita os dois destinos)",
         "todas_operadas_por": "LATAM (LA)",
         "nota": "Modelo novo (26/08/2026): Clara quer visitar Lima E Cusco, não um só. Substitui as estimativas antigas de LIM-CUZ/CUZ-LIM (que usavam datas-âncora de 12 dias, não a divisão 6+2/3 dias)."
+      },
+      {
+        "data_checagem": "2026-08-26T18:55:55Z",
+        "preco_total_brl": 4249,
+        "moeda": "BRL",
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "data": "2027-06-12"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 1946,
+            "data": "2027-06-18"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": null,
+        "variacao_pct_vs_media": null,
+        "nota": "Primeira checagem da variante 2 dias em Lima -- menor preço entre as 4 variantes até agora (vira melhor_combinacao_geral). Sem média histórica própria ainda para calcular variação."
+      },
+      {
+        "data_checagem": "2026-08-26T18:55:55Z",
+        "preco_total_brl": 4351,
+        "moeda": "BRL",
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "data": "2027-06-13"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 2048,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4355,
+        "variacao_pct_vs_media": -0.09,
+        "nota": "Refresh da variante 3 dias em Lima (mesmas datas-âncora do checkpoint de 27/08). Preço estável vs. checagem anterior (-0,09%), sem gatilho de alerta."
       }
     ],
     "CUZ-LIM": [
@@ -699,6 +751,58 @@
         "fonte": "fli.search_flights (3 one-way somados) -- primeira checagem no modelo novo (visita os dois destinos)",
         "todas_operadas_por": "LATAM (LA)",
         "nota": "Modelo novo (26/08/2026): Clara quer visitar Lima E Cusco, não um só. Substitui as estimativas antigas de LIM-CUZ/CUZ-LIM (que usavam datas-âncora de 12 dias, não a divisão 6+2/3 dias)."
+      },
+      {
+        "data_checagem": "2026-08-26T18:55:55Z",
+        "preco_total_brl": 4350,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 2022,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 310,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2018,
+            "data": "2027-06-18"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": null,
+        "variacao_pct_vs_media": null,
+        "nota": "Primeira checagem da variante 2 dias em Lima -- empatada com CUZ-LIM x3d como 2ª colocada geral (R$101 acima de LIM-CUZ x2d, novo melhor_combinacao_geral). Sem média histórica própria ainda."
+      },
+      {
+        "data_checagem": "2026-08-26T18:55:55Z",
+        "preco_total_brl": 4350,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 2022,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 310,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2018,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados)",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 4354,
+        "variacao_pct_vs_media": -0.09,
+        "nota": "Refresh da variante 3 dias em Lima (mesmas datas-âncora do checkpoint de 27/08). Preço estável vs. checagem anterior (-0,09%), sem gatilho de alerta. Perdeu o posto de melhor_combinacao_geral para LIM-CUZ x2d nesta checagem."
       }
     ]
   }
