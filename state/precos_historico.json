@@ -7,10 +7,10 @@
     { "id": "CUZ-LIM", "entrada": "CUZ", "saida": "LIM", "descricao": "Open-jaw: entra por Cusco, sai por Lima (requer trecho doméstico LIM-CUZ ou CUZ-LIM à parte)" }
   ],
   "melhor_combinacao_geral": {
-    "id": "CUZ-CUZ",
-    "preco_total_brl": 3828,
-    "data_checagem": "2026-08-25T18:54:17Z",
-    "nota": "Venceu por R$72 vs. LIM-LIM (R$3.900), mas em janela de datas diferente (02-14/jun vs. 06-18/jun) — cada combinação foi otimizada para sua própria janela mais barata dentro de junho/2027, não são as mesmas datas fixas. Ambas as combinações open-jaw (LIM-CUZ ~R$4.245 e CUZ-LIM ~R$4.263, estimativas) ficam bem atrás."
+    "id": "LIM-LIM",
+    "preco_total_brl": 3898,
+    "data_checagem": "2026-08-26T21:10:00Z",
+    "nota": "Virada de vencedora nesta checagem: LIM-LIM caiu para R$3.898 (14/jun–26/jun) enquanto CUZ-CUZ subiu para R$4.072 (20/jun–02/jul) — diferença de R$174 a favor de LIM-LIM. CUZ-CUZ era a vencedora desde 25/08/2026; a virada veio de uma alta de ~6,4% em CUZ-CUZ nesta janela específica de datas, não de uma queda forte em LIM-LIM (variação de apenas -1,55% vs. média própria — abaixo do gatilho de alerta urgente de 15%). Ambas as combinações open-jaw seguem bem atrás: LIM-CUZ ~R$4.242 e CUZ-LIM ~R$4.347 (estimativas, 3 trechos one-way somados)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -64,6 +64,23 @@
         "media_movel_30_checagens": 3990,
         "variacao_pct_vs_media": -2.26,
         "nota": "queda de ~2,3% vs. média móvel — abaixo do gatilho de alerta urgente (15%)"
+      },
+      {
+        "data_checagem": "2026-08-26T21:10:00Z",
+        "preco_total_brl": 3898,
+        "moeda": "BRL",
+        "ida": "2027-06-14",
+        "volta": "2027-06-26",
+        "fonte": "fli.search_dates (varredura do mês inteiro, airlines=[LA])",
+        "detalhe_voo": {
+          "nota_indisponibilidade": "fli.search_flights e fli.get_booking_options falharam nesta checagem inteira (outage transitório do conector — a mesma query que tinha funcionado minutos antes no início deste ciclo passou a retornar 0 resultados; tentativas repetidas, inclusive em datas já confirmadas em ciclos anteriores). Preço e datas ficam confirmados via fli.search_dates (que continuou funcionando normalmente), mas o itinerário voo-a-voo não pôde ser reconfirmado neste ciclo — reconfirmar no próximo ciclo.",
+          "rota_tipica_historica": "Nas duas checagens anteriores desta combinação (ida 20/06 e 06/06) a rota foi sempre REC→GRU→LIM na ida (LA3375 + LA2429, 1 parada em GRU) e volta via BSB/FOR com 2 paradas — ver entradas anteriores. Presumir padrão semelhante até reconfirmação, sem tratar como certo para as datas 14/06–26/06 específicas.",
+          "todas_operadas_por": "LATAM (LA) — confirmado nas checagens anteriores desta combinação",
+          "booking_url": "https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-14%20through%202027-06-26&curr=BRL"
+        },
+        "media_movel_30_checagens": 3959.33,
+        "variacao_pct_vs_media": -1.55,
+        "nota": "nova vencedora geral nesta checagem (ver melhor_combinacao_geral) — queda de apenas 1,55% vs. média própria, abaixo do gatilho de alerta urgente (15%). Virou vencedora porque CUZ-CUZ subiu nesta janela, não porque esta combinação caiu forte."
       }
     ],
     "CUZ-CUZ": [
@@ -119,6 +136,22 @@
         "media_movel_30_checagens": 3861.5,
         "variacao_pct_vs_media": -0.87,
         "nota": "continua a combinação mais barata (melhor_combinacao_geral). Queda de ~0,9% vs. média móvel — abaixo do gatilho de alerta urgente (15%)"
+      },
+      {
+        "data_checagem": "2026-08-26T21:10:00Z",
+        "preco_total_brl": 4072,
+        "moeda": "BRL",
+        "ida": "2027-06-20",
+        "volta": "2027-07-02",
+        "fonte": "fli.search_dates (varredura do mês inteiro, airlines=[LA])",
+        "detalhe_voo": {
+          "nota_indisponibilidade": "mesma falha de fli.search_flights/get_booking_options desta checagem (ver nota em LIM-LIM) — itinerário detalhado não pôde ser reconfirmado neste ciclo.",
+          "rota_tipica_historica": "Nas duas checagens anteriores (ida 07/06 e 02/06), rota via GRU→SCL→CUZ (2 paradas) na ida e CUZ→SCL→GRU→REC (2 paradas) na volta, sempre LATAM (LA).",
+          "booking_url": "https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-20%20through%202027-07-02&curr=BRL"
+        },
+        "media_movel_30_checagens": 3931.67,
+        "variacao_pct_vs_media": 3.57,
+        "nota": "alta de ~6,4% vs. a checagem anterior (3828→4072) nesta janela de datas — perdeu a posição de vencedora geral para LIM-LIM nesta checagem. O gatilho de alerta urgente é só para quedas de preço, então uma alta não dispara notificação."
       }
     ],
     "LIM-CUZ": [
@@ -155,6 +188,23 @@
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (não são datas fixas âncora). Ainda perde para CUZ-CUZ e para LIM-LIM.",
         "media_movel_30_checagens": 4320,
         "variacao_pct_vs_media": -1.74
+      },
+      {
+        "data_checagem": "2026-08-26T21:10:00Z",
+        "preco_total_brl": 4242,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-24",
+        "volta": "2027-06-06",
+        "composicao": {
+          "rec_para_lim": { "preco_brl": 1953, "data": "2027-06-24" },
+          "domestico_lim_para_cuz": { "preco_brl": 345, "data_referencia": "2027-06-15", "nota": "voo LA2344, LIM 04:50→CUZ 06:10 — preço de referência do trecho doméstico, não a data exata do roteiro" },
+          "cuz_para_rec": { "preco_brl": 1944, "data": "2027-06-06" }
+        },
+        "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
+        "media_movel_30_checagens": 4294,
+        "variacao_pct_vs_media": -1.21,
+        "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 de forma independente — nesta checagem isso produziu datas cronologicamente inconsistentes (ida 24/06 depois da volta 06/06), sinal de que a combinação precisa ser reotimizada como roteiro único antes de virar candidata real; total tratado como referência/estimativa de piso, não itinerário reservável. Ainda perde para LIM-LIM (nova vencedora) e para CUZ-CUZ."
       }
     ],
     "CUZ-LIM": [
@@ -191,6 +241,23 @@
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027. Continua a mais cara das 4 combinações.",
         "media_movel_30_checagens": 4340.5,
         "variacao_pct_vs_media": -1.79
+      },
+      {
+        "data_checagem": "2026-08-26T21:10:00Z",
+        "preco_total_brl": 4347,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-11",
+        "volta": "2027-06-07",
+        "composicao": {
+          "rec_para_cuz": { "preco_brl": 2022, "data": "2027-06-11" },
+          "domestico_cuz_para_lim": { "preco_brl": 310, "data_referencia": "2027-06-15", "nota": "voo LA2222, CUZ 00:05→LIM 01:35 — preço de referência do trecho doméstico, não a data exata do roteiro" },
+          "lim_para_rec": { "preco_brl": 2015, "data": "2027-06-07" }
+        },
+        "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
+        "media_movel_30_checagens": 4342.67,
+        "variacao_pct_vs_media": 0.10,
+        "nota": "mesma ressalva de datas cronologicamente inconsistentes do LIM-CUZ (ida 11/06 depois da volta 07/06) — total tratado como referência, não itinerário reservável. Continua a mais cara das 4 combinações."
       }
     ]
   }

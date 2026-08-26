@@ -11,11 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-25T18:54:17Z",
-    "tentativas_consecutivas_falhas": 4,
+    "ultima_tentativa": "2026-08-26T21:10:00Z",
+    "tentativas_consecutivas_falhas": 5,
     "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json não existe neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json ainda não existe neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
+  },
+  "fli_tool_status": {
+    "search_dates": "OK neste ciclo — usado para preço das 4 combinações (ver state/precos_historico.json).",
+    "search_flights_e_get_booking_options": "FALHA neste ciclo — outage transitório: retornaram 0 resultados repetidamente (5 tentativas), inclusive para uma query (REC-LIM 06/06, CUZ-LIM doméstico) que tinha funcionado com sucesso minutos antes no mesmo ciclo. Itinerário voo-a-voo (número de voo, horários, aeronave) das combinações vencedoras não pôde ser reconfirmado nesta execução — reconfirmar no próximo ciclo.",
+    "ultima_tentativa": "2026-08-26T21:10:00Z"
   },
   "roteiro": {
     "fixo": false,
@@ -28,7 +33,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-08-25T18:54:17Z",
+    "ultima_tentativa": "2026-08-26T21:10:00Z",
     "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [

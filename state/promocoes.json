@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-25T18:54:17Z",
+  "ultima_checagem": "2026-08-26T21:10:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -34,7 +34,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %.",
+      "ultima_reconfirmacao": "2026-08-26T21:10:00Z — WebSearch (passageirodeprimeira.com) deste ciclo segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente (mesma % encontrada em ciclos anteriores); nenhuma mudança.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -60,9 +60,9 @@
         "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
         "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
       ],
-      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
+      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo em variações da regra de elegibilidade); média para o preço exato, o tier geral e a data de término (não confirmados) — ver ressalva de 26/08 abaixo sobre divergência entre artigos quanto ao % do tier geral",
       "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-25T18:54:17Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de desconto na compra direta ativa/recorrente (edições de 60-66% no histórico do blog); já notificada anteriormente (ja_notificada=true), sem novo alerta.",
+      "ultima_reconfirmacao": "2026-08-26T21:10:00Z — WebSearch (passageirodeprimeira.com) deste ciclo segue mostrando campanha de desconto na compra direta ativa/recorrente (edições de 55-66% no histórico do blog); já notificada anteriormente (ja_notificada=true), sem novo alerta. NOVA RESSALVA: uma busca mais específica hoje trouxe um artigo dizendo que o tier mais alto (60-65%) é exclusivo de portadores do cartão LATAM Pass Itaú, e o tier geral para clientes/Clube LATAM Pass sem esse cartão seria de 55% (não 62% como registrado antes) — os artigos do blog divergem entre edições quanto ao % exato do tier geral (variação observada: 55% a 62% em edições diferentes ao longo de 2026). A mecânica de 'existe tier geral sem exigir Itaú' se mantém consistente entre os artigos, só o % varia — manter elegibilidade_clara como 'provavelmente elegível a algum desconto geral', mas tratar o % exato como incerto até checar logada no app/site, conforme já indicado.",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
