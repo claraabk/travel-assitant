@@ -39,6 +39,24 @@
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
+      "id": "livelo-latam-pass-25pct-recorrente",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece bônus de transferência de pontos Livelo→LATAM Pass. Múltiplos artigos do blog ao longo de 2025/2026 (\"Só hoje\", \"Últimas horas\", \"Último dia\") confirmam 25% de bônus como o valor recorrente dessa campanha — parece ser um formato de campanha relâmpago que se repete periodicamente, não uma oferta permanente.",
+      "bonus_pct": 25,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "a resposta sintetizada da busca desta vez mencionou \"até 35%\" para Livelo em agosto/2026, mas nenhum título de artigo retornado confirma 35% — todos os títulos batidos mostram 25%. Tratando 25% como o valor confirmado e sinalizando 35% como não confirmado (possível erro de síntese do resumo de busca); checar no app antes de transferir.",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-incluindo-itau-e-esfera/",
+        "https://passageirodeprimeira.com/so-hoje-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo-2/",
+        "https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo/",
+        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+      ],
+      "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única, mas valor exato (25% vs. 35% mencionado na síntese) precisa reconfirmação",
+      "ja_notificada": false,
+      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
+    },
+    {
       "id": "latam-pass-desconto-compra-milhas-por-perfil",
       "tipo": "desconto_compra_direta",
       "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Edição mais recente encontrada (indicada pela Clara, vigente no navegador dela em 26/08/2026): 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app — sem exigir Clube nem cartão Itaú. Milheiro a partir de ~R$24,50 numa edição citada. Limite típico de 350.000 milhas, parcelável em até 10x sem juros (Elo/Mastercard/Visa). Milhas creditadas em até 48h (geralmente imediato).",

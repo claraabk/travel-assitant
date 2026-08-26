@@ -17,6 +17,11 @@
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
+  "fli_connector_status_ciclo_atual": {
+    "ultima_tentativa": "2026-08-26T13:05:13Z",
+    "resultado": "fli.search_dates e fli.search_flights retornaram 0 resultados para todas as chamadas deste ciclo, inclusive para uma rota doméstica trivial de teste (GRU-GIG, data próxima) — indica indisponibilidade do conector, não ausência de dados para as datas de jun/2027. Usado Kiwi.com como fallback (conforme lista de conectores em docs/agente-viagem.md: fli/Kiwi/Expedia/lastminute) para todas as 4 combinações deste ciclo.",
+    "nota": "reconfirmar com fli no próximo ciclo assim que voltar, já que os preços via Kiwi deste ciclo subiram bastante vs. histórico do fli (ver state/precos_historico.json.melhor_combinacao_geral.nota) e não são diretamente comparáveis."
+  },
   "roteiro": {
     "fixo": false,
     "combinacoes_permitidas": ["LIM-LIM", "CUZ-CUZ", "LIM-CUZ", "CUZ-LIM"],

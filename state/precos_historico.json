@@ -10,7 +10,7 @@
     "id": "CUZ-CUZ",
     "preco_total_brl": 4007,
     "data_checagem": "2026-08-26T15:00:00Z",
-    "nota": "Continua vencendo, mas com alta desde o ciclo anterior (R$3.828 → R$4.007). Vence por R$72 vs. LIM-LIM (R$4.079), em janelas de datas diferentes (25/06–07/07 vs. 22/06–04/07) — cada combinação usa sua própria janela mais barata dentro de junho/2027, não são as mesmas datas fixas. Ambas as combinações open-jaw (LIM-CUZ ~R$4.247 e CUZ-LIM ~R$4.265, estimativas) seguem bem atrás."
+    "nota": "Continua vencendo (CUZ-CUZ, R$4.007), mas com alta desde o ciclo anterior (R$3.828 → R$4.007). Vence por R$72 vs. LIM-LIM (R$4.079), ambos via fli, mesma metodologia do histórico. Dois ciclos rodaram quase simultaneamente no mesmo dia: este (via fli, 15h) e outro logo antes/depois (via Kiwi.com, ~13h05, porque fli estava indisponível naquele momento) — o ciclo via Kiwi encontrou preços bem mais altos e uniformemente inflacionados nas 4 combinações (LIM-LIM R$4.319, CUZ-CUZ R$5.130, LIM-CUZ R$4.592, CUZ-LIM R$5.536, logs abaixo). Como a alta apareceu ao mesmo tempo nas 4 combinações via uma fonte diferente (não concentrada numa rota específica), é mais provável refletir diferença de agregador/fonte do que um movimento real de mercado — mantendo CUZ-CUZ (leitura fli, mais consistente com o histórico) como melhor_combinacao_geral e guardando os números do Kiwi só como referência cruzada nos logs. Reavaliar se a alta persistir em ciclos futuros com fli disponível."
   },
   "checagens": {
     "LIM-LIM": [
@@ -76,6 +76,31 @@
         "media_movel_30_checagens": 3990,
         "variacao_pct_vs_media": 2.23,
         "nota": "alta de ~2,2% vs. média móvel — sem gatilho de alerta (só dispara em quedas ≥15%)"
+      },
+      {
+        "data_checagem": "2026-08-26T13:05:13Z",
+        "preco_total_brl": 4319,
+        "moeda": "BRL",
+        "ida": "2027-06-02",
+        "volta": "2027-06-15",
+        "fonte": "Kiwi.com search-flight (round trip, select_airlines=LA) — fli indisponível para esta execução (search_dates/search_flights retornaram vazio até para rotas domésticas triviais como GRU-GIG), usado Kiwi como fallback conforme docs/agente-viagem.md. Nota: um outro ciclo rodando quase ao mesmo tempo (data_checagem 2026-08-26T15:00:00Z acima) conseguiu usar fli normalmente com preços bem mais baixos — ver caveat em melhor_combinacao_geral.",
+        "detalhe_voo": {
+          "ida": [
+            { "voo": "LA3677", "origem": "REC", "destino": "GRU", "partida": "2027-06-02T16:15:00", "chegada": "2027-06-02T19:35:00" },
+            { "voo": "LA2934", "origem": "GRU", "destino": "LIM", "partida": "2027-06-02T21:40:00", "chegada": "2027-06-03T01:10:00" }
+          ],
+          "volta": [
+            { "voo": "LA8005", "origem": "LIM", "destino": "GRU", "partida": "2027-06-15T00:30:00", "chegada": "2027-06-15T07:20:00" },
+            { "voo": "LA3380", "origem": "GRU", "destino": "REC", "partida": "2027-06-15T09:35:00", "chegada": "2027-06-15T12:40:00" }
+          ],
+          "paradas_ida": 1,
+          "paradas_volta": 1,
+          "todas_operadas_por": "LATAM (LA)",
+          "booking_url": "https://kiwi.com/u/pht5fc"
+        },
+        "media_movel_30_checagens": 4094.5,
+        "variacao_pct_vs_media": 5.48,
+        "nota": "alta de ~5,5% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta (só quedas ≥15%). Registrado como referência cruzada; melhor_combinacao_geral usa a leitura via fli deste ciclo, não esta."
       }
     ],
     "CUZ-CUZ": [
@@ -143,6 +168,33 @@
         "media_movel_30_checagens": 3861.5,
         "variacao_pct_vs_media": 3.77,
         "nota": "continua a combinação mais barata (melhor_combinacao_geral), mas com alta de ~3,8% vs. média móvel — sem gatilho de alerta"
+      },
+      {
+        "data_checagem": "2026-08-26T13:05:13Z",
+        "preco_total_brl": 5130,
+        "moeda": "BRL",
+        "ida": "2027-06-02",
+        "volta": "2027-06-15",
+        "fonte": "Kiwi.com search-flight (round trip, select_airlines=LA) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
+        "detalhe_voo": {
+          "ida": [
+            { "voo": "LA3375", "origem": "REC", "destino": "GRU", "partida": "2027-06-02T02:45:00", "chegada": "2027-06-02T06:00:00" },
+            { "voo": "LA2429", "origem": "GRU", "destino": "LIM", "partida": "2027-06-02T08:15:00", "chegada": "2027-06-02T11:25:00" },
+            { "voo": "LA2232", "origem": "LIM", "destino": "CUZ", "partida": "2027-06-02T13:55:00", "chegada": "2027-06-02T15:20:00" }
+          ],
+          "volta": [
+            { "voo": "LA2167", "origem": "CUZ", "destino": "LIM", "partida": "2027-06-15T05:00:00", "chegada": "2027-06-15T06:30:00" },
+            { "voo": "LA2424", "origem": "LIM", "destino": "GRU", "partida": "2027-06-15T09:20:00", "chegada": "2027-06-15T16:15:00" },
+            { "voo": "LA3376", "origem": "GRU", "destino": "REC", "partida": "2027-06-15T17:30:00", "chegada": "2027-06-15T20:30:00" }
+          ],
+          "paradas_ida": 2,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "booking_url": "https://kiwi.com/u/nqz4jc"
+        },
+        "media_movel_30_checagens": 4215.0,
+        "variacao_pct_vs_media": 21.71,
+        "nota": "alta acentuada de ~21,7% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta (regra é só para quedas ≥15%). Registrado como referência cruzada; melhor_combinacao_geral usa a leitura via fli deste ciclo (CUZ-CUZ segue líder a R$4.007), não esta."
       }
     ],
     "LIM-CUZ": [
@@ -194,6 +246,23 @@
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (não são datas fixas âncora — as datas dos 3 trechos não formam um roteiro sequencial factível ainda, precisa reotimizar). Ainda perde para CUZ-CUZ e LIM-LIM.",
         "media_movel_30_checagens": 4320,
         "variacao_pct_vs_media": -1.69
+      },
+      {
+        "data_checagem": "2026-08-26T13:05:13Z",
+        "preco_total_brl": 4592,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-02",
+        "volta": "2027-06-15",
+        "composicao": {
+          "rec_para_lim": { "preco_brl": 2141, "data": "2027-06-02", "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$4.319) menos o one-way real LIM→REC (R$2.178)" },
+          "domestico_lim_para_cuz": { "preco_brl": 358, "data": "2027-06-05", "voo": "LA2166 23:40-01:00", "nota": "tarifa one-way real LA mais barata do mês (Kiwi), não necessariamente a data ótima de conexão com o ida/volta escolhidos" },
+          "cuz_para_rec": { "preco_brl": 2093, "data": "2027-06-15", "voo": "LA2366/LA714/LA3382 (via SCL, GRU)" }
+        },
+        "fonte": "Kiwi.com search-flight (pernas one-way + round trip para estimar REC→LIM) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
+        "media_movel_30_checagens": 4369.75,
+        "variacao_pct_vs_media": 5.09,
+        "nota": "alta de ~5,1% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta. Registrado como referência cruzada; metodologia de estimativa do trecho REC→LIM mudou neste ciclo (subtração de round-trip, não soma de one-ways puros) porque a LA não vendeu tarifa one-way pura nesse trecho no Kiwi hoje."
       }
     ],
     "CUZ-LIM": [
@@ -245,6 +314,23 @@
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (datas ainda não formam roteiro sequencial factível, precisa reotimizar). Continua a mais cara das 4 combinações.",
         "media_movel_30_checagens": 4340.5,
         "variacao_pct_vs_media": -1.74
+      },
+      {
+        "data_checagem": "2026-08-26T13:05:13Z",
+        "preco_total_brl": 5536,
+        "moeda": "BRL",
+        "estimativa": true,
+        "ida": "2027-06-02",
+        "volta": "2027-06-15",
+        "composicao": {
+          "rec_para_cuz": { "preco_brl": 3037, "data": "2027-06-02", "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$5.130) menos o one-way real CUZ→REC (R$2.093)" },
+          "domestico_cuz_para_lim": { "preco_brl": 321, "data": "2027-06-05", "voo": "LA2293 08:35-10:05", "nota": "tarifa one-way real LA mais barata do mês (Kiwi), mesma ressalva do LIM-CUZ sobre data de conexão" },
+          "lim_para_rec": { "preco_brl": 2178, "data": "2027-06-15", "voo": "LA8005/LA3380 (via GRU)" }
+        },
+        "fonte": "Kiwi.com search-flight (pernas one-way + round trip para estimar REC→CUZ) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
+        "media_movel_30_checagens": 4620.5,
+        "variacao_pct_vs_media": 19.81,
+        "nota": "alta de ~19,8% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta. Continua a mais cara das 4 combinações. Registrado como referência cruzada, mesma ressalva de metodologia e fonte do LIM-CUZ."
       }
     ]
   }
