@@ -24,8 +24,13 @@
   },
   "roteiro": {
     "fixo": false,
-    "combinacoes_permitidas": ["LIM-LIM", "CUZ-CUZ", "LIM-CUZ", "CUZ-LIM"],
-    "nota": "open-jaw (entrar por um destino e sair pelo outro) é permitido e deve ser comparado contra ida-e-volta simples; ver state/precos_historico.json"
+    "visitar_ambos_destinos": true,
+    "dias_cusco": 6,
+    "dias_lima_min": 2,
+    "dias_lima_max": 3,
+    "combinacoes_permitidas": ["LIM-CUZ", "CUZ-LIM"],
+    "combinacoes_descontinuadas": ["LIM-LIM", "CUZ-CUZ"],
+    "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata."
   },
   "promocoes_config": {
     "exigir_2_fontes": false,

@@ -62,7 +62,7 @@
       "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Edição mais recente encontrada (indicada pela Clara, vigente no navegador dela em 26/08/2026): 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app — sem exigir Clube nem cartão Itaú. Milheiro a partir de ~R$24,50 numa edição citada. Limite típico de 350.000 milhas, parcelável em até 10x sem juros (Elo/Mastercard/Visa). Milhas creditadas em até 48h (geralmente imediato).",
       "desconto_pct_itau": 65,
       "desconto_pct_geral": 62,
-      "milheiro_referencia_brl": 24.50,
+      "milheiro_referencia_brl": 24.5,
       "e_permanente": false,
       "recorrente": true,
       "valido_ate": "2026-08-28 (sexta-feira) — confirmado via WebSearch (passageirodeprimeira.com) no ciclo de 26/08/2026",
@@ -86,7 +86,7 @@
         "data": "2026-08-26",
         "milhas": 5000,
         "preco_pago_brl": 133,
-        "cpm_real_brl": 26.60,
+        "cpm_real_brl": 26.6,
         "nota": "Clara confirmou a compra diretamente. CPM real (R$26,60/milheiro) ficou um pouco acima da referência estimada (R$24,50) — provavelmente porque o tier de 5.000 milhas tem desconto/CPM levemente pior que tiers maiores (ver docs/scraper-local-setup.md, schema de tiers). Ainda assim, MUITO abaixo do custo de resgate em dinheiro."
       },
       "acao_sugerida": "Já parcialmente aproveitada: Clara comprou 5.000 milhas por R$133 em 26/08/2026 (ver state/saldo.json). Saldo LATAM Pass agora é 5.000 milhas, longe ainda da faixa de resgate estimada (30.000-70.000) para a combinação CUZ-CUZ — avaliar se compensa comprar mais milhas nos tiers maiores (melhor CPM) ou complementar via transferência Nubank (promoção acima, id nubank-latam-pass-30pct-1500milhas)."
@@ -98,7 +98,9 @@
       "bonus_pct": null,
       "e_permanente": false,
       "valido_ate": "2026-08-31",
-      "fontes": ["busca web agregada de 26/08/2026 — sem link direto isolado, mas conteúdo específico o suficiente (valor exato, prazo exato, parceiro nomeado) para tratar como fonte única aceitável"],
+      "fontes": [
+        "busca web agregada de 26/08/2026 — sem link direto isolado, mas conteúdo específico o suficiente (valor exato, prazo exato, parceiro nomeado) para tratar como fonte única aceitável"
+      ],
       "confianca": "1 fonte — aceita pela política de fonte única",
       "ja_notificada": false,
       "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Prazo termina em poucos dias (31/08) — vale mencionar no dashboard."
@@ -117,7 +119,9 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027."
-    },
+    }
+  ],
+  "expiradas": [
     {
       "id": "livelo-azul-120pct-ago2026",
       "tipo": "bonus_transferencia_temporario",
@@ -126,7 +130,9 @@
       "e_permanente": false,
       "valido_ate": "2026-08-21",
       "programa_destino": "Azul Fidelidade (NÃO é LATAM Pass — irrelevante para esta viagem)",
-      "fontes": ["https://pontospravoar.com/17-anos-azul-fidelidade-transfira-pontos-livelo-receba-ate-120-porcento-bonus/"],
+      "fontes": [
+        "https://pontospravoar.com/17-anos-azul-fidelidade-transfira-pontos-livelo-receba-ate-120-porcento-bonus/"
+      ],
       "confianca": "média",
       "ja_notificada": false,
       "acao_sugerida": "Ignorar — restrição fixa da viagem é LATAM Pass, não Azul. Já expirada em 21/08/2026."
@@ -139,7 +145,9 @@
       "e_permanente": false,
       "valido_ate": "2026-08-14",
       "programa_destino": "ConnectMiles (NÃO é LATAM Pass — irrelevante para esta viagem)",
-      "fontes": ["citado em busca web de 25/08/2026"],
+      "fontes": [
+        "citado em busca web de 25/08/2026"
+      ],
       "confianca": "média",
       "ja_notificada": false,
       "acao_sugerida": "Ignorar — programa errado para esta viagem. Já expirada."
@@ -151,7 +159,9 @@
       "bonus_pct": null,
       "e_permanente": false,
       "valido_ate": "2026-08-26",
-      "fontes": ["https://www.livelo.com.br/como-juntar-pontos-rapido-calendario-de-bonus-livelo"],
+      "fontes": [
+        "https://www.livelo.com.br/como-juntar-pontos-rapido-calendario-de-bonus-livelo"
+      ],
       "confianca": "baixa — falta confirmação de 2ª fonte com o bônus específico para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "Checar diretamente no app/site Livelo hoje (26/08 ainda dentro do evento) se há bônus específico para transferência à LATAM Pass antes de reportar como oportunidade."

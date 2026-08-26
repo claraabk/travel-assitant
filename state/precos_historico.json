@@ -1,16 +1,40 @@
 {
   "janela_busca": "2027-06-01 a 2027-06-30",
   "combinacoes_monitoradas": [
-    { "id": "LIM-LIM", "entrada": "LIM", "saida": "LIM", "descricao": "Ida e volta por Lima" },
-    { "id": "CUZ-CUZ", "entrada": "CUZ", "saida": "CUZ", "descricao": "Ida e volta por Cusco" },
-    { "id": "LIM-CUZ", "entrada": "LIM", "saida": "CUZ", "descricao": "Open-jaw: entra por Lima, sai por Cusco (requer trecho doméstico LIM-CUZ ou CUZ-LIM à parte)" },
-    { "id": "CUZ-LIM", "entrada": "CUZ", "saida": "LIM", "descricao": "Open-jaw: entra por Cusco, sai por Lima (requer trecho doméstico LIM-CUZ ou CUZ-LIM à parte)" }
+    {
+      "id": "LIM-CUZ",
+      "entrada": "LIM",
+      "saida": "CUZ",
+      "descricao": "Entra por Lima (2-3 dias), sai por Cusco (6 dias) -- visita os dois destinos"
+    },
+    {
+      "id": "CUZ-LIM",
+      "entrada": "CUZ",
+      "saida": "LIM",
+      "descricao": "Entra por Cusco (6 dias), sai por Lima (2-3 dias) -- visita os dois destinos"
+    },
+    {
+      "id": "LIM-LIM",
+      "entrada": "LIM",
+      "saida": "LIM",
+      "descricao": "DESCONTINUADA em 26/08/2026 -- só visitava Lima, não atende mais o requisito de visitar os dois destinos. Histórico mantido só como referência.",
+      "descontinuada": true
+    },
+    {
+      "id": "CUZ-CUZ",
+      "entrada": "CUZ",
+      "saida": "CUZ",
+      "descricao": "DESCONTINUADA em 26/08/2026 -- só visitava Cusco, não atende mais o requisito de visitar os dois destinos. Histórico mantido só como referência.",
+      "descontinuada": true
+    }
   ],
   "melhor_combinacao_geral": {
-    "id": "CUZ-CUZ",
-    "preco_total_brl": 4007,
-    "data_checagem": "2026-08-26T15:00:00Z",
-    "nota": "Continua vencendo (CUZ-CUZ, R$4.007), mas com alta desde o ciclo anterior (R$3.828 → R$4.007). Vence por R$72 vs. LIM-LIM (R$4.079), ambos via fli, mesma metodologia do histórico. Dois ciclos rodaram quase simultaneamente no mesmo dia: este (via fli, 15h) e outro logo antes/depois (via Kiwi.com, ~13h05, porque fli estava indisponível naquele momento) — o ciclo via Kiwi encontrou preços bem mais altos e uniformemente inflacionados nas 4 combinações (LIM-LIM R$4.319, CUZ-CUZ R$5.130, LIM-CUZ R$4.592, CUZ-LIM R$5.536, logs abaixo). Como a alta apareceu ao mesmo tempo nas 4 combinações via uma fonte diferente (não concentrada numa rota específica), é mais provável refletir diferença de agregador/fonte do que um movimento real de mercado — mantendo CUZ-CUZ (leitura fli, mais consistente com o histórico) como melhor_combinacao_geral e guardando os números do Kiwi só como referência cruzada nos logs. Reavaliar se a alta persistir em ciclos futuros com fli disponível."
+    "id": "CUZ-LIM",
+    "preco_total_brl": 4354,
+    "dias_cusco": 6,
+    "dias_lima": 3,
+    "data_checagem": "2026-08-27T00:00:00Z",
+    "nota": "Primeira checagem no modelo novo (visita Lima E Cusco). CUZ-LIM (R$4.354) e LIM-CUZ (R$4.355) praticamente empatados -- diferença de R$1. Variantes de 2 dias em Lima ainda não testadas (próximo ciclo completa). LIM-LIM/CUZ-CUZ descontinuadas, não comparam mais."
   },
   "checagens": {
     "LIM-LIM": [
@@ -23,13 +47,48 @@
         "fonte": "fli.search_dates + fli.search_flights",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA3375", "origem": "REC", "destino": "GRU", "partida": "2027-06-20T02:45:00", "chegada": "2027-06-20T06:00:00", "aeronave": "Airbus A321" },
-            { "voo": "LA2429", "origem": "GRU", "destino": "LIM", "partida": "2027-06-20T08:15:00", "chegada": "2027-06-20T11:25:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA3375",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-20T02:45:00",
+              "chegada": "2027-06-20T06:00:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA2429",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-20T08:15:00",
+              "chegada": "2027-06-20T11:25:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "volta": [
-            { "voo": "LA2402", "origem": "LIM", "destino": "BSB", "partida": "2027-07-02T00:30:00", "chegada": "2027-07-02T06:55:00", "aeronave": "Airbus A320" },
-            { "voo": "LA3730", "origem": "BSB", "destino": "FOR", "partida": "2027-07-02T10:20:00", "chegada": "2027-07-02T13:00:00", "aeronave": "Airbus A320" },
-            { "voo": "LA3491", "origem": "FOR", "destino": "REC", "partida": "2027-07-02T14:10:00", "chegada": "2027-07-02T15:25:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-07-02T00:30:00",
+              "chegada": "2027-07-02T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-07-02T10:20:00",
+              "chegada": "2027-07-02T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-07-02T14:10:00",
+              "chegada": "2027-07-02T15:25:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "paradas_ida": 1,
           "paradas_volta": 2,
@@ -48,13 +107,48 @@
         "fonte": "fli.search_dates (varredura do mês inteiro, airlines=[LA]) + fli.search_flights (detalhe confirmado)",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA3375", "origem": "REC", "destino": "GRU", "partida": "2027-06-06T02:45:00", "chegada": "2027-06-06T06:00:00", "aeronave": "Airbus A321" },
-            { "voo": "LA2429", "origem": "GRU", "destino": "LIM", "partida": "2027-06-06T08:15:00", "chegada": "2027-06-06T11:25:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA3375",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-06T02:45:00",
+              "chegada": "2027-06-06T06:00:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA2429",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-06T08:15:00",
+              "chegada": "2027-06-06T11:25:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "volta": [
-            { "voo": "LA2402", "origem": "LIM", "destino": "BSB", "partida": "2027-06-18T00:30:00", "chegada": "2027-06-18T06:55:00", "aeronave": "Airbus A320" },
-            { "voo": "LA3730", "origem": "BSB", "destino": "FOR", "partida": "2027-06-18T10:20:00", "chegada": "2027-06-18T13:00:00", "aeronave": "Airbus A320" },
-            { "voo": "LA3491", "origem": "FOR", "destino": "REC", "partida": "2027-06-18T14:10:00", "chegada": "2027-06-18T15:25:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-18T00:30:00",
+              "chegada": "2027-06-18T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-18T10:20:00",
+              "chegada": "2027-06-18T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-18T14:10:00",
+              "chegada": "2027-06-18T15:25:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "paradas_ida": 1,
           "paradas_volta": 2,
@@ -86,12 +180,36 @@
         "fonte": "Kiwi.com search-flight (round trip, select_airlines=LA) — fli indisponível para esta execução (search_dates/search_flights retornaram vazio até para rotas domésticas triviais como GRU-GIG), usado Kiwi como fallback conforme docs/agente-viagem.md. Nota: um outro ciclo rodando quase ao mesmo tempo (data_checagem 2026-08-26T15:00:00Z acima) conseguiu usar fli normalmente com preços bem mais baixos — ver caveat em melhor_combinacao_geral.",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA3677", "origem": "REC", "destino": "GRU", "partida": "2027-06-02T16:15:00", "chegada": "2027-06-02T19:35:00" },
-            { "voo": "LA2934", "origem": "GRU", "destino": "LIM", "partida": "2027-06-02T21:40:00", "chegada": "2027-06-03T01:10:00" }
+            {
+              "voo": "LA3677",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-02T16:15:00",
+              "chegada": "2027-06-02T19:35:00"
+            },
+            {
+              "voo": "LA2934",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-02T21:40:00",
+              "chegada": "2027-06-03T01:10:00"
+            }
           ],
           "volta": [
-            { "voo": "LA8005", "origem": "LIM", "destino": "GRU", "partida": "2027-06-15T00:30:00", "chegada": "2027-06-15T07:20:00" },
-            { "voo": "LA3380", "origem": "GRU", "destino": "REC", "partida": "2027-06-15T09:35:00", "chegada": "2027-06-15T12:40:00" }
+            {
+              "voo": "LA8005",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-15T00:30:00",
+              "chegada": "2027-06-15T07:20:00"
+            },
+            {
+              "voo": "LA3380",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-15T09:35:00",
+              "chegada": "2027-06-15T12:40:00"
+            }
           ],
           "paradas_ida": 1,
           "paradas_volta": 1,
@@ -113,14 +231,56 @@
         "fonte": "fli.search_dates (varredura do mês inteiro) + fli.search_flights (detalhe confirmado)",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA4519", "origem": "REC", "destino": "GRU", "partida": "2027-06-07T18:20:00", "chegada": "2027-06-07T21:40:00", "aeronave": "Airbus A320" },
-            { "voo": "LA8152", "origem": "GRU", "destino": "SCL", "partida": "2027-06-07T23:30:00", "chegada": "2027-06-08T02:50:00", "aeronave": "Airbus A320" },
-            { "voo": "LA2367", "origem": "SCL", "destino": "CUZ", "partida": "2027-06-08T06:10:00", "chegada": "2027-06-08T08:40:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA4519",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-07T18:20:00",
+              "chegada": "2027-06-07T21:40:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8152",
+              "origem": "GRU",
+              "destino": "SCL",
+              "partida": "2027-06-07T23:30:00",
+              "chegada": "2027-06-08T02:50:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2367",
+              "origem": "SCL",
+              "destino": "CUZ",
+              "partida": "2027-06-08T06:10:00",
+              "chegada": "2027-06-08T08:40:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "volta": [
-            { "voo": "LA2366", "origem": "CUZ", "destino": "SCL", "partida": "2027-06-19T09:40:00", "chegada": "2027-06-19T14:00:00", "aeronave": "Airbus A320" },
-            { "voo": "LA714", "origem": "SCL", "destino": "GRU", "partida": "2027-06-19T15:55:00", "chegada": "2027-06-19T20:45:00", "aeronave": "Boeing 787" },
-            { "voo": "LA3382", "origem": "GRU", "destino": "REC", "partida": "2027-06-19T23:30:00", "chegada": "2027-06-20T02:30:00", "aeronave": "Airbus A321" }
+            {
+              "voo": "LA2366",
+              "origem": "CUZ",
+              "destino": "SCL",
+              "partida": "2027-06-19T09:40:00",
+              "chegada": "2027-06-19T14:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA714",
+              "origem": "SCL",
+              "destino": "GRU",
+              "partida": "2027-06-19T15:55:00",
+              "chegada": "2027-06-19T20:45:00",
+              "aeronave": "Boeing 787"
+            },
+            {
+              "voo": "LA3382",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-19T23:30:00",
+              "chegada": "2027-06-20T02:30:00",
+              "aeronave": "Airbus A321"
+            }
           ],
           "paradas_ida": 2,
           "paradas_volta": 2,
@@ -139,14 +299,56 @@
         "fonte": "fli.search_dates (varredura do mês inteiro, airlines=[LA]) + fli.search_flights (detalhe confirmado)",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA4519", "origem": "REC", "destino": "GRU", "partida": "2027-06-02T18:20:00", "chegada": "2027-06-02T21:40:00", "aeronave": "Airbus A320" },
-            { "voo": "LA8152", "origem": "GRU", "destino": "SCL", "partida": "2027-06-02T23:30:00", "chegada": "2027-06-03T02:50:00", "aeronave": "Airbus A320" },
-            { "voo": "LA2367", "origem": "SCL", "destino": "CUZ", "partida": "2027-06-03T06:10:00", "chegada": "2027-06-03T08:40:00", "aeronave": "Airbus A320" }
+            {
+              "voo": "LA4519",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-02T18:20:00",
+              "chegada": "2027-06-02T21:40:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8152",
+              "origem": "GRU",
+              "destino": "SCL",
+              "partida": "2027-06-02T23:30:00",
+              "chegada": "2027-06-03T02:50:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2367",
+              "origem": "SCL",
+              "destino": "CUZ",
+              "partida": "2027-06-03T06:10:00",
+              "chegada": "2027-06-03T08:40:00",
+              "aeronave": "Airbus A320"
+            }
           ],
           "volta": [
-            { "voo": "LA2366", "origem": "CUZ", "destino": "SCL", "partida": "2027-06-14T09:40:00", "chegada": "2027-06-14T14:00:00", "aeronave": "Airbus A320" },
-            { "voo": "LA8105", "origem": "SCL", "destino": "GRU", "partida": "2027-06-14T16:25:00", "chegada": "2027-06-14T21:20:00", "aeronave": "Airbus A321" },
-            { "voo": "LA3382", "origem": "GRU", "destino": "REC", "partida": "2027-06-14T23:30:00", "chegada": "2027-06-15T02:30:00", "aeronave": "Airbus A321" }
+            {
+              "voo": "LA2366",
+              "origem": "CUZ",
+              "destino": "SCL",
+              "partida": "2027-06-14T09:40:00",
+              "chegada": "2027-06-14T14:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8105",
+              "origem": "SCL",
+              "destino": "GRU",
+              "partida": "2027-06-14T16:25:00",
+              "chegada": "2027-06-14T21:20:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA3382",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-14T23:30:00",
+              "chegada": "2027-06-15T02:30:00",
+              "aeronave": "Airbus A321"
+            }
           ],
           "paradas_ida": 2,
           "paradas_volta": 2,
@@ -178,14 +380,50 @@
         "fonte": "Kiwi.com search-flight (round trip, select_airlines=LA) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
         "detalhe_voo": {
           "ida": [
-            { "voo": "LA3375", "origem": "REC", "destino": "GRU", "partida": "2027-06-02T02:45:00", "chegada": "2027-06-02T06:00:00" },
-            { "voo": "LA2429", "origem": "GRU", "destino": "LIM", "partida": "2027-06-02T08:15:00", "chegada": "2027-06-02T11:25:00" },
-            { "voo": "LA2232", "origem": "LIM", "destino": "CUZ", "partida": "2027-06-02T13:55:00", "chegada": "2027-06-02T15:20:00" }
+            {
+              "voo": "LA3375",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-02T02:45:00",
+              "chegada": "2027-06-02T06:00:00"
+            },
+            {
+              "voo": "LA2429",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-02T08:15:00",
+              "chegada": "2027-06-02T11:25:00"
+            },
+            {
+              "voo": "LA2232",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-02T13:55:00",
+              "chegada": "2027-06-02T15:20:00"
+            }
           ],
           "volta": [
-            { "voo": "LA2167", "origem": "CUZ", "destino": "LIM", "partida": "2027-06-15T05:00:00", "chegada": "2027-06-15T06:30:00" },
-            { "voo": "LA2424", "origem": "LIM", "destino": "GRU", "partida": "2027-06-15T09:20:00", "chegada": "2027-06-15T16:15:00" },
-            { "voo": "LA3376", "origem": "GRU", "destino": "REC", "partida": "2027-06-15T17:30:00", "chegada": "2027-06-15T20:30:00" }
+            {
+              "voo": "LA2167",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-15T05:00:00",
+              "chegada": "2027-06-15T06:30:00"
+            },
+            {
+              "voo": "LA2424",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-15T09:20:00",
+              "chegada": "2027-06-15T16:15:00"
+            },
+            {
+              "voo": "LA3376",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-15T17:30:00",
+              "chegada": "2027-06-15T20:30:00"
+            }
           ],
           "paradas_ida": 2,
           "paradas_volta": 2,
@@ -206,9 +444,18 @@
         "ida": "2027-06-20",
         "volta": "2027-07-02",
         "composicao": {
-          "rec_para_lim": { "preco_brl": 1958, "data": "2027-06-20" },
-          "domestico_lim_para_cuz": { "preco_brl": 345, "nota": "preço de referência de voo doméstico LATAM Perú, não a data exata do roteiro — precisa reotimizar" },
-          "cuz_para_rec": { "preco_brl": 2092, "data": "2027-07-02" }
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-20"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "nota": "preço de referência de voo doméstico LATAM Perú, não a data exata do roteiro — precisa reotimizar"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 2092,
+            "data": "2027-07-02"
+          }
         },
         "fonte": "fli.search_flights (3 buscas one-way somadas manualmente)",
         "nota": "usa as mesmas datas-âncora do LIM-LIM só para efeito de comparação — não é a janela ótima própria desta combinação. Ainda perde para CUZ-CUZ e para LIM-LIM.",
@@ -223,9 +470,19 @@
         "ida": "2027-06-08",
         "volta": "2027-06-22",
         "composicao": {
-          "rec_para_lim": { "preco_brl": 1958, "data": "2027-06-08" },
-          "domestico_lim_para_cuz": { "preco_brl": 345, "data_referencia": "2027-06-09", "nota": "preço de referência de voo doméstico LATAM Perú, não a data exata do roteiro — precisa reotimizar" },
-          "cuz_para_rec": { "preco_brl": 1942, "data": "2027-06-22" }
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-08"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "data_referencia": "2027-06-09",
+            "nota": "preço de referência de voo doméstico LATAM Perú, não a data exata do roteiro — precisa reotimizar"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 1942,
+            "data": "2027-06-22"
+          }
         },
         "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (não são datas fixas âncora). Ainda perde para CUZ-CUZ e para LIM-LIM.",
@@ -238,9 +495,18 @@
         "moeda": "BRL",
         "estimativa": true,
         "composicao": {
-          "rec_para_lim": { "preco_brl": 1958, "data": "2027-06-22" },
-          "domestico_lim_para_cuz": { "preco_brl": 345, "nota": "preço de referência (patamar vigente 08/06–30/06), não a data exata do roteiro — precisa reotimizar" },
-          "cuz_para_rec": { "preco_brl": 1944, "data": "2027-06-08" }
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-22"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 345,
+            "nota": "preço de referência (patamar vigente 08/06–30/06), não a data exata do roteiro — precisa reotimizar"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 1944,
+            "data": "2027-06-08"
+          }
         },
         "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (não são datas fixas âncora — as datas dos 3 trechos não formam um roteiro sequencial factível ainda, precisa reotimizar). Ainda perde para CUZ-CUZ e LIM-LIM.",
@@ -255,14 +521,51 @@
         "ida": "2027-06-02",
         "volta": "2027-06-15",
         "composicao": {
-          "rec_para_lim": { "preco_brl": 2141, "data": "2027-06-02", "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$4.319) menos o one-way real LIM→REC (R$2.178)" },
-          "domestico_lim_para_cuz": { "preco_brl": 358, "data": "2027-06-05", "voo": "LA2166 23:40-01:00", "nota": "tarifa one-way real LA mais barata do mês (Kiwi), não necessariamente a data ótima de conexão com o ida/volta escolhidos" },
-          "cuz_para_rec": { "preco_brl": 2093, "data": "2027-06-15", "voo": "LA2366/LA714/LA3382 (via SCL, GRU)" }
+          "rec_para_lim": {
+            "preco_brl": 2141,
+            "data": "2027-06-02",
+            "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$4.319) menos o one-way real LIM→REC (R$2.178)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 358,
+            "data": "2027-06-05",
+            "voo": "LA2166 23:40-01:00",
+            "nota": "tarifa one-way real LA mais barata do mês (Kiwi), não necessariamente a data ótima de conexão com o ida/volta escolhidos"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 2093,
+            "data": "2027-06-15",
+            "voo": "LA2366/LA714/LA3382 (via SCL, GRU)"
+          }
         },
         "fonte": "Kiwi.com search-flight (pernas one-way + round trip para estimar REC→LIM) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
         "media_movel_30_checagens": 4369.75,
         "variacao_pct_vs_media": 5.09,
         "nota": "alta de ~5,1% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta. Registrado como referência cruzada; metodologia de estimativa do trecho REC→LIM mudou neste ciclo (subtração de round-trip, não soma de one-ways puros) porque a LA não vendeu tarifa one-way pura nesse trecho no Kiwi hoje."
+      },
+      {
+        "data_checagem": "2026-08-27T00:00:00Z",
+        "preco_total_brl": 4355,
+        "moeda": "BRL",
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 1958,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 346,
+            "data": "2027-06-13"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 2051,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados) -- primeira checagem no modelo novo (visita os dois destinos)",
+        "todas_operadas_por": "LATAM (LA)",
+        "nota": "Modelo novo (26/08/2026): Clara quer visitar Lima E Cusco, não um só. Substitui as estimativas antigas de LIM-CUZ/CUZ-LIM (que usavam datas-âncora de 12 dias, não a divisão 6+2/3 dias)."
       }
     ],
     "CUZ-LIM": [
@@ -274,9 +577,18 @@
         "ida": "2027-06-20",
         "volta": "2027-07-02",
         "composicao": {
-          "rec_para_cuz": { "preco_brl": 2023, "data": "2027-06-20" },
-          "domestico_cuz_para_lim": { "preco_brl": 292, "nota": "preço de referência, mesma ressalva do LIM-CUZ" },
-          "lim_para_rec": { "preco_brl": 2103, "data": "2027-07-02" }
+          "rec_para_cuz": {
+            "preco_brl": 2023,
+            "data": "2027-06-20"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 292,
+            "nota": "preço de referência, mesma ressalva do LIM-CUZ"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2103,
+            "data": "2027-07-02"
+          }
         },
         "fonte": "fli.search_flights (3 buscas one-way somadas manualmente)",
         "nota": "mesma ressalva do LIM-CUZ — datas-âncora, não janela ótima própria. É a mais cara das 4 combinações até agora.",
@@ -291,9 +603,19 @@
         "ida": "2027-06-02",
         "volta": "2027-06-23",
         "composicao": {
-          "rec_para_cuz": { "preco_brl": 1958, "data": "2027-06-02" },
-          "domestico_cuz_para_lim": { "preco_brl": 292, "data_referencia": "2027-06-03", "nota": "preço de referência, mesma ressalva do LIM-CUZ" },
-          "lim_para_rec": { "preco_brl": 2013, "data": "2027-06-23" }
+          "rec_para_cuz": {
+            "preco_brl": 1958,
+            "data": "2027-06-02"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 292,
+            "data_referencia": "2027-06-03",
+            "nota": "preço de referência, mesma ressalva do LIM-CUZ"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2013,
+            "data": "2027-06-23"
+          }
         },
         "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027. Continua a mais cara das 4 combinações.",
@@ -306,9 +628,18 @@
         "moeda": "BRL",
         "estimativa": true,
         "composicao": {
-          "rec_para_cuz": { "preco_brl": 1958, "data": "2027-06-03" },
-          "domestico_cuz_para_lim": { "preco_brl": 292, "nota": "preço de referência (patamar vigente 01/06–07/06), não a data exata do roteiro — precisa reotimizar" },
-          "lim_para_rec": { "preco_brl": 2015, "data": "2027-06-26" }
+          "rec_para_cuz": {
+            "preco_brl": 1958,
+            "data": "2027-06-03"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 292,
+            "nota": "preço de referência (patamar vigente 01/06–07/06), não a data exata do roteiro — precisa reotimizar"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2015,
+            "data": "2027-06-26"
+          }
         },
         "fonte": "fli.search_dates (varredura do mês inteiro por trecho, airlines=[LA]) — 3 trechos one-way somados",
         "nota": "cada trecho usa sua própria data mais barata dentro de junho/2027 (datas ainda não formam roteiro sequencial factível, precisa reotimizar). Continua a mais cara das 4 combinações.",
@@ -323,14 +654,51 @@
         "ida": "2027-06-02",
         "volta": "2027-06-15",
         "composicao": {
-          "rec_para_cuz": { "preco_brl": 3037, "data": "2027-06-02", "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$5.130) menos o one-way real CUZ→REC (R$2.093)" },
-          "domestico_cuz_para_lim": { "preco_brl": 321, "data": "2027-06-05", "voo": "LA2293 08:35-10:05", "nota": "tarifa one-way real LA mais barata do mês (Kiwi), mesma ressalva do LIM-CUZ sobre data de conexão" },
-          "lim_para_rec": { "preco_brl": 2178, "data": "2027-06-15", "voo": "LA8005/LA3380 (via GRU)" }
+          "rec_para_cuz": {
+            "preco_brl": 3037,
+            "data": "2027-06-02",
+            "nota": "sem tarifa one-way pura da LA disponível no Kiwi (select_airlines=LA em busca one-way retornou vazio) — estimado como round-trip Kiwi (R$5.130) menos o one-way real CUZ→REC (R$2.093)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 321,
+            "data": "2027-06-05",
+            "voo": "LA2293 08:35-10:05",
+            "nota": "tarifa one-way real LA mais barata do mês (Kiwi), mesma ressalva do LIM-CUZ sobre data de conexão"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2178,
+            "data": "2027-06-15",
+            "voo": "LA8005/LA3380 (via GRU)"
+          }
         },
         "fonte": "Kiwi.com search-flight (pernas one-way + round trip para estimar REC→CUZ) — fli indisponível para esta execução, usado Kiwi como fallback. Ver nota na checagem via fli acima (mesmo dia) sobre a divergência de preço.",
         "media_movel_30_checagens": 4620.5,
         "variacao_pct_vs_media": 19.81,
         "nota": "alta de ~19,8% vs. média móvel das 4 checagens (inclui a checagem via fli acima, mesmo dia) — rise, não dispara alerta. Continua a mais cara das 4 combinações. Registrado como referência cruzada, mesma ressalva de metodologia e fonte do LIM-CUZ."
+      },
+      {
+        "data_checagem": "2026-08-27T00:00:00Z",
+        "preco_total_brl": 4354,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 2022,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 311,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 2021,
+            "data": "2027-06-19"
+          }
+        },
+        "fonte": "fli.search_flights (3 one-way somados) -- primeira checagem no modelo novo (visita os dois destinos)",
+        "todas_operadas_por": "LATAM (LA)",
+        "nota": "Modelo novo (26/08/2026): Clara quer visitar Lima E Cusco, não um só. Substitui as estimativas antigas de LIM-CUZ/CUZ-LIM (que usavam datas-âncora de 12 dias, não a divisão 6+2/3 dias)."
       }
     ]
   }

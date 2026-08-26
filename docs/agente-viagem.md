@@ -11,21 +11,28 @@ Recife ⇄ Peru (Lima e Cusco) é **exclusivamente LATAM** — cotação em
 dinheiro só em voos operados por LA, resgate só via LATAM Pass. Ignorar
 Smiles/TudoAzul/outros programas para esta viagem.
 
-O **roteiro não é fixo**. Comparar sempre as 4 combinações em
-`state/precos_historico.json.combinacoes_monitoradas`:
-- Ida e volta só por Lima (LIM-LIM)
-- Ida e volta só por Cusco (CUZ-CUZ)
-- Open-jaw: entrar por Lima e sair por Cusco (LIM-CUZ)
-- Open-jaw: entrar por Cusco e sair por Lima (CUZ-LIM)
+**A Clara quer visitar Lima E Cusco na mesma viagem** — não é mais
+"um destino ou outro". Ver `state/config.json.roteiro`:
+- ~6 dias em Cusco, 2 a 3 dias em Lima (viagem total de 8-9 dias).
+- Só 2 combinações fazem sentido agora, ambas open-jaw:
+  - `LIM-CUZ`: entra por Lima, sai por Cusco
+  - `CUZ-LIM`: entra por Cusco, sai por Lima
+- `LIM-LIM` e `CUZ-CUZ` (ida e volta pelo mesmo destino) estão
+  **descontinuadas** — não atendem mais o requisito de visitar os
+  dois. Histórico antigo dessas duas fica em
+  `state/precos_historico.json` só como referência, não comparar
+  contra elas nem atualizá-las.
 
-Para as combinações open-jaw, o preço total = trecho internacional de
-ida (REC→entrada) + trecho internacional de volta (saída→REC), cada um
-buscado como one-way, **mais** o trecho doméstico Lima↔Cusco necessário
-para fechar o roteiro dentro do Peru (LATAM Perú também serve essa
-rota — incluir no preço total e confirmar que segue operado por LATAM).
-Atualizar `melhor_combinacao_geral` sempre que uma combinação ficar mais
-barata que a atual, e mostrar no dashboard qual combinação venceu e por
-quê (diferença em R$ vs. a 2ª colocada).
+Preço total de cada combinação = trecho internacional de ida
+(REC→entrada) + trecho doméstico Lima↔Cusco (a duração de estadia
+determina a data desse trecho) + trecho internacional de volta
+(saída→REC), todos buscados como one-way e confirmados como operados
+por LATAM (LATAM Perú cobre o trecho doméstico). Testar 2 e 3 dias em
+Lima dentro de cada ordem de entrada (4 variantes no total: LIM-CUZ×2d,
+LIM-CUZ×3d, CUZ-LIM×2d, CUZ-LIM×3d) e usar a mais barata como
+`melhor_combinacao_geral`. Mostrar no dashboard qual venceu e por
+quanto vs. a 2ª colocada — sem repetir isso em texto longo, só um dado
+direto (ver seção de formato do dashboard abaixo).
 
 ## Perfil (`state/perfil.json`) e saldo (`state/saldo.json`)
 
@@ -44,10 +51,12 @@ esperar o dashboard diário.
 
 1. Rodar `fli.search_dates`/`fli.search_flights` (filtrando
    `airlines=["LA"]`) para a janela de jun/2027, cobrindo as 4
-   combinações de roteiro (`LIM-LIM`, `CUZ-CUZ`, `LIM-CUZ`, `CUZ-LIM` —
-   ver seção "Restrição fixa desta viagem" acima). Para as duas
-   open-jaw, somar os dois trechos internacionais one-way + o trecho
-   doméstico LIM↔CUZ.
+   variantes de roteiro (`LIM-CUZ`×2d, `LIM-CUZ`×3d, `CUZ-LIM`×2d,
+   `CUZ-LIM`×3d — ver seção "Restrição fixa desta viagem" acima e
+   `state/config.json.roteiro`). Cada variante soma o trecho
+   internacional de ida one-way + o trecho doméstico LIM↔CUZ one-way +
+   o trecho internacional de volta one-way, respeitando 6 dias em
+   Cusco e 2 ou 3 dias em Lima.
 2. Anexar cada resultado a `state/precos_historico.json.checagens.<id>`
    (não sobrescrever — é log por combinação). Calcular
    `media_movel_30_checagens` e `variacao_pct_vs_media` por combinação,
@@ -121,18 +130,25 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
 
 1. Repetir os passos 1–5 do monitor leve (ou reaproveitar se o monitor
    já rodou nas últimas horas).
-2. Detalhar a **combinação vencedora** (`melhor_combinacao_geral`) com
-   todos os campos exigidos: datas/horários de ida e volta, aeroportos
-   de origem/conexão/destino (incluindo o trecho doméstico LIM↔CUZ se
-   for open-jaw), paradas e duração de cada trecho, companhia operando
-   cada trecho (confirmar LATAM), duração total, classe da tarifa e
-   reembolsabilidade, link direto. Mostrar também as outras 3
-   combinações e a diferença de preço entre elas, para deixar claro por
-   que a vencedora venceu.
+2. Detalhar a **variante vencedora** (`melhor_combinacao_geral`) com
+   todos os campos exigidos: datas/horários de cada trecho (ida,
+   doméstico LIM↔CUZ, volta), aeroportos de origem/conexão/destino,
+   paradas e duração de cada trecho, companhia operando cada trecho
+   (confirmar LATAM), duração total, classe da tarifa e
+   reembolsabilidade, link direto. Mostrar as outras 3 variantes só
+   como preço + diferença em R$ (uma linha cada, não repetir todo o
+   detalhe de voo) — ver seção "Formato do dashboard" abaixo.
 3. Calcular dinheiro vs. LATAM Pass: preço em R$, milhas estimadas
    (faixa pública: curto curso 6.000–25.000 econômica, longo curso
    30.000–70.000 econômica, deixando claro que é estimativa até haver
-   fonte de resgate real), CPM e qual opção vence.
+   fonte de resgate real), e o **CPM de equilíbrio** — a fórmula é
+   `preco_brl / milhas * 1000` (custo por 1.000 milhas no ponto em que
+   pagar em dinheiro e resgatar dariam no mesmo). **Cuidado com a
+   direção da conta**: não inverter (`milhas / preco_brl`) — um ciclo
+   anterior cometeu esse erro de fator ~10x. Comparar esse CPM de
+   equilíbrio contra o CPM real de compra/transferência: se for
+   possível conseguir milhas por menos que o CPM de equilíbrio,
+   resgatar vale mais que pagar em dinheiro.
 4. Se `Latam_PASS.list_latam_miles_purchase_prices` ou
    `state/latam_miles_price.json` (scraper local — schema e cron em
    `docs/scraper-local-setup.md`, válido só com `atualizado_em` das
@@ -146,6 +162,33 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    publicar via Artifact **na mesma URL** (não criar um novo artifact a
    cada execução).
 6. Commitar tudo.
+
+## Formato do dashboard
+
+O dashboard é pra ser **escaneado, não lido como texto corrido**.
+Regras de formato (valem pra toda regeneração de `dashboard/dashboard.html`):
+
+- **Sem parágrafos longos.** Cada frase deve caber numa linha ou duas.
+  Se uma explicação precisar de mais que isso, cortar para o essencial
+  e deixar o detalhe num link/fonte em vez de texto.
+- **Recomendação do dia em 2 listas de tópicos separadas**, nunca um
+  parágrafo único:
+  - **Recomendação de voo** (comprar agora / esperar / datas
+    específicas) — bullets curtos.
+  - **Recomendação de milhas** (comprar / transferir / ativar Modo
+    LATAM Pass / nenhuma ação) — bullets curtos.
+- **Oportunidades de acúmulo e transferência**: cada uma em **1 linha**
+  — resumo curto (o quê + %/valor) + link para a fonte. Sem parágrafo
+  de contexto, sem repetir ressalvas longas (isso fica em
+  `state/promocoes.json`, não no dashboard).
+- **Só mostrar oportunidades ainda ativas.** Antes de renderizar,
+  filtrar `state/promocoes.json.ativas` por `valido_ate`: se
+  `valido_ate` já passou (comparar com a data do ciclo), **não incluir
+  no dashboard** — nem como item riscado/ignorado, simplesmente omitir.
+  Mover promoções expiradas de `ativas` para um array `expiradas` no
+  mesmo arquivo (mantém histórico sem poluir o que é lido pelo
+  dashboard). `valido_ate: null` ou `e_permanente: true` conta como
+  sempre ativa.
 
 ## Regras de reserva (sempre valem)
 
