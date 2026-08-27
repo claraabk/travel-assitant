@@ -193,6 +193,11 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    cada execução).
 6. Commitar tudo.
 
+- **Chips de saldo no cabeçalho** identificam a pessoa: `Clara ·
+  LATAM Pass`, `Clara · Nubank Ultravioleta`, `Pedro · LATAM Pass`,
+  `Pedro · Inter Prime`, etc. — nunca mostrar um saldo sem o nome de
+  quem ele pertence.
+
 ## Formato do dashboard
 
 O dashboard é pra ser **escaneado, não lido como texto corrido**.
