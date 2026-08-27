@@ -189,6 +189,15 @@
     font-weight: 600;
   }
   .card .note { font-size: 0.85rem; color: var(--ink-secondary); }
+  .card .subsection + .subsection { margin-top: 14px; }
+  .card .subsection h4 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
 
   .status-tag {
     display: inline-flex;
@@ -262,8 +271,8 @@
     background: var(--panel);
     border: 1px solid var(--panel-border);
     border-radius: 14px;
-    padding: 20px 22px;
-    max-width: 560px;
+    padding: 28px 32px;
+    max-width: 760px;
     width: 100%;
     max-height: 85vh;
     overflow-y: auto;
@@ -275,8 +284,15 @@
     letter-spacing: normal;
     color: var(--ink);
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
+  .modal-box .alt-price {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .modal-box .table-scroll { margin-bottom: 14px; }
+  .modal-box h3 + .table-scroll { margin-top: 4px; }
   .modal-close {
     float: right;
     background: none;
@@ -388,13 +404,20 @@
     </div>
 
     <div class="card">
-      <h3>Dinheiro vs. LATAM Pass — vale comprar milhas?</h3>
-      <div class="note">
-        <strong class="tabular">R$ 8.490</strong> em dinheiro (2 pax) · resgate estimado <strong class="tabular">60.000–140.000</strong> milhas · equilíbrio <strong class="tabular">R$ 60,64–141,50</strong>/milheiro.<br>
-        Saldo do casal (pontos a 1:1): <strong class="tabular">5.000+0+7.667+11.900 = 24.567</strong> milhas equivalentes. Faltam <strong class="tabular">115.433</strong> (teto).<br>
-        Desconto 55-65% na compra direta ativo até 28/08 — tiers maiores, CPM melhor.
+      <div class="subsection">
+        <h4>Dinheiro vs. LATAM Pass</h4>
+        <div class="note">
+          <strong class="tabular">R$ 8.490</strong> em dinheiro (2 pax) · resgate estimado <strong class="tabular">60.000–140.000</strong> milhas · equilíbrio <strong class="tabular">R$ 60,64–141,50</strong>/milheiro.
+        </div>
       </div>
-      <span class="status-tag good">24.567/140.000 cobertas (teto)</span>
+      <div class="subsection">
+        <h4>Vale comprar milhas?</h4>
+        <div class="note">
+          Saldo do casal (pontos a 1:1): <strong class="tabular">5.000+0+7.667+11.900 = 24.567</strong> milhas equivalentes. Faltam <strong class="tabular">115.433</strong> (teto).<br>
+          Desconto 55-65% na compra direta ativo até 28/08 — tiers maiores, CPM melhor.
+        </div>
+        <span class="status-tag good">24.567/140.000 cobertas (teto)</span>
+      </div>
     </div>
 
     <div class="card wide">
@@ -499,7 +522,7 @@
         </tbody>
       </table>
     </div>
-    <div class="note">Mesmo preço da ida (R$3.915) — troca a conexão de 1h15 por 2h20 em GRU.</div>
+    <div class="note">Ida: <strong class="alt-price tabular">R$ 3.915</strong> (mesmo preço) — troca a conexão de 1h15 por 2h20 em GRU.</div>
   </div>
 </div>
 
@@ -535,7 +558,7 @@
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: mesmo preço (R$4.044). Volta: R$4.031 (+R$3), só 1 conexão em vez de 2.</div>
+    <div class="note">Ida: <strong class="alt-price tabular">R$ 4.044</strong> (mesmo preço). Volta: <strong class="alt-price tabular">R$ 4.031</strong> (+R$3), só 1 conexão em vez de 2.</div>
   </div>
 </div>
 
@@ -570,7 +593,7 @@
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: mesmo preço (R$3.915). Volta: R$4.091 (+R$3), sem conexão acima de 5h.</div>
+    <div class="note">Ida: <strong class="alt-price tabular">R$ 3.915</strong> (mesmo preço). Volta: <strong class="alt-price tabular">R$ 4.091</strong> (+R$3), sem conexão acima de 5h.</div>
   </div>
 </div>
 
@@ -606,7 +629,7 @@
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: mesmo preço (R$4.044). Volta: R$4.031 (+R$3), só 1 conexão em vez de 2.</div>
+    <div class="note">Ida: <strong class="alt-price tabular">R$ 4.044</strong> (mesmo preço). Volta: <strong class="alt-price tabular">R$ 4.031</strong> (+R$3), só 1 conexão em vez de 2.</div>
   </div>
 </div>
 
