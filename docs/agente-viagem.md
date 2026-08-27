@@ -222,9 +222,21 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
   `.modal-box`, ver CSS/JS já no arquivo): um botão "detalhes →" na
   linha da tabela de combinações abre o modal correspondente
   (`document.getElementById('modal-<id>').classList.add('open')`),
-  com botão de fechar, clique fora do card e tecla Esc fechando. Cada
-  modal mostra a mesma estrutura de tabela usada no card de itinerário
-  (trecho/rota/data/preço/link).
+  com botão de fechar, clique fora do card e tecla Esc fechando.
+- **Escalas e horários reais, não só rota/data/preço** (adicionado em
+  27/08/2026, a pedido da Clara). Cada modal/itinerário deve mostrar,
+  por trecho: número do voo, horário de partida e chegada, aeronave, e
+  duração da conexão quando houver escala. Buscar isso via
+  `fli.search_flights` (não só `search_dates`, que não traz esse
+  nível de detalhe) e usar o voo mais barato retornado
+  (`flights[0]`) de cada leg; guardar em
+  `state/precos_historico.json` no campo `detalhe_voo` (schema:
+  `ida`/`domestico`/`volta`, cada um lista de `{voo, origem, destino,
+  partida, chegada, aeronave}`, mais `paradas_ida`/`paradas_domestico`/
+  `paradas_volta`). Nunca deixar um itinerário só com rota+data+preço
+  se o detalhe completo já foi buscado alguma vez — reaproveitar o
+  último `detalhe_voo` salvo se o ciclo atual não rebuscar esse nível
+  (search_dates sozinho não substitui).
 - **Itinerário detalhado sempre com link por trecho.** Se o checkin
   tiver `booking_url` salvo em `state/precos_historico.json`, usar
   esse link; senão, montar um link de busca no Google Flights no
