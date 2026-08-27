@@ -158,10 +158,10 @@
   .recommendation.wait .rec-pill { background: var(--warn-soft); color: var(--warn); }
   .recommendation.act .rec-pill { background: var(--good-soft); color: var(--good); }
 
-  /* card grid — sempre 100% da largura, sem coluna vazia */
+  /* card grid — várias colunas, mas sem espaço vazio sobrando na última linha */
   .grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
   }
   .card {
@@ -172,8 +172,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    flex: 1 1 320px;
   }
+  .card.wide { flex: 2 1 480px; }
   .card h3 {
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -312,7 +313,7 @@
 
   <div class="grid">
 
-    <div class="card">
+    <div class="card wide">
       <h3>Preço LATAM hoje — Lima + Cusco</h3>
       <div class="big-number tabular">R$ 4.250</div>
       <div class="note">Vencedora: <strong>LIM-CUZ</strong> (entra Lima, sai Cusco) · 2 dias Lima + 6 dias Cusco · última leitura 100% via fli (26/08 19h31).</div>
@@ -350,7 +351,7 @@
       <span class="status-tag good">24.567/140.000 cobertas (teto)</span>
     </div>
 
-    <div class="card">
+    <div class="card wide">
       <h3>Preço final estimado aplicando as milhas do casal</h3>
       <div class="table-scroll">
         <table class="leg-table">
@@ -368,7 +369,7 @@
       <div class="note">Cálculo usa sempre o cenário mais conservador (teto da faixa de milhas + maior CPM), não uma média. Considera Ultravioleta (Clara) e Inter Prime (Pedro) já convertidos a LATAM Pass na proporção mínima de 1:1 — se houver bônus de transferência ativo, o custo real fica menor que este. Mesmo assim, R$3.070,52 fica bem abaixo do preço em dinheiro (~R$8.500) — resgatar compensa. Faixa de milhas é estimativa pública, não disponibilidade real para a data escolhida — confirmar logado no app/site antes de resgatar.</div>
     </div>
 
-    <div class="card">
+    <div class="card wide">
       <h3>Itinerário detalhado — LIM-CUZ (vencedora)</h3>
       <div class="table-scroll">
         <table class="leg-table">
@@ -385,7 +386,7 @@
       <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli. Detalhe de voo/aeronave específico ainda não confirmado nesta checagem — confirmar no momento da reserva.</div>
     </div>
 
-    <div class="card">
+    <div class="card wide">
       <h3>Oportunidades ativas</h3>
       <div class="opp-list">
         <div class="opp-line">
