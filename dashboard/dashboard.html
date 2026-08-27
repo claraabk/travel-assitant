@@ -158,10 +158,10 @@
   .recommendation.wait .rec-pill { background: var(--warn-soft); color: var(--warn); }
   .recommendation.act .rec-pill { background: var(--good-soft); color: var(--good); }
 
-  /* card grid */
+  /* card grid — sempre 100% da largura, sem coluna vazia */
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 16px;
   }
   .card {
@@ -172,9 +172,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
-  .card.span2 { grid-column: span 2; }
-  @media (max-width: 720px) { .card.span2 { grid-column: span 1; } }
   .card h3 {
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -304,7 +303,7 @@
         <h4>💳 Milhas</h4>
         <ul>
           <li>Desconto de 55-65% na compra direta segue ativo até sexta 28/08 — considerar completar as milhas que faltam</li>
-          <li>Faltam ~25.000-65.000 milhas p/ atingir a faixa de resgate estimada</li>
+          <li>Faltam 115.433 milhas (teto), considerando Ultravioleta + Inter Prime já convertidos a 1:1</li>
           <li>Bônus Nubank→LATAM Pass (30%+1.500) ainda não vale threshold de urgência, mas soma bem com o Modo LATAM Pass (10%)</li>
         </ul>
       </div>
@@ -313,7 +312,7 @@
 
   <div class="grid">
 
-    <div class="card span2">
+    <div class="card">
       <h3>Preço LATAM hoje — Lima + Cusco</h3>
       <div class="big-number tabular">R$ 4.250</div>
       <div class="note">Vencedora: <strong>LIM-CUZ</strong> (entra Lima, sai Cusco) · 2 dias Lima + 6 dias Cusco · última leitura 100% via fli (26/08 19h31).</div>
@@ -345,31 +344,31 @@
     <div class="card">
       <h3>Vale comprar mais milhas?</h3>
       <div class="note">
-        Saldo do casal: <strong>5.000 milhas</strong> (Clara, compradas por R$133, CPM R$26,60) + <strong>0 milhas</strong> (Pedro) + <strong>11.900 pts Inter Prime</strong> (Pedro, ainda não transferidos). Faltam ~55.000-135.000 milhas para a faixa de 2 pax.<br>
-        Desconto de 55-65% na compra direta segue ativo até 28/08 — tiers maiores tendem a ter CPM melhor. Checar também se Inter Prime tem parceria de transferência para LATAM Pass.
+        Saldo do casal (pontos convertidos a 1:1, piso conservador): <strong>5.000 milhas</strong> (Clara, LATAM Pass) + <strong>0 milhas</strong> (Pedro, LATAM Pass) + <strong>7.667 pts</strong> (Clara, Ultravioleta) + <strong>11.900 pts</strong> (Pedro, Inter Prime) = <strong>24.567 milhas equivalentes</strong>. Usando o teto da faixa de resgate (140.000, cenário mais conservador), faltam <strong>115.433 milhas</strong>.<br>
+        Desconto de 55-65% na compra direta segue ativo até 28/08 — tiers maiores tendem a ter CPM melhor. Checar também se Ultravioleta/Inter Prime têm bônus de transferência ativo (usaria mais que 1:1, reduzindo o que falta).
       </div>
-      <span class="status-tag good">5.000/60.000-140.000 cobertas</span>
+      <span class="status-tag good">24.567/140.000 cobertas (teto)</span>
     </div>
 
-    <div class="card span2">
+    <div class="card">
       <h3>Preço final estimado aplicando as milhas do casal</h3>
       <div class="table-scroll">
         <table class="leg-table">
           <thead><tr><th></th><th>Valor</th></tr></thead>
           <tbody>
             <tr><td>Preço em dinheiro (2 pax, estimativa)</td><td class="tabular">~R$ 8.500</td></tr>
-            <tr><td>Milhas necessárias (2 pax, longo curso)</td><td class="tabular">60.000–140.000</td></tr>
-            <tr><td>Milhas que já têm (só LATAM Pass conta)</td><td class="tabular">5.000</td></tr>
-            <tr><td>Milhas faltantes</td><td class="tabular">55.000–135.000</td></tr>
-            <tr><td>CPM de aquisição hoje (desconto ativo)</td><td class="tabular">R$ 24,50–26,60</td></tr>
-            <tr><td><strong>Custo para completar (resgatando)</strong></td><td class="tabular"><strong>R$ 1.347–3.591</strong></td></tr>
+            <tr><td>Milhas necessárias (2 pax, teto da faixa)</td><td class="tabular">140.000</td></tr>
+            <tr><td>Milhas que já têm (LATAM Pass + pontos a 1:1)</td><td class="tabular">24.567</td></tr>
+            <tr><td>Milhas faltantes (teto)</td><td class="tabular">115.433</td></tr>
+            <tr><td>CPM de aquisição hoje (desconto ativo, teto)</td><td class="tabular">R$ 26,60</td></tr>
+            <tr><td><strong>Custo para completar (resgatando)</strong></td><td class="tabular"><strong>R$ 3.070,52</strong></td></tr>
           </tbody>
         </table>
       </div>
-      <div class="note">Mesmo no cenário mais caro, completar via compra com desconto fica bem abaixo do preço em dinheiro — resgatar compensa. Os 11.900 pts Inter Prime do Pedro <strong>não</strong> entram nesta conta ainda (só contam depois de transferidos para LATAM Pass). Faixa de milhas é estimativa pública, não disponibilidade real para a data escolhida — confirmar logado no app/site antes de resgatar.</div>
+      <div class="note">Cálculo usa sempre o cenário mais conservador (teto da faixa de milhas + maior CPM), não uma média. Considera Ultravioleta (Clara) e Inter Prime (Pedro) já convertidos a LATAM Pass na proporção mínima de 1:1 — se houver bônus de transferência ativo, o custo real fica menor que este. Mesmo assim, R$3.070,52 fica bem abaixo do preço em dinheiro (~R$8.500) — resgatar compensa. Faixa de milhas é estimativa pública, não disponibilidade real para a data escolhida — confirmar logado no app/site antes de resgatar.</div>
     </div>
 
-    <div class="card span2">
+    <div class="card">
       <h3>Itinerário detalhado — LIM-CUZ (vencedora)</h3>
       <div class="table-scroll">
         <table class="leg-table">
@@ -386,7 +385,7 @@
       <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli. Detalhe de voo/aeronave específico ainda não confirmado nesta checagem — confirmar no momento da reserva.</div>
     </div>
 
-    <div class="card span2">
+    <div class="card">
       <h3>Oportunidades ativas</h3>
       <div class="opp-list">
         <div class="opp-line">

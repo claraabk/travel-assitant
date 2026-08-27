@@ -35,6 +35,11 @@
     "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata.",
     "nota_passageiros": "Atualizado em 27/08/2026: Pedro (namorado da Clara) viaja junto -- buscas de preço devem passar a considerar 2 passageiros adultos (antes eram 1). Checagens em state/precos_historico.json anteriores a 27/08/2026 são para 1 passageiro só, não comparáveis diretamente com as novas."
   },
+  "premissas_calculo_milhas": {
+    "conversao_pontos_para_milhas_piso": "1:1 — Ultravioleta (Clara) e Inter Prime (Pedro) contam como milhas equivalentes na proporção mínima de 1:1 mesmo sem transferência confirmada, salvo se houver bônus de transferência ativo maior (nesse caso usar o bônus real).",
+    "valor_restante_usa_teto": true,
+    "nota": "Adicionado em 27/08/2026 a pedido da Clara: no cálculo de 'milhas faltantes' e 'custo para completar', sempre usar o teto (maior valor) da faixa de milhas necessárias e o maior CPM de aquisição disponível — nunca a média ou o piso. É um cálculo propositalmente conservador (pior caso), não uma média."
+  },
   "promocoes_config": {
     "exigir_2_fontes": false,
     "nota": "1 fonte confiável já basta para marcar uma promoção como ativa. Preferir sempre https://latampass.latam.com/pt_br/ofertas como fonte primária quando acessível."

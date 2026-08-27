@@ -180,21 +180,28 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    transferência de `state/saldo.json.pedro.inter_prime_pontos`) contra
    essa faixa, não só o saldo da Clara.
 3b. Calcular o **preço final estimado aplicando as milhas do casal**
-   (novo card fixo no dashboard, adicionado em 27/08/2026):
+   (novo card fixo no dashboard, adicionado em 27/08/2026; premissas
+   revisadas em 27/08/2026, ver `state/config.json.premissas_calculo_milhas`):
    ```
-   milhas_faltantes = milhas_necessárias_2pax − milhas_que_já_têm
-   custo_para_completar = (milhas_faltantes / 1000) × CPM_de_aquisição_hoje
+   milhas_necessárias = TETO da faixa estimada para 2 pax (nunca a média/piso)
+   milhas_que_já_têm  = milhas LATAM Pass confirmadas (Clara + Pedro)
+                        + pontos Ultravioleta (Clara) convertidos a 1:1
+                        + pontos Inter Prime (Pedro) convertidos a 1:1
+                        (usar proporção maior só se houver bônus de
+                        transferência ativo confirmado; nunca menor que 1:1)
+   milhas_faltantes  = milhas_necessárias − milhas_que_já_têm
+   CPM_de_aquisição  = TETO do CPM disponível no ciclo (maior custo,
+                        não o menor nem a média)
+   custo_para_completar = (milhas_faltantes / 1000) × CPM_de_aquisição
    preço_final_estimado ≈ custo_para_completar (+ taxas de embarque, que o resgate não cobre)
    ```
-   `milhas_que_já_têm` = soma das milhas LATAM Pass já confirmadas em
-   `state/saldo.json` (Clara + `saldo.json.pedro`) — **nunca somar
-   pontos ainda não transferidos** (ex.: Inter Prime do Pedro) a esse
-   total; eles só contam depois de uma transferência confirmada.
-   `CPM_de_aquisição_hoje` = melhor CPM disponível no ciclo (promoção de
-   desconto ativa, se houver, senão preço de tabela). Mostrar a
-   comparação com o preço em dinheiro e deixar explícito que a faixa de
-   milhas necessárias é estimativa pública, não disponibilidade real
-   para a data escolhida.
+   **Sempre usar o cenário mais conservador (teto/pior caso)** tanto
+   para milhas necessárias quanto para CPM de aquisição — nunca média
+   nem melhor caso. Isso vale só para este cálculo de "valor restante";
+   o card "Dinheiro vs. LATAM Pass" pode continuar mostrando a faixa
+   completa normalmente. Mostrar a comparação com o preço em dinheiro e
+   deixar explícito que a faixa de milhas necessárias é estimativa
+   pública, não disponibilidade real para a data escolhida.
 4. Se `Latam_PASS.list_latam_miles_purchase_prices` ou
    `state/latam_miles_price.json` (scraper local — schema e cron em
    `docs/scraper-local-setup.md`, válido só com `atualizado_em` das
