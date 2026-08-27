@@ -1,0 +1,44 @@
+{
+  "atualizado_em": "2026-08-26T22:51:14-03:00",
+  "fonte": "scraper local (cron)",
+  "url_origem": "https://latampass.com/facilidades/compra-milhas/lp?pt=pp",
+  "desconto_pct_aplicado": null,
+  "tiers": [
+    {
+      "milhas": 1000,
+      "preco_brl": 26.6,
+      "cpm_brl": 26.6
+    },
+    {
+      "milhas": 5000,
+      "preco_brl": 133.0,
+      "cpm_brl": 26.6
+    },
+    {
+      "milhas": 10000,
+      "preco_brl": 266.0,
+      "cpm_brl": 26.6
+    },
+    {
+      "milhas": 50000,
+      "preco_brl": 1330.0,
+      "cpm_brl": 26.6
+    },
+    {
+      "milhas": 100000,
+      "preco_brl": 2660.0,
+      "cpm_brl": 26.6
+    },
+    {
+      "milhas": 350000,
+      "preco_brl": 9310.0,
+      "cpm_brl": 26.6
+    }
+  ],
+  "melhor_tier": {
+    "milhas": 1000,
+    "preco_brl": 26.6,
+    "cpm_brl": 26.6
+  },
+  "erro": null
+}
