@@ -216,6 +216,17 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    cada execução).
 6. Commitar tudo.
 
+- **Itinerário detalhado sempre com link por trecho.** Se o checkin
+  tiver `booking_url` salvo em `state/precos_historico.json`, usar
+  esse link; senão, montar um link de busca no Google Flights no
+  formato `https://www.google.com/travel/flights?q=Flights%20from%20<ORIGEM>%20to%20<DESTINO>%20on%20<AAAA-MM-DD>&curr=BRL`
+  para cada trecho one-way. Nunca deixar a tabela de itinerário sem
+  link.
+- **Textos curtos e diretos** nos cards "Dinheiro vs. LATAM Pass" e
+  "Vale comprar mais milhas?": frases telegráficas com os números
+  essenciais (valor, faixa, o que falta), sem repetir contexto que já
+  está em outro card. Preferir `+`/`=`/travessão a frases completas
+  quando o número já fala por si.
 - **Card "Preço final estimado aplicando as milhas do casal"**
   (sempre presente, logo após "Vale comprar mais milhas?"): tabela
   curta com preço em dinheiro, milhas necessárias, milhas que já têm,
