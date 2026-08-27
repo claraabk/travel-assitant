@@ -71,8 +71,18 @@ Nubank/Livelo/Esfera.
 Objetivo: barato e frequente, só para detectar mudanças que não podem
 esperar o dashboard diário.
 
-1. Rodar `fli.search_dates`/`fli.search_flights` (filtrando
-   `airlines=["LA"]`, **2 passageiros adultos** — ver
+1. Rodar `fli.search_dates`/`fli.search_flights` **sempre com código
+   IATA direto** nos parâmetros `origin`/`destination`
+   (`REC`, `LIM`, `CUZ`, `GRU` etc. — já fixos em
+   `state/config.json`/`state/perfil.json`, nunca precisam ser
+   redescobertos). **Nunca usar `fli.find_airports` com nome de cidade
+   para essas rotas** — testado em 27/08/2026:
+   `find_airports("recife")` retornou 0 resultados mesmo com o
+   conector saudável, enquanto `search_flights` com `origin="REC"`
+   funcionou normalmente. `find_airports` só serve para descobrir o
+   código de um aeroporto novo, ainda não mapeado neste projeto — não
+   é necessário nem confiável para REC/LIM/CUZ/GRU, que já são
+   conhecidos. Filtrar `airlines=["LA"]`, **2 passageiros adultos** — ver
    `state/config.json.roteiro.passageiros`) para a janela de jun/2027,
    cobrindo as 4 variantes de roteiro (`LIM-CUZ`×2d, `LIM-CUZ`×3d,
    `CUZ-LIM`×2d, `CUZ-LIM`×3d — ver seção "Restrição fixa desta viagem"
