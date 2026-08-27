@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-27T13:00:00Z",
+  "ultima_checagem": "2026-08-27T18:20:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -17,7 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T12:31:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
+      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -35,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T12:31:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
+      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -57,7 +57,7 @@
       ],
       "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T12:31:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual voltou a trazer título de até 35% (Livelo→LATAM Pass, campanha válida das 10h do dia 24 às 23h59 do dia 25 — já expirada, mas confirma o padrão de campanha relâmpago recorrente entre 25-35%). Sem mudança de conclusão: abaixo do gatilho de alerta urgente (60%) em qualquer leitura.",
+      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25% Livelo→LATAM Pass (\"Só hoje\", \"Últimas horas\"); nenhuma edição nova com % ≥60% encontrada. Sem mudança de conclusão.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
     },
     {
@@ -85,7 +85,7 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-27T13:00:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha ativa (títulos recorrentes até 60/63/65/66% de desconto, milheiro a partir de ~R$23,80-24,50). Síntese deste ciclo: cartão LATAM Pass Itaú paga R$24,50/milheiro, demais clientes R$26,60/milheiro — consistente com a compra confirmada da Clara. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
+      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha ativa (títulos recorrentes até 60/63/65% de desconto). Síntese deste ciclo: 65% de desconto (R$24,50/milheiro) exclusivo para cartão LATAM Pass Itaú; 62% de desconto (R$26,60/milheiro) para demais clientes e assinantes do Clube LATAM Pass — redação ligeiramente mais restritiva que a do ciclo anterior (que mencionava 'todos os clientes' para o tier de 62%), mas ainda consistente com a compra confirmada da Clara ao mesmo CPM. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
