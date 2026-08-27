@@ -179,6 +179,22 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    `state/saldo.json.pedro.latam_pass_milhas` + potencial de
    transferência de `state/saldo.json.pedro.inter_prime_pontos`) contra
    essa faixa, não só o saldo da Clara.
+3b. Calcular o **preço final estimado aplicando as milhas do casal**
+   (novo card fixo no dashboard, adicionado em 27/08/2026):
+   ```
+   milhas_faltantes = milhas_necessárias_2pax − milhas_que_já_têm
+   custo_para_completar = (milhas_faltantes / 1000) × CPM_de_aquisição_hoje
+   preço_final_estimado ≈ custo_para_completar (+ taxas de embarque, que o resgate não cobre)
+   ```
+   `milhas_que_já_têm` = soma das milhas LATAM Pass já confirmadas em
+   `state/saldo.json` (Clara + `saldo.json.pedro`) — **nunca somar
+   pontos ainda não transferidos** (ex.: Inter Prime do Pedro) a esse
+   total; eles só contam depois de uma transferência confirmada.
+   `CPM_de_aquisição_hoje` = melhor CPM disponível no ciclo (promoção de
+   desconto ativa, se houver, senão preço de tabela). Mostrar a
+   comparação com o preço em dinheiro e deixar explícito que a faixa de
+   milhas necessárias é estimativa pública, não disponibilidade real
+   para a data escolhida.
 4. Se `Latam_PASS.list_latam_miles_purchase_prices` ou
    `state/latam_miles_price.json` (scraper local — schema e cron em
    `docs/scraper-local-setup.md`, válido só com `atualizado_em` das
@@ -193,6 +209,12 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    cada execução).
 6. Commitar tudo.
 
+- **Card "Preço final estimado aplicando as milhas do casal"**
+  (sempre presente, logo após "Vale comprar mais milhas?"): tabela
+  curta com preço em dinheiro, milhas necessárias, milhas que já têm,
+  milhas faltantes, CPM de aquisição e custo para completar — ver
+  fórmula no passo 3b do Ciclo 2 acima. Uma nota de 1-2 linhas, não
+  mais que isso.
 - **Chips de saldo no cabeçalho** identificam a pessoa: `Clara ·
   LATAM Pass`, `Clara · Nubank Ultravioleta`, `Pedro · LATAM Pass`,
   `Pedro · Inter Prime`, etc. — nunca mostrar um saldo sem o nome de
