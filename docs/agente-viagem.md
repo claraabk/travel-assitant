@@ -223,6 +223,20 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
   linha da tabela de combinações abre o modal correspondente
   (`document.getElementById('modal-<id>').classList.add('open')`),
   com botão de fechar, clique fora do card e tecla Esc fechando.
+- **Alerta de conexão de risco** (adicionado em 27/08/2026, ver
+  `state/config.json.alertas_conexao`): qualquer conexão internacional
+  abaixo de 1h30 (90min, `conexao_curta`) ou acima de 5h (300min,
+  `conexao_longa`) na opção mais barata de cada variante deve ser
+  sinalizada. Antes de finalizar o itinerário, buscar pelo menos 1
+  opção alternativa (mesmo que mais cara) sem nenhuma dessas duas
+  situações — normalmente já aparece entre os primeiros resultados de
+  `fli.search_flights` com preço igual ou poucos reais a mais. Guardar
+  em `state/precos_historico.json` nos campos `alertas_conexao`
+  (lista de `{trecho, aeroporto, duracao_min, tipo, limite}`) e
+  `alternativa_sem_alerta`/`alternativas_sem_alerta` (mesma estrutura
+  de `detalhe_voo`, mais `preco_brl` e `nota`). No dashboard: mostrar
+  a opção mais barata com uma tag de alerta na conexão problemática e,
+  logo abaixo, a alternativa sem alerta com a diferença de preço.
 - **Escalas e horários reais, não só rota/data/preço** (adicionado em
   27/08/2026, a pedido da Clara). Cada modal/itinerário deve mostrar,
   por trecho: número do voo, horário de partida e chegada, aeronave, e

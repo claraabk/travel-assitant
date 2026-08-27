@@ -815,7 +815,45 @@
           "todas_operadas_por": "LATAM (LA)"
         },
         "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas) — primeira checagem com preco real de 2 pax e detalhe completo de voo/horarios/escalas",
-        "nota": "Substitui a estimativa provisoria de 1 pax x2 (~R$8.500). Vencedora confirmada com preco real de 2 passageiros."
+        "nota": "Substitui a estimativa provisoria de 1 pax x2 (~R$8.500). Vencedora confirmada com preco real de 2 passageiros.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativa_sem_alerta": {
+          "trecho": "ida",
+          "preco_brl": 3915,
+          "legs": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2429",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T08:15:00",
+              "chegada": "2027-06-10T11:25:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "layovers": [
+            {
+              "aeroporto": "GRU",
+              "duracao_min": 140
+            }
+          ],
+          "nota": "Mesmo preço (R$3.915), troca conexão de 1h15 (GRU) por 2h20 -- evita risco de perder o voo seguinte."
+        }
       },
       {
         "data_checagem": "2026-08-27T01:15:00Z",
@@ -899,7 +937,95 @@
           "todas_operadas_por": "LATAM (LA)"
         },
         "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas)",
-        "nota": "Substitui a estimativa provisoria de 1 pax x2."
+        "nota": "Substitui a estimativa provisoria de 1 pax x2.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 375,
+            "tipo": "conexao_longa",
+            "limite": "acima de 5h"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 3915,
+            "legs": [
+              {
+                "voo": "LA3315",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T02:40:00",
+                "chegada": "2027-06-10T05:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2429",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T08:15:00",
+                "chegada": "2027-06-10T11:25:00",
+                "aeronave": "Airbus A319"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 140
+              }
+            ],
+            "nota": "Mesmo preço (R$3.915), troca conexão de 1h15 (GRU) por 2h20."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4091,
+            "legs": [
+              {
+                "voo": "LA2343",
+                "origem": "CUZ",
+                "destino": "LIM",
+                "partida": "2027-06-19T06:50:00",
+                "chegada": "2027-06-19T08:20:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA8099",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T13:05:00",
+                "chegada": "2027-06-19T19:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA3382",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T23:30:00",
+                "chegada": "2027-06-20T02:30:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 285
+              },
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 215
+              }
+            ],
+            "nota": "+R$3 (R$4.091), troca conexão de 6h15 (BSB) por 4h45 (LIM) + 3h35 (GRU)."
+          }
+        ]
       }
     ],
     "CUZ-LIM": [
@@ -1289,7 +1415,95 @@
           "todas_operadas_por": "LATAM (LA)"
         },
         "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas)",
-        "nota": "Substitui a estimativa provisoria de 1 pax x2."
+        "nota": "Substitui a estimativa provisoria de 1 pax x2.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 4044,
+            "legs": [
+              {
+                "voo": "LA3315",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T02:40:00",
+                "chegada": "2027-06-10T05:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2429",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T08:15:00",
+                "chegada": "2027-06-10T11:25:00",
+                "aeronave": "Airbus A319"
+              },
+              {
+                "voo": "LA2232",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-10T13:55:00",
+                "chegada": "2027-06-10T15:20:00",
+                "aeronave": "Airbus A320"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 140
+              },
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 150
+              }
+            ],
+            "nota": "Mesmo preço (R$4.044), troca conexão de 1h15 (GRU) por 2h20 (GRU) + 2h30 (LIM)."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4031,
+            "legs": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-18T00:30:00",
+                "chegada": "2027-06-18T07:20:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA3380",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-18T09:35:00",
+                "chegada": "2027-06-18T12:40:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 135
+              }
+            ],
+            "nota": "+R$3 (R$4.031), 1 conexão só (GRU, 2h15) em vez de 2 conexões (BSB 3h25 + FOR 1h10 curta)."
+          }
+        ]
       },
       {
         "data_checagem": "2026-08-27T01:15:00Z",
@@ -1381,7 +1595,95 @@
           "todas_operadas_por": "LATAM (LA)"
         },
         "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas)",
-        "nota": "Substitui a estimativa provisoria de 1 pax x2."
+        "nota": "Substitui a estimativa provisoria de 1 pax x2.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 4044,
+            "legs": [
+              {
+                "voo": "LA3315",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T02:40:00",
+                "chegada": "2027-06-10T05:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2429",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T08:15:00",
+                "chegada": "2027-06-10T11:25:00",
+                "aeronave": "Airbus A319"
+              },
+              {
+                "voo": "LA2232",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-10T13:55:00",
+                "chegada": "2027-06-10T15:20:00",
+                "aeronave": "Airbus A320"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 140
+              },
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 150
+              }
+            ],
+            "nota": "Mesmo preço (R$4.044), troca conexão de 1h15 (GRU) por 2h20 (GRU) + 2h30 (LIM)."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4031,
+            "legs": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T00:30:00",
+                "chegada": "2027-06-19T07:25:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA3380",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T09:35:00",
+                "chegada": "2027-06-19T12:40:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 130
+              }
+            ],
+            "nota": "+R$3 (R$4.031), 1 conexão só (GRU, 2h10) em vez de 2 conexões (BSB 3h25 + FOR 1h10 curta)."
+          }
+        ]
       }
     ]
   }

@@ -35,6 +35,11 @@
     "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata.",
     "nota_passageiros": "Resolvido em 27/08/2026: as 4 variantes já têm checkin real com preço de 2 passageiros (Clara + Pedro) e detalhe completo de voo/horários/escalas via fli. Checagens em state/precos_historico.json anteriores a 27/08/2026 (sem campo passageiros=2) são de 1 passageiro só, mantidas como histórico mas não recomparáveis diretamente."
   },
+  "alertas_conexao": {
+    "conexao_curta_min": 90,
+    "conexao_longa_min": 300,
+    "nota": "Adicionado em 27/08/2026 a pedido da Clara. Marcar toda conexão internacional abaixo de 1h30 (90min) como 'conexao_curta' (risco de perder o voo seguinte) e acima de 5h (300min) como 'conexao_longa'. Ao montar cada itinerário, se a opção mais barata tiver alguma conexão fora dessa faixa, buscar pelo menos 1 alternativa (mesmo que mais cara) sem esse problema e mostrar as duas no dashboard, com tag na(s) opção(ões) com alerta."
+  },
   "premissas_calculo_milhas": {
     "conversao_pontos_para_milhas_piso": "1:1 — Ultravioleta (Clara) e Inter Prime (Pedro) contam como milhas equivalentes na proporção mínima de 1:1 mesmo sem transferência confirmada, salvo se houver bônus de transferência ativo maior (nesse caso usar o bônus real).",
     "valor_restante_usa_teto": true,
