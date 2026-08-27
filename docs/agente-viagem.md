@@ -216,6 +216,15 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    cada execução).
 6. Commitar tudo.
 
+- **Todas as 4 variantes precisam de itinerário detalhado, não só a
+  vencedora** (adicionado em 27/08/2026, a pedido da Clara). Não expor
+  isso direto na tela — usar um modal por variante (`.modal-overlay` +
+  `.modal-box`, ver CSS/JS já no arquivo): um botão "detalhes →" na
+  linha da tabela de combinações abre o modal correspondente
+  (`document.getElementById('modal-<id>').classList.add('open')`),
+  com botão de fechar, clique fora do card e tecla Esc fechando. Cada
+  modal mostra a mesma estrutura de tabela usada no card de itinerário
+  (trecho/rota/data/preço/link).
 - **Itinerário detalhado sempre com link por trecho.** Se o checkin
   tiver `booking_url` salvo em `state/precos_historico.json`, usar
   esse link; senão, montar um link de busca no Google Flights no

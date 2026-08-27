@@ -232,6 +232,60 @@
     font-size: 0.85rem;
   }
   .link-out:hover { text-decoration: underline; }
+  .link-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .link-btn:hover { text-decoration: underline; }
+
+  /* itinerary modal */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+  .modal-box h3 {
+    font-size: 1rem;
+    font-family: "Newsreader", Georgia, serif;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--ink);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .modal-close {
+    float: right;
+    background: none;
+    border: none;
+    color: var(--ink-muted);
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .modal-close:hover { color: var(--ink); }
 
   /* opportunities: 1-liner + link */
   .opp-list { display: flex; flex-direction: column; gap: 8px; }
@@ -320,12 +374,12 @@
       <div class="note">Vencedora: <strong>LIM-CUZ</strong> (entra Lima, sai Cusco) · 2 dias Lima + 6 dias Cusco · última leitura 100% via fli (26/08 19h31).</div>
       <div class="table-scroll">
         <table class="leg-table">
-          <thead><tr><th>Combinação</th><th>Preço</th><th>Status</th></tr></thead>
+          <thead><tr><th>Combinação</th><th>Preço</th><th>Status</th><th></th></tr></thead>
           <tbody>
-            <tr><td>LIM→CUZ (Lima 2d → Cusco 6d)</td><td class="tabular">R$ 4.250</td><td><span class="status-tag good">Vencedora</span></td></tr>
-            <tr><td>CUZ→LIM (Cusco 6d → Lima 2d)</td><td class="tabular">R$ 4.351</td><td><span class="status-tag muted">+R$101</span></td></tr>
-            <tr><td>LIM→CUZ (Lima 3d → Cusco 6d)</td><td class="tabular">R$ 4.352</td><td><span class="status-tag muted">+R$102</span></td></tr>
-            <tr><td>CUZ→LIM (Cusco 6d → Lima 3d)</td><td class="tabular">R$ 4.351</td><td><span class="status-tag muted">+R$101</span></td></tr>
+            <tr><td>LIM→CUZ (Lima 2d → Cusco 6d)</td><td class="tabular">R$ 4.250</td><td><span class="status-tag good">Vencedora</span></td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-2d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>CUZ→LIM (Cusco 6d → Lima 2d)</td><td class="tabular">R$ 4.351</td><td><span class="status-tag muted">+R$101</span></td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-2d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>LIM→CUZ (Lima 3d → Cusco 6d)</td><td class="tabular">R$ 4.352</td><td><span class="status-tag muted">+R$102</span></td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-3d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>CUZ→LIM (Cusco 6d → Lima 3d)</td><td class="tabular">R$ 4.351</td><td><span class="status-tag muted">+R$101</span></td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-3d').classList.add('open')">detalhes →</button></td></tr>
           </tbody>
         </table>
       </div>
@@ -422,3 +476,83 @@
   <footer>Gerado a partir de state/*.json (atualizado 27/08/2026) · dados de voo via fli/Kiwi · próximo ciclo completo: amanhã</footer>
 
 </div>
+
+<div class="modal-overlay" id="modal-lim-cuz-2d" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-lim-cuz-2d').classList.remove('open')">✕</button>
+    <h3>LIM→CUZ · Lima 2d → Cusco 6d — R$ 4.250</h3>
+    <div class="table-scroll">
+      <table class="leg-table">
+        <thead><tr><th>Trecho</th><th>Rota</th><th>Data</th><th>Preço</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr><td>Ida</td><td class="tabular">REC → LIM</td><td class="tabular">10/06/2027</td><td class="tabular">R$ 1.958</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Doméstico (2d depois)</td><td class="tabular">LIM → CUZ</td><td class="tabular">12/06/2027</td><td class="tabular">R$ 345</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20CUZ%20on%202027-06-12&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Volta (6d depois)</td><td class="tabular">CUZ → REC</td><td class="tabular">18/06/2027</td><td class="tabular">R$ 1.947</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20REC%20on%202027-06-18&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli — última leitura 100% fli (26/08 19h31).</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cuz-lim-2d" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cuz-lim-2d').classList.remove('open')">✕</button>
+    <h3>CUZ→LIM · Cusco 6d → Lima 2d — R$ 4.351</h3>
+    <div class="table-scroll">
+      <table class="leg-table">
+        <thead><tr><th>Trecho</th><th>Rota</th><th>Data</th><th>Preço</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr><td>Ida</td><td class="tabular">REC → CUZ</td><td class="tabular">10/06/2027</td><td class="tabular">R$ 2.022</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Doméstico (6d depois)</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06/2027</td><td class="tabular">R$ 310</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20LIM%20on%202027-06-16&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Volta (2d depois)</td><td class="tabular">LIM → REC</td><td class="tabular">18/06/2027</td><td class="tabular">R$ 2.019</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20REC%20on%202027-06-18&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli — última leitura 100% fli (26/08 19h31).</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-lim-cuz-3d" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-lim-cuz-3d').classList.remove('open')">✕</button>
+    <h3>LIM→CUZ · Lima 3d → Cusco 6d — R$ 4.352</h3>
+    <div class="table-scroll">
+      <table class="leg-table">
+        <thead><tr><th>Trecho</th><th>Rota</th><th>Data</th><th>Preço</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr><td>Ida</td><td class="tabular">REC → LIM</td><td class="tabular">10/06/2027</td><td class="tabular">R$ 1.958</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Doméstico (3d depois)</td><td class="tabular">LIM → CUZ</td><td class="tabular">13/06/2027</td><td class="tabular">R$ 345</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20CUZ%20on%202027-06-13&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Volta (6d depois)</td><td class="tabular">CUZ → REC</td><td class="tabular">19/06/2027</td><td class="tabular">R$ 2.049</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20REC%20on%202027-06-19&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli — última leitura 100% fli (26/08 19h31).</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cuz-lim-3d" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cuz-lim-3d').classList.remove('open')">✕</button>
+    <h3>CUZ→LIM · Cusco 6d → Lima 3d — R$ 4.351</h3>
+    <div class="table-scroll">
+      <table class="leg-table">
+        <thead><tr><th>Trecho</th><th>Rota</th><th>Data</th><th>Preço</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr><td>Ida</td><td class="tabular">REC → CUZ</td><td class="tabular">10/06/2027</td><td class="tabular">R$ 2.022</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Doméstico (6d depois)</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06/2027</td><td class="tabular">R$ 310</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20LIM%20on%202027-06-16&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+          <tr><td>Volta (3d depois)</td><td class="tabular">LIM → REC</td><td class="tabular">19/06/2027</td><td class="tabular">R$ 2.019</td><td><a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20REC%20on%202027-06-19&curr=BRL" target="_blank" rel="noopener">ver →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Todos os trechos LATAM (LA), soma de 3 buscas one-way via fli — última leitura 100% fli (26/08 19h31).</div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(function (m) { m.classList.remove('open'); });
+    }
+  });
+</script>
