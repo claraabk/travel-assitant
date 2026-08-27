@@ -22,6 +22,24 @@
     "rota": "Recife (REC) ⇄ Peru (Lima/Cusco)",
     "companhia_exclusiva": "LATAM",
     "programa_milhas_exclusivo": "LATAM Pass",
-    "mes_alvo": "2027-06"
+    "mes_alvo": "2027-06",
+    "passageiros": 2,
+    "nota_passageiros": "Atualizado em 27/08/2026: Pedro (namorado da Clara) viaja junto. Buscas de preço de passagem devem passar a considerar 2 passageiros adultos (antes eram feitas implicitamente para 1). Ciclos anteriores a 27/08/2026 em state/precos_historico.json refletem preço para 1 passageiro só — não comparável diretamente com checagens novas de 2 passageiros."
+  },
+  "companheiro_viagem": {
+    "nome": "Pedro",
+    "vai_nesta_viagem": true,
+    "latam_pass_cadastro": true,
+    "latam_pass_milhas": 0,
+    "cartao": {
+      "banco": "Banco Inter Prime",
+      "pontos_saldo": 11900,
+      "programa_pontos": "Inter Loop (a confirmar) — verificar se há transferência para LATAM Pass e em qual proporção/bônus, igual se checa Nubank Ultravioleta da Clara",
+      "modo_latam_pass_ativo": null
+    },
+    "perfil_compra_milhas": "Cliente LATAM Pass comum",
+    "elegivel_desconto_clube_itau_mais_alto": false,
+    "elegivel_desconto_geral_todos_clientes": true,
+    "nota": "Mesmo perfil de elegibilidade de desconto que a Clara (tier geral, sem Clube/Itaú). Saldo de milhas LATAM Pass zerado — as milhas dele ainda não contam para o cálculo de resgate, só o saldo dele em pontos Inter Prime (potencial de transferência) e o saldo de milhas dele mesmo se ele comprar/transferir."
   }
 }

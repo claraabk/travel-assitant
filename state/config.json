@@ -30,7 +30,10 @@
     "dias_lima_max": 3,
     "combinacoes_permitidas": ["LIM-CUZ", "CUZ-LIM"],
     "combinacoes_descontinuadas": ["LIM-LIM", "CUZ-CUZ"],
-    "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata."
+    "passageiros": 2,
+    "viajantes": ["Clara", "Pedro"],
+    "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata.",
+    "nota_passageiros": "Atualizado em 27/08/2026: Pedro (namorado da Clara) viaja junto -- buscas de preço devem passar a considerar 2 passageiros adultos (antes eram 1). Checagens em state/precos_historico.json anteriores a 27/08/2026 são para 1 passageiro só, não comparáveis diretamente com as novas."
   },
   "promocoes_config": {
     "exigir_2_fontes": false,
@@ -55,9 +58,10 @@
       "sempre_checar": true,
       "queries_obrigatorias_por_ciclo": [
         "bônus transferência LATAM Pass Livelo Esfera Nubank (tipo: bônus de transferência)",
-        "LATAM Pass compra de milhas desconto (tipo: desconto na compra direta — não só transferência)"
+        "LATAM Pass compra de milhas desconto (tipo: desconto na compra direta — não só transferência)",
+        "bônus transferência LATAM Pass Banco Inter Loop Prime (tipo: bônus de transferência — cartão do Pedro, adicionado em 27/08/2026)"
       ],
-      "nota": "cobrir os dois tipos de promoção sempre, não só transferência — descontos de compra direta têm sua própria dinâmica (faixas por perfil de cliente, ver state/promocoes.json)"
+      "nota": "cobrir os dois tipos de promoção sempre, não só transferência — descontos de compra direta têm sua própria dinâmica (faixas por perfil de cliente, ver state/promocoes.json). A partir de 27/08/2026 checar também bônus de transferência Inter Loop/Prime → LATAM Pass, relevante para o saldo de pontos do Pedro (ver state/perfil.json.companheiro_viagem e state/saldo.json.pedro)."
     }
   ]
 }

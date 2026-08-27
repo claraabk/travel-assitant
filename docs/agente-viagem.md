@@ -11,6 +11,15 @@ Recife ⇄ Peru (Lima e Cusco) é **exclusivamente LATAM** — cotação em
 dinheiro só em voos operados por LA, resgate só via LATAM Pass. Ignorar
 Smiles/TudoAzul/outros programas para esta viagem.
 
+**Viagem é para 2 passageiros: Clara e Pedro** (atualizado em
+27/08/2026, ver `state/config.json.roteiro.passageiros` e
+`state/perfil.json.companheiro_viagem`). Todas as buscas de preço de
+passagem (fli/Kiwi/Expedia/lastminute) devem ser feitas para **2
+adultos**, não 1 — checagens em `state/precos_historico.json`
+anteriores a 27/08/2026 foram feitas para 1 passageiro e não são
+comparáveis diretamente com as novas; ao anexar novo checkin, registrar
+`passageiros: 2` no registro para deixar isso rastreável.
+
 **A Clara quer visitar Lima E Cusco na mesma viagem** — não é mais
 "um destino ou outro". Ver `state/config.json.roteiro`:
 - ~6 dias em Cusco, 2 a 3 dias em Lima (viagem total de 8-9 dias).
@@ -39,8 +48,21 @@ direto (ver seção de formato do dashboard abaixo).
 Não repetir entrevista — ler desses arquivos. Saldo só é atualizado após
 a Clara confirmar explicitamente que uma reserva/transferência foi
 concluída (nunca por inferência). Antes disso, gravar em
-`saldo.pendente_confirmacao` e perguntar "você realmente completou
-isso?" na conversa/dashboard.
+`saldo.pendente_confirmacao` (ou `saldo.pedro.pendente_confirmacao`) e
+perguntar "você realmente completou isso?" na conversa/dashboard.
+
+**Perfil do Pedro** (namorado da Clara, viaja junto — ver
+`state/perfil.json.companheiro_viagem` e `state/saldo.json.pedro`):
+cadastro LATAM Pass com saldo zerado, cartão Banco Inter Prime com
+11.900 pontos, mesmo tier de elegibilidade de desconto que a Clara
+(geral, sem Clube/Itaú). Considerar o saldo combinado do casal (milhas
+LATAM Pass de ambos + potencial de transferência dos pontos Inter do
+Pedro) ao calcular quanto falta para a faixa de resgate estimada — não
+só o saldo da Clara isoladamente. Checar também bônus de transferência
+Inter Loop/Prime → LATAM Pass (ver
+`state/config.json.fontes_monitoradas_promocoes`,
+`queries_obrigatorias_por_ciclo`), do mesmo jeito que já se checa
+Nubank/Livelo/Esfera.
 
 ## Dois ciclos de execução
 
@@ -50,13 +72,16 @@ Objetivo: barato e frequente, só para detectar mudanças que não podem
 esperar o dashboard diário.
 
 1. Rodar `fli.search_dates`/`fli.search_flights` (filtrando
-   `airlines=["LA"]`) para a janela de jun/2027, cobrindo as 4
-   variantes de roteiro (`LIM-CUZ`×2d, `LIM-CUZ`×3d, `CUZ-LIM`×2d,
-   `CUZ-LIM`×3d — ver seção "Restrição fixa desta viagem" acima e
-   `state/config.json.roteiro`). Cada variante soma o trecho
+   `airlines=["LA"]`, **2 passageiros adultos** — ver
+   `state/config.json.roteiro.passageiros`) para a janela de jun/2027,
+   cobrindo as 4 variantes de roteiro (`LIM-CUZ`×2d, `LIM-CUZ`×3d,
+   `CUZ-LIM`×2d, `CUZ-LIM`×3d — ver seção "Restrição fixa desta viagem"
+   acima e `state/config.json.roteiro`). Cada variante soma o trecho
    internacional de ida one-way + o trecho doméstico LIM↔CUZ one-way +
    o trecho internacional de volta one-way, respeitando 6 dias em
-   Cusco e 2 ou 3 dias em Lima.
+   Cusco e 2 ou 3 dias em Lima. Se a ferramenta não suportar
+   `passageiros=2` diretamente, buscar para 1 e multiplicar por 2 como
+   aproximação, registrando essa ressalva no checkin.
 2. Anexar cada resultado a `state/precos_historico.json.checagens.<id>`
    (não sobrescrever — é log por combinação). Calcular
    `media_movel_30_checagens` e `variacao_pct_vs_media` por combinação,
@@ -138,17 +163,22 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
    reembolsabilidade, link direto. Mostrar as outras 3 variantes só
    como preço + diferença em R$ (uma linha cada, não repetir todo o
    detalhe de voo) — ver seção "Formato do dashboard" abaixo.
-3. Calcular dinheiro vs. LATAM Pass: preço em R$, milhas estimadas
-   (faixa pública: curto curso 6.000–25.000 econômica, longo curso
-   30.000–70.000 econômica, deixando claro que é estimativa até haver
-   fonte de resgate real), e o **CPM de equilíbrio** — a fórmula é
-   `preco_brl / milhas * 1000` (custo por 1.000 milhas no ponto em que
-   pagar em dinheiro e resgatar dariam no mesmo). **Cuidado com a
-   direção da conta**: não inverter (`milhas / preco_brl`) — um ciclo
-   anterior cometeu esse erro de fator ~10x. Comparar esse CPM de
+3. Calcular dinheiro vs. LATAM Pass: preço em R$ (para os 2
+   passageiros), milhas estimadas — **para 2 passageiros a faixa de
+   resgate pública dobra**: curto curso 12.000–50.000, longo curso
+   60.000–140.000 milhas econômica (deixando claro que é estimativa até
+   haver fonte de resgate real) —, e o **CPM de equilíbrio** — a
+   fórmula é `preco_brl / milhas * 1000` (custo por 1.000 milhas no
+   ponto em que pagar em dinheiro e resgatar dariam no mesmo). **Cuidado
+   com a direção da conta**: não inverter (`milhas / preco_brl`) — um
+   ciclo anterior cometeu esse erro de fator ~10x. Comparar esse CPM de
    equilíbrio contra o CPM real de compra/transferência: se for
    possível conseguir milhas por menos que o CPM de equilíbrio,
-   resgatar vale mais que pagar em dinheiro.
+   resgatar vale mais que pagar em dinheiro. Considerar o **saldo
+   combinado do casal** (`state/saldo.json.latam_pass_milhas` +
+   `state/saldo.json.pedro.latam_pass_milhas` + potencial de
+   transferência de `state/saldo.json.pedro.inter_prime_pontos`) contra
+   essa faixa, não só o saldo da Clara.
 4. Se `Latam_PASS.list_latam_miles_purchase_prices` ou
    `state/latam_miles_price.json` (scraper local — schema e cron em
    `docs/scraper-local-setup.md`, válido só com `atualizado_em` das

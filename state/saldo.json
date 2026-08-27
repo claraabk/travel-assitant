@@ -6,5 +6,15 @@
     { "data": "2026-08-25", "ultravioleta_pontos": 7667, "latam_pass_milhas": 0, "fonte": "informado pela Clara na configuração inicial" },
     { "data": "2026-08-26", "ultravioleta_pontos": 7667, "latam_pass_milhas": 5000, "fonte": "Clara confirmou compra direta de 5.000 milhas LATAM Pass por R$133 (CPM R$26,60/milheiro), aproveitando a promoção de desconto identificada em state/promocoes.json (id: latam-pass-desconto-compra-milhas-por-perfil)" }
   ],
-  "pendente_confirmacao": null
+  "pendente_confirmacao": null,
+  "pedro": {
+    "latam_pass_milhas": 0,
+    "inter_prime_pontos": 11900,
+    "confirmado_por_clara_em": "2026-08-27",
+    "historico_confirmacoes": [
+      { "data": "2026-08-27", "latam_pass_milhas": 0, "inter_prime_pontos": 11900, "fonte": "informado pela Clara na entrevista de perfil do Pedro" }
+    ],
+    "pendente_confirmacao": null,
+    "nota": "Saldo combinado do casal para efeito de planejamento: 5.000 (Clara, LATAM Pass) + 0 (Pedro, LATAM Pass) + 11.900 pontos Inter Prime do Pedro (ainda não convertidos/transferidos para LATAM Pass, proporção de transferência a confirmar)."
+  }
 }
