@@ -75,7 +75,9 @@ async def fetch_all_miles_tiers(headless: bool = True) -> list[MilesTierQuote]:
                     "Chrome/124.0.0.0 Safari/537.36"
                 )
             )
-            await page.goto(LATAM_MILES_URL, wait_until="domcontentloaded", timeout=30000)
+            await page.goto(
+                LATAM_MILES_URL, wait_until="domcontentloaded", timeout=30000
+            )
 
             try:
                 await page.click(SELECTOR_COOKIE_BANNER_ACCEPT, timeout=3000)
@@ -94,11 +96,11 @@ async def fetch_all_miles_tiers(headless: bool = True) -> list[MilesTierQuote]:
                     document.querySelectorAll('input[name="radio-values"]')
                   );
                   return inputs
-                    .map((input) => {
-                      const label = input.closest('label');
-                      return { id: label ? label.id : null, value: input.value };
-                    })
-                    .filter((t) => t.id);
+                        .map((input) => {
+                            const label = input.closest('label');
+                            return { id: label ? label.id : null, value: input.value };
+                        })
+                        .filter((t) => t.id);
                 }
                 """
             )
@@ -227,7 +229,9 @@ def main() -> None:
     `xvfb-run -a python3 latam_scraper.py` em vez de forçar headless=True
     -- ver docs/scraper-local-setup.md.
     """
-    headless = os.environ.get("LATAM_SCRAPER_HEADLESS", "false").strip().lower() == "true"
+    headless = (
+        os.environ.get("LATAM_SCRAPER_HEADLESS", "false").strip().lower() == "true"
+    )
     try:
         tiers = asyncio.run(fetch_all_miles_tiers(headless=headless))
         if not tiers:
