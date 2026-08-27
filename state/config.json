@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-27T12:31:00Z",
-    "tentativas_consecutivas_falhas": 10,
+    "ultima_tentativa": "2026-08-27T13:00:00Z",
+    "tentativas_consecutivas_falhas": 11,
     "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-27T12:31:00Z",
-    "resultado": "fli.search_flights ficou totalmente indisponível neste ciclo (0 resultados nas 9 buscas one-way tentadas, cobrindo todas as pernas das 4 variantes) — 4º ciclo consecutivo com essa falha total. Fallback: Kiwi.com search-flight (select_airlines=LA) cobriu os trechos domésticos LIM<->CUZ e as voltas CUZ->REC/LIM->REC com tarifas one-way LA reais; os trechos de ida REC->LIM e REC->CUZ foram carregados do último checkpoint fli bem-sucedido (2026-08-27T01:15:00Z, <12h, última leitura real de 2 passageiros).",
-    "nota": "cuz_para_rec via Kiwi (rota 3 paradas via LIM-GRU-BSB) segue bem acima da última leitura fli (rota mais direta via SCL/GRU) -- mesmo padrão de distorção de roteamento já visto nos ciclos anteriores, não sinal real de preço. lim_para_rec via Kiwi ficou mais próximo da leitura fli, dentro da variação normal. melhor_combinacao_geral mantido na última leitura 100% fli de 2026-08-27T01:15:00Z (LIM-CUZ x2d, R$8.490) até o conector normalizar."
+    "ultima_tentativa": "2026-08-27T13:00:00Z",
+    "resultado": "fli.search_flights voltou a funcionar neste ciclo (9/9 buscas one-way com sucesso, 2 passageiros, cobrindo as 4 variantes) — encerra a sequência de 4 ciclos consecutivos de falha total (00h22 a 12h31 de 27/08). melhor_combinacao_geral atualizado com preço 100% fli real (LIM-CUZ x2d, R$8.486).",
+    "nota": "Sem sinal de instabilidade nesta rodada — todas as 9 buscas retornaram resultados completos com detalhe de voo/horários/escalas. Continuar monitorando nos próximos ciclos."
   },
   "roteiro": {
     "fixo": false,
@@ -41,9 +41,10 @@
     "nota": "Adicionado em 27/08/2026 a pedido da Clara. Marcar toda conexão internacional abaixo de 1h30 (90min) como 'conexao_curta' (risco de perder o voo seguinte) e acima de 5h (300min) como 'conexao_longa'. Ao montar cada itinerário, se a opção mais barata tiver alguma conexão fora dessa faixa, buscar pelo menos 1 alternativa (mesmo que mais cara) sem esse problema e mostrar as duas no dashboard, com tag na(s) opção(ões) com alerta."
   },
   "premissas_calculo_milhas": {
-    "conversao_pontos_para_milhas_piso": "1:1 — Ultravioleta (Clara) e Inter Prime (Pedro) contam como milhas equivalentes na proporção mínima de 1:1 mesmo sem transferência confirmada, salvo se houver bônus de transferência ativo maior (nesse caso usar o bônus real).",
+    "conversao_pontos_para_milhas_piso": "1:1 — Ultravioleta (Clara) conta como milhas equivalentes na proporção mínima de 1:1 mesmo sem transferência confirmada, salvo se houver bônus de transferência ativo maior (nesse caso usar o bônus real). Inter Prime (Pedro) NÃO conta — ver nota abaixo.",
     "valor_restante_usa_teto": true,
-    "nota": "Adicionado em 27/08/2026 a pedido da Clara: no cálculo de 'milhas faltantes' e 'custo para completar', sempre usar o teto (maior valor) da faixa de milhas necessárias e o maior CPM de aquisição disponível — nunca a média ou o piso. É um cálculo propositalmente conservador (pior caso), não uma média."
+    "inter_prime_nao_transfere_para_latam_pass": true,
+    "nota": "Adicionado em 27/08/2026 a pedido da Clara: no cálculo de 'milhas faltantes' e 'custo para completar', sempre usar o teto (maior valor) da faixa de milhas necessárias e o maior CPM de aquisição disponível — nunca a média ou o piso. É um cálculo propositalmente conservador (pior caso), não uma média. CORREÇÃO em 27/08/2026 13h: confirmado via WebSearch (passageirodeprimeira.com) que o Inter Loop/Prime só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1) — NÃO existe rota de transferência para LATAM Pass. Os 11.900 pontos Inter Prime do Pedro (ver state/saldo.json.pedro) portanto NÃO entram no cálculo de milhas do casal para esta viagem (exclusiva LATAM). Resolve a pendência sinalizada em state/promocoes.json (id: inter-loop-prime-latam-pass-sem-bonus-ativo)."
   },
   "promocoes_config": {
     "exigir_2_fontes": false,
@@ -51,8 +52,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-08-27T12:31:00Z",
-    "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
+    "ultima_tentativa": "2026-08-27T13:00:00Z",
+    "resultado": "EGRESS_BLOCKED — proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai). passageirodeprimeira.com também confirmado EGRESS_BLOCKED via WebFetch direto neste ciclo — só WebSearch com allowed_domains funciona."
   },
   "fontes_monitoradas_promocoes": [
     {

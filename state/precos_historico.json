@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 8490,
+    "preco_total_brl": 8486,
     "passageiros": 2,
     "dias_lima": 2,
     "dias_cusco": 6,
-    "data_checagem": "2026-08-27T01:15:00Z",
-    "nota": "Atualizado em 27/08/2026: primeira checagem com preco REAL de 2 passageiros (Clara + Pedro) e detalhe completo de voo/horarios/escalas via fli. LIM-CUZ x2d (R$8.490) segue vencedora, R$202 abaixo da 2a colocada (CUZ-LIM x2d, R$8.692). Substitui a estimativa provisoria (dobrar valor de 1 pax)."
+    "data_checagem": "2026-08-27T13:00:00Z",
+    "nota": "Atualizado em 27/08/2026 13h: fli voltou a responder apos 4 ciclos de falha total. LIM-CUZ x2d (R$8.486) segue vencedora, R$203 abaixo das outras 3 variantes (todas empatadas em R$8.689). Substitui a leitura mista (fli+Kiwi) do ciclo anterior (R$8.490/9.513 conforme variante)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -1152,6 +1152,304 @@
         "media_movel_30_checagens": 9122,
         "variacao_pct_vs_media": 4.7,
         "nota": "Preço idêntico ao ciclo anterior. Não atualizar melhor_combinacao_geral com este checkin isolado. Sem gatilho de alerta (regra é só quedas ≥15%)."
+      },
+      {
+        "data_checagem": "2026-08-27T13:00:00Z",
+        "preco_total_brl": 8486,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3923,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 688,
+            "data": "2027-06-12"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 3875,
+            "data": "2027-06-18"
+          }
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2344",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T04:50:00",
+              "chegada": "2027-06-12T06:10:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2366",
+              "origem": "CUZ",
+              "destino": "SCL",
+              "partida": "2027-06-18T09:40:00",
+              "chegada": "2027-06-18T14:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8105",
+              "origem": "SCL",
+              "destino": "GRU",
+              "partida": "2027-06-18T16:25:00",
+              "chegada": "2027-06-18T21:20:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA3382",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-18T23:30:00",
+              "chegada": "2027-06-19T02:30:00",
+              "aeronave": "Airbus A321"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas) — conector fli voltou a funcionar neste ciclo, apos 4 ciclos consecutivos de falha total (0/9 buscas nos ciclos de 27/08 01h15 seguinte ate 12h31)",
+        "media_movel_30_checagens": 9000.5,
+        "variacao_pct_vs_media": -5.72,
+        "nota": "Vencedora geral, mantendo a lideranca (era R$8.490, agora R$8.493->8.486, variacao normal de tarifa). fli voltou a responder neste ciclo com preco real de 2 pax, substituindo os checkins mistos (fli+Kiwi) dos 2 ciclos anteriores.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativa_sem_alerta": {
+          "trecho": "ida",
+          "preco_brl": 3923,
+          "legs": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2429",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T08:15:00",
+              "chegada": "2027-06-10T11:25:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "layovers": [
+            {
+              "aeroporto": "GRU",
+              "duracao_min": 140
+            }
+          ],
+          "nota": "Mesmo preco (R$3.923), troca conexao de 1h15 (GRU) por 2h20."
+        }
+      },
+      {
+        "data_checagem": "2026-08-27T13:00:00Z",
+        "preco_total_brl": 8689,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3923,
+            "data": "2027-06-10"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 688,
+            "data": "2027-06-13"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 4078,
+            "data": "2027-06-19"
+          }
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2344",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T04:50:00",
+              "chegada": "2027-06-13T06:10:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2224",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-19T21:15:00",
+              "chegada": "2027-06-19T22:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-20T00:30:00",
+              "chegada": "2027-06-20T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-20T13:10:00",
+              "chegada": "2027-06-20T15:45:00",
+              "aeronave": "Airbus A321"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas) — conector fli voltou a funcionar neste ciclo, apos 4 ciclos consecutivos de falha total (0/9 buscas nos ciclos de 27/08 01h15 seguinte ate 12h31)",
+        "media_movel_30_checagens": 9121.0,
+        "variacao_pct_vs_media": -4.74,
+        "nota": "2a colocada (empatada com CUZ-LIM x2d e x3d, todas +R$203 vs a vencedora). fli voltou a funcionar neste ciclo.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 375,
+            "tipo": "conexao_longa",
+            "limite": "acima de 5h"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 3923,
+            "legs": [
+              {
+                "voo": "LA3315",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T02:40:00",
+                "chegada": "2027-06-10T05:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2429",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T08:15:00",
+                "chegada": "2027-06-10T11:25:00",
+                "aeronave": "Airbus A319"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 140
+              }
+            ],
+            "nota": "Mesmo preco (R$3.923), troca conexao de 1h15 (GRU) por 2h20."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4080,
+            "legs": [
+              {
+                "voo": "LA2128",
+                "origem": "CUZ",
+                "destino": "LIM",
+                "partida": "2027-06-19T09:05:00",
+                "chegada": "2027-06-19T10:40:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA8099",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T13:05:00",
+                "chegada": "2027-06-19T19:55:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA3382",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T23:30:00",
+                "chegada": "2027-06-20T02:30:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 145
+              },
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 215
+              }
+            ],
+            "nota": "+R$2 (R$4.080), troca conexao de 6h15 (BSB) por 2h25 (LIM) + 3h35 (GRU)."
+          }
+        ]
       }
     ],
     "CUZ-LIM": [
@@ -1936,6 +2234,370 @@
         "media_movel_30_checagens": 8782,
         "variacao_pct_vs_media": 1.02,
         "nota": "Preço idêntico ao ciclo anterior (mesma rota/tarifa Kiwi para todos os trechos). Continua a menor variante deste ciclo, mas ainda acima da atual melhor_combinacao_geral (LIM-CUZ x2d, R$8.490, leitura 100% fli). Sem gatilho de alerta (regra é só quedas ≥15%)."
+      },
+      {
+        "data_checagem": "2026-08-27T13:00:00Z",
+        "preco_total_brl": 8689,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 4053,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 618,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4018,
+            "data": "2027-06-18"
+          }
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2120",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-10T12:35:00",
+              "chegada": "2027-06-10T14:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2222",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T00:05:00",
+              "chegada": "2027-06-16T01:35:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-18T00:30:00",
+              "chegada": "2027-06-18T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-18T10:20:00",
+              "chegada": "2027-06-18T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-18T14:10:00",
+              "chegada": "2027-06-18T15:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas) — conector fli voltou a funcionar neste ciclo, apos 4 ciclos consecutivos de falha total (0/9 buscas nos ciclos de 27/08 01h15 seguinte ate 12h31)",
+        "media_movel_30_checagens": 8628.5,
+        "variacao_pct_vs_media": 0.7,
+        "nota": "Empatada em 2o lugar (+R$203 vs a vencedora). fli voltou a funcionar neste ciclo.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 4053,
+            "legs": [
+              {
+                "voo": "LA3677",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T16:15:00",
+                "chegada": "2027-06-10T19:35:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:30:00",
+                "chegada": "2027-06-11T00:45:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2344",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-11T04:50:00",
+                "chegada": "2027-06-11T06:10:00",
+                "aeronave": "Airbus A320"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 115
+              },
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 245
+              }
+            ],
+            "nota": "Mesmo preco (R$4.053), troca conexao de 1h15 (GRU) por 1h55 (GRU) + 4h05 (LIM)."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4020,
+            "legs": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-18T00:30:00",
+                "chegada": "2027-06-18T07:20:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA3380",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-18T09:35:00",
+                "chegada": "2027-06-18T12:40:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 135
+              }
+            ],
+            "nota": "+R$2 (R$4.020), 1 conexao so (GRU, 2h15) em vez de 2 (BSB 3h25 + FOR 1h10 curta)."
+          }
+        ]
+      },
+      {
+        "data_checagem": "2026-08-27T13:00:00Z",
+        "preco_total_brl": 8689,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 4053,
+            "data": "2027-06-10"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 618,
+            "data": "2027-06-16"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4018,
+            "data": "2027-06-19"
+          }
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2120",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-10T12:35:00",
+              "chegada": "2027-06-10T14:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2222",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T00:05:00",
+              "chegada": "2027-06-16T01:35:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:30:00",
+              "chegada": "2027-06-19T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-19T10:20:00",
+              "chegada": "2027-06-19T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-19T14:10:00",
+              "chegada": "2027-06-19T15:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "fonte": "fli.search_flights (2 passageiros, 3 buscas one-way somadas) — conector fli voltou a funcionar neste ciclo, apos 4 ciclos consecutivos de falha total (0/9 buscas nos ciclos de 27/08 01h15 seguinte ate 12h31)",
+        "media_movel_30_checagens": 8781.25,
+        "variacao_pct_vs_media": -1.05,
+        "nota": "Empatada em 2o lugar (+R$203 vs a vencedora). fli voltou a funcionar neste ciclo.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "preco_brl": 4053,
+            "legs": [
+              {
+                "voo": "LA3677",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T16:15:00",
+                "chegada": "2027-06-10T19:35:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:30:00",
+                "chegada": "2027-06-11T00:45:00",
+                "aeronave": "Airbus A320"
+              },
+              {
+                "voo": "LA2344",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-11T04:50:00",
+                "chegada": "2027-06-11T06:10:00",
+                "aeronave": "Airbus A320"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 115
+              },
+              {
+                "aeroporto": "LIM",
+                "duracao_min": 245
+              }
+            ],
+            "nota": "Mesmo preco (R$4.053), troca conexao de 1h15 (GRU) por 1h55 (GRU) + 4h05 (LIM)."
+          },
+          {
+            "trecho": "volta",
+            "preco_brl": 4020,
+            "legs": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T00:30:00",
+                "chegada": "2027-06-19T07:25:00",
+                "aeronave": "Airbus A321"
+              },
+              {
+                "voo": "LA3380",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T09:35:00",
+                "chegada": "2027-06-19T12:40:00",
+                "aeronave": "Airbus A321"
+              }
+            ],
+            "layovers": [
+              {
+                "aeroporto": "GRU",
+                "duracao_min": 130
+              }
+            ],
+            "nota": "+R$2 (R$4.020), 1 conexao so (GRU, 2h10) em vez de 2 (BSB 3h25 + FOR 1h10 curta)."
+          }
+        ]
       }
     ]
   }

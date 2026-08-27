@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-27T12:31:00Z",
+  "ultima_checagem": "2026-08-27T13:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -85,7 +85,7 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-27T12:31:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha como ativa (título de topo \"LATAM Pass oferece até 65% de desconto na compra de milhas\", válida até sexta-feira 28/08). Síntese deste ciclo cita 66% (cartão LATAM Pass Itaú) e 64% (clientes inscritos e/ou assinantes Clube) — variação de 1-2 p.p. vs. leituras anteriores (65%/62%), mesma faixa e mesma mecânica, dentro do ruído normal de edição do blog. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
+      "ultima_reconfirmacao": "2026-08-27T13:00:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha ativa (títulos recorrentes até 60/63/65/66% de desconto, milheiro a partir de ~R$23,80-24,50). Síntese deste ciclo: cartão LATAM Pass Itaú paga R$24,50/milheiro, demais clientes R$26,60/milheiro — consistente com a compra confirmada da Clara. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
@@ -112,17 +112,18 @@
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
       "tipo": "checagem_sem_oportunidade",
-      "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. Nenhuma campanha específica de bônus para Inter/Loop encontrada nos 3 ciclos checados até agora (26/08, 27/08 madrugada e 27/08 meio-dia). ALERTA DE ESCOPO (novo neste ciclo, 27/08 12h31): uma fonte encontrada nesta checagem descreve as rotas de transferência do Loop explicitamente como 'Todos os usuários do Loop podem enviar pontos para o Azul Fidelidade na proporção 1:1, e clientes Prime e Win também podem enviar para a Smiles na proporção 1:1' — SEM mencionar LATAM Pass como destino possível. Combinado com a menção já registrada de que a campanha recorrente de 30% de bônus em cartão de crédito 'não contempla Livelo, Esfera, Porto e Inter', isso levanta a possibilidade de que o Loop do Inter simplesmente NÃO tenha rota de transferência para LATAM Pass (só Azul/Smiles) — o que tornaria irrelevante continuar monitorando bônus para essa rota, e é uma informação mais importante para a Clara que 'sem bônus no momento'.",
+      "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. CONFIRMADO em 27/08/2026 13h (dashboard completo): o Inter Loop/Prime NÃO tem rota de transferência para LATAM Pass — só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1). Encerra a hipótese levantada no ciclo anterior (12h31).",
       "bonus_pct": null,
       "e_permanente": false,
       "valido_ate": null,
       "fontes": [
-        "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 (queries: 'bônus transferência LATAM Pass Banco Inter Loop Prime') — nenhum artigo específico sobre bônus Inter Loop→LATAM Pass encontrado",
-        "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/ (síntese da busca de 27/08 12h31 cita este artigo como fonte da lista de destinos de transferência do Loop: Azul Fidelidade e Smiles, sem LATAM Pass)"
+        "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 13h (query: 'Inter Loop pontos transferir LATAM Pass Azul Smiles quais programas') — síntese explícita: 'não é possível transferir pontos Inter Loop diretamente para o LATAM Pass. [...] o Inter Loop possui parcerias apenas com Azul Fidelidade e Smiles.'",
+        "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/",
+        "https://passageirodeprimeira.com/transforme-pontos-em-passagem-como-enviar-pontos-inter-loop-para-smiles-ou-azul-fidelidade/"
       ],
-      "confianca": "média para a hipótese de ausência de rota Loop→LATAM Pass (1 fonte, síntese de busca, não confirmado por leitura direta do artigo completo nem do app) — ainda não é confirmação definitiva",
+      "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
-      "acao_sugerida": "PRIORIDADE para o próximo ciclo dashboard completo: ler o artigo 'qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop' na íntegra (ou checar diretamente no app do Inter) para confirmar se Loop→LATAM Pass existe como rota de transferência. Se confirmado que NÃO existe, os 11.900 pontos Inter Prime do Pedro não podem contar 1:1 para LATAM Pass via transferência direta (ver state/config.json.premissas_calculo_milhas) — avisar a Clara e reavaliar o cálculo de milhas do casal, já que isso pode mudar quanto falta para a faixa de resgate estimada."
+      "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru."
     },
     {
       "id": "modo-latam-pass-nubank",

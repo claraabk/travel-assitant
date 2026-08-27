@@ -15,6 +15,6 @@
       { "data": "2026-08-27", "latam_pass_milhas": 0, "inter_prime_pontos": 11900, "fonte": "informado pela Clara na entrevista de perfil do Pedro" }
     ],
     "pendente_confirmacao": null,
-    "nota": "Saldo combinado do casal para efeito de planejamento: 5.000 (Clara, LATAM Pass) + 0 (Pedro, LATAM Pass) + 11.900 pontos Inter Prime do Pedro (ainda não convertidos/transferidos para LATAM Pass, proporção de transferência a confirmar)."
+    "nota": "Saldo combinado do casal para efeito de planejamento de milhas LATAM Pass: 5.000 (Clara, LATAM Pass) + 0 (Pedro, LATAM Pass) + 7.667 pontos Ultravioleta da Clara (1:1). Os 11.900 pontos Inter Prime do Pedro NÃO contam — confirmado em 27/08/2026 que o Inter Loop/Prime só transfere para Azul Fidelidade e Smiles, sem rota para LATAM Pass (ver state/promocoes.json, id: inter-loop-prime-latam-pass-sem-bonus-ativo, e state/config.json.premissas_calculo_milhas)."
   }
 }
