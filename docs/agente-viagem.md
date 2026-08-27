@@ -243,6 +243,14 @@ Objetivo: visão completa, sempre publicada, sem depender de e-mail.
   formato `https://www.google.com/travel/flights?q=Flights%20from%20<ORIGEM>%20to%20<DESTINO>%20on%20<AAAA-MM-DD>&curr=BRL`
   para cada trecho one-way. Nunca deixar a tabela de itinerário sem
   link.
+- **Sem linguagem de processo/extração no dashboard** (adicionado em
+  27/08/2026). Nunca escrever coisas como "via fli", "checkin",
+  "ciclo", "conector", "buscas", "leitura 100%", "dados via WebSearch"
+  etc. no texto visível — isso é para quem opera o agente, não para
+  quem lê o painel. O dashboard é para o usuário final: só fatos
+  (preço, rota, horário, %, prazo) e recomendação, nunca como/onde o
+  dado foi obtido. Esse tipo de detalhe de proveniência fica em
+  `state/*.json` (campo `fonte`), nunca em `dashboard/dashboard.html`.
 - **Textos curtos e diretos** nos cards "Dinheiro vs. LATAM Pass" e
   "Vale comprar mais milhas?": frases telegráficas com os números
   essenciais (valor, faixa, o que falta), sem repetir contexto que já
