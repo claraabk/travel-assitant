@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-28T12:47:00Z",
-    "tentativas_consecutivas_falhas": 14,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo dashboard completo de 28/08 12h47)",
+    "ultima_tentativa": "2026-08-28T18:20:00Z",
+    "tentativas_consecutivas_falhas": 15,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 28/08 18h20)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-28T12:47:00Z",
-    "resultado": "Ciclo dashboard completo (28/08 12h47): reaproveitado o monitor leve das 12h27 (rodado ~20min antes, mesmo ciclo diário) em vez de repetir as 9 buscas — retestados só os 2 trechos internacionais de entrada que ficaram stale (REC-LIM, REC-CUZ, 2 pax, airlines=[LA]): 0/2 de novo, e 1 busca extra sem filtro de companhia em REC-LIM também veio vazia, confirmando outage geral do conector (não só LA). Kiwi.com segue sem tarifa one-way pura LA para esses 2 trechos (mesma lacuna do ciclo de 12h27) — mantidos carregados do último checkpoint 100% fli (2026-08-27T13:00:00Z).",
-    "nota": "Conector segue instável há mais de 24h sem 1 ciclo de sucesso total (última leitura 100% fli em 2026-08-27T13:00:00Z, agora com ~24h de idade). melhor_combinacao_geral mantido ancorado nessa última leitura 100% fli (LIM-CUZ x2d R$8.486) — checkins mistos/stale não a substituem, mesma política de ciclos anteriores."
+    "ultima_tentativa": "2026-08-28T18:20:00Z",
+    "resultado": "Ciclo monitor leve (28/08 18h20): 3 buscas de teste (REC-LIM 2pax airlines=[LA], REC-LIM 2pax sem filtro de companhia, GRU-GIG 1pax sanidade) — 0/3, confirmando outage geral do conector (não só rota/companhia específica). Kiwi.com segue sem tarifa one-way pura LA para os 2 trechos internacionais de entrada (REC-LIM, REC-CUZ) — mantidos carregados do último checkpoint 100% fli (2026-08-27T13:00:00Z, agora ~29h de idade). Trechos domésticos e de saída (LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC) buscados frescos via Kiwi.com one-way, select_airlines=LA — todas as 4 variantes anexadas a precos_historico.json.",
+    "nota": "Conector segue instável há mais de 29h sem 1 ciclo de sucesso total (última leitura 100% fli em 2026-08-27T13:00:00Z). melhor_combinacao_geral mantido ancorado nessa última leitura 100% fli (LIM-CUZ x2d R$8.486) — checkins mistos/stale não a substituem, mesma política de ciclos anteriores."
   },
   "roteiro": {
     "fixo": false,
@@ -52,8 +52,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-08-28T12:47:00Z",
-    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (dashboard completo 28/08) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
+    "ultima_tentativa": "2026-08-28T18:20:00Z",
+    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 28/08 18h20) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
