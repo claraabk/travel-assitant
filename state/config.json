@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-27T18:20:00Z",
-    "tentativas_consecutivas_falhas": 12,
+    "ultima_tentativa": "2026-08-28T12:27:24Z",
+    "tentativas_consecutivas_falhas": 13,
     "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-27T18:20:00Z",
-    "resultado": "fli.search_flights voltou a falhar neste ciclo (0/9 buscas one-way, 2 passageiros, cobrindo as 4 variantes) — volta ao padrão intermitente já visto entre 01h15 e 12h31 de 27/08, depois de 1 ciclo de sucesso (13h00). Fallback: Kiwi.com para trechos domésticos e de saída (select_airlines=LA); trechos internacionais de entrada (REC-LIM, REC-CUZ) carregados do último checkpoint 100% fli bem-sucedido (13h00, <6h), pois Kiwi não retornou tarifa one-way pura LA para esses trechos (mesmo padrão de lacuna já visto em ciclos anteriores).",
-    "nota": "Conector segue instável, alternando ciclos de sucesso total e falha total. melhor_combinacao_geral mantido ancorado na última leitura 100% fli (13h00, LIM-CUZ x2d R$8.486) — checkins mistos deste ciclo não a substituem, mesma política de ciclos anteriores."
+    "ultima_tentativa": "2026-08-28T12:27:24Z",
+    "resultado": "fli.search_flights falhou de novo neste ciclo (0/9 buscas one-way, 2 passageiros, cobrindo as 4 variantes — testado também 1 busca sem filtro de companhia para confirmar outage geral, não só LA). Fallback: Kiwi.com para trechos domésticos e de saída (select_airlines=LA, 7/9 buscas com resultado); trechos internacionais de entrada (REC-LIM, REC-CUZ) sem resultado nem em fli nem em Kiwi — carregados do último checkpoint 100% fli bem-sucedido (2026-08-27T13:00:00Z), que já está com ~23h de idade (acima do limite de <6h usado em ciclos anteriores para tratar o valor carregado como fresco) — sinalizado como stale/baixa confiança no checkin.",
+    "nota": "Conector segue instável havia mais de 24h sem 1 ciclo de sucesso total (última leitura 100% fli em 2026-08-27T13:00:00Z). melhor_combinacao_geral mantido ancorado nessa última leitura 100% fli (LIM-CUZ x2d R$8.486) — checkins mistos/stale deste ciclo não a substituem, mesma política de ciclos anteriores."
   },
   "roteiro": {
     "fixo": false,
