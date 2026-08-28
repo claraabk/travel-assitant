@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-27T18:20:00Z",
+  "ultima_checagem": "2026-08-28T00:22:57Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -17,7 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
+      "ultima_reconfirmacao": "2026-08-28T00:22:57Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -35,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
+      "ultima_reconfirmacao": "2026-08-28T00:22:57Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Também apareceu um título mais genérico ('LATAM Pass oferece até 40% de bônus nas transferências de pontos dos cartões de crédito') na mesma busca — parece a mesma família de campanha rotativa de bônus de cartão (Nubank/Itaú/Esfera/Livelo), teto um pouco mais alto que os 30-35% já registrados, mas ainda abaixo do gatilho de alerta urgente (60%). Não abre item novo — mesma dinâmica recorrente já coberta pelos itens desta lista.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -57,7 +57,7 @@
       ],
       "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25% Livelo→LATAM Pass (\"Só hoje\", \"Últimas horas\"); nenhuma edição nova com % ≥60% encontrada. Sem mudança de conclusão.",
+      "ultima_reconfirmacao": "2026-08-28T00:22:57Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando os mesmos títulos recorrentes de 25-35% Livelo→LATAM Pass (\"Só hoje\", \"Últimas horas\"); nenhuma edição nova com % ≥60% encontrada. Sem mudança de conclusão.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
     },
     {
@@ -85,7 +85,8 @@
       ],
       "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
       "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha ativa (títulos recorrentes até 60/63/65% de desconto). Síntese deste ciclo: 65% de desconto (R$24,50/milheiro) exclusivo para cartão LATAM Pass Itaú; 62% de desconto (R$26,60/milheiro) para demais clientes e assinantes do Clube LATAM Pass — redação ligeiramente mais restritiva que a do ciclo anterior (que mencionava 'todos os clientes' para o tier de 62%), mas ainda consistente com a compra confirmada da Clara ao mesmo CPM. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
+      "ultima_reconfirmacao": "2026-08-28T00:22:57Z — WebSearch (passageirodeprimeira.com) do ciclo atual mostra um título novo: 'Prorrogado! LATAM Pass oferece até 60% de desconto na compra de milhas', ao lado dos títulos recorrentes já vistos (63%/65%/66%). Indício de que a campanha foi ESTENDIDA para além de valido_ate=2026-08-28 (hoje), possivelmente a um % levemente menor (60% em vez de 62-65%) -- mas a nova data exata de expiração não foi confirmada nesta busca (síntese não trouxe data). Tratar valido_ate atual como incerto em vez de expirado automaticamente: não mover para 'expiradas' neste ciclo sem confirmar se ainda está ativa hoje. Próximo ciclo (monitor leve ou dashboard) deve tentar achar a data de término da edição prorrogada, ou confirmar direto no app/site se ainda vigente. Mesma promoção já notificada (ja_notificada=true), sem novo alerta -- é continuação/prorrogação da mesma oportunidade, não uma nova.",
+      "valido_ate_incerto_desde": "2026-08-28T00:22:57Z",
       "compra_confirmada": {
         "data": "2026-08-26",
         "milhas": 5000,
@@ -123,6 +124,7 @@
       ],
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-08-28T00:22:57Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo) reconfirma: Inter Loop/Prime segue fora das campanhas de bônus de transferência para LATAM Pass (um resultado inclusive menciona explicitamente que o Inter NÃO está incluído numa campanha de 30% para 'diversos bancos'). Sem mudança de conclusão.",
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru."
     },
     {

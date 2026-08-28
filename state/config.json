@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-27T18:20:00Z",
-    "tentativas_consecutivas_falhas": 12,
+    "ultima_tentativa": "2026-08-28T00:22:57Z",
+    "tentativas_consecutivas_falhas": 13,
     "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-27T18:20:00Z",
-    "resultado": "fli.search_flights voltou a falhar neste ciclo (0/9 buscas one-way, 2 passageiros, cobrindo as 4 variantes) — volta ao padrão intermitente já visto entre 01h15 e 12h31 de 27/08, depois de 1 ciclo de sucesso (13h00). Fallback: Kiwi.com para trechos domésticos e de saída (select_airlines=LA); trechos internacionais de entrada (REC-LIM, REC-CUZ) carregados do último checkpoint 100% fli bem-sucedido (13h00, <6h), pois Kiwi não retornou tarifa one-way pura LA para esses trechos (mesmo padrão de lacuna já visto em ciclos anteriores).",
-    "nota": "Conector segue instável, alternando ciclos de sucesso total e falha total. melhor_combinacao_geral mantido ancorado na última leitura 100% fli (13h00, LIM-CUZ x2d R$8.486) — checkins mistos deste ciclo não a substituem, mesma política de ciclos anteriores."
+    "ultima_tentativa": "2026-08-28T00:22:57Z",
+    "resultado": "fli.search_flights falhou neste ciclo (0/9 buscas one-way, 2 passageiros, cobrindo as 4 variantes) — mesmo padrão intermitente de ciclos anteriores. Fallback: Kiwi.com cobriu 7/9 buscas (domésticos LIM-CUZ/CUZ-LIM e trechos de saída CUZ-REC/LIM-REC, select_airlines=LA); os 2 trechos internacionais de entrada (REC-LIM, REC-CUZ) não retornaram tarifa one-way pura LA no Kiwi (mesma lacuna já vista em ciclos anteriores) e foram carregados do último checkpoint 100% fli bem-sucedido (2026-08-27T13:00:00Z) -- agora com >24h de idade, fora da janela informal de <6h usada em ciclos mistos anteriores. Sinalizado como caveat em cada checkin correspondente.",
+    "nota": "Conector segue instável. melhor_combinacao_geral mantido ancorado na última leitura 100% fli (2026-08-27T13:00:00Z, LIM-CUZ x2d R$8.486) — checkins mistos deste ciclo não a substituem, mesma política de ciclos anteriores. Nenhuma variação vs. média móvel deste ciclo ultrapassou o gatilho de alerta (15%)."
   },
   "roteiro": {
     "fixo": false,
@@ -52,7 +52,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-08-27T18:20:00Z",
+    "ultima_tentativa": "2026-08-28T00:22:57Z",
     "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
