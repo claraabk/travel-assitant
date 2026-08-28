@@ -13,7 +13,7 @@
   "perfil_compra_milhas": "Cliente LATAM Pass",
   "elegivel_desconto_clube_itau_mais_alto": false,
   "elegivel_desconto_geral_todos_clientes": true,
-  "nota_elegibilidade_desconto": "Descoberto em 26/08/2026 (state/promocoes.json): promoções de desconto na compra direta de milhas têm 2 tiers — um mais alto (65% em uma edição) só para Clube/cartão LATAM Pass Itaú (Clara NÃO tem), e um tier geral (62% na mesma edição) para TODOS os clientes LATAM Pass cadastrados, sem exigir Clube/Itaú. Clara já é cadastrada (latam_pass_cadastro=true), então provavelmente se qualifica para o tier geral. A suposição anterior era que ela não teria acesso a nenhum desconto — isso estava errado.",
+  "nota_elegibilidade_desconto": "Descoberto em 26/08/2026 (state/promocoes.json): promoções de desconto na compra direta de milhas têm 2 tiers — um mais alto (60-65% conforme a edição) só para Clube/cartão LATAM Pass Itaú (Clara NÃO tem), e um tier geral para TODOS os clientes LATAM Pass cadastrados, sem exigir Clube/Itaú. Clara já é cadastrada (latam_pass_cadastro=true), então provavelmente se qualifica para o tier geral. A suposição anterior era que ela não teria acesso a nenhum desconto — isso estava errado. Atualização de 26/08/2026 (ciclo dashboard): o % exato do tier geral varia entre artigos do mesmo blog conforme a edição (visto 62% e, numa busca mais específica no mesmo dia, 55%) — a mecânica (tier geral existe, sem exigir Itaú) é consistente, só o número exato não é. Continuar tratando como 'provavelmente elegível a algum desconto', % exato a confirmar logada no app/site antes de comprar.",
   "status_hoteis": null,
   "preferencia_assento": null,
   "orcamento_teto": null,

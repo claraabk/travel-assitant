@@ -83,7 +83,7 @@
         "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
         "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
       ],
-      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo na regra de elegibilidade); média para o preço exato e data de término (não confirmados)",
+      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo em variações da regra de elegibilidade); média para o preço exato, o tier geral e a data de término (não confirmados) — ver ressalva de 26/08 abaixo sobre divergência entre artigos quanto ao % do tier geral",
       "ja_notificada": true,
       "ultima_reconfirmacao": "2026-08-27T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo atual segue mostrando a campanha ativa (títulos recorrentes até 60/63/65% de desconto). Síntese deste ciclo: 65% de desconto (R$24,50/milheiro) exclusivo para cartão LATAM Pass Itaú; 62% de desconto (R$26,60/milheiro) para demais clientes e assinantes do Clube LATAM Pass — redação ligeiramente mais restritiva que a do ciclo anterior (que mencionava 'todos os clientes' para o tier de 62%), mas ainda consistente com a compra confirmada da Clara ao mesmo CPM. Ainda dentro de valido_ate (expira amanhã, 28/08). Mesma promoção já notificada (ja_notificada=true), sem novo alerta.",
       "compra_confirmada": {
