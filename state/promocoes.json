@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-08-28T18:20:00Z",
+  "ultima_checagem": "2026-08-29T00:22:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -17,7 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-28T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
+      "ultima_reconfirmacao": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando os mesmos títulos recorrentes de 25-30% Esfera→LATAM Pass; nenhuma edição com % ≥60% encontrada.",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -35,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-28T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
+      "ultima_reconfirmacao": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando campanha de 30% Nubank→LATAM Pass ativa/recorrente; nenhuma mudança de %. Abaixo do gatilho de alerta urgente (60%).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass."
     },
     {
@@ -57,43 +57,8 @@
       ],
       "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-08-28T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando os mesmos títulos recorrentes de 25-35% Livelo→LATAM Pass (\"Só hoje\", \"Últimas horas\"); nenhuma edição nova com % ≥60% encontrada. Sem mudança de conclusão.",
+      "ultima_reconfirmacao": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve segue mostrando os mesmos títulos recorrentes de 25-30% Livelo→LATAM Pass (\"Só hoje\", \"Últimas horas\"); nenhuma edição nova com % ≥60% encontrada. Sem mudança de conclusão.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
-    },
-    {
-      "id": "latam-pass-desconto-compra-milhas-por-perfil",
-      "tipo": "desconto_compra_direta",
-      "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Edição mais recente encontrada (indicada pela Clara, vigente no navegador dela em 26/08/2026): 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app — sem exigir Clube nem cartão Itaú. Milheiro a partir de ~R$24,50 numa edição citada. Limite típico de 350.000 milhas, parcelável em até 10x sem juros (Elo/Mastercard/Visa). Milhas creditadas em até 48h (geralmente imediato).",
-      "desconto_pct_itau": 65,
-      "desconto_pct_geral": 62,
-      "milheiro_referencia_brl": 24.5,
-      "e_permanente": false,
-      "recorrente": true,
-      "valido_ate": "2026-08-28 (sexta-feira) — confirmado via WebSearch (passageirodeprimeira.com) no ciclo de 26/08/2026",
-      "elegibilidade_clara": "PROVAVELMENTE ELEGÍVEL para o tier de 62% — o texto da promoção diz explicitamente que o desconto vale para TODOS os clientes LATAM Pass que comprarem pelo app, não só Clube/Itaú (esse último tier dá 65%, 3 p.p. a mais). Isso contradiz a suposição original do perfil ('não elegível aos descontos de 30-35%') — atualizar state/perfil.json.elegivel_desconto_30_35pct para refletir que HÁ um tier geral aplicável.",
-      "impacto_estimado": {
-        "combinacao_referencia": "CUZ-CUZ, R$3.895 em dinheiro",
-        "faixa_milhas_estimada": "30.000-70.000 (longo curso, tabela pública)",
-        "custo_em_milhas_compradas_com_desconto": "R$735 (30k) a R$1.715 (70k), usando milheiro de referência R$24,50 — MUITO abaixo do preço em dinheiro",
-        "ressalva": "cálculo usa preço de milheiro de UMA edição específica da promoção, não confirmado como o preço vigente agora, e a faixa de milhas é estimativa pública, não disponibilidade real de resgate. Antes de comprar: confirmar no app (1) o desconto e preço exatos oferecidos para a conta da Clara, (2) a disponibilidade real de resgate para as datas do CUZ-CUZ."
-      },
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-3/ (indicada pela Clara, encontrada ativa no navegador dela)",
-        "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/",
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
-        "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
-      ],
-      "confianca": "alta para a mecânica geral (múltiplos artigos convergindo em variações da regra de elegibilidade); média para o preço exato, o tier geral e a data de término (não confirmados) — ver ressalva de 26/08 abaixo sobre divergência entre artigos quanto ao % do tier geral",
-      "ja_notificada": true,
-      "ultima_reconfirmacao": "2026-08-28T18:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve (18h20) confirma o mesmo quadro dos ciclos anteriores de hoje: campanha ativa (títulos 'até 65%'/'até 60%'/'63%'/'Prorrogado' na mesma busca, mesmo padrão de campanha rotativa), validade seguindo indicada como 'até sexta-feira (28)' — HOJE, sem confirmação de prorrogação além de hoje nesta busca. Mesma promoção já notificada (ja_notificada=true), sem novo alerta (regra é 1 notificação por oportunidade). Próximo ciclo deve checar se foi prorrogada ou expirou — se expirar sem prorrogação, mover para 'expiradas' no ciclo seguinte.",
-      "compra_confirmada": {
-        "data": "2026-08-26",
-        "milhas": 5000,
-        "preco_pago_brl": 133,
-        "cpm_real_brl": 26.6,
-        "nota": "Clara confirmou a compra diretamente. CPM real (R$26,60/milheiro) ficou um pouco acima da referência estimada (R$24,50) — provavelmente porque o tier de 5.000 milhas tem desconto/CPM levemente pior que tiers maiores (ver docs/scraper-local-setup.md, schema de tiers). Ainda assim, MUITO abaixo do custo de resgate em dinheiro."
-      },
-      "acao_sugerida": "Já parcialmente aproveitada: Clara comprou 5.000 milhas por R$133 em 26/08/2026 (ver state/saldo.json). Saldo LATAM Pass agora é 5.000 milhas, longe ainda da faixa de resgate estimada (30.000-70.000) para a combinação CUZ-CUZ — avaliar se compensa comprar mais milhas nos tiers maiores (melhor CPM) ou complementar via transferência Nubank (promoção acima, id nubank-latam-pass-30pct-1500milhas)."
     },
     {
       "id": "nomad-8000-milhas-1a-operacao-cambio",
@@ -124,7 +89,7 @@
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-08-28T18:20:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo monitor leve) segue sem achar rota Inter Loop/Prime→LATAM Pass; mesma conclusão de 27/08. Nota lateral sem relação direta: apareceu o título 'Banco Inter confirma que permitirá a compra de pontos ainda neste ano' — é sobre COMPRA futura de pontos pelo Inter, não sobre transferência para LATAM Pass, não muda a conclusão RESOLVIDO acima; vale só reobservar em ciclos futuros caso vire notícia relevante."
+      "ultima_reconfirmacao": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo monitor leve) segue sem achar rota Inter Loop/Prime→LATAM Pass; mesma conclusão de 27-28/08. Reconfirma explicitamente que o Loop só permite enviar pontos a Azul Fidelidade (todos, 1:1) e Smiles (Prime/Win, 1:1) — sem rota para LATAM Pass. Nota lateral sem relação direta: título 'Banco Inter confirma que permitirá a compra de pontos ainda neste ano' segue aparecendo — é sobre COMPRA futura de pontos pelo Inter, não sobre transferência para LATAM Pass, não muda a conclusão RESOLVIDO acima."
     },
     {
       "id": "modo-latam-pass-nubank",
@@ -143,6 +108,34 @@
     }
   ],
   "expiradas": [
+    {
+      "id": "latam-pass-desconto-compra-milhas-por-perfil",
+      "tipo": "desconto_compra_direta",
+      "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Última edição ativa: 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app. Milheiro a partir de ~R$24,50 numa edição citada.",
+      "desconto_pct_itau": 65,
+      "desconto_pct_geral": 62,
+      "milheiro_referencia_brl": 24.5,
+      "e_permanente": false,
+      "recorrente": true,
+      "valido_ate": "2026-08-28",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-3/",
+        "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/",
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
+        "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
+      ],
+      "confianca": "alta para a mecânica geral; média para o preço exato e a data de término",
+      "ja_notificada": true,
+      "expirada_em": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 segue retornando os mesmos títulos recorrentes ('até 65%'/'até 60%'/'63%'/'Prorrogado'), mas nenhum confirma vigência além de 'hoje (28)' — sem fonte confirmando prorrogação para 29/08 ou depois. Conforme instrução de state/config.json (checar prorrogação vs. expiração), movida para expiradas por falta de confirmação. Se reaparecer com nova validade em ciclo futuro, tratar como oportunidade nova (id pode repetir).",
+      "compra_confirmada": {
+        "data": "2026-08-26",
+        "milhas": 5000,
+        "preco_pago_brl": 133,
+        "cpm_real_brl": 26.6,
+        "nota": "Clara confirmou a compra diretamente durante a vigência desta promoção. Ver state/saldo.json."
+      },
+      "acao_sugerida": "Promoção encerrada (sem confirmação de prorrogação). Reavaliar se/quando uma nova edição de desconto na compra direta aparecer nos próximos ciclos."
+    },
     {
       "id": "livelo-azul-120pct-ago2026",
       "tipo": "bonus_transferencia_temporario",
