@@ -35,7 +35,7 @@
     "dias_lima": 2,
     "dias_cusco": 6,
     "data_checagem": "2026-08-27T13:00:00Z",
-    "nota": "Atualizado em 27/08/2026 13h: fli voltou a responder apos 4 ciclos de falha total. LIM-CUZ x2d (R$8.486) segue vencedora, R$203 abaixo das outras 3 variantes (todas empatadas em R$8.689). Substitui a leitura mista (fli+Kiwi) do ciclo anterior (R$8.490/9.513 conforme variante). Reconfirmado no ciclo dashboard completo de 28/08 12h47: fli continua fora do ar (mesmo padrão dos ciclos de 28/08), sem checkin 100% fli mais recente disponível -- mantido ancorado nesta leitura de 27/08 13h (agora ~24h de idade) por ser a última leitura confiável para as 4 variantes. Reconfirmado de novo no ciclo monitor leve de 28/08 18h20: fli seguiu indisponível (0/3 buscas de teste), checkins deste ciclo continuam mistos/stale (trecho internacional de entrada carregado do checkpoint de 27/08 13h, agora ~29h de idade) e todas as 4 variantes ficaram bem acima de R$8.486 nas leituras mistas -- mantido ancorado na última leitura 100% fli até o conector voltar. Reconfirmado de novo no ciclo monitor leve de 29/08 06h18: fli seguiu indisponível (0/9 buscas + 1 sanidade), checkpoint de 27/08 13h já com ~41h de idade -- CUZ-LIM x3d (R$8.906, checkin misto) é a mais barata entre os checkins deste ciclo mas ainda R$420 acima do anchor 100% fli; mantido ancorado em LIM-CUZ x2d R$8.486 até fli voltar. Se o conector não voltar em 1-2 ciclos, considerar refresh manual/priorizado dado que o anchor já passa de 40h. Reconfirmado de novo no ciclo monitor leve de 29/08 12h20: fli seguiu indisponível (0/9 buscas + 1 sanidade), checkpoint de 27/08 13h já com ~47h de idade -- CUZ-LIM x3d (R$8.920, checkin misto) é a mais barata entre os checkins deste ciclo mas ainda R$434 acima do anchor 100% fli; mantido ancorado em LIM-CUZ x2d R$8.486 até fli voltar."
+    "nota": "Atualizado em 27/08/2026 13h: fli voltou a responder apos 4 ciclos de falha total. LIM-CUZ x2d (R$8.486) segue vencedora, R$203 abaixo das outras 3 variantes (todas empatadas em R$8.689). Substitui a leitura mista (fli+Kiwi) do ciclo anterior (R$8.490/9.513 conforme variante). Reconfirmado no ciclo dashboard completo de 28/08 12h47: fli continua fora do ar (mesmo padrão dos ciclos de 28/08), sem checkin 100% fli mais recente disponível -- mantido ancorado nesta leitura de 27/08 13h (agora ~24h de idade) por ser a última leitura confiável para as 4 variantes. Reconfirmado de novo no ciclo monitor leve de 28/08 18h20: fli seguiu indisponível (0/3 buscas de teste), checkins deste ciclo continuam mistos/stale (trecho internacional de entrada carregado do checkpoint de 27/08 13h, agora ~29h de idade) e todas as 4 variantes ficaram bem acima de R$8.486 nas leituras mistas -- mantido ancorado na última leitura 100% fli até o conector voltar. Reconfirmado de novo no ciclo monitor leve de 29/08 06h18: fli seguiu indisponível (0/9 buscas + 1 sanidade), checkpoint de 27/08 13h já com ~41h de idade -- CUZ-LIM x3d (R$8.906, checkin misto) é a mais barata entre os checkins deste ciclo mas ainda R$420 acima do anchor 100% fli; mantido ancorado em LIM-CUZ x2d R$8.486 até fli voltar. Se o conector não voltar em 1-2 ciclos, considerar refresh manual/priorizado dado que o anchor já passa de 40h. Reconfirmado de novo no ciclo monitor leve de 29/08 12h20: fli seguiu indisponível (0/9 buscas + 1 sanidade), checkpoint de 27/08 13h já com ~47h de idade -- CUZ-LIM x3d (R$8.920, checkin misto) é a mais barata entre os checkins deste ciclo mas ainda R$434 acima do anchor 100% fli; mantido ancorado em LIM-CUZ x2d R$8.486 até fli voltar. Reconfirmado de novo no ciclo monitor leve de 29/08 18h18: fli seguiu indisponível (0/9 buscas + 1 sanidade), checkpoint de 27/08 13h já com ~53h de idade -- CUZ-LIM x3d (R$8.920, checkin misto, preço idêntico ao ciclo anterior) segue a mais barata entre os checkins deste ciclo mas ainda R$434 acima do anchor 100% fli; mantido ancorado em LIM-CUZ x2d R$8.486. Anchor já passa de 2 dias de idade -- reforçando recomendação de refresh manual/priorizado assim que fli voltar."
   },
   "checagens": {
     "LIM-LIM": [
@@ -1833,6 +1833,70 @@
         "media_movel_30_checagens": 9406.0,
         "variacao_pct_vs_media": 2.12,
         "nota": "Leve alta vs. média. Sem gatilho de alerta (regra é só quedas ≥15%). Não atualizar melhor_combinacao_geral com este checkin (misto/stale)."
+      },
+      {
+        "data_checagem": "2026-08-29T18:18:52Z",
+        "preco_total_brl": 9759,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3923,
+            "data": "2027-06-10",
+            "nota": "CARREGADO do checkpoint fli de 2026-08-27T13:00:00Z (~53h atrás, cada vez mais stale) -- fli.search_flights retornou 0 resultados nas 9 buscas de preço deste ciclo + 1 sanidade (GRU-GIG), confirmando outage geral do conector (mais um ciclo consecutivo sem sucesso). Kiwi.com também sem tarifa one-way pura LA para REC->LIM."
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 726,
+            "data": "2027-06-12",
+            "voo": "15 opções mesma tarifa, ex. LA2013/LA2011/LA2344",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 5110,
+            "data": "2027-06-18",
+            "voo": "CUZ-LIM-GRU-BSB-REC (3 paradas, LA2277/LA2428/LA3281/LA3402)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          }
+        },
+        "fonte": "MISTO: fli indisponível de novo neste ciclo (0/9 buscas de preço + 1 sanidade, outage geral confirmado, agora ~53h sem 1 ciclo de sucesso total). Kiwi.com também sem tarifa one-way pura LA para o trecho internacional de entrada REC->LIM -- CARREGADO do último checkpoint 100% fli (2026-08-27T13:00:00Z). Trecho doméstico e de saída via Kiwi.com one-way, select_airlines=LA -- preços idênticos ao ciclo anterior (29/08 12h20) em ambos os trechos.",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 9394.68,
+        "variacao_pct_vs_media": 3.88,
+        "nota": "Preço idêntico ao ciclo anterior (mesmas tarifas Kiwi em doméstico e saída). Sem gatilho de alerta (regra é só quedas ≥15%). melhor_combinacao_geral NÃO atualizado com este checkin misto/stale -- mantém ancorado na leitura 100% fli de 2026-08-27T13:00:00Z (R$8.486), agora com ~53h de idade. Recomendado: priorizar refresh manual assim que fli voltar, dado que o anchor já passa de 2 dias."
+      },
+      {
+        "data_checagem": "2026-08-29T18:18:52Z",
+        "preco_total_brl": 9605,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3923,
+            "data": "2027-06-10",
+            "nota": "CARREGADO do checkpoint fli de 2026-08-27T13:00:00Z (~53h atrás) -- mesma ressalva do checkin x2d deste ciclo."
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 765,
+            "data": "2027-06-13",
+            "voo": "15 opções mesma tarifa, ex. LA2005/LA2292/LA2011",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 4917,
+            "data": "2027-06-19",
+            "voo": "CUZ-LIM-GRU-BSB-REC (3 paradas, LA2277/LA2418/LA3281/LA3402)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          }
+        },
+        "fonte": "MISTO: fli indisponível de novo neste ciclo (0/9 buscas de preço + 1 sanidade). Kiwi.com também sem tarifa one-way pura LA para REC->LIM -- CARREGADO do último checkpoint 100% fli (2026-08-27T13:00:00Z). Trecho doméstico e de saída via Kiwi.com one-way, select_airlines=LA -- preços idênticos ao ciclo anterior (29/08 12h20).",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 9425.9,
+        "variacao_pct_vs_media": 1.9,
+        "nota": "Preço idêntico ao ciclo anterior. Sem gatilho de alerta (regra é só quedas ≥15%). Não atualizar melhor_combinacao_geral com este checkin (misto/stale)."
       }
     ],
     "CUZ-LIM": [
@@ -3365,6 +3429,70 @@
         "media_movel_30_checagens": 8859.9,
         "variacao_pct_vs_media": 0.68,
         "nota": "Menor variante deste ciclo (R$8.920), mas ainda acima da atual melhor_combinacao_geral (LIM-CUZ x2d, R$8.486, leitura 100% fli de 27/08 13h, agora ~47h de idade). Sem gatilho de alerta (variação vs. média é alta de 0,68%, não queda). Não atualizar melhor_combinacao_geral com checkin misto/stale, mesma política de ciclos anteriores."
+      },
+      {
+        "data_checagem": "2026-08-29T18:18:52Z",
+        "preco_total_brl": 9107,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 2,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 4053,
+            "data": "2027-06-10",
+            "nota": "CARREGADO do checkpoint fli de 2026-08-27T13:00:00Z (~53h atrás) -- fli indisponível de novo neste ciclo (0/9 buscas + 1 sanidade), outage geral confirmado. Kiwi também sem tarifa one-way pura LA para REC->CUZ."
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 690,
+            "data": "2027-06-16",
+            "voo": "LA2222 00:05-01:35 (mesma tarifa em 15 opções)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4364,
+            "data": "2027-06-18",
+            "voo": "LIM-BSB-REC (1 parada, LA2402/LA4724)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          }
+        },
+        "fonte": "MISTO: fli indisponível de novo neste ciclo (0/9 buscas de preço + 1 sanidade, outage geral confirmado, agora ~53h sem 1 ciclo de sucesso total). Kiwi.com também sem tarifa one-way pura LA para o trecho internacional de entrada REC->CUZ -- CARREGADO do último checkpoint 100% fli (2026-08-27T13:00:00Z). Trechos doméstico e de saída via Kiwi.com one-way, select_airlines=LA -- lim_para_rec caiu levemente vs. ciclo anterior (R$4.371 -> R$4.364).",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 9023.93,
+        "variacao_pct_vs_media": 0.92,
+        "nota": "Leve queda no trecho de saída (lim_para_rec), mas variação total (0,92% de alta vs. média) longe do gatilho de alerta (queda ≥15%). Não atualizar melhor_combinacao_geral com este checkin (misto/stale) -- mantém ancorado em LIM-CUZ x2d R$8.486 (100% fli de 27/08 13h, ~53h de idade)."
+      },
+      {
+        "data_checagem": "2026-08-29T18:18:52Z",
+        "preco_total_brl": 8920,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_lima": 3,
+        "dias_cusco": 6,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 4053,
+            "data": "2027-06-10",
+            "nota": "CARREGADO do checkpoint fli de 2026-08-27T13:00:00Z (~53h atrás) -- mesma ressalva do checkin x2d deste ciclo."
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 690,
+            "data": "2027-06-16",
+            "voo": "LA2222 00:05-01:35 (mesma tarifa em 15 opções)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4177,
+            "data": "2027-06-19",
+            "voo": "LIM-GRU-BSB-REC (2 paradas, LA2418/LA3281/LA3402)",
+            "fonte": "Kiwi.com search-flight one-way, select_airlines=LA"
+          }
+        },
+        "fonte": "MISTO: fli indisponível de novo neste ciclo (0/9 buscas de preço + 1 sanidade). Kiwi.com também sem tarifa one-way pura LA para REC->CUZ -- CARREGADO do último checkpoint 100% fli (2026-08-27T13:00:00Z). Trechos doméstico e de saída via Kiwi.com one-way, select_airlines=LA -- preços idênticos ao ciclo anterior (29/08 12h20).",
+        "todas_operadas_por": "LATAM (LA)",
+        "media_movel_30_checagens": 8865.91,
+        "variacao_pct_vs_media": 0.61,
+        "nota": "Menor variante deste ciclo (R$8.920), preço idêntico ao ciclo anterior. Ainda acima da melhor_combinacao_geral (LIM-CUZ x2d, R$8.486). Sem gatilho de alerta. Não atualizar melhor_combinacao_geral com este checkin (misto/stale)."
       }
     ]
   }
