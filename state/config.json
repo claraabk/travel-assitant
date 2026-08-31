@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-08-31T06:20:00Z",
-    "tentativas_consecutivas_falhas": 25,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 31/08 06h20)",
+    "ultima_tentativa": "2026-08-31T12:22:00Z",
+    "tentativas_consecutivas_falhas": 26,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 31/08 12h22)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-08-31T06:20:00Z",
-    "resultado": "Ciclo monitor leve (31/08 06h20): fli seguiu respondendo 100% (3o ciclo consecutivo). 9/9 buscas de preco bem-sucedidas (REC-LIM, LIM-CUZ domestico x2 datas, CUZ-REC x2 datas, REC-CUZ, CUZ-LIM domestico, LIM-REC x2 datas, todas airlines=[LA], 2 passageiros, currency=BRL). Todas as 4 variantes com preco praticamente identico ao ciclo anterior (31/08 00h19), variacao de +R$3 a +R$4: LIM-CUZ x2d R$8.539 (segue vencedora), LIM-CUZ x3d R$8.743, CUZ-LIM x2d R$8.743, CUZ-LIM x3d R$8.743 -- tarifas LATAM estaveis nesta janela de 6h. Nenhuma variante caiu >=15% vs. media movel -- sem gatilho de alerta.",
-    "nota": "Conector estavel ha 3 ciclos seguidos. melhor_combinacao_geral mantido em LIM-CUZ x2d R$8.539 (reconfirmado, variacao de preco desprezivel)."
+    "ultima_tentativa": "2026-08-31T12:22:00Z",
+    "resultado": "Ciclo monitor leve (31/08 12h22): fli indisponível (0/9 buscas, todas as rotas testadas retornaram count=0 sem erro explícito -- mesmo padrão de outage total já visto em ciclos anteriores). Fallback para Kiwi.com (select_airlines=LA, 2 passageiros, currency=BRL): 7/9 buscas com resultado (domésticos LIM-CUZ e CUZ-LIM, retornos CUZ-REC e LIM-REC); os 2 trechos internacionais de ida (REC-LIM e REC-CUZ, 2027-06-10) vieram vazios no Kiwi também (ausência de tarifa one-way pura LA, mesma lacuna recorrente) -- usado o valor carregado do último checkpoint 100% fli (2026-08-31T06:20:00Z, <6h). cuz_para_rec/lim_para_rec via Kiwi vieram acima da última leitura fli por distorção de roteamento (3 paradas via LIM-GRU-BSB em vez da rota direta via SCL/GRU) -- checkin registrado como misto/stale, sem atualizar melhor_combinacao_geral. Nenhuma variante teve queda -- todas as 4 tiveram alta de 10-15% vs. média móvel, efeito de fonte, não sinal real -- sem gatilho de alerta.",
+    "nota": "melhor_combinacao_geral mantido em LIM-CUZ x2d R$8.539 (última leitura 100% fli, 2026-08-31T06:20:00Z), não atualizado com o checkin misto deste ciclo."
   },
   "roteiro": {
     "fixo": false,
