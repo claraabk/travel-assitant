@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-01T00:25:00Z",
-    "tentativas_consecutivas_falhas": 28,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 01/09 00h25)",
+    "ultima_tentativa": "2026-09-01T06:22:00Z",
+    "tentativas_consecutivas_falhas": 29,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 01/09 06h22)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-01T00:25:00Z",
-    "resultado": "Ciclo monitor leve (01/09 00h25): fli voltou a ficar indisponível -- 0/9 buscas OK (mesmas 9 buscas do padrão de 9 pernas únicas para as 4 variantes). Trecho internacional de ida (REC→LIM e REC→CUZ) CARREGADO do último checkpoint fli 100% bem-sucedido (31/08 18h20, <24h); trecho doméstico e trecho internacional de volta via Kiwi.com (select_airlines=LA). melhor_combinacao_geral NÃO atualizada com esta leitura mista (mesmo critério dos ciclos mistos anteriores — Kiwi tende a cotar o trecho de volta mais caro que fli). Nenhuma variante teve queda >=15% vs. média móvel (maior variação: CUZ-LIM x3d, -0,1%) -- sem gatilho de alerta.",
+    "ultima_tentativa": "2026-09-01T06:22:00Z",
+    "resultado": "Ciclo monitor leve (01/09 06h22): fli seguiu indisponível -- 0/9 buscas OK (mesmas 9 buscas do padrão de 9 pernas únicas para as 4 variantes, 6º ciclo consecutivo com essa falha total). Trecho internacional de ida (REC→LIM e REC→CUZ) CARREGADO do último checkpoint fli 100% bem-sucedido (31/08 18h20, <24h); trecho doméstico e trecho internacional de volta via Kiwi.com (select_airlines=LA). melhor_combinacao_geral NÃO atualizada com esta leitura mista (mesmo critério dos ciclos mistos anteriores — Kiwi tende a cotar o trecho de volta mais caro que fli). Nenhuma variante teve queda >=15% vs. média móvel (todas em alta entre 8,7% e 12,8%) -- sem gatilho de alerta.",
     "nota": "melhor_combinacao_geral mantida em LIM-CUZ x2d R$8.533 (última leitura 100% fli, 2026-08-31T18:20:00Z) até a próxima leitura 100% fli confirmar mudança."
   },
   "roteiro": {
@@ -52,8 +52,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-01T00:25:00Z",
-    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 01/09 00h25) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-01T06:22:00Z",
+    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 01/09 06h22) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
