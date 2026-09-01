@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-01T06:22:00Z",
-    "tentativas_consecutivas_falhas": 29,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 01/09 06h22)",
+    "ultima_tentativa": "2026-09-01T12:24:00Z",
+    "tentativas_consecutivas_falhas": 30,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 01/09 12h24)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo — seguindo sem inventar preço, conforme instrução."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-01T06:22:00Z",
-    "resultado": "Ciclo monitor leve (01/09 06h22): fli seguiu indisponível -- 0/9 buscas OK (mesmas 9 buscas do padrão de 9 pernas únicas para as 4 variantes, 6º ciclo consecutivo com essa falha total). Trecho internacional de ida (REC→LIM e REC→CUZ) CARREGADO do último checkpoint fli 100% bem-sucedido (31/08 18h20, <24h); trecho doméstico e trecho internacional de volta via Kiwi.com (select_airlines=LA). melhor_combinacao_geral NÃO atualizada com esta leitura mista (mesmo critério dos ciclos mistos anteriores — Kiwi tende a cotar o trecho de volta mais caro que fli). Nenhuma variante teve queda >=15% vs. média móvel (todas em alta entre 8,7% e 12,8%) -- sem gatilho de alerta.",
-    "nota": "melhor_combinacao_geral mantida em LIM-CUZ x2d R$8.533 (última leitura 100% fli, 2026-08-31T18:20:00Z) até a próxima leitura 100% fli confirmar mudança."
+    "ultima_tentativa": "2026-09-01T12:24:00Z",
+    "resultado": "Ciclo monitor leve (01/09 12h24): fli voltou ao ar -- 9/9 buscas OK (leitura 100% fli, primeira desde 31/08 18h20). Nova composição para as 4 variantes: LIM-CUZ x2d/x3d R$8.753 (ida REC-LIM R$3.938 + doméstico LIM-CUZ R$695 + volta CUZ-REC R$4.120); CUZ-LIM x2d/x3d R$8.751 (ida REC-CUZ R$4.068 + doméstico CUZ-LIM R$624 + volta LIM-REC R$4.059). Ranking mudou: CUZ-LIM (x2d e x3d empatadas) assume a liderança por apenas R$2 sobre LIM-CUZ -- quase empate técnico entre as 4 variantes agora (diferença total de só R$2 entre a mais barata e a mais cara). melhor_combinacao_geral atualizada para CUZ-LIM x2d R$8.751. Nenhuma variante teve queda >=15% vs. média móvel (todas em alta entre 0,9% e 7,4%) -- sem gatilho de alerta.",
+    "nota": "melhor_combinacao_geral atualizada nesta leitura 100% fli para CUZ-LIM x2d R$8.751 (2026-09-01T12:24:00Z), substituindo LIM-CUZ x2d R$8.533 (última leitura 100% fli anterior, 31/08 18h20). Margem agora é mínima (R$2) -- monitorar próximos ciclos para ver se se sustenta ou é ruído."
   },
   "roteiro": {
     "fixo": false,
