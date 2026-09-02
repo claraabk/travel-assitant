@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-02T00:28:00Z",
-    "tentativas_consecutivas_falhas": 32,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") — Akamai bloqueia o MCP hospedado em GCP (mesmo padrão de falha dos ciclos anteriores, retestado no ciclo monitor leve de 02/09 00h28)",
+    "ultima_tentativa": "2026-09-02T06:24:00Z",
+    "tentativas_consecutivas_falhas": 33,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 02/09 06h24)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua não existindo neste repositório neste ciclo. Encontrado um arquivo em scripts/state/latam_miles_price.json (fora do caminho esperado), mas com atualizado_em=2026-08-26T22:51:14-03:00 (muito além das 24h) -- tratado como indisponível/stale, não usado. Seguindo sem inventar preço, conforme instrução."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo. scripts/state/latam_miles_price.json (fora do caminho esperado) segue com atualizado_em=2026-08-26T22:51:14-03:00 (muito alem das 24h) -- tratado como indisponivel/stale, nao usado. Seguindo sem inventar preco, conforme instrucao."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-02T00:28:00Z",
-    "resultado": "Ciclo monitor leve (02/09 00h28): fli fora do ar -- outage total (0/9 buscas OK, inclusive teste sem filtro de companhia REC-LIM que também retornou 0 resultados, confirmando que não é só o filtro airlines=[LA]). Fallback: Kiwi.search-flight (select_airlines=LA) cobriu os trechos domésticos LIM-CUZ/CUZ-LIM e os trechos de volta CUZ-REC/LIM-REC normalmente (preço nativo BRL), mas não retornou nenhum itinerário 100% LATAM para os trechos de ida REC-LIM/REC-CUZ nesta data (só combinações mistas AD/G3/H2/JA, mesmo sem filtro de companhia) -- usado lastminute-com para esses dois trechos (LATAM Airlines Group confirmado, preço em EUR convertido a ~5.97 BRL, cotação aproximada via WebSearch, não PTAX oficial). Nova composição: LIM-CUZ x2d R$9.480, LIM-CUZ x3d R$9.729, CUZ-LIM x2d R$8.919, CUZ-LIM x3d R$8.726. melhor_combinacao_geral passou a CUZ-LIM x3d R$8.726, rompendo o empate técnico de R$8.697 do ciclo anterior -- nenhuma variação vs. média móvel passou de 5.33%, abaixo do gatilho de 15% (queda), sem alerta urgente.",
-    "nota": "Mudança de fonte para o trecho internacional de ida (lastminute-com em vez de fli/Kiwi nativos) introduz ressalva de precisão pela conversão EUR->BRL aproximada -- reconferir com fli assim que voltar ao ar."
+    "ultima_tentativa": "2026-09-02T06:24:00Z",
+    "resultado": "Ciclo monitor leve (02/09 06h24): fli fora do ar de novo -- outage total (9/9 buscas retornaram sucesso porem 0 resultados, mesmo padrao de outage silencioso do ciclo de 00h28). Fallback: lastminute-com cobriu os trechos internacionais de ida REC-LIM/REC-CUZ (Kiwi nao achou itinerario 100% LATAM para essas pernas, so combinacoes mistas AD/G3/H2/JA) e Kiwi.search-flight (select_airlines=LA) cobriu os trechos domesticos LIM-CUZ/CUZ-LIM e volta CUZ-REC/LIM-REC -- porem desta vez o Kiwi devolveu os precos em USD em vez de BRL nativo como nos ciclos anteriores (motivo nao identificado, pode ser variacao de locale/sessao da propria API do Kiwi). Convertido USD->BRL a cotacao spot aproximada 5.14 (Wise mid-market, WebSearch 02/09/2026, nao PTAX oficial), alem da conversao EUR->BRL 5.96 ja usual para o trecho lastminute. Nova composicao: LIM-CUZ x2d R$9464, LIM-CUZ x3d R$9717, CUZ-LIM x2d R$8899, CUZ-LIM x3d R$8899 (empate). melhor_combinacao_geral permanece CUZ-LIM x3d (mantido por continuidade dado o empate com x2d), subindo de R$8726 para R$8899 (~+2%) -- todas as 4 variacoes vs. media movel foram altas (4.94% a 12.25%), nenhuma se aproximou do gatilho de alerta urgente (15% de queda), entao sem alerta.",
+    "nota": "Segundo ciclo seguido de outage total do fli (silencioso: chamadas retornam sucesso com 0 resultados, sem erro/timeout) -- reconferir se volta ao ar no proximo ciclo. Novidade neste ciclo: Kiwi passou a devolver precos em USD para os trechos domestico/volta (antes vinha em BRL nativo) -- acompanhar se isso persiste, pois adiciona uma camada extra de conversao aproximada ao calculo."
   },
   "roteiro": {
     "fixo": false,
@@ -28,10 +28,19 @@
     "dias_cusco": 6,
     "dias_lima_min": 2,
     "dias_lima_max": 3,
-    "combinacoes_permitidas": ["LIM-CUZ", "CUZ-LIM"],
-    "combinacoes_descontinuadas": ["LIM-LIM", "CUZ-CUZ"],
+    "combinacoes_permitidas": [
+      "LIM-CUZ",
+      "CUZ-LIM"
+    ],
+    "combinacoes_descontinuadas": [
+      "LIM-LIM",
+      "CUZ-CUZ"
+    ],
     "passageiros": 2,
-    "viajantes": ["Clara", "Pedro"],
+    "viajantes": [
+      "Clara",
+      "Pedro"
+    ],
     "nota": "Clara quer visitar Lima E Cusco na mesma viagem (~6 dias em Cusco + 2-3 dias em Lima, total 8-9 dias) -- atualizado em 26/08/2026. LIM-LIM e CUZ-CUZ (ida-e-volta por um só destino) não atendem mais o requisito e foram descontinuadas; histórico antigo delas fica em state/precos_historico.json só como referência, não recomparar. Testar 4 variantes (LIM-CUZ x2d, LIM-CUZ x3d, CUZ-LIM x2d, CUZ-LIM x3d) e usar a mais barata.",
     "nota_passageiros": "Resolvido em 27/08/2026: as 4 variantes já têm checkin real com preço de 2 passageiros (Clara + Pedro) e detalhe completo de voo/horários/escalas via fli. Checagens em state/precos_historico.json anteriores a 27/08/2026 (sem campo passageiros=2) são de 1 passageiro só, mantidas como histórico mas não recomparáveis diretamente."
   },

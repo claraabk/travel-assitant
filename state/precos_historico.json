@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 8726,
+    "preco_total_brl": 8899,
     "passageiros": 2,
     "dias_lima": 3,
     "dias_cusco": 6,
-    "data_checagem": "2026-09-02T00:28:00Z",
-    "nota": "Ciclo monitor leve 02/09 00h28 (fli fora do ar -- outage total; fallback lastminute-com + Kiwi): CUZ-LIM x3d assume lideranca isolada em R$8726 (2 pax), rompendo o empate tecnico de R$8.697 entre as 4 variantes do ciclo anterior (01/09 18h26). Preco do trecho internacional de ida (REC->LIM/REC->CUZ) veio de fonte diferente da usual (lastminute-com, EUR->BRL aprox., nao fli/Kiwi nativos em BRL) -- reconferir com fli/Kiwi assim que voltarem ao ar antes de tratar a mudanca de lideranca como definitiva."
+    "data_checagem": "2026-09-02T06:24:00Z",
+    "nota": "Ciclo monitor leve 02/09 06h24 (fli fora do ar de novo -- outage total; fallback lastminute-com + Kiwi, desta vez Kiwi retornou USD em vez de BRL nativo, convertido a cotacao spot aproximada): CUZ-LIM x2d e x3d empatam em R$8899 (2 pax), ambas mais baratas que LIM-CUZ x2d (R$9464) e LIM-CUZ x3d (R$9717). Mantido CUZ-LIM x3d como melhor_combinacao_geral por continuidade com o ciclo anterior (01/09-02/09 00h28, onde ja liderava). Alta de ~2% vs. o preco anterior do lider (R$8.726) -- variacao vs. media movel de cada variante ficou entre 4.94% e 12.25%, nenhuma passou do gatilho de alerta urgente (15% de queda) -- sao todas altas, nao quedas, entao nem chegam perto do gatilho de queda de preco."
   },
   "checagens": {
     "LIM-LIM": [
@@ -3853,6 +3853,66 @@
         "media_movel_30_checagens": 9236.57,
         "variacao_pct_vs_media": 5.33,
         "nota": "Cotacao LIM-CUZ x3d: R$9729 (2 pax). fli fora do ar neste ciclo (outage total, nao so restricao LA) -- fallback lastminute-com (trecho internacional, EUR->BRL aprox.) + Kiwi (domestico/volta, BRL nativo). Variacao vs. media movel: 5.33% -- abaixo do gatilho de alerta urgente (15% de queda)."
+      },
+      {
+        "data_checagem": "2026-09-02T06:24:00Z",
+        "preco_total_brl": 9464,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3893,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (653.16 EUR x2 pax convertido)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 714,
+            "data": "2027-06-12",
+            "fonte": "Kiwi (139 USD x2 pax convertido)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 4857,
+            "data": "2027-06-18",
+            "fonte": "Kiwi (945 USD x2 pax convertido, 3 paradas)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 02/09 06h24): fli fora do ar -- outage total confirmado de novo (9/9 buscas retornaram sucesso porem 0 resultados, mesmo padrao dos ciclos anteriores; sem erro/timeout, so lista vazia). Trecho internacional de ida (REC->LIM / REC->CUZ) via lastminute-com (Kiwi nao retornou nenhum itinerario 100% LATAM para essas pernas -- so combinacoes mistas AD/G3/H2/JA, mesmo padrao de ciclos anteriores), preco original em EUR convertido a BRL na cotacao aproximada EUR/BRL=5.96 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Trechos domestico LIM-CUZ/CUZ-LIM e volta CUZ-REC/LIM-REC via Kiwi.search-flight (select_airlines=LA) -- desta vez o Kiwi retornou os precos em USD (nao BRL nativo como em ciclos anteriores), convertidos a USD/BRL=5.14 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Ressalva de precisao pela dupla conversao cambial aproximada neste ciclo.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: itinerario 'LATAM Airlines Group'/carrier_id LA; Kiwi: carrier LA / 'LATAM Airlines' por segmento).",
+        "media_movel_30_checagens": 8735.93,
+        "variacao_pct_vs_media": 8.33,
+        "nota": "Ciclo monitor leve 02/09 06h24: LIM-CUZ x2d = R$9464 (2 pax). Variacao vs. media movel: 8.33% -- abaixo do gatilho de alerta urgente (15% de queda). "
+      },
+      {
+        "data_checagem": "2026-09-02T06:24:00Z",
+        "preco_total_brl": 9717,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3893,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (653.16 EUR x2 pax convertido)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 756,
+            "data": "2027-06-13",
+            "fonte": "Kiwi (147 USD x2 pax convertido)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 5068,
+            "data": "2027-06-19",
+            "fonte": "Kiwi (986 USD x2 pax convertido, 2 paradas)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 02/09 06h24): fli fora do ar -- outage total confirmado de novo (9/9 buscas retornaram sucesso porem 0 resultados, mesmo padrao dos ciclos anteriores; sem erro/timeout, so lista vazia). Trecho internacional de ida (REC->LIM / REC->CUZ) via lastminute-com (Kiwi nao retornou nenhum itinerario 100% LATAM para essas pernas -- so combinacoes mistas AD/G3/H2/JA, mesmo padrao de ciclos anteriores), preco original em EUR convertido a BRL na cotacao aproximada EUR/BRL=5.96 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Trechos domestico LIM-CUZ/CUZ-LIM e volta CUZ-REC/LIM-REC via Kiwi.search-flight (select_airlines=LA) -- desta vez o Kiwi retornou os precos em USD (nao BRL nativo como em ciclos anteriores), convertidos a USD/BRL=5.14 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Ressalva de precisao pela dupla conversao cambial aproximada neste ciclo.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: itinerario 'LATAM Airlines Group'/carrier_id LA; Kiwi: carrier LA / 'LATAM Airlines' por segmento).",
+        "media_movel_30_checagens": 8656.34,
+        "variacao_pct_vs_media": 12.25,
+        "nota": "Ciclo monitor leve 02/09 06h24: LIM-CUZ x3d = R$9717 (2 pax). Variacao vs. media movel: 12.25% -- abaixo do gatilho de alerta urgente (15% de queda). "
       }
     ],
     "CUZ-LIM": [
@@ -7623,6 +7683,66 @@
         "media_movel_30_checagens": 8892.43,
         "variacao_pct_vs_media": -1.87,
         "nota": "Cotacao CUZ-LIM x3d: R$8726 (2 pax). fli fora do ar neste ciclo (outage total, nao so restricao LA) -- fallback lastminute-com (trecho internacional, EUR->BRL aprox.) + Kiwi (domestico/volta, BRL nativo). Variacao vs. media movel: -1.87% -- abaixo do gatilho de alerta urgente (15% de queda)."
+      },
+      {
+        "data_checagem": "2026-09-02T06:24:00Z",
+        "preco_total_brl": 8899,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3903,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (654.84 EUR x2 pax convertido)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 678,
+            "data": "2027-06-16",
+            "fonte": "Kiwi (132 USD x2 pax convertido)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4318,
+            "data": "2027-06-18",
+            "fonte": "Kiwi (840 USD x2 pax convertido, 1 parada)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 02/09 06h24): fli fora do ar -- outage total confirmado de novo (9/9 buscas retornaram sucesso porem 0 resultados, mesmo padrao dos ciclos anteriores; sem erro/timeout, so lista vazia). Trecho internacional de ida (REC->LIM / REC->CUZ) via lastminute-com (Kiwi nao retornou nenhum itinerario 100% LATAM para essas pernas -- so combinacoes mistas AD/G3/H2/JA, mesmo padrao de ciclos anteriores), preco original em EUR convertido a BRL na cotacao aproximada EUR/BRL=5.96 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Trechos domestico LIM-CUZ/CUZ-LIM e volta CUZ-REC/LIM-REC via Kiwi.search-flight (select_airlines=LA) -- desta vez o Kiwi retornou os precos em USD (nao BRL nativo como em ciclos anteriores), convertidos a USD/BRL=5.14 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Ressalva de precisao pela dupla conversao cambial aproximada neste ciclo.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: itinerario 'LATAM Airlines Group'/carrier_id LA; Kiwi: carrier LA / 'LATAM Airlines' por segmento).",
+        "media_movel_30_checagens": 8480.25,
+        "variacao_pct_vs_media": 4.94,
+        "nota": "Ciclo monitor leve 02/09 06h24: CUZ-LIM x2d = R$8899 (2 pax). Variacao vs. media movel: 4.94% -- abaixo do gatilho de alerta urgente (15% de queda). Empata com CUZ-LIM x3d neste ciclo (mesmo preco de volta LIM->REC em 06-18 e 06-19)."
+      },
+      {
+        "data_checagem": "2026-09-02T06:24:00Z",
+        "preco_total_brl": 8899,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3903,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (654.84 EUR x2 pax convertido)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 678,
+            "data": "2027-06-16",
+            "fonte": "Kiwi (132 USD x2 pax convertido)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4318,
+            "data": "2027-06-19",
+            "fonte": "Kiwi (840 USD x2 pax convertido, 1 parada)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 02/09 06h24): fli fora do ar -- outage total confirmado de novo (9/9 buscas retornaram sucesso porem 0 resultados, mesmo padrao dos ciclos anteriores; sem erro/timeout, so lista vazia). Trecho internacional de ida (REC->LIM / REC->CUZ) via lastminute-com (Kiwi nao retornou nenhum itinerario 100% LATAM para essas pernas -- so combinacoes mistas AD/G3/H2/JA, mesmo padrao de ciclos anteriores), preco original em EUR convertido a BRL na cotacao aproximada EUR/BRL=5.96 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Trechos domestico LIM-CUZ/CUZ-LIM e volta CUZ-REC/LIM-REC via Kiwi.search-flight (select_airlines=LA) -- desta vez o Kiwi retornou os precos em USD (nao BRL nativo como em ciclos anteriores), convertidos a USD/BRL=5.14 (WebSearch spot 02/09/2026, Wise mid-market, nao e PTAX oficial). Ressalva de precisao pela dupla conversao cambial aproximada neste ciclo.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: itinerario 'LATAM Airlines Group'/carrier_id LA; Kiwi: carrier LA / 'LATAM Airlines' por segmento).",
+        "media_movel_30_checagens": 8231.69,
+        "variacao_pct_vs_media": 8.11,
+        "nota": "Ciclo monitor leve 02/09 06h24: CUZ-LIM x3d = R$8899 (2 pax). Variacao vs. media movel: 8.11% -- abaixo do gatilho de alerta urgente (15% de queda). Empata com CUZ-LIM x2d neste ciclo (mesmo preco de volta LIM->REC em 06-18 e 06-19); mantido CUZ-LIM x3d como melhor_combinacao_geral por continuidade (ja era o lider no ciclo anterior)."
       }
     ]
   }
