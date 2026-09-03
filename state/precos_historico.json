@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 8647.0,
+    "preco_total_brl": 8426.06,
     "passageiros": 2,
-    "dias_lima": 3,
+    "dias_lima": 2,
     "dias_cusco": 6,
-    "data_checagem": "2026-09-03T00:23:00Z",
-    "nota": "MUDANÇA DE LÍDER neste ciclo (monitor leve 03/09 00h23): fli voltou ao ar após 4 ciclos de outage total, substituindo o fallback lastminute+Kiwi por leitura 100% fli em todas as 9 buscas. LIM-CUZ assume a liderança pela primeira vez em várias semanas -- x2d e x3d empatam em R$8.647,00 (2 pax; mesmo preço doméstico e de volta nas duas datas testadas), batendo CUZ-LIM x2d/x3d por R$2,00 (ambas R$8.649,00, também empatadas entre si). Escolhida LIM-CUZ x3d (extra dia em Lima sem custo adicional vs. x2d) como melhor_combinacao_geral. Ordem completa: LIM-CUZ x3d R$8.647,00 = LIM-CUZ x2d R$8.647,00 < CUZ-LIM x2d R$8.649,00 = CUZ-LIM x3d R$8.649,00 -- as 4 variantes estão dentro de R$2,00 uma da outra, virtualmente empatadas. IMPORTANTE: a queda vs. o ciclo anterior (CUZ-LIM x3d R$8.697,82 -> agora R$8.647-8.649 em todas as variantes) reflete principalmente a troca de fonte (fallback lastminute/Kiwi -> fli real) após o fli voltar ao ar, não necessariamente uma queda de mercado -- nenhuma variante ultrapassou o gatilho de alerta urgente de 15% vs. média móvel (variação entre -2.10% e -7.58%, todas quedas moderadas, sem alerta). Conexão de risco: volta de LIM-CUZ (CUZ->REC via LIM+BSB) tem BSB 375min (conexao_longa, >5h); volta de CUZ-LIM (LIM->REC via BSB+FOR) tem FOR 70min (conexao_curta, <1h30) -- nenhuma delas ideal, mas nenhuma tem troca de aeroporto. Tratamento formal (alertas_conexao/alternativa_sem_alerta) fica para o próximo ciclo de dashboard completo."
+    "data_checagem": "2026-09-03T06:21:00Z",
+    "nota": "MUDANÇA DE LÍDER neste ciclo (monitor leve 03/09 06h21): fli voltou a ficar fora do ar (outage total, mesmo padrão de ciclos anteriores; único sucesso real recente foi 03/09 00h23), forçando volta ao fallback lastminute+Kiwi. LIM-CUZ x2d assume a liderança isolada em R$8.426,06 (2 pax), abaixo de LIM-CUZ x3d (R$8.598,72), e de CUZ-LIM x2d/x3d (empatadas em R$8.540,41). Ordem completa: LIM-CUZ x2d R$8.426,06 < CUZ-LIM x2d R$8.540,41 = CUZ-LIM x3d R$8.540,41 < LIM-CUZ x3d R$8.598,72. Escolhida LIM-CUZ x2d como melhor_combinacao_geral (mais barata isolada, sem empate desta vez). IMPORTANTE: a queda vs. o ciclo anterior (todas as variantes em R$8.647-8.649 com fli real) reflete em parte a troca de fonte (fli -> fallback lastminute+Kiwi) e em parte um preço genuinamente mais baixo no trecho REC-LIM/CUZ-REC via lastminute -- nenhuma variante ultrapassou o gatilho de alerta urgente de 15% vs. média móvel (variação entre -3.26% e -8.94%, todas quedas moderadas, sem alerta). lastminute não retornou detalhe de conexão (aeroportos/duração dos trechos internacionais) neste ciclo -- alertas_conexao e detalhe_voo completos ficam pendentes até o fli voltar ao ar ou o próximo ciclo de dashboard completo reaproveitar o último detalhe salvo (03/09 00h23)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -4245,6 +4245,66 @@
             "limite": "acima de 5h"
           }
         ]
+      },
+      {
+        "data_checagem": "2026-09-03T06:21:00Z",
+        "preco_total_brl": 8426.06,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3869.08,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (655.42 EUR x2 pax convertido, EUR/BRL=5,9032, Investing.com)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 714,
+            "data": "2027-06-12",
+            "fonte": "Kiwi (LA2011, direto)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 3842.98,
+            "data": "2027-06-18",
+            "fonte": "lastminute-com (651.00 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 03/09 06h21): fli fora do ar de novo (outage total reconfirmado -- controle GRU->LIM sem filtro de companhia também 0 resultados, além do teste direto com airlines=[LA]; único sucesso real recente foi 03/09 00h23). Trecho internacional de ida/volta via lastminute-com (preço original em EUR convertido a BRL na cotação EUR/BRL=5,9032, Investing.com, consultada 03/09/2026). Trecho doméstico LIM-CUZ via Kiwi.search-flight (select_airlines=LA, currency=BRL, nativo em BRL).",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: 'LATAM Airlines Group'/carrier_id LA; Kiwi: voo LA2011, carrier LA/'LATAM Airlines').",
+        "nota": "LIM-CUZ x2d: R$8.426,06 (2 pax). NOVA LÍDER isolada entre as 4 variantes neste ciclo (fli fora do ar de novo, leitura via fallback lastminute+Kiwi). Variação vs. média móvel: -8.94% -- queda moderada, abaixo do gatilho de alerta urgente (15%). Parte da queda reflete a troca de fonte (fli->fallback), não necessariamente movimento real de mercado. lastminute não retornou detalhe de conexão (aeroportos/duração) para os trechos internacionais neste ciclo -- sem esse detalhe, não foi possível atualizar alertas_conexao com precisão nesta checagem; detalhe completo (voos/horários/escalas) fica para o próximo ciclo com fli no ar ou dashboard completo.",
+        "media_movel_30_checagens": 9253.54,
+        "variacao_pct_vs_media": -8.94
+      },
+      {
+        "data_checagem": "2026-09-03T06:21:00Z",
+        "preco_total_brl": 8598.72,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3869.08,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (655.42 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 751,
+            "data": "2027-06-13",
+            "fonte": "Kiwi (LA2166, direto)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 3978.64,
+            "data": "2027-06-19",
+            "fonte": "lastminute-com (673.98 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 03/09 06h21): fli fora do ar de novo (mesmo outage confirmado no controle sem filtro de companhia). Trecho internacional via lastminute-com (EUR/BRL=5,9032, Investing.com, consultada 03/09/2026). Trecho doméstico LIM-CUZ via Kiwi.search-flight (select_airlines=LA, currency=BRL).",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: 'LATAM Airlines Group'/carrier_id LA; Kiwi: voo LA2166, carrier LA/'LATAM Airlines').",
+        "nota": "LIM-CUZ x3d: R$8.598,72 (2 pax). Segunda mais barata das 4 variantes neste ciclo, atrás de LIM-CUZ x2d (R$8.426,06). Variação vs. média móvel: -7.85% -- queda moderada, abaixo do gatilho de alerta urgente. Mesma ressalva de fonte (fli->fallback) e de detalhe de conexão indisponível nesta checagem (ver nota do x2d).",
+        "media_movel_30_checagens": 9331.01,
+        "variacao_pct_vs_media": -7.85
       }
     ],
     "CUZ-LIM": [
@@ -8423,6 +8483,66 @@
             "limite": "abaixo de 1h30"
           }
         ]
+      },
+      {
+        "data_checagem": "2026-09-03T06:21:00Z",
+        "preco_total_brl": 8540.41,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3878.99,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (657.10 EUR x2 pax convertido, EUR/BRL=5,9032, Investing.com)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 677,
+            "data": "2027-06-16",
+            "fonte": "Kiwi (LA2222, direto)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 3984.42,
+            "data": "2027-06-18",
+            "fonte": "lastminute-com (674.96 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 03/09 06h21): fli fora do ar de novo (outage total reconfirmado -- controle GRU->LIM sem filtro de companhia também 0 resultados). Trecho internacional via lastminute-com (EUR/BRL=5,9032, Investing.com, consultada 03/09/2026). Trecho doméstico CUZ-LIM via Kiwi.search-flight (select_airlines=LA, currency=BRL).",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: 'LATAM Airlines Group'/carrier_id LA; Kiwi: voo LA2222, carrier LA/'LATAM Airlines').",
+        "nota": "CUZ-LIM x2d: R$8.540,41 (2 pax). Terceira mais barata das 4 variantes neste ciclo (atrás de LIM-CUZ x2d e x3d). Variação vs. média móvel: -4.60% -- queda leve, abaixo do gatilho de alerta urgente. Mesma ressalva de fonte (fli->fallback) e de detalhe de conexão indisponível nesta checagem via lastminute (ver nota de LIM-CUZ x2d no mesmo ciclo).",
+        "media_movel_30_checagens": 8951.9,
+        "variacao_pct_vs_media": -4.6
+      },
+      {
+        "data_checagem": "2026-09-03T06:21:00Z",
+        "preco_total_brl": 8540.41,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3878.99,
+            "data": "2027-06-10",
+            "fonte": "lastminute-com (657.10 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 677,
+            "data": "2027-06-16",
+            "fonte": "Kiwi (LA2222, direto)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 3984.42,
+            "data": "2027-06-19",
+            "fonte": "lastminute-com (674.96 EUR x2 pax convertido, EUR/BRL=5,9032)"
+          }
+        },
+        "fonte": "MISTA neste ciclo (monitor leve 03/09 06h21): fli fora do ar de novo. Trecho internacional via lastminute-com (EUR/BRL=5,9032, Investing.com, consultada 03/09/2026). Trecho doméstico CUZ-LIM via Kiwi.search-flight (select_airlines=LA, currency=BRL).",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os segmentos (lastminute: 'LATAM Airlines Group'/carrier_id LA; Kiwi: voo LA2222, carrier LA/'LATAM Airlines').",
+        "nota": "CUZ-LIM x3d: R$8.540,41 (2 pax) -- empata com CUZ-LIM x2d (mesmo preço de volta LIM-REC nas duas datas testadas, 674.96 EUR). Quarta colocada (mais cara) das 4 variantes neste ciclo. Variação vs. média móvel: -3.26% -- queda leve, abaixo do gatilho de alerta urgente. Mesma ressalva de fonte e de detalhe de conexão indisponível nesta checagem (ver nota de LIM-CUZ x2d no mesmo ciclo).",
+        "media_movel_30_checagens": 8828.26,
+        "variacao_pct_vs_media": -3.26
       }
     ]
   }
