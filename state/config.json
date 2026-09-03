@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-03T12:23:00Z",
-    "tentativas_consecutivas_falhas": 38,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 03/09 12h23)",
+    "ultima_tentativa": "2026-09-03T18:19:00Z",
+    "tentativas_consecutivas_falhas": 39,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 03/09 18h19)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo. scripts/state/latam_miles_price.json (fora do caminho esperado) segue com atualizado_em=2026-08-26T22:51:14-03:00 (muito alem das 24h) -- tratado como indisponivel/stale, nao usado. Seguindo sem inventar preco, conforme instrucao."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-03T12:23:00Z",
-    "resultado": "Ciclo monitor leve (03/09 12h23): fli continua fora do ar (outage total reconfirmado -- busca REC->LIM com airlines=[LA] e controle GRU->LIM sem filtro de companhia ambos retornaram 0 resultados). Fallback para lastminute-com (trechos internacionais REC-LIM/REC-CUZ/CUZ-REC/LIM-REC, EUR/BRL=5,9032 Investing.com, cotacao identica ao ciclo anterior) + Kiwi (trechos domesticos LIM-CUZ/CUZ-LIM, select_airlines=LA, nativo BRL), mesmo padrao MISTA dos ciclos de outage anteriores. Precos identicos ao ciclo anterior (06h21) nas 4 variantes -- mercado sem mudanca desde entao: LIM-CUZ x2d R$8.426,06 (lider, sem mudanca), CUZ-LIM x2d R$8.540,41, CUZ-LIM x3d R$8.540,41 (empate entre si), LIM-CUZ x3d R$8.598,72. SEM MUDANCA DE LIDER. Variacao vs. media movel entre -3.15% e -8.66% em todas as 4 variantes -- quedas leves a moderadas, nenhuma atinge o gatilho de alerta urgente de 15%, sem alerta de preco. lastminute nao retornou detalhe de conexao (aeroportos/duracao) dos trechos internacionais neste ciclo -- alertas_conexao/detalhe_voo completos ficam pendentes ate o fli voltar ou o proximo dashboard reaproveitar o ultimo detalhe salvo (03/09 00h23).",
-    "nota": "fli fora do ar desde 03/09 06h21 (2 ciclos seguidos agora), apos 1 unico ciclo online em 03/09 00h23 -- padrao de instabilidade intermitente continua, nao assumir recuperacao definitiva nos proximos ciclos."
+    "ultima_tentativa": "2026-09-03T18:19:00Z",
+    "resultado": "Ciclo monitor leve (03/09 18h19): fli VOLTOU AO AR neste ciclo apos 2 ciclos seguidos de outage (06h21 e 12h23) -- 9/9 buscas one-way OK (leitura 100% fli, sem fallback lastminute/Kiwi), airlines=[LA], 2 passageiros, currency=BRL. Resultado: as 4 variantes EMPATARAM EXATAMENTE em R$8.647,00 nesta leitura (LIM-CUZ x2d/x3d e CUZ-LIM x2d/x3d) -- queda leve a moderada vs. ciclo anterior (12h23, fallback lastminute+Kiwi: R$8.426,06-8.598,72), mas dentro do range de ruido esperado entre fontes. Variacao vs. media movel entre -1.82% e -6.83% em todas as 4 variantes -- abaixo do gatilho de alerta urgente de 15%, sem alerta de preco. detalhe_voo e alertas_conexao completos capturados para as 4 variantes nesta leitura (numeros de voo, horarios, aeronaves, conexoes). SEM MUDANCA DE LIDER (LIM-CUZ x2d mantida por continuidade, ver melhor_combinacao_geral).",
+    "nota": "fli oscilou entre outage (06h21, 12h23) e sucesso (00h23, 18h19) nas ultimas 24h -- padrao de instabilidade intermitente confirmado, nao assumir recuperacao definitiva nos proximos ciclos."
   },
   "roteiro": {
     "fixo": false,
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-03T12:23:00Z",
-    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 03/09 12h23) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-03T18:19:00Z",
+    "resultado": "EGRESS_BLOCKED — mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 03/09 18h19) conforme instrução (pode ser liberado em ciclo futuro). Proxy de rede desta sessão bloqueia o domínio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e é barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
