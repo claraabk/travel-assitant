@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_lima": 2,
     "dias_cusco": 6,
-    "data_checagem": "2026-09-04T06:22:00Z",
-    "nota": "Ciclo monitor leve 04/09 06h22 (fli fora do ar, fallback Kiwi+lastminute): CUZ-LIM x2d assume lideranca a R$8.464,30, abaixo do anterior LIM-CUZ x2d/x3d R$8.634,00 (00h23). CAVEAT: leitura obtida com fli fora do ar -- trechos domesticos/retorno via Kiwi (BRL nativo), trechos internacionais de ida via lastminute.com convertido de EUR (cotacao 5,9067). Diferenca vs. ciclo anterior pode refletir parcialmente a troca de fonte, nao so variacao real de preco -- confirmar quando fli voltar ao ar. Todas as 4 variantes desta leitura: LIM-CUZ x2d R$9.314,26, LIM-CUZ x3d R$9.638,26, CUZ-LIM x2d R$8.464,30, CUZ-LIM x3d R$8.863,30."
+    "data_checagem": "2026-09-04T12:23:00Z",
+    "nota": "Ciclo monitor leve 04/09 12h23 (fli fora do ar, fallback Kiwi+lastminute): CUZ-LIM x2d segue lider a R$8.464,30, preco identico ao ciclo anterior (06h22) -- mesma fonte de fallback, sem mudanca de melhor combinacao. CAVEAT: leitura obtida com fli fora do ar -- trechos domesticos/retorno via Kiwi (BRL nativo), trechos internacionais de ida via lastminute.com convertido de EUR (cotacao 5,9067). Todas as 4 variantes desta leitura: LIM-CUZ x2d R$9.314,26, LIM-CUZ x3d R$9.638,26, CUZ-LIM x2d R$8.464,30, CUZ-LIM x3d R$8.863,30."
   },
   "checagens": {
     "LIM-LIM": [
@@ -4985,6 +4985,218 @@
         "media_movel_30_checagens": 9090.13,
         "variacao_pct_vs_media": 6.03,
         "nota": "Ciclo monitor leve 04/09 06h22 (fli fora do ar, fallback Kiwi+lastminute): LIM-CUZ x3d: R$9.638,26 (2 pax). Variacao vs. media movel: 6.03% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23) conforme docs/agente-viagem.md (nao revalidados nesta leitura via Kiwi/lastminute) -- numeros de voo podem ter mudado desde entao.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 375,
+            "tipo": "conexao_longa",
+            "limite": "acima de 5h"
+          }
+        ]
+      },
+      {
+        "data_checagem": "2026-09-04T12:23:00Z",
+        "preco_total_brl": 9314.26,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3873.26,
+            "data": "2027-06-10",
+            "fonte": "lastminute.com (LATAM Airlines Group, 1 stop, cheapest of 10 results, 655.74 EUR -> BRL @5,9067)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 717,
+            "data": "2027-06-12",
+            "fonte": "Kiwi.com (LA2344, direto, cheapest of 15 results)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 4724,
+            "data": "2027-06-18",
+            "fonte": "Kiwi.com (CUZ-LIM-GRU-BSB-REC, 3 paradas, cheapest of 15 results)"
+          }
+        },
+        "fonte": "fli fora do ar de novo neste ciclo (monitor leve 04/09 12h23) -- 9/9 buscas one-way diretas retornaram count=0 (mesmo padrao dos outages anteriores). Fallback conforme docs/agente-viagem.md: Kiwi.com (select_airlines=LA, currency=BRL) cobriu domesticos LIM-CUZ/CUZ-LIM e os 4 trechos de retorno (CUZ->REC 06-18/06-19, LIM->REC 06-18/06-19); Kiwi devolveu 0 resultados para os dois trechos internacionais de ida (REC->LIM e REC->CUZ) mesmo com select_airlines=LA, entao esses dois vieram de lastminute.com (LATAM Airlines Group, carrier_id=LA), que so retorna em EUR -- convertido para BRL com a cotacao EUR/BRL=5,9067 (WebSearch, cotacao do momento do ciclo). Precos identicos aos do ciclo anterior (06h22), mesma fonte de fallback ainda em uso.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado via Kiwi carrier=LA e lastminute carrier_id=LA/LATAM Airlines Group em todos os trechos.",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2344",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T04:50:00",
+              "chegada": "2027-06-12T06:10:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-18T19:40:00",
+              "chegada": "2027-06-18T21:20:00",
+              "aeronave": "Airbus A319"
+            },
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:30:00",
+              "chegada": "2027-06-19T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-19T13:10:00",
+              "chegada": "2027-06-19T15:45:00",
+              "aeronave": "Airbus A321"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "media_movel_30_checagens": 9081.65,
+        "variacao_pct_vs_media": 2.56,
+        "nota": "Ciclo monitor leve 04/09 12h23 (fli fora do ar, fallback Kiwi+lastminute, precos identicos ao ciclo de 06h22): preco R$9.314,26 (2 pax). Variacao vs. media movel: 2.56% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23), nao revalidados nesta leitura via Kiwi/lastminute -- numeros de voo podem ter mudado desde entao.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 375,
+            "tipo": "conexao_longa",
+            "limite": "acima de 5h"
+          }
+        ]
+      },
+      {
+        "data_checagem": "2026-09-04T12:23:00Z",
+        "preco_total_brl": 9638.26,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3873.26,
+            "data": "2027-06-10",
+            "fonte": "lastminute.com (LATAM Airlines Group, 1 stop, cheapest of 10 results, 655.74 EUR -> BRL @5,9067)"
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 752,
+            "data": "2027-06-13",
+            "fonte": "Kiwi.com (LA2344, direto, cheapest of 15 results)"
+          },
+          "cuz_para_rec": {
+            "preco_brl": 5013,
+            "data": "2027-06-19",
+            "fonte": "Kiwi.com (CUZ-LIM-GRU-BSB-REC, 3 paradas, cheapest of 15 results)"
+          }
+        },
+        "fonte": "fli fora do ar de novo neste ciclo (monitor leve 04/09 12h23) -- 9/9 buscas one-way diretas retornaram count=0 (mesmo padrao dos outages anteriores). Fallback conforme docs/agente-viagem.md: Kiwi.com (select_airlines=LA, currency=BRL) cobriu domesticos LIM-CUZ/CUZ-LIM e os 4 trechos de retorno (CUZ->REC 06-18/06-19, LIM->REC 06-18/06-19); Kiwi devolveu 0 resultados para os dois trechos internacionais de ida (REC->LIM e REC->CUZ) mesmo com select_airlines=LA, entao esses dois vieram de lastminute.com (LATAM Airlines Group, carrier_id=LA), que so retorna em EUR -- convertido para BRL com a cotacao EUR/BRL=5,9067 (WebSearch, cotacao do momento do ciclo). Precos identicos aos do ciclo anterior (06h22), mesma fonte de fallback ainda em uso.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado via Kiwi carrier=LA e lastminute carrier_id=LA/LATAM Airlines Group em todos os trechos.",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2344",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T04:50:00",
+              "chegada": "2027-06-13T06:10:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-19T19:40:00",
+              "chegada": "2027-06-19T21:20:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-20T00:30:00",
+              "chegada": "2027-06-20T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-20T13:10:00",
+              "chegada": "2027-06-20T15:45:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "media_movel_30_checagens": 9081.65,
+        "variacao_pct_vs_media": 6.13,
+        "nota": "Ciclo monitor leve 04/09 12h23 (fli fora do ar, fallback Kiwi+lastminute, precos identicos ao ciclo de 06h22): preco R$9.638,26 (2 pax). Variacao vs. media movel: 6.13% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23), nao revalidados nesta leitura via Kiwi/lastminute -- numeros de voo podem ter mudado desde entao.",
         "alertas_conexao": [
           {
             "trecho": "ida",
@@ -9967,6 +10179,234 @@
         "media_movel_30_checagens": 8775.9,
         "variacao_pct_vs_media": 1.0,
         "nota": "Ciclo monitor leve 04/09 06h22 (fli fora do ar, fallback Kiwi+lastminute): CUZ-LIM x3d: R$8.863,30 (2 pax). Variacao vs. media movel: 1.0% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23) conforme docs/agente-viagem.md (nao revalidados nesta leitura via Kiwi/lastminute) -- numeros de voo podem ter mudado desde entao.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ]
+      },
+      {
+        "data_checagem": "2026-09-04T12:23:00Z",
+        "preco_total_brl": 8464.3,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3883.3,
+            "data": "2027-06-10",
+            "fonte": "lastminute.com (LATAM Airlines Group, 2 stops, cheapest of 10 results, 657.44 EUR -> BRL @5,9067)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 678,
+            "data": "2027-06-16",
+            "fonte": "Kiwi.com (LA2222, direto, cheapest of 15 results)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 3903,
+            "data": "2027-06-18",
+            "fonte": "Kiwi.com (LIM-GRU-BSB-REC, 2 paradas, cheapest of 15 results)"
+          }
+        },
+        "fonte": "fli fora do ar de novo neste ciclo (monitor leve 04/09 12h23) -- 9/9 buscas one-way diretas retornaram count=0 (mesmo padrao dos outages anteriores). Fallback conforme docs/agente-viagem.md: Kiwi.com (select_airlines=LA, currency=BRL) cobriu domesticos LIM-CUZ/CUZ-LIM e os 4 trechos de retorno (CUZ->REC 06-18/06-19, LIM->REC 06-18/06-19); Kiwi devolveu 0 resultados para os dois trechos internacionais de ida (REC->LIM e REC->CUZ) mesmo com select_airlines=LA, entao esses dois vieram de lastminute.com (LATAM Airlines Group, carrier_id=LA), que so retorna em EUR -- convertido para BRL com a cotacao EUR/BRL=5,9067 (WebSearch, cotacao do momento do ciclo). Precos identicos aos do ciclo anterior (06h22), mesma fonte de fallback ainda em uso.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado via Kiwi carrier=LA e lastminute carrier_id=LA/LATAM Airlines Group em todos os trechos.",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2120",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-10T12:35:00",
+              "chegada": "2027-06-10T14:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2222",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T00:05:00",
+              "chegada": "2027-06-16T01:35:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-18T00:30:00",
+              "chegada": "2027-06-18T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-18T10:20:00",
+              "chegada": "2027-06-18T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-18T14:10:00",
+              "chegada": "2027-06-18T15:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "media_movel_30_checagens": 8750.89,
+        "variacao_pct_vs_media": -3.27,
+        "nota": "Ciclo monitor leve 04/09 12h23 (fli fora do ar, fallback Kiwi+lastminute, precos identicos ao ciclo de 06h22): preco R$8.464,30 (2 pax). Variacao vs. media movel: -3.27% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23), nao revalidados nesta leitura via Kiwi/lastminute -- numeros de voo podem ter mudado desde entao.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "GRU",
+            "duracao_min": 75,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "FOR",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": "abaixo de 1h30"
+          }
+        ]
+      },
+      {
+        "data_checagem": "2026-09-04T12:23:00Z",
+        "preco_total_brl": 8863.3,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3883.3,
+            "data": "2027-06-10",
+            "fonte": "lastminute.com (LATAM Airlines Group, 2 stops, cheapest of 10 results, 657.44 EUR -> BRL @5,9067)"
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 678,
+            "data": "2027-06-16",
+            "fonte": "Kiwi.com (LA2222, direto, cheapest of 15 results)"
+          },
+          "lim_para_rec": {
+            "preco_brl": 4302,
+            "data": "2027-06-19",
+            "fonte": "Kiwi.com (LIM-BSB-FOR-REC, 2 paradas, cheapest of 15 results)"
+          }
+        },
+        "fonte": "fli fora do ar de novo neste ciclo (monitor leve 04/09 12h23) -- 9/9 buscas one-way diretas retornaram count=0 (mesmo padrao dos outages anteriores). Fallback conforme docs/agente-viagem.md: Kiwi.com (select_airlines=LA, currency=BRL) cobriu domesticos LIM-CUZ/CUZ-LIM e os 4 trechos de retorno (CUZ->REC 06-18/06-19, LIM->REC 06-18/06-19); Kiwi devolveu 0 resultados para os dois trechos internacionais de ida (REC->LIM e REC->CUZ) mesmo com select_airlines=LA, entao esses dois vieram de lastminute.com (LATAM Airlines Group, carrier_id=LA), que so retorna em EUR -- convertido para BRL com a cotacao EUR/BRL=5,9067 (WebSearch, cotacao do momento do ciclo). Precos identicos aos do ciclo anterior (06h22), mesma fonte de fallback ainda em uso.",
+        "todas_operadas_por": "LATAM (LA) -- confirmado via Kiwi carrier=LA e lastminute carrier_id=LA/LATAM Airlines Group em todos os trechos.",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3315",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T02:40:00",
+              "chegada": "2027-06-10T05:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8098",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T07:10:00",
+              "chegada": "2027-06-10T10:30:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA2120",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-10T12:35:00",
+              "chegada": "2027-06-10T14:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2222",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T00:05:00",
+              "chegada": "2027-06-16T01:35:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:30:00",
+              "chegada": "2027-06-19T06:55:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-19T10:20:00",
+              "chegada": "2027-06-19T13:00:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3491",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-19T14:10:00",
+              "chegada": "2027-06-19T15:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)"
+        },
+        "media_movel_30_checagens": 8750.89,
+        "variacao_pct_vs_media": 1.28,
+        "nota": "Ciclo monitor leve 04/09 12h23 (fli fora do ar, fallback Kiwi+lastminute, precos identicos ao ciclo de 06h22): preco R$8.863,30 (2 pax). Variacao vs. media movel: 1.28% -- abaixo do gatilho de alerta urgente de 15%, sem alerta. detalhe_voo e alertas_conexao reaproveitados do ultimo ciclo com fli ativo (04/09 00h23), nao revalidados nesta leitura via Kiwi/lastminute -- numeros de voo podem ter mudado desde entao.",
         "alertas_conexao": [
           {
             "trecho": "ida",
