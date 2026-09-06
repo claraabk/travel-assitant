@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-05T18:19:00Z",
-    "tentativas_consecutivas_falhas": 47,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 05/09 18h19)",
+    "ultima_tentativa": "2026-09-06T00:24:00Z",
+    "tentativas_consecutivas_falhas": 48,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 06/09 00h24)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo. scripts/state/latam_miles_price.json (fora do caminho esperado) segue com atualizado_em=2026-08-26T22:51:14-03:00 (muito alem das 24h) -- tratado como indisponivel/stale, nao usado. Seguindo sem inventar preco, conforme instrucao."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-05T18:19:00Z",
-    "resultado": "Ciclo monitor leve (05/09 18h19): fli VOLTOU AO AR neste ciclo, apos 6 ciclos seguidos fora do ar (06h22/12h23/18h18 de 04/09 e 00h23/06h24/12h18 de 05/09). Todas as 9 buscas one-way diretas retornaram resultados validos (airlines=[LA], passengers=2, currency=BRL), sem necessidade de fallback Kiwi/lastminute. Resultado: LIM-CUZ x2d R$8671,00, LIM-CUZ x3d R$8671,00, CUZ-LIM x2d R$8670,00, CUZ-LIM x3d R$8670,00 -- as 4 variantes convergiram para uma diferenca de apenas R$1,00 entre si (antes fli cair, o fallback via Kiwi+lastminute mostrava LIM-CUZ bem mais cara, ~R$9430-9656, provavelmente por superestimar os trechos internacionais convertidos de EUR). Variacao vs. media movel entre -6.38% e -1.39%, abaixo do gatilho de alerta urgente de 15%, sem alerta de preco (queda grande mas dentro da media movel de 30 checagens, que ja capturava parte da volatilidade do fallback). CUZ-LIM x2d segue como melhor_combinacao_geral, mesmo preco de CUZ-LIM x3d (R$8670,00) e so R$1,00 mais barata que as variantes LIM-CUZ.",
-    "nota": "fli recuperou apos 6 ciclos fora do ar (outages as 06h22, 12h23 e 18h18 de 04/09, e 00h23, 06h24 e 12h18 de 05/09). Nao assumir recuperacao permanente -- ja houve padrao de instabilidade intermitente anteriormente (3 sucessos seguidos as 18h19/00h23 de 03-04/09 antes do outage atual). Monitorar proximos ciclos."
+    "ultima_tentativa": "2026-09-06T00:24:00Z",
+    "resultado": "Ciclo monitor leve (06/09 00h24): fli fora do ar de novo neste ciclo -- as 9 buscas one-way diretas (airlines=[LA], passengers=2, currency=BRL) retornaram count=0, revertendo a recuperacao de 1 ciclo (05/09 18h19). Fallback conforme docs/agente-viagem.md: Kiwi.com (select_airlines=LA) cobriu os 3 trechos domesticos/retorno com carrier=LA puro (LIM-CUZ 06-12/06-13, CUZ-LIM 06-16, CUZ->REC 06-18/06-19, LIM->REC 06-18/06-19); para os 2 trechos internacionais de ida (REC->LIM, REC->CUZ), Kiwi so devolveu itinerarios mistos via self-transfer (Azul/Gol/Sky Airline), entao usou-se lastminute.com (LATAM Airlines Group puro), convertido de EUR para BRL a EUR/BRL=5.9539 (Investing.com). Resultado: LIM-CUZ x2d R$9.459,66 (var. 3.52%), LIM-CUZ x3d R$9.685,66 (var. 4.55%), CUZ-LIM x2d R$8.605,78 (var. -1.94%), CUZ-LIM x3d R$8.906,78 (var. 1.31%) -- nenhuma atinge o gatilho de 15%. CUZ-LIM x2d segue como melhor_combinacao_geral.",
+    "nota": "fli caiu de novo depois de só 1 ciclo ativo (05/09 18h19) -- confirma o padrao de instabilidade intermitente ja registrado (nunca mais que poucos ciclos seguidos de sucesso). Monitorar proximos ciclos."
   },
   "roteiro": {
     "fixo": false,
