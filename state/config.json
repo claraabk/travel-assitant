@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-07T12:24:00Z",
-    "tentativas_consecutivas_falhas": 53,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 07/09 12h24, tentativas_consecutivas_falhas agora 53)",
+    "ultima_tentativa": "2026-09-07T18:18:00Z",
+    "tentativas_consecutivas_falhas": 54,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 07/09 18h18, tentativas_consecutivas_falhas agora 54)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (07/09 12h24). scripts/state/latam_miles_price.json (fora do caminho esperado) segue com atualizado_em=2026-08-26T22:51:14-03:00 (muito alem das 24h) -- tratado como indisponivel/stale, nao usado. Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (07/09 18h18). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-07T12:24:00Z",
-    "resultado": "Ciclo monitor leve (07/09 12h24): fli VOLTOU AO AR nesta leitura, quebrando a sequencia de 7 leituras seguidas fora do ar (ultima leitura 100% fli bem-sucedida: 05/09 18h19). Recalculadas as 4 variantes com fli 100% (sem fallback Kiwi/lastminute): ida REC-LIM R$3.898 (1 parada GRU), ida REC-CUZ R$4.027 (2 paradas GRU+LIM), domestico LIM-CUZ R$689 (direto, ambas datas 06-12/06-13), domestico CUZ-LIM R$619 (direto), volta CUZ-REC R$4.084 (2 paradas, ambas datas 06-18/06-19), volta LIM-REC R$4.024 (2 paradas, ambas datas). Resultado: LIM-CUZ x2d R$8.671, LIM-CUZ x3d R$8.671, CUZ-LIM x2d R$8.670, CUZ-LIM x3d R$8.670 -- as 4 variantes praticamente empatadas (diferenca de R$1). Variacao vs. media movel de 30 checagens: LIM-CUZ x2d -5,23%, LIM-CUZ x3d -6,84%, CUZ-LIM x2d -0,40%, CUZ-LIM x3d -1,43% -- queda real e notavel em LIM-CUZ (ida ficou mais barata com fli ao vivo substituindo a estimativa lastminute), mas nenhuma atinge o gatilho de alerta urgente de -15%. CUZ-LIM x2d mantido como melhor_combinacao_geral (empatada com x3d, ganha por continuidade). Todas as opcoes mais baratas de cada trecho tem pelo menos 1 conexao fora da faixa segura (curta <90min ou longa >300min); alternativas seguras identificadas a preco igual ou poucos reais a mais em cada checagem (ver state/precos_historico.json).",
-    "nota": "fli voltou ao ar apos 7 ciclos fora do ar (36h) -- confirma o padrao de instabilidade intermitente ja registrado, mas desta vez com recuperacao. Monitorar se mantem estavel nos proximos ciclos."
+    "ultima_tentativa": "2026-09-07T18:18:00Z",
+    "resultado": "Ciclo monitor leve (07/09 18h18): fli voltou a ficar fora do ar nesta leitura (8/8 buscas one-way diretas testadas -- REC-LIM, REC-CUZ, LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas -- todas count=0), quebrando a leitura 100% fli do ciclo anterior de 12h24 (que tinha voltado ao ar depois de 7 leituras fora do ar). Fallback Kiwi+lastminute usado nas 4 variantes: LIM-CUZ x2d R$9.459,29 (+3,33% vs. media movel), LIM-CUZ x3d R$9.685,29 (+4,09%), CUZ-LIM x2d R$8.605,40 (-1,11%), CUZ-LIM x3d R$8.906,40 (+1,28%) -- nenhuma atinge o gatilho de -15%. CUZ-LIM x2d segue melhor_combinacao_geral, agora mais barata que o checkpoint fli anterior (R$8.670 -> R$8.605,40), puxada pela queda do trecho aereo internacional de ida via lastminute.com. Kiwi cobriu 100% dos trechos domesticos/retorno com carrier=LA puro; os 2 trechos internacionais de ida (REC-LIM, REC-CUZ) vieram vazios no Kiwi de novo e foram cobertos via lastminute.com (LATAM Airlines Group puro), convertido EUR->BRL a 5,9518.",
+    "nota": "fli alternou entre ar/fora do ar nos ultimos 2 ciclos (voltou as 12h24, caiu de novo as 18h18) -- reforca o padrao de instabilidade intermitente, sem sinal de estabilizacao ainda. Continuar tentando fli primeiro a cada ciclo."
   },
   "roteiro": {
     "fixo": false,
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-07T12:24:00Z",
-    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 07/09 12h24) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-07T18:18:00Z",
+    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 07/09 18h18) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
