@@ -29,13 +29,13 @@
     }
   ],
   "melhor_combinacao_geral": {
-    "id": "CUZ-LIM",
-    "preco_total_brl": 8666,
+    "id": "LIM-CUZ",
+    "preco_total_brl": 8480,
     "passageiros": 2,
-    "dias_lima": 2,
+    "dias_lima": 3,
     "dias_cusco": 6,
-    "data_checagem": "2026-09-09T18:20:00Z",
-    "nota": "Ciclo monitor leve 09/09 18h20: CUZ-LIM x2d assume a lideranca com R$8666,00 (vs. LIM-CUZ x2d, que era a melhor no ciclo anterior a R$8754,00 e ficou em R$8767,00 neste ciclo). Ranking completo: CUZ-LIM x2d R$8666,00 (1o), LIM-CUZ x2d R$8767,00 (2o), CUZ-LIM x3d R$8905,00 (3o), LIM-CUZ x3d R$9605,00 (4o, mais cara). Variacao vs media movel de 30 checagens (2 pax): CUZ-LIM x2d +0,21%; LIM-CUZ x2d -4,04%; CUZ-LIM x3d +1,12%; LIM-CUZ x3d +2,76% -- nenhuma atinge o gatilho de alerta urgente de -15% (nenhuma e queda de preco expressiva; a troca de lideranca reflete a volta LIM->REC mais barata neste ciclo para CUZ-LIM x2d, R$3999 vs. R$4226 no ciclo anterior, nao uma queda generalizada)."
+    "data_checagem": "2026-09-10T00:20:00Z",
+    "nota": "Ciclo monitor leve 10/09 00h20: LIM-CUZ x3d assume a lideranca com R$8480,00 (vs. CUZ-LIM x2d, que era a melhor no ciclo anterior a R$8666,00 e ficou em R$8594,00 neste ciclo). fli.search_flights voltou a funcionar neste ciclo (1a vez com sucesso real apos 4 falhas silenciosas consecutivas em 09/09), trazendo precos reais e mais baixos em varios trechos (REC-LIM R$3898->R$3870, REC-CUZ R$4027->R$3998) que substituem os valores reaproveitados/Kiwi dos ciclos anteriores. Ranking completo: LIM-CUZ x3d R$8480,00 (1o), LIM-CUZ x2d R$8592,00 (2o, empate), CUZ-LIM x3d R$8592,00 (2o, empate), CUZ-LIM x2d R$8594,00 (4o, mais cara). Variacao vs media movel de 30 checagens (2 pax): LIM-CUZ x3d -9,24%; LIM-CUZ x2d -5,71%; CUZ-LIM x3d -2,44%; CUZ-LIM x2d -0,54% -- nenhuma atinge o gatilho de alerta urgente de -15% (queda real e consistente pela volta do fli, mas nao expressiva o suficiente para o gatilho)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -10457,6 +10457,185 @@
           "paradas_ida": 1,
           "paradas_domestico": 0,
           "paradas_volta": 2
+        }
+      },
+      {
+        "data_checagem": "2026-09-10T00:20:00Z",
+        "preco_total_brl": 8592,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3870,
+            "data": "2027-06-10",
+            "fonte": "fli.search_flights (REC->LIM, 2027-06-10, airlines=[LA], passengers=2, BRL) -- opção sem alerta de conexão (LA3383 REC-GRU 10:55-14:20 + LA8040 GRU-LIM 19:15-22:25, layover GRU 295min, dentro do limite de 300min) entre as 25 opções retornadas, mesmo preço mínimo (R$3870) da lista."
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 650,
+            "data": "2027-06-12",
+            "fonte": "fli.search_flights (LIM->CUZ, 2027-06-12, airlines=[LA], passengers=2, BRL) -- direto LA2069, mais barato de 77 resultados."
+          },
+          "cuz_para_rec": {
+            "preco_brl": 4072,
+            "data": "2027-06-18",
+            "fonte": "fli.search_flights (CUZ->REC, 2027-06-18, airlines=[LA], passengers=2, BRL) -- mais barato de 25 resultados (CUZ-LIM-BSB-REC via LA2034/LA2402/LA4724, 2 paradas). Conexão em BSB de 435min excede limite de 300min (conexão_longa). Alternativa sem esse alerta (CUZ-LIM-GRU-REC via LA2167/LA8005/LA3378, layovers 160min e 275min) custaria R$4075,00 (+R$3,00)."
+          }
+        },
+        "fonte": "Ciclo monitor leve 10/09 00h20: fli.search_flights VOLTOU a funcionar neste ciclo (1a vez com sucesso real apos 4 falhas silenciosas consecutivas em 09/09 00h20/06h24/12h24/18h20) -- todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas) retornaram resultados reais via fli, sem necessidade de fallback Kiwi/lastminute neste ciclo. 4 dos 9 trechos excederam o limite de tokens da ferramenta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC 18/06) e foram lidos do arquivo de resultado salvo, mas os dados sao igualmente da fli (nao Kiwi). Precos caem de forma consistente vs. o checkpoint fli anterior (09/09 00h20, ~18-24h atras): REC-LIM R$3898->R$3870, REC-CUZ R$4027->R$3998 (fli busca REC-CUZ como itinerario unico via LIM, nao soma de trechos separados). Preço total R$8592,00 (variação vs média móvel de 30 checagens R$9.112,46 -> -5,71%),",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os trechos via fli.",
+        "alertas_conexao": [
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 435,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3383",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T10:55:00",
+              "chegada": "2027-06-10T14:20:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA8040",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T19:15:00",
+              "chegada": "2027-06-10T22:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2069",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T19:50:00",
+              "chegada": "2027-06-12T21:10:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-18T19:45:00",
+              "chegada": "2027-06-18T21:15:00",
+              "aeronave": "Airbus A319"
+            },
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40:00",
+              "chegada": "2027-06-19T07:20:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-19T14:35:00",
+              "chegada": "2027-06-19T17:10:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "alternativa_sem_alerta": {
+          "trecho": "volta",
+          "preco_brl": 4075,
+          "nota": "CUZ-LIM-GRU-REC via LA2167/LA8005/LA3378, layovers de 160min (LIM) e 275min (GRU), sem alerta de conexão. +R$3,00 vs. a opção mais barata."
+        }
+      },
+      {
+        "data_checagem": "2026-09-10T00:20:00Z",
+        "preco_total_brl": 8480,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_lim": {
+            "preco_brl": 3870,
+            "data": "2027-06-10",
+            "fonte": "fli.search_flights (REC->LIM, 2027-06-10, airlines=[LA], passengers=2, BRL) -- mesmo trecho/data que a variante x2d (ida não depende de dias_lima). Opção sem alerta de conexão (layover GRU 295min)."
+          },
+          "domestico_lim_para_cuz": {
+            "preco_brl": 687,
+            "data": "2027-06-13",
+            "fonte": "fli.search_flights (LIM->CUZ, 2027-06-13, airlines=[LA], passengers=2, BRL) -- direto LA2011, mais barato de 96 resultados."
+          },
+          "cuz_para_rec": {
+            "preco_brl": 3923,
+            "data": "2027-06-19",
+            "fonte": "fli.search_flights (CUZ->REC, 2027-06-19, airlines=[LA], passengers=2, BRL) -- mais barato de 22 resultados (CUZ-GRU/CGH-REC via LA2438/LA3414, 1 parada com troca de aeroporto em São Paulo GRU->CGH). Conexão de 265min fica dentro do limite de 300min -- sem alerta."
+          }
+        },
+        "fonte": "Ciclo monitor leve 10/09 00h20: fli.search_flights VOLTOU a funcionar neste ciclo (1a vez com sucesso real apos 4 falhas silenciosas consecutivas em 09/09 00h20/06h24/12h24/18h20) -- todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas) retornaram resultados reais via fli, sem necessidade de fallback Kiwi/lastminute neste ciclo. 4 dos 9 trechos excederam o limite de tokens da ferramenta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC 18/06) e foram lidos do arquivo de resultado salvo, mas os dados sao igualmente da fli (nao Kiwi). Precos caem de forma consistente vs. o checkpoint fli anterior (09/09 00h20, ~18-24h atras): REC-LIM R$3898->R$3870, REC-CUZ R$4027->R$3998 (fli busca REC-CUZ como itinerario unico via LIM, nao soma de trechos separados). Preço total R$8480,00 (variação vs média móvel de 30 checagens R$9.343,27 -> -9,24%),",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os trechos via fli.",
+        "alertas_conexao": [],
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3383",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T10:55:00",
+              "chegada": "2027-06-10T14:20:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA8040",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T19:15:00",
+              "chegada": "2027-06-10T22:25:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T05:10:00",
+              "chegada": "2027-06-13T06:35:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2438",
+              "origem": "CUZ",
+              "destino": "GRU",
+              "partida": "2027-06-19T23:30:00",
+              "chegada": "2027-06-20T05:40:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3414",
+              "origem": "CGH",
+              "destino": "REC",
+              "partida": "2027-06-20T10:05:00",
+              "chegada": "2027-06-20T13:10:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 1
         }
       }
     ],
@@ -21012,6 +21191,188 @@
           "paradas_ida": 2,
           "paradas_domestico": 0,
           "paradas_volta": 1
+        }
+      },
+      {
+        "data_checagem": "2026-09-10T00:20:00Z",
+        "preco_total_brl": 8594,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3998,
+            "data": "2027-06-10",
+            "fonte": "fli.search_flights (REC->CUZ, 2027-06-10, airlines=[LA], passengers=2, BRL) -- itinerário buscado como único (REC-GRU-LIM-CUZ), opção sem alerta de conexão (LA3379 REC-GRU 14:50-18:10 + LA8122 GRU-LIM 21:40-00:45 + LA2011 LIM-CUZ 05:10-06:35, layovers GRU 210min e LIM 265min) entre as 24 opções retornadas, mesmo preço mínimo (R$3998) da lista."
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 581,
+            "data": "2027-06-16",
+            "fonte": "fli.search_flights (CUZ->LIM, 2027-06-16, airlines=[LA], passengers=2, BRL) -- direto LA2233, mais barato de 73 resultados -- mesmo trecho/data que a variante x3d (doméstico não depende de dias_lima)."
+          },
+          "lim_para_rec": {
+            "preco_brl": 4015,
+            "data": "2027-06-18",
+            "fonte": "fli.search_flights (LIM->REC, 2027-06-18, airlines=[LA], passengers=2, BRL) -- opção sem alerta de conexão (LA8005 LIM-GRU 09:15-16:25 + LA3378 GRU-REC 21:00-00:05, layover 275min) entre as 24 opções retornadas, mesmo preço mínimo (R$4015) da lista."
+          }
+        },
+        "fonte": "Ciclo monitor leve 10/09 00h20: fli.search_flights VOLTOU a funcionar neste ciclo (1a vez com sucesso real apos 4 falhas silenciosas consecutivas em 09/09 00h20/06h24/12h24/18h20) -- todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas) retornaram resultados reais via fli, sem necessidade de fallback Kiwi/lastminute neste ciclo. 4 dos 9 trechos excederam o limite de tokens da ferramenta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC 18/06) e foram lidos do arquivo de resultado salvo, mas os dados sao igualmente da fli (nao Kiwi). Precos caem de forma consistente vs. o checkpoint fli anterior (09/09 00h20, ~18-24h atras): REC-LIM R$3898->R$3870, REC-CUZ R$4027->R$3998 (fli busca REC-CUZ como itinerario unico via LIM, nao soma de trechos separados). Preço total R$8594,00 (variação vs média móvel de 30 checagens R$8.640,39 -> -0,54%),",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os trechos via fli.",
+        "alertas_conexao": [],
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50:00",
+              "chegada": "2027-06-10T18:10:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40:00",
+              "chegada": "2027-06-11T00:45:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10:00",
+              "chegada": "2027-06-11T06:35:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2233",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T16:25:00",
+              "chegada": "2027-06-16T18:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA8005",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T09:15:00",
+              "chegada": "2027-06-18T16:25:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA3378",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-18T21:00:00",
+              "chegada": "2027-06-19T00:05:00",
+              "aeronave": "Airbus A321"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1
+        }
+      },
+      {
+        "data_checagem": "2026-09-10T00:20:00Z",
+        "preco_total_brl": 8592,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "composicao": {
+          "rec_para_cuz": {
+            "preco_brl": 3998,
+            "data": "2027-06-10",
+            "fonte": "fli.search_flights (REC->CUZ, 2027-06-10, airlines=[LA], passengers=2, BRL) -- mesmo itinerário/data que a variante x2d (ida não depende de dias_lima)."
+          },
+          "domestico_cuz_para_lim": {
+            "preco_brl": 581,
+            "data": "2027-06-16",
+            "fonte": "fli.search_flights (CUZ->LIM, 2027-06-16, airlines=[LA], passengers=2, BRL) -- direto LA2233, mesmo trecho/data que a variante x2d."
+          },
+          "lim_para_rec": {
+            "preco_brl": 4013,
+            "data": "2027-06-19",
+            "fonte": "fli.search_flights (LIM->REC, 2027-06-19, airlines=[LA], passengers=2, BRL) -- mais barato de 21 resultados (LIM-BSB-FOR-REC via LA2402/LA3730/LA4779, 2 paradas). Conexões de 180min (BSB) e 100min (FOR) dentro dos limites -- sem alerta."
+          }
+        },
+        "fonte": "Ciclo monitor leve 10/09 00h20: fli.search_flights VOLTOU a funcionar neste ciclo (1a vez com sucesso real apos 4 falhas silenciosas consecutivas em 09/09 00h20/06h24/12h24/18h20) -- todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas) retornaram resultados reais via fli, sem necessidade de fallback Kiwi/lastminute neste ciclo. 4 dos 9 trechos excederam o limite de tokens da ferramenta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC 18/06) e foram lidos do arquivo de resultado salvo, mas os dados sao igualmente da fli (nao Kiwi). Precos caem de forma consistente vs. o checkpoint fli anterior (09/09 00h20, ~18-24h atras): REC-LIM R$3898->R$3870, REC-CUZ R$4027->R$3998 (fli busca REC-CUZ como itinerario unico via LIM, nao soma de trechos separados). Preço total R$8592,00 (variação vs média móvel de 30 checagens R$8.806,92 -> -2,44%),",
+        "todas_operadas_por": "LATAM (LA) -- confirmado em todos os trechos via fli.",
+        "alertas_conexao": [],
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50:00",
+              "chegada": "2027-06-10T18:10:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40:00",
+              "chegada": "2027-06-11T00:45:00",
+              "aeronave": "Airbus A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10:00",
+              "chegada": "2027-06-11T06:35:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2233",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T16:25:00",
+              "chegada": "2027-06-16T18:00:00",
+              "aeronave": "Airbus A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40:00",
+              "chegada": "2027-06-19T07:20:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-19T10:20:00",
+              "chegada": "2027-06-19T12:50:00",
+              "aeronave": "Airbus A320"
+            },
+            {
+              "voo": "LA4779",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-19T14:30:00",
+              "chegada": "2027-06-19T15:45:00",
+              "aeronave": "Airbus A319"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
         }
       }
     ]
