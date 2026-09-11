@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-11T12:20:00Z",
-    "tentativas_consecutivas_falhas": 69,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 11/09 12h20, tentativas_consecutivas_falhas agora 69)",
+    "ultima_tentativa": "2026-09-11T18:20:00Z",
+    "tentativas_consecutivas_falhas": 70,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 11/09 18h20, tentativas_consecutivas_falhas agora 70)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (11/09 12h20). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (11/09 18h20). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-11T12:20:00Z",
-    "resultado": "Ciclo monitor leve 11/09 12h20: fli falhou de novo -- success=true+count=0 em TODOS os 9 trechos testados neste ciclo, mesmo padrao de falha silenciosa do ciclo anterior (11/09 06h19). Fallback Kiwi.com (select_airlines=LA, adults=2, BRL): funcionou para os 7 trechos domesticos/volta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas), mas retornou 0 resultados com filtro LA para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ) -- mesmo padrao ja visto em ciclos anteriores. lastminute-com reconfirmou pernas LATAM-only para REC-LIM (EUR 653,68/2pax) e REC-CUZ (EUR 655,36/2pax), precos identicos ao ciclo anterior; para evitar erro de conversao FX no registro em BRL, essas 2 pernas reaproveitaram o ultimo preco confirmado em BRL via fli (checkpoint 10/09 00h20, ~36h atras): R$3870 (REC-LIM) e R$3998 (REC-CUZ). NOVO: as 4 variantes ficaram com preco total IDENTICO ao ciclo anterior (11/09 06h19) -- todos os componentes Kiwi.com vieram com o mesmo valor, mercado nao se moveu em 6h. LIM-CUZ x2d segue lider com R$8.698,00, folga sobre CUZ-LIM (R$8.880,00, empatado x2d/x3d) -- ver state/precos_historico.json.checagens para o detalhe. Alertas de conexao reconfirmados sem mudanca: conexao_longa (5h25 GRU) em CUZ-REC 06/18 e conexao_curta (1h10 BSB) em LIM-REC 06/19.",
+    "ultima_tentativa": "2026-09-11T18:20:00Z",
+    "resultado": "Ciclo monitor leve 11/09 18h20: fli falhou de novo -- success=true+count=0 em TODOS os 9 trechos testados neste ciclo, mesmo padrao de falha silenciosa do ciclo anterior (11/09 12h20). Fallback Kiwi.com (select_airlines=LA, adults=2, BRL): funcionou para os 7 trechos domesticos/volta (LIM-CUZ x2 datas, CUZ-LIM, CUZ-REC x2 datas, LIM-REC x2 datas), mas retornou 0 resultados com filtro LA para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ) -- mesmo padrao ja visto em ciclos anteriores. lastminute-com reconfirmou pernas LATAM-only para REC-LIM (EUR 653,68/2pax) e REC-CUZ (EUR 655,36/2pax), precos EUR identicos ao ciclo anterior; para evitar erro de conversao FX no registro em BRL, essas 2 pernas reaproveitaram o ultimo preco confirmado em BRL via fli (checkpoint 10/09 00h20, ~42h atras): R$3870 (REC-LIM) e R$3998 (REC-CUZ). Os 7 componentes Kiwi.com das pernas domesticas/volta caíram levemente vs. o ciclo anterior (poucos reais cada, ruido normal de tarifa) -- LIM-CUZ x2d segue lider com R$8.694,00 (era R$8.698,00), folga sobre CUZ-LIM (R$8.878,00, empatado x2d/x3d, era R$8.880,00) -- ver state/precos_historico.json.checagens para o detalhe. Alertas de conexao reconfirmados sem mudanca: conexao_longa (5h25 GRU) em CUZ-REC 06/18 e conexao_curta (1h10 BSB) em LIM-REC 06/19; identificada tambem conexao_longa (7h15 BSB) em CUZ-REC 06/19 (variante LIM-CUZ x3d, ja perdedora).",
     "nota": "Confirma o padrao ja visto: fli e instavel ciclo a ciclo. Continuar monitorando e usando o fallback Kiwi/lastminute quando necessario."
   },
   "roteiro": {
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-11T12:20:00Z",
-    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 11/09 12h20) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-11T18:20:00Z",
+    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 11/09 18h20) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
