@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_lima": 3,
     "dias_cusco": 6,
-    "data_checagem": "2026-09-14T00:20:00Z",
-    "nota": "Ciclo monitor leve 14/09 00h20: SEM MUDANCA -- ciclo inteiro identico ao anterior (13/09 18h21), nenhum dos 9 trechos variou de preco. CUZ-LIM x3d segue em 1o lugar geral com R$8.659,00. Ranking mantido: 1o CUZ-LIM x3d R$8.659,00; 2o LIM-CUZ x2d R$8.933,00 (+R$274); 3o CUZ-LIM x2d R$8.962,00 (+R$303); 4o LIM-CUZ x3d R$9.007,00 (+R$348). Nenhuma combinacao atinge o gatilho de alerta urgente de -15% vs media movel de 30 checagens (ciclo sem nenhuma mudanca de preco)."
+    "data_checagem": "2026-09-14T06:20:00Z",
+    "nota": "Ciclo dashboard completo 14/09 06h20: SEM MUDANCA -- ciclo inteiro identico aos anteriores (13/09 18h21 e 14/09 00h20), nenhum dos 9 trechos variou de preco (fli falhou novamente, Kiwi/lastminute confirmaram os mesmos precos). CUZ-LIM x3d segue em 1o lugar geral com R$8.659,00. Ranking mantido: 1o CUZ-LIM x3d R$8.659,00; 2o LIM-CUZ x2d R$8.933,00 (+R$274); 3o CUZ-LIM x2d R$8.962,00 (+R$303); 4o LIM-CUZ x3d R$9.007,00 (+R$348). Nenhuma combinacao atinge o gatilho de alerta urgente de -15% vs media movel de 30 checagens (maior queda observada: CUZ-LIM x3d -1,78%)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -11501,6 +11501,32 @@
         },
         "fonte": "Ciclo monitor leve 14/09 00h20: fli.search_flights falhou de novo -- success=true+count=0 em TODOS os 9 trechos testados neste ciclo (padrao silencioso persistente, tentativas_consecutivas_falhas agora 79). Latam_PASS.list_latam_miles_purchase_prices tambem falhou de novo (timeout Akamai aguardando input[name=radio-values]). Fallback Kiwi.com (select_airlines=LA, adults=2, currency=BRL): funcionou para os 7 trechos domesticos/volta, 0 resultados com filtro LA para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao de sempre. lastminute-com reconfirmou pernas LATAM-only para REC-LIM (EUR 653,60/2pax, identico ao ciclo anterior) e REC-CUZ (EUR 655,28/2pax, identico ao ciclo anterior); essas 2 pernas reaproveitaram de novo o ultimo preco confirmado em BRL via fli (checkpoint 10/09 00h20, agora ~114h atras): R$3870 (REC-LIM) e R$3998 (REC-CUZ). SEM MUDANCA DE PRECO NESTE CICLO -- os 7 trechos via Kiwi saíram identicos ao ciclo anterior (13/09 18h21): LIM-CUZ 06/12 R$680, LIM-CUZ 06/13 R$754, CUZ-LIM 06/16 R$642, CUZ-REC 06/18 R$4383 (conexao_longa BSB 7h15, alternativa sem alerta R$4.998 via CUZ-LIM-GRU-REC), CUZ-REC 06/19 R$4383 (conexao_longa BSB 7h15, alternativa CUZ-SCL-GRU-REC R$4.491), LIM-REC 06/18 R$4322 (conexao_curta BSB 45min, alternativa sem alerta R$4.334 via LIM-GRU-REC), LIM-REC 06/19 R$4019 (conexao_longa GRU->VCP 7h25, alternativa sem alerta R$4.258 via LIM-BSB-REC). Ranking geral mantido, sem mudanca: 1o CUZ-LIM x3d (R$8.659,00), 2o LIM-CUZ x2d (R$8.933,00), 3o CUZ-LIM x2d (R$8.962,00), 4o LIM-CUZ x3d (R$9.007,00). Nenhuma variacao atinge o gatilho de alerta urgente de -15% vs media movel de 30 checagens (ciclo sem nenhuma mudanca de preco).",
         "todas_operadas_por": "REC-LIM/REC-CUZ confirmados LATAM-only via lastminute (LATAM Airlines Group, carrier_id LA); trechos domesticos e de volta confirmados LATAM (carrier LA) via Kiwi.com."
+      },
+      {
+        "data_checagem": "2026-09-14T06:20:00Z",
+        "preco_total_brl": 8933,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo dashboard completo 14/09 06h20: fli.search_flights falhou de novo (success=true+count=0) nos 9 trechos testados -- mesmo padrao de falha silenciosa dos ciclos anteriores. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL): LIM-CUZ 06/12 R$680 (identico ao ciclo anterior). CUZ-REC 06/18 R$4383 (Kiwi, identico). Perna REC-LIM reaproveitou lastminute-com (EUR 653,60/2pax, identico ao ciclo anterior) convertido para o ultimo checkpoint BRL confirmado via fli (10/09 00h20): R$3870. Soma R$8.933,00 -- SEM MUDANCA vs ciclo anterior (13/09 18h21 e 14/09 00h20, ambos R$8.933,00).",
+        "media_movel_30_checagens": 8858.66,
+        "variacao_pct_vs_media": 0.84,
+        "nota": "2o lugar geral, sem mudanca de preco neste ciclo."
+      },
+      {
+        "data_checagem": "2026-09-14T06:20:00Z",
+        "preco_total_brl": 9007,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo dashboard completo 14/09 06h20: fli falhou (success=true+count=0) nos 9 trechos. Fallback Kiwi: LIM-CUZ 06/13 R$754 (identico ao ciclo anterior). CUZ-REC 06/19 R$4383 (Kiwi, identico). REC-LIM reaproveitou lastminute-com (EUR 653,60/2pax, identico) convertido ao checkpoint BRL fli de 10/09: R$3870. Soma R$9.007,00 -- SEM MUDANCA vs ciclos anteriores.",
+        "media_movel_30_checagens": 9128.26,
+        "variacao_pct_vs_media": -1.33,
+        "nota": "4o lugar geral (ultima colocacao), sem mudanca de preco neste ciclo."
       }
     ],
     "CUZ-LIM": [
@@ -23102,8 +23128,34 @@
         },
         "fonte": "Ciclo monitor leve 14/09 00h20: fli.search_flights falhou de novo -- success=true+count=0 em TODOS os 9 trechos testados neste ciclo (padrao silencioso persistente, tentativas_consecutivas_falhas agora 79). Latam_PASS.list_latam_miles_purchase_prices tambem falhou de novo (timeout Akamai aguardando input[name=radio-values]). Fallback Kiwi.com (select_airlines=LA, adults=2, currency=BRL): funcionou para os 7 trechos domesticos/volta, 0 resultados com filtro LA para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao de sempre. lastminute-com reconfirmou pernas LATAM-only para REC-LIM (EUR 653,60/2pax, identico ao ciclo anterior) e REC-CUZ (EUR 655,28/2pax, identico ao ciclo anterior); essas 2 pernas reaproveitaram de novo o ultimo preco confirmado em BRL via fli (checkpoint 10/09 00h20, agora ~114h atras): R$3870 (REC-LIM) e R$3998 (REC-CUZ). SEM MUDANCA DE PRECO NESTE CICLO -- os 7 trechos via Kiwi saíram identicos ao ciclo anterior (13/09 18h21): LIM-CUZ 06/12 R$680, LIM-CUZ 06/13 R$754, CUZ-LIM 06/16 R$642, CUZ-REC 06/18 R$4383 (conexao_longa BSB 7h15, alternativa sem alerta R$4.998 via CUZ-LIM-GRU-REC), CUZ-REC 06/19 R$4383 (conexao_longa BSB 7h15, alternativa CUZ-SCL-GRU-REC R$4.491), LIM-REC 06/18 R$4322 (conexao_curta BSB 45min, alternativa sem alerta R$4.334 via LIM-GRU-REC), LIM-REC 06/19 R$4019 (conexao_longa GRU->VCP 7h25, alternativa sem alerta R$4.258 via LIM-BSB-REC). Ranking geral mantido, sem mudanca: 1o CUZ-LIM x3d (R$8.659,00), 2o LIM-CUZ x2d (R$8.933,00), 3o CUZ-LIM x2d (R$8.962,00), 4o LIM-CUZ x3d (R$9.007,00). Nenhuma variacao atinge o gatilho de alerta urgente de -15% vs media movel de 30 checagens (ciclo sem nenhuma mudanca de preco).",
         "todas_operadas_por": "REC-LIM/REC-CUZ confirmados LATAM-only via lastminute (LATAM Airlines Group, carrier_id LA); trechos domesticos e de volta confirmados LATAM (carrier LA) via Kiwi.com."
+      },
+      {
+        "data_checagem": "2026-09-14T06:20:00Z",
+        "preco_total_brl": 8962,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo dashboard completo 14/09 06h20: fli falhou (success=true+count=0) nos 9 trechos. Fallback Kiwi: CUZ-LIM 06/16 R$642 (identico). LIM-REC 06/18 R$4322 (Kiwi, identico). REC-CUZ reaproveitou lastminute-com (EUR 655,28/2pax, identico) convertido ao checkpoint BRL fli de 10/09: R$3998. Soma R$8.962,00 -- SEM MUDANCA vs ciclos anteriores.",
+        "media_movel_30_checagens": 8780.74,
+        "variacao_pct_vs_media": 2.06,
+        "nota": "3o lugar geral, sem mudanca de preco neste ciclo."
+      },
+      {
+        "data_checagem": "2026-09-14T06:20:00Z",
+        "preco_total_brl": 8659,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo dashboard completo 14/09 06h20: fli falhou (success=true+count=0) nos 9 trechos. Fallback Kiwi: CUZ-LIM 06/16 R$642 (identico). LIM-REC 06/19 R$4019 (Kiwi, identico). REC-CUZ reaproveitou lastminute-com (EUR 655,28/2pax, identico) convertido ao checkpoint BRL fli de 10/09: R$3998. Soma R$8.659,00 -- SEM MUDANCA vs ciclos anteriores. Reconfirma lideranca geral (1o lugar).",
+        "media_movel_30_checagens": 8815.97,
+        "variacao_pct_vs_media": -1.78,
+        "nota": "continua a combinacao mais barata (melhor_combinacao_geral). Variacao de -1,78% vs media movel -- abaixo do gatilho de alerta urgente (15%)."
       }
     ]
   },
-  "ultima_checagem": "2026-09-14T00:20:00Z"
+  "ultima_checagem": "2026-09-14T06:20:00Z"
 }

@@ -303,6 +303,7 @@
     line-height: 1;
   }
   .modal-close:hover { color: var(--ink); }
+  .modal-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; }
 
   /* opportunities: 1-liner + link */
   .opp-list { display: flex; flex-direction: column; gap: 8px; }
@@ -315,6 +316,7 @@
     border-left: 3px solid var(--accent);
     padding-left: 10px;
   }
+  .opp-line.featured { border-left-color: var(--good); }
   .opp-line .opp-summary { color: var(--ink); }
   .opp-line .opp-summary strong { color: var(--ink); }
 
@@ -366,19 +368,19 @@
       <div class="rec-col">
         <h4>✈ Voo</h4>
         <ul>
-          <li>Melhor opção hoje: <strong>LIM-CUZ, R$ 8.536</strong> (2 pax, Lima 2 dias → Cusco 6 dias)</li>
-          <li>As outras 3 variantes ficam entre R$ 8.739–8.740 (+R$203-204)</li>
-          <li>Ida tem conexão curta (1h15 em GRU) — mesmo preço trocando para uma conexão de 2h20, ver "detalhes"</li>
-          <li>Preço confirmado com dado ao vivo (voltou a funcionar após ~77h fora do ar) — só +0,6% vs. a última leitura confiável, ainda não vale travar preço</li>
+          <li>Melhor opção hoje: <strong>CUZ-LIM, R$ 8.659</strong> (2 pax, Cusco 6 dias → Lima 3 dias)</li>
+          <li>As outras 3 variantes ficam entre R$ 8.933–9.007 (+R$274 a +R$348)</li>
+          <li>Preço parado desde 10/09 — nenhuma das 4 variantes se mexeu, sem gatilho de queda</li>
+          <li>Vencedora sem conexão de risco; a 2ª colocada tem uma escala longa (7h15 em Brasília) — ver "detalhes"</li>
         </ul>
       </div>
       <div class="rec-col">
         <h4>💳 Milhas</h4>
         <ul>
-          <li>Desconto de 55-65% na compra direta encerrou (28/08) sem prorrogação confirmada — não comprar milhas ao preço de lista agora, esperar nova edição</li>
-          <li>Pontos Inter Prime do Pedro (11.900) <strong>não convertem</strong> para LATAM Pass (só Azul/Smiles) — confirmado</li>
-          <li>Faltam 127.333 milhas (teto), considerando só Clara (LATAM Pass + Ultravioleta a 1:1)</li>
-          <li>Bônus Nubank→LATAM Pass (30%+1.500) ainda não vale threshold de urgência, mas soma bem com o Modo LATAM Pass (10%)</li>
+          <li>Desconto de até 60% na compra direta segue ativo até 30/09 — milheiro a ~R$26,60</li>
+          <li>Bem abaixo do equilíbrio (R$61,85–144,32/milheiro): vale considerar completar o saldo comprando</li>
+          <li>Faltam 127.333 milhas (teto) considerando Clara + Pedro — custo estimado R$3.387,06</li>
+          <li>Pontos Inter Prime do Pedro (11.900) não convertem para LATAM Pass (só Azul/Smiles)</li>
         </ul>
       </div>
     </div>
@@ -387,35 +389,35 @@
   <div class="grid">
 
     <div class="card wide">
-      <h3>Preço LATAM hoje — Lima + Cusco (2 pax)</h3>
-      <div class="big-number tabular">R$ 8.536</div>
-      <div class="note">Vencedora: <strong>LIM-CUZ</strong> (entra Lima, sai Cusco) · 2 dias Lima + 6 dias Cusco.</div>
+      <h3>Preço LATAM hoje — Cusco + Lima (2 pax)</h3>
+      <div class="big-number tabular">R$ 8.659</div>
+      <div class="note">Vencedora: <strong>CUZ-LIM</strong> (entra Cusco, sai Lima) · 6 dias Cusco + 3 dias Lima.</div>
       <div class="table-scroll">
         <table class="leg-table">
           <thead><tr><th>Combinação</th><th>Preço (2 pax)</th><th>Status</th><th>Conexões</th><th></th></tr></thead>
           <tbody>
-            <tr><td>LIM→CUZ (Lima 2d → Cusco 6d)</td><td class="tabular">R$ 8.536</td><td><span class="status-tag good">Vencedora</span></td><td><span class="status-tag warn">⚠ conexão curta</span></td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-2d').classList.add('open')">detalhes →</button></td></tr>
-            <tr><td>LIM→CUZ (Lima 3d → Cusco 6d)</td><td class="tabular">R$ 8.739</td><td><span class="status-tag muted">+R$203</span></td><td><span class="status-tag critical">⚠ conexão curta e longa</span></td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-3d').classList.add('open')">detalhes →</button></td></tr>
-            <tr><td>CUZ→LIM (Cusco 6d → Lima 2d)</td><td class="tabular">R$ 8.740</td><td><span class="status-tag muted">+R$204</span></td><td><span class="status-tag critical">⚠ conexão curta x2</span></td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-2d').classList.add('open')">detalhes →</button></td></tr>
-            <tr><td>CUZ→LIM (Cusco 6d → Lima 3d)</td><td class="tabular">R$ 8.740</td><td><span class="status-tag muted">+R$204</span></td><td><span class="status-tag critical">⚠ conexão curta x2</span></td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-3d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>CUZ→LIM (Cusco 6d → Lima 3d)</td><td class="tabular">R$ 8.659</td><td><span class="status-tag good">Vencedora</span></td><td>—</td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-3d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>LIM→CUZ (Lima 2d → Cusco 6d)</td><td class="tabular">R$ 8.933</td><td><span class="status-tag muted">+R$274</span></td><td><span class="status-tag critical">⚠ conexão longa</span></td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-2d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>CUZ→LIM (Cusco 6d → Lima 2d)</td><td class="tabular">R$ 8.962</td><td><span class="status-tag muted">+R$303</span></td><td>—</td><td><button class="link-btn" onclick="document.getElementById('modal-cuz-lim-2d').classList.add('open')">detalhes →</button></td></tr>
+            <tr><td>LIM→CUZ (Lima 3d → Cusco 6d)</td><td class="tabular">R$ 9.007</td><td><span class="status-tag muted">+R$348</span></td><td>—</td><td><button class="link-btn" onclick="document.getElementById('modal-lim-cuz-3d').classList.add('open')">detalhes →</button></td></tr>
           </tbody>
         </table>
       </div>
-      <div class="note">Clique em "detalhes" para ver horários, escalas, aeronaves e uma opção sem conexão de risco para cada trecho.</div>
+      <div class="note">Clique em "detalhes" para ver horários, escalas, aeronaves e uma opção sem conexão de risco onde houver alerta.</div>
     </div>
 
     <div class="card">
       <div class="subsection">
         <h4>Dinheiro vs. LATAM Pass</h4>
         <div class="note">
-          <strong class="tabular">R$ 8.536</strong> em dinheiro (2 pax) · resgate estimado <strong class="tabular">60.000–140.000</strong> milhas · equilíbrio <strong class="tabular">R$ 60,97–142,27</strong>/milheiro.
+          <strong class="tabular">R$ 8.659</strong> em dinheiro (2 pax) · resgate estimado <strong class="tabular">60.000–140.000</strong> milhas · equilíbrio <strong class="tabular">R$ 61,85–144,32</strong>/milheiro.
         </div>
       </div>
       <div class="subsection">
         <h4>Vale comprar milhas?</h4>
         <div class="note">
-          Saldo de Clara (pontos a 1:1): <strong class="tabular">5.000+7.667 = 12.667</strong> milhas equivalentes. Pontos Inter Prime do Pedro não contam (sem rota p/ LATAM Pass). Faltam <strong class="tabular">127.333</strong> (teto).<br>
-          Sem desconto ativo confirmado na compra direta hoje — a promoção de 55-65% encerrou (28/08) sem prorrogação. Melhor referência: R$26,60/milheiro, última compra real da Clara (26/08, dentro da promoção agora encerrada) — não é preço de lista vigente.
+          Saldo do casal (pontos a 1:1): Clara 5.000 + 7.667 (Ultravioleta) + Pedro 0 = <strong class="tabular">12.667</strong> milhas equivalentes. Pontos Inter Prime do Pedro não contam (sem rota p/ LATAM Pass). Faltam <strong class="tabular">127.333</strong> (teto).<br>
+          Desconto ativo até 30/09: milheiro a ~<strong class="tabular">R$26,60</strong> — bem abaixo do equilíbrio (R$61,85+). Comprar sai mais barato que pagar em dinheiro.
         </div>
         <span class="status-tag good">12.667/140.000 cobertas (teto)</span>
       </div>
@@ -427,41 +429,52 @@
         <table class="leg-table">
           <thead><tr><th></th><th>Valor</th></tr></thead>
           <tbody>
-            <tr><td>Preço em dinheiro (2 pax, real)</td><td class="tabular">R$ 8.536</td></tr>
+            <tr><td>Preço em dinheiro (2 pax, real)</td><td class="tabular">R$ 8.659</td></tr>
             <tr><td>Milhas necessárias (2 pax, teto da faixa)</td><td class="tabular">140.000</td></tr>
-            <tr><td>Milhas que já têm (LATAM Pass Clara + Ultravioleta 1:1)</td><td class="tabular">12.667</td></tr>
+            <tr><td>Milhas que já têm (LATAM Pass Clara + Pedro + Ultravioleta 1:1)</td><td class="tabular">12.667</td></tr>
             <tr><td>Milhas faltantes (teto)</td><td class="tabular">127.333</td></tr>
-            <tr><td>CPM de aquisição (referência, sem desconto ativo hoje)</td><td class="tabular">R$ 26,60</td></tr>
+            <tr><td>CPM de aquisição (desconto ativo até 30/09, perfil geral)</td><td class="tabular">R$ 26,60</td></tr>
             <tr><td><strong>Custo para completar (resgatando)</strong></td><td class="tabular"><strong>R$ 3.387,06</strong></td></tr>
           </tbody>
         </table>
       </div>
-      <div class="note">Cálculo usa sempre o cenário mais conservador (teto da faixa de milhas + maior CPM), não uma média. CPM sem preço de lista confirmado hoje (ferramenta oficial bloqueada, scraper local indisponível, sem desconto de compra direta ativo) — usa como referência a última compra real da Clara (26/08, dentro de promoção agora encerrada); preço de lista sem desconto pode ser maior. Pontos Inter Prime do Pedro (11.900) ficaram de fora — confirmado que o Inter Loop/Prime só transfere para Azul Fidelidade e Smiles, sem rota para LATAM Pass. Mesmo pela referência, R$3.387,06 fica bem abaixo do preço em dinheiro (R$8.536) — resgatar compensa. Faixa de milhas é estimativa pública, não disponibilidade real para a data escolhida — confirmar logado no app/site antes de resgatar.</div>
+      <div class="note">Cálculo usa sempre o cenário mais conservador (teto da faixa de milhas + maior CPM disponível), não uma média. Faltam taxas de embarque, que o resgate não cobre. Pontos Inter Prime do Pedro (11.900) ficaram de fora — confirmado que o Inter Loop/Prime só transfere para Azul Fidelidade e Smiles, sem rota para LATAM Pass. R$3.387,06 fica bem abaixo do preço em dinheiro (R$8.659) — resgatar compensa. Faixa de milhas é estimativa pública, não disponibilidade real para a data escolhida — confirmar logado no app/site antes de resgatar.</div>
     </div>
 
     <div class="card wide">
-      <h3>Itinerário detalhado — LIM-CUZ (vencedora, 2 pax)</h3>
+      <h3>Itinerário detalhado — CUZ-LIM (vencedora, 2 pax)</h3>
       <div class="table-scroll">
         <table class="leg-table">
           <thead>
             <tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida ref.</th><th>Chegada ref.</th><th>Aeronave</th></tr>
           </thead>
           <tbody>
-            <tr><td>Ida</td><td class="tabular">LA3315</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 02:40</td><td class="tabular">10/06 05:55</td><td>A320</td></tr>
-            <tr><td>Ida (conexão GRU, 1h15)</td><td class="tabular">LA8098</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 07:10</td><td class="tabular">10/06 10:30</td><td>A320</td></tr>
-            <tr><td>Doméstico (2d depois)</td><td class="tabular">LA2344</td><td class="tabular">LIM → CUZ</td><td class="tabular">12/06 04:50</td><td class="tabular">12/06 06:10</td><td>A319</td></tr>
-            <tr><td>Volta (6d depois)</td><td class="tabular">LA2366</td><td class="tabular">CUZ → SCL</td><td class="tabular">18/06 09:40</td><td class="tabular">18/06 14:00</td><td>A320</td></tr>
-            <tr><td>Volta (conexão SCL, 2h25)</td><td class="tabular">LA8105</td><td class="tabular">SCL → GRU</td><td class="tabular">18/06 16:25</td><td class="tabular">18/06 21:20</td><td>A321</td></tr>
-            <tr><td>Volta (conexão GRU, 2h10)</td><td class="tabular">LA3382</td><td class="tabular">GRU → REC</td><td class="tabular">18/06 23:30</td><td class="tabular">19/06 02:30</td><td>A321</td></tr>
+            <tr><td>Ida</td><td class="tabular">LA3379</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 14:50</td><td class="tabular">10/06 18:10</td><td>A320</td></tr>
+            <tr><td>Ida (conexão GRU, 3h30)</td><td class="tabular">LA8122</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 21:40</td><td class="tabular">11/06 00:45</td><td>A321</td></tr>
+            <tr><td>Ida (conexão LIM, 4h25)</td><td class="tabular">LA2011</td><td class="tabular">LIM → CUZ</td><td class="tabular">11/06 05:10</td><td class="tabular">11/06 06:35</td><td>A319</td></tr>
+            <tr><td>Doméstico (6d depois)</td><td class="tabular">LA2233</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06 16:25</td><td class="tabular">16/06 18:00</td><td>A320</td></tr>
+            <tr><td>Volta (3d depois)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">19/06 00:40</td><td class="tabular">19/06 07:20</td><td>A320</td></tr>
+            <tr><td>Volta (conexão BSB, 3h00)</td><td class="tabular">LA3730</td><td class="tabular">BSB → FOR</td><td class="tabular">19/06 10:20</td><td class="tabular">19/06 12:50</td><td>A320</td></tr>
+            <tr><td>Volta (conexão FOR, 1h40)</td><td class="tabular">LA4779</td><td class="tabular">FOR → REC</td><td class="tabular">19/06 14:30</td><td class="tabular">19/06 15:45</td><td>A319</td></tr>
           </tbody>
         </table>
       </div>
-      <div class="note">Preço 2 pax: R$8.536 (ida R$3.951 + doméstico R$691 + volta R$3.894). Ida 1 parada (GRU); volta 2 paradas (SCL, GRU), sem conexão de risco na volta. Todos os trechos LATAM (LA).</div>
+      <div class="note">Preço 2 pax: R$8.659 (ida R$3.998 + doméstico R$642 + volta R$4.019). Ida 2 paradas (GRU, LIM); volta 2 paradas (BSB, FOR) — todas dentro da faixa segura (90min–5h). Todos os trechos LATAM (LA). Classe econômica, tarifa promocional (não reembolsável) salvo indicação em contrário no momento da compra.</div>
+      <div class="modal-links">
+        <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">Ida: REC→CUZ 10/06 →</a>
+        <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20LIM%20on%202027-06-16&curr=BRL" target="_blank" rel="noopener">Doméstico: CUZ→LIM 16/06 →</a>
+        <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20REC%20on%202027-06-19&curr=BRL" target="_blank" rel="noopener">Volta: LIM→REC 19/06 →</a>
+      </div>
     </div>
 
     <div class="card wide">
       <h3>Oportunidades ativas</h3>
       <div class="opp-list">
+        <div class="opp-line featured">
+          <span class="status-tag good">até 30/09</span>
+          <span class="opp-summary"><strong>LATAM Pass: até 60% de desconto</strong> na compra direta de milhas (perfil geral, sem precisar de Itaú)</span>
+          <a class="link-out" href="https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/" target="_blank" rel="noopener">fonte →</a>
+        </div>
         <div class="opp-line">
           <span class="opp-summary"><strong>Nubank → LATAM Pass: 30% + 1.500 milhas</strong> na 1ª transferência</span>
           <a class="link-out" href="https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras" target="_blank" rel="noopener">fonte →</a>
@@ -471,12 +484,8 @@
           <a class="link-out" href="https://nubank.com.br/ultravioleta/cartao-black/modo-latam-pass" target="_blank" rel="noopener">fonte →</a>
         </div>
         <div class="opp-line">
-          <span class="opp-summary"><strong>Nomad: 8.000 milhas</strong> na 1ª operação de câmbio — expira amanhã (31/08)</span>
-          <span class="opp-summary" style="color:var(--ink-muted); font-size:0.82rem;">sem link direto</span>
-        </div>
-        <div class="opp-line">
           <span class="opp-summary"><strong>Livelo → LATAM Pass: 25-35%</strong> de bônus (campanha recorrente)</span>
-          <a class="link-out" href="https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo-2/" target="_blank" rel="noopener">fonte →</a>
+          <a class="link-out" href="https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo/" target="_blank" rel="noopener">fonte →</a>
         </div>
         <div class="opp-line">
           <span class="opp-summary"><strong>Esfera → LATAM Pass: 25-30%</strong> + 1.000 milhas (não aplicável — sem saldo Esfera)</span>
@@ -487,146 +496,113 @@
 
   </div>
 
-  <footer>Atualizado em 30/08/2026 · próxima atualização: amanhã</footer>
+  <footer>Atualizado em 14/09/2026 · próxima atualização: amanhã</footer>
 
+</div>
+
+<div class="modal-overlay" id="modal-cuz-lim-3d" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cuz-lim-3d').classList.remove('open')">✕</button>
+    <h3>CUZ→LIM · Cusco 6d → Lima 3d — R$ 8.659 (2 pax) · vencedora</h3>
+    <div class="table-scroll">
+      <table class="leg-table">
+        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr></thead>
+        <tbody>
+          <tr><td>Ida</td><td class="tabular">LA3379</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 14:50</td><td class="tabular">10/06 18:10</td><td>A320</td></tr>
+          <tr><td>Ida (conexão GRU, 3h30)</td><td class="tabular">LA8122</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 21:40</td><td class="tabular">11/06 00:45</td><td>A321</td></tr>
+          <tr><td>Ida (conexão LIM, 4h25)</td><td class="tabular">LA2011</td><td class="tabular">LIM → CUZ</td><td class="tabular">11/06 05:10</td><td class="tabular">11/06 06:35</td><td>A319</td></tr>
+          <tr><td>Doméstico (6d depois)</td><td class="tabular">LA2233</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06 16:25</td><td class="tabular">16/06 18:00</td><td>A320</td></tr>
+          <tr><td>Volta (3d depois)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">19/06 00:40</td><td class="tabular">19/06 07:20</td><td>A320</td></tr>
+          <tr><td>Volta (conexão BSB, 3h00)</td><td class="tabular">LA3730</td><td class="tabular">BSB → FOR</td><td class="tabular">19/06 10:20</td><td class="tabular">19/06 12:50</td><td>A320</td></tr>
+          <tr><td>Volta (conexão FOR, 1h40)</td><td class="tabular">LA4779</td><td class="tabular">FOR → REC</td><td class="tabular">19/06 14:30</td><td class="tabular">19/06 15:45</td><td>A319</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Ida: R$3.998 (2 paradas). Doméstico: R$642 (direto). Volta: R$4.019 (2 paradas). Todas as conexões entre 90min e 5h — sem alerta. Todos os trechos LATAM (LA). Classe econômica, tarifa promocional (não reembolsável salvo indicação em contrário no momento da compra).</div>
+    <div class="modal-links">
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">Ida →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20LIM%20on%202027-06-16&curr=BRL" target="_blank" rel="noopener">Doméstico →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20REC%20on%202027-06-19&curr=BRL" target="_blank" rel="noopener">Volta →</a>
+    </div>
+  </div>
 </div>
 
 <div class="modal-overlay" id="modal-lim-cuz-2d" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="modal-box">
     <button class="modal-close" onclick="document.getElementById('modal-lim-cuz-2d').classList.remove('open')">✕</button>
-    <h3>LIM→CUZ · Lima 2d → Cusco 6d — R$ 8.536 (2 pax)</h3>
+    <h3>LIM→CUZ · Lima 2d → Cusco 6d — R$ 8.933 (2 pax)</h3>
     <div class="table-scroll">
       <table class="leg-table">
         <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr></thead>
         <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3315</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 02:40</td><td class="tabular">10/06 05:55</td><td>A320</td></tr>
-          <tr><td>Ida (conexão GRU, 1h15) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA8098</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 07:10</td><td class="tabular">10/06 10:30</td><td>A320</td></tr>
-          <tr><td>Doméstico (2d depois)</td><td class="tabular">LA2344</td><td class="tabular">LIM → CUZ</td><td class="tabular">12/06 04:50</td><td class="tabular">12/06 06:10</td><td>A319</td></tr>
-          <tr><td>Volta (6d depois)</td><td class="tabular">LA2366</td><td class="tabular">CUZ → SCL</td><td class="tabular">18/06 09:40</td><td class="tabular">18/06 14:00</td><td>A320</td></tr>
-          <tr><td>Volta (conexão SCL, 2h25)</td><td class="tabular">LA8105</td><td class="tabular">SCL → GRU</td><td class="tabular">18/06 16:25</td><td class="tabular">18/06 21:20</td><td>A321</td></tr>
-          <tr><td>Volta (conexão GRU, 2h10)</td><td class="tabular">LA3382</td><td class="tabular">GRU → REC</td><td class="tabular">18/06 23:30</td><td class="tabular">19/06 02:30</td><td>A321</td></tr>
+          <tr><td>Ida</td><td class="tabular">LA3383</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 10:55</td><td class="tabular">10/06 14:20</td><td>A321</td></tr>
+          <tr><td>Ida (conexão GRU, 4h55)</td><td class="tabular">LA8040</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 19:15</td><td class="tabular">10/06 22:25</td><td>A320</td></tr>
+          <tr><td>Doméstico (2d depois)</td><td class="tabular">LA2069</td><td class="tabular">LIM → CUZ</td><td class="tabular">12/06 19:50</td><td class="tabular">12/06 21:10</td><td>A320</td></tr>
+          <tr><td>Volta (6d depois)</td><td class="tabular">LA2034</td><td class="tabular">CUZ → LIM</td><td class="tabular">18/06 19:45</td><td class="tabular">18/06 21:15</td><td>A319</td></tr>
+          <tr><td>Volta (conexão LIM, 3h25)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">19/06 00:40</td><td class="tabular">19/06 07:20</td><td>A320</td></tr>
+          <tr><td>Volta (conexão BSB, 7h15) <span class="status-tag critical">⚠ longa</span></td><td class="tabular">LA4724</td><td class="tabular">BSB → REC</td><td class="tabular">19/06 14:35</td><td class="tabular">19/06 17:10</td><td>A320</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: R$3.951 (1 parada). Doméstico: R$691 (direto). Volta: R$3.894 (2 paradas). Todos os trechos LATAM (LA).</div>
-    <h3 style="margin-top:16px; font-size:0.9rem;">Opção sem conexão de risco (mesmo preço)</h3>
-    <div class="table-scroll">
-      <table class="leg-table">
-        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th></tr></thead>
-        <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3377</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 13:35 → 16:55</td></tr>
-          <tr><td>Ida (conexão GRU, 2h20)</td><td class="tabular">LA2425</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 19:15 → 22:30</td></tr>
-        </tbody>
-      </table>
+    <div class="note">Ida: R$3.870 (1 parada). Doméstico: R$680 (direto). Volta: R$4.383 (2 paradas). Todos os trechos LATAM (LA). Classe econômica, tarifa promocional (não reembolsável salvo indicação em contrário no momento da compra).</div>
+    <h3 style="margin-top:16px; font-size:0.9rem;">Opção sem conexão longa (referência)</h3>
+    <div class="note">Trajeto CUZ-LIM-GRU-REC (escalas de 160min em Lima e 275min em GRU) cotado por <strong class="alt-price tabular">R$ 4.075</strong> em busca anterior — evita a escala de 7h15 em Brasília. Reconfirmar preço vigente antes de decidir.</div>
+    <div class="modal-links">
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">Ida →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20CUZ%20on%202027-06-12&curr=BRL" target="_blank" rel="noopener">Doméstico →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20REC%20on%202027-06-18&curr=BRL" target="_blank" rel="noopener">Volta →</a>
     </div>
-    <div class="note">Ida: <strong class="alt-price tabular">R$ 3.951</strong> (mesmo preço) — troca a conexão de 1h15 por 2h20 em GRU.</div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-lim-cuz-3d" onclick="if(event.target===this)this.classList.remove('open')">
-  <div class="modal-box">
-    <button class="modal-close" onclick="document.getElementById('modal-lim-cuz-3d').classList.remove('open')">✕</button>
-    <h3>LIM→CUZ · Lima 3d → Cusco 6d — R$ 8.739 (2 pax)</h3>
-    <div class="table-scroll">
-      <table class="leg-table">
-        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr></thead>
-        <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3315</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 02:40</td><td class="tabular">10/06 05:55</td><td>A320</td></tr>
-          <tr><td>Ida (conexão GRU, 1h15) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA8098</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 07:10</td><td class="tabular">10/06 10:30</td><td>A320</td></tr>
-          <tr><td>Doméstico (3d depois)</td><td class="tabular">LA2344</td><td class="tabular">LIM → CUZ</td><td class="tabular">13/06 04:50</td><td class="tabular">13/06 06:10</td><td>A320</td></tr>
-          <tr><td>Volta (6d depois)</td><td class="tabular">LA2224</td><td class="tabular">CUZ → LIM</td><td class="tabular">19/06 21:15</td><td class="tabular">19/06 22:55</td><td>A320</td></tr>
-          <tr><td>Volta (conexão LIM, 1h35)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">20/06 00:30</td><td class="tabular">20/06 06:55</td><td>A320</td></tr>
-          <tr><td>Volta (conexão BSB, 6h15) <span class="status-tag critical">⚠ longa</span></td><td class="tabular">LA4724</td><td class="tabular">BSB → REC</td><td class="tabular">20/06 13:10</td><td class="tabular">20/06 15:45</td><td>A321</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="note">Ida: R$3.951 (1 parada). Doméstico: R$691 (direto). Volta: R$4.097 (2 paradas). Todos os trechos LATAM (LA).</div>
-    <h3 style="margin-top:16px; font-size:0.9rem;">Opções sem conexão de risco</h3>
-    <div class="table-scroll">
-      <table class="leg-table">
-        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida → Chegada</th></tr></thead>
-        <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3377</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 13:35 → 16:55</td></tr>
-          <tr><td>Ida (conexão GRU, 2h20)</td><td class="tabular">LA2425</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 19:15 → 22:30</td></tr>
-          <tr><td>Volta</td><td class="tabular">LA2128</td><td class="tabular">CUZ → LIM</td><td class="tabular">19/06 09:05 → 10:40</td></tr>
-          <tr><td>Volta (conexão LIM, 2h25)</td><td class="tabular">LA8099</td><td class="tabular">LIM → GRU</td><td class="tabular">19/06 13:05 → 19:55</td></tr>
-          <tr><td>Volta (conexão GRU, 3h35)</td><td class="tabular">LA3382</td><td class="tabular">GRU → REC</td><td class="tabular">19/06 23:30 → 20/06 02:30</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="note">Ida: <strong class="alt-price tabular">R$ 3.951</strong> (mesmo preço). Volta: <strong class="alt-price tabular">R$ 4.100</strong> (+R$3), sem conexão acima de 5h.</div>
   </div>
 </div>
 
 <div class="modal-overlay" id="modal-cuz-lim-2d" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="modal-box">
     <button class="modal-close" onclick="document.getElementById('modal-cuz-lim-2d').classList.remove('open')">✕</button>
-    <h3>CUZ→LIM · Cusco 6d → Lima 2d — R$ 8.740 (2 pax)</h3>
+    <h3>CUZ→LIM · Cusco 6d → Lima 2d — R$ 8.962 (2 pax)</h3>
     <div class="table-scroll">
       <table class="leg-table">
         <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr></thead>
         <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3315</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 02:40</td><td class="tabular">10/06 05:55</td><td>A320</td></tr>
-          <tr><td>Ida (conexão GRU, 1h15) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA8098</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 07:10</td><td class="tabular">10/06 10:30</td><td>A320</td></tr>
-          <tr><td>Ida (conexão LIM, 2h05)</td><td class="tabular">LA2120</td><td class="tabular">LIM → CUZ</td><td class="tabular">10/06 12:35</td><td class="tabular">10/06 14:00</td><td>A320</td></tr>
-          <tr><td>Doméstico (6d depois)</td><td class="tabular">LA2222</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06 00:05</td><td class="tabular">16/06 01:35</td><td>A320</td></tr>
-          <tr><td>Volta (2d depois)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">18/06 00:30</td><td class="tabular">18/06 06:55</td><td>A320</td></tr>
-          <tr><td>Volta (conexão BSB, 3h25)</td><td class="tabular">LA3730</td><td class="tabular">BSB → FOR</td><td class="tabular">18/06 10:20</td><td class="tabular">18/06 13:00</td><td>A320</td></tr>
-          <tr><td>Volta (conexão FOR, 1h10) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA3491</td><td class="tabular">FOR → REC</td><td class="tabular">18/06 14:10</td><td class="tabular">18/06 15:25</td><td>A320</td></tr>
+          <tr><td>Ida</td><td class="tabular">LA3379</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 14:50</td><td class="tabular">10/06 18:10</td><td>A320</td></tr>
+          <tr><td>Ida (conexão GRU, 3h30)</td><td class="tabular">LA8122</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 21:40</td><td class="tabular">11/06 00:45</td><td>A321</td></tr>
+          <tr><td>Ida (conexão LIM, 4h25)</td><td class="tabular">LA2011</td><td class="tabular">LIM → CUZ</td><td class="tabular">11/06 05:10</td><td class="tabular">11/06 06:35</td><td>A319</td></tr>
+          <tr><td>Doméstico (6d depois)</td><td class="tabular">LA2233</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06 16:25</td><td class="tabular">16/06 18:00</td><td>A320</td></tr>
+          <tr><td>Volta (2d depois)</td><td class="tabular">LA8005</td><td class="tabular">LIM → GRU</td><td class="tabular">18/06 09:15</td><td class="tabular">18/06 16:25</td><td>A321</td></tr>
+          <tr><td>Volta (conexão GRU, 4h35)</td><td class="tabular">LA3378</td><td class="tabular">GRU → REC</td><td class="tabular">18/06 21:00</td><td class="tabular">19/06 00:05</td><td>A321</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: R$4.082 (2 paradas). Doméstico: R$621 (direto). Volta: R$4.037 (2 paradas). Todos os trechos LATAM (LA).</div>
-    <h3 style="margin-top:16px; font-size:0.9rem;">Opções sem conexão de risco</h3>
-    <div class="table-scroll">
-      <table class="leg-table">
-        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida → Chegada</th></tr></thead>
-        <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3677</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 16:15 → 19:35</td></tr>
-          <tr><td>Ida (conexão GRU, 1h55)</td><td class="tabular">LA8122</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 21:30 → 11/06 00:45</td></tr>
-          <tr><td>Ida (conexão LIM, 4h05)</td><td class="tabular">LA2344</td><td class="tabular">LIM → CUZ</td><td class="tabular">11/06 04:50 → 06:10</td></tr>
-          <tr><td>Volta</td><td class="tabular">LA8005</td><td class="tabular">LIM → GRU</td><td class="tabular">18/06 00:30 → 07:20</td></tr>
-          <tr><td>Volta (conexão GRU, 2h15)</td><td class="tabular">LA3380</td><td class="tabular">GRU → REC</td><td class="tabular">18/06 09:35 → 12:40</td></tr>
-        </tbody>
-      </table>
+    <div class="note">Ida: R$3.998 (2 paradas). Doméstico: R$642 (direto). Volta: R$4.322 (1 parada). Todas as conexões entre 90min e 5h — sem alerta. Todos os trechos LATAM (LA). Classe econômica, tarifa promocional (não reembolsável salvo indicação em contrário no momento da compra).</div>
+    <div class="modal-links">
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20CUZ%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">Ida →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20LIM%20on%202027-06-16&curr=BRL" target="_blank" rel="noopener">Doméstico →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20REC%20on%202027-06-18&curr=BRL" target="_blank" rel="noopener">Volta →</a>
     </div>
-    <div class="note">Ida: <strong class="alt-price tabular">R$ 4.082</strong> (mesmo preço), evita as duas conexões curtas (GRU 1h55, LIM 4h05). Volta: <strong class="alt-price tabular">R$ 4.040</strong> (+R$3), só 1 conexão em vez de 2.</div>
   </div>
 </div>
 
-<div class="modal-overlay" id="modal-cuz-lim-3d" onclick="if(event.target===this)this.classList.remove('open')">
+<div class="modal-overlay" id="modal-lim-cuz-3d" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="modal-box">
-    <button class="modal-close" onclick="document.getElementById('modal-cuz-lim-3d').classList.remove('open')">✕</button>
-    <h3>CUZ→LIM · Cusco 6d → Lima 3d — R$ 8.740 (2 pax)</h3>
+    <button class="modal-close" onclick="document.getElementById('modal-lim-cuz-3d').classList.remove('open')">✕</button>
+    <h3>LIM→CUZ · Lima 3d → Cusco 6d — R$ 9.007 (2 pax)</h3>
     <div class="table-scroll">
       <table class="leg-table">
         <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida</th><th>Chegada</th><th>Aeronave</th></tr></thead>
         <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3315</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 02:40</td><td class="tabular">10/06 05:55</td><td>A320</td></tr>
-          <tr><td>Ida (conexão GRU, 1h15) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA8098</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 07:10</td><td class="tabular">10/06 10:30</td><td>A320</td></tr>
-          <tr><td>Ida (conexão LIM, 2h05)</td><td class="tabular">LA2120</td><td class="tabular">LIM → CUZ</td><td class="tabular">10/06 12:35</td><td class="tabular">10/06 14:00</td><td>A320</td></tr>
-          <tr><td>Doméstico (6d depois)</td><td class="tabular">LA2222</td><td class="tabular">CUZ → LIM</td><td class="tabular">16/06 00:05</td><td class="tabular">16/06 01:35</td><td>A320</td></tr>
-          <tr><td>Volta (3d depois)</td><td class="tabular">LA2402</td><td class="tabular">LIM → BSB</td><td class="tabular">19/06 00:30</td><td class="tabular">19/06 06:55</td><td>A320</td></tr>
-          <tr><td>Volta (conexão BSB, 3h25)</td><td class="tabular">LA3730</td><td class="tabular">BSB → FOR</td><td class="tabular">19/06 10:20</td><td class="tabular">19/06 13:00</td><td>A320</td></tr>
-          <tr><td>Volta (conexão FOR, 1h10) <span class="status-tag warn">⚠ curta</span></td><td class="tabular">LA3491</td><td class="tabular">FOR → REC</td><td class="tabular">19/06 14:10</td><td class="tabular">19/06 15:25</td><td>A320</td></tr>
+          <tr><td>Ida</td><td class="tabular">LA3383</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 10:55</td><td class="tabular">10/06 14:20</td><td>A321</td></tr>
+          <tr><td>Ida (conexão GRU, 4h55)</td><td class="tabular">LA8040</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 19:15</td><td class="tabular">10/06 22:25</td><td>A320</td></tr>
+          <tr><td>Doméstico (3d depois)</td><td class="tabular">LA2011</td><td class="tabular">LIM → CUZ</td><td class="tabular">13/06 05:10</td><td class="tabular">13/06 06:35</td><td>A320</td></tr>
+          <tr><td>Volta (6d depois)</td><td class="tabular">LA2438</td><td class="tabular">CUZ → GRU</td><td class="tabular">19/06 23:30</td><td class="tabular">20/06 05:40</td><td>A320</td></tr>
+          <tr><td>Volta (conexão São Paulo, 4h25 — GRU→CGH)</td><td class="tabular">LA3414</td><td class="tabular">CGH → REC</td><td class="tabular">20/06 10:05</td><td class="tabular">20/06 13:10</td><td>A320</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="note">Ida: R$4.082 (2 paradas). Doméstico: R$621 (direto). Volta: R$4.037 (2 paradas). Todos os trechos LATAM (LA).</div>
-    <h3 style="margin-top:16px; font-size:0.9rem;">Opções sem conexão de risco</h3>
-    <div class="table-scroll">
-      <table class="leg-table">
-        <thead><tr><th>Trecho</th><th>Voo</th><th>Rota</th><th>Partida → Chegada</th></tr></thead>
-        <tbody>
-          <tr><td>Ida</td><td class="tabular">LA3677</td><td class="tabular">REC → GRU</td><td class="tabular">10/06 16:15 → 19:35</td></tr>
-          <tr><td>Ida (conexão GRU, 1h55)</td><td class="tabular">LA8122</td><td class="tabular">GRU → LIM</td><td class="tabular">10/06 21:30 → 11/06 00:45</td></tr>
-          <tr><td>Ida (conexão LIM, 4h05)</td><td class="tabular">LA2344</td><td class="tabular">LIM → CUZ</td><td class="tabular">11/06 04:50 → 06:10</td></tr>
-          <tr><td>Volta</td><td class="tabular">LA8005</td><td class="tabular">LIM → GRU</td><td class="tabular">19/06 00:30 → 07:25</td></tr>
-          <tr><td>Volta (conexão GRU, 2h10)</td><td class="tabular">LA3380</td><td class="tabular">GRU → REC</td><td class="tabular">19/06 09:35 → 12:40</td></tr>
-        </tbody>
-      </table>
+    <div class="note">Ida: R$3.870 (1 parada). Doméstico: R$754 (direto). Volta: R$4.383 (1 parada, com troca de aeroporto em São Paulo). Todas as conexões entre 90min e 5h — sem alerta. Todos os trechos LATAM (LA). Classe econômica, tarifa promocional (não reembolsável salvo indicação em contrário no momento da compra).</div>
+    <div class="modal-links">
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20REC%20to%20LIM%20on%202027-06-10&curr=BRL" target="_blank" rel="noopener">Ida →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20LIM%20to%20CUZ%20on%202027-06-13&curr=BRL" target="_blank" rel="noopener">Doméstico →</a>
+      <a class="link-out" href="https://www.google.com/travel/flights?q=Flights%20from%20CUZ%20to%20REC%20on%202027-06-19&curr=BRL" target="_blank" rel="noopener">Volta →</a>
     </div>
-    <div class="note">Ida: <strong class="alt-price tabular">R$ 4.082</strong> (mesmo preço), evita as duas conexões curtas (GRU 1h55, LIM 4h05). Volta: <strong class="alt-price tabular">R$ 4.040</strong> (+R$3), só 1 conexão em vez de 2.</div>
   </div>
 </div>
 
