@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 2,
-    "data_checagem": "2026-09-19T12:20:00Z",
-    "nota": "Ciclo monitor leve 19/09 12h20: SEM MUDANCA DE LIDER E SEM MUDANCA DE PRECO -- LIM-CUZ x2d mantem 1o lugar geral a R$9049,00, identico ao ciclo anterior (todos os 7 trechos domesticos/volta via Kiwi e as 2 pernas de ida via lastminute-com ficaram estaveis, fli seguindo fora do ar ha 103 ciclos consecutivos). Ranking: 1o LIM-CUZ x2d R$9049,00; 2o LIM-CUZ x3d R$9089,00 (+R$40,00); 3o CUZ-LIM x3d R$9299,00 (+R$250,00); 4o CUZ-LIM x2d R$9301,00 (+R$252,00). Nenhuma variacao cruza o gatilho de alerta urgente de -15% vs. media movel de 30 checagens (todas de alta leve, entre +0,39% e +3,33%)."
+    "data_checagem": "2026-09-19T18:20:00Z",
+    "nota": "Ciclo monitor leve 19/09 18h20: SEM MUDANCA DE LIDER -- LIM-CUZ x2d mantem 1o lugar geral a R$9049,00, identico ao ciclo anterior (fli seguindo fora do ar ha 104 ciclos consecutivos; 6 dos 7 trechos domesticos/volta via Kiwi e as 2 pernas de ida via lastminute-com ficaram estaveis, so o trecho domestico CUZ-LIM 06/16 subiu R$1). Ranking: 1o LIM-CUZ x2d R$9049,00; 2o LIM-CUZ x3d R$9089,00 (+R$40,00); 3o CUZ-LIM x3d R$9300,00 (+R$251,00); 4o CUZ-LIM x2d R$9302,00 (+R$253,00). Nenhuma variacao cruza o gatilho de alerta urgente de -15% vs. media movel de 30 checagens (todas de alta leve, entre +0,33% e +3,19%)."
   },
   "checagens": {
     "LIM-LIM": [
@@ -12061,6 +12061,30 @@
         "fonte": "Ciclo monitor leve 19/09 12h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 103a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta SEM MUDANCA vs. ciclo anterior (19/09 06h20): LIM-CUZ 06/12 R$719, LIM-CUZ 06/13 R$758, CUZ-LIM 06/16 R$683, CUZ-REC 06/18 R$4314, CUZ-REC 06/19 R$4315, LIM-REC 06/18 R$4470, LIM-REC 06/19 R$4468. Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante LIM-CUZ x3d: R$9089,00 (sem mudanca vs ciclo anterior R$9089,00).",
         "media_movel_30_checagens": 9053.93,
         "variacao_pct_vs_media": 0.39
+      },
+      {
+        "data_checagem": "2026-09-19T18:20:00Z",
+        "preco_total_brl": 9049,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 19/09 18h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 104a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta quase sem mudanca vs. ciclo anterior (19/09 12h20): LIM-CUZ 06/12 R$719 (=), LIM-CUZ 06/13 R$758 (=), CUZ-LIM 06/16 R$684 (+R$1 vs R$683), CUZ-REC 06/18 R$4314 (=), CUZ-REC 06/19 R$4315 (=), LIM-REC 06/18 R$4470 (=), LIM-REC 06/19 R$4468 (=). Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante LIM-CUZ x2d: R$9049,00 (sem mudanca vs ciclo anterior R$9049,00).",
+        "media_movel_30_checagens": 9019.33,
+        "variacao_pct_vs_media": 0.33
+      },
+      {
+        "data_checagem": "2026-09-19T18:20:00Z",
+        "preco_total_brl": 9089,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 19/09 18h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 104a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta quase sem mudanca vs. ciclo anterior (19/09 12h20): LIM-CUZ 06/12 R$719 (=), LIM-CUZ 06/13 R$758 (=), CUZ-LIM 06/16 R$684 (+R$1 vs R$683), CUZ-REC 06/18 R$4314 (=), CUZ-REC 06/19 R$4315 (=), LIM-REC 06/18 R$4470 (=), LIM-REC 06/19 R$4468 (=). Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante LIM-CUZ x3d: R$9089,00 (sem mudanca vs ciclo anterior R$9089,00).",
+        "media_movel_30_checagens": 9056.67,
+        "variacao_pct_vs_media": 0.36
       }
     ],
     "CUZ-LIM": [
@@ -24222,6 +24246,30 @@
         "fonte": "Ciclo monitor leve 19/09 12h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 103a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta SEM MUDANCA vs. ciclo anterior (19/09 06h20): LIM-CUZ 06/12 R$719, LIM-CUZ 06/13 R$758, CUZ-LIM 06/16 R$683, CUZ-REC 06/18 R$4314, CUZ-REC 06/19 R$4315, LIM-REC 06/18 R$4470, LIM-REC 06/19 R$4468. Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante CUZ-LIM x3d: R$9299,00 (sem mudanca vs ciclo anterior R$9299,00).",
         "media_movel_30_checagens": 8999.4,
         "variacao_pct_vs_media": 3.33
+      },
+      {
+        "data_checagem": "2026-09-19T18:20:00Z",
+        "preco_total_brl": 9302,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 19/09 18h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 104a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta quase sem mudanca vs. ciclo anterior (19/09 12h20): LIM-CUZ 06/12 R$719 (=), LIM-CUZ 06/13 R$758 (=), CUZ-LIM 06/16 R$684 (+R$1 vs R$683), CUZ-REC 06/18 R$4314 (=), CUZ-REC 06/19 R$4315 (=), LIM-REC 06/18 R$4470 (=), LIM-REC 06/19 R$4468 (=). Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante CUZ-LIM x2d: R$9302,00 (+R$1,00 vs ciclo anterior R$9301,00, puxado pelo trecho domestico CUZ-LIM 06/16 via Kiwi).",
+        "media_movel_30_checagens": 9124.0,
+        "variacao_pct_vs_media": 1.95
+      },
+      {
+        "data_checagem": "2026-09-19T18:20:00Z",
+        "preco_total_brl": 9300,
+        "moeda": "BRL",
+        "passageiros": 2,
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 19/09 18h20: fli falhou de novo (success=true+count=0 no teste REC-LIM, 104a tentativa consecutiva de falha silenciosa) -- status atualizado em state/config.json. Fallback Kiwi.com (select_airlines=LA, adults=2, BRL) confirmou os 7 trechos domesticos/volta quase sem mudanca vs. ciclo anterior (19/09 12h20): LIM-CUZ 06/12 R$719 (=), LIM-CUZ 06/13 R$758 (=), CUZ-LIM 06/16 R$684 (+R$1 vs R$683), CUZ-REC 06/18 R$4314 (=), CUZ-REC 06/19 R$4315 (=), LIM-REC 06/18 R$4470 (=), LIM-REC 06/19 R$4468 (=). Kiwi seguiu sem resultado (0 itinerarios) para as 2 pernas de ida saindo de REC (REC-LIM, REC-CUZ), mesmo padrao persistente. lastminute-com para REC-LIM e REC-CUZ ficou ESTAVEL em EUR (678,18/2pax e 679,88/2pax, identico ao ciclo anterior) -- mantido o mesmo ajuste proporcional sobre o ultimo BRL de referencia: REC-LIM R$4016, REC-CUZ R$4148, sem mudanca, ainda estimativa ate proximo checkpoint fli confirmar valor exato em BRL. Variante CUZ-LIM x3d: R$9300,00 (+R$1,00 vs ciclo anterior R$9299,00, puxado pelo trecho domestico CUZ-LIM 06/16 via Kiwi).",
+        "media_movel_30_checagens": 9012.93,
+        "variacao_pct_vs_media": 3.19
       }
     ]
   },
