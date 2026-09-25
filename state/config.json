@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-25T12:20:00Z",
-    "tentativas_consecutivas_falhas": 129,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 25/09 12h20, tentativas_consecutivas_falhas agora 129)",
+    "ultima_tentativa": "2026-09-25T18:21:00Z",
+    "tentativas_consecutivas_falhas": 130,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 25/09 18h21, tentativas_consecutivas_falhas agora 130)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (25/09 12h20). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 55-65% conforme tier, ja notificada). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- segue mostrando os mesmos titulos recorrentes 55-65%; nenhuma data de validade nova encontrada nesta busca, mantido valido_ate=2026-09-30 ja registrado. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (25/09 18h21). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 55-65% conforme tier, ja notificada). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- segue mostrando os mesmos titulos recorrentes 55-65%; nenhuma data de validade nova encontrada nesta busca, mantido valido_ate=2026-09-30 ja registrado. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-25T12:20:00Z",
-    "resultado": "Ciclo monitor leve 25/09 12h20: fli FALHOU DE NOVO -- success=true+count=0 nos 3 trechos representativos testados (REC-LIM, REC-CUZ, LIM-CUZ 06/12), mesmo padrao de instabilidade intermitente das 128 tentativas anteriores (129a falha). Fallback Kiwi/lastminute usado (ver state/precos_historico.json.checagens.*.fonte para detalhe por trecho). Totais recalculados: LIM-CUZ x2d R$9093.77 (mantem lideranca, sem variacao vs ciclo anterior 25/09 06h20 -- todos os insumos identicos); LIM-CUZ x3d R$9137.77; CUZ-LIM x3d R$9228.77; CUZ-LIM x2d R$9230.77. Nenhuma variacao individual cruza o gatilho de -15% vs media movel de 30 checagens (todas entre +0.17% e +0.83%).",
+    "ultima_tentativa": "2026-09-25T18:21:00Z",
+    "resultado": "Ciclo monitor leve 25/09 18h21: fli FALHOU DE NOVO -- success=true+count=0 nos 3 trechos representativos testados (REC-LIM, REC-CUZ, LIM-CUZ 06/12), mesmo padrao de instabilidade intermitente das 129 tentativas anteriores (130a falha). Fallback Kiwi/lastminute usado (ver state/precos_historico.json.checagens.*.fonte para detalhe por trecho). Totais recalculados: LIM-CUZ x2d R$9141.41 (mantem lideranca, +R$47.64 vs ciclo anterior 25/09 12h20 -- alta majoritariamente cambial, EUR/BRL 5.8840->5.9362); LIM-CUZ x3d R$9186.41; CUZ-LIM x3d R$9277.50; CUZ-LIM x2d R$9279.50. Nenhuma variacao individual cruza o gatilho de -15% vs media movel de 30 checagens (todas entre +0.69% e +1.32%, todas positivas).",
     "nota": "Confirma o padrao de instabilidade intermitente do fli (recuperacoes isoladas de 1 ciclo, nao recuperacao definitiva) -- continuar tentando fli primeiro a cada ciclo conforme instrucao operacional, caindo para Kiwi/lastminute quando falhar."
   },
   "roteiro": {
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-25T12:20:00Z",
-    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 25/09 12h20) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-25T18:21:00Z",
+    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 25/09 18h21) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
