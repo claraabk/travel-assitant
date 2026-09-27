@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-27T00:26:00Z",
-    "tentativas_consecutivas_falhas": 137,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 27/09 00h26, tentativas_consecutivas_falhas agora 137)",
+    "ultima_tentativa": "2026-09-27T06:18:00Z",
+    "tentativas_consecutivas_falhas": 138,
+    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms excedido aguardando locator(\"input[name=\\\"radio-values\\\"]\") -- Akamai bloqueia o MCP hospedado em GCP (mesmo padrao de falha dos ciclos anteriores, retestado no ciclo monitor leve de 27/09 06h18, tentativas_consecutivas_falhas agora 138)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (27/09 00h26). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 60% geral/63% Itau, ja notificada). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- sinal misto: resultados trazem tanto o tier ja confirmado (60% geral/63% Itau) quanto um tier mais alto (64-66%) em artigos sem data clara o suficiente para confirmar vigencia hoje (27/09) -- mantido o tier ja confirmado sem mudanca, tier mais alto registrado para checagem futura sem upgrade de confianca. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (27/09 06h18). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 60% geral/63% Itau, ja notificada). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- mesmo tier ja confirmado (60% geral/63% Itau), uma fonte cita 'valido ate sexta-feira (29)' -- mesma divergencia leve de dia ja registrada, mantido sem mudanca. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-09-27T00:26:00Z",
-    "resultado": "Ciclo monitor leve 27/09 00h26: fli FALHOU DE NOVO para todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ 06/12, LIM-CUZ 06/13, CUZ-LIM 06/16, CUZ-REC 06/18, CUZ-REC 06/19, LIM-REC 06/18, LIM-REC 06/19; success=true+count=0), inclusive em diagnosticos sem filtro de companhia e em rotas/datas comuns (GRU-LIM 06/2027 e 11/2026) -- falha sistemica do backend fli neste ciclo, nao especifica da rota. A recuperacao do ciclo anterior (26/09 18h24) foi isolada, nao definitiva. Fallback Kiwi (7 trechos LATAM) + lastminute (2 trechos REC-LIM/REC-CUZ, conversao EUR/BRL=5.9025) cobriu todos os 9 trechos -- ver state/precos_historico.json para os precos. Precos resultaram em: LIM-CUZ x2d R$9114.50 (NOVA lideranca); LIM-CUZ x3d R$9151.50; CUZ-LIM x3d R$9241.53; CUZ-LIM x2d R$9243.53 -- todas mais caras que o ciclo anterior (~3.5-5% de alta), nenhuma queda. Maior variacao individual vs. media movel: +0.94% (LIM-CUZ x3d), sem gatilho (regra so cobre queda >=15%).",
+    "ultima_tentativa": "2026-09-27T06:18:00Z",
+    "resultado": "Ciclo monitor leve 27/09 06h18: fli FALHOU DE NOVO para todos os 9 trechos testados (REC-LIM, REC-CUZ, LIM-CUZ 06/12, LIM-CUZ 06/13, CUZ-LIM 06/16, CUZ-REC 06/18, CUZ-REC 06/19, LIM-REC 06/18, LIM-REC 06/19; success=true+count=0) -- mesma falha sistemica do ciclo anterior (27/09 00h26). Fallback Kiwi (7 trechos LATAM) + lastminute (2 trechos REC-LIM/REC-CUZ, conversao EUR/BRL=5.9025, mesma cotacao) cobriu todos os 9 trechos -- ver state/precos_historico.json. Precos IDENTICOS ao ciclo anterior: LIM-CUZ x2d R$9114.50 (lideranca mantida); LIM-CUZ x3d R$9151.50; CUZ-LIM x3d R$9241.53; CUZ-LIM x2d R$9243.53 -- nenhuma tarifa mudou nas ultimas 6h. Maior variacao individual vs. media movel: +0.92% (LIM-CUZ x3d), sem gatilho (regra so cobre queda >=15%).",
     "nota": "fli segue com padrao de instabilidade intermitente (funciona em alguns ciclos, falha totalmente em outros). Continuar tentando fli primeiro a cada ciclo conforme instrucao operacional, caindo para Kiwi/lastminute quando falhar."
   },
   "roteiro": {
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-27T00:26:00Z",
-    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 27/09 00h26) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
+    "ultima_tentativa": "2026-09-27T06:18:00Z",
+    "resultado": "EGRESS_BLOCKED -- mesmo bloqueio de sempre, tentado novamente neste ciclo (monitor leve 27/09 06h18) conforme instrucao (pode ser liberado em ciclo futuro). Proxy de rede desta sessao bloqueia o dominio latampass.latam.com por completo, antes mesmo de chegar ao Akamai. Bloqueio distinto do que afeta o conector Latam_PASS (que roda em GCP e e barrado pelo Akamai)."
   },
   "fontes_monitoradas_promocoes": [
     {
