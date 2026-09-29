@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 8769.0,
+    "preco_total_brl": 8789.0,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-09-29T00:19:00Z",
-    "nota": "Ciclo monitor leve 2026-09-29T00:19:00Z: fli voltou a funcionar. Ranking: LIM-CUZ x3d R$8769 (-4.12% vs media); LIM-CUZ x2d R$8972 (-2.03% vs media); CUZ-LIM x3d R$8973 (-2.67% vs media); CUZ-LIM x2d R$8976 (-2.72% vs media). Nenhuma variacao cruza -15%. Nenhum alerta urgente."
+    "data_checagem": "2026-09-29T12:45:00Z",
+    "nota": "Ciclo dashboard completo 2026-09-29T12:45:00Z: LIM-CUZ x3d R$8789 (-3.92% vs media); CUZ-LIM x3d R$8994; CUZ-LIM x2d R$8996; LIM-CUZ x2d sem oferta de volta em 18/06 hoje (ultimo R$8972). Nenhuma variacao cruza -15%. Nenhum alerta urgente."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13359,6 +13359,131 @@
         "media_movel_30_checagens": 9145.53,
         "variacao_pct_vs_media": 0.77,
         "fonte": "Ciclo monitor leve 2026-09-29T12:20Z (2 pax, BRL, LA): fli REC-LIM 06/10 R$4064 (fli ok); Kiwi LIM-CUZ 06/13 R$770, CUZ-REC 06/19 R$4382 (2 escalas). LIM-CUZ x3d = R$9216, +0.77% vs media. Demais variantes nao rebuscadas (fli vazio p/ LIM-CUZ; sem REC-CUZ/LIM-REC neste ciclo) -> checagem parcial. Nenhum alerta."
+      },
+      {
+        "data_checagem": "2026-09-29T12:45:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8789,
+        "fonte": "Ciclo dashboard completo 2026-09-29 (fli, LA, 2 pax, BRL)",
+        "media_movel_30_checagens": 9148.02,
+        "variacao_pct_vs_media": -3.92,
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3377",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T13:15:00",
+              "chegada": "2027-06-10T16:35:00",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA8040",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T19:15:00",
+              "chegada": "2027-06-10T22:25:00",
+              "aeronave": "A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2217",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T18:05:00",
+              "chegada": "2027-06-13T19:25:00",
+              "aeronave": "A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2388",
+              "origem": "CUZ",
+              "destino": "SCL",
+              "partida": "2027-06-19T16:00:00",
+              "chegada": "2027-06-19T20:15:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA8055",
+              "origem": "SCL",
+              "destino": "GRU",
+              "partida": "2027-06-20T01:10:00",
+              "chegada": "2027-06-20T06:10:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA4555",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-20T08:00:00",
+              "chegada": "2027-06-20T11:05:00",
+              "aeronave": "A319"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "precos_trechos": {
+            "ida": 4064,
+            "domestico": 694,
+            "volta": 4031
+          }
+        },
+        "nota": "Sem alerta de conexao (menor: GRU 1h50; maior: SCL 4h55 com pernoite, abaixo do limite de 5h). Alternativa sem pernoite: CUZ-LIM-GRU-REC LA2167/LA8005/LA3378 +R$207 (R$4238 na volta)."
+      },
+      {
+        "data_checagem": "2026-09-29T12:45:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": null,
+        "fonte": "Ciclo dashboard completo 2026-09-29 (fli, LA, 2 pax, BRL)",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3377",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T13:15:00",
+              "chegada": "2027-06-10T16:35:00",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA8040",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T19:15:00",
+              "chegada": "2027-06-10T22:25:00",
+              "aeronave": "A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2217",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T18:05:00",
+              "chegada": "2027-06-12T19:25:00",
+              "aeronave": "A320"
+            }
+          ],
+          "precos_trechos": {
+            "ida": 4064,
+            "domestico": 694,
+            "volta": null
+          }
+        },
+        "nota": "CUZ-REC 2027-06-18 sem oferta LA hoje (fli vazio); variante x2d sem preco neste ciclo. Ultimo preco: R$8972 em 2026-09-29T00:19Z.",
+        "parcial": true
       }
     ],
     "CUZ-LIM": [
@@ -26841,8 +26966,172 @@
         "parcial": true,
         "preco_total_brl": null,
         "fonte": "Ciclo 12:20Z: variante nao rebuscada (ver LIM-CUZ)."
+      },
+      {
+        "data_checagem": "2026-09-29T12:45:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8994,
+        "fonte": "Ciclo dashboard completo 2026-09-29 (fli, LA, 2 pax, BRL)",
+        "media_movel_30_checagens": 9218.91,
+        "variacao_pct_vs_media": -2.44,
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50:00",
+              "chegada": "2027-06-10T18:10:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40:00",
+              "chegada": "2027-06-11T00:45:00",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10:00",
+              "chegada": "2027-06-11T06:35:00",
+              "aeronave": "A319"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45:00",
+              "chegada": "2027-06-16T21:15:00",
+              "aeronave": "A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40:00",
+              "chegada": "2027-06-19T07:20:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-19T10:20:00",
+              "chegada": "2027-06-19T12:50:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA4779",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-19T14:30:00",
+              "chegada": "2027-06-19T15:45:00",
+              "aeronave": "A319"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "precos_trechos": {
+            "ida": 4196,
+            "domestico": 623,
+            "volta": 4175
+          }
+        },
+        "nota": "Sem alerta de conexao (menor: FOR 1h40; maior: LIM 4h25)."
+      },
+      {
+        "data_checagem": "2026-09-29T12:45:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8996,
+        "fonte": "Ciclo dashboard completo 2026-09-29 (fli, LA, 2 pax, BRL)",
+        "media_movel_30_checagens": 9209.4,
+        "variacao_pct_vs_media": -2.32,
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50:00",
+              "chegada": "2027-06-10T18:10:00",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40:00",
+              "chegada": "2027-06-11T00:45:00",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10:00",
+              "chegada": "2027-06-11T06:35:00",
+              "aeronave": "A319"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45:00",
+              "chegada": "2027-06-16T21:15:00",
+              "aeronave": "A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA8099",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T13:05:00",
+              "chegada": "2027-06-18T20:05:00",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA4554",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-18T23:10:00",
+              "chegada": "2027-06-19T02:10:00",
+              "aeronave": "A319"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1,
+          "todas_operadas_por": "LATAM (LA)",
+          "precos_trechos": {
+            "ida": 4196,
+            "domestico": 623,
+            "volta": 4177
+          }
+        },
+        "nota": "Sem alerta de conexao (menor: GRU 3h05)."
       }
     ]
   },
-  "ultima_checagem": "2026-09-29T12:20:00Z"
+  "ultima_checagem": "2026-09-29T12:45:00Z"
 }
