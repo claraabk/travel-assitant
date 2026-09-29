@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 8789.0,
+    "preco_total_brl": 9214.0,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-09-29T12:45:00Z",
-    "nota": "Ciclo dashboard completo 2026-09-29T12:45:00Z: LIM-CUZ x3d R$8789 (-3.92% vs media); CUZ-LIM x3d R$8994; CUZ-LIM x2d R$8996; LIM-CUZ x2d sem oferta de volta em 18/06 hoje (ultimo R$8972). Nenhuma variacao cruza -15%. Nenhum alerta urgente."
+    "data_checagem": "2026-09-29T18:30:00Z",
+    "nota": "Monitor leve 2026-09-29T18:30:00Z: LIM-CUZ x3d R$9214 (parcial, ida carregada); CUZ-LIM x3d R$9426; CUZ-LIM x2d R$9429; LIM-CUZ x2d sem preco. Nenhuma queda >=15%. Sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13483,6 +13483,32 @@
           }
         },
         "nota": "CUZ-REC 2027-06-18 sem oferta LA hoje (fli vazio); variante x2d sem preco neste ciclo. Ultimo preco: R$8972 em 2026-09-29T00:19Z.",
+        "parcial": true
+      },
+      {
+        "data_checagem": "2026-09-29T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9214,
+        "fonte": "Monitor leve: fli vazio em todos os trechos; Kiwi (LA, 2 pax, BRL) para domestico e volta; ida intl reaproveitada do ultimo checkin (Kiwi/lastminute/Expedia sem preco BRL comparavel)",
+        "nota": "ida REC-LIM R$4064 (carregada) + LIM-CUZ 13/06 R$770 + CUZ-REC 19/06 R$4380 (Kiwi). Sem queda relevante.",
+        "parcial": true,
+        "media_movel_30_checagens": 9134.77,
+        "variacao_pct_vs_media": 0.87
+      },
+      {
+        "data_checagem": "2026-09-29T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": null,
+        "fonte": "Monitor leve: fli vazio em todos os trechos; Kiwi (LA, 2 pax, BRL) para domestico e volta; ida intl reaproveitada do ultimo checkin (Kiwi/lastminute/Expedia sem preco BRL comparavel)",
+        "nota": "CUZ-REC 18/06 sem oferta LA hoje; variante sem preco.",
         "parcial": true
       }
     ],
@@ -27130,8 +27156,36 @@
           }
         },
         "nota": "Sem alerta de conexao (menor: GRU 3h05)."
+      },
+      {
+        "data_checagem": "2026-09-29T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9426,
+        "fonte": "Monitor leve: fli vazio em todos os trechos; Kiwi (LA, 2 pax, BRL) para domestico e volta; ida intl reaproveitada do ultimo checkin (Kiwi/lastminute/Expedia sem preco BRL comparavel)",
+        "nota": "ida REC-CUZ R$4196 (carregada) + CUZ-LIM 16/06 R$694 + LIM-REC 19/06 R$4536 (Kiwi). Sem queda.",
+        "parcial": true,
+        "media_movel_30_checagens": 9200.01,
+        "variacao_pct_vs_media": 2.46
+      },
+      {
+        "data_checagem": "2026-09-29T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9429,
+        "fonte": "Monitor leve: fli vazio em todos os trechos; Kiwi (LA, 2 pax, BRL) para domestico e volta; ida intl reaproveitada do ultimo checkin (Kiwi/lastminute/Expedia sem preco BRL comparavel)",
+        "nota": "ida REC-CUZ R$4196 (carregada) + CUZ-LIM 16/06 R$694 + LIM-REC 18/06 R$4539 (Kiwi). Sem queda.",
+        "parcial": true,
+        "media_movel_30_checagens": 9204.52,
+        "variacao_pct_vs_media": 2.44
       }
     ]
   },
-  "ultima_checagem": "2026-09-29T12:45:00Z"
+  "ultima_checagem": "2026-09-29T18:30:00Z"
 }
