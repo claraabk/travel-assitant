@@ -11,9 +11,9 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-29T06:20:00Z",
-    "tentativas_consecutivas_falhas": 146,
-    "ultimo_erro": "Page.wait_for_selector: Timeout 20000ms aguardando input[name=radio-values] -- bloqueio Akamai, retestado 2026-09-29T06:20:00Z; state/latam_miles_price.json continua inexistente (sem preco inventado).",
+    "ultima_tentativa": "2026-09-29T12:20:00Z",
+    "tentativas_consecutivas_falhas": 147,
+    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-09-29T12:20:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (28/09 12h22) -- existe apenas um arquivo antigo em scripts/state/latam_miles_price.json (atualizado_em 2026-08-26, muito alem das 24h) que nao conta como fonte valida (caminho errado e desatualizado). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 60% geral/63% Itau, ja notificada, valido_ate=2026-09-30 ainda nao expirou). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- mesmo tier ja confirmado (60% geral/63% Itau), uma sintese cita novamente 'ate 65%'/R$26,60 milheiro para nao-Itau com prazo 'valido ate hoje (28)' -- mesma ambiguidade de data ja vista nos ciclos anteriores, mantido sem upgrade de confianca. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
   },

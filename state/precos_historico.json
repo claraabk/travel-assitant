@@ -13347,6 +13347,18 @@
         "dias_cusco": 6,
         "ida": "2027-06-10",
         "fonte": "Ciclo monitor leve 2026-09-29T06:20:00Z: fli.search_flights retornou vazio (count=0) nos 9 trechos one-way (airlines=LA, 2 pax, BRL) — fallback. Kiwi (select_airlines=LA, 2 adultos, BRL): LIM-CUZ 06/12 R$732, 06/13 R$770; CUZ-LIM 06/16 R$694; CUZ-REC 06/19 R$4382 (2 escalas); LIM-REC 06/18-19 R$4538. Kiwi vazio para REC-LIM e REC-CUZ 10/06; lastminute (EUR, 2 pax, 2 escalas, formato 'single' ambiguo): REC-LIM €684 e REC-CUZ €686. Sem taxa de cambio confiavel e fontes misturadas -> total NAO calculado; checagem parcial, fora da media movel. melhor_combinacao_geral mantida (leitura completa de 00:19Z)."
+      },
+      {
+        "data_checagem": "2026-09-29T12:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9216,
+        "media_movel_30_checagens": 9145.53,
+        "variacao_pct_vs_media": 0.77,
+        "fonte": "Ciclo monitor leve 2026-09-29T12:20Z (2 pax, BRL, LA): fli REC-LIM 06/10 R$4064 (fli ok); Kiwi LIM-CUZ 06/13 R$770, CUZ-REC 06/19 R$4382 (2 escalas). LIM-CUZ x3d = R$9216, +0.77% vs media. Demais variantes nao rebuscadas (fli vazio p/ LIM-CUZ; sem REC-CUZ/LIM-REC neste ciclo) -> checagem parcial. Nenhum alerta."
       }
     ],
     "CUZ-LIM": [
@@ -26821,8 +26833,16 @@
         "dias_cusco": 6,
         "ida": "2027-06-10",
         "fonte": "Ciclo monitor leve 2026-09-29T06:20:00Z: fli.search_flights retornou vazio (count=0) nos 9 trechos one-way (airlines=LA, 2 pax, BRL) — fallback. Kiwi (select_airlines=LA, 2 adultos, BRL): LIM-CUZ 06/12 R$732, 06/13 R$770; CUZ-LIM 06/16 R$694; CUZ-REC 06/19 R$4382 (2 escalas); LIM-REC 06/18-19 R$4538. Kiwi vazio para REC-LIM e REC-CUZ 10/06; lastminute (EUR, 2 pax, 2 escalas, formato 'single' ambiguo): REC-LIM €684 e REC-CUZ €686. Sem taxa de cambio confiavel e fontes misturadas -> total NAO calculado; checagem parcial, fora da media movel. melhor_combinacao_geral mantida (leitura completa de 00:19Z)."
+      },
+      {
+        "data_checagem": "2026-09-29T12:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "parcial": true,
+        "preco_total_brl": null,
+        "fonte": "Ciclo 12:20Z: variante nao rebuscada (ver LIM-CUZ)."
       }
     ]
   },
-  "ultima_checagem": "2026-09-29T06:20:00Z"
+  "ultima_checagem": "2026-09-29T12:20:00Z"
 }
