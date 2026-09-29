@@ -13337,6 +13337,16 @@
           "paradas_volta": 2,
           "todas_operadas_por": "LATAM (LA)"
         }
+      },
+      {
+        "data_checagem": "2026-09-29T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "preco_total_brl": null,
+        "parcial": true,
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 2026-09-29T06:20:00Z: fli.search_flights retornou vazio (count=0) nos 9 trechos one-way (airlines=LA, 2 pax, BRL) — fallback. Kiwi (select_airlines=LA, 2 adultos, BRL): LIM-CUZ 06/12 R$732, 06/13 R$770; CUZ-LIM 06/16 R$694; CUZ-REC 06/19 R$4382 (2 escalas); LIM-REC 06/18-19 R$4538. Kiwi vazio para REC-LIM e REC-CUZ 10/06; lastminute (EUR, 2 pax, 2 escalas, formato 'single' ambiguo): REC-LIM €684 e REC-CUZ €686. Sem taxa de cambio confiavel e fontes misturadas -> total NAO calculado; checagem parcial, fora da media movel. melhor_combinacao_geral mantida (leitura completa de 00:19Z)."
       }
     ],
     "CUZ-LIM": [
@@ -26801,8 +26811,18 @@
           "paradas_volta": 2,
           "todas_operadas_por": "LATAM (LA)"
         }
+      },
+      {
+        "data_checagem": "2026-09-29T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "preco_total_brl": null,
+        "parcial": true,
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "fonte": "Ciclo monitor leve 2026-09-29T06:20:00Z: fli.search_flights retornou vazio (count=0) nos 9 trechos one-way (airlines=LA, 2 pax, BRL) — fallback. Kiwi (select_airlines=LA, 2 adultos, BRL): LIM-CUZ 06/12 R$732, 06/13 R$770; CUZ-LIM 06/16 R$694; CUZ-REC 06/19 R$4382 (2 escalas); LIM-REC 06/18-19 R$4538. Kiwi vazio para REC-LIM e REC-CUZ 10/06; lastminute (EUR, 2 pax, 2 escalas, formato 'single' ambiguo): REC-LIM €684 e REC-CUZ €686. Sem taxa de cambio confiavel e fontes misturadas -> total NAO calculado; checagem parcial, fora da media movel. melhor_combinacao_geral mantida (leitura completa de 00:19Z)."
       }
     ]
   },
-  "ultima_checagem": "2026-09-29T00:19:00Z"
+  "ultima_checagem": "2026-09-29T06:20:00Z"
 }
