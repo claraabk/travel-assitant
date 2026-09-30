@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-09-30T18:00:00Z",
+  "ultima_checagem": "2026-09-30T12:23:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -116,7 +116,8 @@
       "acao_sugerida": "Desconto de 60% (tier geral, atualizado neste ciclo de 55% para 60%) se aplica a Clara e Pedro (nenhum dos dois tem cartao Itau, que teria 63%) -- CPM ~R$28,00/milheiro. Vale considerar comprar milhas para completar o saldo faltante da viagem -- ver calculo 'preco final estimado' no dashboard. Reconfirmar % exato logado no app antes de finalizar a compra. NAO comprar sem a Clara confirmar explicitamente com 'Vai'/'Compra'.",
       "ultima_reconfirmacao": "2026-09-30T18:00:00Z: WebSearch passageirodeprimeira.com (2 queries): Nubank 25% ate 04/10/2026 (Modo LATAM Pass), Esfera/Livelo ~25%; nenhum >=60%/<=48h. Compra direta: ate 65% (R$24,50 Itau / R$26,60 demais) valido ate sexta (2/10) — ja notificada, sem novo alerta. latampass ofertas EGRESS_BLOCKED; Latam-PASS tool falhou (Akamai).",
       "confianca_validade": " | 2026-09-25T06:20:00Z: WebSearch (passageirodeprimeira.com) reconfirma ~60/63% ativo; um artigo deste ciclo cita validade ate 29/09 (vs. 30/09/2026 ja registrado) -- divergencia leve entre fontes de blog, mantido valido_ate=2026-09-30 ate a pagina oficial confirmar. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T00:26:00Z: WebSearch (passageirodeprimeira.com) traz sinal misto -- tier ja confirmado (60%/63%, valido_ate=2026-09-30) segue aparecendo sem nenhuma fonte de encerramento antecipado, mas artigos tambem citam um tier mais alto (64% geral/66% Itau) sem data explicita cobrindo hoje. Mantido valido_ate=2026-09-30 e percentuais 60%/63% ate a pagina oficial ou uma fonte com data clara confirmar o tier mais alto. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T06:18:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; uma fonte cita 'sexta-feira (29)', mesma divergencia leve ja registrada. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados. | 2026-09-27T18:21:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; titulos historicos recorrentes seguem sem data nova. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados.",
-      "nota_ciclo_2026_09_30": "Reconfirmado por WebSearch passageirodeprimeira.com (65% Itau R$24,50 / R$26,60 demais); sem data nova de vigencia. valido_ate=30/09 (hoje) -- mover para expiradas no proximo ciclo. Ja notificada, sem novo alerta."
+      "nota_ciclo_2026_09_30": "Reconfirmado por WebSearch passageirodeprimeira.com (65% Itau R$24,50 / R$26,60 demais); sem data nova de vigencia. valido_ate=30/09 (hoje) -- mover para expiradas no proximo ciclo. Ja notificada, sem novo alerta.",
+      "nota_ciclo_2026_09_30_12h": "WebSearch cita 'ate 65% ate sexta (2)' (Itau R$24,50 / demais R$26,60), possivel prorrogacao ate 02/10 -- nao confirmada; mantido valido_ate=30/09 (hoje). Mover para expiradas no proximo ciclo se sem confirmacao."
     }
   ],
   "expiradas": [
