@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 9214.0,
+    "preco_total_brl": 8791.0,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-09-29T18:30:00Z",
-    "nota": "Monitor leve 2026-09-29T18:30:00Z: LIM-CUZ x3d R$9214 (parcial, ida carregada); CUZ-LIM x3d R$9426; CUZ-LIM x2d R$9429; LIM-CUZ x2d sem preco. Nenhuma queda >=15%. Sem alerta."
+    "data_checagem": "2026-09-30T00:00:00Z",
+    "nota": "Monitor leve 2026-09-30: LIM-CUZ x3d R$8791; CUZ-LIM x3d R$8997; x2d das duas sem preco (trecho 18/06 sem oferta LA). Nenhuma queda >=15% vs media movel. Sem alerta de preco."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13508,6 +13508,31 @@
         "ida": "2027-06-10",
         "preco_total_brl": null,
         "fonte": "Monitor leve: fli vazio em todos os trechos; Kiwi (LA, 2 pax, BRL) para domestico e volta; ida intl reaproveitada do ultimo checkin (Kiwi/lastminute/Expedia sem preco BRL comparavel)",
+        "nota": "CUZ-REC 18/06 sem oferta LA hoje; variante sem preco.",
+        "parcial": true
+      },
+      {
+        "data_checagem": "2026-09-30T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8791,
+        "fonte": "Monitor leve: fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "nota": "REC-LIM 10/06 R$4064 + LIM-CUZ 13/06 R$694 + CUZ-REC 19/06 R$4033.",
+        "media_movel_30_checagens": 9137.02,
+        "variacao_pct_vs_media": -3.79
+      },
+      {
+        "data_checagem": "2026-09-30T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": null,
+        "fonte": "Monitor leve: fli (airlines=LA, 2 pax, BRL) one-way por trecho",
         "nota": "CUZ-REC 18/06 sem oferta LA hoje; variante sem preco.",
         "parcial": true
       }
@@ -27184,8 +27209,33 @@
         "parcial": true,
         "media_movel_30_checagens": 9204.52,
         "variacao_pct_vs_media": 2.44
+      },
+      {
+        "data_checagem": "2026-09-30T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8997,
+        "fonte": "Monitor leve: fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "nota": "REC-CUZ 10/06 R$4196 + CUZ-LIM 16/06 R$624 + LIM-REC 19/06 R$4177.",
+        "media_movel_30_checagens": 9209.2,
+        "variacao_pct_vs_media": -2.3
+      },
+      {
+        "data_checagem": "2026-09-30T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": null,
+        "fonte": "Monitor leve: fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "nota": "LIM-REC 18/06 sem oferta LA hoje; variante sem preco.",
+        "parcial": true
       }
     ]
   },
-  "ultima_checagem": "2026-09-29T18:30:00Z"
+  "ultima_checagem": "2026-09-30T00:00:00Z"
 }

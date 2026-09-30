@@ -11,11 +11,11 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-09-29T18:30:00Z",
-    "tentativas_consecutivas_falhas": 149,
-    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-09-29T18:30:00Z",
+    "ultima_tentativa": "2026-09-30T00:00:00Z",
+    "tentativas_consecutivas_falhas": 150,
+    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-09-30T00:00:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json continua nao existindo neste repositorio neste ciclo (28/09 12h22) -- existe apenas um arquivo antigo em scripts/state/latam_miles_price.json (atualizado_em 2026-08-26, muito alem das 24h) que nao conta como fonte valida (caminho errado e desatualizado). Latam_PASS.list_latam_miles_purchase_prices tentado de novo neste ciclo, mesmo bloqueio Akamai (timeout aguardando input[name=radio-values]); status mantido. Seguindo sem inventar preco, conforme instrucao. Melhor CPM disponivel para o dashboard segue vindo da promocao ativa de desconto compra direta de milhas (id latam-pass-desconto-compra-milhas-set2026, 60% geral/63% Itau, ja notificada, valido_ate=2026-09-30 ainda nao expirou). Busca web de compra direta reconfirmada neste ciclo (WebSearch passageirodeprimeira.com) -- mesmo tier ja confirmado (60% geral/63% Itau), uma sintese cita novamente 'ate 65%'/R$26,60 milheiro para nao-Itau com prazo 'valido ate hoje (28)' -- mesma ambiguidade de data ja vista nos ciclos anteriores, mantido sem upgrade de confianca. Nao muda a elegibilidade ja registrada (Clara/Pedro nao sao Itau)."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
     "ultima_tentativa": "2026-09-29T18:30:00Z",
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-09-29T18:30:00Z",
-    "resultado": "EGRESS_BLOCKED novamente (monitor leve 2026-09-29T18:30:00Z)."
+    "ultima_tentativa": "2026-09-30T00:00:00Z",
+    "resultado": "EGRESS_BLOCKED novamente (monitor leve 2026-09-30T00:00:00Z)."
   },
   "fontes_monitoradas_promocoes": [
     {
