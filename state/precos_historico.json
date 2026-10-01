@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 9000.0,
+    "preco_total_brl": 8973.0,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-01T09:00:00Z",
-    "nota": "Monitor leve 2026-10-01: empate em R$9000 entre LIM-CUZ x2d, LIM-CUZ x3d e CUZ-LIM x3d (CUZ-LIM x2d R$9003). Lider mantido LIM-CUZ x3d; +R$219 vs ciclo anterior (R$8781) por sumico da opcao CUZ-REC via SCL. Nenhuma queda >=15% vs media movel. Sem alerta de preco."
+    "data_checagem": "2026-10-01T21:00:00Z",
+    "nota": "Monitor leve 2026-10-01 21h: empate em R$8973 entre LIM-CUZ x2d, LIM-CUZ x3d e CUZ-LIM x3d (CUZ-LIM x2d sem cotacao: LIM-REC 18/06 retornou 0). Lider mantido LIM-CUZ x3d; -R$27 vs checagem anterior (R$9000). Nenhuma queda >=15% vs media movel. Sem alerta de preco."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13612,6 +13612,19 @@
         "nota": "x3d: REC-LIM 10/06 R$4070 + LIM-CUZ 13/06 R$694 + CUZ-REC 19/06 R$4236 (LIM 3h05 overnight/BSB 7h15 = alerta conexao longa; alternativa sem alerta R$4238 via LIM/GRU => R$9002). x2d: 4070+694 (12/06)+4236 (18/06)=R$9000. Opcao SCL de R$4019 do ciclo anterior nao apareceu mais (+R$219 no trecho de volta).",
         "media_movel_30_checagens": 9094.82,
         "variacao_pct_vs_media": -1.04
+      },
+      {
+        "data_checagem": "2026-10-01T21:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8973,
+        "fonte": "Monitor leve: fli (airlines=LATAM 'LA', 2 pax, BRL) one-way por trecho",
+        "nota": "Monitor leve: fli (LA, 2 pax, BRL) one-way. x3d: REC-LIM 10/06 R$4041 (GRU 75min = conexao curta) + LIM-CUZ 13/06 R$694 + CUZ-REC 19/06 R$4238 (BSB 7h15 = conexao longa; alternativa sem alerta R$4240 via LIM/GRU, +R$2). x2d: 4041+694 (12/06)+4238 (18/06)=R$8973. Alternativa REC-LIM sem alerta (R$4070 do ciclo anterior) nao reapareceu; so ha opcao via CGH overnight no mesmo preco.",
+        "media_movel_30_checagens": 9075.57,
+        "variacao_pct_vs_media": -1.13
       }
     ],
     "CUZ-LIM": [
@@ -27389,8 +27402,21 @@
         "nota": "x3d: REC-CUZ 10/06 R$4201 (GRU 1h15 = alerta conexao curta, LIM 4h25) + CUZ-LIM 16/06 R$624 + LIM-REC 19/06 R$4175 (BSB 7h15 = alerta; alternativa R$4178 via GRU 4h35). x2d: 4201+624+LIM-REC 18/06 R$4178=R$9003.",
         "media_movel_30_checagens": 9168.85,
         "variacao_pct_vs_media": -1.84
+      },
+      {
+        "data_checagem": "2026-10-01T21:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8973,
+        "fonte": "Monitor leve: fli (airlines=LATAM 'LA', 2 pax, BRL) one-way por trecho",
+        "nota": "Monitor leve: fli (LA, 2 pax, BRL) one-way. x3d: REC-CUZ 10/06 R$4171 (GRU 75min = conexao curta, LIM 4h25) + CUZ-LIM 16/06 R$624 + LIM-REC 19/06 R$4178 (BSB 7h15 = conexao longa; alternativa sem alerta R$4180 via GRU 2h50 => R$8975). x2d: LIM-REC 18/06 sem resultados neste ciclo (fli retornou 0) - variante nao cotada.",
+        "media_movel_30_checagens": 9159.18,
+        "variacao_pct_vs_media": -2.03
       }
     ]
   },
-  "ultima_checagem": "2026-10-01T09:00:00Z"
+  "ultima_checagem": "2026-10-01T21:00:00Z"
 }
