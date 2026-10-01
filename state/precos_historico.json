@@ -35,7 +35,7 @@
     "dias_cusco": 6,
     "dias_lima": 3,
     "data_checagem": "2026-10-01T21:00:00Z",
-    "nota": "Monitor leve 2026-10-01 21h: empate em R$8973 entre LIM-CUZ x2d, LIM-CUZ x3d e CUZ-LIM x3d (CUZ-LIM x2d sem cotacao: LIM-REC 18/06 retornou 0). Lider mantido LIM-CUZ x3d; -R$27 vs checagem anterior (R$9000). Nenhuma queda >=15% vs media movel. Sem alerta de preco."
+    "nota": "Monitor leve 2026-10-01 21h: empate em R$8973 entre LIM-CUZ x2d, LIM-CUZ x3d e CUZ-LIM x3d (CUZ-LIM x2d sem cotacao: LIM-REC 18/06 retornou 0). Lider mantido LIM-CUZ x3d; -R$27 vs checagem anterior (R$9000). Nenhuma queda >=15% vs media movel. Sem alerta de preco. | Dashboard diario 2026-10-01T12:30:00Z: fli retornou 0 em todos os trechos; mantida ultima cotacao valida, nenhum checkin novo anexado."
   },
   "checagens": {
     "LIM-LIM": [
