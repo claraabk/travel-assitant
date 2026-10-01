@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-01T09:00:00Z",
-    "tentativas_consecutivas_falhas": 155,
-    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-10-01T09:00:00Z",
+    "ultima_tentativa": "2026-10-01T15:00:00Z",
+    "tentativas_consecutivas_falhas": 156,
+    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-10-01T15:00:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-01T09:00:00Z",
-    "resultado": "fli.search_flights OK (LA, 2 pax, BRL) nos 9 trechos; cotacao completa das 4 variantes.",
+    "ultima_tentativa": "2026-10-01T15:00:00Z",
+    "resultado": "fli.search_flights (LA, 2 pax, BRL) retornou 0 voos nos 9 trechos (e REC-LIM repetido sem show_all_results=false); Kiwi REC-LIM tambem 0. Nenhum preco anexado em precos_historico.json neste ciclo.",
     "nota": "fli intermitente; continuar tentando primeiro a cada ciclo."
   },
   "roteiro": {
