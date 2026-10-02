@@ -27418,18 +27418,11 @@
       }
     ]
   },
-  "ultima_checagem": "2026-10-02T06:00:00Z",
+  "ultima_checagem": "2026-10-02T18:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-02T06:00:00Z",
+    "data": "2026-10-02T18:00:00Z",
     "passageiros": 2,
-    "resultado": "SEM checkin de combinacao anexado: fli retornou 0 resultados em todos os 9 trechos one-way (REC-LIM/CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC, jun/2027, airlines=LA). Kiwi (fallback, select_airlines=LA) so cotou trechos parciais; REC-LIM e REC-CUZ 10/06 retornaram 0 (1 erro de proxy), logo nenhum total de variante pode ser calculado.",
-    "kiwi_parcial_brl_2pax": {
-      "LIM-CUZ 12/06": 730,
-      "LIM-CUZ 13/06": 770,
-      "CUZ-LIM 16/06": 694,
-      "LIM-REC 18-19/06": 4536,
-      "CUZ-REC 18-19/06 (via LIM)": 5495
-    },
-    "nota": "Kiwi vem sistematicamente acima do fli (LIM-REC 4536 vs ~4178; CUZ-LIM/LIM-CUZ ~+5%), fontes nao comparaveis -- nao usado para media movel. Sem queda >=15%; sem alerta de preco. melhor_combinacao_geral mantida (R$8973, 01/10 21h)."
+    "resultado": "fli (LA, 2 pax, BRL) 0 resultados em REC-LIM 10/06, REC-CUZ 10/06, LIM-CUZ 13/06, CUZ-REC 19/06. Kiwi fallback (select LA, 2 adt): REC-LIM e REC-CUZ 0; LIM-CUZ 13/06 R$771 (2 pax); CUZ-REC 19/06 R$5505 (conexoes longas via BSB/GRU). Sem cotacao completa de nenhuma variante, entao nenhum checkin anexado (valores Kiwi nao sao comparaveis com fli).",
+    "checkin_anexado": false
   }
 }
