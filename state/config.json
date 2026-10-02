@@ -11,9 +11,9 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-01T22:00:00Z",
-    "tentativas_consecutivas_falhas": 159,
-    "ultimo_erro": "Page.wait_for_selector timeout (Akamai), retestado 2026-10-01T22:00:00Z",
+    "ultima_tentativa": "2026-10-02T06:00:00Z",
+    "tentativas_consecutivas_falhas": 160,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-02T06:00:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-01T22:00:00Z",
+    "ultima_tentativa": "2026-10-02T06:00:00Z",
     "resultado": "EGRESS_BLOCKED (retestado neste ciclo)"
   },
   "fontes_monitoradas_promocoes": [
