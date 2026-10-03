@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-03T21:00:00Z",
+  "ultima_checagem": "2026-10-04T03:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -235,5 +235,6 @@
   },
   "nota_ciclo_03_10_12h": "WebSearch passageirodeprimeira.com: transferencia 25-35% recorrente (nada >=60%/<=48h); compra direta ate 65% (62% p/ inscritos LATAM Pass) valida ate 02/10/2026 - expirada, sem desconto ativo. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
   "nota_ciclo_03_10_18h": "WebSearch passageirodeprimeira.com: compra direta sem desconto ativo (65% encerrou 02/10); Nubank 25% ate 04/10 (<60%); Livelo/Esfera sem edicao nova. Sem alerta.",
-  "nota_ciclo_03_10_21h": "Monitor leve 21h: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25% - todos <60%, sem alerta. Compra direta: resultados sem data confirmando promocao vigente; a ultima conhecida (ate 02/10) ja esta em expiradas - nenhuma ativa confirmada, sem alerta."
+  "nota_ciclo_03_10_21h": "Monitor leve 21h: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25% - todos <60%, sem alerta. Compra direta: resultados sem data confirmando promocao vigente; a ultima conhecida (ate 02/10) ja esta em expiradas - nenhuma ativa confirmada, sem alerta.",
+  "nota_ciclo_04_10_03h": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: compra direta so edicao 65%/62% valida ate 02/10 (expirada, ja notificada), nenhuma ativa confirmada; transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25%, Inter sem bonus - todos <60%. Sem alerta."
 }

@@ -27420,7 +27420,20 @@
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-03T21:00:00Z",
-    "nota": "Monitor leve: fli 0 resultados nos 9 trechos (REC-LIM/REC-CUZ 10/06, LIM-CUZ 12 e 13/06, CUZ-LIM 16/06, CUZ-REC e LIM-REC 18 e 19/06). Fallback Kiwi (LA, 2 pax, BRL): REC-LIM e REC-CUZ 10/06 = 0 resultados (ida nao cotavel, totais das variantes impossiveis). Parciais Kiwi: LIM-CUZ 12/06 R$727, 13/06 R$768; CUZ-LIM 16/06 R$693; CUZ-REC 18/06 R$5485 (1a opcao, via LIM/GRU, 2 pax); LIM-REC 18/06 R$4527-4542. Precos Kiwi nao comparaveis com checagens fli (CUZ-REC fli R$4238 vs Kiwi R$5485) - nenhum checkin anexado, melhor_combinacao_geral mantida (R$8973, 01/10). Sem queda >=15%, sem alerta de preco."
-  }
+    "data": "2026-10-04T03:00:00Z",
+    "fonte": "Kiwi (2 pax, BRL, LA) - fli 0 em todos os trechos",
+    "pernas_brl_2pax": {
+      "LIM-CUZ 2027-06-12": 729,
+      "LIM-CUZ 2027-06-13": 768,
+      "CUZ-LIM 2027-06-16": 693,
+      "CUZ-REC 2027-06-18": 5483,
+      "CUZ-REC 2027-06-19": 5482,
+      "LIM-REC 2027-06-18": 4530,
+      "LIM-REC 2027-06-19": 4527,
+      "REC-LIM 2027-06-10": null,
+      "REC-CUZ 2027-06-10": null
+    },
+    "nota": "Sem REC->entrada nao ha total das 4 variantes; nenhum checkin anexado e melhor_combinacao_geral mantida. Kiwi usa roteamentos de volta mais caros (3 escalas) que fli, nao comparavel."
+  },
+  "ultima_tentativa_parcial_data": "2026-10-04T03:00:00Z"
 }
