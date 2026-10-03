@@ -27420,9 +27420,7 @@
   },
   "ultima_checagem": "2026-10-03T06:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-03T06:00:00Z",
-    "passageiros": 2,
-    "resultado": "fli (LA, 2 pax, BRL) 0 resultados nos 4 trechos. lastminute (LA, 2 adt, EUR, 2 escalas nos internacionais): REC-LIM 10/06 EUR690.88, LIM-CUZ 13/06 EUR119.10, CUZ-REC 19/06 EUR724.68. Sem cotacao completa comparavel com fli BRL, nenhum checkin anexado.",
-    "checkin_anexado": false
+    "data": "2026-10-03T12:00:00Z",
+    "nota": "fli 0 resultados; Kiwi 0; lastminute REC-CUZ EUR692.58 nao comparavel. Sem checkin novo, sem alerta de preco."
   }
 }
