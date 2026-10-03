@@ -27418,11 +27418,11 @@
       }
     ]
   },
-  "ultima_checagem": "2026-10-02T18:00:00Z",
+  "ultima_checagem": "2026-10-03T06:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-02T18:00:00Z",
+    "data": "2026-10-03T06:00:00Z",
     "passageiros": 2,
-    "resultado": "fli (LA, 2 pax, BRL) 0 resultados em REC-LIM 10/06, REC-CUZ 10/06, LIM-CUZ 13/06, CUZ-REC 19/06. Kiwi fallback (select LA, 2 adt): REC-LIM e REC-CUZ 0; LIM-CUZ 13/06 R$771 (2 pax); CUZ-REC 19/06 R$5505 (conexoes longas via BSB/GRU). Sem cotacao completa de nenhuma variante, entao nenhum checkin anexado (valores Kiwi nao sao comparaveis com fli).",
+    "resultado": "fli (LA, 2 pax, BRL) 0 resultados nos 4 trechos. lastminute (LA, 2 adt, EUR, 2 escalas nos internacionais): REC-LIM 10/06 EUR690.88, LIM-CUZ 13/06 EUR119.10, CUZ-REC 19/06 EUR724.68. Sem cotacao completa comparavel com fli BRL, nenhum checkin anexado.",
     "checkin_anexado": false
   }
 }
