@@ -27420,20 +27420,17 @@
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-04T09:00:00Z",
+    "data": "2026-10-04T15:00:00Z",
     "fonte": "fli 0 em todos os 6 trechos (LA, 2 pax, BRL); Kiwi (2 pax, BRL, LA) como fallback",
     "pernas_brl_2pax": {
-      "LIM-CUZ 2027-06-12": 729,
       "LIM-CUZ 2027-06-13": 768,
       "CUZ-LIM 2027-06-16": 693,
-      "CUZ-REC 2027-06-18": 5485,
-      "CUZ-REC 2027-06-19": 5485,
-      "LIM-REC 2027-06-18": 4527,
+      "CUZ-REC 2027-06-19": 5482,
       "LIM-REC 2027-06-19": 4527,
       "REC-LIM 2027-06-10": null,
       "REC-CUZ 2027-06-10": null
     },
     "nota": "REC->entrada sem resultado em fli e Kiwi; sem total das variantes, nenhum checkin anexado, media movel e melhor_combinacao_geral mantidas. Kiwi usa roteamentos de volta mais caros que fli, nao comparavel. Sem alerta de preco."
   },
-  "ultima_tentativa_parcial_data": "2026-10-04T09:00:00Z"
+  "ultima_tentativa_parcial_data": "2026-10-04T15:00:00Z"
 }
