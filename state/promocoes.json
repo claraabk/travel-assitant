@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-04T15:00:00Z",
+  "ultima_checagem": "2026-10-04T12:06:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -238,5 +238,6 @@
   "nota_ciclo_03_10_21h": "Monitor leve 21h: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25% - todos <60%, sem alerta. Compra direta: resultados sem data confirmando promocao vigente; a ultima conhecida (ate 02/10) ja esta em expiradas - nenhuma ativa confirmada, sem alerta.",
   "nota_ciclo_04_10_03h": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: compra direta so edicao 65%/62% valida ate 02/10 (expirada, ja notificada), nenhuma ativa confirmada; transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25%, Inter sem bonus - todos <60%. Sem alerta.",
   "nota_ciclo_04_10_09h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, Nubank 25% ate 04/10 23h59; nada >=60%. Compra direta: desconto 65% Itau / 62% geral (CPM R$24,50/26,60) valido ate sexta 02/10 = EXPIRADO, nenhum desconto ativo hoje. Pagina oficial EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_04_10_15h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta 65%/62% valida ate sexta 02/10 = expirada, nenhum desconto ativo; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%. Sem alerta."
+  "nota_ciclo_04_10_15h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta 65%/62% valida ate sexta 02/10 = expirada, nenhum desconto ativo; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%. Sem alerta.",
+  "nota_ciclo_04_10_12h_dashboard": "Dashboard diario: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta 65%/62% encerrou 02/10, nenhum desconto ativo. Nubank Ultravioleta 25% (15%+10% Modo) ate 23h59 de 04/10, abaixo de 60%. Livelo/Esfera 25-35% recorrentes. Sem alerta; ativas sem valido_ate vencido."
 }
