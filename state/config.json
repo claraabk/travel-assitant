@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-04T12:25:00Z",
-    "tentativas_consecutivas_falhas": 173,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-04T12:25:00Z",
+    "ultima_tentativa": "2026-10-04T18:19:00Z",
+    "tentativas_consecutivas_falhas": 174,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-04T18:19:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-04T12:25:00Z",
-    "resultado": "Monitor leve: fli 0 resultados nos 6 trechos (REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC); Kiwi (LA) 0 em REC-LIM e REC-CUZ.",
+    "ultima_tentativa": "2026-10-04T18:19:00Z",
+    "resultado": "Monitor leve: fli search_dates 0 resultados (REC-LIM, REC-CUZ, LA, 2 pax, jun/2027). Sem checkin novo.",
     "nota": "Mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ x3d). Nenhum checkin anexado."
   },
   "roteiro": {
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-04T12:06:00Z",
+    "ultima_tentativa": "2026-10-04T18:19:00Z",
     "resultado": "EGRESS_BLOCKED"
   },
   "fontes_monitoradas_promocoes": [
