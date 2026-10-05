@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-05T18:00:00Z",
+  "ultima_checagem": "2026-10-05T12:21:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -243,5 +243,6 @@
   "nota_ciclo_04_10_12h25_monitor": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): compra direta 65%/62% valida ate 02/10 = expirada, nenhuma ativa; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter/Loop sem bonus LATAM Pass. Sem alerta.",
   "ultima_verificacao_monitor_leve": "2026-10-05T18:00:00Z",
   "nota_ultima_verificacao": "WebSearch passageirodeprimeira (2 queries): transferencia so titulos 25-35% (Livelo/Esfera/Nubank), nenhum >=60%; Inter sem bonus encontrado. Compra direta: so titulos recorrentes (60-66%) sem data de vigencia confirmada, ultima vigencia conhecida expirou 02/10 — nao marcada ativa. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_05_10_18h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos 60-66% sem vigencia confirmada, ultima conhecida expirou 02/10 (ja notificada) - nao marcada ativa. Sem alerta."
+  "nota_ciclo_05_10_18h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos 60-66% sem vigencia confirmada, ultima conhecida expirou 02/10 (ja notificada) - nao marcada ativa. Sem alerta.",
+  "obs_ciclo_2026_10_05_12h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta: resultados sao da campanha ate 65% que encerrou sexta 02/10 (nao confirmada ativa hoje). Sem alerta."
 }
