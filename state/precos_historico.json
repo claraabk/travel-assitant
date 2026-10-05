@@ -27420,9 +27420,9 @@
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-05T12:00:00Z",
-    "fonte": "fli 0 em 6 trechos (LA, 2 pax, BRL); Kiwi (LA, 2 pax) 0 em REC-LIM e REC-CUZ 10/06/2027; Kiwi ok: LIM-CUZ 13/06 R$768, CUZ-LIM 16/06 R$693, CUZ-REC 19/06 R$4592, LIM-REC 19/06 R$4527",
-    "nota": "Sem os trechos de ida internacional nao ha total de variante; nenhum checkin anexado; media movel e melhor_combinacao_geral mantidas (R$8973). Trechos disponiveis ~8-10% acima da ultima cotacao fli (fonte diferente) — sem queda, sem alerta de preco."
+    "data": "2026-10-05T18:00:00Z",
+    "fonte": "fli 0 em 4 trechos (REC-LIM, REC-CUZ 10/06; CUZ-REC, LIM-REC 19/06; LA, 2 pax, BRL); Kiwi (LA, 2 pax) 0 em REC-LIM e REC-CUZ",
+    "nota": "Sem trechos de ida internacional nao ha total de variante; nenhum checkin anexado; media movel e melhor_combinacao_geral mantidas (R$8973). Sem alerta de preco."
   },
-  "ultima_tentativa_parcial_data": "2026-10-05T12:00:00Z"
+  "ultima_tentativa_parcial_data": "2026-10-05T18:00:00Z"
 }
