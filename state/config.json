@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-04T18:19:00Z",
-    "tentativas_consecutivas_falhas": 174,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-04T18:19:00Z",
+    "ultima_tentativa": "2026-10-05T12:00:00Z",
+    "tentativas_consecutivas_falhas": 175,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-05T12:00:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-04T18:19:00Z",
-    "resultado": "Monitor leve: fli search_dates 0 resultados (REC-LIM, REC-CUZ, LA, 2 pax, jun/2027). Sem checkin novo.",
+    "ultima_tentativa": "2026-10-05T12:00:00Z",
+    "resultado": "Monitor leve: fli search_flights 0 resultados nos 6 trechos; Kiwi so retornou trechos LIM-CUZ/CUZ-LIM/volta (REC-LIM e REC-CUZ 0). Sem checkin novo.",
     "nota": "Mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ x3d). Nenhum checkin anexado."
   },
   "roteiro": {
