@@ -27420,22 +27420,20 @@
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
   "ultima_tentativa_parcial": {
-    "data": "2026-10-05T18:19:33Z",
     "passageiros": 2,
-    "fonte": "fli (0 resultados em todos os trechos) -> fallback Kiwi select_airlines=LA, 2 adultos, BRL; REC-LIM e REC-CUZ 10/06 retornaram 0 tambem no Kiwi",
-    "trechos_brl": {
-      "LIM-CUZ 13/06": 735,
-      "CUZ-LIM 16/06": 663,
-      "LIM-REC 19/06": 4332,
-      "CUZ-REC 19/06": 4394
+    "moeda": "BRL",
+    "fonte": "Monitor leve 2026-10-06: fli 0 resultados nos 9 trechos; Kiwi (select_airlines=LA, 2 pax) cobriu 4",
+    "trechos_kiwi_brl": {
+      "LIM-CUZ 2027-06-13": 735,
+      "CUZ-LIM 2027-06-16": 663,
+      "CUZ-REC 2027-06-19": 4394,
+      "LIM-REC 2027-06-19": 4331
     },
-    "variacao_vs_ultimo_checkin": {
-      "LIM-CUZ": "+5.9% (694)",
-      "CUZ-LIM": "+6.2% (624)",
-      "LIM-REC": "+3.7% (4178)",
-      "CUZ-REC": "+3.7% (4238)"
-    },
-    "nota": "Sem ida internacional cotada, combinacao completa nao calculada; checagens e melhor_combinacao_geral mantidos (R$8973 LIM-CUZ x3d). Nenhuma queda; trechos disponiveis subiram 4-6%. Sem alerta."
+    "trechos_sem_resultado": [
+      "REC-LIM 2027-06-10",
+      "REC-CUZ 2027-06-10"
+    ],
+    "nota": "Sem total de variante calculavel (ida REC->Peru sem cotacao em fli e Kiwi). Kiwi ~+R$40 a +R$60 por trecho vs. fli de 01/10 (LIM-CUZ 694, CUZ-LIM 624, CUZ-REC 4238, LIM-REC 4178) — diferenca de fonte, nao alta real. Nenhum checkin anexado; melhor_combinacao_geral mantida (R$8973). Sem queda >=15%."
   },
-  "ultima_tentativa_parcial_data": "2026-10-05T18:19:33Z"
+  "ultima_tentativa_parcial_data": "2026-10-06T00:00:00Z"
 }
