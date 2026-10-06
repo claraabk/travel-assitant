@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-06T06:20:00Z",
+  "ultima_checagem": "2026-10-06T12:20:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -248,5 +248,6 @@
   "obs_ciclo_2026_10_05_dashboard": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes (Nubank 25% Modo LATAM Pass expirou 04/10), nada >=60%/<=48h; compra direta so titulos antigos (ate 65%, encerrou 02/10), nao ativa. Sem alerta.",
   "nota_ciclo_05_10_monitor_18h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira (transferencia, compra direta, Inter): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h; Inter fora das campanhas; compra direta so titulos 60-66% sem vigencia confirmada (ultima conhecida expirou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
   "nota_ciclo_06_10_monitor": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter sem bonus; compra direta so titulos antigos (ate 65-66%, encerrou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
-  "nota_ciclo_06_10_monitor_06h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos antigos (65%/66%, R\\$24,50 Itau vs R\\$26,60 demais), sem data cobrindo hoje - nao marcada ativa. Sem alerta."
+  "nota_ciclo_06_10_monitor_06h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos antigos (65%/66%, R\\$24,50 Itau vs R\\$26,60 demais), sem data cobrindo hoje - nao marcada ativa. Sem alerta.",
+  "nota_ciclo_06_10_monitor_12h": "2026-10-06T12:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus novo; transferencia so historico (Esfera 30%, Livelo 35%/20%, Nubank 25% ate 06/09/2026 - expirado); compra direta so a edicao 'ate 65% ate sexta (2)' = 02/10, expirada. Nenhum bonus >=60% e nenhum desconto ativo; sem alerta. Pagina oficial LATAM Pass: EGRESS_BLOCKED."
 }

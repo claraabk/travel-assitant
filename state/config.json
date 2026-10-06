@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-06T06:20:00Z",
-    "tentativas_consecutivas_falhas": 181,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-06T06:20:00Z",
+    "ultima_tentativa": "2026-10-06T12:20:00Z",
+    "tentativas_consecutivas_falhas": 182,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-06T12:20:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-06T06:20:00Z",
-    "resultado": "Monitor leve 06/10 06h: fli 0 em todos os trechos; Kiwi cobriu 4 trechos, REC-LIM/REC-CUZ 10/06 sem resultado.",
-    "nota": "Mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ x3d). Sem queda."
+    "ultima_tentativa": "2026-10-06T12:20:00Z",
+    "resultado": "Monitor leve 06/10 12h: fli 0 resultados em todos os 6 trechos; Kiwi (LA, 2 pax) cobriu LIM-CUZ 13/06 (R$737), CUZ-LIM 16/06 (so via AQP, R$1522), CUZ-REC 19/06 (R$4406) e LIM-REC 19/06 (R$4343); REC-LIM e REC-CUZ 10/06 sem resultado.",
+    "nota": "Sem trecho de ida REC->entrada nao ha total comparavel; mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ x3d). Trechos cotados subiram vs 01/10 (nao ha queda)."
   },
   "roteiro": {
     "fixo": false,
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-06T06:20:00Z",
+    "ultima_tentativa": "2026-10-06T12:20:00Z",
     "resultado": "EGRESS_BLOCKED"
   },
   "fontes_monitoradas_promocoes": [

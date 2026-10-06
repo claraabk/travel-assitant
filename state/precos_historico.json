@@ -27419,21 +27419,6 @@
     ]
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
-  "ultima_tentativa_parcial": {
-    "passageiros": 2,
-    "moeda": "BRL",
-    "fonte": "Monitor leve 2026-10-06 06h: fli 0 resultados nos 6 trechos testados; Kiwi (select_airlines=LA, 2 pax) cobriu 4",
-    "trechos_kiwi_brl": {
-      "LIM-CUZ 2027-06-13": 737,
-      "CUZ-LIM 2027-06-16": 1522,
-      "CUZ-REC 2027-06-19": 4406,
-      "LIM-REC 2027-06-19": 4343
-    },
-    "trechos_sem_resultado": [
-      "REC-LIM 2027-06-10",
-      "REC-CUZ 2027-06-10"
-    ],
-    "nota": "Sem total de variante calculavel (ida REC->Peru sem cotacao em fli e Kiwi). CUZ-LIM 16/06 so com escala em AQP/PEM (R$1522), sem voo direto na data. Nenhum checkin anexado; melhor_combinacao_geral mantida (R$8973). Sem queda >=15%."
-  },
-  "ultima_tentativa_parcial_data": "2026-10-06T06:20:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-06 12h20: fli 0 em todos os trechos; Kiwi LA 2 pax: LIM-CUZ 13/06 R$737 (ant. R$694), CUZ-REC 19/06 R$4406 (ant. R$4238), LIM-REC 19/06 R$4343 (ant. R$4178), CUZ-LIM 16/06 so via AQP R$1522; REC-LIM/REC-CUZ 10/06 sem resultado. Totais nao calculaveis; nenhum checkin anexado; sem queda de preco.",
+  "ultima_tentativa_parcial_data": "2026-10-06T12:20:00Z"
 }
