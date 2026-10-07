@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-07T12:30:00Z",
+  "ultima_checagem": "2026-10-07T21:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -255,5 +255,6 @@
   "nota_ciclo_07_10_monitor_06h": "2026-10-07T06:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta) retornou so titulos historicos recorrentes (ate 65%/60%/66%, bonus 25-35%), sem data confirmando vigencia hoje; ofertas LATAM EGRESS_BLOCKED. Sem promocao nova, sem push.",
   "nota_ciclo_07_10_monitor_12h": "WebSearch passageirodeprimeira.com: transferencia — Livelo ate 35%, Esfera 25-30%, Nubank 30% (recorrentes, sem data/>=60%/<=48h). Compra direta — ultimo desconto achado (ate 65%, milheiro R$26,60 geral / R$24,50 Itau) valido ate 02/10/2026, expirado; nenhum desconto novo ativo identificado. ofertas LATAM Pass: EGRESS_BLOCKED. Sem alerta.",
   "nota_ciclo_07_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% valida ate 04/10 (expirada), Livelo/Esfera 25-35% recorrentes, nada >=60%/<=48h. Compra direta so titulos antigos (65%/62% ate 02/10, expirada), nenhuma ativa confirmada. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_07_10_dashboard": "fli REC-LIM/LIM-CUZ 0 resultados, Kiwi REC-LIM 0; Latam_PASS Akamai timeout; ofertas oficiais EGRESS_BLOCKED. WebSearch passageirodeprimeira: compra direta 65%/62% 'ate sexta (2)' = expirada; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h. Ultima cotacao valida mantida (R$8973 LIM-CUZ, 01/10). Sem alerta."
+  "nota_ciclo_07_10_dashboard": "fli REC-LIM/LIM-CUZ 0 resultados, Kiwi REC-LIM 0; Latam_PASS Akamai timeout; ofertas oficiais EGRESS_BLOCKED. WebSearch passageirodeprimeira: compra direta 65%/62% 'ate sexta (2)' = expirada; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h. Ultima cotacao valida mantida (R$8973 LIM-CUZ, 01/10). Sem alerta.",
+  "nota_ciclo_07_10_monitor_21h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so titulos recorrentes/antigos (Livelo/Esfera 25-35%, Nubank 25%, compra 'ate 65%' edicao expirada 28/08); nada >=60% com prazo <=48h, nenhum desconto de compra direta vigente confirmado. latampass.latam.com/ofertas nao acessado (EGRESS_BLOCKED). Sem alerta."
 }
