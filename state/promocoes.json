@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-06T18:30:00Z",
+  "ultima_checagem": "2026-10-07T12:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -252,5 +252,6 @@
   "nota_ciclo_06_10_monitor_12h": "2026-10-06T12:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus novo; transferencia so historico (Esfera 30%, Livelo 35%/20%, Nubank 25% ate 06/09/2026 - expirado); compra direta so a edicao 'ate 65% ate sexta (2)' = 02/10, expirada. Nenhum bonus >=60% e nenhum desconto ativo; sem alerta. Pagina oficial LATAM Pass: EGRESS_BLOCKED.",
   "nota_ciclo_06_10_dashboard": "Dashboard 06/10: WebSearch passageirodeprimeira.com (transferencia + compra). Compra: so edicao antiga (60%/55% 'ate terca (30)' = 30/09), sem vigencia hoje. Transferencia: Esfera 25% ate 25/10 (ativa, sem >=60%), Nubank 25% encerrou 04/10; nada >=60%/<=48h. Sem alerta.",
   "nota_ciclo_06_10_monitor_18h": "2026-10-06T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta: 60%/55% 'ate 30 de outubro' = edicao '(30)' de 30/09, expirada (confirmado por 2 buscas; sem edicao vigente). Transferencia: Esfera 25% ate 25/10, Nubank 25% encerrou 04/10; nada >=60%/<=48h. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_07_10_monitor_06h": "2026-10-07T06:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta) retornou so titulos historicos recorrentes (ate 65%/60%/66%, bonus 25-35%), sem data confirmando vigencia hoje; ofertas LATAM EGRESS_BLOCKED. Sem promocao nova, sem push."
+  "nota_ciclo_07_10_monitor_06h": "2026-10-07T06:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta) retornou so titulos historicos recorrentes (ate 65%/60%/66%, bonus 25-35%), sem data confirmando vigencia hoje; ofertas LATAM EGRESS_BLOCKED. Sem promocao nova, sem push.",
+  "nota_ciclo_07_10_monitor_12h": "WebSearch passageirodeprimeira.com: transferencia — Livelo ate 35%, Esfera 25-30%, Nubank 30% (recorrentes, sem data/>=60%/<=48h). Compra direta — ultimo desconto achado (ate 65%, milheiro R$26,60 geral / R$24,50 Itau) valido ate 02/10/2026, expirado; nenhum desconto novo ativo identificado. ofertas LATAM Pass: EGRESS_BLOCKED. Sem alerta."
 }

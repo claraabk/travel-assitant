@@ -27419,6 +27419,6 @@
     ]
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-06T18:30:00Z",
-  "ultima_tentativa_parcial_data": "Monitor leve 06/10 18h30: fli 0 (REC-LIM 10/06, LIM-REC 19/06); Kiwi LA 2pax 0 (REC-LIM +-2d, REC-CUZ 10/06); Expedia erro; lastminute REC-LIM 10/06 LA 2 escalas ~EUR 691 (preco/pax indefinido, 17h, nao comparavel). Sem total completo: nenhum checkin anexado, melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%."
+  "ultima_tentativa_parcial": "Monitor leve 07/10 12h: fli 0 em todos os 9 trechos (2 pax, LA). Kiwi LA 2 pax (BRL): LIM-CUZ 12/06 R$698 (13/06 R$735) direto; CUZ-REC 18-19/06 R$4391 (via LIM/BSB, 2 escalas; R$4394 via GRU); LIM-REC 18-19/06 R$4329-4343; CUZ-LIM 16/06 so via AQP/PEM R$1517 (sem direto, nao comparavel com R$624 anterior). REC-LIM e REC-CUZ 10/06: Kiwi 0; lastminute LA 2 escalas EUR 697,22 (REC-LIM) e EUR 699,02 (REC-CUZ), moeda EUR/preco total-vs-pax indefinido, nao convertido. Sem trecho de ida em BRL confiavel => sem total completo: nenhum checkin anexado, melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Trechos de volta ~+3,6% vs 01/10; nenhuma queda >=15%.",
+  "ultima_tentativa_parcial_data": "2026-10-07T12:00:00Z"
 }
