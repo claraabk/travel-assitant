@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-08T00:00:00Z",
+  "ultima_checagem": "2026-10-08T06:30:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -257,5 +257,6 @@
   "nota_ciclo_07_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% valida ate 04/10 (expirada), Livelo/Esfera 25-35% recorrentes, nada >=60%/<=48h. Compra direta so titulos antigos (65%/62% ate 02/10, expirada), nenhuma ativa confirmada. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
   "nota_ciclo_07_10_dashboard": "fli REC-LIM/LIM-CUZ 0 resultados, Kiwi REC-LIM 0; Latam_PASS Akamai timeout; ofertas oficiais EGRESS_BLOCKED. WebSearch passageirodeprimeira: compra direta 65%/62% 'ate sexta (2)' = expirada; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h. Ultima cotacao valida mantida (R$8973 LIM-CUZ, 01/10). Sem alerta.",
   "nota_ciclo_07_10_monitor_21h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so titulos recorrentes/antigos (Livelo/Esfera 25-35%, Nubank 25%, compra 'ate 65%' edicao expirada 28/08); nada >=60% com prazo <=48h, nenhum desconto de compra direta vigente confirmado. latampass.latam.com/ofertas nao acessado (EGRESS_BLOCKED). Sem alerta.",
-  "nota_ciclo_2026_10_08": "WebSearch passageirodeprimeira.com: nenhum bonus de transferencia vigente >=60%; compra direta: ultima campanha (ate 65% Itaú/62% demais, ate 02/10) encerrada; nenhuma ativa confirmada. latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta."
+  "nota_ciclo_2026_10_08": "WebSearch passageirodeprimeira.com: nenhum bonus de transferencia vigente >=60%; compra direta: ultima campanha (ate 65% Itaú/62% demais, ate 02/10) encerrada; nenhuma ativa confirmada. latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
+  "nota_ciclo_08_10_monitor_06h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 25-35% recorrentes (resultados antigos), nada >=60%/<=48h; Inter->LATAM Pass sem rota/bonus. Compra direta: ultima promo (ate 65%, R$24,50/26,60 o milheiro) foi de 02/10 e ja encerrou; resumo cita 'ate sexta (28)' sem mes confirmavel (provavel campanha antiga) - nao confirmada como ativa, sem alerta. Blog de terceiros, confianca baixa."
 }

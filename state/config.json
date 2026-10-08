@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-08T00:00:00Z",
-    "tentativas_consecutivas_falhas": 190,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-08T00:00:00Z",
+    "ultima_tentativa": "2026-10-08T06:30:00Z",
+    "tentativas_consecutivas_falhas": 191,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-08T06:30:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-08T00:00:00Z",
-    "resultado": "fli search_dates 0 (REC-LIM, REC-CUZ, jun/2027, LA, 2 pax, BRL); Kiwi 0 (REC-LIM e REC-CUZ 10/06/2027, LA, 2 pax)",
+    "ultima_tentativa": "2026-10-08T06:30:00Z",
+    "resultado": "fli search_flights 0 nos 6 trechos one-way (REC-LIM, REC-CUZ 10/06; LIM-CUZ 13/06; CUZ-REC 19/06; CUZ-LIM 16/06; LIM-REC 19/06; LA, 2 pax, BRL); Kiwi REC-LIM 0; Expedia erro",
     "nota": "Mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ). Sem checagem nova anexada; sem queda >=15%."
   },
   "roteiro": {
@@ -61,8 +61,8 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-07T12:00:00Z",
-    "resultado": "EGRESS_BLOCKED"
+    "ultima_tentativa": "2026-10-08T06:30:00Z",
+    "resultado": "WebFetch falhou (ENOTFOUND/bloqueado)"
   },
   "fontes_monitoradas_promocoes": [
     {
