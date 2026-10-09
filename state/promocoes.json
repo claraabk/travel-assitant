@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-08T18:30:00Z",
+  "ultima_checagem": "2026-10-09T12:00:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -262,5 +262,6 @@
   "nota_ciclo_20261008_12h": "WebSearch passageirodeprimeira.com: transferencia sem campanha nova (25-35% recorrentes, nada >=60%); compra direta: ultima campanha ate 65% encerrou em 02/10, nenhuma vigente em 08/10. Nada a notificar.",
   "nota_ciclo_08_10_dashboard": "Dashboard 08/10 12h30: fli REC-LIM 10/06 e CUZ-REC 19/06 0 resultados; Latam_PASS Akamai timeout; WebSearch passageirodeprimeira: compra direta ate 65%/62% encerrou 02/10, transferencia Nubank 25% encerrou 04/10, Livelo/Esfera sem campanha >=60%; Inter sem rota LATAM Pass. Sem alerta.",
   "nota_ciclo_08_10_monitor_18h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h, Banrisul 25% ate 24/09 vencida; Inter sem rota/bonus LATAM Pass. Compra direta: ultima campanha (ate 65%/62%) encerrou 02/10, nenhuma vigente confirmada. latampass ofertas ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_09_10_monitor": "2026-10-09T00:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas; ultima compra direta (ate 65%) venceu 02/10; nenhum bonus de transferencia vigente hoje. Pagina oficial ENOTFOUND. Sem alerta."
+  "nota_ciclo_09_10_monitor": "2026-10-09T00:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas; ultima compra direta (ate 65%) venceu 02/10; nenhum bonus de transferencia vigente hoje. Pagina oficial ENOTFOUND. Sem alerta.",
+  "nota_ciclo_2026_10_09": "WebSearch passageirodeprimeira.com: transferencia - nenhum bonus >=60%/<=48h ativo confirmado (Livelo/Esfera/Nubank 25-35% recorrentes). Compra direta: ultima promo (ate 65% Itau / 62% demais, R$26,60/milheiro) terminou em 02/10; nada ativo hoje. Sem alerta."
 }
