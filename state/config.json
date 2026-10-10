@@ -12,14 +12,14 @@
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
     "ultima_tentativa": "2026-10-10T18:30:00Z",
-    "tentativas_consecutivas_falhas": 203,
+    "tentativas_consecutivas_falhas": 204,
     "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-10T18:30:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
     "ultima_tentativa": "2026-10-10T18:30:00Z",
-    "resultado": "Monitor leve 10/10 18h30: fli 0 resultados em 6 trechos; Kiwi parcial (sem REC-LIM/REC-CUZ); sem total completo. Mantida ultima cotacao valida (01/10, R$8973, LIM-CUZ).",
+    "resultado": "Monitor leve 10/10 (2 pax, LA): fli 0 resultados em REC-LIM, REC-CUZ, CUZ-REC, LIM-REC (10/06 e 19/06). Kiwi parcial: LIM-CUZ 13/06 R$735 (direto, LA); CUZ-REC 19/06 R$4396 (via LIM/BSB ou LIM/GRU; 4396 vs 4238 no ult. ciclo completo, sem queda). Kiwi sem resultado LA para REC-LIM. Sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
     "nota": "Mantida ultima cotacao valida completa (01/10, R$8973, LIM-CUZ)."
   },
   "roteiro": {
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-10T00:19:52Z",
+    "ultima_tentativa": "2026-10-10T18:30:00Z",
     "resultado": "WebFetch falhou (ENOTFOUND)"
   },
   "fontes_monitoradas_promocoes": [

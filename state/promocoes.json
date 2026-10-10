@@ -17,7 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com: so campanhas antigas (20-35%), nada >=60%/<=48h; sem desconto de compra ativo. latampass.latam.com/ofertas ENOTFOUND.",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -35,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com: so campanhas antigas (20-35%), nada >=60%/<=48h; sem desconto de compra ativo. latampass.latam.com/ofertas ENOTFOUND.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
       "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
@@ -59,7 +59,7 @@
       ],
       "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com: so campanhas antigas (20-35%), nada >=60%/<=48h; sem desconto de compra ativo. latampass.latam.com/ofertas ENOTFOUND.",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
     },
     {
@@ -269,5 +269,6 @@
   "nota_ciclo_09_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so edicoes antigas (ultima ate 65%/62% encerrou 02/10, ja notificada), nenhuma ativa. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
   "nota_ciclo_10_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so historico, nada >=60%/<=48h; compra direta so edicoes antigas (ate 65%/62%, 'ate sexta (28)' = 28/08, expirada), nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
   "nota_ciclo_10_10_monitor_2": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente. Ultimo desconto de compra (ate 65%, milheiro R$26,60 p/ demais clientes) encerrou 02/10. Transferencia: so campanhas encerradas (25-35%). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
-  "nota_ciclo_10_10_dashboard": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente hoje; ultimo desconto de compra encerrou 02/10; transferencias so edicoes antigas (25-35%). Sem alerta. Nenhuma ativa expirada para mover."
+  "nota_ciclo_10_10_dashboard": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente hoje; ultimo desconto de compra encerrou 02/10; transferencias so edicoes antigas (25-35%). Sem alerta. Nenhuma ativa expirada para mover.",
+  "nota_ciclo_10_10_monitor_3": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so campanhas encerradas; compra direta: ultima (ate 65%, R$24,50 Itaú / R$26,60 demais) encerrou 02/10 e ja foi notificada; mencao a 'ate 28 de outubro' em materia de passagens nao confirmada (provavel 28/08 antigo). Nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta."
 }

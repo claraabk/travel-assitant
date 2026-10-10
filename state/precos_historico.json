@@ -27419,10 +27419,6 @@
     ]
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
-  "ultima_tentativa_parcial": {
-    "data_checagem": "2026-10-10T18:30:00Z",
-    "passageiros": 2,
-    "resultado": "Monitor leve: fli (LA, 2 pax, BRL) search_flights = 0 resultados nos 6 trechos testados (REC-LIM 10/06, LIM-CUZ 13/06, CUZ-REC 19/06, REC-CUZ 10/06, CUZ-LIM 16/06, LIM-REC 19/06). Kiwi (LA, 2 pax, BRL) parcial: LIM-CUZ 13/06 R$735, CUZ-LIM 16/06 R$663, CUZ-REC 19/06 R$4395 (via BSB, 2 paradas), LIM-REC 19/06 R$4336 (via BSB/FOR, 2 paradas); REC-LIM 10/06 = 0 e REC-CUZ 10/06 = 0. Sem trecho de ida internacional nao ha total completo; nenhum checkin anexado. melhor_combinacao_geral mantida (R$8973, 01/10). Sem queda >=15%."
-  },
+  "ultima_tentativa_parcial": "Monitor leve 10/10 (2 pax, LA): fli 0 resultados em REC-LIM, REC-CUZ, CUZ-REC, LIM-REC (10/06 e 19/06). Kiwi parcial: LIM-CUZ 13/06 R$735 (direto, LA); CUZ-REC 19/06 R$4396 (via LIM/BSB ou LIM/GRU; 4396 vs 4238 no ult. ciclo completo, sem queda). Kiwi sem resultado LA para REC-LIM. Sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
   "ultima_tentativa_parcial_data": "2026-10-10T18:30:00Z"
 }
