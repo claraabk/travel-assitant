@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-09T18:30:00Z",
-    "tentativas_consecutivas_falhas": 199,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-09T18:30:00Z",
+    "ultima_tentativa": "2026-10-10T00:19:52Z",
+    "tentativas_consecutivas_falhas": 200,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-10T00:19:52Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-09T18:30:00Z",
-    "resultado": "Monitor leve 18h30: fli search_flights 0 em REC-LIM 10/06 e CUZ-REC 19/06; Kiwi REC-LIM 0; Kiwi CUZ-REC 19/06 R$4397 (2 pax).",
-    "nota": "Mantida última cotação válida completa (01/10, R$8973, LIM-CUZ)."
+    "ultima_tentativa": "2026-10-10T00:19:52Z",
+    "resultado": "Monitor leve: fli 0 em todos os 6 trechos; Kiwi REC-LIM 0; Kiwi parcial CUZ-REC 19/06 R$4397, LIM-CUZ 13/06 R$735 (2 pax).",
+    "nota": "Mantida ultima cotacao valida completa (01/10, R$8973, LIM-CUZ)."
   },
   "roteiro": {
     "fixo": false,
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-09T18:30:00Z",
+    "ultima_tentativa": "2026-10-10T00:19:52Z",
     "resultado": "WebFetch falhou (ENOTFOUND)"
   },
   "fontes_monitoradas_promocoes": [
