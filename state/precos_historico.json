@@ -27420,9 +27420,9 @@
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
   "ultima_tentativa_parcial": {
-    "data_checagem": "2026-10-10T00:19:52Z",
+    "data_checagem": "2026-10-10T06:19:24Z",
     "passageiros": 2,
-    "resultado": "fli (LA, 2 pax, BRL) retornou 0 em REC-LIM 10/06, REC-CUZ 10/06, LIM-CUZ 13/06, CUZ-REC 19/06, CUZ-LIM 16/06, LIM-REC 19/06. Kiwi REC-LIM 10/06 = 0 (variantes sem cotacao completa). Kiwi parcial: CUZ-REC 19/06 R$4397 (2 pax), LIM-CUZ 13/06 R$735 (2 pax; era R$694). Sem checkin completo anexado; melhor_combinacao_geral mantida (R$8973, 01/10). Sem queda >=15%."
+    "resultado": "fli (LA, 2 pax, BRL) search_dates REC-LIM e REC-CUZ jun/2027 = 0; search_flights REC-LIM 10/06 = 0. Kiwi REC-LIM 10/06 = 0. Expedia erro. lastminute REC-LIM 10/06 (LA, 2 adultos) = EUR 698,84 (moeda EUR, nao convertida; nao comparavel diretamente). Sem checkin completo anexado; melhor_combinacao_geral mantida (R$8973, 01/10). Sem queda >=15%."
   },
-  "ultima_tentativa_parcial_data": "2026-10-10T00:19:52Z"
+  "ultima_tentativa_parcial_data": "2026-10-10T06:19:24Z"
 }

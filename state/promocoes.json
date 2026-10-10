@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-10T00:19:52Z",
+  "ultima_checagem": "2026-10-10T06:19:24Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -267,5 +267,6 @@
   "nota_ciclo_atual": "09/10 12:30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): nada ativo. Ultima compra direta (ate 65%) encerrou 02/10; Livelo 25% encerrou 22/09; Inter sem campanha. ofertas LATAM Pass: EGRESS_BLOCKED/ENOTFOUND. Nenhum alerta.",
   "nota_ciclo_09_10_dashboard": "Dashboard diário 09/10: WebSearch passageirodeprimeira (transferência e compra) sem campanha vigente; compra encerrou 02/10. Sem alerta.",
   "nota_ciclo_09_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so edicoes antigas (ultima ate 65%/62% encerrou 02/10, ja notificada), nenhuma ativa. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_10_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so historico, nada >=60%/<=48h; compra direta so edicoes antigas (ate 65%/62%, 'ate sexta (28)' = 28/08, expirada), nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta."
+  "nota_ciclo_10_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so historico, nada >=60%/<=48h; compra direta so edicoes antigas (ate 65%/62%, 'ate sexta (28)' = 28/08, expirada), nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+  "nota_ciclo_10_10_monitor_2": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente. Ultimo desconto de compra (ate 65%, milheiro R$26,60 p/ demais clientes) encerrou 02/10. Transferencia: so campanhas encerradas (25-35%). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta."
 }
