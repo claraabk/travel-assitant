@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-10T06:19:24Z",
+  "ultima_checagem": "2026-10-10T18:30:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -17,7 +17,7 @@
       ],
       "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-02T06:00:00Z: WebSearch passageirodeprimeira.com: Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h.",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
       "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
     },
     {
@@ -35,7 +35,7 @@
       ],
       "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-02T06:00:00Z: WebSearch passageirodeprimeira.com: Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h.",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
       "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
@@ -59,7 +59,7 @@
       ],
       "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
       "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-02T06:00:00Z: WebSearch passageirodeprimeira.com: Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h.",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
     },
     {
@@ -77,7 +77,7 @@
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-10-02T06:00:00Z: WebSearch passageirodeprimeira.com: Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h."
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND)."
     },
     {
       "id": "modo-latam-pass-nubank",
@@ -93,7 +93,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-10-02T06:00:00Z: WebSearch passageirodeprimeira.com: Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h.",
+      "ultima_reconfirmacao": "2026-10-10T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas/sem data vigente (Livelo/Esfera/Nubank 25-35%; compra ate 65% sem data confirmada), nada >=60%/<=48h, sem desconto ativo confirmado. latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
