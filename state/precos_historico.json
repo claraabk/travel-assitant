@@ -29,13 +29,13 @@
     }
   ],
   "melhor_combinacao_geral": {
-    "id": "LIM-CUZ",
-    "preco_total_brl": 8973.0,
+    "id": "CUZ-LIM",
+    "preco_total_brl": 8686.0,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-01T21:00:00Z",
-    "nota": "Monitor leve 2026-10-01 21h: empate em R$8973 entre LIM-CUZ x2d, LIM-CUZ x3d e CUZ-LIM x3d (CUZ-LIM x2d sem cotacao: LIM-REC 18/06 retornou 0). Lider mantido LIM-CUZ x3d; -R$27 vs checagem anterior (R$9000). Nenhuma queda >=15% vs media movel. Sem alerta de preco. | Dashboard diario 2026-10-01T12:30:00Z: fli retornou 0 em todos os trechos; mantida ultima cotacao valida, nenhum checkin novo anexado."
+    "data_checagem": "2026-10-11T12:30:00Z",
+    "nota": "Dashboard diario 2026-10-11: CUZ-LIM x3d R$8686 (-3,2% vs R$8973 anterior; variacao vs media movel -5.07%). 2a: CUZ-LIM x2d R$8688 (+R$2); 3a: LIM-CUZ x3d R$8923 (+R$237); LIM-CUZ x2d sem cotacao (CUZ-REC 18/06 sem resultado LA). Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13625,6 +13625,119 @@
         "nota": "Monitor leve: fli (LA, 2 pax, BRL) one-way. x3d: REC-LIM 10/06 R$4041 (GRU 75min = conexao curta) + LIM-CUZ 13/06 R$694 + CUZ-REC 19/06 R$4238 (BSB 7h15 = conexao longa; alternativa sem alerta R$4240 via LIM/GRU, +R$2). x2d: 4041+694 (12/06)+4238 (18/06)=R$8973. Alternativa REC-LIM sem alerta (R$4070 do ciclo anterior) nao reapareceu; so ha opcao via CGH overnight no mesmo preco.",
         "media_movel_30_checagens": 9075.57,
         "variacao_pct_vs_media": -1.13
+      },
+      {
+        "data_checagem": "2026-10-11T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8923,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3377",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T13:15",
+              "chegada": "2027-06-10T16:35",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA8040",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T19:15",
+              "chegada": "2027-06-10T22:25",
+              "aeronave": "A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2217",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T18:05",
+              "chegada": "2027-06-13T19:25",
+              "aeronave": "A320"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2218",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-19T20:00",
+              "chegada": "2027-06-19T21:35",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-20T00:40",
+              "chegada": "2027-06-20T07:20",
+              "aeronave": "A319"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-20T14:35",
+              "chegada": "2027-06-20T17:00",
+              "aeronave": "A320"
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "media_movel_30_checagens": 9083.1,
+        "variacao_pct_vs_media": -1.76,
+        "nota": "REC-LIM 10/06 R$3901 + LIM-CUZ 13/06 R$673 + CUZ-REC 19/06 R$4349. Alerta: volta com BSB 7h15 e pernoite em LIM. Alternativa sem alerta CUZ-REC R$4352 (LIM 2h40 / GRU 4h35) => R$8926.",
+        "alertas_conexao": [
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 435,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativa_sem_alerta": {
+          "preco_brl": 4352,
+          "nota": "total R$8926 (+R$3)",
+          "detalhe_voo": {
+            "volta": [
+              {
+                "voo": "LA2167",
+                "origem": "CUZ",
+                "destino": "LIM",
+                "partida": "2027-06-19T05:00",
+                "chegada": "2027-06-19T06:35",
+                "aeronave": "A319"
+              },
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T09:15",
+                "chegada": "2027-06-19T16:25",
+                "aeronave": "A321"
+              },
+              {
+                "voo": "LA3378",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T21:00",
+                "chegada": "2027-06-20T00:10",
+                "aeronave": "A321"
+              }
+            ]
+          }
+        }
       }
     ],
     "CUZ-LIM": [
@@ -27415,10 +27528,187 @@
         "nota": "Monitor leve: fli (LA, 2 pax, BRL) one-way. x3d: REC-CUZ 10/06 R$4171 (GRU 75min = conexao curta, LIM 4h25) + CUZ-LIM 16/06 R$624 + LIM-REC 19/06 R$4178 (BSB 7h15 = conexao longa; alternativa sem alerta R$4180 via GRU 2h50 => R$8975). x2d: LIM-REC 18/06 sem resultados neste ciclo (fli retornou 0) - variante nao cotada.",
         "media_movel_30_checagens": 9159.18,
         "variacao_pct_vs_media": -2.03
+      },
+      {
+        "data_checagem": "2026-10-11T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8686,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50",
+              "chegada": "2027-06-10T18:10",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10",
+              "chegada": "2027-06-11T06:35",
+              "aeronave": "A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45",
+              "chegada": "2027-06-16T21:15",
+              "aeronave": "A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40",
+              "chegada": "2027-06-19T07:20",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-19T14:35",
+              "chegada": "2027-06-19T17:10",
+              "aeronave": "A320"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1
+        },
+        "media_movel_30_checagens": 9149.88,
+        "variacao_pct_vs_media": -5.07,
+        "nota": "REC-CUZ 10/06 R$4027 + CUZ-LIM 16/06 R$605 + LIM-REC 19/06 R$4054. Alerta: volta LA2402/LA4724 com conexao longa em BSB (7h15). Alternativa sem alerta LIM-REC R$4056 (LA8005/LA3378, GRU 4h35) => R$8688.",
+        "alertas_conexao": [
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 435,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativa_sem_alerta": {
+          "preco_brl": 4056,
+          "nota": "total R$8688 (+R$2)",
+          "detalhe_voo": {
+            "volta": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T09:15",
+                "chegada": "2027-06-19T16:25",
+                "aeronave": "A321"
+              },
+              {
+                "voo": "LA3378",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T21:00",
+                "chegada": "2027-06-20T00:10",
+                "aeronave": "A321"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data_checagem": "2026-10-11T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8688,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3379",
+              "origem": "REC",
+              "destino": "GRU",
+              "partida": "2027-06-10T14:50",
+              "chegada": "2027-06-10T18:10",
+              "aeronave": "A320"
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10",
+              "chegada": "2027-06-11T06:35",
+              "aeronave": "A320"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45",
+              "chegada": "2027-06-16T21:15",
+              "aeronave": "A319"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA8099",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T13:05",
+              "chegada": "2027-06-18T20:05",
+              "aeronave": "A321"
+            },
+            {
+              "voo": "LA4554",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-18T23:10",
+              "chegada": "2027-06-19T02:10",
+              "aeronave": "A319"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1
+        },
+        "media_movel_30_checagens": 9129.31,
+        "variacao_pct_vs_media": -4.83,
+        "nota": "REC-CUZ 4027 + CUZ-LIM 16/06 605 + LIM-REC 18/06 4056 (GRU 3h05). Sem alertas de conexao."
       }
     ]
   },
-  "ultima_checagem": "2026-10-11T06:19:39Z",
-  "ultima_tentativa_parcial": "Kiwi: LIM-CUZ 13/06 R$735, CUZ-LIM 16/06 R$663, CUZ-REC 19/06 R$4396, LIM-REC 19/06 R$4336; REC-LIM/REC-CUZ 10/06 sem LA (fli e Kiwi 0). Total nao fechado.",
-  "ultima_tentativa_parcial_data": "2026-10-11T06:19:39Z"
+  "ultima_checagem": "2026-10-11T12:30:00Z",
+  "ultima_tentativa_parcial": "Dashboard 2026-10-11: fli OK para 2 pax. LIM-CUZ x2d sem cotacao (CUZ-REC 18/06 = 0 resultados LA).",
+  "ultima_tentativa_parcial_data": "2026-10-11T12:30:00Z"
 }
