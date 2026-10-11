@@ -27748,6 +27748,6 @@
     ]
   },
   "ultima_checagem": "2026-10-11T12:19:00Z",
-  "ultima_tentativa_parcial": "Dashboard 2026-10-11: fli OK para 2 pax. LIM-CUZ x2d sem cotacao (CUZ-REC 18/06 = 0 resultados LA).",
-  "ultima_tentativa_parcial_data": "2026-10-11T12:30:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-11T18:20:00Z: fli retornou 0 resultados (airlines=LA, 2 pax) em TODOS os 9 trechos e em search_dates; Kiwi (select_airlines=LA) tambem 0; lastminute REC-LIM 10/06 so deu 2 escalas EUR 697,04 (2 pax), nao comparavel com a serie fli em BRL. Nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$8686).",
+  "ultima_tentativa_parcial_data": "2026-10-11T18:20:00Z"
 }

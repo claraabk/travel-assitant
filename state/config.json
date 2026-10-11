@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-11T12:19:00Z",
-    "tentativas_consecutivas_falhas": 208,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T12:19:00Z",
+    "ultima_tentativa": "2026-10-11T18:20:00Z",
+    "tentativas_consecutivas_falhas": 209,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T18:20:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente/desatualizado (>24h); sem preço inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-11T12:19:00Z",
-    "resultado": "fli OK (LA, 2 pax): REC-LIM 10/06 R$3901; REC-CUZ 10/06 R$4027; LIM-CUZ 12/06 e 13/06 R$673; CUZ-LIM 16/06 e 17/06 R$605; CUZ-REC 19/06 R$4349 (18/06: 0); LIM-REC 18/06 R$4056, 19/06 R$4054. Monitor leve, sem mudança.",
-    "nota": "Monitor leve; dashboard não regenerado."
+    "ultima_tentativa": "2026-10-11T18:20:00Z",
+    "resultado": "fli FALHOU: 0 resultados em todos os trechos REC/LIM/CUZ jun/2027 (LA, 2 pax) e em search_dates; Kiwi LA tambem 0. Provavel indisponibilidade/mudanca no conector (ultimo OK 2026-10-11T12:19Z). Sem checkin neste ciclo.",
+    "nota": "Monitor leve; dashboard nao regenerado."
   },
   "roteiro": {
     "fixo": false,
@@ -61,7 +61,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-10T18:30:00Z",
+    "ultima_tentativa": "2026-10-11T18:20:00Z",
     "resultado": "WebFetch falhou (ENOTFOUND)"
   },
   "fontes_monitoradas_promocoes": [
