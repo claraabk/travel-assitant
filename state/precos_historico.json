@@ -27419,6 +27419,6 @@
     ]
   },
   "ultima_checagem": "2026-10-03T21:00:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 10/10 (2 pax, LA): fli 0 resultados em REC-LIM, REC-CUZ, CUZ-REC, LIM-REC (10/06 e 19/06). Kiwi parcial: LIM-CUZ 13/06 R$735 (direto, LA); CUZ-REC 19/06 R$4396 (via LIM/BSB ou LIM/GRU; 4396 vs 4238 no ult. ciclo completo, sem queda). Kiwi sem resultado LA para REC-LIM. Sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
-  "ultima_tentativa_parcial_data": "2026-10-10T18:30:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-11T00:19:26Z (2 pax, LA): fli 0 resultados em REC-LIM 10/06 e CUZ-REC 19/06. Kiwi: REC-LIM e REC-CUZ 10/06 sem resultado LA; CUZ-REC 19/06 R$4396 (via LIM/BSB, igual ao ciclo anterior); LIM-REC 19/06 R$4336 (via BSB/FOR, 2 escalas; 1 escala via GRU R$4350). Sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
+  "ultima_tentativa_parcial_data": "2026-10-11T00:19:26Z"
 }
