@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-11T12:30:00Z",
-    "nota": "Dashboard diario 2026-10-11: CUZ-LIM x3d R$8686 (-3,2% vs R$8973 anterior; variacao vs media movel -5.07%). 2a: CUZ-LIM x2d R$8688 (+R$2); 3a: LIM-CUZ x3d R$8923 (+R$237); LIM-CUZ x2d sem cotacao (CUZ-REC 18/06 sem resultado LA). Sem queda >=15%."
+    "data_checagem": "2026-10-11T12:19:00Z",
+    "nota": "Monitor leve 2026-10-11T12:19:00Z: sem mudança. Melhor segue CUZ-LIM x3d R$8686. Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13738,6 +13738,19 @@
             ]
           }
         }
+      },
+      {
+        "data_checagem": "2026-10-11T12:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8923,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho; monitor leve",
+        "media_movel_30_checagens": 9076.8,
+        "variacao_pct_vs_media": -1.69,
+        "nota": "Monitor leve: sem variação vs. ciclo anterior. LIM-CUZ x2d sem cotação (CUZ-REC 18/06 sem resultado LA)."
       }
     ],
     "CUZ-LIM": [
@@ -27705,10 +27718,36 @@
         "media_movel_30_checagens": 9129.31,
         "variacao_pct_vs_media": -4.83,
         "nota": "REC-CUZ 4027 + CUZ-LIM 16/06 605 + LIM-REC 18/06 4056 (GRU 3h05). Sem alertas de conexao."
+      },
+      {
+        "data_checagem": "2026-10-11T12:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8688,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho; monitor leve",
+        "media_movel_30_checagens": 9103.63,
+        "variacao_pct_vs_media": -4.57,
+        "nota": "Monitor leve: sem variação vs. ciclo anterior. LIM-CUZ x2d sem cotação (CUZ-REC 18/06 sem resultado LA)."
+      },
+      {
+        "data_checagem": "2026-10-11T12:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8686,
+        "fonte": "fli (airlines=LA, 2 pax, BRL) one-way por trecho; monitor leve",
+        "media_movel_30_checagens": 9085.11,
+        "variacao_pct_vs_media": -4.39,
+        "nota": "Monitor leve: sem variação vs. ciclo anterior. LIM-CUZ x2d sem cotação (CUZ-REC 18/06 sem resultado LA)."
       }
     ]
   },
-  "ultima_checagem": "2026-10-11T12:30:00Z",
+  "ultima_checagem": "2026-10-11T12:19:00Z",
   "ultima_tentativa_parcial": "Dashboard 2026-10-11: fli OK para 2 pax. LIM-CUZ x2d sem cotacao (CUZ-REC 18/06 = 0 resultados LA).",
   "ultima_tentativa_parcial_data": "2026-10-11T12:30:00Z"
 }

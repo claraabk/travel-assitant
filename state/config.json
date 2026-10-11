@@ -11,16 +11,16 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-11T12:30:00Z",
-    "tentativas_consecutivas_falhas": 207,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T12:30:00Z",
+    "ultima_tentativa": "2026-10-11T12:19:00Z",
+    "tentativas_consecutivas_falhas": 208,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T12:19:00Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "scripts/state/latam_miles_price.json desatualizado (26/08/2026, >24h); sem preco inventado. Referencia: milheiro promo R$26,60, lista ~R$70 (blog)."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente/desatualizado (>24h); sem preço inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-11T12:30:00Z",
-    "resultado": "fli OK (LA, 2 pax): REC-LIM 10/06 R$3901; REC-CUZ 10/06 R$4027; LIM-CUZ 12/06 e 13/06 R$673; CUZ-LIM 16/06 R$605; CUZ-REC 19/06 R$4349 (18/06: 0); LIM-REC 18/06 e 19/06 R$4056 (cheapest R$4054 c/ BSB longa). Melhor: CUZ-LIM x3d R$8686.",
-    "nota": "Conector fli voltou a cotar; dashboard atualizado."
+    "ultima_tentativa": "2026-10-11T12:19:00Z",
+    "resultado": "fli OK (LA, 2 pax): REC-LIM 10/06 R$3901; REC-CUZ 10/06 R$4027; LIM-CUZ 12/06 e 13/06 R$673; CUZ-LIM 16/06 e 17/06 R$605; CUZ-REC 19/06 R$4349 (18/06: 0); LIM-REC 18/06 R$4056, 19/06 R$4054. Monitor leve, sem mudança.",
+    "nota": "Monitor leve; dashboard não regenerado."
   },
   "roteiro": {
     "fixo": false,
