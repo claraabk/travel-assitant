@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-11T00:19:26Z",
-    "tentativas_consecutivas_falhas": 205,
-    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T00:19:26Z",
+    "ultima_tentativa": "2026-10-11T06:19:39Z",
+    "tentativas_consecutivas_falhas": 206,
+    "ultimo_erro": "Page.wait_for_selector timeout (radio-values, Akamai), retestado 2026-10-11T06:19:39Z",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-11T00:19:26Z",
-    "resultado": "Monitor leve 2026-10-11T00:19:26Z (2 pax, LA): fli 0 resultados em REC-LIM 10/06 e CUZ-REC 19/06. Kiwi: REC-LIM e REC-CUZ 10/06 sem resultado LA; CUZ-REC 19/06 R$4396 (via LIM/BSB, igual ao ciclo anterior); LIM-REC 19/06 R$4336 (via BSB/FOR, 2 escalas; 1 escala via GRU R$4350). Sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
+    "ultima_tentativa": "2026-10-11T06:19:39Z",
+    "resultado": "Monitor leve 2026-10-11T06:19:39Z (2 pax, LA): fli 0 resultados em REC-LIM 10/06, REC-CUZ 10/06, CUZ-REC 19/06, LIM-REC 19/06. Kiwi: REC-LIM e REC-CUZ 10/06 sem resultado LA; LIM-CUZ 13/06 R$735; CUZ-LIM 16/06 R$663; CUZ-REC 19/06 R$4396 (via LIM/BSB); LIM-REC 19/06 R$4336 (2 escalas), R$4347 (1 escala via BSB), R$4350 (via GRU). Sem trecho de ida internacional -> sem total completo de nenhuma variante; nenhum checkin anexado; melhor_combinacao_geral mantida (LIM-CUZ R$8973, 01/10). Sem queda >=15%.",
     "nota": "Mantida ultima cotacao valida completa (01/10, R$8973, LIM-CUZ)."
   },
   "roteiro": {
