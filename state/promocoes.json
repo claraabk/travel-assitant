@@ -1,67 +1,6 @@
 {
-  "ultima_checagem": "2026-10-13T12:20:00Z",
+  "ultima_checagem": "2026-10-13T12:45:00Z",
   "ativas": [
-    {
-      "id": "esfera-latam-pass-25a30pct-1000milhas",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece 25–30% de bônus na transferência de pontos Esfera→LATAM Pass, mais 1.000 milhas bônus na primeira transferência. Milhas extras creditadas em até 30 dias, limite de 300.000 milhas extras por CPF. Validade de 36 meses (ou sem expiração se sócio Categoria Elite).",
-      "bonus_pct_min": 25,
-      "bonus_pct_max": 30,
-      "bonus_fixo_milhas_primeira_vez": 1000,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "múltiplos artigos do mesmo blog ao longo de 2026 com % variando entre 25 e 30 — parece campanha recorrente/rotativa, não uma edição única. Checar % vigente antes de agir.",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-30-de-bonus-na-transferencia-de-pontos-da-esfera-3/",
-        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
-      ],
-      "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro."
-    },
-    {
-      "id": "nubank-latam-pass-30pct-1500milhas",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
-      "bonus_pct": 30,
-      "bonus_fixo_milhas_primeira_vez": 1500,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "página oficial não trouxe data de término explícita nesta busca — checar latampass.latam.com/pt_br/promocao/nubank-milhas-extras antes de agir, pode ser campanha corrente e não eterna",
-      "fontes": [
-        "https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras",
-        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-do-nubank/"
-      ],
-      "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
-      "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
-      "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
-    },
-    {
-      "id": "livelo-latam-pass-25pct-recorrente",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece bônus de transferência de pontos Livelo→LATAM Pass. Múltiplos artigos do blog ao longo de 2025/2026 (\"Só hoje\", \"Últimas horas\", \"Último dia\") confirmam 25% de bônus como o valor recorrente dessa campanha — parece ser um formato de campanha relâmpago que se repete periodicamente, não uma oferta permanente.",
-      "bonus_pct": 25,
-      "bonus_pct_max_observado": 35,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "ciclo de 26/08/2026 18h55 encontrou título explícito confirmando 35% (\"LATAM Pass oferece até 35% de bônus na transferência de pontos Livelo\" e \"Últimas horas para ganhar até 35%...\") — upgrade de confiança vs. ciclo anterior, que só tinha a síntese da busca mencionando 35% sem título batendo. 25% continua aparecendo em títulos mais antigos/recorrentes; parece que a campanha rotativa varia entre 25% e 35% conforme a edição. Checar % vigente no app antes de transferir.",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-incluindo-itau-e-esfera/",
-        "https://passageirodeprimeira.com/so-hoje-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo-2/",
-        "https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo/",
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo-2/ (confirma 35%, encontrada no ciclo de 26/08/2026 18h55)",
-        "https://passageirodeprimeira.com/ultimas-horas-para-ganhar-ate-35-de-bonus-na-transferencia-de-pontos-livelo-para-latam-pass/ (confirma 35%, mesmo ciclo)",
-        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
-      ],
-      "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro."
-    },
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
       "tipo": "checagem_sem_oportunidade",
@@ -77,7 +16,7 @@
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND)."
+      "ultima_reconfirmacao": "2026-10-13T12:45:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada; ultima compra direta 65% encerrou 02/10; nada >=60%/<=48h; ofertas LATAM Pass inacessivel."
     },
     {
       "id": "modo-latam-pass-nubank",
@@ -93,7 +32,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-13T12:45:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada; ultima compra direta 65% encerrou 02/10; nada >=60%/<=48h; ofertas LATAM Pass inacessivel.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
@@ -214,6 +153,70 @@
       "valido_ate_original": "2026-10-02",
       "nota_ciclo_2026_10_01_12h": "WebSearch passageirodeprimeira.com: 'ate 65% ate sexta-feira (2)' = 02/10/2026; reativada (estava em expiradas por engano). Sem novo push (ja_notificada).",
       "status_encerramento": "WebSearch 03/10: campanha (65% Itau / ~62% geral, ate 350k milhas) valida ate sexta 02/10; encerrada. Sem nova campanha confirmada."
+    },
+    {
+      "id": "esfera-latam-pass-25a30pct-1000milhas",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece 25–30% de bônus na transferência de pontos Esfera→LATAM Pass, mais 1.000 milhas bônus na primeira transferência. Milhas extras creditadas em até 30 dias, limite de 300.000 milhas extras por CPF. Validade de 36 meses (ou sem expiração se sócio Categoria Elite).",
+      "bonus_pct_min": 25,
+      "bonus_pct_max": 30,
+      "bonus_fixo_milhas_primeira_vez": 1000,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "múltiplos artigos do mesmo blog ao longo de 2026 com % variando entre 25 e 30 — parece campanha recorrente/rotativa, não uma edição única. Checar % vigente antes de agir.",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-30-de-bonus-na-transferencia-de-pontos-da-esfera-3/",
+        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+      ],
+      "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
+      "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro.",
+      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+    },
+    {
+      "id": "nubank-latam-pass-30pct-1500milhas",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
+      "bonus_pct": 30,
+      "bonus_fixo_milhas_primeira_vez": 1500,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "página oficial não trouxe data de término explícita nesta busca — checar latampass.latam.com/pt_br/promocao/nubank-milhas-extras antes de agir, pode ser campanha corrente e não eterna",
+      "fontes": [
+        "https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras",
+        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-do-nubank/"
+      ],
+      "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
+      "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
+      "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
+      "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta.",
+      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+    },
+    {
+      "id": "livelo-latam-pass-25pct-recorrente",
+      "tipo": "bonus_transferencia_direcionado",
+      "descricao": "LATAM Pass oferece bônus de transferência de pontos Livelo→LATAM Pass. Múltiplos artigos do blog ao longo de 2025/2026 (\"Só hoje\", \"Últimas horas\", \"Último dia\") confirmam 25% de bônus como o valor recorrente dessa campanha — parece ser um formato de campanha relâmpago que se repete periodicamente, não uma oferta permanente.",
+      "bonus_pct": 25,
+      "bonus_pct_max_observado": 35,
+      "e_permanente": false,
+      "valido_ate": null,
+      "confianca_validade": "ciclo de 26/08/2026 18h55 encontrou título explícito confirmando 35% (\"LATAM Pass oferece até 35% de bônus na transferência de pontos Livelo\" e \"Últimas horas para ganhar até 35%...\") — upgrade de confiança vs. ciclo anterior, que só tinha a síntese da busca mencionando 35% sem título batendo. 25% continua aparecendo em títulos mais antigos/recorrentes; parece que a campanha rotativa varia entre 25% e 35% conforme a edição. Checar % vigente no app antes de transferir.",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-incluindo-itau-e-esfera/",
+        "https://passageirodeprimeira.com/so-hoje-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo-2/",
+        "https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo/",
+        "https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo-2/ (confirma 35%, encontrada no ciclo de 26/08/2026 18h55)",
+        "https://passageirodeprimeira.com/ultimas-horas-para-ganhar-ate-35-de-bonus-na-transferencia-de-pontos-livelo-para-latam-pass/ (confirma 35%, mesmo ciclo)",
+        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+      ],
+      "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
+      "ja_notificada": false,
+      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro.",
+      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
     }
   ],
   "checagem_20261001_21h": {
