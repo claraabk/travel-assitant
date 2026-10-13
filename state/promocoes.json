@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-12T18:19:00Z",
+  "ultima_checagem": "2026-10-13T00:20:00Z",
   "ativas": [
     {
       "id": "esfera-latam-pass-25a30pct-1000milhas",
@@ -276,5 +276,6 @@
   "nota_ciclo_11_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so resultados antigos; sem bonus >=60%/<=48h; compra direta: ultima confirmada ate 02/10 (expirada), nada novo; ofertas LATAM Pass inacessivel (ENOTFOUND). Nada a notificar.",
   "nota_ciclo_12_10_monitor": "2026-10-12T00:19:57Z - WebSearch passageirodeprimeira (transferencia + compra direta): so titulos historicos; ultima compra direta citada (ate 65%, R$24,50/26,60) valida ate 02/10, expirada. Nenhum bonus >=60% nem desconto de compra vigente confirmado. Oferta oficial inacessivel. Sem notificacao.",
   "nota_ciclo_12_10_monitor_12h": "2026-10-12T12:25:00Z - WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus ativo (Nubank 25% ate 04/10, Itau/Credicard ate 04/09, Livelo/Esfera antigos, Inter sem oferta). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) com datas inconsistentes entre artigos - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao.",
-  "nota_ciclo_12_10_dashboard": "2026-10-12 dashboard: precos reaproveitados do monitor 12:25Z; WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus >=60% nem desconto de compra vigente confirmado (65% ate 02/10 expirado; 'ate 28/10' nao confirmado). Latam-PASS conector: timeout Akamai. Nenhuma ativa expirada. Sem notificacao."
+  "nota_ciclo_12_10_dashboard": "2026-10-12 dashboard: precos reaproveitados do monitor 12:25Z; WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus >=60% nem desconto de compra vigente confirmado (65% ate 02/10 expirado; 'ate 28/10' nao confirmado). Latam-PASS conector: timeout Akamai. Nenhuma ativa expirada. Sem notificacao.",
+  "nota_ciclo_13_10_monitor": "2026-10-13T00:20Z - WebSearch passageirodeprimeira (transferencia, compra direta, Inter): sem bonus ativo (Nubank 25% ate 06/09 expirado, Livelo/Esfera so historico, Inter sem oferta/rota). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) segue com datas inconsistentes - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao."
 }
