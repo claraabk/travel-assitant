@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-15T00:19:19Z",
+  "ultima_checagem": "2026-10-15T06:19:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -284,5 +284,6 @@
   "nota_ciclo_13_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente confirmada; Nubank 25% expirou 06/09, compra direta ultima edicao 02/10 expirada. Sem alerta.",
   "nota_ciclo_13_10_monitor_12h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada. Compra direta: so materia de 26/08 citando 'ate 65% ate 28/10' com inconsistencia de data (28/10/2026 e quarta, texto diz sexta) — nao confirmada, nao notificada. Transferencias recentes (Livelo 25% ate 22/09, Nubank 25% ate 06/09) expiradas; nada >=60%. latampass.latam.com/ofertas: ENOTFOUND.",
   "nota_ciclo_14_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% so campanhas encerradas, nada >=60%/<=48h. Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50 Itau/R$26,60 demais) com datas inconsistentes entre materias, sem vigencia confirmada - nao marcada ativa, nao notificada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_15_10_monitor": "2026-10-15T00:19:19Z — WebSearch passageirodeprimeira.com: transferência (Nubank 25% até 06/09, Esfera/Livelo antigos) e compra direta (último 65% Itaú/62% Clube até 02/10, R$24,50/R$26,60) — nenhuma vigente em 15/10; nada ativo, sem notificação. Página oficial ENOTFOUND; Latam_PASS tool timeout; latam_miles_price.json inexistente."
+  "nota_ciclo_15_10_monitor": "2026-10-15T00:19:19Z — WebSearch passageirodeprimeira.com: transferência (Nubank 25% até 06/09, Esfera/Livelo antigos) e compra direta (último 65% Itaú/62% Clube até 02/10, R$24,50/R$26,60) — nenhuma vigente em 15/10; nada ativo, sem notificação. Página oficial ENOTFOUND; Latam_PASS tool timeout; latam_miles_price.json inexistente.",
+  "nota_ciclo_15_10_monitor_06h": "2026-10-15T06:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% ate 06/09, Esfera/Livelo antigos; compra direta: ultima confirmada 65%/62% ate 02/10 (expirada), alegacao 'ate 28/10' (R$24,50 Itau/R$26,60 demais, 350k) com datas inconsistentes, sem vigencia confirmada — nao marcada ativa. Nada >=60%/<=48h. Pagina oficial ENOTFOUND; Latam_PASS timeout; blog de terceiros, confianca baixa. Sem notificacao."
 }
