@@ -84,5 +84,5 @@
       "nota": "cobrir os dois tipos de promoção sempre, não só transferência — descontos de compra direta têm sua própria dinâmica (faixas por perfil de cliente, ver state/promocoes.json). A partir de 27/08/2026 checar também bônus de transferência Inter Loop/Prime → LATAM Pass, relevante para o saldo de pontos do Pedro (ver state/perfil.json.companheiro_viagem e state/saldo.json.pedro)."
     }
   ],
-  "ultimo_dashboard_completo": "2026-10-15T12:30:00Z"
+  "ultimo_dashboard_completo": "2026-10-16T12:10:00Z"
 }
