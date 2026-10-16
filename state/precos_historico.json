@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 8743,
+    "preco_total_brl": 8753,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-15T18:20:00Z",
-    "nota": "Monitor leve 2026-10-15T18:20:00Z (fallback lastminute+Kiwi; fli sem resultados). CUZ-LIM segue melhor (R$8743 vs LIM-CUZ R$9731). Sem queda >=15%."
+    "data_checagem": "2026-10-16T12:00:00Z",
+    "nota": "Monitor leve 2026-10-16T12:00:00Z (fallback lastminute+Kiwi; fli sem resultados). CUZ-LIM segue melhor (R$8753 vs LIM-CUZ R$9740). Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -13958,6 +13958,19 @@
         "fonte": "Fallback: fli 0 resultados (LA 2pax); Kiwi REC-LIM/REC-CUZ 0 resultados; lastminute (LA, 2 pax, EUR a ~5,28) ida + Kiwi (LA, 2 pax). REC-LIM 10/06 EUR697.14 (R$3681) + LIM-CUZ 13/06 R$743 + CUZ-REC 19/06 R$5307",
         "media_movel_30_checagens": 9033.85,
         "variacao_pct_vs_media": 7.72,
+        "nota": "Monitor leve. Variante x2d nao recotada. Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-16T12:00:00Z",
+        "preco_total_brl": 9740,
+        "fonte": "Fallback: fli 0 resultados (LA 2pax); lastminute (LA, 2 pax, EUR a ~5,28) ida + Kiwi (LA, 2 pax). REC-LIM 10/06 EUR698.94 (R$3690) + LIM-CUZ 13/06 R$743 + CUZ-REC 19/06 R$5307",
+        "media_movel_30_checagens": 9077.87,
+        "variacao_pct_vs_media": 7.29,
         "nota": "Monitor leve. Variante x2d nao recotada. Sem queda >=15%."
       }
     ],
@@ -28160,10 +28173,23 @@
         "media_movel_30_checagens": 8838.9,
         "variacao_pct_vs_media": -1.08,
         "nota": "Monitor leve. Variante x2d nao recotada. Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-16T12:00:00Z",
+        "preco_total_brl": 8753,
+        "fonte": "Fallback: fli 0 resultados (LA 2pax); lastminute (LA, 2 pax, EUR a ~5,28) ida + Kiwi (LA, 2 pax). REC-CUZ 10/06 EUR700.72 (R$3700) + CUZ-LIM 16/06 R$670 + LIM-REC 19/06 R$4383",
+        "media_movel_30_checagens": 8813.27,
+        "variacao_pct_vs_media": -0.68,
+        "nota": "Monitor leve. Variante x2d nao recotada. Sem queda >=15%."
       }
     ]
   },
-  "ultima_checagem": "2026-10-15T18:20:00Z",
+  "ultima_checagem": "2026-10-16T12:00:00Z",
   "ultima_tentativa_parcial": "Monitor leve 2026-10-11T18:20:00Z: fli retornou 0 resultados (airlines=LA, 2 pax) em TODOS os 9 trechos e em search_dates; Kiwi (select_airlines=LA) tambem 0; lastminute REC-LIM 10/06 so deu 2 escalas EUR 697,04 (2 pax), nao comparavel com a serie fli em BRL. Nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$8686).",
   "ultima_tentativa_parcial_data": "2026-10-11T18:20:00Z"
 }
