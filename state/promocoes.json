@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-16T06:19:00Z",
+  "ultima_checagem": "2026-10-16T12:24:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -16,7 +16,7 @@
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-10-16T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10); Esfera 25% (bonus <60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND)."
+      "ultima_reconfirmacao": "2026-10-16T12:24:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10; item 'sexta 28' e antigo/ambiguo); Livelo/Esfera/Nubank 25% todos encerrados (<60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND)."
     },
     {
       "id": "modo-latam-pass-nubank",
@@ -32,7 +32,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-10-16T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10); Esfera 25% (bonus <60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-16T12:24:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10; item 'sexta 28' e antigo/ambiguo); Livelo/Esfera/Nubank 25% todos encerrados (<60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -48,7 +48,7 @@
       "confianca": "média-baixa — blog de terceiros, 1 fonte, data inconsistente",
       "ja_notificada": false,
       "acao_sugerida": "Abaixo do limiar de 60%; sem alerta.",
-      "ultima_reconfirmacao": "2026-10-16T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10); Esfera 25% (bonus <60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND)."
+      "ultima_reconfirmacao": "2026-10-16T12:24:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 65% encerrou 02/10; item 'sexta 28' e antigo/ambiguo); Livelo/Esfera/Nubank 25% todos encerrados (<60%, sem alerta); ofertas LATAM Pass inacessivel (ENOTFOUND)."
     }
   ],
   "expiradas": [
