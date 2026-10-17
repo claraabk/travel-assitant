@@ -1,309 +1,309 @@
 {
-  "ultima_checagem": "2026-10-17T18:20:00Z",
-  "ativas": [
-    {
-      "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
-      "tipo": "checagem_sem_oportunidade",
-      "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. CONFIRMADO em 27/08/2026 13h (dashboard completo): o Inter Loop/Prime NÃO tem rota de transferência para LATAM Pass — só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1). Encerra a hipótese levantada no ciclo anterior (12h31).",
-      "bonus_pct": null,
-      "e_permanente": false,
-      "valido_ate": null,
-      "fontes": [
-        "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 13h (query: 'Inter Loop pontos transferir LATAM Pass Azul Smiles quais programas') — síntese explícita: 'não é possível transferir pontos Inter Loop diretamente para o LATAM Pass. [...] o Inter Loop possui parcerias apenas com Azul Fidelidade e Smiles.'",
-        "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/",
-        "https://passageirodeprimeira.com/transforme-pontos-em-passagem-como-enviar-pontos-inter-loop-para-smiles-ou-azul-fidelidade/"
-      ],
-      "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
-      "ja_notificada": false,
-      "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-10-17T18:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; Inter Loop sem rota para LATAM Pass; ofertas LATAM Pass inacessivel (ENOTFOUND)."
-    },
-    {
-      "id": "modo-latam-pass-nubank",
-      "tipo": "conversao_automatica_permanente",
-      "descricao": "Modo LATAM Pass do Nubank Ultravioleta: converte pontos em milhas LATAM Pass automaticamente a cada 7 dias, com 10% de bônus sobre o total convertido no período. Não ativado no perfil da Clara.",
-      "bonus_pct": 10,
-      "e_permanente": true,
-      "valido_ate": null,
-      "fontes": [
-        "https://international.nubank.com.br/pt-br/consumidores/nubank-ultravioleta-lanca-modo-latam-pass/",
-        "https://nubank.com.br/ultravioleta/cartao-black/modo-latam-pass"
-      ],
-      "confianca": "alta (2+ fontes, inclusive site oficial)",
-      "ja_notificada": false,
-      "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-10-17T18:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; Inter Loop sem rota para LATAM Pass; ofertas LATAM Pass inacessivel (ENOTFOUND).",
-      "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
-    },
-    {
-      "id": "esfera-latam-pass-25pct-out2026",
-      "tipo": "bonus_transferencia",
-      "descricao": "Esfera→LATAM Pass 25% de bônus (+1.000 milhas na 1ª transferência), teto 300.000 milhas extras/CPF. Data de término citada como 25/10 — inconsistente com o dia da semana; confirmar no site da Esfera.",
-      "bonus_pct": 25,
-      "e_permanente": false,
-      "valido_ate": "2026-10-25",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-da-esfera-2/"
-      ],
-      "confianca": "média-baixa — blog de terceiros, 1 fonte, data inconsistente",
-      "ja_notificada": false,
-      "acao_sugerida": "Abaixo do limiar de 60%; sem alerta.",
-      "ultima_reconfirmacao": "2026-10-17T18:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; Inter Loop sem rota para LATAM Pass; ofertas LATAM Pass inacessivel (ENOTFOUND)."
-    }
-  ],
-  "expiradas": [
-    {
-      "id": "latam-pass-desconto-compra-milhas-por-perfil",
-      "tipo": "desconto_compra_direta",
-      "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Última edição ativa: 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app. Milheiro a partir de ~R$24,50 numa edição citada.",
-      "desconto_pct_itau": 65,
-      "desconto_pct_geral": 62,
-      "milheiro_referencia_brl": 24.5,
-      "e_permanente": false,
-      "recorrente": true,
-      "valido_ate": "2026-08-28",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-3/",
-        "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/",
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
-        "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
-      ],
-      "confianca": "alta para a mecânica geral; média para o preço exato e a data de término",
-      "ja_notificada": true,
-      "expirada_em": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 segue retornando os mesmos títulos recorrentes ('até 65%'/'até 60%'/'63%'/'Prorrogado'), mas nenhum confirma vigência além de 'hoje (28)' — sem fonte confirmando prorrogação para 29/08 ou depois. Conforme instrução de state/config.json (checar prorrogação vs. expiração), movida para expiradas por falta de confirmação. Se reaparecer com nova validade em ciclo futuro, tratar como oportunidade nova (id pode repetir). | 2026-09-01T12:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado', mencionando validade 'até sexta-feira (28)') -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (01/09). Sem mudança na conclusão (permanece expirada). | 2026-09-02T00:28:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado até 60%'/'até 63%'), síntese cita novamente 'válido somente até hoje (28)' e 'R$24,50 Itaú vs. R$26,60 demais' -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (02/09). Sem mudança na conclusão (permanece expirada). | 2026-09-02T06:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (02/09) -- WebFetch direto ao blog e à página oficial latampass.latam.com/pt_br/ofertas seguem EGRESS_BLOCKED, então não foi possível verificar diretamente se há edição ativa hoje além dos títulos históricos indexados pela busca. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-02T12:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (02/09) -- WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED, então não foi possível verificar diretamente se há edição ativa hoje além dos títulos históricos indexados pela busca. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-02T18:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'), sem nenhuma fonte nova confirmando vigência para hoje (02/09) além dos títulos indexados historicamente. WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-03T06:21:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, R$24,50/milheiro' e '55% clientes inscritos/Clube' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (03/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-03T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes, nenhuma fonte nova confirmando edição ativa hoje (03/09). Mantida em expiradas (sem mudança na conclusão). | 2026-09-06T06:20:00Z -- WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 63%'/'até 66%'/'Prorrogado'), síntese cita de novo o padrão geral (55-62% tier geral, 60-65% Itaú, R$24,50-26,60/milheiro) sem nenhuma data nova confirmando edição vigente hoje (06/09). Sem mudança na conclusão (permanece expirada).",
-      "reconfirmacao_seguinte": "2026-08-29T06:18:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 06h18 segue retornando o mesmo texto ('LATAM Pass oferece até 65% de desconto na compra de milhas... válido até hoje (28)'), sem nenhuma fonte nova confirmando prorrogação para 29/08. Mantida em expiradas — sem evidência de vigência hoje. | 2026-08-29T12:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 12h20 segue retornando os mesmos títulos recorrentes ('até 65%'/'até 60%'/'63%'/'Prorrogado'/'até 66%'), sem nenhuma fonte nova confirmando vigência para 29/08 ou depois. Mantida em expiradas — sem evidência de vigência hoje. | 2026-08-29T18:18:52Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 18h18 segue retornando os mesmos títulos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'/'Último dia'), todos sem data explícita cobrindo hoje. Mantida em expiradas — sem evidência de vigência hoje. Se uma nova edição com data confirmada aparecer, tratar como oportunidade nova. | 2026-08-30T00:18:39Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 00h18 segue retornando os mesmos titulos recorrentes ('ate 60%'/'Prorrogado ate 60%'/'ate 65%'/'ate 66%'), sem nenhuma fonte nova confirmando vigencia para hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. Se uma nova edicao com data confirmada aparecer, tratar como oportunidade nova. | 2026-08-30T06:17:53Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 06h18 segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'ate 66%'/'Prorrogado'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-30T12:20:53Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 12h20 segue retornando os mesmos titulos recorrentes ('ate 65% Itau R$24,50/'ate 60%'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-30T18:24:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 18h24 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T00:19:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 00h19 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'63%'), incluindo sintese mencionando 'valido ate hoje (28)' -- texto de artigo antigo, sem nenhuma fonte nova confirmando vigencia para 31/08. Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T06:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 06h20 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'ate 63%'/'ate 66%'/'Prorrogado'), nenhum com data confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T12:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 12h22 segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'Prorrogado ate 60%'), nenhum com data confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T18:20:00Z — WebSearch (passageirodeprimeira.com, query obrigatoria do ciclo) segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'ate 63%'/'ate 66%'), sintese desta busca cita '60% para titulares Itau, 55% para inscritos/Clube' e 'R$24,50 Itau vs. R$26,60 demais' -- valores identicos ao padrao ja registrado, sem nenhuma data nova confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-09-01T00:25:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatorias do ciclo) segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'62%'/'55%'/'ate 66%'), incluindo sintese citando 'valido apenas ate hoje (28)' (texto de artigo antigo) e uma mencao a cartao Itau valido 'ate 14 de setembro de 2026' que se refere a uma oferta diferente (adesao de cartao, nao desconto de compra de milhas). Nenhuma fonte nova confirma vigencia da promocao de desconto na compra de milhas para 01/09/2026. Mantida em expiradas -- sem evidencia de vigencia hoje. Se reaparecer com data explicita cobrindo hoje, tratar como oportunidade nova (id pode repetir). | 2026-09-01T06:22:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatorias do ciclo monitor leve de 01/09 06h22) segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'ate 63%'), sintese desta busca cita novamente 'valido ate sexta-feira dia 28' (texto de artigo antigo, mesmo padrao de ciclos anteriores) e '24,50 Itau vs. 26,60 demais'. Nenhuma fonte nova confirma vigencia para 01/09/2026. Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-09-01T18:26:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatórias do ciclo monitor leve de 01/09 18h26) segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado'/'até 60%'/'63%'), síntese cita novamente 'válido até hoje (28)' e 'R$24,50 Itaú vs. R$26,60 demais' -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (01/09). Sem mudança na conclusão (permanece expirada). | 2026-09-03T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente 'válido até sexta-feira (28)' (artigo antigo, referente a 28/08/2026) e 'R$24,50 Itaú vs. R$26,60 demais' (preço 'demais' idêntico ao tier sem desconto do scraper local, state/latam_miles_price.json). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Nenhuma fonte nova confirma edição ativa/vigente hoje (03/09). Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão).",
-      "compra_confirmada": {
-        "data": "2026-08-26",
-        "milhas": 5000,
-        "preco_pago_brl": 133,
-        "cpm_real_brl": 26.6,
-        "nota": "Clara confirmou a compra diretamente durante a vigência desta promoção. Ver state/saldo.json."
-      },
-      "acao_sugerida": "Promoção encerrada (sem confirmação de prorrogação). Reavaliar se/quando uma nova edição de desconto na compra direta aparecer nos próximos ciclos.",
-      "ultima_reconfirmacao": " | 2026-09-03T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (03/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T06:22:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T12:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'), síntese cita novamente '55% para inscritos/Clube' e 'R$24,50 Itaú' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T18:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú/55% inscritos-Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09 18h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T06:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 66%'/'63%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'lotes de 1.000 milhas, parcelamento em até 10x, limite de 350.000 milhas, crédito em até 48h' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T12:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 66%'/'63%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'R$24,50 Itaú vs. R$26,60 demais, lotes de 1.000 milhas, parcelamento em até 10x, limite de 350.000 milhas' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09 12h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e 'limite de 350.000 milhas, lotes de 1.000, parcelamento em até 10x, credito em ate 48h' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09 18h19). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T00:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '55% de desconto na compra de até 350 mil milhas para todos os clientes inscritos no programa e/ou assinantes do Clube LATAM Pass' e '60% para titulares de cartão LATAM Pass Itaú' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (06/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T12:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 63%'/'Prorrogado até 60%'/'até 65%'/'até 66%, milheiro R$23,80'), síntese cita de novo '60% Itaú (R$24,50/milheiro), 62% demais clientes pelo app (R$26,60)' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando edição vigente hoje (06/09 12h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'até 63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e o padrão de lotes de 1.000 milhas/parcelamento em até 10x -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando edição vigente hoje (06/09 18h19). Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão)."
-    },
-    {
-      "id": "livelo-azul-120pct-ago2026",
-      "tipo": "bonus_transferencia_temporario",
-      "descricao": "Livelo → Azul Fidelidade, até 120% de bônus na transferência.",
-      "bonus_pct": 120,
-      "e_permanente": false,
-      "valido_ate": "2026-08-21",
-      "programa_destino": "Azul Fidelidade (NÃO é LATAM Pass — irrelevante para esta viagem)",
-      "fontes": [
-        "https://pontospravoar.com/17-anos-azul-fidelidade-transfira-pontos-livelo-receba-ate-120-porcento-bonus/"
-      ],
-      "confianca": "média",
-      "ja_notificada": false,
-      "acao_sugerida": "Ignorar — restrição fixa da viagem é LATAM Pass, não Azul. Já expirada em 21/08/2026."
-    },
-    {
-      "id": "livelo-connectmiles-40pct-ago2026",
-      "tipo": "bonus_transferencia_temporario",
-      "descricao": "Livelo → ConnectMiles (Copa Airlines), até 40% de bônus.",
-      "bonus_pct": 40,
-      "e_permanente": false,
-      "valido_ate": "2026-08-14",
-      "programa_destino": "ConnectMiles (NÃO é LATAM Pass — irrelevante para esta viagem)",
-      "fontes": [
-        "citado em busca web de 25/08/2026"
-      ],
-      "confianca": "média",
-      "ja_notificada": false,
-      "acao_sugerida": "Ignorar — programa errado para esta viagem. Já expirada."
-    },
-    {
-      "id": "festival-pontos-livelo-ago2026",
-      "tipo": "evento_calendario",
-      "descricao": "Festival de Pontos Livelo, 25–26 de agosto de 2026 — evento anual, mas a busca não retornou o detalhe específico de bônus por parceiro/programa para esta edição.",
-      "bonus_pct": null,
-      "e_permanente": false,
-      "valido_ate": "2026-08-26",
-      "fontes": [
-        "https://www.livelo.com.br/como-juntar-pontos-rapido-calendario-de-bonus-livelo"
-      ],
-      "confianca": "baixa — falta confirmação de 2ª fonte com o bônus específico para LATAM Pass",
-      "ja_notificada": false,
-      "acao_sugerida": "Checar diretamente no app/site Livelo hoje (26/08 ainda dentro do evento) se há bônus específico para transferência à LATAM Pass antes de reportar como oportunidade."
-    },
-    {
-      "id": "nomad-8000-milhas-1a-operacao-cambio",
-      "tipo": "acumulo_parceria",
-      "descricao": "8.000 milhas LATAM Pass na 1ª operação de câmbio pela Nomad, promoção válida até 31/08/2026.",
-      "bonus_pct": null,
-      "e_permanente": false,
-      "valido_ate": "2026-08-31",
-      "fontes": [
-        "busca web agregada de 26/08/2026 — sem link direto isolado, mas conteúdo específico o suficiente (valor exato, prazo exato, parceiro nomeado) para tratar como fonte única aceitável"
-      ],
-      "confianca": "1 fonte — aceita pela política de fonte única",
-      "ja_notificada": false,
-      "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Prazo termina em poucos dias (31/08) — vale mencionar no dashboard.",
-      "expirada_em": "2026-09-01T00:25:00Z — valido_ate (2026-08-31) já passou (hoje é 2026-09-01, data do ciclo monitor leve). Movida de ativas para expiradas conforme regra de state/promocoes.json / docs/agente-viagem.md (oportunidades expiradas não voltam a ser mostradas no dashboard, mantidas aqui só como histórico)."
-    },
-    {
-      "id": "latam-pass-desconto-compra-milhas-set2026",
-      "tipo": "desconto_compra_direta",
-      "descricao": "Campanha de desconto na compra direta de milhas LATAM Pass reaparece com validade confirmada até 30/09/2026 (2 buscas WebSearch independentes neste ciclo convergem no mesmo prazo, ao contrário dos ~15 ciclos anteriores que só traziam títulos recorrentes sem data confirmando vigência atual). 60% de desconto para titulares do cartão LATAM Pass Itaú (Clara e Pedro NÃO têm), 55% de desconto para todos os clientes inscritos no programa LATAM Pass e/ou assinantes do Clube (Clara e Pedro SE QUALIFICAM — ver state/perfil.json.elegivel_desconto_geral_todos_clientes=true para ambos). Compra em lotes de 1.000 milhas, parcelamento em até 10x sem juros (Elo/Mastercard/Visa), limite de 350.000 milhas por CPF.",
-      "desconto_pct_itau": 65,
-      "desconto_pct_geral": 62,
-      "aplica_a_clara_e_pedro": true,
-      "limite_milhas_por_cpf": 350000,
-      "e_permanente": false,
-      "recorrente": true,
-      "valido_ate": "2026-10-02",
-      "fontes": [
-        "WebSearch allowed_domains=passageirodeprimeira.com, query 'LATAM Pass compra de milhas desconto setembro 2026' (07/09 00h20) -- síntese explícita: 'a LATAM prorrogou a campanha com oferta válida até o dia 30 de setembro de 2026'",
-        "WebSearch allowed_domains=passageirodeprimeira.com, query '\"LATAM Pass\" desconto compra milhas \"30 de setembro\" prorrogado' (07/09 00h20, busca de confirmação) -- reconfirma 'válido até terça-feira (30)' com os mesmos 2 tiers (60% Itaú / 55% inscritos-Clube), limite de 350.000 milhas",
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas-5/",
-        "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/"
-      ],
-      "confianca": "média-alta — blog de terceiros (site oficial latampass.latam.com/pt_br/ofertas segue EGRESS_BLOCKED nesta sessão), mas 2 buscas independentes neste ciclo convergem na mesma data de validade (30/09/2026), diferente dos ciclos anteriores que só traziam títulos recorrentes sem data confirmando vigência atual (por isso a edição anterior deste mesmo tipo ficou em 'expiradas' desde 29/08/2026). Tratar como sinal real de nova prorrogação; reconfirmar % exato logada no app/site antes de comprar.",
-      "ja_notificada": true,
-      "acao_sugerida": "Ativa ate sexta 02/10 (65% Itau R$24,50 / R$26,60 demais). Ja notificada; confirmar % no app logada. Compra so com o 'Vai' da Clara.",
-      "ultima_reconfirmacao": "2026-10-02T18:00:00Z: WebSearch passageirodeprimeira.com reconfirma ate 65% (Itau) / 62% (geral) valido ate sexta 02/10; expira hoje, mover para expiradas no proximo ciclo. ja notificada. Transferencia: nenhum bonus >=60% encontrado (so 25-35% historicos/Ultravioleta 25%).",
-      "confianca_validade": " | 2026-09-25T06:20:00Z: WebSearch (passageirodeprimeira.com) reconfirma ~60/63% ativo; um artigo deste ciclo cita validade ate 29/09 (vs. 30/09/2026 ja registrado) -- divergencia leve entre fontes de blog, mantido valido_ate=2026-09-30 ate a pagina oficial confirmar. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T00:26:00Z: WebSearch (passageirodeprimeira.com) traz sinal misto -- tier ja confirmado (60%/63%, valido_ate=2026-09-30) segue aparecendo sem nenhuma fonte de encerramento antecipado, mas artigos tambem citam um tier mais alto (64% geral/66% Itau) sem data explicita cobrindo hoje. Mantido valido_ate=2026-09-30 e percentuais 60%/63% ate a pagina oficial ou uma fonte com data clara confirmar o tier mais alto. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T06:18:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; uma fonte cita 'sexta-feira (29)', mesma divergencia leve ja registrada. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados. | 2026-09-27T18:21:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; titulos historicos recorrentes seguem sem data nova. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados.",
-      "nota_ciclo_2026_09_30": "Reconfirmado por WebSearch passageirodeprimeira.com (65% Itau R$24,50 / R$26,60 demais); sem data nova de vigencia. valido_ate=30/09 (hoje) -- mover para expiradas no proximo ciclo. Ja notificada, sem novo alerta.",
-      "nota_ciclo_2026_09_30_12h": "WebSearch cita 'ate 65% ate sexta (2)' (Itau R$24,50 / demais R$26,60), possivel prorrogacao ate 02/10 -- nao confirmada; mantido valido_ate=30/09 (hoje). Mover para expiradas no proximo ciclo se sem confirmacao.",
-      "valido_ate_original": "2026-10-02",
-      "nota_ciclo_2026_10_01_12h": "WebSearch passageirodeprimeira.com: 'ate 65% ate sexta-feira (2)' = 02/10/2026; reativada (estava em expiradas por engano). Sem novo push (ja_notificada).",
-      "status_encerramento": "WebSearch 03/10: campanha (65% Itau / ~62% geral, ate 350k milhas) valida ate sexta 02/10; encerrada. Sem nova campanha confirmada."
-    },
-    {
-      "id": "esfera-latam-pass-25a30pct-1000milhas",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece 25–30% de bônus na transferência de pontos Esfera→LATAM Pass, mais 1.000 milhas bônus na primeira transferência. Milhas extras creditadas em até 30 dias, limite de 300.000 milhas extras por CPF. Validade de 36 meses (ou sem expiração se sócio Categoria Elite).",
-      "bonus_pct_min": 25,
-      "bonus_pct_max": 30,
-      "bonus_fixo_milhas_primeira_vez": 1000,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "múltiplos artigos do mesmo blog ao longo de 2026 com % variando entre 25 e 30 — parece campanha recorrente/rotativa, não uma edição única. Checar % vigente antes de agir.",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-30-de-bonus-na-transferencia-de-pontos-da-esfera-3/",
-        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
-      ],
-      "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro.",
-      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
-    },
-    {
-      "id": "nubank-latam-pass-30pct-1500milhas",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
-      "bonus_pct": 30,
-      "bonus_fixo_milhas_primeira_vez": 1500,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "página oficial não trouxe data de término explícita nesta busca — checar latampass.latam.com/pt_br/promocao/nubank-milhas-extras antes de agir, pode ser campanha corrente e não eterna",
-      "fontes": [
-        "https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras",
-        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-do-nubank/"
-      ],
-      "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
-      "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
-      "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta.",
-      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
-    },
-    {
-      "id": "livelo-latam-pass-25pct-recorrente",
-      "tipo": "bonus_transferencia_direcionado",
-      "descricao": "LATAM Pass oferece bônus de transferência de pontos Livelo→LATAM Pass. Múltiplos artigos do blog ao longo de 2025/2026 (\"Só hoje\", \"Últimas horas\", \"Último dia\") confirmam 25% de bônus como o valor recorrente dessa campanha — parece ser um formato de campanha relâmpago que se repete periodicamente, não uma oferta permanente.",
-      "bonus_pct": 25,
-      "bonus_pct_max_observado": 35,
-      "e_permanente": false,
-      "valido_ate": null,
-      "confianca_validade": "ciclo de 26/08/2026 18h55 encontrou título explícito confirmando 35% (\"LATAM Pass oferece até 35% de bônus na transferência de pontos Livelo\" e \"Últimas horas para ganhar até 35%...\") — upgrade de confiança vs. ciclo anterior, que só tinha a síntese da busca mencionando 35% sem título batendo. 25% continua aparecendo em títulos mais antigos/recorrentes; parece que a campanha rotativa varia entre 25% e 35% conforme a edição. Checar % vigente no app antes de transferir.",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-incluindo-itau-e-esfera/",
-        "https://passageirodeprimeira.com/so-hoje-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo-2/",
-        "https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo/",
-        "https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo-2/ (confirma 35%, encontrada no ciclo de 26/08/2026 18h55)",
-        "https://passageirodeprimeira.com/ultimas-horas-para-ganhar-ate-35-de-bonus-na-transferencia-de-pontos-livelo-para-latam-pass/ (confirma 35%, mesmo ciclo)",
-        "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
-      ],
-      "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
-      "ja_notificada": false,
-      "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
-      "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro.",
-      "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
-    }
-  ],
-  "checagem_20261001_21h": {
-    "latampass_ofertas": "EGRESS_BLOCKED",
-    "busca_transferencia": "passageirodeprimeira.com: somente 25% Livelo/Esfera/Nubank (recorrentes) e historicos de 30-35%; nenhum bonus >=60% nem prazo <=48h confirmado.",
-    "busca_compra_direta": "resultados sao edicoes anteriores (65%/62%, milheiro R$24,50-26,60; 'valido ate sexta' sem data) - nao confirmam campanha vigente em 01/10/2026; sem notificacao.",
-    "inter_loop": "sem rota LATAM Pass (ja confirmado)."
+ "ultima_checagem": "2026-10-17T22:20:00Z",
+ "ativas": [
+  {
+   "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
+   "tipo": "checagem_sem_oportunidade",
+   "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. CONFIRMADO em 27/08/2026 13h (dashboard completo): o Inter Loop/Prime NÃO tem rota de transferência para LATAM Pass — só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1). Encerra a hipótese levantada no ciclo anterior (12h31).",
+   "bonus_pct": null,
+   "e_permanente": false,
+   "valido_ate": null,
+   "fontes": [
+    "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 13h (query: 'Inter Loop pontos transferir LATAM Pass Azul Smiles quais programas') — síntese explícita: 'não é possível transferir pontos Inter Loop diretamente para o LATAM Pass. [...] o Inter Loop possui parcerias apenas com Azul Fidelidade e Smiles.'",
+    "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/",
+    "https://passageirodeprimeira.com/transforme-pontos-em-passagem-como-enviar-pontos-inter-loop-para-smiles-ou-azul-fidelidade/"
+   ],
+   "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
+   "ja_notificada": false,
+   "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
+   "ultima_reconfirmacao": "2026-10-17T22:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND)."
   },
-  "checagem_20261002_12h": {
-    "data": "2026-10-02T12:00:00Z",
-    "latampass_ofertas": "EGRESS_BLOCKED",
-    "passageirodeprimeira": "compra direta: edicao 'ate 65% Itau / 62% geral, milheiro R$24,50/R$26,60, ate 200k milhas' valida ate sexta (02/10) - ja notificada, expira hoje; transferencia: Livelo/Esfera/Nubank 25-35%, nada >=60%/<=48h",
-    "alerta_enviado": false
+  {
+   "id": "modo-latam-pass-nubank",
+   "tipo": "conversao_automatica_permanente",
+   "descricao": "Modo LATAM Pass do Nubank Ultravioleta: converte pontos em milhas LATAM Pass automaticamente a cada 7 dias, com 10% de bônus sobre o total convertido no período. Não ativado no perfil da Clara.",
+   "bonus_pct": 10,
+   "e_permanente": true,
+   "valido_ate": null,
+   "fontes": [
+    "https://international.nubank.com.br/pt-br/consumidores/nubank-ultravioleta-lanca-modo-latam-pass/",
+    "https://nubank.com.br/ultravioleta/cartao-black/modo-latam-pass"
+   ],
+   "confianca": "alta (2+ fontes, inclusive site oficial)",
+   "ja_notificada": false,
+   "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
+   "ultima_reconfirmacao": "2026-10-17T22:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND).",
+   "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
   },
-  "ultima_checagem_bonus_transferencia": "2026-10-02T12:19:43Z: WebSearch passageirodeprimeira.com sem bonus de transferencia novo para LATAM Pass; nada >=60%.",
-  "checagem_20261003_06h": {
-    "fonte": "WebSearch passageirodeprimeira.com (transferencia + compra direta); Inter Loop/Prime sem rota LATAM Pass",
-    "resultado": "Compra direta: campanha anterior encerrada 02/10, ja notificada. Transferencia: Nubank 25% ate 04/10 (<60%). Nenhum gatilho de alerta."
+  {
+   "id": "esfera-latam-pass-25pct-out2026",
+   "tipo": "bonus_transferencia",
+   "descricao": "Esfera→LATAM Pass 25% de bônus (+1.000 milhas na 1ª transferência), teto 300.000 milhas extras/CPF. Data de término citada como 25/10 — inconsistente com o dia da semana; confirmar no site da Esfera.",
+   "bonus_pct": 25,
+   "e_permanente": false,
+   "valido_ate": "2026-10-25",
+   "fontes": [
+    "https://passageirodeprimeira.com/latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-da-esfera-2/"
+   ],
+   "confianca": "média-baixa — blog de terceiros, 1 fonte, data inconsistente",
+   "ja_notificada": false,
+   "acao_sugerida": "Abaixo do limiar de 60%; sem alerta.",
+   "ultima_reconfirmacao": "2026-10-17T22:20:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND)."
+  }
+ ],
+ "expiradas": [
+  {
+   "id": "latam-pass-desconto-compra-milhas-por-perfil",
+   "tipo": "desconto_compra_direta",
+   "descricao": "Padrão recorrente ao longo de 2026 (múltiplos artigos, não uma promoção isolada): LATAM oferece desconto na compra direta de milhas em faixas por perfil de cliente. Última edição ativa: 65% para portadores do cartão LATAM Pass Itaú, 62% para TODOS os clientes LATAM Pass comprando pelo app. Milheiro a partir de ~R$24,50 numa edição citada.",
+   "desconto_pct_itau": 65,
+   "desconto_pct_geral": 62,
+   "milheiro_referencia_brl": 24.5,
+   "e_permanente": false,
+   "recorrente": true,
+   "valido_ate": "2026-08-28",
+   "fontes": [
+    "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-3/",
+    "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/",
+    "https://passageirodeprimeira.com/latam-pass-oferece-ate-65-de-desconto-na-compra-de-milhas-milheiro-a-partir-de-r-2450-2/",
+    "https://passageirodeprimeira.com/ultimas-horas-compre-milhas-latam-pass-com-ate-66-de-desconto/"
+   ],
+   "confianca": "alta para a mecânica geral; média para o preço exato e a data de término",
+   "ja_notificada": true,
+   "expirada_em": "2026-08-29T00:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 segue retornando os mesmos títulos recorrentes ('até 65%'/'até 60%'/'63%'/'Prorrogado'), mas nenhum confirma vigência além de 'hoje (28)' — sem fonte confirmando prorrogação para 29/08 ou depois. Conforme instrução de state/config.json (checar prorrogação vs. expiração), movida para expiradas por falta de confirmação. Se reaparecer com nova validade em ciclo futuro, tratar como oportunidade nova (id pode repetir). | 2026-09-01T12:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado', mencionando validade 'até sexta-feira (28)') -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (01/09). Sem mudança na conclusão (permanece expirada). | 2026-09-02T00:28:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado até 60%'/'até 63%'), síntese cita novamente 'válido somente até hoje (28)' e 'R$24,50 Itaú vs. R$26,60 demais' -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (02/09). Sem mudança na conclusão (permanece expirada). | 2026-09-02T06:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (02/09) -- WebFetch direto ao blog e à página oficial latampass.latam.com/pt_br/ofertas seguem EGRESS_BLOCKED, então não foi possível verificar diretamente se há edição ativa hoje além dos títulos históricos indexados pela busca. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-02T12:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (02/09) -- WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED, então não foi possível verificar diretamente se há edição ativa hoje além dos títulos históricos indexados pela busca. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-02T18:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'), sem nenhuma fonte nova confirmando vigência para hoje (02/09) além dos títulos indexados historicamente. WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-03T06:21:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, R$24,50/milheiro' e '55% clientes inscritos/Clube' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (03/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-03T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes, nenhuma fonte nova confirmando edição ativa hoje (03/09). Mantida em expiradas (sem mudança na conclusão). | 2026-09-06T06:20:00Z -- WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 63%'/'até 66%'/'Prorrogado'), síntese cita de novo o padrão geral (55-62% tier geral, 60-65% Itaú, R$24,50-26,60/milheiro) sem nenhuma data nova confirmando edição vigente hoje (06/09). Sem mudança na conclusão (permanece expirada).",
+   "reconfirmacao_seguinte": "2026-08-29T06:18:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 06h18 segue retornando o mesmo texto ('LATAM Pass oferece até 65% de desconto na compra de milhas... válido até hoje (28)'), sem nenhuma fonte nova confirmando prorrogação para 29/08. Mantida em expiradas — sem evidência de vigência hoje. | 2026-08-29T12:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 12h20 segue retornando os mesmos títulos recorrentes ('até 65%'/'até 60%'/'63%'/'Prorrogado'/'até 66%'), sem nenhuma fonte nova confirmando vigência para 29/08 ou depois. Mantida em expiradas — sem evidência de vigência hoje. | 2026-08-29T18:18:52Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 29/08 18h18 segue retornando os mesmos títulos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'/'Último dia'), todos sem data explícita cobrindo hoje. Mantida em expiradas — sem evidência de vigência hoje. Se uma nova edição com data confirmada aparecer, tratar como oportunidade nova. | 2026-08-30T00:18:39Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 00h18 segue retornando os mesmos titulos recorrentes ('ate 60%'/'Prorrogado ate 60%'/'ate 65%'/'ate 66%'), sem nenhuma fonte nova confirmando vigencia para hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. Se uma nova edicao com data confirmada aparecer, tratar como oportunidade nova. | 2026-08-30T06:17:53Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 06h18 segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'ate 66%'/'Prorrogado'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-30T12:20:53Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 12h20 segue retornando os mesmos titulos recorrentes ('ate 65% Itau R$24,50/'ate 60%'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-30T18:24:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 30/08 18h24 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'63%'), nenhum com data confirmando vigencia hoje (30/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T00:19:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 00h19 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'63%'), incluindo sintese mencionando 'valido ate hoje (28)' -- texto de artigo antigo, sem nenhuma fonte nova confirmando vigencia para 31/08. Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T06:20:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 06h20 segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'ate 63%'/'ate 66%'/'Prorrogado'), nenhum com data confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T12:22:00Z — WebSearch (passageirodeprimeira.com) do ciclo monitor leve de 31/08 12h22 segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'Prorrogado ate 60%'), nenhum com data confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-08-31T18:20:00Z — WebSearch (passageirodeprimeira.com, query obrigatoria do ciclo) segue retornando os mesmos titulos recorrentes ('ate 60%'/'ate 65%'/'ate 63%'/'ate 66%'), sintese desta busca cita '60% para titulares Itau, 55% para inscritos/Clube' e 'R$24,50 Itau vs. R$26,60 demais' -- valores identicos ao padrao ja registrado, sem nenhuma data nova confirmando vigencia hoje (31/08). Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-09-01T00:25:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatorias do ciclo) segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'62%'/'55%'/'ate 66%'), incluindo sintese citando 'valido apenas ate hoje (28)' (texto de artigo antigo) e uma mencao a cartao Itau valido 'ate 14 de setembro de 2026' que se refere a uma oferta diferente (adesao de cartao, nao desconto de compra de milhas). Nenhuma fonte nova confirma vigencia da promocao de desconto na compra de milhas para 01/09/2026. Mantida em expiradas -- sem evidencia de vigencia hoje. Se reaparecer com data explicita cobrindo hoje, tratar como oportunidade nova (id pode repetir). | 2026-09-01T06:22:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatorias do ciclo monitor leve de 01/09 06h22) segue retornando os mesmos titulos recorrentes ('ate 65%'/'ate 60%'/'ate 63%'), sintese desta busca cita novamente 'valido ate sexta-feira dia 28' (texto de artigo antigo, mesmo padrao de ciclos anteriores) e '24,50 Itau vs. 26,60 demais'. Nenhuma fonte nova confirma vigencia para 01/09/2026. Mantida em expiradas -- sem evidencia de vigencia hoje. | 2026-09-01T18:26:00Z — WebSearch (passageirodeprimeira.com, ambas queries obrigatórias do ciclo monitor leve de 01/09 18h26) segue retornando os mesmos títulos recorrentes ('até 65%'/'Prorrogado'/'até 60%'/'63%'), síntese cita novamente 'válido até hoje (28)' e 'R$24,50 Itaú vs. R$26,60 demais' -- mesma edição já expirada em 28/08/2026, nenhuma fonte confirma edição nova/vigente hoje (01/09). Sem mudança na conclusão (permanece expirada). | 2026-09-03T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente 'válido até sexta-feira (28)' (artigo antigo, referente a 28/08/2026) e 'R$24,50 Itaú vs. R$26,60 demais' (preço 'demais' idêntico ao tier sem desconto do scraper local, state/latam_miles_price.json). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Nenhuma fonte nova confirma edição ativa/vigente hoje (03/09). Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão).",
+   "compra_confirmada": {
+    "data": "2026-08-26",
+    "milhas": 5000,
+    "preco_pago_brl": 133,
+    "cpm_real_brl": 26.6,
+    "nota": "Clara confirmou a compra diretamente durante a vigência desta promoção. Ver state/saldo.json."
+   },
+   "acao_sugerida": "Promoção encerrada (sem confirmação de prorrogação). Reavaliar se/quando uma nova edição de desconto na compra direta aparecer nos próximos ciclos.",
+   "ultima_reconfirmacao": " | 2026-09-03T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (03/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), sem nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T06:22:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T12:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'), síntese cita novamente '55% para inscritos/Clube' e 'R$24,50 Itaú' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-04T18:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú/55% inscritos-Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (04/09 18h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T00:23:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'63%'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'R$24,50 Itaú vs. R$26,60 demais' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T06:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 66%'/'63%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'lotes de 1.000 milhas, parcelamento em até 10x, limite de 350.000 milhas, crédito em até 48h' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T12:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'até 66%'/'63%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% clientes inscritos no programa/Clube' e 'R$24,50 Itaú vs. R$26,60 demais, lotes de 1.000 milhas, parcelamento em até 10x, limite de 350.000 milhas' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09 12h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-05T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e 'limite de 350.000 milhas, lotes de 1.000, parcelamento em até 10x, credito em ate 48h' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (05/09 18h19). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T00:24:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 65%'/'63%'/'até 66%'/'Prorrogado'), síntese cita novamente '55% de desconto na compra de até 350 mil milhas para todos os clientes inscritos no programa e/ou assinantes do Clube LATAM Pass' e '60% para titulares de cartão LATAM Pass Itaú' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando vigência para hoje (06/09). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T12:18:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 60%'/'até 63%'/'Prorrogado até 60%'/'até 65%'/'até 66%, milheiro R$23,80'), síntese cita de novo '60% Itaú (R$24,50/milheiro), 62% demais clientes pelo app (R$26,60)' -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando edição vigente hoje (06/09 12h18). WebFetch direto à página oficial latampass.latam.com/pt_br/ofertas seguiu EGRESS_BLOCKED. Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão). | 2026-09-06T18:19:00Z — WebSearch (passageirodeprimeira.com, query obrigatória do ciclo: 'LATAM Pass compra de milhas desconto') segue retornando os mesmos títulos históricos recorrentes ('até 65%'/'até 60%'/'até 63%'/'até 66%'/'Prorrogado'), síntese cita novamente '60% Itaú, 55% inscritos/Clube' e o padrão de lotes de 1.000 milhas/parcelamento em até 10x -- valores idênticos ao padrão já registrado, nenhuma data nova confirmando edição vigente hoje (06/09 18h19). Mantida em expiradas por falta de confirmação de vigência atual (sem mudança na conclusão)."
   },
-  "nota_ciclo_03_10_12h": "WebSearch passageirodeprimeira.com: transferencia 25-35% recorrente (nada >=60%/<=48h); compra direta ate 65% (62% p/ inscritos LATAM Pass) valida ate 02/10/2026 - expirada, sem desconto ativo. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_03_10_18h": "WebSearch passageirodeprimeira.com: compra direta sem desconto ativo (65% encerrou 02/10); Nubank 25% ate 04/10 (<60%); Livelo/Esfera sem edicao nova. Sem alerta.",
-  "nota_ciclo_03_10_21h": "Monitor leve 21h: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25% - todos <60%, sem alerta. Compra direta: resultados sem data confirmando promocao vigente; a ultima conhecida (ate 02/10) ja esta em expiradas - nenhuma ativa confirmada, sem alerta.",
-  "nota_ciclo_04_10_03h": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: compra direta so edicao 65%/62% valida ate 02/10 (expirada, ja notificada), nenhuma ativa confirmada; transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25%, Inter sem bonus - todos <60%. Sem alerta.",
-  "nota_ciclo_04_10_09h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, Nubank 25% ate 04/10 23h59; nada >=60%. Compra direta: desconto 65% Itau / 62% geral (CPM R$24,50/26,60) valido ate sexta 02/10 = EXPIRADO, nenhum desconto ativo hoje. Pagina oficial EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_04_10_15h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta 65%/62% valida ate sexta 02/10 = expirada, nenhum desconto ativo; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%. Sem alerta.",
-  "nota_ciclo_04_10_12h_dashboard": "Dashboard diario: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta 65%/62% encerrou 02/10, nenhum desconto ativo. Nubank Ultravioleta 25% (15%+10% Modo) ate 23h59 de 04/10, abaixo de 60%. Livelo/Esfera 25-35% recorrentes. Sem alerta; ativas sem valido_ate vencido.",
-  "nota_ciclo_04_10_12h25_monitor": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): compra direta 65%/62% valida ate 02/10 = expirada, nenhuma ativa; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter/Loop sem bonus LATAM Pass. Sem alerta.",
-  "ultima_verificacao_monitor_leve": "2026-10-11T12:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nada >=60%/<=48h; Livelo 25% ate 22/09 e Nubank 25% ate 06/09 expirados; Esfera/Inter sem oferta vigente; compra direta: ultima 65%/62% ate 02/10 (expirada), sem oferta nova confirmada (datas inconsistentes). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Nenhum alerta.",
-  "nota_ultima_verificacao": "WebSearch passageirodeprimeira (2 queries): transferencia so titulos 25-35% (Livelo/Esfera/Nubank), nenhum >=60%; Inter sem bonus encontrado. Compra direta: so titulos recorrentes (60-66%) sem data de vigencia confirmada, ultima vigencia conhecida expirou 02/10 — nao marcada ativa. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_05_10_18h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos 60-66% sem vigencia confirmada, ultima conhecida expirou 02/10 (ja notificada) - nao marcada ativa. Sem alerta.",
-  "obs_ciclo_2026_10_05_12h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta: resultados sao da campanha ate 65% que encerrou sexta 02/10 (nao confirmada ativa hoje). Sem alerta.",
-  "obs_ciclo_2026_10_05_dashboard": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes (Nubank 25% Modo LATAM Pass expirou 04/10), nada >=60%/<=48h; compra direta so titulos antigos (ate 65%, encerrou 02/10), nao ativa. Sem alerta.",
-  "nota_ciclo_05_10_monitor_18h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira (transferencia, compra direta, Inter): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h; Inter fora das campanhas; compra direta so titulos 60-66% sem vigencia confirmada (ultima conhecida expirou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
-  "nota_ciclo_06_10_monitor": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter sem bonus; compra direta so titulos antigos (ate 65-66%, encerrou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
-  "nota_ciclo_06_10_monitor_06h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos antigos (65%/66%, R\\$24,50 Itau vs R\\$26,60 demais), sem data cobrindo hoje - nao marcada ativa. Sem alerta.",
-  "nota_ciclo_06_10_monitor_12h": "2026-10-06T12:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus novo; transferencia so historico (Esfera 30%, Livelo 35%/20%, Nubank 25% ate 06/09/2026 - expirado); compra direta so a edicao 'ate 65% ate sexta (2)' = 02/10, expirada. Nenhum bonus >=60% e nenhum desconto ativo; sem alerta. Pagina oficial LATAM Pass: EGRESS_BLOCKED.",
-  "nota_ciclo_06_10_dashboard": "Dashboard 06/10: WebSearch passageirodeprimeira.com (transferencia + compra). Compra: so edicao antiga (60%/55% 'ate terca (30)' = 30/09), sem vigencia hoje. Transferencia: Esfera 25% ate 25/10 (ativa, sem >=60%), Nubank 25% encerrou 04/10; nada >=60%/<=48h. Sem alerta.",
-  "nota_ciclo_06_10_monitor_18h": "2026-10-06T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta: 60%/55% 'ate 30 de outubro' = edicao '(30)' de 30/09, expirada (confirmado por 2 buscas; sem edicao vigente). Transferencia: Esfera 25% ate 25/10, Nubank 25% encerrou 04/10; nada >=60%/<=48h. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_07_10_monitor_06h": "2026-10-07T06:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta) retornou so titulos historicos recorrentes (ate 65%/60%/66%, bonus 25-35%), sem data confirmando vigencia hoje; ofertas LATAM EGRESS_BLOCKED. Sem promocao nova, sem push.",
-  "nota_ciclo_07_10_monitor_12h": "WebSearch passageirodeprimeira.com: transferencia — Livelo ate 35%, Esfera 25-30%, Nubank 30% (recorrentes, sem data/>=60%/<=48h). Compra direta — ultimo desconto achado (ate 65%, milheiro R$26,60 geral / R$24,50 Itau) valido ate 02/10/2026, expirado; nenhum desconto novo ativo identificado. ofertas LATAM Pass: EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_07_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% valida ate 04/10 (expirada), Livelo/Esfera 25-35% recorrentes, nada >=60%/<=48h. Compra direta so titulos antigos (65%/62% ate 02/10, expirada), nenhuma ativa confirmada. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
-  "nota_ciclo_07_10_dashboard": "fli REC-LIM/LIM-CUZ 0 resultados, Kiwi REC-LIM 0; Latam_PASS Akamai timeout; ofertas oficiais EGRESS_BLOCKED. WebSearch passageirodeprimeira: compra direta 65%/62% 'ate sexta (2)' = expirada; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h. Ultima cotacao valida mantida (R$8973 LIM-CUZ, 01/10). Sem alerta.",
-  "nota_ciclo_07_10_monitor_21h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so titulos recorrentes/antigos (Livelo/Esfera 25-35%, Nubank 25%, compra 'ate 65%' edicao expirada 28/08); nada >=60% com prazo <=48h, nenhum desconto de compra direta vigente confirmado. latampass.latam.com/ofertas nao acessado (EGRESS_BLOCKED). Sem alerta.",
-  "nota_ciclo_2026_10_08": "WebSearch passageirodeprimeira.com: nenhum bonus de transferencia vigente >=60%; compra direta: ultima campanha (ate 65% Itaú/62% demais, ate 02/10) encerrada; nenhuma ativa confirmada. latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
-  "nota_ciclo_08_10_monitor_06h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 25-35% recorrentes (resultados antigos), nada >=60%/<=48h; Inter->LATAM Pass sem rota/bonus. Compra direta: ultima promo (ate 65%, R$24,50/26,60 o milheiro) foi de 02/10 e ja encerrou; resumo cita 'ate sexta (28)' sem mes confirmavel (provavel campanha antiga) - nao confirmada como ativa, sem alerta. Blog de terceiros, confianca baixa.",
-  "nota_ciclo_20261008_12h": "WebSearch passageirodeprimeira.com: transferencia sem campanha nova (25-35% recorrentes, nada >=60%); compra direta: ultima campanha ate 65% encerrou em 02/10, nenhuma vigente em 08/10. Nada a notificar.",
-  "nota_ciclo_08_10_dashboard": "Dashboard 08/10 12h30: fli REC-LIM 10/06 e CUZ-REC 19/06 0 resultados; Latam_PASS Akamai timeout; WebSearch passageirodeprimeira: compra direta ate 65%/62% encerrou 02/10, transferencia Nubank 25% encerrou 04/10, Livelo/Esfera sem campanha >=60%; Inter sem rota LATAM Pass. Sem alerta.",
-  "nota_ciclo_08_10_monitor_18h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h, Banrisul 25% ate 24/09 vencida; Inter sem rota/bonus LATAM Pass. Compra direta: ultima campanha (ate 65%/62%) encerrou 02/10, nenhuma vigente confirmada. latampass ofertas ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_09_10_monitor": "2026-10-09T00:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas; ultima compra direta (ate 65%) venceu 02/10; nenhum bonus de transferencia vigente hoje. Pagina oficial ENOTFOUND. Sem alerta.",
-  "nota_ciclo_2026_10_09": "WebSearch passageirodeprimeira.com: transferencia - nenhum bonus >=60%/<=48h ativo confirmado (Livelo/Esfera/Nubank 25-35% recorrentes). Compra direta: ultima promo (ate 65% Itau / 62% demais, R$26,60/milheiro) terminou em 02/10; nada ativo hoje. Sem alerta.",
-  "nota_ciclo_atual": "09/10 12:30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): nada ativo. Ultima compra direta (ate 65%) encerrou 02/10; Livelo 25% encerrou 22/09; Inter sem campanha. ofertas LATAM Pass: EGRESS_BLOCKED/ENOTFOUND. Nenhum alerta.",
-  "nota_ciclo_09_10_dashboard": "Dashboard diário 09/10: WebSearch passageirodeprimeira (transferência e compra) sem campanha vigente; compra encerrou 02/10. Sem alerta.",
-  "nota_ciclo_09_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so edicoes antigas (ultima ate 65%/62% encerrou 02/10, ja notificada), nenhuma ativa. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_10_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so historico, nada >=60%/<=48h; compra direta so edicoes antigas (ate 65%/62%, 'ate sexta (28)' = 28/08, expirada), nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_10_10_monitor_2": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente. Ultimo desconto de compra (ate 65%, milheiro R$26,60 p/ demais clientes) encerrou 02/10. Transferencia: so campanhas encerradas (25-35%). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
-  "nota_ciclo_10_10_dashboard": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente hoje; ultimo desconto de compra encerrou 02/10; transferencias so edicoes antigas (25-35%). Sem alerta. Nenhuma ativa expirada para mover.",
-  "nota_ciclo_10_10_monitor_3": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so campanhas encerradas; compra direta: ultima (ate 65%, R$24,50 Itaú / R$26,60 demais) encerrou 02/10 e ja foi notificada; mencao a 'ate 28 de outubro' em materia de passagens nao confirmada (provavel 28/08 antigo). Nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_compra_direta_ciclo": "2026-10-11T00:19:26Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nada >=60%/<=48h; Livelo 25% ate 22/09 e Nubank 25% ate 06/09 expirados; Inter sem oferta; compra direta: ultima confirmada 65%/62% ate 02/10 (expirada), alegacao de 'ate 28/10' nao confirmada (datas inconsistentes) - nao marcada como ativa, checar logada. latampass.latam.com/ofertas inacessivel (EGRESS_BLOCKED).",
-  "nota_ciclo_11_10_dashboard": "2026-10-11 dashboard: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma oferta vigente confirmada (>=60%/<=48h: nao); compra direta: ultima 65%/62% ate 02/10 expirada; latampass.latam.com/ofertas inacessivel. Nenhum alerta. Nenhuma ativa com valido_ate vencido para mover.",
-  "nota_ciclo_11_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so resultados antigos; sem bonus >=60%/<=48h; compra direta: ultima confirmada ate 02/10 (expirada), nada novo; ofertas LATAM Pass inacessivel (ENOTFOUND). Nada a notificar.",
-  "nota_ciclo_12_10_monitor": "2026-10-12T00:19:57Z - WebSearch passageirodeprimeira (transferencia + compra direta): so titulos historicos; ultima compra direta citada (ate 65%, R$24,50/26,60) valida ate 02/10, expirada. Nenhum bonus >=60% nem desconto de compra vigente confirmado. Oferta oficial inacessivel. Sem notificacao.",
-  "nota_ciclo_12_10_monitor_12h": "2026-10-12T12:25:00Z - WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus ativo (Nubank 25% ate 04/10, Itau/Credicard ate 04/09, Livelo/Esfera antigos, Inter sem oferta). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) com datas inconsistentes entre artigos - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao.",
-  "nota_ciclo_12_10_dashboard": "2026-10-12 dashboard: precos reaproveitados do monitor 12:25Z; WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus >=60% nem desconto de compra vigente confirmado (65% ate 02/10 expirado; 'ate 28/10' nao confirmado). Latam-PASS conector: timeout Akamai. Nenhuma ativa expirada. Sem notificacao.",
-  "nota_ciclo_13_10_monitor": "2026-10-13T00:20Z - WebSearch passageirodeprimeira (transferencia, compra direta, Inter): sem bonus ativo (Nubank 25% ate 06/09 expirado, Livelo/Esfera so historico, Inter sem oferta/rota). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) segue com datas inconsistentes - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao.",
-  "nota_ciclo_13_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente confirmada; Nubank 25% expirou 06/09, compra direta ultima edicao 02/10 expirada. Sem alerta.",
-  "nota_ciclo_13_10_monitor_12h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada. Compra direta: so materia de 26/08 citando 'ate 65% ate 28/10' com inconsistencia de data (28/10/2026 e quarta, texto diz sexta) — nao confirmada, nao notificada. Transferencias recentes (Livelo 25% ate 22/09, Nubank 25% ate 06/09) expiradas; nada >=60%. latampass.latam.com/ofertas: ENOTFOUND.",
-  "nota_ciclo_14_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% so campanhas encerradas, nada >=60%/<=48h. Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50 Itau/R$26,60 demais) com datas inconsistentes entre materias, sem vigencia confirmada - nao marcada ativa, nao notificada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_15_10_monitor": "2026-10-15T00:19:19Z — WebSearch passageirodeprimeira.com: transferência (Nubank 25% até 06/09, Esfera/Livelo antigos) e compra direta (último 65% Itaú/62% Clube até 02/10, R$24,50/R$26,60) — nenhuma vigente em 15/10; nada ativo, sem notificação. Página oficial ENOTFOUND; Latam_PASS tool timeout; latam_miles_price.json inexistente.",
-  "nota_ciclo_15_10_monitor_06h": "2026-10-15T06:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% ate 06/09, Esfera/Livelo antigos; compra direta: ultima confirmada 65%/62% ate 02/10 (expirada), alegacao 'ate 28/10' (R$24,50 Itau/R$26,60 demais, 350k) com datas inconsistentes, sem vigencia confirmada — nao marcada ativa. Nada >=60%/<=48h. Pagina oficial ENOTFOUND; Latam_PASS timeout; blog de terceiros, confianca baixa. Sem notificacao.",
-  "nota_ciclo_15_10_monitor_12h": "2026-10-15T12:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo 25% ate 22/09 e Nubank/Esfera antigos, todos expirados; compra direta: ultima confirmada 65% ate 02/10 (expirada), alegacao 'ate 30/10' com datas inconsistentes, sem vigencia confirmada — nao marcada ativa. Nada >=60%/<=48h. Pagina oficial ENOTFOUND; Latam_PASS timeout; blog de terceiros, confianca baixa. Sem notificacao.",
-  "nota_ciclo_16_10_monitor_06h": "2026-10-16T06:19:00Z - latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% so historico, nada >=60%/<=48h (Esfera 25% ate 25/10 ja registrada); compra direta: ultima 65%/62% encerrou 02/10, nenhuma vigente. Blog de terceiros. Sem alerta.",
-  "nota_ciclo_16_10_monitor_18h": "Monitor leve 18h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25-30% - todos <60%, nada ativo; compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada), nenhuma ativa confirmada. Sem alerta.",
-  "nota_ciclo_17_10_monitor_06h": "Monitor leve 06h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada ativo - bonus Livelo/Esfera/Nubank 25-30% encerrados (<60%); compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada); Inter sem rota/bonus para LATAM Pass. Sem alerta.",
-  "nota_ciclo_17_10_dashboard": "Dashboard completo: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada >=60%; compra direta sem campanha vigente (ultima 65%/62% encerrou 02/10); Livelo/Nubank encerrados; Esfera 25% ate 25/10 mantida (abaixo do limiar); Inter sem rota para LATAM Pass. Sem alerta."
+  {
+   "id": "livelo-azul-120pct-ago2026",
+   "tipo": "bonus_transferencia_temporario",
+   "descricao": "Livelo → Azul Fidelidade, até 120% de bônus na transferência.",
+   "bonus_pct": 120,
+   "e_permanente": false,
+   "valido_ate": "2026-08-21",
+   "programa_destino": "Azul Fidelidade (NÃO é LATAM Pass — irrelevante para esta viagem)",
+   "fontes": [
+    "https://pontospravoar.com/17-anos-azul-fidelidade-transfira-pontos-livelo-receba-ate-120-porcento-bonus/"
+   ],
+   "confianca": "média",
+   "ja_notificada": false,
+   "acao_sugerida": "Ignorar — restrição fixa da viagem é LATAM Pass, não Azul. Já expirada em 21/08/2026."
+  },
+  {
+   "id": "livelo-connectmiles-40pct-ago2026",
+   "tipo": "bonus_transferencia_temporario",
+   "descricao": "Livelo → ConnectMiles (Copa Airlines), até 40% de bônus.",
+   "bonus_pct": 40,
+   "e_permanente": false,
+   "valido_ate": "2026-08-14",
+   "programa_destino": "ConnectMiles (NÃO é LATAM Pass — irrelevante para esta viagem)",
+   "fontes": [
+    "citado em busca web de 25/08/2026"
+   ],
+   "confianca": "média",
+   "ja_notificada": false,
+   "acao_sugerida": "Ignorar — programa errado para esta viagem. Já expirada."
+  },
+  {
+   "id": "festival-pontos-livelo-ago2026",
+   "tipo": "evento_calendario",
+   "descricao": "Festival de Pontos Livelo, 25–26 de agosto de 2026 — evento anual, mas a busca não retornou o detalhe específico de bônus por parceiro/programa para esta edição.",
+   "bonus_pct": null,
+   "e_permanente": false,
+   "valido_ate": "2026-08-26",
+   "fontes": [
+    "https://www.livelo.com.br/como-juntar-pontos-rapido-calendario-de-bonus-livelo"
+   ],
+   "confianca": "baixa — falta confirmação de 2ª fonte com o bônus específico para LATAM Pass",
+   "ja_notificada": false,
+   "acao_sugerida": "Checar diretamente no app/site Livelo hoje (26/08 ainda dentro do evento) se há bônus específico para transferência à LATAM Pass antes de reportar como oportunidade."
+  },
+  {
+   "id": "nomad-8000-milhas-1a-operacao-cambio",
+   "tipo": "acumulo_parceria",
+   "descricao": "8.000 milhas LATAM Pass na 1ª operação de câmbio pela Nomad, promoção válida até 31/08/2026.",
+   "bonus_pct": null,
+   "e_permanente": false,
+   "valido_ate": "2026-08-31",
+   "fontes": [
+    "busca web agregada de 26/08/2026 — sem link direto isolado, mas conteúdo específico o suficiente (valor exato, prazo exato, parceiro nomeado) para tratar como fonte única aceitável"
+   ],
+   "confianca": "1 fonte — aceita pela política de fonte única",
+   "ja_notificada": false,
+   "acao_sugerida": "Exige abrir conta Nomad (não é 'zero esforço', mas é baixo e sem gasto recorrente). Prazo termina em poucos dias (31/08) — vale mencionar no dashboard.",
+   "expirada_em": "2026-09-01T00:25:00Z — valido_ate (2026-08-31) já passou (hoje é 2026-09-01, data do ciclo monitor leve). Movida de ativas para expiradas conforme regra de state/promocoes.json / docs/agente-viagem.md (oportunidades expiradas não voltam a ser mostradas no dashboard, mantidas aqui só como histórico)."
+  },
+  {
+   "id": "latam-pass-desconto-compra-milhas-set2026",
+   "tipo": "desconto_compra_direta",
+   "descricao": "Campanha de desconto na compra direta de milhas LATAM Pass reaparece com validade confirmada até 30/09/2026 (2 buscas WebSearch independentes neste ciclo convergem no mesmo prazo, ao contrário dos ~15 ciclos anteriores que só traziam títulos recorrentes sem data confirmando vigência atual). 60% de desconto para titulares do cartão LATAM Pass Itaú (Clara e Pedro NÃO têm), 55% de desconto para todos os clientes inscritos no programa LATAM Pass e/ou assinantes do Clube (Clara e Pedro SE QUALIFICAM — ver state/perfil.json.elegivel_desconto_geral_todos_clientes=true para ambos). Compra em lotes de 1.000 milhas, parcelamento em até 10x sem juros (Elo/Mastercard/Visa), limite de 350.000 milhas por CPF.",
+   "desconto_pct_itau": 65,
+   "desconto_pct_geral": 62,
+   "aplica_a_clara_e_pedro": true,
+   "limite_milhas_por_cpf": 350000,
+   "e_permanente": false,
+   "recorrente": true,
+   "valido_ate": "2026-10-02",
+   "fontes": [
+    "WebSearch allowed_domains=passageirodeprimeira.com, query 'LATAM Pass compra de milhas desconto setembro 2026' (07/09 00h20) -- síntese explícita: 'a LATAM prorrogou a campanha com oferta válida até o dia 30 de setembro de 2026'",
+    "WebSearch allowed_domains=passageirodeprimeira.com, query '\"LATAM Pass\" desconto compra milhas \"30 de setembro\" prorrogado' (07/09 00h20, busca de confirmação) -- reconfirma 'válido até terça-feira (30)' com os mesmos 2 tiers (60% Itaú / 55% inscritos-Clube), limite de 350.000 milhas",
+    "https://passageirodeprimeira.com/latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas-5/",
+    "https://passageirodeprimeira.com/prorrogado-latam-pass-oferece-ate-60-de-desconto-na-compra-de-milhas/"
+   ],
+   "confianca": "média-alta — blog de terceiros (site oficial latampass.latam.com/pt_br/ofertas segue EGRESS_BLOCKED nesta sessão), mas 2 buscas independentes neste ciclo convergem na mesma data de validade (30/09/2026), diferente dos ciclos anteriores que só traziam títulos recorrentes sem data confirmando vigência atual (por isso a edição anterior deste mesmo tipo ficou em 'expiradas' desde 29/08/2026). Tratar como sinal real de nova prorrogação; reconfirmar % exato logada no app/site antes de comprar.",
+   "ja_notificada": true,
+   "acao_sugerida": "Ativa ate sexta 02/10 (65% Itau R$24,50 / R$26,60 demais). Ja notificada; confirmar % no app logada. Compra so com o 'Vai' da Clara.",
+   "ultima_reconfirmacao": "2026-10-02T18:00:00Z: WebSearch passageirodeprimeira.com reconfirma ate 65% (Itau) / 62% (geral) valido ate sexta 02/10; expira hoje, mover para expiradas no proximo ciclo. ja notificada. Transferencia: nenhum bonus >=60% encontrado (so 25-35% historicos/Ultravioleta 25%).",
+   "confianca_validade": " | 2026-09-25T06:20:00Z: WebSearch (passageirodeprimeira.com) reconfirma ~60/63% ativo; um artigo deste ciclo cita validade ate 29/09 (vs. 30/09/2026 ja registrado) -- divergencia leve entre fontes de blog, mantido valido_ate=2026-09-30 ate a pagina oficial confirmar. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T00:26:00Z: WebSearch (passageirodeprimeira.com) traz sinal misto -- tier ja confirmado (60%/63%, valido_ate=2026-09-30) segue aparecendo sem nenhuma fonte de encerramento antecipado, mas artigos tambem citam um tier mais alto (64% geral/66% Itau) sem data explicita cobrindo hoje. Mantido valido_ate=2026-09-30 e percentuais 60%/63% ate a pagina oficial ou uma fonte com data clara confirmar o tier mais alto. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados (ver state/config.json). | 2026-09-27T06:18:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; uma fonte cita 'sexta-feira (29)', mesma divergencia leve ja registrada. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados. | 2026-09-27T18:21:00Z: WebSearch (passageirodeprimeira.com) reconfirma 60%/63% ativo, valido_ate=2026-09-30 sem mudanca; titulos historicos recorrentes seguem sem data nova. Latam_PASS.list_latam_miles_purchase_prices e acesso direto a latampass.latam.com seguem bloqueados.",
+   "nota_ciclo_2026_09_30": "Reconfirmado por WebSearch passageirodeprimeira.com (65% Itau R$24,50 / R$26,60 demais); sem data nova de vigencia. valido_ate=30/09 (hoje) -- mover para expiradas no proximo ciclo. Ja notificada, sem novo alerta.",
+   "nota_ciclo_2026_09_30_12h": "WebSearch cita 'ate 65% ate sexta (2)' (Itau R$24,50 / demais R$26,60), possivel prorrogacao ate 02/10 -- nao confirmada; mantido valido_ate=30/09 (hoje). Mover para expiradas no proximo ciclo se sem confirmacao.",
+   "valido_ate_original": "2026-10-02",
+   "nota_ciclo_2026_10_01_12h": "WebSearch passageirodeprimeira.com: 'ate 65% ate sexta-feira (2)' = 02/10/2026; reativada (estava em expiradas por engano). Sem novo push (ja_notificada).",
+   "status_encerramento": "WebSearch 03/10: campanha (65% Itau / ~62% geral, ate 350k milhas) valida ate sexta 02/10; encerrada. Sem nova campanha confirmada."
+  },
+  {
+   "id": "esfera-latam-pass-25a30pct-1000milhas",
+   "tipo": "bonus_transferencia_direcionado",
+   "descricao": "LATAM Pass oferece 25–30% de bônus na transferência de pontos Esfera→LATAM Pass, mais 1.000 milhas bônus na primeira transferência. Milhas extras creditadas em até 30 dias, limite de 300.000 milhas extras por CPF. Validade de 36 meses (ou sem expiração se sócio Categoria Elite).",
+   "bonus_pct_min": 25,
+   "bonus_pct_max": 30,
+   "bonus_fixo_milhas_primeira_vez": 1000,
+   "e_permanente": false,
+   "valido_ate": null,
+   "confianca_validade": "múltiplos artigos do mesmo blog ao longo de 2026 com % variando entre 25 e 30 — parece campanha recorrente/rotativa, não uma edição única. Checar % vigente antes de agir.",
+   "fontes": [
+    "https://passageirodeprimeira.com/latam-pass-oferece-ate-30-de-bonus-na-transferencia-de-pontos-da-esfera-3/",
+    "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+   ],
+   "confianca": "1 fonte (blog de milhas, recorrente) — aceita pela política de fonte única",
+   "ja_notificada": false,
+   "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+   "acao_sugerida": "Clara não tem pontos Esfera hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, mas registrar para o caso de vir a acumular Esfera no futuro.",
+   "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+  },
+  {
+   "id": "nubank-latam-pass-30pct-1500milhas",
+   "tipo": "bonus_transferencia_direcionado",
+   "descricao": "LATAM Pass oferece 30% de bônus na transferência de pontos Nubank Ultravioleta→LATAM Pass, mais 1.500 milhas bônus na primeira transferência. Adicional ao 10% permanente do Modo LATAM Pass (ver item abaixo) — juntos, ativar o Modo LATAM Pass agora capturaria os dois.",
+   "bonus_pct": 30,
+   "bonus_fixo_milhas_primeira_vez": 1500,
+   "e_permanente": false,
+   "valido_ate": null,
+   "confianca_validade": "página oficial não trouxe data de término explícita nesta busca — checar latampass.latam.com/pt_br/promocao/nubank-milhas-extras antes de agir, pode ser campanha corrente e não eterna",
+   "fontes": [
+    "https://latampass.latam.com/pt_br/promocao/nubank-milhas-extras",
+    "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-do-nubank/"
+   ],
+   "confianca": "alta (2 fontes, inclusive site oficial LATAM Pass)",
+   "ja_notificada": false,
+   "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+   "acao_sugerida": "Abaixo do threshold de alerta urgente (60%), mas relevante: somado ao 10% permanente do Modo LATAM Pass, ativar agora capturaria ~40% de bônus + 1.500 milhas fixas. Vale considerar junto da avaliação de ativação do Modo LATAM Pass.",
+   "nota_ciclo_2026_09_30": "WebSearch cita tambem 25% de bonus Nubank Ultravioleta ate 04/10/2026 (com Modo LATAM Pass ativo). Abaixo do limiar de 60%, sem alerta.",
+   "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta.",
+   "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+  },
+  {
+   "id": "livelo-latam-pass-25pct-recorrente",
+   "tipo": "bonus_transferencia_direcionado",
+   "descricao": "LATAM Pass oferece bônus de transferência de pontos Livelo→LATAM Pass. Múltiplos artigos do blog ao longo de 2025/2026 (\"Só hoje\", \"Últimas horas\", \"Último dia\") confirmam 25% de bônus como o valor recorrente dessa campanha — parece ser um formato de campanha relâmpago que se repete periodicamente, não uma oferta permanente.",
+   "bonus_pct": 25,
+   "bonus_pct_max_observado": 35,
+   "e_permanente": false,
+   "valido_ate": null,
+   "confianca_validade": "ciclo de 26/08/2026 18h55 encontrou título explícito confirmando 35% (\"LATAM Pass oferece até 35% de bônus na transferência de pontos Livelo\" e \"Últimas horas para ganhar até 35%...\") — upgrade de confiança vs. ciclo anterior, que só tinha a síntese da busca mencionando 35% sem título batendo. 25% continua aparecendo em títulos mais antigos/recorrentes; parece que a campanha rotativa varia entre 25% e 35% conforme a edição. Checar % vigente no app antes de transferir.",
+   "fontes": [
+    "https://passageirodeprimeira.com/latam-pass-oferece-30-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-incluindo-itau-e-esfera/",
+    "https://passageirodeprimeira.com/so-hoje-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo-2/",
+    "https://passageirodeprimeira.com/ultimas-horas-latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-livelo/",
+    "https://passageirodeprimeira.com/latam-pass-oferece-ate-35-de-bonus-na-transferencia-de-pontos-livelo-2/ (confirma 35%, encontrada no ciclo de 26/08/2026 18h55)",
+    "https://passageirodeprimeira.com/ultimas-horas-para-ganhar-ate-35-de-bonus-na-transferencia-de-pontos-livelo-para-latam-pass/ (confirma 35%, mesmo ciclo)",
+    "encontrada via WebSearch allowed_domains=passageirodeprimeira.com em 26/08/2026"
+   ],
+   "confianca": "múltiplas fontes (mesmo blog, recorrente) — aceita pela política de fonte única; 35% agora confirmado por título, não só por síntese",
+   "ja_notificada": false,
+   "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
+   "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro.",
+   "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+  }
+ ],
+ "checagem_20261001_21h": {
+  "latampass_ofertas": "EGRESS_BLOCKED",
+  "busca_transferencia": "passageirodeprimeira.com: somente 25% Livelo/Esfera/Nubank (recorrentes) e historicos de 30-35%; nenhum bonus >=60% nem prazo <=48h confirmado.",
+  "busca_compra_direta": "resultados sao edicoes anteriores (65%/62%, milheiro R$24,50-26,60; 'valido ate sexta' sem data) - nao confirmam campanha vigente em 01/10/2026; sem notificacao.",
+  "inter_loop": "sem rota LATAM Pass (ja confirmado)."
+ },
+ "checagem_20261002_12h": {
+  "data": "2026-10-02T12:00:00Z",
+  "latampass_ofertas": "EGRESS_BLOCKED",
+  "passageirodeprimeira": "compra direta: edicao 'ate 65% Itau / 62% geral, milheiro R$24,50/R$26,60, ate 200k milhas' valida ate sexta (02/10) - ja notificada, expira hoje; transferencia: Livelo/Esfera/Nubank 25-35%, nada >=60%/<=48h",
+  "alerta_enviado": false
+ },
+ "ultima_checagem_bonus_transferencia": "2026-10-02T12:19:43Z: WebSearch passageirodeprimeira.com sem bonus de transferencia novo para LATAM Pass; nada >=60%.",
+ "checagem_20261003_06h": {
+  "fonte": "WebSearch passageirodeprimeira.com (transferencia + compra direta); Inter Loop/Prime sem rota LATAM Pass",
+  "resultado": "Compra direta: campanha anterior encerrada 02/10, ja notificada. Transferencia: Nubank 25% ate 04/10 (<60%). Nenhum gatilho de alerta."
+ },
+ "nota_ciclo_03_10_12h": "WebSearch passageirodeprimeira.com: transferencia 25-35% recorrente (nada >=60%/<=48h); compra direta ate 65% (62% p/ inscritos LATAM Pass) valida ate 02/10/2026 - expirada, sem desconto ativo. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_03_10_18h": "WebSearch passageirodeprimeira.com: compra direta sem desconto ativo (65% encerrou 02/10); Nubank 25% ate 04/10 (<60%); Livelo/Esfera sem edicao nova. Sem alerta.",
+ "nota_ciclo_03_10_21h": "Monitor leve 21h: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25% - todos <60%, sem alerta. Compra direta: resultados sem data confirmando promocao vigente; a ultima conhecida (ate 02/10) ja esta em expiradas - nenhuma ativa confirmada, sem alerta.",
+ "nota_ciclo_04_10_03h": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com: compra direta so edicao 65%/62% valida ate 02/10 (expirada, ja notificada), nenhuma ativa confirmada; transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25%, Inter sem bonus - todos <60%. Sem alerta.",
+ "nota_ciclo_04_10_09h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, Nubank 25% ate 04/10 23h59; nada >=60%. Compra direta: desconto 65% Itau / 62% geral (CPM R$24,50/26,60) valido ate sexta 02/10 = EXPIRADO, nenhum desconto ativo hoje. Pagina oficial EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_04_10_15h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta 65%/62% valida ate sexta 02/10 = expirada, nenhum desconto ativo; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%. Sem alerta.",
+ "nota_ciclo_04_10_12h_dashboard": "Dashboard diario: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta 65%/62% encerrou 02/10, nenhum desconto ativo. Nubank Ultravioleta 25% (15%+10% Modo) ate 23h59 de 04/10, abaixo de 60%. Livelo/Esfera 25-35% recorrentes. Sem alerta; ativas sem valido_ate vencido.",
+ "nota_ciclo_04_10_12h25_monitor": "Monitor leve: latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): compra direta 65%/62% valida ate 02/10 = expirada, nenhuma ativa; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter/Loop sem bonus LATAM Pass. Sem alerta.",
+ "ultima_verificacao_monitor_leve": "2026-10-11T12:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nada >=60%/<=48h; Livelo 25% ate 22/09 e Nubank 25% ate 06/09 expirados; Esfera/Inter sem oferta vigente; compra direta: ultima 65%/62% ate 02/10 (expirada), sem oferta nova confirmada (datas inconsistentes). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Nenhum alerta.",
+ "nota_ultima_verificacao": "WebSearch passageirodeprimeira (2 queries): transferencia so titulos 25-35% (Livelo/Esfera/Nubank), nenhum >=60%; Inter sem bonus encontrado. Compra direta: so titulos recorrentes (60-66%) sem data de vigencia confirmada, ultima vigencia conhecida expirou 02/10 — nao marcada ativa. latampass.latam.com/ofertas EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_05_10_18h": "latampass.latam.com/ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos 60-66% sem vigencia confirmada, ultima conhecida expirou 02/10 (ja notificada) - nao marcada ativa. Sem alerta.",
+ "obs_ciclo_2026_10_05_12h": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta: resultados sao da campanha ate 65% que encerrou sexta 02/10 (nao confirmada ativa hoje). Sem alerta.",
+ "obs_ciclo_2026_10_05_dashboard": "WebSearch passageirodeprimeira.com: transferencia Livelo/Esfera/Nubank 25-35% recorrentes (Nubank 25% Modo LATAM Pass expirou 04/10), nada >=60%/<=48h; compra direta so titulos antigos (ate 65%, encerrou 02/10), nao ativa. Sem alerta.",
+ "nota_ciclo_05_10_monitor_18h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira (transferencia, compra direta, Inter): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h; Inter fora das campanhas; compra direta so titulos 60-66% sem vigencia confirmada (ultima conhecida expirou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
+ "nota_ciclo_06_10_monitor": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; Inter sem bonus; compra direta so titulos antigos (ate 65-66%, encerrou 02/10, ja notificada) - nao marcada ativa. Sem alerta.",
+ "nota_ciclo_06_10_monitor_06h": "latampass ofertas EGRESS_BLOCKED. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so titulos antigos (65%/66%, R\\$24,50 Itau vs R\\$26,60 demais), sem data cobrindo hoje - nao marcada ativa. Sem alerta.",
+ "nota_ciclo_06_10_monitor_12h": "2026-10-06T12:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus novo; transferencia so historico (Esfera 30%, Livelo 35%/20%, Nubank 25% ate 06/09/2026 - expirado); compra direta so a edicao 'ate 65% ate sexta (2)' = 02/10, expirada. Nenhum bonus >=60% e nenhum desconto ativo; sem alerta. Pagina oficial LATAM Pass: EGRESS_BLOCKED.",
+ "nota_ciclo_06_10_dashboard": "Dashboard 06/10: WebSearch passageirodeprimeira.com (transferencia + compra). Compra: so edicao antiga (60%/55% 'ate terca (30)' = 30/09), sem vigencia hoje. Transferencia: Esfera 25% ate 25/10 (ativa, sem >=60%), Nubank 25% encerrou 04/10; nada >=60%/<=48h. Sem alerta.",
+ "nota_ciclo_06_10_monitor_18h": "2026-10-06T18:30:00Z: WebSearch passageirodeprimeira.com (transferencia + compra). Compra direta: 60%/55% 'ate 30 de outubro' = edicao '(30)' de 30/09, expirada (confirmado por 2 buscas; sem edicao vigente). Transferencia: Esfera 25% ate 25/10, Nubank 25% encerrou 04/10; nada >=60%/<=48h. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_07_10_monitor_06h": "2026-10-07T06:20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta) retornou so titulos historicos recorrentes (ate 65%/60%/66%, bonus 25-35%), sem data confirmando vigencia hoje; ofertas LATAM EGRESS_BLOCKED. Sem promocao nova, sem push.",
+ "nota_ciclo_07_10_monitor_12h": "WebSearch passageirodeprimeira.com: transferencia — Livelo ate 35%, Esfera 25-30%, Nubank 30% (recorrentes, sem data/>=60%/<=48h). Compra direta — ultimo desconto achado (ate 65%, milheiro R$26,60 geral / R$24,50 Itau) valido ate 02/10/2026, expirado; nenhum desconto novo ativo identificado. ofertas LATAM Pass: EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_07_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% valida ate 04/10 (expirada), Livelo/Esfera 25-35% recorrentes, nada >=60%/<=48h. Compra direta so titulos antigos (65%/62% ate 02/10, expirada), nenhuma ativa confirmada. latampass.latam.com/ofertas: EGRESS_BLOCKED. Sem alerta.",
+ "nota_ciclo_07_10_dashboard": "fli REC-LIM/LIM-CUZ 0 resultados, Kiwi REC-LIM 0; Latam_PASS Akamai timeout; ofertas oficiais EGRESS_BLOCKED. WebSearch passageirodeprimeira: compra direta 65%/62% 'ate sexta (2)' = expirada; transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h. Ultima cotacao valida mantida (R$8973 LIM-CUZ, 01/10). Sem alerta.",
+ "nota_ciclo_07_10_monitor_21h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so titulos recorrentes/antigos (Livelo/Esfera 25-35%, Nubank 25%, compra 'ate 65%' edicao expirada 28/08); nada >=60% com prazo <=48h, nenhum desconto de compra direta vigente confirmado. latampass.latam.com/ofertas nao acessado (EGRESS_BLOCKED). Sem alerta.",
+ "nota_ciclo_2026_10_08": "WebSearch passageirodeprimeira.com: nenhum bonus de transferencia vigente >=60%; compra direta: ultima campanha (ate 65% Itaú/62% demais, ate 02/10) encerrada; nenhuma ativa confirmada. latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
+ "nota_ciclo_08_10_monitor_06h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 25-35% recorrentes (resultados antigos), nada >=60%/<=48h; Inter->LATAM Pass sem rota/bonus. Compra direta: ultima promo (ate 65%, R$24,50/26,60 o milheiro) foi de 02/10 e ja encerrou; resumo cita 'ate sexta (28)' sem mes confirmavel (provavel campanha antiga) - nao confirmada como ativa, sem alerta. Blog de terceiros, confianca baixa.",
+ "nota_ciclo_20261008_12h": "WebSearch passageirodeprimeira.com: transferencia sem campanha nova (25-35% recorrentes, nada >=60%); compra direta: ultima campanha ate 65% encerrou em 02/10, nenhuma vigente em 08/10. Nada a notificar.",
+ "nota_ciclo_08_10_dashboard": "Dashboard 08/10 12h30: fli REC-LIM 10/06 e CUZ-REC 19/06 0 resultados; Latam_PASS Akamai timeout; WebSearch passageirodeprimeira: compra direta ate 65%/62% encerrou 02/10, transferencia Nubank 25% encerrou 04/10, Livelo/Esfera sem campanha >=60%; Inter sem rota LATAM Pass. Sem alerta.",
+ "nota_ciclo_08_10_monitor_18h": "WebSearch passageirodeprimeira.com (3 queries): transferencia Livelo/Esfera/Nubank 20-35% recorrentes, nada >=60%/<=48h, Banrisul 25% ate 24/09 vencida; Inter sem rota/bonus LATAM Pass. Compra direta: ultima campanha (ate 65%/62%) encerrou 02/10, nenhuma vigente confirmada. latampass ofertas ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+ "nota_ciclo_09_10_monitor": "2026-10-09T00:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas antigas; ultima compra direta (ate 65%) venceu 02/10; nenhum bonus de transferencia vigente hoje. Pagina oficial ENOTFOUND. Sem alerta.",
+ "nota_ciclo_2026_10_09": "WebSearch passageirodeprimeira.com: transferencia - nenhum bonus >=60%/<=48h ativo confirmado (Livelo/Esfera/Nubank 25-35% recorrentes). Compra direta: ultima promo (ate 65% Itau / 62% demais, R$26,60/milheiro) terminou em 02/10; nada ativo hoje. Sem alerta.",
+ "nota_ciclo_atual": "09/10 12:30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): nada ativo. Ultima compra direta (ate 65%) encerrou 02/10; Livelo 25% encerrou 22/09; Inter sem campanha. ofertas LATAM Pass: EGRESS_BLOCKED/ENOTFOUND. Nenhum alerta.",
+ "nota_ciclo_09_10_dashboard": "Dashboard diário 09/10: WebSearch passageirodeprimeira (transferência e compra) sem campanha vigente; compra encerrou 02/10. Sem alerta.",
+ "nota_ciclo_09_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% recorrentes, nada >=60%/<=48h; compra direta so edicoes antigas (ultima ate 65%/62% encerrou 02/10, ja notificada), nenhuma ativa. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+ "nota_ciclo_10_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so historico, nada >=60%/<=48h; compra direta so edicoes antigas (ate 65%/62%, 'ate sexta (28)' = 28/08, expirada), nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+ "nota_ciclo_10_10_monitor_2": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente. Ultimo desconto de compra (ate 65%, milheiro R$26,60 p/ demais clientes) encerrou 02/10. Transferencia: so campanhas encerradas (25-35%). latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
+ "nota_ciclo_10_10_dashboard": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente hoje; ultimo desconto de compra encerrou 02/10; transferencias so edicoes antigas (25-35%). Sem alerta. Nenhuma ativa expirada para mover.",
+ "nota_ciclo_10_10_monitor_3": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 20-35% so campanhas encerradas; compra direta: ultima (ate 65%, R$24,50 Itaú / R$26,60 demais) encerrou 02/10 e ja foi notificada; mencao a 'ate 28 de outubro' em materia de passagens nao confirmada (provavel 28/08 antigo). Nenhuma ativa confirmada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+ "nota_compra_direta_ciclo": "2026-10-11T00:19:26Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nada >=60%/<=48h; Livelo 25% ate 22/09 e Nubank 25% ate 06/09 expirados; Inter sem oferta; compra direta: ultima confirmada 65%/62% ate 02/10 (expirada), alegacao de 'ate 28/10' nao confirmada (datas inconsistentes) - nao marcada como ativa, checar logada. latampass.latam.com/ofertas inacessivel (EGRESS_BLOCKED).",
+ "nota_ciclo_11_10_dashboard": "2026-10-11 dashboard: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma oferta vigente confirmada (>=60%/<=48h: nao); compra direta: ultima 65%/62% ate 02/10 expirada; latampass.latam.com/ofertas inacessivel. Nenhum alerta. Nenhuma ativa com valido_ate vencido para mover.",
+ "nota_ciclo_11_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): so resultados antigos; sem bonus >=60%/<=48h; compra direta: ultima confirmada ate 02/10 (expirada), nada novo; ofertas LATAM Pass inacessivel (ENOTFOUND). Nada a notificar.",
+ "nota_ciclo_12_10_monitor": "2026-10-12T00:19:57Z - WebSearch passageirodeprimeira (transferencia + compra direta): so titulos historicos; ultima compra direta citada (ate 65%, R$24,50/26,60) valida ate 02/10, expirada. Nenhum bonus >=60% nem desconto de compra vigente confirmado. Oferta oficial inacessivel. Sem notificacao.",
+ "nota_ciclo_12_10_monitor_12h": "2026-10-12T12:25:00Z - WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus ativo (Nubank 25% ate 04/10, Itau/Credicard ate 04/09, Livelo/Esfera antigos, Inter sem oferta). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) com datas inconsistentes entre artigos - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao.",
+ "nota_ciclo_12_10_dashboard": "2026-10-12 dashboard: precos reaproveitados do monitor 12:25Z; WebSearch passageirodeprimeira (transferencia + compra direta): sem bonus >=60% nem desconto de compra vigente confirmado (65% ate 02/10 expirado; 'ate 28/10' nao confirmado). Latam-PASS conector: timeout Akamai. Nenhuma ativa expirada. Sem notificacao.",
+ "nota_ciclo_13_10_monitor": "2026-10-13T00:20Z - WebSearch passageirodeprimeira (transferencia, compra direta, Inter): sem bonus ativo (Nubank 25% ate 06/09 expirado, Livelo/Esfera so historico, Inter sem oferta/rota). Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50/26,60) segue com datas inconsistentes - NAO confirmada, nao marcada ativa; checar logada. latampass.latam.com/ofertas ENOTFOUND. Sem notificacao.",
+ "nota_ciclo_13_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente confirmada; Nubank 25% expirou 06/09, compra direta ultima edicao 02/10 expirada. Sem alerta.",
+ "nota_ciclo_13_10_monitor_12h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada. Compra direta: so materia de 26/08 citando 'ate 65% ate 28/10' com inconsistencia de data (28/10/2026 e quarta, texto diz sexta) — nao confirmada, nao notificada. Transferencias recentes (Livelo 25% ate 22/09, Nubank 25% ate 06/09) expiradas; nada >=60%. latampass.latam.com/ofertas: ENOTFOUND.",
+ "nota_ciclo_14_10_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% so campanhas encerradas, nada >=60%/<=48h. Compra direta: ultima confirmada 65%/62% ate 02/10 (expirada); alegacao 'ate 28/10' (350k milhas, R$24,50 Itau/R$26,60 demais) com datas inconsistentes entre materias, sem vigencia confirmada - nao marcada ativa, nao notificada. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Sem alerta.",
+ "nota_ciclo_15_10_monitor": "2026-10-15T00:19:19Z — WebSearch passageirodeprimeira.com: transferência (Nubank 25% até 06/09, Esfera/Livelo antigos) e compra direta (último 65% Itaú/62% Clube até 02/10, R$24,50/R$26,60) — nenhuma vigente em 15/10; nada ativo, sem notificação. Página oficial ENOTFOUND; Latam_PASS tool timeout; latam_miles_price.json inexistente.",
+ "nota_ciclo_15_10_monitor_06h": "2026-10-15T06:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Nubank 25% ate 06/09, Esfera/Livelo antigos; compra direta: ultima confirmada 65%/62% ate 02/10 (expirada), alegacao 'ate 28/10' (R$24,50 Itau/R$26,60 demais, 350k) com datas inconsistentes, sem vigencia confirmada — nao marcada ativa. Nada >=60%/<=48h. Pagina oficial ENOTFOUND; Latam_PASS timeout; blog de terceiros, confianca baixa. Sem notificacao.",
+ "nota_ciclo_15_10_monitor_12h": "2026-10-15T12:19:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo 25% ate 22/09 e Nubank/Esfera antigos, todos expirados; compra direta: ultima confirmada 65% ate 02/10 (expirada), alegacao 'ate 30/10' com datas inconsistentes, sem vigencia confirmada — nao marcada ativa. Nada >=60%/<=48h. Pagina oficial ENOTFOUND; Latam_PASS timeout; blog de terceiros, confianca baixa. Sem notificacao.",
+ "nota_ciclo_16_10_monitor_06h": "2026-10-16T06:19:00Z - latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo/Esfera/Nubank 25-35% so historico, nada >=60%/<=48h (Esfera 25% ate 25/10 ja registrada); compra direta: ultima 65%/62% encerrou 02/10, nenhuma vigente. Blog de terceiros. Sem alerta.",
+ "nota_ciclo_16_10_monitor_18h": "Monitor leve 18h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25-30% - todos <60%, nada ativo; compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada), nenhuma ativa confirmada. Sem alerta.",
+ "nota_ciclo_17_10_monitor_06h": "Monitor leve 06h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada ativo - bonus Livelo/Esfera/Nubank 25-30% encerrados (<60%); compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada); Inter sem rota/bonus para LATAM Pass. Sem alerta.",
+ "nota_ciclo_17_10_dashboard": "Dashboard completo: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada >=60%; compra direta sem campanha vigente (ultima 65%/62% encerrou 02/10); Livelo/Nubank encerrados; Esfera 25% ate 25/10 mantida (abaixo do limiar); Inter sem rota para LATAM Pass. Sem alerta."
 }
