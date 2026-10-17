@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 2,
-    "data_checagem": "2026-10-17T12:07:00Z",
-    "nota": "Dashboard completo 2026-10-17T12:07:00Z. CUZ-LIM x2d R$ 8609, CUZ-LIM x3d R$ 8893, LIM-CUZ x2d R$ 9422, LIM-CUZ x3d R$ 9462. Sem queda >=15%."
+    "data_checagem": "2026-10-17T18:20:00Z",
+    "nota": "Monitor leve 2026-10-17T18:20:00Z. LIM-CUZ x2d R$ 9422, LIM-CUZ x3d R$ 9462, CUZ-LIM x2d R$ 8609, CUZ-LIM x3d R$ 8893. Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -14062,6 +14062,32 @@
         "fonte": "Dashboard completo: fli 0 resultados (LA, 2 pax); lastminute (EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 746 (2027-06-13) + volta 5038 (2027-06-19)",
         "media_movel_30_checagens": 9197.4,
         "variacao_pct_vs_media": 2.88,
+        "nota": "Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-17T18:20:00Z",
+        "preco_total_brl": 9422,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 706 (2027-06-12) + volta 5038 (2027-06-18)",
+        "media_movel_30_checagens": 9115.67,
+        "variacao_pct_vs_media": 3.36,
+        "nota": "Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-17T18:20:00Z",
+        "preco_total_brl": 9462,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 746 (2027-06-13) + volta 5038 (2027-06-19)",
+        "media_movel_30_checagens": 9191.97,
+        "variacao_pct_vs_media": 2.94,
         "nota": "Sem queda >=15%."
       }
     ],
@@ -28368,10 +28394,36 @@
         "media_movel_30_checagens": 8757.27,
         "variacao_pct_vs_media": 1.55,
         "nota": "Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-17T18:20:00Z",
+        "preco_total_brl": 8609,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3804 + domestico 673 (2027-06-16) + volta 4132 (2027-06-18)",
+        "media_movel_30_checagens": 9145.49,
+        "variacao_pct_vs_media": -5.87,
+        "nota": "Sem queda >=15%."
+      },
+      {
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "data_checagem": "2026-10-17T18:20:00Z",
+        "preco_total_brl": 8893,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3804 + domestico 673 (2027-06-16) + volta 4416 (2027-06-19)",
+        "media_movel_30_checagens": 8788.4,
+        "variacao_pct_vs_media": 1.19,
+        "nota": "Sem queda >=15%."
       }
     ]
   },
-  "ultima_checagem": "2026-10-17T12:07:00Z",
+  "ultima_checagem": "2026-10-17T18:20:00Z",
   "ultima_tentativa_parcial": "Monitor leve 2026-10-11T18:20:00Z: fli retornou 0 resultados (airlines=LA, 2 pax) em TODOS os 9 trechos e em search_dates; Kiwi (select_airlines=LA) tambem 0; lastminute REC-LIM 10/06 so deu 2 escalas EUR 697,04 (2 pax), nao comparavel com a serie fli em BRL. Nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$8686).",
   "ultima_tentativa_parcial_data": "2026-10-11T18:20:00Z"
 }
