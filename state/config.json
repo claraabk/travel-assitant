@@ -11,15 +11,15 @@
  "email_diario": false,
  "latam_miles_price_tool_status": {
   "ultimo_sucesso": null,
-  "ultima_tentativa": "2026-10-17T22:20:00Z",
-  "tentativas_consecutivas_falhas": 236,
-  "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai (retestado 2026-10-17T22:20:00Z)",
+  "ultima_tentativa": "2026-10-18T00:19:01Z",
+  "tentativas_consecutivas_falhas": 237,
+  "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai (retestado 2026-10-18T00:19:01Z)",
   "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
   "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente/desatualizado (>24h); sem preco inventado."
  },
  "fli_connector_status_ciclo_atual": {
-  "ultima_tentativa": "2026-10-17T22:20:00Z",
-  "resultado": "fli: 0 resultados (LA, 2 pax) REC-LIM; ida via lastminute, domestico/volta via Kiwi."
+  "ultima_tentativa": "2026-10-18T00:19:01Z",
+  "resultado": "fli: 0 resultados (LA, 2 pax) REC-LIM e REC-CUZ; ida via lastminute, domestico/volta via Kiwi."
  },
  "roteiro": {
   "fixo": false,
@@ -60,8 +60,8 @@
  },
  "latampass_ofertas_page_status": {
   "url": "https://latampass.latam.com/pt_br/ofertas",
-  "ultima_tentativa": "2026-10-17T22:20:00Z",
-  "resultado": "WebFetch falhou (ENOTFOUND)",
+  "ultima_tentativa": "2026-10-18T00:19:01Z",
+  "resultado": "WebFetch não tentado novamente nesta execução (histórico: ENOTFOUND/EGRESS_BLOCKED)",
   "ultimo_erro": "WebFetch: getaddrinfo ENOTFOUND latampass.latam.com"
  },
  "fontes_monitoradas_promocoes": [

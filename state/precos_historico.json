@@ -34,8 +34,8 @@
   "passageiros": 2,
   "dias_cusco": 6,
   "dias_lima": 2,
-  "data_checagem": "2026-10-17T22:20:00Z",
-  "nota": "Monitor leve 2026-10-17T22:20:00Z. LIM-CUZ x2d R$ 9421, LIM-CUZ x3d R$ 9461, CUZ-LIM x2d R$ 8597, CUZ-LIM x3d R$ 8608. Sem queda >=15%."
+  "data_checagem": "2026-10-18T00:19:01Z",
+  "nota": "Monitor leve 2026-10-18T00:19:01Z. LIM-CUZ x2d R$ 9421, LIM-CUZ x3d R$ 9461, CUZ-LIM x2d R$ 8597, CUZ-LIM x3d R$ 8608. Sem queda >=15%."
  },
  "checagens": {
   "LIM-LIM": [
@@ -14114,6 +14114,32 @@
     "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 746 (2027-06-13) + volta 5037 (2027-06-19)",
     "media_movel_30_checagens": 9269.73,
     "variacao_pct_vs_media": 2.06,
+    "nota": "Sem queda >=15%."
+   },
+   {
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 2,
+    "ida": "2027-06-10",
+    "data_checagem": "2026-10-18T00:19:01Z",
+    "preco_total_brl": 9421,
+    "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 706 (2027-06-12) + volta 5037 (2027-06-18)",
+    "media_movel_30_checagens": 9286.0,
+    "variacao_pct_vs_media": 1.45,
+    "nota": "Sem queda >=15%."
+   },
+   {
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 3,
+    "ida": "2027-06-10",
+    "data_checagem": "2026-10-18T00:19:01Z",
+    "preco_total_brl": 9461,
+    "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3678 + domestico 746 (2027-06-13) + volta 5037 (2027-06-19)",
+    "media_movel_30_checagens": 9302.6,
+    "variacao_pct_vs_media": 1.7,
     "nota": "Sem queda >=15%."
    }
   ],
@@ -28471,6 +28497,32 @@
     "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3804 + domestico 673 (2027-06-16) + volta 4131 (2027-06-19)",
     "media_movel_30_checagens": 8735.5,
     "variacao_pct_vs_media": -1.46,
+    "nota": "Sem queda >=15%."
+   },
+   {
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 2,
+    "ida": "2027-06-10",
+    "data_checagem": "2026-10-18T00:19:01Z",
+    "preco_total_brl": 8597,
+    "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3804 + domestico 673 (2027-06-16) + volta 4120 (2027-06-18)",
+    "media_movel_30_checagens": 8732.83,
+    "variacao_pct_vs_media": -1.56,
+    "nota": "Sem queda >=15%."
+   },
+   {
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 3,
+    "ida": "2027-06-10",
+    "data_checagem": "2026-10-18T00:19:01Z",
+    "preco_total_brl": 8608,
+    "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); lastminute (LA, 2 pax, EUR a ~5,28) + Kiwi (LA, 2 pax). Ida 3804 + domestico 673 (2027-06-16) + volta 4131 (2027-06-19)",
+    "media_movel_30_checagens": 8729.8,
+    "variacao_pct_vs_media": -1.4,
     "nota": "Sem queda >=15%."
    }
   ]
