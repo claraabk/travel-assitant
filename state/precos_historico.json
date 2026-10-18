@@ -30,11 +30,11 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 8594,
+    "preco_total_brl": 8593,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-18T12:25:00Z",
+    "data_checagem": "2026-10-18T18:19:00Z",
     "nota": "Dashboard completo 2026-10-18T12:15:45Z. LIM-CUZ x2d R$ 9421, LIM-CUZ x3d R$ 9461, CUZ-LIM x2d R$ 8597, CUZ-LIM x3d R$ 8594. Sem queda >=15%."
   },
   "checagens": {
@@ -14403,6 +14403,124 @@
         "media_movel_30_checagens": 9307,
         "variacao_pct_vs_media": 1.65,
         "nota": "Monitor leve; preco igual ao ultimo checkin (12:15Z), sem queda."
+      },
+      {
+        "data_checagem": "2026-10-18T18:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9421,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); ida via lastminute (LA, 2 pax, EUR a ~5,28), domestico/volta via Kiwi (LA, 2 pax, BRL)",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LATAM",
+              "origem": "REC",
+              "destino": "LIM",
+              "partida": "2027-06-10T06:05",
+              "chegada": "2027-06-10T21:10"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2276",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T16:35",
+              "chegada": "2027-06-12T17:55"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2293",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-18T08:40",
+              "chegada": "2027-06-18T10:15"
+            },
+            {
+              "voo": "LA2935",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T13:30",
+              "chegada": "2027-06-18T20:10"
+            },
+            {
+              "voo": "LA4554",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-18T23:10",
+              "chegada": "2027-06-19T02:10"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "media_movel_30_checagens": 9469,
+        "variacao_pct_vs_media": -0.51,
+        "nota": "Monitor leve; sem queda >=15%."
+      },
+      {
+        "data_checagem": "2026-10-18T18:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9461,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); ida via lastminute (LA, 2 pax, EUR a ~5,28), domestico/volta via Kiwi (LA, 2 pax, BRL)",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LATAM",
+              "origem": "REC",
+              "destino": "LIM",
+              "partida": "2027-06-10T06:05",
+              "chegada": "2027-06-10T21:10"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2069",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T19:50",
+              "chegada": "2027-06-13T21:10"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2167",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-19T05:00",
+              "chegada": "2027-06-19T06:35"
+            },
+            {
+              "voo": "LA8005",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-19T09:15",
+              "chegada": "2027-06-19T16:25"
+            },
+            {
+              "voo": "LA3378",
+              "origem": "GRU",
+              "destino": "REC",
+              "partida": "2027-06-19T21:00",
+              "chegada": "2027-06-20T00:10"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "media_movel_30_checagens": 9490,
+        "variacao_pct_vs_media": -0.31,
+        "nota": "Monitor leve; sem queda >=15%."
       }
     ],
     "CUZ-LIM": [
@@ -29154,10 +29272,181 @@
             ]
           }
         }
+      },
+      {
+        "data_checagem": "2026-10-18T18:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8596,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); ida via lastminute (LA, 2 pax, EUR a ~5,28), domestico/volta via Kiwi (LA, 2 pax, BRL)",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LATAM",
+              "origem": "REC",
+              "destino": "CUZ",
+              "partida": "2027-06-10T14:50",
+              "chegada": "2027-06-11T11:30"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45",
+              "chegada": "2027-06-16T21:15"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2418",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T21:15",
+              "chegada": "2027-06-19T04:15"
+            },
+            {
+              "voo": "LA4773",
+              "origem": "GRU",
+              "destino": "BSB",
+              "partida": "2027-06-19T06:00",
+              "chegada": "2027-06-19T07:45"
+            },
+            {
+              "voo": "LA3401",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-19T08:30",
+              "chegada": "2027-06-19T11:05"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "alertas_conexao": [
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 45,
+            "tipo": "conexao_curta",
+            "limite": 90
+          }
+        ],
+        "alternativa_sem_alerta": {
+          "preco_brl": 4131,
+          "nota": "total R$8608 (+R$11)",
+          "detalhe_voo": {
+            "volta": [
+              {
+                "voo": "LA2418",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-18T21:15",
+                "chegada": "2027-06-19T04:15"
+              },
+              {
+                "voo": "LA3374",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T07:05",
+                "chegada": "2027-06-19T10:10"
+              }
+            ]
+          }
+        },
+        "media_movel_30_checagens": 8708,
+        "variacao_pct_vs_media": -1.29,
+        "nota": "Monitor leve; sem queda >=15%."
+      },
+      {
+        "data_checagem": "2026-10-18T18:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 8593,
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax); ida via lastminute (LA, 2 pax, EUR a ~5,28), domestico/volta via Kiwi (LA, 2 pax, BRL)",
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LATAM",
+              "origem": "REC",
+              "destino": "CUZ",
+              "partida": "2027-06-10T14:50",
+              "chegada": "2027-06-11T11:30"
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2034",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T19:45",
+              "chegada": "2027-06-16T21:15"
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40",
+              "chegada": "2027-06-19T07:20"
+            },
+            {
+              "voo": "LA3730",
+              "origem": "BSB",
+              "destino": "FOR",
+              "partida": "2027-06-19T10:20",
+              "chegada": "2027-06-19T12:50"
+            },
+            {
+              "voo": "LA4779",
+              "origem": "FOR",
+              "destino": "REC",
+              "partida": "2027-06-19T14:30",
+              "chegada": "2027-06-19T15:45"
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 2
+        },
+        "alternativa_1_parada": {
+          "preco_brl": 4131,
+          "nota": "total R$8608 (+R$14), 1 parada: LIM 21:15 -> GRU -> REC (GRU 2h50)",
+          "detalhe_voo": {
+            "volta": [
+              {
+                "voo": "LA2418",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T21:15",
+                "chegada": "2027-06-20T04:15"
+              },
+              {
+                "voo": "LA3374",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-20T07:05",
+                "chegada": "2027-06-20T10:10"
+              }
+            ]
+          }
+        },
+        "media_movel_30_checagens": 8705,
+        "variacao_pct_vs_media": -1.29,
+        "nota": "Monitor leve; sem queda >=15%."
       }
     ]
   },
-  "ultima_checagem": "2026-10-18T12:25:00Z",
+  "ultima_checagem": "2026-10-18T18:19:00Z",
   "ultima_tentativa_parcial": "Monitor leve 2026-10-11T18:20:00Z: fli retornou 0 resultados (airlines=LA, 2 pax) em TODOS os 9 trechos e em search_dates; Kiwi (select_airlines=LA) tambem 0; lastminute REC-LIM 10/06 so deu 2 escalas EUR 697,04 (2 pax), nao comparavel com a serie fli em BRL. Nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$8686).",
   "ultima_tentativa_parcial_data": "2026-10-11T18:20:00Z"
 }
