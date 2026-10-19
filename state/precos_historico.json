@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 8593,
+    "preco_total_brl": 9112,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-18T18:19:00Z",
-    "nota": "Dashboard completo 2026-10-18T12:15:45Z. LIM-CUZ x2d R$ 9421, LIM-CUZ x3d R$ 9461, CUZ-LIM x2d R$ 8597, CUZ-LIM x3d R$ 8594. Sem queda >=15%."
+    "data_checagem": "2026-10-19T00:00:00Z",
+    "nota": "Monitor leve 2026-10-19 (fli, 2 pax). LIM-CUZ x2d R$ 9408; LIM-CUZ x3d R$ 9408; CUZ-LIM x2d R$ 9114; CUZ-LIM x3d R$ 9112. Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -14521,6 +14521,42 @@
         "media_movel_30_checagens": 9490,
         "variacao_pct_vs_media": -0.31,
         "nota": "Monitor leve; sem queda >=15%."
+      },
+      {
+        "data_checagem": "2026-10-19T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9408,
+        "trechos_brl": {
+          "ida": 3969,
+          "domestico": 676,
+          "volta": 4763
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) todos os trechos, one-way somados",
+        "nota": "Monitor leve 19/10; fli voltou a retornar resultados. Ida/volta agora via fli (serie anterior misturava lastminute/Kiwi), por isso alta aparente vs. ciclo anterior; sem queda >=15%.",
+        "media_movel_30_checagens": 9240.7,
+        "variacao_pct_vs_media": 1.81
+      },
+      {
+        "data_checagem": "2026-10-19T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9408,
+        "trechos_brl": {
+          "ida": 3969,
+          "domestico": 676,
+          "volta": 4763
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) todos os trechos, one-way somados",
+        "nota": "Monitor leve 19/10; fli voltou a retornar resultados. Ida/volta agora via fli (serie anterior misturava lastminute/Kiwi), por isso alta aparente vs. ciclo anterior; sem queda >=15%.",
+        "media_movel_30_checagens": 9357.2,
+        "variacao_pct_vs_media": 0.54
       }
     ],
     "CUZ-LIM": [
@@ -29443,10 +29479,46 @@
         "media_movel_30_checagens": 8705,
         "variacao_pct_vs_media": -1.29,
         "nota": "Monitor leve; sem queda >=15%."
+      },
+      {
+        "data_checagem": "2026-10-19T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9114,
+        "trechos_brl": {
+          "ida": 4433,
+          "domestico": 608,
+          "volta": 4073
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) todos os trechos, one-way somados",
+        "nota": "Monitor leve 19/10; fli voltou a retornar resultados. Ida/volta agora via fli (serie anterior misturava lastminute/Kiwi), por isso alta aparente vs. ciclo anterior; sem queda >=15%.",
+        "media_movel_30_checagens": 9001.6,
+        "variacao_pct_vs_media": 1.25
+      },
+      {
+        "data_checagem": "2026-10-19T00:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9112,
+        "trechos_brl": {
+          "ida": 4433,
+          "domestico": 608,
+          "volta": 4071
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) todos os trechos, one-way somados",
+        "nota": "Monitor leve 19/10; fli voltou a retornar resultados. Ida/volta agora via fli (serie anterior misturava lastminute/Kiwi), por isso alta aparente vs. ciclo anterior; sem queda >=15%.",
+        "media_movel_30_checagens": 8740.1,
+        "variacao_pct_vs_media": 4.26
       }
     ]
   },
-  "ultima_checagem": "2026-10-18T18:19:00Z",
+  "ultima_checagem": "2026-10-19T00:00:00Z",
   "ultima_tentativa_parcial": "Monitor leve 2026-10-11T18:20:00Z: fli retornou 0 resultados (airlines=LA, 2 pax) em TODOS os 9 trechos e em search_dates; Kiwi (select_airlines=LA) tambem 0; lastminute REC-LIM 10/06 so deu 2 escalas EUR 697,04 (2 pax), nao comparavel com a serie fli em BRL. Nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$8686).",
   "ultima_tentativa_parcial_data": "2026-10-11T18:20:00Z"
 }
