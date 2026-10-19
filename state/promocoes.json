@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-19T00:00:00Z",
+  "ultima_checagem": "2026-10-19T12:00:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -306,5 +306,6 @@
   "nota_ciclo_16_10_monitor_18h": "Monitor leve 18h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com: transferencia Livelo 25% (ate 22/09, vencida), Esfera 25-30%, Nubank 25-30% - todos <60%, nada ativo; compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada), nenhuma ativa confirmada. Sem alerta.",
   "nota_ciclo_17_10_monitor_06h": "Monitor leve 06h: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada ativo - bonus Livelo/Esfera/Nubank 25-30% encerrados (<60%); compra direta so edicao 65%/62% de 02/10 (expirada, ja notificada); Inter sem rota/bonus para LATAM Pass. Sem alerta.",
   "nota_ciclo_17_10_dashboard": "Dashboard completo: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada >=60%; compra direta sem campanha vigente (ultima 65%/62% encerrou 02/10); Livelo/Nubank encerrados; Esfera 25% ate 25/10 mantida (abaixo do limiar); Inter sem rota para LATAM Pass. Sem alerta.",
-  "nota_ciclo_19_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem campanha vigente confirmada; Livelo 25% encerrou 22/09, Esfera 25% (<60%), compra direta: ultima edicao encerrou 02/10 (ja notificada). Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao."
+  "nota_ciclo_19_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem campanha vigente confirmada; Livelo 25% encerrou 22/09, Esfera 25% (<60%), compra direta: ultima edicao encerrou 02/10 (ja notificada). Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao.",
+  "nota_ciclo_19_10_monitor_12h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): Livelo 25% encerrou 22/09, Esfera 25% (<60%), nenhuma campanha de transferencia >=60% ativa; compra direta: sem campanha vigente (ultima encerrou 02/10, ja notificada). ofertas LATAM Pass inacessivel (ENOTFOUND). Nenhum gatilho; sem notificacao."
 }
