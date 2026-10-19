@@ -29519,6 +29519,6 @@
     ]
   },
   "ultima_checagem": "2026-10-19T00:00:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 19/10 12h30: fli (LA, 2 pax, BRL) 0 resultados em REC-LIM e REC-CUZ. Kiwi (LA, 2 pax, BRL): LIM-CUZ R$705 (12/06) / R$746 (13/06); CUZ-LIM R$673 (16/06); CUZ-REC R$5038 (18-19/06); LIM-REC R$4118 (18-19/06). Kiwi REC-LIM/REC-CUZ com LA = 0 resultados (sem LA o mais barato eh Azul+Sky, nao vale). lastminute LA REC-LIM ~EUR 697 e REC-CUZ ~EUR 720 (2 pax, EUR, nao comparavel). Sem ida internacional LA em BRL -> total das variantes nao calculavel; nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$9112).",
-  "ultima_tentativa_parcial_data": "2026-10-19T12:30:00Z"
+  "ultima_tentativa_parcial": "2026-10-19T18:30:00Z",
+  "ultima_tentativa_parcial_data": "Monitor leve 19/10 18h30: fli 0 resultados; Kiwi (LA, 2 pax, BRL, ida 10/06/2027): CUZ->REC 18/06 R$5029, LIM->REC 18/06 R$4116, LIM->CUZ 12/06 R$705, CUZ->LIM 16/06 R$673; REC->LIM e REC->CUZ sem resultado. Totais nao calculados (serie fli nao comparavel com Kiwi). Nenhum checkin anexado; melhor_combinacao_geral mantida (CUZ-LIM R$9112). Sem queda >=15%."
 }
