@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-19T18:00:00Z",
+  "ultima_checagem": "2026-10-19T12:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -308,5 +308,6 @@
   "nota_ciclo_17_10_dashboard": "Dashboard completo: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nada >=60%; compra direta sem campanha vigente (ultima 65%/62% encerrou 02/10); Livelo/Nubank encerrados; Esfera 25% ate 25/10 mantida (abaixo do limiar); Inter sem rota para LATAM Pass. Sem alerta.",
   "nota_ciclo_19_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem campanha vigente confirmada; Livelo 25% encerrou 22/09, Esfera 25% (<60%), compra direta: ultima edicao encerrou 02/10 (ja notificada). Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao.",
   "nota_ciclo_19_10_monitor_12h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): Livelo 25% encerrou 22/09, Esfera 25% (<60%), nenhuma campanha de transferencia >=60% ativa; compra direta: sem campanha vigente (ultima encerrou 02/10, ja notificada). ofertas LATAM Pass inacessivel (ENOTFOUND). Nenhum gatilho; sem notificacao.",
-  "nota_ciclo_19_10_dashboard": "Dashboard 19/10 18h: WebSearch passageirodeprimeira.com (transferencia e compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia >=60%; Esfera 25% ate 25/10 segue ativa (abaixo do threshold). Latam_PASS conector falhou (Akamai); ofertas LATAM Pass inacessivel. Nenhuma notificacao."
+  "nota_ciclo_19_10_dashboard": "Dashboard 19/10 18h: WebSearch passageirodeprimeira.com (transferencia e compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia >=60%; Esfera 25% ate 25/10 segue ativa (abaixo do threshold). Latam_PASS conector falhou (Akamai); ofertas LATAM Pass inacessivel. Nenhuma notificacao.",
+  "nota_ciclo_19_10_monitor_12h30": "Monitor leve 12h30: ofertas LATAM Pass ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): sem campanha vigente; Livelo 25% encerrou 22/09, Esfera/Nubank 25-30% (<60%) sem prazo curto; compra direta: ultima (65%/62%) encerrou 02/10, ja notificada; Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao."
 }
