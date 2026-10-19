@@ -29519,6 +29519,6 @@
     ]
   },
   "ultima_checagem": "2026-10-19T00:00:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 2026-10-19 (2o ciclo do dia): fli (airlines=LA, 2 pax, BRL) retornou 0 em TODOS os 9 trechos; Kiwi (select_airlines=LA, 2 pax, BRL) deu 0 em REC-LIM e REC-CUZ, mas retornou domestico LIM-CUZ 12/06 R$705 (13/06 R$746), CUZ-LIM 16/06 R$673, volta CUZ-REC 18-19/06 R$5038, LIM-REC 18-19/06 R$4118. lastminute REC-LIM 10/06 EUR 696,60 e REC-CUZ 10/06 EUR 720,38 (2 pax, moeda diferente, nao comparavel com serie fli em BRL). Sem as 3 pernas na mesma fonte/moeda nao ha total comparavel; nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$9112). Sem queda >=15% detectavel.",
-  "ultima_tentativa_parcial_data": "2026-10-19T12:00:00Z"
+  "ultima_tentativa_parcial": "Dashboard completo 2026-10-19 18h: fli (LA, 2 pax, BRL) retornou 0 em todos os trechos testados; nenhum checkin anexado; melhor_combinacao_geral inalterada (CUZ-LIM x3d R$9112, ultimo checkin fli 19/10 00h).",
+  "ultima_tentativa_parcial_data": "2026-10-19T18:00:00Z"
 }
