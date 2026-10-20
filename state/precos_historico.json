@@ -29519,6 +29519,6 @@
     ]
   },
   "ultima_checagem": "2026-10-19T00:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-19T18:30:00Z",
-  "ultima_tentativa_parcial_data": "Monitor leve 19/10 18h30: fli 0 resultados; Kiwi (LA, 2 pax, BRL, ida 10/06/2027): CUZ->REC 18/06 R$5029, LIM->REC 18/06 R$4116, LIM->CUZ 12/06 R$705, CUZ->LIM 16/06 R$673; REC->LIM e REC->CUZ sem resultado. Totais nao calculados (serie fli nao comparavel com Kiwi). Nenhum checkin anexado; melhor_combinacao_geral mantida (CUZ-LIM R$9112). Sem queda >=15%."
+  "ultima_tentativa_parcial": "Monitor leve 20/10: fli 0 resultados nos 9 trechos (LA, 2 pax, BRL); Kiwi (LA, 2 pax, BRL, ida 10/06/2027): REC->LIM e REC->CUZ 10/06 sem resultado; LIM->CUZ 12/06 R$705 e 13/06 R$705; CUZ->LIM 16/06 R$673; CUZ->REC 18/06 R$5029 e 19/06 R$5030; LIM->REC 18/06 R$4116 e 19/06 R$4113. Totais das 4 variantes nao calculados (faltam os trechos de ida REC->LIM/CUZ; serie Kiwi nao comparavel com fli). Nenhum checkin anexado; melhor_combinacao_geral mantida (CUZ-LIM R$9112). Sem queda >=15% observavel (volta LIM-REC Kiwi 4113-4116 vs 4071-4763 fli, estavel).",
+  "ultima_tentativa_parcial_data": "2026-10-20T12:00:00Z"
 }
