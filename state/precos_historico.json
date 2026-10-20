@@ -29556,9 +29556,9 @@
   },
   "ultima_checagem": "2026-10-20T06:19:00Z",
   "ultima_tentativa_parcial": {
-    "data_checagem": "2026-10-20T12:30:00Z",
+    "data_checagem": "2026-10-20T18:30:00Z",
     "passageiros": 2,
-    "resultado": "Monitor leve 12h30Z: fli retornou 0 resultados nos 9 trechos one-way (REC-LIM, REC-CUZ, LIM-CUZ 12/13jun, CUZ-LIM, CUZ-REC 18/19jun, LIM-REC 18/19jun). Kiwi (select_airlines=LA, 2 pax): REC-LIM e REC-CUZ 10/06 = 0; LIM-REC 19/06 = R$ 4099; CUZ-REC 19/06 = R$ 5014. Sem ida, totais por variante nao calculaveis; checagens nao anexadas. Sem queda >=15%."
+    "resultado": "Monitor leve 18h30Z: fli (airlines=LA, 2 pax, BRL) retornou 0 voos em REC-LIM 10/06, REC-CUZ 10/06, LIM-CUZ 13/06 e CUZ-REC 19/06. Kiwi (select_airlines=LA, 2 pax) 0 em REC-LIM e REC-CUZ 10/06. Sem ida nao ha total por variante; checagens nao anexadas. Sem queda >=15%."
   },
-  "ultima_tentativa_parcial_data": "2026-10-20T12:30:00Z"
+  "ultima_tentativa_parcial_data": "2026-10-20T18:30:00Z"
 }

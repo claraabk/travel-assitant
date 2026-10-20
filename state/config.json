@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-20T12:30:00Z",
-    "tentativas_consecutivas_falhas": 249,
+    "ultima_tentativa": "2026-10-20T18:30:00Z",
+    "tentativas_consecutivas_falhas": 250,
     "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-20T12:30:00Z",
-    "resultado": "monitor leve 12h30Z: fli 0 resultados nos 9 trechos; Kiwi so retornou LIM-REC e CUZ-REC 19/06 (ida REC-LIM/CUZ = 0). Checagem parcial, nada anexado."
+    "ultima_tentativa": "2026-10-20T18:30:00Z",
+    "resultado": "monitor leve 18h30Z: fli 0 resultados em REC-LIM, REC-CUZ, LIM-CUZ, CUZ-REC; Kiwi 0 em REC-LIM e REC-CUZ. Checagem parcial, nada anexado."
   },
   "roteiro": {
     "fixo": false,
@@ -60,7 +60,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-20T06:19:00Z",
+    "ultima_tentativa": "2026-10-20T18:30:00Z",
     "resultado": "WebFetch tentado: ENOTFOUND",
     "ultimo_erro": "WebFetch: getaddrinfo ENOTFOUND latampass.latam.com"
   },
