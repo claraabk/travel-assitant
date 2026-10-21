@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-20T18:30:00Z",
+  "ultima_checagem": "2026-10-21T00:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -312,5 +312,6 @@
   "nota_ciclo_19_10_monitor_12h30": "Monitor leve 12h30: ofertas LATAM Pass ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): sem campanha vigente; Livelo 25% encerrou 22/09, Esfera/Nubank 25-30% (<60%) sem prazo curto; compra direta: ultima (65%/62%) encerrou 02/10, ja notificada; Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao.",
   "nota_ciclo_19_10_monitor_18h30": "Monitor leve 18h30: ofertas LATAM Pass ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): sem campanha vigente confirmada; Livelo 25% encerrou 22/09, Esfera 25% (<60%), compra direta so edicoes antigas (ultima 65%/62% ate 02/10, ja notificada). Nada >=60%/<=48h. Sem alerta.",
   "nota_ciclo_20_10_monitor": "2026-10-20T06:19:00Z — ofertas LATAM Pass ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): sem campanha vigente; transferencia Esfera/Livelo/Nubank 25-30% (<60%), Livelo encerrou 22/09, Nubank 04/10; compra direta: ultima 65%/62% encerrou 02/10 (ja notificada), datas 'ate 28/30 out' inconsistentes/nao confirmadas. Inter sem rota LATAM Pass. Nenhum gatilho; sem notificacao.",
-  "obs_20_10_dashboard": "WebSearch passageirodeprimeira.com: resultado de compra direta '65% até 28/10' cita 'sexta-feira (28)' = 28/08/2026 (promoção já expirada, não 28/10 que é quarta). Tratada como inativa; sem alerta."
+  "obs_20_10_dashboard": "WebSearch passageirodeprimeira.com: resultado de compra direta '65% até 28/10' cita 'sexta-feira (28)' = 28/08/2026 (promoção já expirada, não 28/10 que é quarta). Tratada como inativa; sem alerta.",
+  "nota_ciclo_21_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao confirmada vigente em 21/10. Compra: titulos recorrentes 60-66%, um '60% ate 30 de outubro' sem data de publicacao clara -> nao confirmado, nao notificado. Transferencia: Esfera 25% ate 25/10 (ativa, <60%, ja registrada); Livelo/Nubank expiradas. ofertas LATAM Pass: ENOTFOUND."
 }

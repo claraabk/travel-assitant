@@ -14575,6 +14575,24 @@
         "nota": "Monitor leve 2026-10-20; fli ok. LIM-CUZx2d R$ 9349; LIM-CUZx3d R$ 9349. Sem queda >=15% vs media movel.",
         "media_movel_30_checagens": 9542.2,
         "variacao_pct_vs_media": -2.02
+      },
+      {
+        "data_checagem": "2026-10-21T00:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9365,
+        "trechos_brl": {
+          "ida": 3950,
+          "domestico": 673,
+          "volta": 4742
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) one-way somados",
+        "nota": "Monitor leve 2026-10-21; fli ok. Volta CUZ-REC so retornou 20/06 na janela. Sem queda >=15%.",
+        "media_movel_30_checagens": 9523.6,
+        "variacao_pct_vs_media": -1.67
       }
     ],
     "CUZ-LIM": [
@@ -29551,10 +29569,28 @@
         "nota": "Monitor leve 2026-10-20; fli ok. CUZ-LIMx2d R$ 9057; CUZ-LIMx3d R$ 9055. Sem queda >=15% vs media movel.",
         "media_movel_30_checagens": 8726.9,
         "variacao_pct_vs_media": 3.76
+      },
+      {
+        "data_checagem": "2026-10-21T00:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "preco_total_brl": 9071,
+        "trechos_brl": {
+          "ida": 4411,
+          "domestico": 605,
+          "volta": 4055
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) one-way somados",
+        "nota": "Monitor leve 2026-10-21; fli ok. Volta LIM-REC so retornou 18/06 na janela. Sem queda >=15%.",
+        "media_movel_30_checagens": 8748.7,
+        "variacao_pct_vs_media": 3.68
       }
     ]
   },
-  "ultima_checagem": "2026-10-20T06:19:00Z",
+  "ultima_checagem": "2026-10-21T00:30:00Z",
   "ultima_tentativa_parcial": {
     "data_checagem": "2026-10-20T18:30:00Z",
     "passageiros": 2,
