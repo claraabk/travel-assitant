@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-21T06:20:00Z",
-    "tentativas_consecutivas_falhas": 252,
+    "ultima_tentativa": "2026-10-21T12:20:00Z",
+    "tentativas_consecutivas_falhas": 253,
     "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-21T06:20:00Z",
-    "resultado": "fli retornou vazio em REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC; Kiwi sem ida REC-LIM/REC-CUZ"
+    "ultima_tentativa": "2026-10-21T12:20:00Z",
+    "resultado": "Dashboard 21/10 12h: fli vazio nas 9 buscas (REC-CUZ, REC-LIM, CUZ-LIM, LIM-CUZ x2, LIM-REC x2, CUZ-REC x2); Kiwi sem ida REC-LIM/REC-CUZ. Sem novo checkin; dashboard usa última cotação válida."
   },
   "roteiro": {
     "fixo": false,
