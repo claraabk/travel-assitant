@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-22T06:25:00Z",
+  "ultima_checagem": "2026-10-22T12:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -34,21 +34,6 @@
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
       "ultima_reconfirmacao": "2026-10-20T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia, compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60% (Livelo 25% encerrou 22/09; Esfera 25% sem data confiavel); ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T12:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T18:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-21T06:20:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-22T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
-    },
-    {
-      "id": "esfera-latam-pass-25pct-out2026",
-      "tipo": "bonus_transferencia",
-      "descricao": "Esfera→LATAM Pass 25% de bônus (+1.000 milhas na 1ª transferência), teto 300.000 milhas extras/CPF. Data de término citada como 25/10 — inconsistente com o dia da semana; confirmar no site da Esfera.",
-      "bonus_pct": 25,
-      "e_permanente": false,
-      "valido_ate": "2026-10-25",
-      "fontes": [
-        "https://passageirodeprimeira.com/latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-da-esfera-2/"
-      ],
-      "confianca": "média-baixa — blog de terceiros, 1 fonte, data inconsistente",
-      "ja_notificada": false,
-      "acao_sugerida": "Abaixo do limiar de 60%; sem alerta.",
-      "ultima_reconfirmacao": "2026-10-20T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia, compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60% (Livelo 25% encerrou 22/09; Esfera 25% sem data confiavel); ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T12:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T18:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-21T06:20:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-22T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND)."
     }
   ],
   "expiradas": [
@@ -232,6 +217,23 @@
       "ultima_reconfirmacao": "2026-10-12T18:19:00Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada hoje; so campanhas passadas (compra direta: resultados sem data vigente confirmavel, ex. \"ate 28/10\" de materia antiga); nada >=60%/<=48h; latampass.latam.com/ofertas inacessivel (ENOTFOUND).",
       "acao_sugerida": "Abaixo do threshold de alerta urgente (60%) mesmo na leitura mais otimista (35%). Clara não tem saldo Livelo hoje (perfil só tem Nubank Ultravioleta) — não aplicável agora, registrar para o caso de vir a acumular Livelo no futuro.",
       "expirada_em": "2026-10-13T12:45:00Z — WebSearch passageirodeprimeira.com: Nubank 25% encerrou 04/10; Esfera ultima edicao 23/04; Livelo 25% edicao de jul/2026; nenhuma edicao vigente confirmada hoje. Reativar como nova oportunidade se reaparecer com data."
+    },
+    {
+      "id": "esfera-latam-pass-25pct-out2026",
+      "tipo": "bonus_transferencia",
+      "descricao": "Esfera→LATAM Pass 25% de bônus (+1.000 milhas na 1ª transferência), teto 300.000 milhas extras/CPF. Data de término citada como 25/10 — inconsistente com o dia da semana; confirmar no site da Esfera.",
+      "bonus_pct": 25,
+      "e_permanente": false,
+      "valido_ate": "2026-10-25",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-25-de-bonus-na-transferencia-de-pontos-da-esfera-2/"
+      ],
+      "confianca": "média-baixa — blog de terceiros, 1 fonte, data inconsistente",
+      "ja_notificada": false,
+      "acao_sugerida": "Abaixo do limiar de 60%; sem alerta.",
+      "ultima_reconfirmacao": "2026-10-20T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia, compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60% (Livelo 25% encerrou 22/09; Esfera 25% sem data confiavel); ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T12:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T18:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-21T06:20:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-22T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND).",
+      "encerrada_em": "2026-09-25",
+      "nota_encerramento": "Dashboard 22/10: WebSearch passageirodeprimeira.com indica campanha encerrada sexta 25/09 (25/10 era erro de data; 25/10/2026 e domingo). Movida para expiradas."
     }
   ],
   "checagem_20261001_21h": {
@@ -317,5 +319,6 @@
   "nota_ciclo_21_10_dashboard": "Dashboard 12h20Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; Esfera 25% ate 25/10 segue ativa (<60%). Nenhuma notificacao. Conector Latam-PASS falhou (Akamai); sem latam_miles_price.json.",
   "nota_ciclo_21_10_monitor_12h30": "Monitor leve 21/10 12h30: passageirodeprimeira (WebSearch) sem bônus de transferência LATAM Pass vigente >=60%; Esfera 25% (até 25/10, data inconsistente) já notificada/conhecida; Nubank 25% e Livelo 25% expirados. Compra direta: nenhuma promo ativa (última até 65% terminou 02/10). latampass.latam.com/ofertas inacessível (ENOTFOUND). Sem alerta.",
   "nota_ciclo_21_10_monitor_18h30": "WebSearch passageirodeprimeira.com (transferência e compra direta): sem oferta vigente em 21/10; mais recente de compra encerrou 02/10, transferência Livelo até 22/09 e Nubank até 06/09. Esfera 25% (ativa, até 25/10) já notificada/<60%. Sem alerta.",
-  "nota_ciclo_22_10_monitor_06h": "22/10 06h: WebSearch passageirodeprimeira (transferência + compra direta). Compra direta: nenhuma edição vigente confirmada (último: até 65% encerrado ~02/10). Transferência: Esfera 25% (ativa até 25/10, <60%, já registrada); Livelo 25% expirada; multi-banco 30% citada como terminando dia 23 (<60%, sem alerta). Página oficial inacessível (ENOTFOUND). Sem alerta."
+  "nota_ciclo_22_10_monitor_06h": "22/10 06h: WebSearch passageirodeprimeira (transferência + compra direta). Compra direta: nenhuma edição vigente confirmada (último: até 65% encerrado ~02/10). Transferência: Esfera 25% (ativa até 25/10, <60%, já registrada); Livelo 25% expirada; multi-banco 30% citada como terminando dia 23 (<60%, sem alerta). Página oficial inacessível (ENOTFOUND). Sem alerta.",
+  "nota_ciclo_22_10_dashboard": "Dashboard 12h30Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; Esfera 25% encerrou 25/09 (movida p/ expiradas). Latam-PASS falhou (Akamai); sem latam_miles_price.json. Nenhuma notificacao."
 }

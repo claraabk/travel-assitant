@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-22T06:25:00Z",
-    "tentativas_consecutivas_falhas": 257,
+    "ultima_tentativa": "2026-10-22T12:30:00Z",
+    "tentativas_consecutivas_falhas": 258,
     "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-22T06:25:00Z",
-    "resultado": "Monitor leve 22/10 06h: fli search_flights vazio (REC-LIM, REC-CUZ, 2 pax, LA, 10/06/2027); Kiwi REC-LIM/REC-CUZ vazio; lastminute REC-LIM só 2 escalas ~EUR 695 (2 pax), insuficiente p/ checkin completo. Sem novo checkin; ultima cotacao valida (21/10 00h30) mantida."
+    "ultima_tentativa": "2026-10-22T12:30:00Z",
+    "resultado": "Dashboard 22/10 12h30: fli search_flights vazio (REC-CUZ, REC-LIM, 2 pax, LA, 10/06/2027); Kiwi REC-LIM vazio. Sem novo checkin; ultima cotacao valida mantida (21/10 00h30; detalhe completo 20/10)."
   },
   "roteiro": {
     "fixo": false,
