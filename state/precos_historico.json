@@ -29591,6 +29591,6 @@
     ]
   },
   "ultima_checagem": "2026-10-21T00:30:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 2026-10-21 06h20Z: fli (search_dates/search_flights) retornou vazio em todas as 6 rotas; Kiwi (LA, 2 pax) sem resultado para ida REC-LIM e REC-CUZ em 10/06/2027. Obtidos via Kiwi: LIM-CUZ 13/06 R$721 (2 pax), CUZ-LIM 16/06 R$668 (2 pax), CUZ-REC 19/06 R$4999 (2 pax, 2 escalas), LIM-REC 19/06 R$4087 (2 pax). Totais das variantes nao calculados (sem ida); ultimos totais completos (00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15%.",
-  "ultima_tentativa_parcial_data": "2026-10-21T06:20:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-22: fli (search_flights 2 pax, LA) vazio em REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC; Kiwi (LA, 2 pax) sem resultado para ida REC-LIM e REC-CUZ em 10/06/2027. Obtidos via Kiwi: CUZ-REC 19/06 R$5291 (2 pax, 2 escalas), LIM-REC 19/06 R$4370 (2 pax, 1 escala). Totais das variantes nao calculados (sem trecho de ida); ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15%.",
+  "ultima_tentativa_parcial_data": "2026-10-22T12:00:00Z"
 }
