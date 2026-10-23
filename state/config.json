@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-23T06:20:00Z",
-    "tentativas_consecutivas_falhas": 262,
+    "ultima_tentativa": "2026-10-23T12:20:00Z",
+    "tentativas_consecutivas_falhas": 263,
     "ultimo_erro": "Page.wait_for_selector timeout 20000ms (radio-values) — Akamai",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-23T06:20:00Z",
-    "resultado": "Monitor leve 23/10 06h20Z: fli search_dates vazio nas 6 pernas (REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC, jun/2027, LA, 2 pax) e search_flights vazio ate para GRU-GIG (nov/2026) — conector fli fora do ar. Kiwi/lastminute nao comparaveis (ver ciclo anterior). Sem novo checkin; ultima cotacao valida mantida (21/10 00h30)."
+    "ultima_tentativa": "2026-10-23T12:20:00Z",
+    "resultado": "Monitor leve 23/10 12h20Z: fli search_flights vazio em REC-LIM e REC-CUZ (10/06/2027, LA, 2 pax, BRL) e search_dates vazio em LIM-CUZ (08-14/06) — conector fli sem resultados. Sem novo checkin; ultima cotacao valida mantida (21/10 00h30)."
   },
   "roteiro": {
     "fixo": false,
