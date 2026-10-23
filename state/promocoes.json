@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-22T18:30:00Z",
+  "ultima_checagem": "2026-10-23T00:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -320,5 +320,6 @@
   "nota_ciclo_21_10_monitor_12h30": "Monitor leve 21/10 12h30: passageirodeprimeira (WebSearch) sem bônus de transferência LATAM Pass vigente >=60%; Esfera 25% (até 25/10, data inconsistente) já notificada/conhecida; Nubank 25% e Livelo 25% expirados. Compra direta: nenhuma promo ativa (última até 65% terminou 02/10). latampass.latam.com/ofertas inacessível (ENOTFOUND). Sem alerta.",
   "nota_ciclo_21_10_monitor_18h30": "WebSearch passageirodeprimeira.com (transferência e compra direta): sem oferta vigente em 21/10; mais recente de compra encerrou 02/10, transferência Livelo até 22/09 e Nubank até 06/09. Esfera 25% (ativa, até 25/10) já notificada/<60%. Sem alerta.",
   "nota_ciclo_22_10_monitor_06h": "22/10 06h: WebSearch passageirodeprimeira (transferência + compra direta). Compra direta: nenhuma edição vigente confirmada (último: até 65% encerrado ~02/10). Transferência: Esfera 25% (ativa até 25/10, <60%, já registrada); Livelo 25% expirada; multi-banco 30% citada como terminando dia 23 (<60%, sem alerta). Página oficial inacessível (ENOTFOUND). Sem alerta.",
-  "nota_ciclo_22_10_dashboard": "Dashboard 12h30Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; Esfera 25% encerrou 25/09 (movida p/ expiradas). Latam-PASS falhou (Akamai); sem latam_miles_price.json. Nenhuma notificacao."
+  "nota_ciclo_22_10_dashboard": "Dashboard 12h30Z: WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; Esfera 25% encerrou 25/09 (movida p/ expiradas). Latam-PASS falhou (Akamai); sem latam_miles_price.json. Nenhuma notificacao.",
+  "nota_ciclo_23_10_monitor_00h30": "WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): sem compra direta vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% (ate ~23/10) e multi-banco 25-30% todos <60%; Esfera/Nubank sem campanha vigente; Inter sem rota LATAM Pass. ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Nenhum gatilho; sem notificacao."
 }

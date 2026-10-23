@@ -29591,6 +29591,6 @@
     ]
   },
   "ultima_checagem": "2026-10-21T00:30:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 2026-10-22 18h30Z: fli (LA, 2 pax, BRL) vazio em REC-LIM (10 e 12/06/2027) e REC-CUZ (10/06/2027); Kiwi (LA, 2 pax) sem resultados para REC-LIM e REC-CUZ. Sem trecho de ida, totais das variantes nao calculados; ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15% detectavel.",
-  "ultima_tentativa_parcial_data": "2026-10-22T18:30:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-23 00h30Z: fli (LA, 2 pax, BRL) vazio em REC-LIM (10 e 12/06/2027) e REC-CUZ (10/06/2027). Kiwi (LA) REC-LIM retornou so itinerarios 3 escalas ~R$22.5k (2 pax, via MAD, 08-10/06; nao comparavel com historico fli). lastminute REC-LIM 10/06: EUR 694,72 (2 pax, sem conversao confiavel). Sem trecho de ida comparavel -> totais das variantes nao recalculados; ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15% detectavel.",
+  "ultima_tentativa_parcial_data": "2026-10-23T00:30:00Z"
 }
