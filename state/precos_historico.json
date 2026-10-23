@@ -29591,6 +29591,6 @@
     ]
   },
   "ultima_checagem": "2026-10-21T00:30:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 2026-10-23 12h20Z: fli (LA, 2 pax, BRL) vazio em REC-LIM e REC-CUZ (10/06/2027) e search_dates LIM-CUZ vazio. Sem trecho de ida comparavel -> totais nao recalculados; ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15% detectavel.",
-  "ultima_tentativa_parcial_data": "2026-10-23T12:20:00Z"
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-23 18h30Z: fli e Kiwi (LA, 2 pax, BRL) vazios em REC-LIM e REC-CUZ (10/06/2027). Sem trecho de ida comparavel -> totais nao recalculados; ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15% detectavel.",
+  "ultima_tentativa_parcial_data": "2026-10-23T18:30:00Z"
 }
