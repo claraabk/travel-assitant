@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 9055,
+    "preco_total_brl": 9007,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-10-20T06:19:00Z",
-    "nota": "Monitor leve 2026-10-20 (fli, 2 pax). LIM-CUZ x2d R$ 9349; LIM-CUZ x3d R$ 9349; CUZ-LIM x2d R$ 9057; CUZ-LIM x3d R$ 9055. Sem queda >=15%."
+    "data_checagem": "2026-10-24T12:00:00Z",
+    "nota": "Monitor leve 2026-10-24 (fli, 2 pax). LIM-CUZ R$ 9298; CUZ-LIM R$ 9007. Sem queda >=15%."
   },
   "checagens": {
     "LIM-LIM": [
@@ -14593,6 +14593,25 @@
         "nota": "Monitor leve 2026-10-21; fli ok. Volta CUZ-REC so retornou 20/06 na janela. Sem queda >=15%.",
         "media_movel_30_checagens": 9523.6,
         "variacao_pct_vs_media": -1.67
+      },
+      {
+        "data_checagem": "2026-10-24T12:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-14",
+        "preco_total_brl": 9298,
+        "trechos_brl": {
+          "ida": 3937,
+          "domestico": 666,
+          "volta": 4695
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) one-way somados",
+        "nota": "Monitor leve 2026-10-24; fli ok. Variante 2d Lima sem volta disponivel na janela, so 3d comparavel. Sem queda >=15%.",
+        "media_movel_30_checagens": 9523.6,
+        "variacao_pct_vs_media": -2.37
       }
     ],
     "CUZ-LIM": [
@@ -29587,10 +29606,29 @@
         "nota": "Monitor leve 2026-10-21; fli ok. Volta LIM-REC so retornou 18/06 na janela. Sem queda >=15%.",
         "media_movel_30_checagens": 8748.7,
         "variacao_pct_vs_media": 3.68
+      },
+      {
+        "data_checagem": "2026-10-24T12:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-17",
+        "preco_total_brl": 9007,
+        "trechos_brl": {
+          "ida": 4396,
+          "domestico": 599,
+          "volta": 4012
+        },
+        "fonte": "Monitor leve: fli (LA, 2 pax, BRL) one-way somados",
+        "nota": "Monitor leve 2026-10-24; fli ok. Variante 2d Lima sem volta disponivel na janela, so 3d comparavel. Sem queda >=15%.",
+        "media_movel_30_checagens": 8748.7,
+        "variacao_pct_vs_media": 2.95
       }
     ]
   },
-  "ultima_checagem": "2026-10-21T00:30:00Z",
-  "ultima_tentativa_parcial": "Monitor leve 2026-10-23 18h30Z: fli e Kiwi (LA, 2 pax, BRL) vazios em REC-LIM e REC-CUZ (10/06/2027). Sem trecho de ida comparavel -> totais nao recalculados; ultimos totais completos (21/10 00h30Z) mantidos: LIM-CUZ R$9365, CUZ-LIM R$9071. Sem queda >=15% detectavel.",
-  "ultima_tentativa_parcial_data": "2026-10-23T18:30:00Z"
+  "ultima_checagem": "2026-10-24T12:00:00Z",
+  "ultima_tentativa_parcial": "Monitor leve 2026-10-24: fli ok (LA, 2 pax). LIM-CUZ R$ 9298, CUZ-LIM R$ 9007. Sem queda >=15%.",
+  "ultima_tentativa_parcial_data": "2026-10-24T12:00:00Z"
 }
