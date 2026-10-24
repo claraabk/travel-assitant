@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-24T18:00:00Z",
+  "ultima_checagem": "2026-10-24T22:00:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -32,7 +32,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-10-20T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia, compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60% (Livelo 25% encerrou 22/09; Esfera 25% sem data confiavel); ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T12:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T18:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-21T06:20:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-22T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-24T18:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), Livelo/Esfera 25% encerraram 23/10, sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND).",
+      "ultima_reconfirmacao": "2026-10-24T22:00:00Z: dashboard diario - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), Livelo/Esfera/Nubank sem oferta vigente, sem bonus >=60%; ofertas LATAM Pass inacessivel.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
