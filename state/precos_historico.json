@@ -29667,6 +29667,6 @@
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-24T22:00:00Z dashboard diario: fli (search_flights x10 + search_dates) retornou vazio; reaproveitados precos do monitor leve 18h (LIM-CUZ 9313, CUZ-LIM 9021). Variantes 2d sem cotacao nova.",
+  "ultima_tentativa_parcial": "2026-10-24T23:30:00Z: fli e Kiwi sem resultados; nenhum checkin anexado (sem dado novo, nada inventado).",
   "ultima_tentativa_parcial_data": "2026-10-24T18:00:00Z"
 }
