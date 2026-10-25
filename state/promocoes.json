@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-25T12:00:00Z",
+  "ultima_checagem": "2026-10-25T18:00:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -16,7 +16,7 @@
       "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
       "ja_notificada": false,
       "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-10-25T12:00:00Z: dashboard completo - WebSearch passageirodeprimeira.com: compra direta sem promocao ativa (ultima encerrou 02/10); transferencia sem oferta >=60% (Livelo 25% expirou 23/10). Nenhum alerta."
+      "ultima_reconfirmacao": "2026-10-25T18:00:00Z: monitor leve - WebSearch passageirodeprimeira.com: compra direta sem promocao ativa (ultima encerrou 02/10); transferencia sem oferta >=60% (Livelo 25% expirou; Esfera/Nubank sem oferta ativa). Nenhum alerta."
     },
     {
       "id": "modo-latam-pass-nubank",
