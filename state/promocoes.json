@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-25T23:30:00Z",
+  "ultima_checagem": "2026-10-26T12:00:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -325,5 +325,6 @@
   "nota_ciclo_23_10_monitor_12h20": "Monitor leve 23/10 12h20Z: WebSearch passageirodeprimeira.com — compra direta sem promocao vigente (ultima encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 (<60%), Esfera/Nubank sem campanha vigente. Ofertas LATAM Pass ENOTFOUND. Blog de terceiros, confianca baixa. Nenhum gatilho; sem notificacao.",
   "nota_ciclo_23_10_dashboard": "Dashboard 23/10 12h30Z: fli/Kiwi sem resultados (REC-LIM, LIM-CUZ); mantida cotacao de 21/10. Compra direta sem promocao ativa (ultima encerrou 02/10); Livelo 25% ate 23/10 (<60%, sem alerta). Conector milhas falhou (Akamai), sem latam_miles_price.json.",
   "nota_ciclo_24_10_monitor_23h30": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta sem promocao vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 (expirada), Esfera/Nubank sem campanha vigente; nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_25_10_monitor_23h30": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta sem promocao vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta."
+  "nota_ciclo_25_10_monitor_23h30": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta sem promocao vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
+  "nota_ciclo_26_10_monitor_12h": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; compra direta: ultima 65%/62% ate 02/10 expirada, sem oferta nova confirmada. Nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta."
 }
