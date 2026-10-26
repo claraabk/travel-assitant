@@ -29667,6 +29667,6 @@
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-26T12:00:00Z: monitor leve - fli search_flights (6 trechos one-way, LA, 2 pax, jun/2027) e search_dates REC-LIM sem resultados. Kiwi REC-LIM 10/06/2027 2 pax LA: R$ 6.234 (1 opcao, 3 escalas BSB-POA-GRU, 69.600s) - outlier, leitura de 1 trecho so, sem checkin completo anexado. Precos de 24/10 18h mantidos; sem queda >=15%.",
-  "ultima_tentativa_parcial_data": "2026-10-26T12:00:00Z"
+  "ultima_tentativa_parcial": "2026-10-26T06:21:00Z: monitor leve - fli search_flights (6 trechos one-way, LA, 2 pax, jun/2027) sem resultados. Kiwi (LA, 2 pax): REC-LIM 10/06 R$ 6.234 (3 escalas, outlier), REC-CUZ sem resultado, LIM-CUZ 14/06 R$ 734, CUZ-LIM 17/06 R$ 662, CUZ-REC 20/06 R$ 5.241 (2 escalas), LIM-REC 20/06 R$ 4.328. Cobertura incompleta/inconsistente com fli (ida REC-LIM 3 escalas), sem checkin anexado. Precos de 24/10 18h mantidos; sem queda >=15%.",
+  "ultima_tentativa_parcial_data": "2026-10-26T06:21:00Z"
 }
