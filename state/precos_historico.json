@@ -29667,7 +29667,7 @@
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-26T12:30:00Z",
-  "ultima_tentativa_parcial_data": "2026-10-26T12:30:00Z",
-  "ultima_tentativa_parcial_nota": "Monitor leve 26/10 12h30: fli 0 resultados nos 6 trechos (LA, 2 pax). Kiwi fallback (LA, 2 adultos): REC-LIM e REC-CUZ ida 10/06/2027 = 0 resultados, entao totais LIM-CUZ/CUZ-LIM nao calculaveis. Parcial: LIM-CUZ 14/06 R$734; CUZ-LIM 17/06 R$662; CUZ-REC 20/06 R$5239 (2 escalas); LIM-REC 20/06 R$4327. Nenhuma checagem anexada; precos de 24/10 mantidos; sem alerta de queda."
+  "ultima_tentativa_parcial": "2026-10-26T18:00:00Z",
+  "ultima_tentativa_parcial_data": "2026-10-26T18:00:00Z",
+  "ultima_tentativa_parcial_nota": "Monitor leve 26/10 18h: fli 0 resultados (REC-LIM 10/06/2027, LA, 2 pax). Fallback 2 pax so ida: Kiwi REC-LIM R$6378 (3 escalas, roteiro anomalo via BSB/POA) e REC-CUZ R$11616 (3 escalas); lastminute (EUR, sem BRL) REC-LIM EUR 696,44 / REC-CUZ EUR 718,90 (1-2 escalas). Fontes divergentes e sem cotacao dos demais trechos em BRL, entao totais LIM-CUZ/CUZ-LIM nao calculaveis. Nenhuma checagem anexada; precos de 24/10 mantidos; sem alerta de queda."
 }
