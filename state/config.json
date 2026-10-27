@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-27T12:45:00Z",
-    "tentativas_consecutivas_falhas": 282,
-    "ultimo_erro": "Latam-PASS MCP CONNECT_TIMEOUT 30000ms",
+    "ultima_tentativa": "2026-10-27T21:00:00Z",
+    "tentativas_consecutivas_falhas": 283,
+    "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values])",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-27T12:45:00Z",
-    "resultado": "Monitor leve 27/10 12h45: fli 0 resultados (REC-LIM, REC-CUZ). Kiwi nao consultado (nao comparavel). Precos de 24/10 mantidos."
+    "ultima_tentativa": "2026-10-27T21:00:00Z",
+    "resultado": "Monitor leve 27/10 21h: fli 0 resultados (REC-LIM, REC-CUZ, LIM-REC, CUZ-REC). Kiwi LA usado como referencia: LIM-CUZ 9800, CUZ-LIM 9844. Precos de 24/10 (fli) mantidos como base."
   },
   "roteiro": {
     "fixo": false,

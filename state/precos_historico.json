@@ -14651,6 +14651,24 @@
         "media_movel_30_checagens": 9509.2,
         "variacao_pct_vs_media": 19.61,
         "nota": "Alta, nao dispara alerta. Fonte diferente (Kiwi) - nao usada para melhor_combinacao_geral nem para media."
+      },
+      {
+        "data_checagem": "2026-10-27T21:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9800,
+        "trechos_brl": {
+          "ida": 4241,
+          "domestico": 759,
+          "volta": 4800
+        },
+        "fonte": "Monitor leve: fli retornou 0 resultados; fallback Kiwi (LA, 2 pax, BRL, one-ways somados, dominio LIM<->CUZ sem escala). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media. Datas dos trechos: ida 2027-06-10, domestico 06-13 (LIM-CUZ) ou 06-16 (CUZ-LIM), volta 06-19; cada variante usa o preco de 1 data por trecho (aproximacao 2d/3d).",
+        "variacao_pct_vs_ref_fli_24_10": 5.23,
+        "nota": "Alta vs. fli de 24/10 (9313); sem queda, sem alerta."
       }
     ],
     "CUZ-LIM": [
@@ -29691,11 +29709,29 @@
         "preco_total_brl": null,
         "fonte": "fli 0 resultados; Kiwi sem resultado LA para REC-CUZ 2027-06-10 (outros trechos: CUZ-LIM 643, LIM-REC 4342).",
         "nota": "Total nao calculavel neste ciclo. Preco de 24/10 mantido como referencia."
+      },
+      {
+        "data_checagem": "2026-10-27T21:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9844,
+        "trechos_brl": {
+          "ida": 4520,
+          "domestico": 680,
+          "volta": 4644
+        },
+        "fonte": "Monitor leve: fli retornou 0 resultados; fallback Kiwi (LA, 2 pax, BRL, one-ways somados, dominio LIM<->CUZ sem escala). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media. Datas dos trechos: ida 2027-06-10, domestico 06-13 (LIM-CUZ) ou 06-16 (CUZ-LIM), volta 06-19; cada variante usa o preco de 1 data por trecho (aproximacao 2d/3d).",
+        "variacao_pct_vs_ref_fli_24_10": 9.12,
+        "nota": "Alta vs. fli de 24/10 (9021); sem queda, sem alerta."
       }
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-27T12:45:00Z",
-  "ultima_tentativa_parcial_data": "2026-10-27T12:45:00Z",
-  "ultima_tentativa_parcial_nota": "Monitor leve 27/10 12h45: fli 0 resultados (REC-LIM e REC-CUZ 2027-06-10, LA, 2 pax); sem checagem nova anexada, precos de 24/10 mantidos. Sem alerta."
+  "ultima_tentativa_parcial": "2026-10-27T21:00:00Z",
+  "ultima_tentativa_parcial_data": "2026-10-27T21:00:00Z",
+  "ultima_tentativa_parcial_nota": "Monitor leve 27/10 21h: fli 0 resultados (4 trechos intl); Kiwi LA 2 pax: LIM-CUZ R$9800, CUZ-LIM R$9844 (so referencia, fonte diferente). melhor_combinacao_geral mantida (fli 24/10). Sem queda >=15%, sem alerta."
 }
