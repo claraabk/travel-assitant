@@ -29695,7 +29695,7 @@
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-27T21:00:00Z",
-  "ultima_tentativa_parcial_data": "2026-10-27",
-  "ultima_tentativa_parcial_nota": "Dashboard 27/10 21h: fli 0 resultados; Kiwi referencia (2 pax): REC-CUZ 4520, REC-LIM 4167, LIM-REC 4686. CUZ-LIM ~R$ 9.8k via Kiwi (alta vs fli, fonte diferente). melhor_combinacao_geral mantida (CUZ-LIM R$ 9021 de 24/10). Sem queda >=15%."
+  "ultima_tentativa_parcial": "2026-10-27T12:45:00Z",
+  "ultima_tentativa_parcial_data": "2026-10-27T12:45:00Z",
+  "ultima_tentativa_parcial_nota": "Monitor leve 27/10 12h45: fli 0 resultados (REC-LIM e REC-CUZ 2027-06-10, LA, 2 pax); sem checagem nova anexada, precos de 24/10 mantidos. Sem alerta."
 }
