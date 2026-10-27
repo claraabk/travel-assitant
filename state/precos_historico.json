@@ -14631,6 +14631,26 @@
         "nota": "Monitor leve 2026-10-24 18h; fli ok. Variante 2d Lima nao rebuscada (sem volta disponivel na janela no ciclo das 12h). Sem queda >=15%.",
         "media_movel_30_checagens": 9509.2,
         "variacao_pct_vs_media": -2.06
+      },
+      {
+        "data_checagem": "2026-10-27T18:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 4,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-14",
+        "volta": "2027-06-20",
+        "preco_total_brl": 11374,
+        "trechos_brl": {
+          "ida": 6011,
+          "domestico": 715,
+          "volta": 4648
+        },
+        "fonte": "Monitor leve: fli retornou 0 resultados nos 6 one-ways; fallback Kiwi (LA/JJ, 2 pax, BRL). Ida REC-LIM Kiwi só achou rota com 3 escalas (BSB/POA/GRU), nao comparavel com fli de 24/10.",
+        "media_movel_30_checagens": 9509.2,
+        "variacao_pct_vs_media": 19.61,
+        "nota": "Alta, nao dispara alerta. Fonte diferente (Kiwi) - nao usada para melhor_combinacao_geral nem para media."
       }
     ],
     "CUZ-LIM": [
@@ -29663,11 +29683,19 @@
         "nota": "Monitor leve 2026-10-24 18h; fli ok. Variante 2d Lima nao rebuscada (sem volta disponivel na janela no ciclo das 12h). Sem queda >=15%.",
         "media_movel_30_checagens": 8757.5,
         "variacao_pct_vs_media": 3.01
+      },
+      {
+        "data_checagem": "2026-10-27T18:00:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "preco_total_brl": null,
+        "fonte": "fli 0 resultados; Kiwi sem resultado LA para REC-CUZ 2027-06-10 (outros trechos: CUZ-LIM 643, LIM-REC 4342).",
+        "nota": "Total nao calculavel neste ciclo. Preco de 24/10 mantido como referencia."
       }
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-27 monitor leve: fli 0 resultados nos 6 one-ways (REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC; LA, 2 pax). Kiwi fallback (LA, 2 pax, BRL): REC-LIM 6011 (3 escalas, unico resultado), REC-CUZ 0 resultados, LIM-CUZ 715, CUZ-LIM 643, CUZ-REC 5046, LIM-REC 4342. LIM-CUZ somaria 11772 (nao comparavel com fli: ida 3936 vs 6011 Kiwi); CUZ-LIM nao calculavel. Nada anexado a checagens; precos de 24/10 mantidos; melhor_combinacao_geral inalterada.",
+  "ultima_tentativa_parcial": "2026-10-27T18:00:00Z",
   "ultima_tentativa_parcial_data": "2026-10-27",
-  "ultima_tentativa_parcial_nota": "Kiwi so cobre parcialmente; nao contamina media movel."
+  "ultima_tentativa_parcial_nota": "Monitor leve 27/10 18h: fli 0 resultados em 6 one-ways; Kiwi parcial (LIM-CUZ R$ 11374, alta vs fli; CUZ-LIM incalculavel). Sem queda >=15%; melhor_combinacao_geral mantida (CUZ-LIM R$ 9021 de 24/10)."
 }
