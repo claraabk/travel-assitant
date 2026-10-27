@@ -29667,7 +29667,7 @@
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
-  "ultima_tentativa_parcial": "2026-10-26T18:00:00Z",
-  "ultima_tentativa_parcial_data": "2026-10-26T18:00:00Z",
-  "ultima_tentativa_parcial_nota": "Monitor leve 26/10 18h: fli 0 resultados (REC-LIM 10/06/2027, LA, 2 pax). Fallback 2 pax so ida: Kiwi REC-LIM R$6378 (3 escalas, roteiro anomalo via BSB/POA) e REC-CUZ R$11616 (3 escalas); lastminute (EUR, sem BRL) REC-LIM EUR 696,44 / REC-CUZ EUR 718,90 (1-2 escalas). Fontes divergentes e sem cotacao dos demais trechos em BRL, entao totais LIM-CUZ/CUZ-LIM nao calculaveis. Nenhuma checagem anexada; precos de 24/10 mantidos; sem alerta de queda."
+  "ultima_tentativa_parcial": "2026-10-27 monitor leve: fli 0 resultados nos 6 one-ways (REC-LIM, REC-CUZ, LIM-CUZ, CUZ-LIM, CUZ-REC, LIM-REC; LA, 2 pax). Kiwi fallback (LA, 2 pax, BRL): REC-LIM 6011 (3 escalas, unico resultado), REC-CUZ 0 resultados, LIM-CUZ 715, CUZ-LIM 643, CUZ-REC 5046, LIM-REC 4342. LIM-CUZ somaria 11772 (nao comparavel com fli: ida 3936 vs 6011 Kiwi); CUZ-LIM nao calculavel. Nada anexado a checagens; precos de 24/10 mantidos; melhor_combinacao_geral inalterada.",
+  "ultima_tentativa_parcial_data": "2026-10-27",
+  "ultima_tentativa_parcial_nota": "Kiwi so cobre parcialmente; nao contamina media movel."
 }

@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-26T18:00:00Z",
+  "ultima_checagem": "2026-10-27T12:00:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -327,5 +327,6 @@
   "nota_ciclo_24_10_monitor_23h30": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta sem promocao vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 (expirada), Esfera/Nubank sem campanha vigente; nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
   "nota_ciclo_25_10_monitor_23h30": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): compra direta sem promocao vigente (ultima 65%/62% encerrou 02/10, ja notificada); transferencia Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
   "nota_ciclo_26_10_monitor_12h": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): transferencia Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; compra direta: ultima 65%/62% ate 02/10 expirada, sem oferta nova confirmada. Nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
-  "nota_ciclo_26_10_monitor_6h": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; compra direta: ultima 65%/62% ate 02/10 expirada, sem oferta nova. Nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta."
+  "nota_ciclo_26_10_monitor_6h": "latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): Livelo 25% ate 23/10 expirada, Esfera/Nubank sem campanha vigente; compra direta: ultima 65%/62% ate 02/10 expirada, sem oferta nova. Nada >=60%/<=48h. Blog de terceiros, confianca baixa. Sem alerta.",
+  "nota_ciclo_27_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa. Livelo 25% (ate 22/09), Esfera 25% (ate 25/10), Nubank 25% (ate 06/09) encerradas; compra direta sem campanha vigente (ultima 65%/62% encerrou 02/10). ofertas LATAM Pass: ENOTFOUND. Sem alerta."
 }
