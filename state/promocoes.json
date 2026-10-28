@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-28T06:20:00Z",
+  "ultima_checagem": "2026-10-28T12:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -332,5 +332,6 @@
   "nota_ciclo_27_10_monitor_18h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus de transferencia ativo hoje (ultimo Nubank 25% ate 04/10; Livelo 25% encerrou ~23/10). Compra direta: ultima oferta datada 65% ate 02/10 (encerrada); texto '60%/55% ate terca (30)' com data inconsistente (30/10/2026 e sexta) - vigencia nao confirmada, nao notificada. Pagina oficial inacessivel.",
   "nota_ciclo_27_10_dashboard": "Dashboard completo 27/10: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa (Livelo 25% ate 23/10 encerrada; Esfera 25% ate 25/10 encerrada; Nubank 25% ate 04/10 encerrada; compra direta 62%/65% encerrou 02/10). Sem alerta.",
   "nota_ciclo_28_10_monitor": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem bonus de transferencia ativo (Livelo 25% ate 22/09, Esfera 25%, Nubank 25% encerrados; abaixo de 60% de todo modo). Compra direta: sintese cita 65%/62% 'valida ate hoje (28/10)', mas titulos sao os mesmos historicos e a propria busca avisa datas inconsistentes (ultima campanha datada: 65% ate 02/10) - vigencia nao confirmada, nao marcada como ativa, nao notificada. Checar logada no app. Pagina oficial inacessivel (ENOTFOUND). Sem alerta.",
-  "nota_ciclo_28_10_monitor_0620": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao vigente confirmada hoje (28/10). Resultados antigos/expirados. Sem alerta."
+  "nota_ciclo_28_10_monitor_0620": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao vigente confirmada hoje (28/10). Resultados antigos/expirados. Sem alerta.",
+  "nota_ciclo_28_10_monitor_1230": "Monitor leve 28/10 12h30: WebSearch passageirodeprimeira.com (transferencia + compra direta) so retorna titulos recorrentes antigos (Livelo/Esfera 25%, ate dia 23/10, encerradas; Nubank sem oferta vigente; compra direta 'ate 65%/hoje (28)' = edicao de 28/08 ja expirada, sem fonte confirmando vigencia hoje). ofertas LATAM Pass inacessivel (ENOTFOUND). Nenhuma promocao ativa; sem alerta."
 }
