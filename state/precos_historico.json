@@ -14769,6 +14769,24 @@
         "fonte": "Monitor leve: fli search_dates 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados; ida = menor preco do mes). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 5.52,
         "nota": "Sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-12",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9834,
+        "trechos_brl": {
+          "ida": 4160,
+          "domestico": 759,
+          "volta": 4915
+        },
+        "fonte": "Monitor leve: fli search_dates 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados; dominio LIM-CUZ/CUZ-LIM reaproveitado do checkin 12h30). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "variacao_pct_vs_ref_fli_24_10": 5.59,
+        "nota": "Sem queda, sem alerta."
       }
     ],
     "CUZ-LIM": [
@@ -29919,10 +29937,28 @@
         "fonte": "Monitor leve: fli search_dates 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados; ida = menor preco do mes). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 12.52,
         "nota": "Sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-02",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10210,
+        "trechos_brl": {
+          "ida": 4894,
+          "domestico": 681,
+          "volta": 4635
+        },
+        "fonte": "Monitor leve: fli search_dates 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados; dominio LIM-CUZ/CUZ-LIM reaproveitado do checkin 12h30). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "variacao_pct_vs_ref_fli_24_10": 13.18,
+        "nota": "Sem queda, sem alerta."
       }
     ]
   },
-  "ultima_checagem": "2026-10-28T12:30:00Z",
+  "ultima_checagem": "2026-10-28T18:30:00Z",
   "ultima_tentativa_parcial": "2026-10-28T12:40:00Z",
   "ultima_tentativa_parcial_data": "2026-10-28T12:40:00Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 28/10 12h40: fli 0 resultados; Kiwi LA: LIM-CUZ 9827, CUZ-LIM 10150. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida.",

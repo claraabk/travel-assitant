@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-28T12:40:00Z",
-    "tentativas_consecutivas_falhas": 287,
+    "ultima_tentativa": "2026-10-28T18:30:00Z",
+    "tentativas_consecutivas_falhas": 288,
     "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values])",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-28T12:40:00Z",
-    "resultado": "Monitor leve 28/10 12h40: fli 0 resultados; Kiwi LA: LIM-CUZ 9827, CUZ-LIM 10150. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
+    "ultima_tentativa": "2026-10-28T18:30:00Z",
+    "resultado": "Monitor leve 28/10 18h30: fli search_dates 0 resultados; Kiwi LA: LIM-CUZ 9834, CUZ-LIM 10210. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
   },
   "roteiro": {
     "fixo": false,
