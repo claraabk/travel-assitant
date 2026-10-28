@@ -14705,6 +14705,52 @@
         "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 6.35,
         "nota": "Alta vs. fli de 24/10 (9313); sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9695,
+        "trechos_brl": {
+          "ida": 4038,
+          "domestico": 759,
+          "volta": 4898
+        },
+        "variantes_brl": {
+          "LIM-CUZ_2d": 10109,
+          "LIM-CUZ_3d": 9695,
+          "CUZ-LIM_2d": 10175,
+          "CUZ-LIM_3d": 10141
+        },
+        "fonte": "Dashboard 28/10: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH/GRU",
+            "duracao_min": 365,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "GRU/CGH",
+            "duracao_min": 340,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativas_sem_alerta": {
+          "ida_brl": 4302,
+          "volta_brl": 5637,
+          "nota": "ida REC-GRU-SCL-LIM conexoes 3h15/2h55; volta CUZ-LIM-GRU-REC LA3378 conexao 4h35"
+        },
+        "variacao_pct_vs_ref_fli_24_10": 4.1,
+        "nota": "Melhor variante hoje (Kiwi). Sem queda, sem alerta."
       }
     ],
     "CUZ-LIM": [
@@ -29799,11 +29845,60 @@
         "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 14.58,
         "nota": "Alta vs. fli de 24/10 (9021); sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10141,
+        "trechos_brl": {
+          "ida": 4839,
+          "domestico": 681,
+          "volta": 4621
+        },
+        "variantes_brl": {
+          "LIM-CUZ_2d": 10109,
+          "LIM-CUZ_3d": 9695,
+          "CUZ-LIM_2d": 10175,
+          "CUZ-LIM_3d": 10141
+        },
+        "fonte": "Dashboard 28/10: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "alertas_conexao": [
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 70,
+            "tipo": "conexao_curta",
+            "limite": 90
+          }
+        ],
+        "alternativas_sem_alerta": {
+          "volta_brl": 4668,
+          "ida_brl": 5125
+        },
+        "variacao_pct_vs_ref_fli_24_10": 12.42,
+        "nota": "Sem queda, sem alerta."
       }
     ]
   },
-  "ultima_checagem": "2026-10-24T18:00:00Z",
+  "ultima_checagem": "2026-10-28T12:30:00Z",
   "ultima_tentativa_parcial": "2026-10-28T06:00:00Z",
   "ultima_tentativa_parcial_data": "2026-10-28T06:20:00Z",
-  "ultima_tentativa_parcial_nota": "Monitor leve 28/10 06h20: fli 0 resultados; Kiwi LA: LIM-CUZ 9904, CUZ-LIM 10336. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
+  "ultima_tentativa_parcial_nota": "Monitor leve 28/10 06h20: fli 0 resultados; Kiwi LA: LIM-CUZ 9904, CUZ-LIM 10336. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida.",
+  "ultima_cotacao_kiwi_dashboard": {
+    "data": "2026-10-28T12:30:00Z",
+    "melhor": "LIM-CUZ 3d",
+    "preco_brl": 9695,
+    "variantes_brl": {
+      "LIM-CUZ_2d": 10109,
+      "LIM-CUZ_3d": 9695,
+      "CUZ-LIM_2d": 10175,
+      "CUZ-LIM_3d": 10141
+    }
+  }
 }

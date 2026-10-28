@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-28T06:20:00Z",
-    "tentativas_consecutivas_falhas": 285,
+    "ultima_tentativa": "2026-10-28T12:30:00Z",
+    "tentativas_consecutivas_falhas": 286,
     "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values])",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-28T06:20:00Z",
-    "resultado": "Monitor leve 28/10 06h20: fli 0 resultados; Kiwi LA: LIM-CUZ 9904, CUZ-LIM 10336. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
+    "ultima_tentativa": "2026-10-28T12:30:00Z",
+    "resultado": "Dashboard 28/10 12h: fli 0 resultados (REC-LIM/REC-CUZ); Kiwi LA 2 pax: LIM-CUZ 3d 9695, LIM-CUZ 2d 10109, CUZ-LIM 3d 10141, CUZ-LIM 2d 10175. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
   },
   "roteiro": {
     "fixo": false,
@@ -84,5 +84,5 @@
       "nota": "cobrir os dois tipos de promoção sempre, não só transferência — descontos de compra direta têm sua própria dinâmica (faixas por perfil de cliente, ver state/promocoes.json). A partir de 27/08/2026 checar também bônus de transferência Inter Loop/Prime → LATAM Pass, relevante para o saldo de pontos do Pedro (ver state/perfil.json.companheiro_viagem e state/saldo.json.pedro)."
     }
   ],
-  "ultimo_dashboard_completo": "2026-10-25T12:00:00Z"
+  "ultimo_dashboard_completo": "2026-10-28T12:30:00Z"
 }
