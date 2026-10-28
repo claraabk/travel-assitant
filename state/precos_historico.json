@@ -14687,6 +14687,24 @@
         "fonte": "Monitor leve: fli 0 resultados (6 one-ways, LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 5.72,
         "nota": "Alta vs. fli de 24/10 (9313) e +0.5% vs. Kiwi 27/10 (9800); sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9904,
+        "trechos_brl": {
+          "ida": 4241,
+          "domestico": 759,
+          "volta": 4904
+        },
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "variacao_pct_vs_ref_fli_24_10": 6.35,
+        "nota": "Alta vs. fli de 24/10 (9313); sem queda, sem alerta."
       }
     ],
     "CUZ-LIM": [
@@ -29763,11 +29781,29 @@
         "fonte": "Monitor leve: fli 0 resultados (6 one-ways, LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "variacao_pct_vs_ref_fli_24_10": 9.12,
         "nota": "Alta vs. fli de 24/10 (9021); igual ao Kiwi 27/10 (9844); sem queda, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-28T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10336,
+        "trechos_brl": {
+          "ida": 5042,
+          "domestico": 680,
+          "volta": 4614
+        },
+        "fonte": "Monitor leve: fli 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, BRL, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "variacao_pct_vs_ref_fli_24_10": 14.58,
+        "nota": "Alta vs. fli de 24/10 (9021); sem queda, sem alerta."
       }
     ]
   },
   "ultima_checagem": "2026-10-24T18:00:00Z",
   "ultima_tentativa_parcial": "2026-10-28T06:00:00Z",
-  "ultima_tentativa_parcial_data": "2026-10-28T06:00:00Z",
-  "ultima_tentativa_parcial_nota": "Monitor leve 28/10 06h: fli 0 resultados; Kiwi LA: LIM-CUZ 9846, CUZ-LIM 9844. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
+  "ultima_tentativa_parcial_data": "2026-10-28T06:20:00Z",
+  "ultima_tentativa_parcial_nota": "Monitor leve 28/10 06h20: fli 0 resultados; Kiwi LA: LIM-CUZ 9904, CUZ-LIM 10336. Sem queda >=15%. melhor_combinacao_geral (fli 24/10) mantida."
 }
