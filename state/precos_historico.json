@@ -14823,6 +14823,23 @@
         },
         "fonte": "Monitor leve 29/10 06h30: fli search_flights 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "nota": "Sem queda >=15%, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-29T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-12",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9622,
+        "trechos_brl": {
+          "ida": 3954,
+          "domestico": 759,
+          "volta": 4909
+        },
+        "fonte": "Monitor leve 29/10 12h30: fli search_flights 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "nota": "Sem queda >=15%, sem alerta."
       }
     ],
     "CUZ-LIM": [
@@ -30027,10 +30044,27 @@
         },
         "fonte": "Monitor leve 29/10 06h30: fli search_flights 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
         "nota": "Sem queda >=15%, sem alerta."
+      },
+      {
+        "data_checagem": "2026-10-29T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "ida": "2027-06-02",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10056,
+        "trechos_brl": {
+          "ida": 4758,
+          "domestico": 680,
+          "volta": 4618
+        },
+        "fonte": "Monitor leve 29/10 12h30: fli search_flights 0 resultados (LA, 2 pax, BRL); fallback Kiwi (LA, 2 pax, one-ways somados). Fonte diferente de fli - nao usada para melhor_combinacao_geral nem media.",
+        "nota": "Sem queda >=15%, sem alerta."
       }
     ]
   },
-  "ultima_checagem": "2026-10-29T06:30:00Z",
+  "ultima_checagem": "2026-10-29T12:30:00Z",
   "ultima_tentativa_parcial": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_data": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 29/10 06h30: fli 0 resultados; Kiwi LA: LIM-CUZ 9637, CUZ-LIM 10078. Sem queda >=15% (ref fli 24/10: 9313/9021). melhor_combinacao_geral mantida.",
