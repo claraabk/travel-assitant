@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-29T12:30:00Z",
+  "ultima_checagem": "2026-10-29T12:50:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -335,5 +335,6 @@
   "nota_ciclo_28_10_monitor_0620": "WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao vigente confirmada hoje (28/10). Resultados antigos/expirados. Sem alerta.",
   "nota_ciclo_28_10_dashboard": "Dashboard completo 28/10 12h: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao ativa confirmada (Livelo 25% ate 23/10, Esfera 25% ate 25/10, Nubank 25% ate 04/10 encerradas; compra direta 65%/62% encerrou 02/10; alegacao 'ate 28/10' nao confirmada, datas inconsistentes - checar logada). Nada expirado em ativas. Sem alerta.",
   "nota_ciclo_28_10_monitor_1240": "Monitor leve 28/10 12h40: WebSearch passageirodeprimeira.com (transferencia + compra direta) so retorna titulos recorrentes antigos (Livelo/Esfera 25% ate 23/10, encerradas; Nubank sem oferta vigente; compra direta 'ate 65%/hoje (28)' = edicao de 28/08 ja expirada, sem fonte confirmando vigencia hoje). ofertas LATAM Pass inacessivel (ENOTFOUND). Nenhuma promocao ativa; sem alerta.",
-  "nota_ciclo_29_10_monitor_00h": "Monitor leve 29/10 00h30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop) sem promocao ativa hoje; ultimas campanhas (compra ate 65% encerrada em 02/10; Livelo 25%, Nubank 25% ate 06/09) expiradas. latampass.latam.com/ofertas ENOTFOUND. Sem alerta."
+  "nota_ciclo_29_10_monitor_00h": "Monitor leve 29/10 00h30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop) sem promocao ativa hoje; ultimas campanhas (compra ate 65% encerrada em 02/10; Livelo 25%, Nubank 25% ate 06/09) expiradas. latampass.latam.com/ofertas ENOTFOUND. Sem alerta.",
+  "nota_ciclo_29_10_dashboard": "29/10 dashboard: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa; ultima compra 65% encerrou 02/10. Nenhuma ativa expirada para mover. Sem alerta."
 }
