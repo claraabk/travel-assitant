@@ -15042,6 +15042,26 @@
         },
         "media_movel_30_checagens": 9509.2,
         "variacao_pct_vs_media": 1.4
+      },
+      {
+        "data_checagem": "2026-10-30T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "fonte": "Monitor leve 30/10 18h30: fli 0 resultados; Kiwi LA, 2 pax, one-ways somados. Fonte diferente de fli - nao usada para melhor_combinacao_geral.",
+        "nota": "Sem queda >=15%, sem alerta.",
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9679,
+        "trechos_brl": {
+          "ida": 3974,
+          "domestico": 762,
+          "volta": 4943
+        },
+        "media_movel_30_checagens": 9663.1,
+        "variacao_pct_vs_media": 0.2
       }
     ],
     "CUZ-LIM": [
@@ -30465,22 +30485,42 @@
         },
         "media_movel_30_checagens": 8757.5,
         "variacao_pct_vs_media": 15.1
+      },
+      {
+        "data_checagem": "2026-10-30T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "fonte": "Monitor leve 30/10 18h30: fli 0 resultados; Kiwi LA, 2 pax, one-ways somados. Fonte diferente de fli - nao usada para melhor_combinacao_geral.",
+        "nota": "Sem queda >=15%, sem alerta.",
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10136,
+        "trechos_brl": {
+          "ida": 4779,
+          "domestico": 684,
+          "volta": 4673
+        },
+        "media_movel_30_checagens": 9722.3,
+        "variacao_pct_vs_media": 4.3
       }
     ]
   },
-  "ultima_checagem": "2026-10-30T12:45:00Z",
+  "ultima_checagem": "2026-10-30T18:30:00Z",
   "ultima_tentativa_parcial": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_data": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 29/10 06h30: fli 0 resultados; Kiwi LA: LIM-CUZ 9637, CUZ-LIM 10078. Sem queda >=15% (ref fli 24/10: 9313/9021). melhor_combinacao_geral mantida.",
   "ultima_cotacao_kiwi_dashboard": {
-    "data": "2026-10-30T12:45:00Z",
+    "data": "2026-10-30T18:30:00Z",
     "melhor": "LIM-CUZ 3d",
-    "preco_brl": 9642,
+    "preco_brl": 9679,
     "variantes_brl": {
-      "LIM-CUZ_2d": 9685,
-      "LIM-CUZ_3d": 9642,
-      "CUZ-LIM_2d": 10118,
-      "CUZ-LIM_3d": 10082
+      "LIM-CUZ_3d": 9679,
+      "LIM-CUZ_2d": 9732,
+      "CUZ-LIM_3d": 10136,
+      "CUZ-LIM_2d": 10179
     }
   }
 }
