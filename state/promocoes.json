@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-30T12:30:00Z",
+  "ultima_checagem": "2026-10-30T12:45:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -337,5 +337,6 @@
   "nota_ciclo_28_10_monitor_1240": "Monitor leve 28/10 12h40: WebSearch passageirodeprimeira.com (transferencia + compra direta) so retorna titulos recorrentes antigos (Livelo/Esfera 25% ate 23/10, encerradas; Nubank sem oferta vigente; compra direta 'ate 65%/hoje (28)' = edicao de 28/08 ja expirada, sem fonte confirmando vigencia hoje). ofertas LATAM Pass inacessivel (ENOTFOUND). Nenhuma promocao ativa; sem alerta.",
   "nota_ciclo_29_10_monitor_00h": "Monitor leve 29/10 00h30: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop) sem promocao ativa hoje; ultimas campanhas (compra ate 65% encerrada em 02/10; Livelo 25%, Nubank 25% ate 06/09) expiradas. latampass.latam.com/ofertas ENOTFOUND. Sem alerta.",
   "nota_ciclo_29_10_dashboard": "29/10 dashboard: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa; ultima compra 65% encerrou 02/10. Nenhuma ativa expirada para mover. Sem alerta.",
-  "nota_ciclo_30_10_monitor_06h": "Monitor leve 30/10 06h: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa hoje; so campanhas encerradas (compra ate 65% ate 02/10; Livelo/Nubank 25% expiradas). latampass.latam.com/ofertas ENOTFOUND. Sem alerta."
+  "nota_ciclo_30_10_monitor_06h": "Monitor leve 30/10 06h: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa hoje; so campanhas encerradas (compra ate 65% ate 02/10; Livelo/Nubank 25% expiradas). latampass.latam.com/ofertas ENOTFOUND. Sem alerta.",
+  "nota_ciclo_30_10_monitor_12h45": "Monitor leve: WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank e compra direta). Nenhuma promocao confirmada ativa hoje; resultados de transferencia (25% Livelo ate 23/10) ja expirados; resultados de compra direta (60-65%) com datas conflitantes/antigas, nao confirmaveis. Sem novo alerta."
 }
