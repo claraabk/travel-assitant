@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-10-31T12:20:00Z",
-    "tentativas_consecutivas_falhas": 301,
+    "ultima_tentativa": "2026-10-31T12:30:00Z",
+    "tentativas_consecutivas_falhas": 302,
     "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values])",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-10-31T12:20:00Z",
-    "resultado": "Dashboard 31/10 12h: fli 0 resultados (REC-LIM LA 2 pax); Kiwi LA 2 pax: {'LIM-CUZ_3d': 9706, 'LIM-CUZ_2d': 9741, 'CUZ-LIM_3d': 10145, 'CUZ-LIM_2d': 10190}. Sem queda >=15%."
+    "ultima_tentativa": "2026-10-31T12:30:00Z",
+    "resultado": "Monitor leve 31/10 12h30: fli 0 resultados (REC-LIM LA 2 pax); Kiwi LA 2 pax: LIM-CUZ_3d 9706, LIM-CUZ_2d 9741, CUZ-LIM_3d 10145, CUZ-LIM_2d 10190. Sem queda >=15%."
   },
   "roteiro": {
     "fixo": false,
@@ -60,7 +60,7 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-10-30T18:30:00Z",
+    "ultima_tentativa": "2026-10-31T12:30:00Z",
     "resultado": "WebFetch ENOTFOUND latampass.latam.com",
     "ultimo_erro": "getaddrinfo ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao)"
   },
