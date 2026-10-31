@@ -15082,6 +15082,26 @@
         },
         "media_movel_30_checagens": 9678.9,
         "variacao_pct_vs_media": 0.0
+      },
+      {
+        "data_checagem": "2026-10-31T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "fonte": "Monitor leve 31/10 06h: fli 0 resultados; Kiwi LA, 2 pax, one-ways somados. Fonte diferente de fli - nao usada para melhor_combinacao_geral.",
+        "nota": "Sem queda >=15%, sem alerta.",
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9686,
+        "trechos_brl": {
+          "ida": 3974,
+          "domestico": 762,
+          "volta": 4950
+        },
+        "media_movel_30_checagens": 9678.9,
+        "variacao_pct_vs_media": 0.1
       }
     ],
     "CUZ-LIM": [
@@ -30545,10 +30565,30 @@
         },
         "media_movel_30_checagens": 9787.5,
         "variacao_pct_vs_media": 3.6
+      },
+      {
+        "data_checagem": "2026-10-31T06:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "fonte": "Monitor leve 31/10 06h: fli 0 resultados; Kiwi LA, 2 pax, one-ways somados. Fonte diferente de fli - nao usada para melhor_combinacao_geral.",
+        "nota": "Sem queda >=15%, sem alerta.",
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10136,
+        "trechos_brl": {
+          "ida": 4779,
+          "domestico": 684,
+          "volta": 4673
+        },
+        "media_movel_30_checagens": 9828.6,
+        "variacao_pct_vs_media": 3.1
       }
     ]
   },
-  "ultima_checagem": "2026-10-31T00:19:00Z",
+  "ultima_checagem": "2026-10-31T06:20:00Z",
   "ultima_tentativa_parcial": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_data": "2026-10-29T06:30:00Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 29/10 06h30: fli 0 resultados; Kiwi LA: LIM-CUZ 9637, CUZ-LIM 10078. Sem queda >=15% (ref fli 24/10: 9313/9021). melhor_combinacao_geral mantida.",
