@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-10-31T12:30:00Z",
+  "ultima_checagem": "2026-10-31T18:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -339,5 +339,6 @@
   "nota_ciclo_29_10_dashboard": "29/10 dashboard: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa; ultima compra 65% encerrou 02/10. Nenhuma ativa expirada para mover. Sem alerta.",
   "nota_ciclo_30_10_monitor_06h": "Monitor leve 30/10 06h: WebSearch passageirodeprimeira.com (transferencia e compra direta) sem promocao ativa hoje; so campanhas encerradas (compra ate 65% ate 02/10; Livelo/Nubank 25% expiradas). latampass.latam.com/ofertas ENOTFOUND. Sem alerta.",
   "nota_ciclo_30_10_monitor_12h45": "Monitor leve: WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank e compra direta). Nenhuma promocao confirmada ativa hoje; resultados de transferencia (25% Livelo ate 23/10) ja expirados; resultados de compra direta (60-65%) com datas conflitantes/antigas, nao confirmaveis. Sem novo alerta.",
-  "nota_ciclo_31_10_monitor_06h": "Monitor leve: latampass.latam.com/pt_br/ofertas inacessivel (DNS/egress bloqueado). WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao ativa confirmada; Livelo 25% (ate 23/10) e Esfera 25% (ate 25/10) expirados, Nubank expirado, Inter sem oferta, compra direta so edicoes encerradas (ultima ate 02/10). Nenhum bonus >=60%. Sem alerta."
+  "nota_ciclo_31_10_monitor_06h": "Monitor leve: latampass.latam.com/pt_br/ofertas inacessivel (DNS/egress bloqueado). WebSearch passageirodeprimeira.com (transferencia + compra direta): sem promocao ativa confirmada; Livelo 25% (ate 23/10) e Esfera 25% (ate 25/10) expirados, Nubank expirado, Inter sem oferta, compra direta so edicoes encerradas (ultima ate 02/10). Nenhum bonus >=60%. Sem alerta.",
+  "nota_ciclo_31_10_monitor_18h30": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra direta encerrou 02/10; Livelo/Esfera 25% encerrou 23/10). latampass.latam.com/ofertas inacessivel (host nao resolve); Latam-PASS MCP timeout. Sem alerta."
 }
