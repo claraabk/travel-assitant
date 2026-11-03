@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-03T00:30:00Z",
+  "ultima_checagem": "2026-11-03T06:30:00Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -345,5 +345,6 @@
   "nota_ciclo_01_11_dashboard": "Dashboard 01/11 12h15: WebSearch passageirodeprimeira.com (compra direta + transferencia Livelo/Esfera/Nubank): nenhuma promocao vigente (ultimo desconto compra 65% ate 02/10; bonus transf. 25% encerrados). Latam-PASS MCP timeout; latampass.latam.com inacessivel. Sem alerta. Preco de passagem: fli 0 resultados, reaproveitada cotacao Kiwi 2 pax do monitor anterior (nao anexada como novo checkin).",
   "nota_ciclo_02_11_monitor_00h": "WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção confirmada ativa em 02/11. Última compra direta (até 65%) encerrou sex 02/10; bônus de transferência mais recentes (Nubank/Livelo/Esfera 25%) expiraram em set/2026. Oficial EGRESS_BLOCKED/ENOTFOUND. Sem alerta.",
   "nota_ciclo_02_11_dashboard": "Dashboard 02/11 12h: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra 65% ate 02/10; bonus 25% Nubank/Livelo/Esfera expirados). Latam-PASS MCP timeout; oficial inacessivel. Sem alerta; ativas sem expiradas.",
-  "nota_ciclo_02_11_monitor_18h": "Monitor 18h: WebSearch passageirodeprimeira.com (transferencia + compra direta) so retornou campanhas antigas (Livelo/Esfera/Nubank 25%, ate 22/09 e 06/09; compra 55-66% de edicoes passadas); nenhuma vigente hoje. latampass.latam.com/ofertas ENOTFOUND. Sem promocao ativa, sem alerta, nada a notificar."
+  "nota_ciclo_02_11_monitor_18h": "Monitor 18h: WebSearch passageirodeprimeira.com (transferencia + compra direta) so retornou campanhas antigas (Livelo/Esfera/Nubank 25%, ate 22/09 e 06/09; compra 55-66% de edicoes passadas); nenhuma vigente hoje. latampass.latam.com/ofertas ENOTFOUND. Sem promocao ativa, sem alerta, nada a notificar.",
+  "nota_ciclo_03_11_monitor_06h": "Monitor leve 03/11 06h30: latampass ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra 65% encerrou 02/10; Livelo/Esfera/Nubank 25-35% so campanhas encerradas). Sem alerta."
 }
