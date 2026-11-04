@@ -15682,6 +15682,26 @@
     },
     "media_movel_30_checagens": 9718,
     "variacao_pct_vs_media": -9.2
+   },
+   {
+    "data_checagem": "2026-11-04T12:20:00Z",
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 3,
+    "fonte": "Dashboard 04/11: fli 0 resultados (REC-LIM LA 2 pax); Kiwi LA 2 pax, one-ways somados (variantes 3d atualizadas agora; 2d reaproveitadas do monitor 06h).",
+    "nota": "Sem queda >=15%, sem alerta. Variantes: {\"LIM-CUZ_2d\": 9376, \"LIM-CUZ_3d\": 8834, \"CUZ-LIM_2d\": 9229, \"CUZ-LIM_3d\": 9205}",
+    "ida": "2027-06-10",
+    "domestico": "2027-06-13",
+    "volta": "2027-06-19",
+    "preco_total_brl": 8834,
+    "trechos_brl": {
+     "ida": 3998,
+     "domestico": 784,
+     "volta": 4052
+    },
+    "media_movel_30_checagens": 9718,
+    "variacao_pct_vs_media": -9.1
    }
   ],
   "CUZ-LIM": [
@@ -31745,23 +31765,43 @@
     },
     "media_movel_30_checagens": 10132,
     "variacao_pct_vs_media": -9.2
+   },
+   {
+    "data_checagem": "2026-11-04T12:20:00Z",
+    "passageiros": 2,
+    "moeda": "BRL",
+    "dias_cusco": 6,
+    "dias_lima": 3,
+    "fonte": "Dashboard 04/11: fli 0 resultados (REC-LIM LA 2 pax); Kiwi LA 2 pax, one-ways somados (variantes 3d atualizadas agora; 2d reaproveitadas do monitor 06h).",
+    "nota": "Sem queda >=15%, sem alerta. Variantes: {\"LIM-CUZ_2d\": 9376, \"LIM-CUZ_3d\": 8834, \"CUZ-LIM_2d\": 9229, \"CUZ-LIM_3d\": 9205}",
+    "ida": "2027-06-10",
+    "domestico": "2027-06-16",
+    "volta": "2027-06-19",
+    "preco_total_brl": 9205,
+    "trechos_brl": {
+     "ida": 4821,
+     "domestico": 699,
+     "volta": 3685
+    },
+    "media_movel_30_checagens": 10132,
+    "variacao_pct_vs_media": -9.1
    }
   ]
  },
- "ultima_checagem": "2026-11-04T06:20:00Z",
+ "ultima_checagem": "2026-11-04T12:20:00Z",
  "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
  "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
  "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
  "ultima_cotacao_kiwi_dashboard": {
-  "data": "2026-11-03T18:20:00Z",
+  "data": "2026-11-04T12:20:00Z",
   "melhor": "LIM-CUZ 3d",
-  "preco_brl": 9730,
-  "media_movel_30": 9637,
+  "preco_brl": 8834,
+  "media_movel_30": 9718,
   "variantes_brl": {
-   "LIM-CUZ_2d": 9778,
-   "LIM-CUZ_3d": 9730,
-   "CUZ-LIM_2d": 10231,
-   "CUZ-LIM_3d": 10189
+   "LIM-CUZ_2d": 9376,
+   "LIM-CUZ_3d": 8834,
+   "CUZ-LIM_2d": 9229,
+   "CUZ-LIM_3d": 9205
   }
  },
  "ultima_cotacao_kiwi_monitor": {
