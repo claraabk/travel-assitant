@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-05T06:20:00Z",
+  "ultima_checagem": "2026-11-05T12:20:03Z",
   "ativas": [
     {
       "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
@@ -350,5 +350,6 @@
   "nota_ciclo_03_11_dashboard": "Dashboard 03/11: WebSearch passageirodeprimeira.com (compra e transferencia): nenhuma promocao vigente; ultima compra (65%, R$26,60) encerrou 02/10. Sem alerta. Nenhuma ativa expirada para mover.",
   "nota_ciclo_03_11_monitor_12h": "Monitor leve: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): nenhuma promocao vigente. Ultima compra direta (ate 65%, R$26,60/milheiro demais perfis) encerrou 28/10. Transferencia: so campanhas passadas. latampass.latam.com/ofertas inacessivel (ENOTFOUND). Sem alerta.",
   "nota_ciclo_04_11_dashboard": "Dashboard 04/11: WebSearch passageirodeprimeira.com (transferencia e compra): so campanhas antigas, nenhuma vigente; ultima compra (65%, R$26,60) encerrou 02/10. Sem alerta. Nenhuma ativa expirada para mover.",
-  "nota_ciclo_05_11_dashboard": "Dashboard 05/11: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra 65% encerrou 02/10; bonus 25% Livelo/Esfera/Nubank expirados; Inter sem rota LATAM Pass). Ativas permanentes inalteradas (Modo LATAM Pass). Sem alerta."
+  "nota_ciclo_05_11_dashboard": "Dashboard 05/11: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra 65% encerrou 02/10; bonus 25% Livelo/Esfera/Nubank expirados; Inter sem rota LATAM Pass). Ativas permanentes inalteradas (Modo LATAM Pass). Sem alerta.",
+  "nota_ciclo_05_11_monitor": "Monitor 05/11: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, domínio fora da allowlist de rede da sessão). WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção confirmada ativa hoje; resultados são campanhas passadas (Livelo 25-35% até 22/09, Nubank 25% 'até domingo (6)' sem ano, compra 60-66% já encerradas). Sem alerta. Query Inter Loop/Prime não rodada (sem rota p/ LATAM Pass confirmada em 27/08)."
 }
