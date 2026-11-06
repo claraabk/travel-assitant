@@ -1,23 +1,6 @@
 {
-  "ultima_checagem": "2026-11-06T06:20:00Z",
+  "ultima_checagem": "2026-11-06T12:20:00Z",
   "ativas": [
-    {
-      "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
-      "tipo": "checagem_sem_oportunidade",
-      "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. CONFIRMADO em 27/08/2026 13h (dashboard completo): o Inter Loop/Prime NÃO tem rota de transferência para LATAM Pass — só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1). Encerra a hipótese levantada no ciclo anterior (12h31).",
-      "bonus_pct": null,
-      "e_permanente": false,
-      "valido_ate": null,
-      "fontes": [
-        "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 13h (query: 'Inter Loop pontos transferir LATAM Pass Azul Smiles quais programas') — síntese explícita: 'não é possível transferir pontos Inter Loop diretamente para o LATAM Pass. [...] o Inter Loop possui parcerias apenas com Azul Fidelidade e Smiles.'",
-        "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/",
-        "https://passageirodeprimeira.com/transforme-pontos-em-passagem-como-enviar-pontos-inter-loop-para-smiles-ou-azul-fidelidade/"
-      ],
-      "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
-      "ja_notificada": false,
-      "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
-      "ultima_reconfirmacao": "2026-11-06T00:19:16Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra encerrou 02/10; bonus 25-30% Livelo/Esfera/Nubank encerrados em set). latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. Sem alerta."
-    },
     {
       "id": "modo-latam-pass-nubank",
       "tipo": "conversao_automatica_permanente",
@@ -234,6 +217,23 @@
       "ultima_reconfirmacao": "2026-10-20T12:00:00Z: WebSearch passageirodeprimeira.com (transferencia, compra direta): sem compra direta ativa (ultima encerrou 02/10); sem bonus de transferencia ativo >=60% (Livelo 25% encerrou 22/09; Esfera 25% sem data confiavel); ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T12:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-20T18:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima encerrou 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-21T06:20:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND). | 2026-10-22T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): sem compra direta ativa (ultima 02/10), sem bonus >=60%; ofertas LATAM Pass inacessivel (ENOTFOUND).",
       "encerrada_em": "2026-09-25",
       "nota_encerramento": "Dashboard 22/10: WebSearch passageirodeprimeira.com indica campanha encerrada sexta 25/09 (25/10 era erro de data; 25/10/2026 e domingo). Movida para expiradas."
+    },
+    {
+      "id": "inter-loop-prime-latam-pass-sem-bonus-ativo",
+      "tipo": "checagem_sem_oportunidade",
+      "descricao": "Checagem específica (adicionada em 27/08/2026 a pedido, ver state/perfil.json.companheiro_viagem) de bônus de transferência Banco Inter Loop/Prime→LATAM Pass, relevante para os 11.900 pontos Inter Prime do Pedro. CONFIRMADO em 27/08/2026 13h (dashboard completo): o Inter Loop/Prime NÃO tem rota de transferência para LATAM Pass — só transfere para Azul Fidelidade (todos os usuários, 1:1) e Smiles (só clientes Prime/Win, 1:1). Encerra a hipótese levantada no ciclo anterior (12h31).",
+      "bonus_pct": null,
+      "e_permanente": false,
+      "valido_ate": null,
+      "fontes": [
+        "WebSearch allowed_domains=passageirodeprimeira.com em 27/08/2026 13h (query: 'Inter Loop pontos transferir LATAM Pass Azul Smiles quais programas') — síntese explícita: 'não é possível transferir pontos Inter Loop diretamente para o LATAM Pass. [...] o Inter Loop possui parcerias apenas com Azul Fidelidade e Smiles.'",
+        "https://passageirodeprimeira.com/qual-e-a-melhor-forma-de-usar-os-pontos-do-inter-loop/",
+        "https://passageirodeprimeira.com/transforme-pontos-em-passagem-como-enviar-pontos-inter-loop-para-smiles-ou-azul-fidelidade/"
+      ],
+      "confianca": "alta — 2+ artigos convergindo, síntese de busca explícita sobre a ausência de rota para LATAM Pass",
+      "ja_notificada": false,
+      "acao_sugerida": "RESOLVIDO — parar de monitorar essa rota (não existe, não é questão de campanha/bônus). Os 11.900 pontos Inter Prime do Pedro NÃO contam para o cálculo de milhas desta viagem (LATAM exclusiva) — atualizado state/config.json.premissas_calculo_milhas e o card 'Preço final estimado' do dashboard para refletir isso. Pedro pode considerar transferir para Azul/Smiles se algum dia quiser usar fora desta viagem, mas isso é irrelevante para Recife⇄Peru.",
+      "ultima_reconfirmacao": "2026-11-06T00:19:16Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra encerrou 02/10; bonus 25-30% Livelo/Esfera/Nubank encerrados em set). latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. Sem alerta."
     }
   ],
   "checagem_20261001_21h": {
@@ -352,5 +352,6 @@
   "nota_ciclo_04_11_dashboard": "Dashboard 04/11: WebSearch passageirodeprimeira.com (transferencia e compra): so campanhas antigas, nenhuma vigente; ultima compra (65%, R$26,60) encerrou 02/10. Sem alerta. Nenhuma ativa expirada para mover.",
   "nota_ciclo_05_11_dashboard": "Dashboard 05/11: WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (ultima compra 65% encerrou 02/10; bonus 25% Livelo/Esfera/Nubank expirados; Inter sem rota LATAM Pass). Ativas permanentes inalteradas (Modo LATAM Pass). Sem alerta.",
   "nota_ciclo_05_11_monitor": "Monitor 05/11: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, domínio fora da allowlist de rede da sessão). WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção confirmada ativa hoje; resultados são campanhas passadas (Livelo 25-35% até 22/09, Nubank 25% 'até domingo (6)' sem ano, compra 60-66% já encerradas). Sem alerta. Query Inter Loop/Prime não rodada (sem rota p/ LATAM Pass confirmada em 27/08).",
-  "nota_ciclo_06_11_monitor_06h": "Monitor 06/11 06h: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, fora da allowlist). WebSearch passageirodeprimeira.com (transferência e compra direta): só campanhas passadas/datas inconsistentes (Livelo 25% até 22/09, compra 60-66% já encerradas); nenhuma promoção ativa confirmada. Query Inter não rodada (sem rota p/ LATAM Pass). Sem alerta."
+  "nota_ciclo_06_11_monitor_06h": "Monitor 06/11 06h: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, fora da allowlist). WebSearch passageirodeprimeira.com (transferência e compra direta): só campanhas passadas/datas inconsistentes (Livelo 25% até 22/09, compra 60-66% já encerradas); nenhuma promoção ativa confirmada. Query Inter não rodada (sem rota p/ LATAM Pass). Sem alerta.",
+  "nota_ciclo_06_11_dashboard": "Dashboard 06/11 12h: WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção vigente (última compra 65% encerrou 02/10; bônus 25% Livelo/Esfera/Nubank expirados). Itaú pontuação turbinada até 30/11 não se aplica (sem cartão Itaú). latampass.latam.com/ofertas inacessível; Latam-PASS MCP timeout. Ativa permanente: Modo LATAM Pass. Sem alerta."
 }
