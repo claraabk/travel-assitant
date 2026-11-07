@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-07T18:30:00Z",
+  "ultima_checagem": "2026-11-07T21:30:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "2026-11-07T12:00:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma promocao vigente (compra direta 65% encerrou 02/11; bonus Livelo/Esfera/Nubank 25% antigos, <60%). latampass ofertas ENOTFOUND; Latam-PASS MCP timeout. Sem alerta.",
+      "ultima_reconfirmacao": "2026-11-07T21:30:00Z: monitor leve - WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter): nenhuma promocao vigente (compra direta 65% encerrou 02/10-02/11; bonus 25% antigos, <60%). latampass ofertas ENOTFOUND; Latam-PASS MCP timeout. Sem alerta.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
