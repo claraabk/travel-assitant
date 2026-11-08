@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-08T12:19:00Z",
+  "ultima_checagem": "2026-11-08T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -354,5 +354,6 @@
   "nota_ciclo_05_11_monitor": "Monitor 05/11: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, domínio fora da allowlist de rede da sessão). WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção confirmada ativa hoje; resultados são campanhas passadas (Livelo 25-35% até 22/09, Nubank 25% 'até domingo (6)' sem ano, compra 60-66% já encerradas). Sem alerta. Query Inter Loop/Prime não rodada (sem rota p/ LATAM Pass confirmada em 27/08).",
   "nota_ciclo_06_11_monitor_06h": "Monitor 06/11 06h: latampass.latam.com/pt_br/ofertas inacessível (ENOTFOUND, fora da allowlist). WebSearch passageirodeprimeira.com (transferência e compra direta): só campanhas passadas/datas inconsistentes (Livelo 25% até 22/09, compra 60-66% já encerradas); nenhuma promoção ativa confirmada. Query Inter não rodada (sem rota p/ LATAM Pass). Sem alerta.",
   "nota_ciclo_06_11_dashboard": "Dashboard 06/11 12h: WebSearch passageirodeprimeira.com (transferência e compra direta): nenhuma promoção vigente (última compra 65% encerrou 02/10; bônus 25% Livelo/Esfera/Nubank expirados). Itaú pontuação turbinada até 30/11 não se aplica (sem cartão Itaú). latampass.latam.com/ofertas inacessível; Latam-PASS MCP timeout. Ativa permanente: Modo LATAM Pass. Sem alerta.",
-  "nota_ciclo_07_11_dashboard": "Dashboard 07/11 18h30 UTC: WebSearch passageirodeprimeira.com (compra e transferência) sem promoção vigente; última compra (65%, R$24,50) encerrou 02/10. Latam-PASS MCP seguiu com timeout; latampass.latam.com inacessível. Só Modo LATAM Pass (permanente) ativo."
+  "nota_ciclo_07_11_dashboard": "Dashboard 07/11 18h30 UTC: WebSearch passageirodeprimeira.com (compra e transferência) sem promoção vigente; última compra (65%, R$24,50) encerrou 02/10. Latam-PASS MCP seguiu com timeout; latampass.latam.com inacessível. Só Modo LATAM Pass (permanente) ativo.",
+  "nota_ciclo_08_11_monitor_18h": "Monitor 08/11 18h: latampass.latam.com/ofertas inacessivel (ENOTFOUND/egress). WebSearch passageirodeprimeira: nenhum bonus de transferencia ativo (ultimos 25% Livelo/Esfera/Nubank encerraram em set/2026; nada Inter) e nenhum desconto ativo em compra direta (ultima campanha ate 02/10, 65% Clube/Itau, R$26,60 geral). Nada novo; sem alerta."
 }
