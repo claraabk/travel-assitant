@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-08T12:30:00Z",
-    "nota": "Monitor leve 08/11 12h30 (Kiwi LA, 2 pax). CUZ-LIM_3d R$ 9534 segue melhor (+R$64 p/ CUZ-LIM_2d 9598; LIM-CUZ_2d 9748; LIM-CUZ_3d 9809). Sem alerta."
+    "data_checagem": "2026-11-08T12:20:00Z",
+    "nota": "Dashboard 08/11: CUZ-LIM_3d R$ 9534 segue melhor (+R$64 CUZ-LIM_2d 9598; +R$275 LIM-CUZ_3d 9809; +R$318 LIM-CUZ_2d 9852). Sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -16062,6 +16062,26 @@
         "nota": "Variantes: {\"LIM-CUZ_3d\": 9809, \"LIM-CUZ_2d\": 9748, \"CUZ-LIM_3d\": 9534, \"CUZ-LIM_2d\": 9598}",
         "media_movel_30_checagens": 9302.2,
         "variacao_pct_vs_media": 4.79
+      },
+      {
+        "data_checagem": "2026-11-08T12:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9809,
+        "trechos_brl": {
+          "ida": 4020,
+          "domestico": 784,
+          "volta": 5005
+        },
+        "fonte": "Dashboard 08/11 (Kiwi LA 2 pax, one-ways somados; fli nao usado)",
+        "nota": "Dashboard 08/11 (Kiwi LA, 2 pax, one-ways somados). Variantes: {\"LIM-CUZ_3d\": 9809, \"LIM-CUZ_2d\": 9852, \"CUZ-LIM_3d\": 9534, \"CUZ-LIM_2d\": 9598}. Sem alerta.",
+        "media_movel_30_checagens": 9302.5,
+        "variacao_pct_vs_media": 5.44
       }
     ],
     "CUZ-LIM": [
@@ -32505,23 +32525,43 @@
         "nota": "Variantes: {\"LIM-CUZ_3d\": 9809, \"LIM-CUZ_2d\": 9748, \"CUZ-LIM_3d\": 9534, \"CUZ-LIM_2d\": 9598}",
         "media_movel_30_checagens": 9559.3,
         "variacao_pct_vs_media": -0.26
+      },
+      {
+        "data_checagem": "2026-11-08T12:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9534,
+        "trechos_brl": {
+          "ida": 4839,
+          "domestico": 704,
+          "volta": 3991
+        },
+        "fonte": "Dashboard 08/11 (Kiwi LA 2 pax, one-ways somados; fli nao usado)",
+        "nota": "Dashboard 08/11 (Kiwi LA, 2 pax, one-ways somados). Variantes: {\"LIM-CUZ_3d\": 9809, \"LIM-CUZ_2d\": 9852, \"CUZ-LIM_3d\": 9534, \"CUZ-LIM_2d\": 9598}. Sem alerta.",
+        "media_movel_30_checagens": 9537.3,
+        "variacao_pct_vs_media": -0.03
       }
     ]
   },
-  "ultima_checagem": "2026-11-08T12:30:00Z",
+  "ultima_checagem": "2026-11-08T12:20:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
   "ultima_cotacao_kiwi_dashboard": {
-    "data": "2026-11-07T18:30:00Z",
+    "data": "2026-11-08T12:20:00Z",
     "melhor": "CUZ-LIM 3d",
-    "preco_brl": 9292,
-    "media_movel_30": 9635.2,
+    "preco_brl": 9534,
+    "media_movel_30": 9537.3,
     "variantes_brl": {
-      "LIM-CUZ_2d": 9640,
-      "LIM-CUZ_3d": 9421,
-      "CUZ-LIM_2d": 10339,
-      "CUZ-LIM_3d": 9292
+      "LIM-CUZ_3d": 9809,
+      "LIM-CUZ_2d": 9852,
+      "CUZ-LIM_3d": 9534,
+      "CUZ-LIM_2d": 9598
     }
   },
   "ultima_cotacao_kiwi_monitor": {
