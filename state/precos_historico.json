@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "CUZ-LIM",
-    "preco_total_brl": 9519,
+    "preco_total_brl": 9617,
     "passageiros": 2,
     "dias_cusco": 6,
-    "dias_lima": 3,
-    "data_checagem": "2026-11-09T06:30:00Z",
-    "nota": "Monitor 09/11 06h: CUZ-LIM_3d segue melhor. {\"LIM-CUZ_2d\": 9736, \"LIM-CUZ_3d\": 9797, \"CUZ-LIM_2d\": 9582, \"CUZ-LIM_3d\": 9519}"
+    "dias_lima": 2,
+    "data_checagem": "2026-11-09T12:30:00Z",
+    "nota": "Monitor leve 09/11 12h: CUZ-LIM_2d vence. {\"LIM-CUZ_2d\": 9832, \"LIM-CUZ_3d\": 9828, \"CUZ-LIM_2d\": 9617, \"CUZ-LIM_3d\": 10291}. Anterior: CUZ-LIM 3d R$ 9519 (06h). Alta no trecho LIM-REC; sem queda, sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -16162,6 +16162,44 @@
         "nota": "Monitor leve 09/11 06h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado). Variantes: {\"LIM-CUZ_2d\": 9736, \"LIM-CUZ_3d\": 9797, \"CUZ-LIM_2d\": 9582, \"CUZ-LIM_3d\": 9519}. Sem alerta; precos iguais ao ciclo anterior.",
         "media_movel_30_checagens": 9301.5,
         "variacao_pct_vs_media": 4.67
+      },
+      {
+        "data_checagem": "2026-11-09T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9832,
+        "trechos_brl": {
+          "ida": 4030,
+          "domestico": 786,
+          "volta": 5016
+        },
+        "fonte": "Monitor leve 09/11 12h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado)",
+        "media_movel_30_checagens": 9628.6,
+        "variacao_pct_vs_media": 2.11
+      },
+      {
+        "data_checagem": "2026-11-09T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9828,
+        "trechos_brl": {
+          "ida": 4030,
+          "domestico": 784,
+          "volta": 5014
+        },
+        "fonte": "Monitor leve 09/11 12h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado)",
+        "media_movel_30_checagens": 9297.8,
+        "variacao_pct_vs_media": 5.7
       }
     ],
     "CUZ-LIM": [
@@ -32705,6 +32743,44 @@
         "nota": "Monitor leve 09/11 06h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado). Variantes: {\"LIM-CUZ_2d\": 9736, \"LIM-CUZ_3d\": 9797, \"CUZ-LIM_2d\": 9582, \"CUZ-LIM_3d\": 9519}. Sem alerta; precos iguais ao ciclo anterior.",
         "media_movel_30_checagens": 9421.2,
         "variacao_pct_vs_media": 1.04
+      },
+      {
+        "data_checagem": "2026-11-09T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9617,
+        "trechos_brl": {
+          "ida": 4851,
+          "domestico": 706,
+          "volta": 4060
+        },
+        "fonte": "Monitor leve 09/11 12h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado)",
+        "media_movel_30_checagens": 9483.8,
+        "variacao_pct_vs_media": 1.4
+      },
+      {
+        "data_checagem": "2026-11-09T12:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 10291,
+        "trechos_brl": {
+          "ida": 4851,
+          "domestico": 706,
+          "volta": 4734
+        },
+        "fonte": "Monitor leve 09/11 12h (Kiwi LA, adults=2 BRL, one-ways somados; fli nao usado)",
+        "media_movel_30_checagens": 9419.9,
+        "variacao_pct_vs_media": 9.25
       }
     ]
   },
@@ -32725,12 +32801,12 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-08T06:30:00Z",
+    "data": "2026-11-09T12:30:00Z",
     "variantes_brl": {
-      "LIM-CUZ_3d": 9809,
-      "LIM-CUZ_2d": 9852,
-      "CUZ-LIM_3d": 9534,
-      "CUZ-LIM_2d": 9598
+      "LIM-CUZ_2d": 9832,
+      "LIM-CUZ_3d": 9828,
+      "CUZ-LIM_2d": 9617,
+      "CUZ-LIM_3d": 10291
     }
   }
 }
