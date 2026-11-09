@@ -34,8 +34,8 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-08T18:20:00Z",
-    "nota": "Monitor leve 08/11 18h: CUZ-LIM_3d segue melhor. {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}"
+    "data_checagem": "2026-11-09T00:19:04Z",
+    "nota": "Monitor leve 09/11: CUZ-LIM_3d segue melhor. {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}"
   },
   "checagens": {
     "LIM-LIM": [
@@ -16122,6 +16122,26 @@
         "nota": "Monitor leve 08/11 18h (Kiwi LA, adults=2 BRL direto, one-ways somados; fli vazio). Variantes: {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}. Sem alerta.",
         "media_movel_30_checagens": 9304.1,
         "variacao_pct_vs_media": 4.64
+      },
+      {
+        "data_checagem": "2026-11-09T00:19:04Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9736,
+        "trechos_brl": {
+          "ida": 4008,
+          "domestico": 785,
+          "volta": 4943
+        },
+        "fonte": "Monitor leve 09/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli vazio)",
+        "nota": "Monitor leve 09/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli vazio). Variantes: {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}. Sem alerta; precos iguais ao ciclo anterior.",
+        "media_movel_30_checagens": 9302.9,
+        "variacao_pct_vs_media": 4.66
       }
     ],
     "CUZ-LIM": [
@@ -32625,10 +32645,30 @@
         "nota": "Monitor leve 08/11 18h (Kiwi LA, adults=2 BRL direto, one-ways somados; fli vazio). Variantes: {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}. Sem alerta.",
         "media_movel_30_checagens": 9468.9,
         "variacao_pct_vs_media": 0.53
+      },
+      {
+        "data_checagem": "2026-11-09T00:19:04Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9519,
+        "trechos_brl": {
+          "ida": 4826,
+          "domestico": 701,
+          "volta": 3992
+        },
+        "fonte": "Monitor leve 09/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli vazio)",
+        "nota": "Monitor leve 09/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli vazio). Variantes: {\"LIM-CUZ_3d\": 9797, \"LIM-CUZ_2d\": 9736, \"CUZ-LIM_3d\": 9519, \"CUZ-LIM_2d\": 9582}. Sem alerta; precos iguais ao ciclo anterior.",
+        "media_movel_30_checagens": 9444.9,
+        "variacao_pct_vs_media": 0.78
       }
     ]
   },
-  "ultima_checagem": "2026-11-08T18:20:00Z",
+  "ultima_checagem": "2026-11-09T00:19:04Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
