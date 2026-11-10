@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 9706,
+    "preco_total_brl": 9794,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-10T12:45:00Z",
-    "nota": "Monitor 10/11 12h45: LIM-CUZ 3d segue vencendo (9706); sem queda >=15%, sem alerta."
+    "data_checagem": "2026-11-10T18:30:00Z",
+    "nota": "Monitor 10/11 18h30: LIM-CUZ_3d segue vencendo (9794, +88 vs. 12h45); 2a: CUZ-LIM_3d (9923, +129). Sem queda >=15%, sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -16574,6 +16574,56 @@
         "media_movel_30_checagens": 9483.9,
         "variacao_pct_vs_media": 4.19,
         "nota": "variante 2d"
+      },
+      {
+        "data_checagem": "2026-11-10T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9944,
+        "trechos_brl": {
+          "ida": 4038,
+          "domestico": 791,
+          "volta": 5115
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/6ds3kj",
+          "domestico": "https://kiwi.com/u/wk7kqd3",
+          "volta": "https://kiwi.com/u/6tzzjs"
+        },
+        "fonte": "Monitor leve 10/11 18h30 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM retornou 0 resultados)",
+        "media_movel_30_checagens": 9718.3,
+        "variacao_pct_vs_media": 2.32,
+        "nota": "variante 2d"
+      },
+      {
+        "data_checagem": "2026-11-10T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9794,
+        "trechos_brl": {
+          "ida": 4038,
+          "domestico": 786,
+          "volta": 4970
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/6ds3kj",
+          "domestico": "https://kiwi.com/u/vf82p9",
+          "volta": "https://kiwi.com/u/3ysp27"
+        },
+        "fonte": "Monitor leve 10/11 18h30 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM retornou 0 resultados)",
+        "media_movel_30_checagens": 9304.3,
+        "variacao_pct_vs_media": 5.26,
+        "nota": "variante 3d"
       }
     ],
     "CUZ-LIM": [
@@ -33487,10 +33537,60 @@
         "media_movel_30_checagens": 9545.9,
         "variacao_pct_vs_media": 2.96,
         "nota": "variante 2d"
+      },
+      {
+        "data_checagem": "2026-11-10T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9929,
+        "trechos_brl": {
+          "ida": 4324,
+          "domestico": 710,
+          "volta": 4895
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/qzjs7u",
+          "domestico": "https://kiwi.com/u/2g4smk",
+          "volta": "https://kiwi.com/u/twkw35f"
+        },
+        "fonte": "Monitor leve 10/11 18h30 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM retornou 0 resultados)",
+        "media_movel_30_checagens": 9607.1,
+        "variacao_pct_vs_media": 3.35,
+        "nota": "variante 2d"
+      },
+      {
+        "data_checagem": "2026-11-10T18:30:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9923,
+        "trechos_brl": {
+          "ida": 4324,
+          "domestico": 710,
+          "volta": 4889
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/qzjs7u",
+          "domestico": "https://kiwi.com/u/2g4smk",
+          "volta": "https://kiwi.com/u/6bs6hzp"
+        },
+        "fonte": "Monitor leve 10/11 18h30 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM retornou 0 resultados)",
+        "media_movel_30_checagens": 9502.6,
+        "variacao_pct_vs_media": 4.42,
+        "nota": "variante 3d"
       }
     ]
   },
-  "ultima_checagem": "2026-11-10T12:45:00Z",
+  "ultima_checagem": "2026-11-10T18:30:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
@@ -33507,12 +33607,12 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-10T12:45:00Z",
+    "data": "2026-11-10T18:30:00Z",
     "variantes_brl": {
-      "LIM-CUZ_3d": 9706,
-      "LIM-CUZ_2d": 9881,
-      "CUZ-LIM_3d": 9764,
-      "CUZ-LIM_2d": 9828
+      "LIM-CUZ_2d": 9944,
+      "LIM-CUZ_3d": 9794,
+      "CUZ-LIM_2d": 9929,
+      "CUZ-LIM_3d": 9923
     }
   }
 }
