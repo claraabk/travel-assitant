@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-10T12:30:00Z",
+  "ultima_checagem": "2026-11-10T12:45:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -359,5 +359,6 @@
   "nota_ciclo_09_11_monitor_06h": "WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma oferta vigente (ultima compra direta 65% ate 02/10). latampass ofertas ENOTFOUND; Latam-PASS MCP timeout. Precos de voo iguais ao ciclo anterior. Nenhum alerta.",
   "nota_ciclo_09_11_monitor_12h": "2026-11-09T12:30:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas historicas (Livelo/Esfera 25-30%, compra ate 65%/66%), nenhuma com vigencia confirmada para 09/11; Nubank sem resultado. Ofertas LATAM Pass ENOTFOUND. Nenhuma promocao nova ativa, sem alerta.",
   "nota_ciclo_10_11_monitor_06h": "2026-11-10T06:30:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas historicas (compra: ultima ate 02/10 'ate 65%'; transferencia 25-35% sem data vigente). Nenhuma promocao ativa confirmada. latampass.latam.com/ofertas ENOTFOUND. Sem alerta.",
-  "nota_ciclo_10_11_dashboard": "2026-11-10T12:30:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas historicas (compra: ultima ate 02/10, 62% geral R$26,60/milheiro, 65% Itau R$24,50; transferencia 25-35% sem data vigente). Nenhuma promocao ativa confirmada. Latam-PASS MCP timeout; Modo LATAM Pass segue como unica ativa (permanente). Sem alerta."
+  "nota_ciclo_10_11_dashboard": "2026-11-10T12:30:00Z — WebSearch passageirodeprimeira.com (transferencia + compra direta): so campanhas historicas (compra: ultima ate 02/10, 62% geral R$26,60/milheiro, 65% Itau R$24,50; transferencia 25-35% sem data vigente). Nenhuma promocao ativa confirmada. Latam-PASS MCP timeout; Modo LATAM Pass segue como unica ativa (permanente). Sem alerta.",
+  "nota_ciclo_10_11_monitor_12h45": "Monitor 10/11 12h45: WebSearch passageirodeprimeira.com (transferência + compra direta): nenhuma oferta vigente confirmada (última compra direta: início de out/2026, 65% Itaú/62% geral, encerrada; transferências só históricas ≤35%). ofertas LATAM: ENOTFOUND. Latam-PASS MCP timeout. Sem queda >=15% (LIM-CUZ 3d 9706). Nenhum alerta."
 }
