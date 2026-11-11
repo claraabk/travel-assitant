@@ -30,12 +30,12 @@
   ],
   "melhor_combinacao_geral": {
     "id": "LIM-CUZ",
-    "preco_total_brl": 9794,
+    "preco_total_brl": 8858,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-10T18:30:00Z",
-    "nota": "Monitor 10/11 18h30: LIM-CUZ_3d segue vencendo (9794, +88 vs. 12h45); 2a: CUZ-LIM_3d (9923, +129). Sem queda >=15%, sem alerta."
+    "data_checagem": "2026-11-11T00:19:00Z",
+    "nota": "Monitor 11/11: LIM-CUZ_3d segue vencendo (8858, -936 vs. 10/11 18h30, puxado pela ida REC-LIM a 3118 vs 4038); 2a: LIM-CUZ_2d (8902, +44). Queda -4.65% vs media movel — abaixo de 15%, sem alerta. Atencao: ida mais barata tem troca CGH->GRU e conexao longa."
   },
   "checagens": {
     "LIM-LIM": [
@@ -16624,6 +16624,56 @@
         "media_movel_30_checagens": 9304.3,
         "variacao_pct_vs_media": 5.26,
         "nota": "variante 3d"
+      },
+      {
+        "data_checagem": "2026-11-11T00:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "preco_total_brl": 8902,
+        "trechos_brl": {
+          "ida": 3118,
+          "domestico": 791,
+          "volta": 4993
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/2ddwkm",
+          "domestico": "https://kiwi.com/u/uks9x9m",
+          "volta": "https://kiwi.com/u/c4br7g"
+        },
+        "fonte": "Monitor leve 11/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM LA 2pax retornou 0 voos)",
+        "media_movel_30_checagens": 9689.5,
+        "variacao_pct_vs_media": -8.38,
+        "nota": "variante 2d; ida REC-LIM mais barata (3118) e via CGH->GRU (troca de aeroporto, ~15h40 de espera em SP) + ASU (~6h45) — conexao_longa"
+      },
+      {
+        "data_checagem": "2026-11-11T00:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "preco_total_brl": 8858,
+        "trechos_brl": {
+          "ida": 3118,
+          "domestico": 791,
+          "volta": 4949
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/2ddwkm",
+          "domestico": "https://kiwi.com/u/ztv7tr",
+          "volta": "https://kiwi.com/u/3fxxyt"
+        },
+        "fonte": "Monitor leve 11/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM LA 2pax retornou 0 voos)",
+        "media_movel_30_checagens": 9275.2,
+        "variacao_pct_vs_media": -4.65,
+        "nota": "variante 3d; ida REC-LIM mais barata (3118) e via CGH->GRU (troca de aeroporto, ~15h40 de espera em SP) + ASU (~6h45) — conexao_longa"
       }
     ],
     "CUZ-LIM": [
@@ -33587,10 +33637,60 @@
         "media_movel_30_checagens": 9502.6,
         "variacao_pct_vs_media": 4.42,
         "nota": "variante 3d"
+      },
+      {
+        "data_checagem": "2026-11-11T00:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "preco_total_brl": 9452,
+        "trechos_brl": {
+          "ida": 3948,
+          "domestico": 710,
+          "volta": 4794
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/dytr3jp",
+          "domestico": "https://kiwi.com/u/s3xhyk",
+          "volta": "https://kiwi.com/u/wcu5s2"
+        },
+        "fonte": "Monitor leve 11/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM LA 2pax retornou 0 voos)",
+        "media_movel_30_checagens": 9632.5,
+        "variacao_pct_vs_media": -1.94,
+        "nota": "variante 2d; ida REC-CUZ (3948) via CGH->GRU (troca de aeroporto, espera longa) + ASU + LIM — conexao_longa"
+      },
+      {
+        "data_checagem": "2026-11-11T00:19:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "preco_total_brl": 9430,
+        "trechos_brl": {
+          "ida": 3948,
+          "domestico": 710,
+          "volta": 4772
+        },
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/dytr3jp",
+          "domestico": "https://kiwi.com/u/s3xhyk",
+          "volta": "https://kiwi.com/u/f2cndmr"
+        },
+        "fonte": "Monitor leve 11/11 (Kiwi LA, adults=2 BRL, one-ways somados; fli search_flights REC-LIM LA 2pax retornou 0 voos)",
+        "media_movel_30_checagens": 9510.1,
+        "variacao_pct_vs_media": -0.87,
+        "nota": "variante 3d; ida REC-CUZ (3948) via CGH->GRU (troca de aeroporto, espera longa) + ASU + LIM — conexao_longa"
       }
     ]
   },
-  "ultima_checagem": "2026-11-10T18:30:00Z",
+  "ultima_checagem": "2026-11-11T00:19:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
@@ -33607,12 +33707,12 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-10T18:30:00Z",
+    "data": "2026-11-11T00:19:00Z",
     "variantes_brl": {
-      "LIM-CUZ_2d": 9944,
-      "LIM-CUZ_3d": 9794,
-      "CUZ-LIM_2d": 9929,
-      "CUZ-LIM_3d": 9923
+      "LIM-CUZ_2d": 8902,
+      "LIM-CUZ_3d": 8858,
+      "CUZ-LIM_2d": 9452,
+      "CUZ-LIM_3d": 9430
     }
   }
 }
