@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-11-12T12:20:00Z",
-    "tentativas_consecutivas_falhas": 361,
-    "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values]) (12/11 12h20)",
+    "ultima_tentativa": "2026-11-12T18:20:00Z",
+    "tentativas_consecutivas_falhas": 362,
+    "ultimo_erro": "Latam-PASS MCP Page.wait_for_selector Timeout 20000ms (input[name=radio-values]) (12/11 18h20)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente; sem preco inventado."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-11-12T12:20:00Z",
-    "resultado": "Monitor 12/11 12h20: fli search_flights REC-LIM (LA, 2 pax, BRL) retornou 0 voos; usado Kiwi (select_airlines=LA, adults=2)."
+    "ultima_tentativa": "2026-11-12T18:20:00Z",
+    "resultado": "Monitor 12/11 18h20: fli search_flights REC-LIM (LA, 2 pax, BRL) retornou 0 voos; usado Kiwi (select_airlines=LA, adults=2)."
   },
   "roteiro": {
     "fixo": false,
@@ -60,9 +60,9 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-11-12T12:20:00Z",
-    "resultado": "WebFetch ENOTFOUND",
-    "ultimo_erro": "ENOTFOUND (12/11 12h20) — dominio fora da lista de rede permitida da sessao"
+    "ultima_tentativa": "2026-11-12T18:20:00Z",
+    "resultado": "WebFetch ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao) — 12/11 18h20",
+    "ultimo_erro": "ENOTFOUND (12/11 18h20) — dominio fora da lista de rede permitida da sessao"
   },
   "fontes_monitoradas_promocoes": [
     {

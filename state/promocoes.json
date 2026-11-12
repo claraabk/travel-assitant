@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-12T12:20:00Z",
+  "ultima_checagem": "2026-11-12T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Dashboard 12/11 12h20: WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop) sem oferta vigente relevante para LATAM Pass; Latam-PASS MCP timeout; latampass.latam.com ENOTFOUND. Nenhum alerta.",
+      "ultima_reconfirmacao": "Monitor 12/11 18h20: WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop) sem oferta vigente para LATAM Pass (ultimas: 25% Nubank ate 06/09, 25% Livelo ate 22/09, compra 65%/62% ate 28/10 — todas expiradas); Latam-PASS MCP timeout; latampass.latam.com ENOTFOUND. Nenhum alerta.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
