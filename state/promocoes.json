@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-12T00:20:00Z",
+  "ultima_checagem": "2026-11-12T06:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 11/11 18h20: WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter): nenhuma oferta vigente confirmada. Latam-PASS MCP timeout. Nenhum alerta.",
+      "ultima_reconfirmacao": "Monitor 12/11 06h20: WebSearch passageirodeprimeira.com sem oferta vigente relevante; Latam-PASS MCP timeout. Nenhum alerta.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
@@ -367,5 +367,6 @@
   "nota_ciclo_11_11_dashboard": "2026-11-11T12:20:00Z — WebFetch latampass ofertas ENOTFOUND; Latam-PASS MCP timeout. WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop/Prime): nenhuma campanha vigente em nov/2026 (ultimas: compra direta ate 65% encerrada 02/10; Livelo 25% ate 22/09; Esfera 25% ate 25/09; Nubank 25% ate 06/09). Pontuacao turbinada cartao LATAM Pass Itau ate 30/11 nao se aplica. Modo LATAM Pass segue unica ativa (permanente). 0 expirada(s) movida(s). Sem alerta.",
   "nota_ciclo_11_11_monitor_12h30": "Monitor leve 11/11 12h30 (rodou em paralelo ao dashboard 12h20): latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada vigente — transferencias 25-30% encerradas (Nubank 06/09, Livelo 22/09), compra direta ultima edicao 65%/62% ate 02/10 (expirada, ja notificada); unica ativa LATAM e pontuacao turbinada cartao LATAM Pass Itau ate 30/11 (acumulo, nao compra/transferencia, nao se aplica). Inter sem rota LATAM Pass. Blog de terceiros (confianca media). Nenhum gatilho; sem notificacao.",
   "nota_ciclo_11_11_monitor_18h20": "Monitor leve 11/11 18h20: latampass.latam.com/ofertas ENOTFOUND (egress bloqueado). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada vigente para LATAM Pass — transferencias 25% encerradas (Nubank 06/09, Livelo 22/09, Esfera 25/09), Sem Parar 25% ate 10/11 (expirada, nao se aplica); compra direta ultima edicao 65%/62% ate 02/10 (expirada, ja notificada); pontuacao turbinada cartao LATAM Pass Itau ate 30/11 e acumulo, nao se aplica. Inter sem campanha LATAM Pass. Blog de terceiros (confianca media). Nenhum gatilho; sem notificacao.",
-  "nota_ciclo_12_11_monitor_00h20": "Monitor leve 12/11 00h20: latampass.latam.com/ofertas ENOTFOUND (egress bloqueado). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada vigente para LATAM Pass — transferencias 25-30% encerradas, Sem Parar 25% ate 10/11 (expirada); compra direta: sintese cita edicao ate 65% (Itau R$24,50 / demais R$26,60 milheiro, limite 350 mil) valida ate 28/10 — expirada, ja coberta pelos registros em expiradas (ja notificada); pontuacao turbinada cartao LATAM Pass Itau ate 30/11 e acumulo, nao se aplica. Inter sem campanha LATAM Pass (LATAM Friday 2025 excluia Inter). Blog de terceiros (confianca media). Nenhum gatilho; sem notificacao."
+  "nota_ciclo_12_11_monitor_00h20": "Monitor leve 12/11 00h20: latampass.latam.com/ofertas ENOTFOUND (egress bloqueado). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada vigente para LATAM Pass — transferencias 25-30% encerradas, Sem Parar 25% ate 10/11 (expirada); compra direta: sintese cita edicao ate 65% (Itau R$24,50 / demais R$26,60 milheiro, limite 350 mil) valida ate 28/10 — expirada, ja coberta pelos registros em expiradas (ja notificada); pontuacao turbinada cartao LATAM Pass Itau ate 30/11 e acumulo, nao se aplica. Inter sem campanha LATAM Pass (LATAM Friday 2025 excluia Inter). Blog de terceiros (confianca media). Nenhum gatilho; sem notificacao.",
+  "nota_ciclo_12_11_monitor_06h20": "Monitor leve 12/11 06h20: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank + compra direta + Inter + Black Friday): nenhuma oferta vigente relevante. Unica vigente achada: Itau/Credicard 25% ate 15/11/2026 (Clara/Pedro sem Itau/Credicard, <60% — irrelevante, nao adicionada a ativas). Compra direta: ultima edicao (65%/62%) expirou 02/10, nenhuma nova. Sem alerta. Fonte: blog de terceiros (confianca media)."
 }
