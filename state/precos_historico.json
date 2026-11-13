@@ -38181,5 +38181,6 @@
       "CUZ-LIM_3d": 8250
     }
   },
-  "nota_monitor_12_11_12h20": "Monitor leve 12/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 8537 / 3d 8466; CUZ-LIM 2d 8621 / 3d 8478); checkins nao duplicados para nao distorcer a media movel."
+  "nota_monitor_12_11_12h20": "Monitor leve 12/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 8537 / 3d 8466; CUZ-LIM 2d 8621 / 3d 8478); checkins nao duplicados para nao distorcer a media movel.",
+  "nota_monitor_13_11_12h20": "Monitor leve 13/11 12h20 rodou em paralelo ao dashboard 12h16 e obteve praticamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 8587 / 3d 8543; CUZ-LIM 2d 8267 / 3d 8264 — diferencas de R$1-2 no domestico); checkins nao duplicados para nao distorcer a media movel. Sem queda >=15%."
 }
