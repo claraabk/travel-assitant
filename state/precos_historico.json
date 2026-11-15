@@ -41871,10 +41871,10 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-15T06:20:00Z",
+    "data": "2026-11-15T12:20:00Z",
     "variantes_brl": {
       "LIM-CUZ_2d": 9575,
-      "LIM-CUZ_3d": 9534,
+      "LIM-CUZ_3d": 9525,
       "CUZ-LIM_2d": 9560,
       "CUZ-LIM_3d": 9560
     }
@@ -41884,5 +41884,6 @@
   "nota_monitor_14_11_12h20": "Monitor leve 14/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 9567 / 3d 9534; CUZ-LIM 3d 8296; CUZ-LIM 2d 8296 se volta LA8041 dep 19/06 00:30 conta como noite de 18/06, ou 8438 com volta estrita dep 18/06 = LA2422 23:55 via POA 4591). fli search_flights REC-LIM LA 2pax 0 voos. Checkins nao duplicados para nao distorcer a media movel. melhor_combinacao_geral mantida (CUZ-LIM 3d 8296, -3.23% vs media). Sem queda >=15%.",
   "nota_monitor_14_11_18h20": "Monitor leve 14/11 18h20: CUZ-LIM encareceu (REC-CUZ ida LA3715/LA8122/LA2011 foi de 3125 para 4386 BRL p/ 2 pax). Novo lider LIM-CUZ_3d 9537 vs CUZ-LIM_2d 9557. fli search_flights REC-LIM LA 2pax 0 voos; Kiwi usado. Nenhuma queda >=15%.",
   "nota_monitor_15_11_00h20": "Monitor leve 15/11 00h20: precos estaveis (variacao -3 a +18 BRL vs ciclo anterior). Lider LIM-CUZ_3d 9534 vs CUZ-LIM_2d 9548. fli search_flights REC-LIM LA 2pax 0 voos; Kiwi usado. Nenhuma queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
-  "nota_monitor_15_11_06h20": "Monitor leve 15/11 06h20: LIM-CUZ 2d/3d iguais ao ciclo anterior (9575/9534); CUZ-LIM 2d/3d 9560 (+12, ida REC-CUZ 4374->4386). Lider LIM-CUZ_3d 9534 vs CUZ-LIM_2d 9560. fli search_flights REC-LIM LA 2pax 0 voos; Kiwi usado. Nenhuma queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
+  "nota_monitor_15_11_06h20": "Monitor leve 15/11 06h20: LIM-CUZ 2d/3d iguais ao ciclo anterior (9575/9534); CUZ-LIM 2d/3d 9560 (+12, ida REC-CUZ 4374->4386). Lider LIM-CUZ_3d 9534 vs CUZ-LIM_2d 9560. fli search_flights REC-LIM LA 2pax 0 voos; Kiwi usado. Nenhuma queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
+  "nota_monitor_15_11_12h20": "Monitor leve 15/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 9575 / 3d 9525; CUZ-LIM 2d/3d 9560 — ida REC-LIM 4095, REC-CUZ 4386, dom LIM-CUZ 807, CUZ-LIM 725, volta CUZ-REC 4673 (18/06)/4623 (19/06), LIM-REC 4449). fli search_flights REC-LIM LA 2pax 0 voos; Kiwi usado. Checkins nao duplicados para nao distorcer a media movel. melhor_combinacao_geral mantida (LIM-CUZ_3d 9525, +4.92% vs media). Sem queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
 }
