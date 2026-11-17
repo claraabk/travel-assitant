@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-17T06:20:00Z",
+  "ultima_checagem": "2026-11-17T12:16:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor leve 17/11 06h20: segue permanente; WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, Inter Loop/Prime e compra direta) sem bonus de transferencia LATAM Pass vigente em nov/2026 (ultimos 25% Livelo/Esfera/Nubank em set-out/2026; Inter sem rota/bonus). latampass.latam.com/ofertas ENOTFOUND.",
+      "ultima_reconfirmacao": "Dashboard 17/11 12h16: segue permanente; WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, Inter Loop/Prime, compra direta) sem bonus de transferencia LATAM Pass vigente em nov/2026 (unica campanha vigente achada: Nubank Croma -> Livelo 10% ate 18/11, nao e LATAM Pass, ignorada). latampass.latam.com/ofertas ENOTFOUND.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -41,7 +41,7 @@
       "ja_notificada": true,
       "notificada_em": "2026-11-16T18:20:00Z",
       "acao_sugerida": "Oportunidade de compra direta a R$25,90/milheiro (abaixo do CPM de equilíbrio da viagem). Nada comprado — só com 'Compra' explícito da Clara.",
-      "ultima_reconfirmacao": "Monitor leve 17/11 06h20: WebSearch passageirodeprimeira.com segue confirmando 66% Itau / 63% demais (R$25,90/milheiro) ate sexta 20/11/2026, limite 350k/CPF. ja_notificada=true, sem novo alerta."
+      "ultima_reconfirmacao": "Dashboard 17/11 12h16: WebSearch passageirodeprimeira.com segue confirmando 66% Itau (R$23,80) / 63% demais clientes e Clube (R$25,90) ate sexta 20/11/2026, limite 350k/CPF, lotes de 1.000, milhas validas 36 meses. ja_notificada=true, sem novo alerta."
     }
   ],
   "expiradas": [
