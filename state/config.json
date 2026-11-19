@@ -11,15 +11,15 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-11-19T00:20:00Z",
-    "tentativas_consecutivas_falhas": 392,
-    "ultimo_erro": "Latam-PASS MCP: connection closed before the tool call was answered (Monitor leve 19/11 00h20)",
+    "ultima_tentativa": "2026-11-19T06:20:00Z",
+    "tentativas_consecutivas_falhas": 393,
+    "ultimo_erro": "Latam-PASS MCP: Page.wait_for_selector Timeout 20000ms (input[name=\"radio-values\"] nao visivel — bloqueio Akamai provavel) (Monitor leve 19/11 06h20)",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
-    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente (Monitor leve 19/11 00h20); sem preco inventado. CPM promocional de referencia via blog: R$25,90 (Esquenta LATAM Friday ate 20/11)."
+    "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente (Monitor leve 19/11 06h20); sem preco inventado. CPM promocional de referencia via blog: R$25,90 (Esquenta LATAM Friday ate 20/11)."
   },
   "fli_connector_status_ciclo_atual": {
-    "ultima_tentativa": "2026-11-19T00:20:00Z",
-    "resultado": "Monitor leve 19/11 00h20: fli search_flights REC-LIM 10/06/2027 (LA, 2 pax, BRL) retornou 0 voos; usado Kiwi (select_airlines=LA, adults=2)."
+    "ultima_tentativa": "2026-11-19T06:20:00Z",
+    "resultado": "Monitor leve 19/11 06h20: fli search_flights REC-LIM 10/06/2027 (LA, 2 pax, BRL) retornou 0 voos; usado Kiwi (select_airlines=LA, adults=2)."
   },
   "roteiro": {
     "fixo": false,
@@ -60,9 +60,9 @@
   },
   "latampass_ofertas_page_status": {
     "url": "https://latampass.latam.com/pt_br/ofertas",
-    "ultima_tentativa": "2026-11-19T00:20:00Z",
-    "resultado": "WebFetch ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao) — Monitor leve 19/11 00h20",
-    "ultimo_erro": "WebFetch ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao) — Monitor leve 19/11 00h20"
+    "ultima_tentativa": "2026-11-19T06:20:00Z",
+    "resultado": "WebFetch ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao) — Monitor leve 19/11 06h20",
+    "ultimo_erro": "WebFetch ENOTFOUND latampass.latam.com (dominio fora da allowlist de rede da sessao) — Monitor leve 19/11 06h20"
   },
   "fontes_monitoradas_promocoes": [
     {
