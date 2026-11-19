@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-19T12:20:00Z",
+  "ultima_checagem": "2026-11-19T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -41,9 +41,29 @@
       "ja_notificada": true,
       "notificada_em": "2026-11-16T18:20:00Z",
       "acao_sugerida": "Oportunidade de compra direta a R$25,90/milheiro (abaixo do CPM de equilíbrio da viagem). Nada comprado — só com 'Compra' explícito da Clara.",
-      "ultima_reconfirmacao": "Dashboard 19/11 12h20: segue ativa ate sex 20/11 (passageirodeprimeira.com: 66% Itau / 63% demais clientes, R$25,90/milheiro, limite 350k); ja notificada, sem novo push.",
+      "ultima_reconfirmacao": "Monitor 19/11 18h20: segue ativa ate sex 20/11; ja notificada, sem novo push.",
       "reconfirmacao_19_11_00h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro). Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
-      "reconfirmacao_19_11_06h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11)."
+      "reconfirmacao_19_11_06h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
+      "reconfirmacao_19_11_18h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 66% Itau (R$23,80) / 63% demais clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Um artigo cita data conflitante (02/11) — as mais recentes apontam 20/11. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11)."
+    },
+    {
+      "id": "inter-loop-latam-pass-25pct-nov2026",
+      "tipo": "bonus_transferencia",
+      "descricao": "Nova parceria Inter Loop → LATAM Pass: 25% de bônus na transferência de pontos Inter Loop + 1.000 milhas extras na 1ª transferência. Só clientes Inter Win com conta global; saldo mínimo 10.000 pontos Loop; exige cadastro do CPF na promoção. Bônus creditado até 30 dias após o fim.",
+      "bonus_pct": 25,
+      "programa_origem": "Inter Loop",
+      "e_permanente": false,
+      "valido_ate": "2026-11-20",
+      "fontes": [
+        "https://passageirodeprimeira.com/nova-parceria-latam-pass-oferece-25-de-bonus-nas-transferencias-de-pontos-inter-loop/"
+      ],
+      "confianca": "media — blog de terceiros (passageirodeprimeira.com), pagina oficial LATAM Pass inacessivel (ENOTFOUND).",
+      "elegibilidade_pedro": "incerta/provavelmente fora — Pedro e Inter Prime (11.900 pts), promo restrita a Inter Win com conta global. Checar no app Inter logado.",
+      "impacto_premissa": "CONTRADIZ state/config.json.premissas_calculo_milhas.inter_prime_nao_transfere_para_latam_pass (27/08): agora existe rota Inter Loop→LATAM Pass, ao menos para Win. Premissa NAO alterada neste ciclo (Pedro nao confirmado elegivel); revisar no dashboard/conversa com a Clara.",
+      "detectada_em": "2026-11-19T18:20:00Z",
+      "ja_notificada": false,
+      "motivo_sem_push": "25% < limiar 60% de bonus de transferencia; nao e desconto de compra direta. Fica so no dashboard.",
+      "acao_sugerida": "Pedro checar no app Inter se a parceria LATAM Pass aparece para conta Prime. Nada transferido — so com 'Transfere' explicito."
     }
   ],
   "expiradas": [
@@ -431,7 +451,15 @@
       "compra_direta": "Esquenta LATAM Friday 63% (R$25,90/mil inscritos/Clube; 66% Itau) ate 20/11 (ja notificada)",
       "pagina_oficial": "ENOTFOUND",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros) — monitor leve em paralelo ao dashboard 12h20"
+    },
+    {
+      "data": "2026-11-19T18:20:00Z",
+      "transferencia": "Inter Loop→LATAM Pass 25% ate 20/11 (nova parceria, so Inter Win/conta global; <60%, sem push). Livelo/Esfera/Nubank sem bonus vigente.",
+      "compra_direta": "Esquenta LATAM Friday 63% (R$25,90/mil) / 66% Itau ate 20/11 (ja notificada)",
+      "pagina_oficial": "ENOTFOUND",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 3 queries"
     }
   ],
-  "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0."
+  "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
+  "nota_ciclo_19_11_monitor_18h20": "Monitor leve 19/11 18h20: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout; sem latam_miles_price.json. WebSearch passageirodeprimeira.com (3 queries obrigatorias): compra direta Esquenta LATAM Friday 63%/66% ate 20/11 segue ativa (ja notificada). NOVO: Inter Loop→LATAM Pass 25% ate 20/11 (nova parceria, so Inter Win) — registrada, <60%, sem push. Livelo/Esfera/Nubank sem bonus vigente. Expiradas movidas: 0."
 }
