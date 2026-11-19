@@ -424,6 +424,13 @@
       "compra_direta": "Esquenta LATAM Friday 63% ate 20/11 (ja notificada)",
       "pagina_oficial": "ENOTFOUND",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com"
+    },
+    {
+      "data": "2026-11-19T12:20:00Z",
+      "transferencia": "sem bonus vigente LATAM Pass (Livelo/Esfera/Nubank; Inter Loop nao transfere p/ LATAM Pass)",
+      "compra_direta": "Esquenta LATAM Friday 63% (R$25,90/mil inscritos/Clube; 66% Itau) ate 20/11 (ja notificada)",
+      "pagina_oficial": "ENOTFOUND",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros) — monitor leve em paralelo ao dashboard 12h20"
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0."
