@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-20T00:20:00Z",
+  "ultima_checagem": "2026-11-20T06:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 20/11 00h20: segue permanente; passageirodeprimeira.com sem bonus de transferencia Livelo/Esfera/Nubank->LATAM Pass vigente em nov/2026.",
+      "ultima_reconfirmacao": "Monitor 20/11 06h20: segue permanente; sem bonus Livelo/Esfera/Nubank->LATAM Pass vigente.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -41,7 +41,7 @@
       "ja_notificada": true,
       "notificada_em": "2026-11-16T18:20:00Z",
       "acao_sugerida": "Oportunidade de compra direta a R$25,90/milheiro (abaixo do CPM de equilíbrio da viagem). Nada comprado — só com 'Compra' explícito da Clara.",
-      "ultima_reconfirmacao": "Monitor 20/11 00h20: passageirodeprimeira.com segue citando validade ate hoje (sex 20/11), 66% Itau (R$23,80) / 63% demais (R$25,90/milheiro), limite 350k/CPF; sem noticia de prorrogacao. Ja notificada em 16/11 — sem novo push. Ultimo dia.",
+      "ultima_reconfirmacao": "Monitor 20/11 06h20: passageirodeprimeira segue 'termina hoje, sexta-feira (20)'; ja notificada, sem novo push.",
       "reconfirmacao_19_11_00h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro). Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
       "reconfirmacao_19_11_06h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
       "reconfirmacao_19_11_18h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 66% Itau (R$23,80) / 63% demais clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Um artigo cita data conflitante (02/11) — as mais recentes apontam 20/11. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11)."
@@ -459,6 +459,14 @@
       "compra_direta": "Esquenta LATAM Friday 63% (R$25,90/mil) / 66% Itau ate 20/11 (ja notificada)",
       "pagina_oficial": "ENOTFOUND",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 3 queries"
+    },
+    {
+      "data": "2026-11-20T06:20:00Z",
+      "transferencia": "Inter Loop->LATAM Pass 25% ate 20/11 (so Inter Win/conta global; <60%, sem push). Livelo/Esfera/Nubank sem bonus vigente.",
+      "compra_direta": "Esquenta LATAM Friday 63% (R$25,90/mil) / 66% Itau termina hoje 20/11 (ja notificada)",
+      "pagina_oficial": "ENOTFOUND",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 2 queries (transferencia + compra direta)",
+      "alertas_disparados": 0
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
