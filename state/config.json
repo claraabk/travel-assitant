@@ -11,9 +11,9 @@
   "email_diario": false,
   "latam_miles_price_tool_status": {
     "ultimo_sucesso": null,
-    "ultima_tentativa": "2026-11-20T12:20:00Z",
-    "tentativas_consecutivas_falhas": 398,
-    "ultimo_erro": "Latam-PASS MCP: Page.wait_for_selector Timeout 20000ms (input[name=\"radio-values\"] nao visivel — bloqueio Akamai provavel) (Monitor 20/11 12h20)",
+    "ultima_tentativa": "2026-11-20T18:20:00Z",
+    "tentativas_consecutivas_falhas": 399,
+    "ultimo_erro": "Latam-PASS MCP: Page.wait_for_selector Timeout 20000ms (input[name=\"radio-values\"] nao visivel — bloqueio Akamai provavel) (Monitor 20/11 18h20); state/latam_miles_price.json inexistente",
     "fonte_alternativa_local": "state/latam_miles_price.json — escrito por scraper local da Clara (cron na máquina dela), o agente só lê, nunca chama o site diretamente enquanto o bloqueio persistir. Schema e setup do cron documentados em docs/scraper-local-setup.md. Válido só se atualizado_em for das últimas 24h, senão tratar como indisponível.",
     "fonte_alternativa_local_status_neste_ciclo": "state/latam_miles_price.json inexistente (Monitor 20/11 12h20); sem preco inventado. CPM promocional de referencia via blog: R$25,90/mil (Esquenta LATAM Friday 63%, termina hoje 20/11)."
   },
