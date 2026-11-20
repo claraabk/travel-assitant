@@ -478,5 +478,6 @@
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
-  "nota_ciclo_19_11_monitor_18h20": "Monitor leve 19/11 18h20: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout; sem latam_miles_price.json. WebSearch passageirodeprimeira.com (3 queries obrigatorias): compra direta Esquenta LATAM Friday 63%/66% ate 20/11 segue ativa (ja notificada). NOVO: Inter Loop→LATAM Pass 25% ate 20/11 (nova parceria, so Inter Win) — registrada, <60%, sem push. Livelo/Esfera/Nubank sem bonus vigente. Expiradas movidas: 0."
+  "nota_ciclo_19_11_monitor_18h20": "Monitor leve 19/11 18h20: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout; sem latam_miles_price.json. WebSearch passageirodeprimeira.com (3 queries obrigatorias): compra direta Esquenta LATAM Friday 63%/66% ate 20/11 segue ativa (ja notificada). NOVO: Inter Loop→LATAM Pass 25% ate 20/11 (nova parceria, so Inter Win) — registrada, <60%, sem push. Livelo/Esfera/Nubank sem bonus vigente. Expiradas movidas: 0.",
+  "nota_ciclo_20_11_dashboard_12h15": "Dashboard 20/11 12h15: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. passageirodeprimeira.com: Esquenta LATAM Friday 63% (R$25,90) ultimo dia hoje 20/11, ja notificada; Inter Loop->LATAM Pass 25% ultimo dia 20/11 (<60%). Sem bonus Livelo/Esfera/Nubank->LATAM Pass. Expiradas movidas: 0."
 }
