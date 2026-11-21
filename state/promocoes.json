@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-20T18:20:00Z",
+  "ultima_checagem": "2026-11-21T00:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,9 +15,11 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 20/11 18h20: segue permanente; sem bonus Livelo/Esfera/Nubank->LATAM Pass vigente (ultimos: Livelo 25% ate 22/09, Esfera 25% ate 25/10, Nubank 25% ate 06/09).",
+      "ultima_reconfirmacao": "Monitor 21/11 00h20: segue permanente; sem bonus Livelo/Esfera/Nubank/Inter->LATAM Pass vigente encontrado (WebSearch passageirodeprimeira.com).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
-    },
+    }
+  ],
+  "expiradas": [
     {
       "id": "latam-pass-esquenta-friday-compra-66pct-nov2026",
       "tipo": "desconto_compra_direta",
@@ -41,10 +43,12 @@
       "ja_notificada": true,
       "notificada_em": "2026-11-16T18:20:00Z",
       "acao_sugerida": "Oportunidade de compra direta a R$25,90/milheiro (abaixo do CPM de equilíbrio da viagem). Nada comprado — só com 'Compra' explícito da Clara.",
-      "ultima_reconfirmacao": "Monitor 20/11 18h20: passageirodeprimeira 'Último dia!' — termina hoje (20/11), sem sinal de extensão; ja notificada em 16/11, sem novo push.",
+      "ultima_reconfirmacao": "Monitor 21/11 00h20: passageirodeprimeira sem sinal de extensao; prazo encerrou em 2026-11-20 — movida para expiradas.",
       "reconfirmacao_19_11_00h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro). Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
       "reconfirmacao_19_11_06h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 63% p/ clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
-      "reconfirmacao_19_11_18h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 66% Itau (R$23,80) / 63% demais clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Um artigo cita data conflitante (02/11) — as mais recentes apontam 20/11. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11)."
+      "reconfirmacao_19_11_18h20": "passageirodeprimeira.com segue citando 'até sexta-feira (20)', 66% Itau (R$23,80) / 63% demais clientes LATAM Pass/Clube (R$25,90/milheiro), limite 350k/CPF. Um artigo cita data conflitante (02/11) — as mais recentes apontam 20/11. Ja notificada em 16/11 — sem novo alerta. Expira amanha (20/11).",
+      "expirada_em": "2026-11-20",
+      "movida_para_expiradas_em": "2026-11-21T00:20:00Z"
     },
     {
       "id": "inter-loop-latam-pass-25pct-nov2026",
@@ -64,10 +68,10 @@
       "ja_notificada": false,
       "motivo_sem_push": "25% < limiar 60% de bonus de transferencia; nao e desconto de compra direta. Fica so no dashboard.",
       "acao_sugerida": "Pedro checar no app Inter se a parceria LATAM Pass aparece para conta Prime. Nada transferido — so com 'Transfere' explicito.",
-      "ultima_reconfirmacao": "Monitor 20/11 18h20: segue 25% (<60%), termina hoje (20/11); sem alerta."
-    }
-  ],
-  "expiradas": [
+      "ultima_reconfirmacao": "Monitor 21/11 00h20: passageirodeprimeira sem sinal de extensao; prazo encerrou em 2026-11-20 — movida para expiradas.",
+      "expirada_em": "2026-11-20",
+      "movida_para_expiradas_em": "2026-11-21T00:20:00Z"
+    },
     {
       "id": "latam-pass-desconto-compra-milhas-por-perfil",
       "tipo": "desconto_compra_direta",
@@ -480,5 +484,6 @@
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
   "nota_ciclo_19_11_monitor_18h20": "Monitor leve 19/11 18h20: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout; sem latam_miles_price.json. WebSearch passageirodeprimeira.com (3 queries obrigatorias): compra direta Esquenta LATAM Friday 63%/66% ate 20/11 segue ativa (ja notificada). NOVO: Inter Loop→LATAM Pass 25% ate 20/11 (nova parceria, so Inter Win) — registrada, <60%, sem push. Livelo/Esfera/Nubank sem bonus vigente. Expiradas movidas: 0.",
   "nota_ciclo_20_11_dashboard_12h15": "Dashboard 20/11 12h15: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. passageirodeprimeira.com: Esquenta LATAM Friday 63% (R$25,90) ultimo dia hoje 20/11, ja notificada; Inter Loop->LATAM Pass 25% ultimo dia 20/11 (<60%). Sem bonus Livelo/Esfera/Nubank->LATAM Pass. Expiradas movidas: 0.",
-  "nota_monitor_20_11_18h20": "latampass.latam.com/pt_br/ofertas: ENOTFOUND (rede bloqueada). WebSearch passageirodeprimeira (transferencia + compra direta): nada novo; Esquenta LATAM Friday 63% termina hoje (ja notificada); Inter Loop 25% termina hoje; Itau +3.000 milhas em compras (16-29/11, so cartao LATAM Pass Itau c/ meta por e-mail — nao se aplica). Sem alerta."
+  "nota_monitor_20_11_18h20": "latampass.latam.com/pt_br/ofertas: ENOTFOUND (rede bloqueada). WebSearch passageirodeprimeira (transferencia + compra direta): nada novo; Esquenta LATAM Friday 63% termina hoje (ja notificada); Inter Loop 25% termina hoje; Itau +3.000 milhas em compras (16-29/11, so cartao LATAM Pass Itau c/ meta por e-mail — nao se aplica). Sem alerta.",
+  "nota_monitor_21_11_00h20": "Pagina oficial latampass.latam.com/pt_br/ofertas: ENOTFOUND (fora da allowlist). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao nova vigente para LATAM Pass. Esquenta LATAM Friday (63%/66%) e Inter Loop 25% encerraram em 20/11 -> expiradas. Black Friday (27/11) pode trazer nova campanha — monitorar nos proximos ciclos. Sem alerta."
 }
