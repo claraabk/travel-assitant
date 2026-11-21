@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-21T06:20:00Z",
+  "ultima_checagem": "2026-11-21T12:15:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 21/11 00h20: segue permanente; sem bonus Livelo/Esfera/Nubank/Inter->LATAM Pass vigente encontrado (WebSearch passageirodeprimeira.com).",
+      "ultima_reconfirmacao": "Dashboard 21/11 12h15: segue permanente; sem bonus Livelo/Esfera/Nubank/Inter->LATAM Pass vigente e sem desconto de compra direta ativo (WebSearch passageirodeprimeira.com: Esquenta LATAM Friday e Inter Loop 25% encerraram 20/11, sem prorrogacao).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
@@ -494,5 +494,6 @@
   "nota_ciclo_20_11_dashboard_12h15": "Dashboard 20/11 12h15: latampass.latam.com/ofertas ENOTFOUND; Latam-PASS MCP timeout. passageirodeprimeira.com: Esquenta LATAM Friday 63% (R$25,90) ultimo dia hoje 20/11, ja notificada; Inter Loop->LATAM Pass 25% ultimo dia 20/11 (<60%). Sem bonus Livelo/Esfera/Nubank->LATAM Pass. Expiradas movidas: 0.",
   "nota_monitor_20_11_18h20": "latampass.latam.com/pt_br/ofertas: ENOTFOUND (rede bloqueada). WebSearch passageirodeprimeira (transferencia + compra direta): nada novo; Esquenta LATAM Friday 63% termina hoje (ja notificada); Inter Loop 25% termina hoje; Itau +3.000 milhas em compras (16-29/11, so cartao LATAM Pass Itau c/ meta por e-mail — nao se aplica). Sem alerta.",
   "nota_monitor_21_11_00h20": "Pagina oficial latampass.latam.com/pt_br/ofertas: ENOTFOUND (fora da allowlist). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao nova vigente para LATAM Pass. Esquenta LATAM Friday (63%/66%) e Inter Loop 25% encerraram em 20/11 -> expiradas. Black Friday (27/11) pode trazer nova campanha — monitorar nos proximos ciclos. Sem alerta.",
-  "nota_monitor_21_11_06h20": "Pagina oficial: ENOTFOUND. passageirodeprimeira.com (transferencia + compra direta): nada novo vigente para LATAM Pass. Black Friday 27/11 pode trazer campanha. Sem alerta."
+  "nota_monitor_21_11_06h20": "Pagina oficial: ENOTFOUND. passageirodeprimeira.com (transferencia + compra direta): nada novo vigente para LATAM Pass. Black Friday 27/11 pode trazer campanha. Sem alerta.",
+  "nota_dashboard_21_11_12h15": "latampass.latam.com/pt_br/ofertas ENOTFOUND; 3 queries passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop) sem promocao nova vigente. Nenhum alerta."
 }
