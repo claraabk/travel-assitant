@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-22T12:20:00Z",
+  "ultima_checagem": "2026-11-22T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 22/11 00h20: segue permanente; WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop) sem promocao LATAM Pass vigente — ultima compra direta (63%/66%) e Inter Loop 25% encerraram 20/11. Unica campanha citada: milhas bonus em gastos com cartao LATAM Pass Itau (16-29/11, so convidados) — nao se aplica.",
+      "ultima_reconfirmacao": "Monitor 22/11 18h20: segue permanente; WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop) sem promocao LATAM Pass vigente — compra direta 63%/66% e Inter Loop 25% encerraram 20/11; ultimas transferencias Livelo/Esfera/Nubank 25% ja expiradas (set-out/2026). Campanha milhas bonus cartao LATAM Pass Itau (16-29/11, so convidados) nao se aplica.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     }
   ],
