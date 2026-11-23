@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-23T12:20:00Z",
+  "ultima_checagem": "2026-11-23T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -17,6 +17,22 @@
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
       "ultima_reconfirmacao": "Dashboard 23/11 12h15: segue permanente; latampass.latam.com/pt_br/ofertas ENOTFOUND; 3 WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente (compra 63%/66% e Inter Loop 25% encerraram 20/11).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
+    },
+    {
+      "id": "livelo-latam-pass-27pct-nov2026",
+      "tipo": "bonus_transferencia",
+      "programa_origem": "Livelo",
+      "programa_destino": "LATAM Pass",
+      "bonus_pct": 27,
+      "desconto_pct": null,
+      "extras": "+2.000 milhas na 1a transferencia Livelo; minimo 12.000 pontos; limite 300.000 milhas extras; exige cadastro previo no site da campanha; mesma titularidade",
+      "valido_ate": "2026-11-24",
+      "e_permanente": false,
+      "fonte": "https://passageirodeprimeira.com/latam-pass-oferece-27-de-bonus-na-transferencia-de-pontos-livelo/",
+      "confianca": "baixa-media — blog de terceiros; resumo de busca diz 'até amanhã (24)' mas o ano do artigo nao foi confirmado (pagina inacessivel por EGRESS_BLOCKED)",
+      "detectada_em": "2026-11-23T18:20:00Z",
+      "ja_notificada": false,
+      "nota": "27% < threshold de 60% — nao dispara alerta. Clara/Pedro nao tem saldo Livelo registrado em state/saldo.json, entao relevancia pratica baixa."
     }
   ],
   "expiradas": [
@@ -519,6 +535,14 @@
       "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros, confianca media), 2 queries (transferencia, compra direta)",
       "alertas_disparados": 0
+    },
+    {
+      "data": "2026-11-23T18:20:00Z",
+      "transferencia": "Livelo->LATAM Pass 27% ate 24/11 (fonte unica blog, ano nao confirmado; <60%, sem alerta). Esfera/Nubank: nada vigente. Inter Loop 25% encerrou 20/11.",
+      "compra_direta": "Nenhuma promocao vigente (ultima 66%/63% encerrou 20/11, ja em expiradas). Campanha Itau 16-29/11 e bonus por gasto no cartao, nao se aplica.",
+      "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com, 4 queries (transferencia, compra direta, Inter Loop, confirmacao Livelo 27%)",
+      "alertas_disparados": 0
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
@@ -536,5 +560,6 @@
   "nota_monitor_23_11_00h20": "latampass.latam.com/pt_br/ofertas ENOTFOUND; WebSearch passageirodeprimeira.com (transferencia + compra direta): nada vigente em 23/11. Nenhum alerta.",
   "nota_monitor_23_11_06h20": "Monitor 23/11 06h20: pagina oficial de ofertas inacessivel (ENOTFOUND). 3 buscas passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente. Nenhuma nova oportunidade, nada a notificar.",
   "nota_dashboard_23_11_12h15": "latampass.latam.com/pt_br/ofertas ENOTFOUND; WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter Loop): nada vigente em 23/11. Fonte: blog de terceiros. Nenhum alerta. Ativas: so Modo LATAM Pass (permanente).",
-  "nota_monitor_23_11_12h20": "Monitor 23/11 12h20: pagina oficial de ofertas inacessivel (ENOTFOUND). 3 buscas passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente (compra 66%/63% e Inter Loop 25% encerraram 20/11; campanha Itau 16-29/11 e milhas bonus por gasto com cartao LATAM Pass Itau, nao aplica). Ativas: so Modo LATAM Pass (permanente). Nada a notificar."
+  "nota_monitor_23_11_12h20": "Monitor 23/11 12h20: pagina oficial de ofertas inacessivel (ENOTFOUND). 3 buscas passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente (compra 66%/63% e Inter Loop 25% encerraram 20/11; campanha Itau 16-29/11 e milhas bonus por gasto com cartao LATAM Pass Itau, nao aplica). Ativas: so Modo LATAM Pass (permanente). Nada a notificar.",
+  "nota_monitor_23_11_18h20": "Monitor 23/11 18h20: pagina oficial inacessivel (ENOTFOUND). Nova em ativas: Livelo->LATAM Pass 27% ate 24/11 (blog, <60%, sem alerta). Compra direta: nada vigente. Inter Loop: encerrado 20/11. Nada a notificar."
 }
