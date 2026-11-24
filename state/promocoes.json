@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-24T00:20:00Z",
+  "ultima_checagem": "2026-11-24T06:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Dashboard 23/11 12h15: segue permanente; latampass.latam.com/pt_br/ofertas ENOTFOUND; 3 WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente (compra 63%/66% e Inter Loop 25% encerraram 20/11).",
+      "ultima_reconfirmacao": "Monitor 24/11 06h20: segue permanente; latampass.latam.com/pt_br/ofertas ENOTFOUND; 3 WebSearch passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass nova (compra 63%/66% e Inter Loop 25% encerraram 20/11).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -32,7 +32,8 @@
       "confianca": "baixa-media — blog de terceiros; resumo de busca diz 'até amanhã (24)' mas o ano do artigo nao foi confirmado (pagina inacessivel por EGRESS_BLOCKED)",
       "detectada_em": "2026-11-23T18:20:00Z",
       "ja_notificada": false,
-      "nota": "27% < threshold de 60% — nao dispara alerta. Clara/Pedro nao tem saldo Livelo registrado em state/saldo.json, entao relevancia pratica baixa."
+      "nota": "27% < threshold de 60% — nao dispara alerta. Clara/Pedro nao tem saldo Livelo registrado em state/saldo.json, entao relevancia pratica baixa.",
+      "ultima_reconfirmacao": "Monitor 24/11 06h20: passageirodeprimeira segue citando 'ate amanha (24)'; ultimo dia hoje. 27% < 60%, sem alerta."
     }
   ],
   "expiradas": [
