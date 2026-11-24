@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-23T18:20:00Z",
+  "ultima_checagem": "2026-11-24T00:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -561,5 +561,6 @@
   "nota_monitor_23_11_06h20": "Monitor 23/11 06h20: pagina oficial de ofertas inacessivel (ENOTFOUND). 3 buscas passageirodeprimeira.com (transferencia, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente. Nenhuma nova oportunidade, nada a notificar.",
   "nota_dashboard_23_11_12h15": "latampass.latam.com/pt_br/ofertas ENOTFOUND; WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter Loop): nada vigente em 23/11. Fonte: blog de terceiros. Nenhum alerta. Ativas: so Modo LATAM Pass (permanente).",
   "nota_monitor_23_11_12h20": "Monitor 23/11 12h20: pagina oficial de ofertas inacessivel (ENOTFOUND). 3 buscas passageirodeprimeira.com (transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nenhuma promocao LATAM Pass vigente (compra 66%/63% e Inter Loop 25% encerraram 20/11; campanha Itau 16-29/11 e milhas bonus por gasto com cartao LATAM Pass Itau, nao aplica). Ativas: so Modo LATAM Pass (permanente). Nada a notificar.",
-  "nota_monitor_23_11_18h20": "Monitor 23/11 18h20: pagina oficial inacessivel (ENOTFOUND). Nova em ativas: Livelo->LATAM Pass 27% ate 24/11 (blog, <60%, sem alerta). Compra direta: nada vigente. Inter Loop: encerrado 20/11. Nada a notificar."
+  "nota_monitor_23_11_18h20": "Monitor 23/11 18h20: pagina oficial inacessivel (ENOTFOUND). Nova em ativas: Livelo->LATAM Pass 27% ate 24/11 (blog, <60%, sem alerta). Compra direta: nada vigente. Inter Loop: encerrado 20/11. Nada a notificar.",
+  "nota_monitor_24_11_00h20": "Monitor 24/11 00h20: pagina oficial latampass.latam.com/ofertas inacessivel (ENOTFOUND). WebSearch passageirodeprimeira.com (transferencia, compra direta, Inter Loop): Livelo->LATAM Pass 27% segue ativa ate hoje 24/11 (blog, <60%, sem alerta; ja registrada). Compra direta: ultima edicao ate 66% (63% clientes LATAM Pass, R$25,90/mil) encerrou 20/11 — nada vigente. Inter Loop 25% encerrou 20/11. Nubank/Esfera: nada vigente. Nada a notificar."
 }

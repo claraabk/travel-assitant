@@ -29,16 +29,16 @@
     }
   ],
   "melhor_combinacao_geral": {
-    "id": "LIM-CUZ",
-    "variante": "LIM-CUZ_3d",
-    "preco_total_brl": 10374,
+    "id": "CUZ-LIM",
+    "variante": "CUZ-LIM_3d",
+    "preco_total_brl": 10040,
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-23T18:20:00Z",
-    "segunda": "LIM-CUZ_2d",
-    "diferenca_segunda_brl": 62,
-    "nota": "Monitor 23/11 18h20: lider LIM-CUZ_3d (10374); 2a LIM-CUZ_2d (+62). +2.77% vs media movel — sem queda >=15%, sem alerta."
+    "data_checagem": "2026-11-24T00:20:00Z",
+    "segunda": "LIM-CUZ_3d",
+    "diferenca_segunda_brl": 41,
+    "nota": "Monitor 24/11 00h20: lider CUZ-LIM_3d (10040); 2a LIM-CUZ_3d (+41). Lider anterior LIM-CUZ_3d. Idas caíram (REC-LIM 4233->3940, REC-CUZ 4655->4238 via LA3171/LA8122, conexao CGH->GRU 5h25). -2.35% vs media movel — sem queda >=15%, sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -31009,6 +31009,350 @@
         ],
         "fonte": "Monitor 23/11 18h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao/alternativas_sem_alerta reaproveitados da checagem anterior (nao rebuscados neste ciclo leve).",
         "nota": "LIM-CUZ_2d 10432 (+3.92% vs media 10038.8); +8 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-24T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 3940,
+          "domestico": 845,
+          "volta": 5358
+        },
+        "preco_total_brl": 10143,
+        "media_movel_30_checagens": 10083.5,
+        "variacao_pct_vs_media": 0.59,
+        "variacao_vs_checagem_anterior_brl": -293,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7bw9gg9wj7",
+          "domestico": "https://kiwi.com/u/vmqjgmvd3d",
+          "volta": "https://kiwi.com/u/y9u6gnx853"
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3171",
+              "origem": "REC",
+              "destino": "CGH",
+              "partida": "2027-06-10T12:45",
+              "chegada": "2027-06-10T16:15",
+              "aeronave": null,
+              "duracao_min": 210
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": null,
+              "duracao_min": 305
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2276",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-12T16:35",
+              "chegada": "2027-06-12T17:55",
+              "aeronave": null,
+              "duracao_min": 80
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2070",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-18T22:15",
+              "chegada": "2027-06-18T23:50",
+              "aeronave": null,
+              "duracao_min": 95
+            },
+            {
+              "voo": "LA8123",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-19T01:45",
+              "chegada": "2027-06-19T08:45",
+              "aeronave": null,
+              "duracao_min": 300
+            },
+            {
+              "voo": "LA3976",
+              "origem": "CGH",
+              "destino": "REC",
+              "partida": "2027-06-19T15:30",
+              "chegada": "2027-06-19T18:35",
+              "aeronave": null,
+              "duracao_min": 185
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "classe": "Economy"
+        },
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 325,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "GRU→CGH",
+            "duracao_min": 405,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "detalhe": [
+              {
+                "voo": "LA3379",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T14:35",
+                "chegada": "2027-06-10T18:00",
+                "aeronave": null,
+                "duracao_min": 205
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:40",
+                "chegada": "2027-06-11T00:45",
+                "aeronave": null,
+                "duracao_min": 305
+              }
+            ],
+            "preco_brl": 4498,
+            "booking_url": "https://kiwi.com/u/kuwz4zr598",
+            "nota": "+R$558; sem alerta (GRU 3h40)"
+          },
+          {
+            "trecho": "volta",
+            "detalhe": [
+              {
+                "voo": "LA2128",
+                "origem": "CUZ",
+                "destino": "LIM",
+                "partida": "2027-06-18T09:30",
+                "chegada": "2027-06-18T11:05",
+                "aeronave": null,
+                "duracao_min": 95
+              },
+              {
+                "voo": "LA8099",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-18T13:05",
+                "chegada": "2027-06-18T20:05",
+                "aeronave": null,
+                "duracao_min": 300
+              },
+              {
+                "voo": "LA4725",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-18T22:45",
+                "chegada": "2027-06-19T01:40",
+                "aeronave": null,
+                "duracao_min": 175
+              }
+            ],
+            "preco_brl": 5640,
+            "booking_url": "https://kiwi.com/u/u9zssmc93b",
+            "nota": "+R$286; sem alerta"
+          }
+        ],
+        "fonte": "Monitor 24/11 00h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao recalculados; alternativa sem alerta da ida rebuscada, da volta reaproveitada da checagem anterior.",
+        "nota": "LIM-CUZ_2d 10143 (+0.59% vs media 10083.5); -293 vs anterior. Ida chega LIM 11/06 00:45 (Lima efetiva ~1,5 dia)."
+      },
+      {
+        "data_checagem": "2026-11-24T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 3940,
+          "domestico": 845,
+          "volta": 5296
+        },
+        "preco_total_brl": 10081,
+        "media_movel_30_checagens": 10109.9,
+        "variacao_pct_vs_media": -0.29,
+        "variacao_vs_checagem_anterior_brl": -293,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7bw9gg9wj7",
+          "domestico": "https://kiwi.com/u/fr35sn8xrh",
+          "volta": "https://kiwi.com/u/df336fumus"
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3171",
+              "origem": "REC",
+              "destino": "CGH",
+              "partida": "2027-06-10T12:45",
+              "chegada": "2027-06-10T16:15",
+              "aeronave": null,
+              "duracao_min": 210
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": null,
+              "duracao_min": 305
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2021",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-13T16:00",
+              "chegada": "2027-06-13T17:20",
+              "aeronave": null,
+              "duracao_min": 80
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2167",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-19T05:00",
+              "chegada": "2027-06-19T06:35",
+              "aeronave": null,
+              "duracao_min": 95
+            },
+            {
+              "voo": "LA8005",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-19T09:15",
+              "chegada": "2027-06-19T16:25",
+              "aeronave": null,
+              "duracao_min": 310
+            },
+            {
+              "voo": "LA3260",
+              "origem": "CGH",
+              "destino": "REC",
+              "partida": "2027-06-19T21:55",
+              "chegada": "2027-06-20T01:00",
+              "aeronave": null,
+              "duracao_min": 185
+            }
+          ],
+          "paradas_ida": 1,
+          "paradas_domestico": 0,
+          "paradas_volta": 2,
+          "todas_operadas_por": "LATAM (LA)",
+          "classe": "Economy"
+        },
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 325,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "GRU→CGH",
+            "duracao_min": 330,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "detalhe": [
+              {
+                "voo": "LA3379",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T14:35",
+                "chegada": "2027-06-10T18:00",
+                "aeronave": null,
+                "duracao_min": 205
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:40",
+                "chegada": "2027-06-11T00:45",
+                "aeronave": null,
+                "duracao_min": 305
+              }
+            ],
+            "preco_brl": 4498,
+            "booking_url": "https://kiwi.com/u/kuwz4zr598",
+            "nota": "+R$558; sem alerta (GRU 3h40)"
+          },
+          {
+            "trecho": "volta",
+            "detalhe": [
+              {
+                "voo": "LA2233",
+                "origem": "CUZ",
+                "destino": "LIM",
+                "partida": "2027-06-19T16:25",
+                "chegada": "2027-06-19T18:00",
+                "aeronave": null,
+                "duracao_min": 95
+              },
+              {
+                "voo": "LA2418",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T21:15",
+                "chegada": "2027-06-20T04:15",
+                "aeronave": null,
+                "duracao_min": 300
+              },
+              {
+                "voo": "LA3374",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-20T06:45",
+                "chegada": "2027-06-20T09:45",
+                "aeronave": null,
+                "duracao_min": 180
+              }
+            ],
+            "preco_brl": 5604,
+            "booking_url": "https://kiwi.com/u/2yd7wsvhcx",
+            "nota": "+R$286; sem alerta"
+          }
+        ],
+        "fonte": "Monitor 24/11 00h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao recalculados; alternativa sem alerta da ida rebuscada, da volta reaproveitada da checagem anterior.",
+        "nota": "LIM-CUZ_3d 10081 (-0.29% vs media 10109.9); -293 vs anterior."
       }
     ],
     "CUZ-LIM": [
@@ -61612,10 +61956,354 @@
         ],
         "fonte": "Monitor 23/11 18h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao/alternativas_sem_alerta reaproveitados da checagem anterior (nao rebuscados neste ciclo leve).",
         "nota": "CUZ-LIM_2d 10533 (+3.58% vs media 10168.8); +9 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-24T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 4238,
+          "domestico": 759,
+          "volta": 5123
+        },
+        "preco_total_brl": 10120,
+        "media_movel_30_checagens": 10213.5,
+        "variacao_pct_vs_media": -0.92,
+        "variacao_vs_checagem_anterior_brl": -417,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7v7zvpjshm",
+          "domestico": "https://kiwi.com/u/7kcm39ufuk",
+          "volta": "https://kiwi.com/u/x66gz2u2zu"
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3171",
+              "origem": "REC",
+              "destino": "CGH",
+              "partida": "2027-06-10T12:45",
+              "chegada": "2027-06-10T16:15",
+              "aeronave": null,
+              "duracao_min": 210
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": null,
+              "duracao_min": 305
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10",
+              "chegada": "2027-06-11T06:35",
+              "aeronave": null,
+              "duracao_min": 85
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2029",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T15:35",
+              "chegada": "2027-06-16T17:10",
+              "aeronave": null,
+              "duracao_min": 95
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA8041",
+              "origem": "LIM",
+              "destino": "GRU",
+              "partida": "2027-06-18T00:30",
+              "chegada": "2027-06-18T07:35",
+              "aeronave": null,
+              "duracao_min": 305
+            },
+            {
+              "voo": "LA3614",
+              "origem": "CGH",
+              "destino": "REC",
+              "partida": "2027-06-18T13:10",
+              "chegada": "2027-06-18T16:15",
+              "aeronave": null,
+              "duracao_min": 185
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1,
+          "todas_operadas_por": "LATAM (LA)",
+          "classe": "Economy"
+        },
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 325,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "GRU→CGH",
+            "duracao_min": 335,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "detalhe": [
+              {
+                "voo": "LA3379",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T14:35",
+                "chegada": "2027-06-10T18:00",
+                "aeronave": null,
+                "duracao_min": 205
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:40",
+                "chegada": "2027-06-11T00:45",
+                "aeronave": null,
+                "duracao_min": 305
+              },
+              {
+                "voo": "LA2011",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-11T05:10",
+                "chegada": "2027-06-11T06:35",
+                "aeronave": null,
+                "duracao_min": 85
+              }
+            ],
+            "preco_brl": 4796,
+            "booking_url": "https://kiwi.com/u/k4nz53dg4q",
+            "nota": "+R$558; sem alerta (GRU 3h40, LIM 4h25)"
+          },
+          {
+            "trecho": "volta",
+            "detalhe": [
+              {
+                "voo": "LA2418",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-18T21:15",
+                "chegada": "2027-06-19T04:15",
+                "aeronave": null,
+                "duracao_min": 300
+              },
+              {
+                "voo": "LA3374",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T06:45",
+                "chegada": "2027-06-19T09:45",
+                "aeronave": null,
+                "duracao_min": 180
+              }
+            ],
+            "preco_brl": 5202,
+            "booking_url": "https://kiwi.com/u/hgc493vpst",
+            "nota": "+R$83; sem alerta"
+          }
+        ],
+        "fonte": "Monitor 24/11 00h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao recalculados; alternativa sem alerta da ida rebuscada, da volta reaproveitada da checagem anterior.",
+        "nota": "CUZ-LIM_2d 10120 (-0.92% vs media 10213.5); -417 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-24T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 4238,
+          "domestico": 759,
+          "volta": 5043
+        },
+        "preco_total_brl": 10040,
+        "media_movel_30_checagens": 10282.1,
+        "variacao_pct_vs_media": -2.35,
+        "variacao_vs_checagem_anterior_brl": -417,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7v7zvpjshm",
+          "domestico": "https://kiwi.com/u/7kcm39ufuk",
+          "volta": "https://kiwi.com/u/zrt3jp77k2"
+        },
+        "detalhe_voo": {
+          "ida": [
+            {
+              "voo": "LA3171",
+              "origem": "REC",
+              "destino": "CGH",
+              "partida": "2027-06-10T12:45",
+              "chegada": "2027-06-10T16:15",
+              "aeronave": null,
+              "duracao_min": 210
+            },
+            {
+              "voo": "LA8122",
+              "origem": "GRU",
+              "destino": "LIM",
+              "partida": "2027-06-10T21:40",
+              "chegada": "2027-06-11T00:45",
+              "aeronave": null,
+              "duracao_min": 305
+            },
+            {
+              "voo": "LA2011",
+              "origem": "LIM",
+              "destino": "CUZ",
+              "partida": "2027-06-11T05:10",
+              "chegada": "2027-06-11T06:35",
+              "aeronave": null,
+              "duracao_min": 85
+            }
+          ],
+          "domestico": [
+            {
+              "voo": "LA2029",
+              "origem": "CUZ",
+              "destino": "LIM",
+              "partida": "2027-06-16T15:35",
+              "chegada": "2027-06-16T17:10",
+              "aeronave": null,
+              "duracao_min": 95
+            }
+          ],
+          "volta": [
+            {
+              "voo": "LA2402",
+              "origem": "LIM",
+              "destino": "BSB",
+              "partida": "2027-06-19T00:40",
+              "chegada": "2027-06-19T07:20",
+              "aeronave": null,
+              "duracao_min": 280
+            },
+            {
+              "voo": "LA4724",
+              "origem": "BSB",
+              "destino": "REC",
+              "partida": "2027-06-19T14:35",
+              "chegada": "2027-06-19T17:10",
+              "aeronave": null,
+              "duracao_min": 155
+            }
+          ],
+          "paradas_ida": 2,
+          "paradas_domestico": 0,
+          "paradas_volta": 1,
+          "todas_operadas_por": "LATAM (LA)",
+          "classe": "Economy"
+        },
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 325,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 435,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "alternativas_sem_alerta": [
+          {
+            "trecho": "ida",
+            "detalhe": [
+              {
+                "voo": "LA3379",
+                "origem": "REC",
+                "destino": "GRU",
+                "partida": "2027-06-10T14:35",
+                "chegada": "2027-06-10T18:00",
+                "aeronave": null,
+                "duracao_min": 205
+              },
+              {
+                "voo": "LA8122",
+                "origem": "GRU",
+                "destino": "LIM",
+                "partida": "2027-06-10T21:40",
+                "chegada": "2027-06-11T00:45",
+                "aeronave": null,
+                "duracao_min": 305
+              },
+              {
+                "voo": "LA2011",
+                "origem": "LIM",
+                "destino": "CUZ",
+                "partida": "2027-06-11T05:10",
+                "chegada": "2027-06-11T06:35",
+                "aeronave": null,
+                "duracao_min": 85
+              }
+            ],
+            "preco_brl": 4796,
+            "booking_url": "https://kiwi.com/u/k4nz53dg4q",
+            "nota": "+R$558; sem alerta (GRU 3h40, LIM 4h25)"
+          },
+          {
+            "trecho": "volta",
+            "detalhe": [
+              {
+                "voo": "LA8005",
+                "origem": "LIM",
+                "destino": "GRU",
+                "partida": "2027-06-19T09:15",
+                "chegada": "2027-06-19T16:25",
+                "aeronave": null,
+                "duracao_min": 310
+              },
+              {
+                "voo": "LA3378",
+                "origem": "GRU",
+                "destino": "REC",
+                "partida": "2027-06-19T21:05",
+                "chegada": "2027-06-20T00:05",
+                "aeronave": null,
+                "duracao_min": 180
+              }
+            ],
+            "preco_brl": 5203,
+            "booking_url": "https://kiwi.com/u/9sjgjtzkfy",
+            "nota": "+R$164; sem alerta"
+          }
+        ],
+        "fonte": "Monitor 24/11 00h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados). fli search_flights REC-LIM LA 2pax retornou 0 voos. alertas_conexao recalculados; alternativa sem alerta da ida rebuscada, da volta reaproveitada da checagem anterior.",
+        "nota": "CUZ-LIM_3d 10040 (-2.35% vs media 10282.1); -417 vs anterior."
       }
     ]
   },
-  "ultima_checagem": "2026-11-23T18:20:00Z",
+  "ultima_checagem": "2026-11-24T00:20:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
@@ -61629,12 +62317,12 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-23T18:20:00Z",
+    "data": "2026-11-24T00:20:00Z",
     "variantes_brl": {
-      "LIM-CUZ_3d": 10374,
-      "LIM-CUZ_2d": 10436,
-      "CUZ-LIM_3d": 10457,
-      "CUZ-LIM_2d": 10537
+      "CUZ-LIM_3d": 10040,
+      "LIM-CUZ_3d": 10081,
+      "CUZ-LIM_2d": 10120,
+      "LIM-CUZ_2d": 10143
     }
   },
   "nota_monitor_12_11_12h20": "Monitor leve 12/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 8537 / 3d 8466; CUZ-LIM 2d 8621 / 3d 8478); checkins nao duplicados para nao distorcer a media movel.",
@@ -61680,5 +62368,6 @@
   "nota_monitor_23_11_06h20": "Monitor leve 23/11 06h20: Kiwi LA 2 pax — LIM-CUZ_3d 10394 (+3.56% vs media 10036.8); LIM-CUZ_2d 10424 (+4.13% vs media 10010.1); CUZ-LIM_3d 10443 (+2.29% vs media 10209.2); CUZ-LIM_2d 10524 (+3.83% vs media 10136.0). Precos identicos ao ciclo 23/11 00h20 (so ida REC-LIM flights[0] trocou p/ LA3715/LA751/LA2412 via SCL, mesmo preco 4233). fli REC-LIM LA 2pax 0 voos. Sem queda >=15% vs media. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
   "nota_dashboard_23_11_12h15": "Dashboard 23/11 12h15: LIM-CUZ_3d 10396 (+3.28% vs media 10065.9, +2 vs anterior); LIM-CUZ_2d 10432 (+3.92% vs media 10038.8, +8 vs anterior); CUZ-LIM_3d 10453 (+2.09% vs media 10239.3, +10 vs anterior); CUZ-LIM_2d 10533 (+3.58% vs media 10168.8, +9 vs anterior). Nenhuma queda >=15%. Kiwi como fonte (fli 0 voos LA 2pax REC-LIM). Voltas +8/+9 (CUZ-REC 5354/5318, LIM-REC 5119/5039); REC-CUZ 4654->4655; dom LIM-CUZ 13/06 agora LA2021 16:00 (845), CUZ-LIM LA2233 16:25 (759). LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
   "nota_monitor_23_11_12h20": "Monitor 23/11 12h20 rodou em paralelo ao dashboard 12h15 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ_3d 10396; LIM-CUZ_2d 10432; CUZ-LIM_3d 10453; CUZ-LIM_2d 10533). fli search_flights REC-LIM LA 2pax 0 voos. Checkins nao duplicados para nao distorcer a media movel. melhor_combinacao_geral mantida (LIM-CUZ_3d 10396, +3.28% vs media). Sem queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
-  "nota_monitor_23_11_18h20": "Monitor 23/11 18h20: LIM-CUZ_3d 10374 (-22 vs anterior, +2.77% vs media); LIM-CUZ_2d 10436 (+4 vs anterior, +3.66% vs media); CUZ-LIM_3d 10457 (+4 vs anterior, +1.82% vs media); CUZ-LIM_2d 10537 (+4 vs anterior, +3.29% vs media). fli REC-LIM LA 2pax 0 voos; usado Kiwi. Sem queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
+  "nota_monitor_23_11_18h20": "Monitor 23/11 18h20: LIM-CUZ_3d 10374 (-22 vs anterior, +2.77% vs media); LIM-CUZ_2d 10436 (+4 vs anterior, +3.66% vs media); CUZ-LIM_3d 10457 (+4 vs anterior, +1.82% vs media); CUZ-LIM_2d 10537 (+4 vs anterior, +3.29% vs media). fli REC-LIM LA 2pax 0 voos; usado Kiwi. Sem queda >=15%. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
+  "nota_monitor_24_11_00h20": "Monitor 24/11 00h20: CUZ-LIM_3d 10040 (-2.35% vs media 10282.1, -417 vs anterior); LIM-CUZ_3d 10081 (-0.29% vs media 10109.9, -293 vs anterior); CUZ-LIM_2d 10120 (-0.92% vs media 10213.5, -417 vs anterior); LIM-CUZ_2d 10143 (+0.59% vs media 10083.5, -293 vs anterior). Ida REC-LIM 4233->3940 e REC-CUZ 4655->4238 (LA3171 REC-CGH 12:45 + LA8122 GRU-LIM 21:40; troca CGH->GRU 5h25 = alerta conexao_longa; alt sem alerta LA3379+LA8122 +R$558). Dom CUZ-LIM 16/06 agora LA2029 15:35 (759). Nenhuma queda >=15%. fli 0 voos; Kiwi usado. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
 }
