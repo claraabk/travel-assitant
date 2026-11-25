@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-25T12:15:00Z",
+  "ultima_checagem": "2026-11-25T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -556,6 +556,15 @@
       "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 3 queries obrigatorias (transferencia, compra direta, Inter Loop)",
       "alertas_disparados": 0
+    },
+    {
+      "data": "2026-11-25T18:20:00Z",
+      "transferencia": "Nenhuma vigente: Livelo 27% encerrou 24/11; Esfera/Nubank sem oferta 2026 vigente.",
+      "compra_direta": "Nenhuma promocao vigente (ultima ate 66%/63% encerrou 20/11). Campanha Itau 16-29/11 e bonus por gasto no cartao, nao se aplica.",
+      "inter_loop": "25% (so Inter Win) encerrou 20/11; nada vigente.",
+      "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 3 queries obrigatorias",
+      "alertas_disparados": 0
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
@@ -580,5 +589,6 @@
   "nota_monitor_24_11_18h20": "Monitor 24/11 18h20: pagina oficial ENOTFOUND. passageirodeprimeira.com: Livelo->LATAM Pass 27% expira hoje 24/11 (<60%, sem alerta; mover para expiradas no proximo ciclo). Compra direta: nada vigente desde 20/11. Inter Loop 25% encerrou 20/11. Nada a notificar.",
   "nota_monitor_25_11_00h20": "Monitor 25/11 00:20: pagina oficial ENOTFOUND. passageirodeprimeira.com (blog terceiros, confianca media): Livelo->LATAM Pass 27% encerrou 24/11 (movida para expiradas). Compra direta: ultima oferta (ate 66%/63% inscritos) encerrou 20/11, nada vigente. Inter Loop 25% (so Inter Win) encerrou 20/11. Nubank/Esfera sem oferta nova p/ LATAM Pass. Nada a notificar.",
   "nota_monitor_25_11_06h20": "Monitor 25/11 06:20: pagina oficial latampass.latam.com ENOTFOUND (egress bloqueado). passageirodeprimeira.com (blog terceiros, confianca media), 2 buscas: TRANSFERENCIA — Livelo->LATAM Pass 27% encerrou 24/11 (ja em expiradas); Nubank/Esfera/Inter sem oferta vigente p/ LATAM Pass. COMPRA DIRETA — ultima oferta (ate 66% Itau / 63% demais inscritos) encerrou 20/11; nada vigente. Itau LATAM Pass cartao: ate 3.000 milhas bonus por gasto (16-29/11) e ate 100k milhas em novo cartao Black/Platinum (ate 29/11) — nao se aplicam (Clara sem cartao Itau), nao sao desconto de compra. Nada a notificar.",
-  "nota_dashboard_25_11_12h15": "Dashboard 25/11 12:15: latampass.latam.com/pt_br/ofertas sem resposta (egress bloqueado). WebSearch passageirodeprimeira.com (blog terceiros, confianca media), 3 queries obrigatorias: TRANSFERENCIA — Livelo->LATAM Pass 27% encerrou 24/11 (ja em expiradas); Nubank/Esfera sem oferta vigente; Inter Loop 25% encerrou 20/11 (ja em expiradas). COMPRA DIRETA — ultima (ate 66%/63%) encerrou 20/11; nada vigente. Itau LATAM Pass (3.000 milhas por gasto, ate 29/11) nao se aplica. Movidas p/ expiradas neste ciclo: []. Nada a notificar."
+  "nota_dashboard_25_11_12h15": "Dashboard 25/11 12:15: latampass.latam.com/pt_br/ofertas sem resposta (egress bloqueado). WebSearch passageirodeprimeira.com (blog terceiros, confianca media), 3 queries obrigatorias: TRANSFERENCIA — Livelo->LATAM Pass 27% encerrou 24/11 (ja em expiradas); Nubank/Esfera sem oferta vigente; Inter Loop 25% encerrou 20/11 (ja em expiradas). COMPRA DIRETA — ultima (ate 66%/63%) encerrou 20/11; nada vigente. Itau LATAM Pass (3.000 milhas por gasto, ate 29/11) nao se aplica. Movidas p/ expiradas neste ciclo: []. Nada a notificar.",
+  "nota_monitor_25_11_18h20": "Monitor 25/11 18:20: latampass.latam.com/pt_br/ofertas ENOTFOUND (egress bloqueado). WebSearch passageirodeprimeira.com (blog terceiros, confianca media), 3 queries obrigatorias: TRANSFERENCIA — Livelo 27% encerrou 24/11 (ja em expiradas); Esfera (25/10) e Nubank (nov/2025) sem oferta vigente; Inter Loop 25% encerrou 20/11 (ja em expiradas). COMPRA DIRETA — ultima (ate 66%/63%) encerrou 20/11; nada vigente. Itau LATAM Pass (bonus por gasto, ate 29/11) nao se aplica. Nada a notificar. Obs: Black Friday 27/11 — provavel nova promocao de compra nos proximos ciclos."
 }
