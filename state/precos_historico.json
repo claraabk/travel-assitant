@@ -35,10 +35,10 @@
     "passageiros": 2,
     "dias_cusco": 6,
     "dias_lima": 3,
-    "data_checagem": "2026-11-24T18:20:00Z",
+    "data_checagem": "2026-11-25T00:20:00Z",
     "segunda": "LIM-CUZ_3d",
-    "diferenca_segunda_brl": 1,
-    "nota": "Monitor 24/11 18h20: lider CUZ-LIM_3d (10147); 2a LIM-CUZ_3d (+1). -1.46% vs media — sem queda >=15%, sem alerta. Alta geral ~+R$150-170 vs 12h15 (ida REC-LIM +191, REC-CUZ +242)."
+    "diferenca_segunda_brl": 39,
+    "nota": "Monitor 25/11 00:20: lider CUZ-LIM_3d (10147); 2a LIM-CUZ_3d (+39). -1.54% vs media — sem queda >=15%, sem alerta."
   },
   "checagens": {
     "LIM-LIM": [
@@ -32093,6 +32093,58 @@
         },
         "fonte": "Monitor 24/11 18h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
         "nota": "LIM-CUZ_3d 10148 (-0.06% vs media 10154.3); +152 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-25T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 4135,
+          "domestico": 812,
+          "volta": 5289
+        },
+        "preco_total_brl": 10236,
+        "media_movel_30_checagens": 10145.5,
+        "variacao_pct_vs_media": 0.89,
+        "variacao_vs_checagem_anterior_brl": 38,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/sg2jtpwu8g",
+          "domestico": "https://kiwi.com/u/5qghyds9gf",
+          "volta": "https://kiwi.com/u/d25sqss272"
+        },
+        "fonte": "Monitor 25/11 00:20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
+        "nota": "LIM-CUZ_2d 10236 (+0.89% vs media 10145.5); +38 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-25T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 4135,
+          "domestico": 811,
+          "volta": 5240
+        },
+        "preco_total_brl": 10186,
+        "media_movel_30_checagens": 10171.6,
+        "variacao_pct_vs_media": 0.14,
+        "variacao_vs_checagem_anterior_brl": 38,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/sg2jtpwu8g",
+          "domestico": "https://kiwi.com/u/uxw48fy2m4",
+          "volta": "https://kiwi.com/u/fm6tb4ms3q"
+        },
+        "fonte": "Monitor 25/11 00:20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
+        "nota": "LIM-CUZ_3d 10186 (+0.14% vs media 10171.6); +38 vs anterior."
       }
     ],
     "CUZ-LIM": [
@@ -63789,10 +63841,62 @@
         },
         "fonte": "Monitor 24/11 18h20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
         "nota": "CUZ-LIM_3d 10147 (-1.46% vs media 10297.4); +174 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-25T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 4445,
+          "domestico": 729,
+          "volta": 5052
+        },
+        "preco_total_brl": 10226,
+        "media_movel_30_checagens": 10242.5,
+        "variacao_pct_vs_media": -0.16,
+        "variacao_vs_checagem_anterior_brl": 0,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/kn5pydfhk8",
+          "domestico": "https://kiwi.com/u/yt9mrxjrc6",
+          "volta": "https://kiwi.com/u/q82ykhuqkk"
+        },
+        "fonte": "Monitor 25/11 00:20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
+        "nota": "CUZ-LIM_2d 10226 (-0.16% vs media 10242.5); +0 vs anterior."
+      },
+      {
+        "data_checagem": "2026-11-25T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 4445,
+          "domestico": 729,
+          "volta": 4973
+        },
+        "preco_total_brl": 10147,
+        "media_movel_30_checagens": 10305.3,
+        "variacao_pct_vs_media": -1.54,
+        "variacao_vs_checagem_anterior_brl": 0,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/kn5pydfhk8",
+          "domestico": "https://kiwi.com/u/yt9mrxjrc6",
+          "volta": "https://kiwi.com/u/mxtkxjpjxb"
+        },
+        "fonte": "Monitor 25/11 00:20 (Kiwi select_airlines=LA, adults=2, BRL, one-ways somados, flights[0] de cada leg). fli search_flights REC-LIM LA 2pax retornou 0 voos. Latam-PASS MCP timeout (Akamai).",
+        "nota": "CUZ-LIM_3d 10147 (-1.54% vs media 10305.3); +0 vs anterior."
       }
     ]
   },
-  "ultima_checagem": "2026-11-24T18:20:00Z",
+  "ultima_checagem": "2026-11-25T00:20:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
@@ -63806,12 +63910,12 @@
     }
   },
   "ultima_cotacao_kiwi_monitor": {
-    "data": "2026-11-24T18:20:00Z",
+    "data": "2026-11-25T00:20:00Z",
     "variantes_brl": {
       "CUZ-LIM_3d": 10147,
-      "LIM-CUZ_3d": 10148,
-      "LIM-CUZ_2d": 10198,
-      "CUZ-LIM_2d": 10226
+      "LIM-CUZ_3d": 10186,
+      "CUZ-LIM_2d": 10226,
+      "LIM-CUZ_2d": 10236
     }
   },
   "nota_monitor_12_11_12h20": "Monitor leve 12/11 12h20 rodou em paralelo ao dashboard 12h20 e obteve exatamente os mesmos precos Kiwi LA 2 pax (LIM-CUZ 2d 8537 / 3d 8466; CUZ-LIM 2d 8621 / 3d 8478); checkins nao duplicados para nao distorcer a media movel.",
