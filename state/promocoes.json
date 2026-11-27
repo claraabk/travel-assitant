@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-27T06:20:00Z",
+  "ultima_checagem": "2026-11-27T12:15:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 27/11 06h20: segue permanente; ofertas oficial ENOTFOUND; 2 WebSearch passageirodeprimeira.com (transferencia e compra direta): sem nova campanha LATAM Pass vigente (Livelo 27% encerrou 24/11, Inter Loop 25% encerrou 20/11, compra direta 66%/63% encerrou 20/11); Black Friday ALL Accor 15%+10% e no sentido LATAM Pass->Accor (nao se aplica); cartao LATAM Pass Itau ate 100k milhas bonus ate 29/11 (adesao a cartao Itau, nao e bonus de transferencia nem desconto de compra; Clara sem Itau). Premmia 60% segue ate hoje 27/11 (ja notificada).",
+      "ultima_reconfirmacao": "Dashboard 27/11 12h15: segue permanente.",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -37,7 +37,26 @@
       "ja_notificada": true,
       "notificada_em": "2026-11-26T18:20:00Z",
       "acao_sugerida": "Se houver saldo Premmia, CPM ~R$24 é o mais baixo visto (abaixo dos R$25,90 da compra 63% de nov). Nada transferido — só com 'Transfere' explícito da Clara.",
-      "ultima_reconfirmacao": "Monitor 27/11 06h20: ultimo dia (valido_ate 2026-11-27); ja notificada — sem novo alerta. Mover para expiradas no primeiro ciclo de 28/11."
+      "ultima_reconfirmacao": "Dashboard 27/11 12h15: ultimo dia (valido_ate 2026-11-27); ja notificada. Mover para expiradas no primeiro ciclo de 28/11."
+    },
+    {
+      "id": "latam-pass-cartoes-25pct-nov2026",
+      "tipo": "bonus_transferencia",
+      "programa_origem": "cartoes de credito de bancos participantes (lista nao confirmada; Nubank/Inter nao confirmados)",
+      "descricao": "LATAM Pass: 25% de bonus nas transferencias de pontos dos cartoes de credito + 1.000 milhas extras na 1a transferencia. Exige cadastro previo na campanha. Transferencias ate 23h59 de 29/11. Teto 300.000 milhas bonus por CPF; credito em ate 30 dias apos o fim.",
+      "bonus_pct": 25,
+      "e_permanente": false,
+      "valido_ate": "2026-11-29",
+      "fontes": [
+        "https://passageirodeprimeira.com/latam-pass-oferece-25-de-bonus-nas-transferencias-de-pontos-dos-cartoes-de-credito-4/"
+      ],
+      "confianca": "media — blog de terceiros (passageirodeprimeira.com); pagina oficial LATAM Pass inacessivel (ENOTFOUND).",
+      "elegibilidade": "incerta — checar na pagina da campanha (logada) se Nubank Ultravioleta (Clara, 7.667 pts) e Inter Loop (Pedro, 11.900 pts) estao entre os bancos participantes.",
+      "impacto_estimado": "Clara: 7.667 pts x 1,25 = 9.583 + 1.000 (1a transf.) = ~10.583 milhas vs 7.667 a 1:1. Nao usado no calculo conservador (bonus nao confirmado para Nubank).",
+      "detectada_em": "2026-11-27T12:15:00Z",
+      "ja_notificada": false,
+      "motivo_sem_push": "25% < limiar 60%; nao e desconto de compra direta. So dashboard.",
+      "acao_sugerida": "Conferir elegibilidade e cadastro na campanha antes de 29/11. Nada transferido — so com 'Transfere' explicito da Clara."
     }
   ],
   "expiradas": [
@@ -586,6 +605,15 @@
       "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), 3 queries obrigatorias",
       "alertas_disparados": 0
+    },
+    {
+      "data": "2026-11-27T12:15:00Z",
+      "transferencia": "NOVA: 25% cartoes de credito -> LATAM Pass ate 29/11 (+1.000 na 1a transf., cadastro previo). Premmia 60% ultimo dia hoje. Livelo 27% encerrou 24/11.",
+      "compra_direta": "Nenhuma promocao vigente (66%/63% encerrou 20/11).",
+      "inter_loop": "Campanha 25% Win encerrou 20/11; parceria Inter Loop->LATAM Pass existe (ao menos Win) — elegibilidade Prime incerta.",
+      "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com, 3 queries obrigatorias + 1 de confirmacao",
+      "alertas_disparados": 0
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
@@ -617,5 +645,6 @@
   "nota_monitor_26_11_06h20": "Monitor 26/11 06h20Z: latampass.latam.com/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (transferencia + compra direta): nenhuma campanha vigente — Livelo 27% (publicada 23/11) encerrou 24/11; Esfera 25% (out/2026) expirada; compra direta ate 66% (Itau)/63% (LATAM Pass/Clube) encerrou 20/11; campanha Itau Black 3.000 milhas por meta de gasto (16-29/11) nao e compra/transferencia e exige cartao Itau. Fonte: blog de terceiros. Nenhum gatilho; sem notificacao.",
   "nota_dashboard_26_11_12h16": "Dashboard 26/11 12:16: latampass.latam.com/pt_br/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (blog terceiros, confianca media) transferencia + compra direta: nada vigente (Livelo 27% encerrou 24/11; compra ate 66%/63% encerrou 20/11; Itau 3.000 milhas por gasto ate 29/11 nao se aplica). Movidas p/ expiradas: []. Nenhum gatilho de promocao.",
   "nota_monitor_26_11_12h20": "Monitor 26/11 12h20Z: latampass.latam.com/ofertas ENOTFOUND (EGRESS_BLOCKED). WebSearch passageirodeprimeira.com (blog terceiros, confianca media): TRANSFERENCIA — Livelo 27% encerrou 24/11, Inter Loop 25% (so Inter Win) encerrou 20/11, Nubank/Esfera sem oferta nov/2026. COMPRA DIRETA — ultimo desconto (ate 66% Itau / 63% demais) encerrou 20/11; nada vigente (Black Friday ainda nao apareceu). Itau bonus por gasto (16-29/11) nao e compra/transferencia. Nenhum gatilho; sem notificacao.",
-  "nota_monitor_26_11_18h20": "Monitor 18:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). WebSearch passageirodeprimeira (transferencia + compra direta): NOVA Premmia->LATAM Pass 60% ate 27/11 (<=48h) -> PushNotification enviado, ja_notificada=true. Compra direta: nenhuma campanha vigente. ALL Accor 25% e sentido inverso (LATAM Pass->ALL), ignorado."
+  "nota_monitor_26_11_18h20": "Monitor 18:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). WebSearch passageirodeprimeira (transferencia + compra direta): NOVA Premmia->LATAM Pass 60% ate 27/11 (<=48h) -> PushNotification enviado, ja_notificada=true. Compra direta: nenhuma campanha vigente. ALL Accor 25% e sentido inverso (LATAM Pass->ALL), ignorado.",
+  "nota_dashboard_27_11_12h15": "Dashboard 12:15Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Nova promo 25% cartoes->LATAM Pass ate 29/11 adicionada (sem push, <60%). Premmia 60% ultimo dia. Sem desconto de compra direta."
 }
