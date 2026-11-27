@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-27T12:20:00Z",
+  "ultima_checagem": "2026-11-27T18:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -656,5 +656,6 @@
   "nota_monitor_26_11_12h20": "Monitor 26/11 12h20Z: latampass.latam.com/ofertas ENOTFOUND (EGRESS_BLOCKED). WebSearch passageirodeprimeira.com (blog terceiros, confianca media): TRANSFERENCIA — Livelo 27% encerrou 24/11, Inter Loop 25% (so Inter Win) encerrou 20/11, Nubank/Esfera sem oferta nov/2026. COMPRA DIRETA — ultimo desconto (ate 66% Itau / 63% demais) encerrou 20/11; nada vigente (Black Friday ainda nao apareceu). Itau bonus por gasto (16-29/11) nao e compra/transferencia. Nenhum gatilho; sem notificacao.",
   "nota_monitor_26_11_18h20": "Monitor 18:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). WebSearch passageirodeprimeira (transferencia + compra direta): NOVA Premmia->LATAM Pass 60% ate 27/11 (<=48h) -> PushNotification enviado, ja_notificada=true. Compra direta: nenhuma campanha vigente. ALL Accor 25% e sentido inverso (LATAM Pass->ALL), ignorado.",
   "nota_dashboard_27_11_12h15": "Dashboard 12:15Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Nova promo 25% cartoes->LATAM Pass ate 29/11 adicionada (sem push, <60%). Premmia 60% ultimo dia. Sem desconto de compra direta.",
-  "nota_monitor_27_11_12h20": "Monitor 12:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Sem nova promocao alem das ja registradas (Premmia 60% ultimo dia, 25% cartoes ate 29/11). Sem alerta."
+  "nota_monitor_27_11_12h20": "Monitor 12:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Sem nova promocao alem das ja registradas (Premmia 60% ultimo dia, 25% cartoes ate 29/11). Sem alerta.",
+  "nota_monitor_27_11_18h20": "Monitor 18:20Z: latampass.latam.com/pt_br/ofertas inacessivel (ENOTFOUND/egress bloqueado). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada novo. Livelo 27% LATAM Friday terminou 24/11; desconto compra direta ate 66%/63% terminou 20/11; Inter Loop 25% terminou 20/11. Ativas mantidas: Premmia 60% (valido ate hoje 27/11, ja notificada), cartoes 25% ate 29/11 (abaixo de 60%), Modo LATAM Pass Nubank (permanente). Nenhum desconto de compra direta ativo -> sem push. Fonte: blog de terceiros (confianca media)."
 }
