@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-27T12:15:00Z",
+  "ultima_checagem": "2026-11-27T12:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -360,7 +360,7 @@
     "passageirodeprimeira": "compra direta: edicao 'ate 65% Itau / 62% geral, milheiro R$24,50/R$26,60, ate 200k milhas' valida ate sexta (02/10) - ja notificada, expira hoje; transferencia: Livelo/Esfera/Nubank 25-35%, nada >=60%/<=48h",
     "alerta_enviado": false
   },
-  "ultima_checagem_bonus_transferencia": "2026-11-25T12:15:00Z",
+  "ultima_checagem_bonus_transferencia": "2026-11-27T12:20:00Z",
   "checagem_20261003_06h": {
     "fonte": "WebSearch passageirodeprimeira.com (transferencia + compra direta); Inter Loop/Prime sem rota LATAM Pass",
     "resultado": "Compra direta: campanha anterior encerrada 02/10, ja notificada. Transferencia: Nubank 25% ate 04/10 (<60%). Nenhum gatilho de alerta."
@@ -614,6 +614,15 @@
       "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist)",
       "fonte": "WebSearch allowed_domains=passageirodeprimeira.com, 3 queries obrigatorias + 1 de confirmacao",
       "alertas_disparados": 0
+    },
+    {
+      "data": "2026-11-27T12:20:00Z",
+      "transferencia": "Nenhum bonus >=60% novo. Premmia->LATAM Pass 60% vence hoje 27/11 (ja notificada). LATAM Pass 25% cartoes ate 29/11 (ja registrada pelo Dashboard 12:15, <60%). Livelo 27% encerrou 24/11; Inter Loop 25% encerrou 20/11.",
+      "compra_direta": "Nenhuma promocao vigente (ultima ate 66%/63% encerrou 20/11). Campanhas Itau (adesao cartao/bonus por gasto) nao se aplicam.",
+      "black_friday": "ALL Accor 15-25% e sentido inverso (LATAM Pass->ALL), ignorado.",
+      "pagina_oficial": "ENOTFOUND (latampass.latam.com fora da allowlist / EGRESS_BLOCKED)",
+      "fonte": "WebSearch allowed_domains=passageirodeprimeira.com (blog de terceiros), queries transferencia + compra direta + Black Friday",
+      "alertas_disparados": 0
     }
   ],
   "nota_ciclo_19_11_dashboard_12h20": "Dashboard 19/11 12h20: compra direta — Esquenta LATAM Friday 63% (R$25,90) ate 20/11, ja_notificada=true. Transferencia — nenhum bonus LATAM Pass ativo (Livelo/Esfera/Nubank). latampass.latam.com/ofertas ENOTFOUND. Expiradas movidas: 0.",
@@ -646,5 +655,6 @@
   "nota_dashboard_26_11_12h16": "Dashboard 26/11 12:16: latampass.latam.com/pt_br/ofertas ENOTFOUND. WebSearch passageirodeprimeira.com (blog terceiros, confianca media) transferencia + compra direta: nada vigente (Livelo 27% encerrou 24/11; compra ate 66%/63% encerrou 20/11; Itau 3.000 milhas por gasto ate 29/11 nao se aplica). Movidas p/ expiradas: []. Nenhum gatilho de promocao.",
   "nota_monitor_26_11_12h20": "Monitor 26/11 12h20Z: latampass.latam.com/ofertas ENOTFOUND (EGRESS_BLOCKED). WebSearch passageirodeprimeira.com (blog terceiros, confianca media): TRANSFERENCIA — Livelo 27% encerrou 24/11, Inter Loop 25% (so Inter Win) encerrou 20/11, Nubank/Esfera sem oferta nov/2026. COMPRA DIRETA — ultimo desconto (ate 66% Itau / 63% demais) encerrou 20/11; nada vigente (Black Friday ainda nao apareceu). Itau bonus por gasto (16-29/11) nao e compra/transferencia. Nenhum gatilho; sem notificacao.",
   "nota_monitor_26_11_18h20": "Monitor 18:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). WebSearch passageirodeprimeira (transferencia + compra direta): NOVA Premmia->LATAM Pass 60% ate 27/11 (<=48h) -> PushNotification enviado, ja_notificada=true. Compra direta: nenhuma campanha vigente. ALL Accor 25% e sentido inverso (LATAM Pass->ALL), ignorado.",
-  "nota_dashboard_27_11_12h15": "Dashboard 12:15Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Nova promo 25% cartoes->LATAM Pass ate 29/11 adicionada (sem push, <60%). Premmia 60% ultimo dia. Sem desconto de compra direta."
+  "nota_dashboard_27_11_12h15": "Dashboard 12:15Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Nova promo 25% cartoes->LATAM Pass ate 29/11 adicionada (sem push, <60%). Premmia 60% ultimo dia. Sem desconto de compra direta.",
+  "nota_monitor_27_11_12h20": "Monitor 12:20Z: ofertas oficial ENOTFOUND; Latam-PASS timeout (Akamai). Sem nova promocao alem das ja registradas (Premmia 60% ultimo dia, 25% cartoes ate 29/11). Sem alerta."
 }
