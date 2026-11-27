@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-26T18:20:00Z",
+  "ultima_checagem": "2026-11-27T00:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -15,7 +15,7 @@
       "confianca": "alta (2+ fontes, inclusive site oficial)",
       "ja_notificada": false,
       "acao_sugerida": "Avaliar separadamente (não é alerta diário) se compensa ativar dado o ritmo de gastos até jun/2027.",
-      "ultima_reconfirmacao": "Monitor 26/11 18h20: segue permanente; ofertas oficial ENOTFOUND; 2 WebSearch passageirodeprimeira.com (transferencia e compra direta): nova Premmia->LATAM Pass 60% ate 27/11 (registrada); compra direta sem campanha vigente (66%/63% encerrou 20/11); Livelo/Esfera/Nubank/Inter sem oferta vigente.",
+      "ultima_reconfirmacao": "Monitor 27/11 00h20: segue permanente; ofertas oficial ENOTFOUND; 2 WebSearch passageirodeprimeira.com (transferencia e compra direta): sem nova campanha LATAM Pass vigente (Livelo 27% encerrou 24/11, Inter Loop 25% encerrou 20/11, compra direta 66%/63% encerrou 20/11); ALL Accor 25% e no sentido LATAM Pass->Accor (nao se aplica); Premmia 60% segue ate hoje 27/11 (ja notificada).",
       "obs_03_10": "WebSearch 03/10: Nubank Ultravioleta 25% (15% extra + 10% Modo LATAM Pass) na 1a transferencia, ate 23h59 de 04/10/2026. Abaixo de 60%, sem alerta."
     },
     {
@@ -36,7 +36,8 @@
       "detectada_em": "2026-11-26T18:20:00Z",
       "ja_notificada": true,
       "notificada_em": "2026-11-26T18:20:00Z",
-      "acao_sugerida": "Se houver saldo Premmia, CPM ~R$24 é o mais baixo visto (abaixo dos R$25,90 da compra 63% de nov). Nada transferido — só com 'Transfere' explícito da Clara."
+      "acao_sugerida": "Se houver saldo Premmia, CPM ~R$24 é o mais baixo visto (abaixo dos R$25,90 da compra 63% de nov). Nada transferido — só com 'Transfere' explícito da Clara.",
+      "ultima_reconfirmacao": "Monitor 27/11 00h20: ultimo dia (valido_ate 2026-11-27); ja notificada em 26/11 18:20 — sem novo alerta. Mover para expiradas no proximo ciclo apos 27/11."
     }
   ],
   "expiradas": [

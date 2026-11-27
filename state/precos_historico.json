@@ -46,7 +46,8 @@
     },
     "nota": "Dashboard 2026-11-26T12:16:00Z: lider LIM-CUZ_2d (8333); 2a LIM-CUZ_3d (+19). Queda forte da ida REC-LIM (4217->3282) e REC-CUZ (5082->4151).",
     "nota_monitor_26_11_12h20": "Monitor 12:20Z (4 min apos o Dashboard): lider mantido LIM-CUZ_2d (8333); nesta checagem a volta CUZ-REC veio mais cara (5243 em 18/06, 4476 em 19/06 vs 4234/4265 no Dashboard) — melhor desta checagem LIM-CUZ_3d 8563. Alerta de queda ja notificado as 12:16; sem novo push.",
-    "nota_monitor_26_11_18h20": "Monitor 18:20Z: lider mantido LIM-CUZ_2d (8333, cotacao do Dashboard 12:16Z); melhor desta checagem LIM-CUZ_3d 8539 (2a CUZ-LIM_3d +121). Sem nova queda >=15%."
+    "nota_monitor_26_11_18h20": "Monitor 18:20Z: lider mantido LIM-CUZ_2d (8333, cotacao do Dashboard 12:16Z); melhor desta checagem LIM-CUZ_3d 8539 (2a CUZ-LIM_3d +121). Sem nova queda >=15%.",
+    "nota_monitor_27_11_00h20": "Monitor 00:20Z: lider mantido LIM-CUZ_2d (8333); melhor desta checagem LIM-CUZ_3d 8538."
   },
   "checagens": {
     "LIM-LIM": [
@@ -34608,6 +34609,80 @@
         ],
         "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
         "nota": "Monitor 26/11 18:20: LIM-CUZ_3d 8539 (-14.06% vs media, -24 vs anterior)"
+      },
+      {
+        "data_checagem": "2026-11-27T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-12",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 3250,
+          "domestico": 835,
+          "volta": 5190
+        },
+        "preco_total_brl": 9275,
+        "media_movel_30_checagens": 10116.6,
+        "variacao_pct_vs_media": -8.32,
+        "variacao_pct_vs_media_anterior": -8.53,
+        "variacao_vs_checagem_anterior_brl": 0,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/8qytrn5hq9",
+          "domestico": "https://kiwi.com/u/uy6jyfhh8y",
+          "volta": "https://kiwi.com/u/f8b8d6tyup"
+        },
+        "classe_tarifa": "Economy (tarifa mais barata; presumir nao reembolsavel ate confirmar no checkout)",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 745,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
+        "nota": "Monitor 27/11 00:20: LIM-CUZ_2d 9275 (-8.32% vs media, +0 vs anterior)"
+      },
+      {
+        "data_checagem": "2026-11-27T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-13",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 3250,
+          "domestico": 835,
+          "volta": 4453
+        },
+        "preco_total_brl": 8538,
+        "media_movel_30_checagens": 9889.6,
+        "variacao_pct_vs_media": -13.67,
+        "variacao_pct_vs_media_anterior": -14.07,
+        "variacao_vs_checagem_anterior_brl": -1,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/8qytrn5hq9",
+          "domestico": "https://kiwi.com/u/8fzcvcdgmg",
+          "volta": "https://kiwi.com/u/w7pbvz6xdx"
+        },
+        "classe_tarifa": "Economy (tarifa mais barata; presumir nao reembolsavel ate confirmar no checkout)",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 745,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
+        "nota": "Monitor 27/11 00:20: LIM-CUZ_3d 8538 (-13.67% vs media, -1 vs anterior)"
       }
     ],
     "CUZ-LIM": [
@@ -69144,10 +69219,98 @@
         ],
         "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
         "nota": "Monitor 26/11 18:20: CUZ-LIM_3d 8660 (-13.76% vs media, -59 vs anterior)"
+      },
+      {
+        "data_checagem": "2026-11-27T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 2,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-18",
+        "trechos_brl": {
+          "ida": 4097,
+          "domestico": 750,
+          "volta": 4142
+        },
+        "preco_total_brl": 8989,
+        "media_movel_30_checagens": 10160.9,
+        "variacao_pct_vs_media": -11.53,
+        "variacao_pct_vs_media_anterior": -11.83,
+        "variacao_vs_checagem_anterior_brl": -22,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7cuwhwuzu3",
+          "domestico": "https://kiwi.com/u/s4ss8xbzuw",
+          "volta": "https://kiwi.com/u/q5hxuffdc9"
+        },
+        "classe_tarifa": "Economy (tarifa mais barata; presumir nao reembolsavel ate confirmar no checkout)",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 745,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "GRU→CGH",
+            "duracao_min": 335,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
+        "nota": "Monitor 27/11 00:20: CUZ-LIM_2d 8989 (-11.53% vs media, -22 vs anterior)"
+      },
+      {
+        "data_checagem": "2026-11-27T00:20:00Z",
+        "passageiros": 2,
+        "moeda": "BRL",
+        "dias_cusco": 6,
+        "dias_lima": 3,
+        "ida": "2027-06-10",
+        "domestico": "2027-06-16",
+        "volta": "2027-06-19",
+        "trechos_brl": {
+          "ida": 4097,
+          "domestico": 750,
+          "volta": 3838
+        },
+        "preco_total_brl": 8685,
+        "media_movel_30_checagens": 9997.3,
+        "variacao_pct_vs_media": -13.13,
+        "variacao_pct_vs_media_anterior": -13.51,
+        "variacao_vs_checagem_anterior_brl": 25,
+        "booking_url_trechos": {
+          "ida": "https://kiwi.com/u/7cuwhwuzu3",
+          "domestico": "https://kiwi.com/u/s4ss8xbzuw",
+          "volta": "https://kiwi.com/u/kghpjumgps"
+        },
+        "classe_tarifa": "Economy (tarifa mais barata; presumir nao reembolsavel ate confirmar no checkout)",
+        "alertas_conexao": [
+          {
+            "trecho": "ida",
+            "aeroporto": "CGH→GRU",
+            "duracao_min": 745,
+            "tipo": "conexao_longa",
+            "limite": 300
+          },
+          {
+            "trecho": "volta",
+            "aeroporto": "BSB",
+            "duracao_min": 435,
+            "tipo": "conexao_longa",
+            "limite": 300
+          }
+        ],
+        "fonte": "Kiwi.com MCP (select_airlines=LA, adults=2, BRL); fli.search_flights retornou 0 voos",
+        "nota": "Monitor 27/11 00:20: CUZ-LIM_3d 8685 (-13.13% vs media, +25 vs anterior)"
       }
     ]
   },
-  "ultima_checagem": "2026-11-26T18:20:00Z",
+  "ultima_checagem": "2026-11-27T00:20:00Z",
   "ultima_tentativa_parcial": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_data": "2026-11-04T00:19:36Z",
   "ultima_tentativa_parcial_nota": "Monitor leve 04/11: fli 0 resultados; Kiwi LA 2 pax: {\"LIM-CUZ_2d\": 9366, \"LIM-CUZ_3d\": 9228, \"CUZ-LIM_2d\": 9218, \"CUZ-LIM_3d\": 9193}. Sem queda >=15%. melhor_combinacao_geral mantida (ref fli 24/10).",
@@ -69225,5 +69388,6 @@
   "nota_monitor_26_11_06h20": "Monitor: LIM-CUZ_3d 9510 (-5.60% vs media, +286 vs anterior); CUZ-LIM_2d 9955 (-3.32% vs media, -45 vs anterior); CUZ-LIM_3d 9955 (-2.49% vs media, +22 vs anterior); LIM-CUZ_2d 10014 (-2.13% vs media, +3 vs anterior). Legs: REC-LIM 4217, REC-CUZ 5082, LIM-CUZ 821(12)/803(13), CUZ-LIM 738, CUZ-REC 4976(18)/4490(19, sem alerta; antes 4204 nao aparece mais), LIM-REC 4135(18)/4135(19). fli 0 voos. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
   "nota_dashboard_26_11_12h16": "Dashboard 26/11 12h16: LIM-CUZ_2d 8333 (-18.15% vs media); LIM-CUZ_3d 8352 (-16.68% vs media); CUZ-LIM_3d 8719 (-14.12% vs media); CUZ-LIM_2d 9002 (-12.26% vs media). Legs: REC-LIM 3282, REC-CUZ 4151, LIM-CUZ 817(12)/805(13), CUZ-LIM 734, CUZ-REC 4234(18)/4265(19), LIM-REC 4117(18)/3834(19 00:40). fli 0 voos. QUEDA >=15% em LIM-CUZ_2d e LIM-CUZ_3d -> PushNotification enviado.",
   "nota_monitor_26_11_12h20": "Monitor: LIM-CUZ_3d 8563 (-14.20% vs media, +211 vs anterior); CUZ-LIM_3d 8719 (-13.65% vs media, +0 vs anterior); CUZ-LIM_2d 9069 (-11.34% vs media, +67 vs anterior); LIM-CUZ_2d 9342 (-8.06% vs media, +1009 vs anterior). Legs: REC-LIM 3282 (antes 4217; CGH->GRU 12h25, alt sem alerta 3547), REC-CUZ 4151 (antes 5082; alt 4415), LIM-CUZ 817(12)/805(13), CUZ-LIM 734, CUZ-REC 5243(18)/4476(19), LIM-REC 4184(18)/3834(19). Queda ja notificada pelo Dashboard 12:16Z (ja_notificada=true em melhor_combinacao_geral.alerta_queda_notificado); sem novo push. fli 0 voos. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
-  "nota_monitor_26_11_18h20": "Monitor: LIM-CUZ_3d 8539 (-14.06% vs media, -24 vs anterior); CUZ-LIM_3d 8660 (-13.76% vs media, -59 vs anterior); CUZ-LIM_2d 9011 (-11.61% vs media, -58 vs anterior); LIM-CUZ_2d 9275 (-8.53% vs media, -67 vs anterior). Legs: REC-LIM 3250 (antes 3282), REC-CUZ 4119 (antes 4151), LIM-CUZ 835(12)/836(13), CUZ-LIM 750, CUZ-REC 5190(18)/4453(19), LIM-REC 4142(18)/3791(19). Nenhuma variante com queda >=15% vs media; queda anterior ja notificada. fli 0 voos. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
+  "nota_monitor_26_11_18h20": "Monitor: LIM-CUZ_3d 8539 (-14.06% vs media, -24 vs anterior); CUZ-LIM_3d 8660 (-13.76% vs media, -59 vs anterior); CUZ-LIM_2d 9011 (-11.61% vs media, -58 vs anterior); LIM-CUZ_2d 9275 (-8.53% vs media, -67 vs anterior). Legs: REC-LIM 3250 (antes 3282), REC-CUZ 4119 (antes 4151), LIM-CUZ 835(12)/836(13), CUZ-LIM 750, CUZ-REC 5190(18)/4453(19), LIM-REC 4142(18)/3791(19). Nenhuma variante com queda >=15% vs media; queda anterior ja notificada. fli 0 voos. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas.",
+  "nota_monitor_27_11_00h20": "Monitor: LIM-CUZ_3d 8538 (-13.67% vs media incl., -14.07% vs media anterior, -1 vs anterior); CUZ-LIM_3d 8685 (-13.13% vs media incl., -13.51% vs media anterior, +25 vs anterior); CUZ-LIM_2d 8989 (-11.53% vs media incl., -11.83% vs media anterior, -22 vs anterior); LIM-CUZ_2d 9275 (-8.32% vs media incl., -8.53% vs media anterior, +0 vs anterior). Legs: REC-LIM 3250 (=), REC-CUZ 4097 (antes 4119), LIM-CUZ 835(12)/835(13), CUZ-LIM 750, CUZ-REC 5190(18)/4453(19), LIM-REC 4142(18)/3838(19, antes 3791). Nenhuma variante com queda >=15% vs media; lider geral LIM-CUZ_2d 8333 (26/11 12:16) mantido. fli 0 voos. LIM-LIM/CUZ-CUZ descontinuadas, nao rebuscadas."
 }
