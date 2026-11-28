@@ -1,5 +1,5 @@
 {
-  "ultima_checagem": "2026-11-28T12:15:00Z",
+  "ultima_checagem": "2026-11-28T12:20:00Z",
   "ativas": [
     {
       "id": "modo-latam-pass-nubank",
@@ -36,7 +36,8 @@
       "ja_notificada": false,
       "motivo_sem_push": "25% < limiar 60%; nao e desconto de compra direta. So dashboard.",
       "acao_sugerida": "Conferir elegibilidade e cadastro na campanha antes de 29/11. Nada transferido — so com 'Transfere' explicito da Clara.",
-      "ultima_reconfirmacao": "Dashboard 28/11 12h15: segue ate 29/11 (23h59), <60%, sem push. Inter nao confirmado como participante."
+      "ultima_reconfirmacao": "Dashboard 28/11 12h15: segue ate 29/11 (23h59), <60%, sem push. Inter nao confirmado como participante.",
+      "reconfirmacao_28_11_12h20": "passageirodeprimeira.com segue citando 25% + 1.000 milhas ate domingo (29). Sem extensao/aumento; <60% -> sem push. Inter Loop nao confirmado na lista."
     }
   ],
   "expiradas": [
@@ -671,5 +672,6 @@
   "nota_monitor_27_11_18h20": "Monitor 18:20Z: latampass.latam.com/pt_br/ofertas inacessivel (ENOTFOUND/egress bloqueado). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada novo. Livelo 27% LATAM Friday terminou 24/11; desconto compra direta ate 66%/63% terminou 20/11; Inter Loop 25% terminou 20/11. Ativas mantidas: Premmia 60% (valido ate hoje 27/11, ja notificada), cartoes 25% ate 29/11 (abaixo de 60%), Modo LATAM Pass Nubank (permanente). Nenhum desconto de compra direta ativo -> sem push. Fonte: blog de terceiros (confianca media).",
   "nota_monitor_28_11_00h20": "Monitor 00:20Z: latampass.latam.com/pt_br/ofertas ENOTFOUND (egress bloqueado). WebSearch passageirodeprimeira.com (transferencia + compra direta): nada novo para LATAM Pass. Livelo 27% (terminou 24/11), Inter Loop 25% (20/11), compra direta ate 66%/63% (20/11) encerradas. ALL Accor 25% ate 30/11 e transferencia SAINDO do LATAM Pass (irrelevante). Cartao LATAM Pass Itau ate 100k milhas bonus ate 29/11 e adesao a cartao, nao desconto de compra. Premmia 60% (valido ate 27/11) movida para expiradas. Ativas: cartoes 25% ate 29/11 (<60%, sem push), Modo LATAM Pass Nubank (permanente). Nenhum desconto de compra direta ativo -> sem push de promocao. Fonte: blog de terceiros.",
   "nota_monitor_28_11_06h20": "Monitor 06:20Z: latampass.latam.com/pt_br/ofertas ENOTFOUND (egress bloqueado). Latam-PASS timeout (Akamai). WebSearch passageirodeprimeira.com (3 queries: transferencia Livelo/Esfera/Nubank, compra direta, Inter Loop): nada novo. Compra direta ate 66%/63% encerrada 20/11; Livelo 27% encerrada 24/11; Inter Loop 25% encerrada 20/11. Campanha Itau milhas bonus por gasto (ate 29/11, exige e-mail personalizado, cartao Itau) nao se aplica. Ativas mantidas: cartoes 25% ate 29/11 (<60%), Modo LATAM Pass Nubank (permanente). Nenhum desconto de compra direta ativo -> sem push. Fonte: blog de terceiros (confianca media).",
-  "nota_dashboard_28_11_12h15": "Dashboard 12:15Z: sem promocao nova; 0 expirada(s) movida(s). Ativas: cartoes 25% (ate 29/11), Modo LATAM Pass Nubank (permanente). Sem desconto de compra direta -> sem push."
+  "nota_dashboard_28_11_12h15": "Dashboard 12:15Z: sem promocao nova; 0 expirada(s) movida(s). Ativas: cartoes 25% (ate 29/11), Modo LATAM Pass Nubank (permanente). Sem desconto de compra direta -> sem push.",
+  "nota_monitor_28_11_12h20": "WebSearch passageirodeprimeira.com (transferencia + compra direta + Inter Loop): nenhuma nova promocao relevante. Compra direta: nenhuma campanha ativa (ultima 63%/66% encerrou 20/11). Livelo 27% LATAM Friday encerrou 24/11. Black Friday ALL Accor (+15-25%) e transferencia DE LATAM Pass para Accor — nao se aplica. Cartao LATAM Pass Itau (100k milhas bonus ate 29/11) nao e compra/transferencia. latampass.latam.com/pt_br/ofertas: ENOTFOUND (EGRESS_BLOCKED). Sem push."
 }
